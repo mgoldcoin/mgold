@@ -2,7 +2,7 @@
 
 ## Secret Phrase\(Seed\) {#SecurityNotes-SecretPhrase(Seed)}
 
-* Store the secret phrase \(Seed\) - this is the key to your wallet and It is necessary to ensure that your secret phrase is not stored in memory and attackers could not access it. tt
+* Store the secret phrase \(Seed\) - this is the key to your wallet and It is necessary to ensure that your secret phrase is not stored in memory and attackers could not access it.
 * Having lost a secret phrase, you lose access to your account forever.
 * Forgetting the password, you can easily create a new one by using the form of account recovery through a secret phrase.
 * The secret phrase can not be changed. If you accidentally sent it to someone or suspect that it was taken by fraudsters, immediately create a new Waves wallet and transfer all funds to it, without forgetting to keep a new secret phrase.
