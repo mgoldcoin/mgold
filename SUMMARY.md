@@ -5,4 +5,6 @@
   * [Platform Components](platform-components.md)
   * [Security Notes](security-notes.md)
   * [Waves Official Resources ](waves-official-resources.md)
+* Platform Features
+  * [Decentralized cryptocurrency exchange \(DEX\)](decentralized-cryptocurrency-exchange-dex.md)
 

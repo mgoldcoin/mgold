@@ -8,13 +8,11 @@
 
 # Desktop Client \(beta\) {#WavesOfficialResources-DesktopClient(beta)}
 
-[https://wavesplatform.com/product](https://wavesplatform.com/product)  
-  
-
+[https://wavesplatform.com/product](https://wavesplatform.com/product)
 
 # Online Wallet {#WavesOfficialResources-OnlineWallet}
 
-# [https://waveswallet.io](https://waveswallet.io/) {#WavesOfficialResources-https://waveswallet.io}
+[https://waveswallet.io](https://waveswallet.io/)
 
 # Open Source code on GitHub {#WavesOfficialResources-OpenSourcecodeonGitHub}
 
@@ -52,11 +50,11 @@ Chrome Extension - need to be installed to Chrome browser
 
 # Explorers \(main net, testate, wavesGo, waves desk\) {#WavesOfficialResources-Explorers(mainnet,testate,wavesGo,wavesdesk)}
 
-Test Net: [https://testnet.wavesexplorer.com](https://testnet.wavesexplorer.com/)
+Test Net: [https://testnet.wavesexplorer.com](https://testnet.wavesexplorer.com/)
 
-Main Net: [http://wavesexplorer.com](http://wavesexplorer.com/)
+Main Net: [http://wavesexplorer.com](http://wavesexplorer.com/)
 
-Waves desk: [https://wavesdesk.com](https://wavesdesk.com/)
+Waves desk: [https://wavesdesk.com](https://wavesdesk.com/)
 
-WavesGo: [http://wavesgo.com](http://wavesgo.com/)
+WavesGo: [http://wavesgo.com](http://wavesgo.com/)
 
