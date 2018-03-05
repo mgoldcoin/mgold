@@ -10,4 +10,5 @@
   * [Assets \(custom tokens\)](assets-custom-tokens.md)
   * [Leased Proof of Stake \(LPOS\)](leased-proof-of-stake-lpos.md)
   * [Waves-NG Protocol](waves-ng-protocol.md)
+  * [Activation Protocol](activation-protocol.md)
 
