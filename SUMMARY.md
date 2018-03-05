@@ -1,3 +1,5 @@
 # Summary
 
-* [First Chapter](chapter1.md)
+* [Overview](README.md)
+  * [What is Waves Platform](what-is-waves-platform.md)
+
