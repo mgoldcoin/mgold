@@ -9,4 +9,5 @@
   * [Decentralized cryptocurrency exchange \(DEX\)](decentralized-cryptocurrency-exchange-dex.md)
   * [Assets \(custom tokens\)](assets-custom-tokens.md)
   * [Leased Proof of Stake \(LPOS\)](leased-proof-of-stake-lpos.md)
+  * [Waves-NG Protocol](waves-ng-protocol.md)
 
