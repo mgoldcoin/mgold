@@ -2,7 +2,7 @@
 
 \[[https://beta.wavesplatform.com](https://beta.wavesplatform.com)\]
 
-The Waves Lite Client is a Chrome Extension that can be easily installed and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets. 
+The Waves Lite Client is a Chrome Extension that can be easily installed and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
 # Token Generation Tool
 
@@ -19,7 +19,9 @@ It allows to place and execute orders for buying or selling cryptocurrency or To
 
 # Nodes
 
-\[[https://github.com/wavesplatform/Waves/wiki/How-to-install-Waves-node\] \[https://wavesplatform.com/leasing\#nodes](https://github.com/wavesplatform/Waves/wiki/How-to-install-Waves-node] [https://wavesplatform.com/leasing#nodes)\]
+\[[https://github.com/wavesplatform/Waves/wiki/How-to-install-Waves-node](https://github.com/wavesplatform/Waves/wiki/How-to-install-Waves-node)\]
+
+\[[https://wavesplatform.com/leasing\#nodes](https://wavesplatform.com/leasing#nodes)\]
 
 * Easy to install.
 * A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
@@ -41,7 +43,7 @@ It allows to place and execute orders for buying or selling cryptocurrency or To
 
 # Mobile apps
 
-* Waves Wallet is a mobile client to WavesPlatform available on Android and IOS.
+* Waves Wallet is a mobile client to WavesPlatform available on Android and IOS.
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
 
 
