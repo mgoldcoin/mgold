@@ -132,7 +132,7 @@ Maximum rate of transactions in blockchain systems is limited by the choice of t
 * The block interval defines the average amount of time that passes between the creation of two blocks. If we reduce this time, forks will appear more frequently, which will lead to either non-resolved forks or to decreased throughput since considerable amount of time would be spent on resolving these forks.
 * Larger blocks lead to huge network usage spikes during block propogation, which in turn will lead to throughput problems and huge forks.
 
-# 3.1 Waves-NG Solution and Technical Details
+# 3.1 Waves-NG Solution With Technical Details
 
 Waves addresses this issue by allowing miner to continuously farm a block during time of mining. This continuously increasing block is calledliquid block, which becomes immutable when next block refecrencing it is built and appended.Liquid blockconsists ofkeyblockand chain ofmicroblocks. The proccess of creatingliquid blockgoes as follows:
 
