@@ -149,10 +149,9 @@ transactionData: Seq[Transaction]
 prevResBlockSig: BlockId
 totalResBlockSig: BlockId
 signature: ByteStr
-
 ```
 
-`totalResBlockSig`is the new total signature of a block with all transcations from blockId=`prevResBlockSig`and own`transactionData`. This means that having a_liquid block_consisting of 1_keyblock_and 3_microblock_s:
+`totalResBlockSig`is the new total signature of a block with all transcations from blockId=`prevResBlockSig`and own`transactionData`. This means that having a\_liquid block\_consisting of 1\_keyblock\_and 3\_microblock\_s:
 
 **KEYBLOCK**\(\) &lt;-**MICRO1**\(tx1,tx2\) &lt;-**MICRO2**\(tx3,tx4\) &lt;-**MICRO3**\(tx5,tx6\)
 
@@ -165,7 +164,7 @@ We have 4 versions of last block:
 | `MICRO2.totalResBlockSig` | tx1,tx2,tx3,tx4 |
 | `MICRO3.totalResBlockSig` | tx1,tx2,tx3,tx4,tx5,tx6 |
 
-Next miner can reference**ANY**of these ids in its_keyBlock_.
+Next miner can reference **ANY **of these ids in its_keyBlock_.
 
 # 4. Economy
 
@@ -173,18 +172,18 @@ For a miner, it might seem a good idea to reference`KEYBLOCK`from previous examp
 
 # 5. Related Protocol Changes
 
-* New block version\(=3\) which can contain up tp 65535 transactions and doesn't require transaction sorting.
+* New block version \(=3\) which can contain up tp 65535 transactions and doesn't require transaction sorting.
 * By default miners will first create an empty keyblock. It's a regular block, propogated by`BlockForged`message, but it now gets broadcasted if it's empty.
-* Microblocks are propogated by broadcasting its header for every node which applied it\(`MicroBlockInv`\)`MicroBlockInv`
+* Microblocks are propogated by broadcasting its header for every node which applied it \(`MicroBlockInv`\)`MicroBlockInv`
   contains verifiable signature to prevent node from being flooded. Microblock will be requested afterwards via `MicroBlockRequest`and recieved back within`MicroBlockResponse.`Microblocks will be re-requested from other node which has it if a node doesn't respond.
 
 # 6. Configuration
 
 The following miner parameters can be tuned\(though it's best not to change them in order to maximize final version of your liquid block in the resulting blockchain\):
 
-* KeyBlock size\(`maxTransactionsInKeyBlock`, default = 0\). If changed, it won't be rebroadcasted and the usual extension requesting mechanics will be used.
-* Microblock mining interval\(`microBlockInterval`, default = 3s\).
-* Max amount of transactions per microblock\(`maxTransactionsInMicroBlock`, default = 200\).
+* KeyBlock size \(`maxTransactionsInKeyBlock`, default = 0\). If changed, it won't be rebroadcasted and the usual extension requesting mechanics will be used.
+* Microblock mining interval \(`microBlockInterval`, default = 3s\).
+* Max amount of transactions per microblock \(`maxTransactionsInMicroBlock`, default = 200\).
 * Miner will try to reference the best known microblock with at least`minMicroBlockAge`age\(default = 3s\). This is required in order for miner to reference already-propogated block so its keyblock doesn't get orphaned.
 * Microblock synchronization mechanism can be tuned with`waitResponseTimeout`\(default = 2s\) , `processedMicroBlocksCacheTimeout`\(default = 10s\),`invCacheTimeout`\(default = 10s\) whcich are basically time of awaiting a microblock and times to cache a processed microblock ids and a list of nodes which have a microblock\(by id\).
 
@@ -192,7 +191,7 @@ The following miner parameters can be tuned\(though it's best not to change them
 
 * Upon applying every microblock, last block gets changed, which means`/blocks/last`and`/blocks/at/...`will reflect that.
 * `/peers/blacklisted`now expose ban reason, one can clear a node's blacklist via`/peers/clearblacklist`
-* `/debug/`and`/consensus/`section are expanded, _stateHash _doesn't take _liquid block _into consideration.
+* `/debug/`and`/consensus/`section are expanded, \_stateHash \_doesn't take \_liquid block \_into consideration.
 
 
 
