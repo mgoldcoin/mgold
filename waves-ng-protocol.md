@@ -2,9 +2,7 @@
 
 ## **1.1 Problem Statment and Motivation** {#Waves-NGProtocol-1.1ProblemStatmentandMotivation}
 
-Blockchains protocols have some scalability limits and challenges that tradeoff between throughput and latency.
-
-The current blockchain technology is not fast enough and does not scale to inculde more transactions into the system so we have a performance challenge to be considered.
+Blockchains protocols have some scalability limits and challenges that tradeoff between throughput and latency. The current blockchain technology is not fast enough and does not scale to inculde more transactions into the system so we have a performance challenge to be considered.
 
 There is a united agreement between miners, consumers, and developers with several perspectives that we need to deploy scalability measures, and there has been an ongoing argument on how to improve Bitcoin’s scalability. Current proposals have focused around how big to make the blocks and how to handle the block size increases in the future.
 

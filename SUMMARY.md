@@ -17,7 +17,7 @@
 
 ## Waves Client
 
-* Running Application
+* [Running Application](waves-client/running-application.md)
 * Main User Interface
 * Account Operations
 * Wallet Operations
