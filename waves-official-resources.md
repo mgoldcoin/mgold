@@ -1,4 +1,4 @@
-# Official website {#WavesOfficialResources-Officialwebsite}
+# Official website
 
 [https://wavesplatform.com](https://wavesplatform.com/)
 
@@ -36,15 +36,15 @@ Chrome Extension - need to be installed to Chrome browser
 
 [https://www.facebook.com/wavesplatform](https://www.facebook.com/wavesplatform)
 
-# twitter {#WavesOfficialResources-twitter}
+# Twitter {#WavesOfficialResources-twitter}
 
 [https://twitter.com/wavesplatform?lang=en](https://twitter.com/wavesplatform?lang=en)
 
-# blog {#WavesOfficialResources-blog}
+# Blog {#WavesOfficialResources-blog}
 
 [https://blog.wavesplatform.com](https://blog.wavesplatform.com/)
 
-# community website {#WavesOfficialResources-communitywebsite}
+# Community Website {#WavesOfficialResources-communitywebsite}
 
 [https://wavescommunity.com](https://wavescommunity.com/)
 
