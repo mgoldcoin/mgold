@@ -17,5 +17,5 @@ Figure 1, Create Waves Account or Restore your Account.
 
 When you have done so, click on** Continue, **Figure 2.
 
-![](/assets/Screen Shot 2018-02-14 at 6.03.52 PM.png)
+<img src="/assets/Screen Shot 2018-02-14 at 6.03.52 PM.png" width="200" height="100" />
 
