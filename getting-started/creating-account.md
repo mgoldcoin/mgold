@@ -17,5 +17,9 @@ Figure 1, Create Waves Account or Restore your Account.
 
 When you have done so, click on** Continue, **Figure 2.
 
+
+
 ![](/assets/Webp.net-resizeimage-2.png)
+
+Figure 2, Create New Account.
 
