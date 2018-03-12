@@ -9,7 +9,7 @@
 
 ## Getting Started
 
-## Install
+## Install asd
 
 * [Install Waves Client](waves-client/install-waves-client.md)
 
