@@ -11,7 +11,7 @@
 
 ## Waves Client
 
-* Install Waves Client
+* [Install Waves Client](waves-client/install-waves-client.md)
 
 ## Account Management
 

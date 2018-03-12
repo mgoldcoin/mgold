@@ -12,7 +12,6 @@ Waves, the native currency within the Waves Platform system, is a Leased Proof o
 ![](/assets/Webp.net-resizeimage.png)
 
 
-<img src="/assets/Webp.net-resizeimage.png" width="200" height="200" />
 
 
 Figure 1, Create Waves Account or Restore your Account.
@@ -24,7 +23,7 @@ Figure 1, Create Waves Account or Restore your Account.
 When you have done so, click on** Continue, **Figure 2.
 
 
-<img src="/assets/Screen Shot 2018-02-14 at 6.03.52 PM.png" width="300" height="300" />
+
 
 
 
