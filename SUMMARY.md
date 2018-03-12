@@ -19,6 +19,10 @@
 * [Restore an Account](getting-started/restoring-account-from-the-seed.md)
 * [Signing In to Your Account](getting-started/signing-in-to-your-account.md)
 
+## Wallet Management
+
+* [Send Bitcoin \(BTC\)](wallet-management/send-bitcoin-btc.md)
+
 ## Platform Features
 
 * [Decentralized cryptocurrency exchange \(DEX\)](decentralized-cryptocurrency-exchange-dex.md)
