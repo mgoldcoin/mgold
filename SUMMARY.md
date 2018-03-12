@@ -16,7 +16,7 @@
 ## Account Management
 
 * [Creating an Account](getting-started/creating-account.md)
-* [Backup and Restore an Account](getting-started/restoring-account-from-the-seed.md)
+* [Restore an Account](getting-started/restoring-account-from-the-seed.md)
 * [Signing In to Your Account](getting-started/signing-in-to-your-account.md)
 
 ## Platform Features
