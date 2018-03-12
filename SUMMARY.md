@@ -7,6 +7,18 @@
 * [Waves Official Resources ](waves-official-resources.md)
 * [Security Notes](security-notes.md)
 
+## Getting Started
+
+## Waves Client
+
+* Install Waves Client
+
+## Account Management
+
+* [Creating an Account](getting-started/creating-account.md)
+* [Backup and Restore an Account](getting-started/restoring-account-from-the-seed.md)
+* [Signing In to Your Account](getting-started/signing-in-to-your-account.md)
+
 ## Platform Features
 
 * [Decentralized cryptocurrency exchange \(DEX\)](decentralized-cryptocurrency-exchange-dex.md)
