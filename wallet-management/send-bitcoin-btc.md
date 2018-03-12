@@ -6,8 +6,6 @@ The user can send Bitcoins or another cryptocurrencies \( which are supported by
 
 ![](/assets/Webp.net-resizeimage-9.png)Figure 1, List of all Cryptocurrencies to Send and Deposit.
 
-
-
 ## **Send Operation**
 
 Waves Client gives the user a friendly interface where the user can get two different ways to send cryptocurrency in the same sending window:
@@ -22,11 +20,9 @@ Waves Client gives the user a friendly interface where the user can get two diff
 
 There are two ways to send bitcoins:
 
-1. Send To External Address not through Waves Network, Figure2:
+#### 1. **Send To External Address not through Waves Network, Figure2:**
 
 ![](/assets/Webp.net-resizeimage-10.png)Figure 2, Send BTC.
-
-
 
 Open your Waves wallet In the Bitcoin section, click on **Send**.
 
@@ -42,7 +38,7 @@ The following pop-up will appear. After that, fill up all the details:
 
 ![](/assets/Webp.net-resizeimage-11.png)
 
-Figure 3, Send Bitcoin not through Waves Network \(0.001 BTC as gateway fee + 0.001 Waves as transaction fee\).
+Figure 3, Send Bitcoin to External Address not through Waves Network \(0.001 BTC as gateway fee + 0.001 Waves as transaction fee\).
 
 
 
@@ -54,13 +50,11 @@ Figure 3, Confirm Sending BTC.
 
 
 
+#### 2. **Send to Internal Address through Waves network, Figure 4:**
 
+You can send Bitcoins directly to another Waves account with 0.001 Waves as Transaction fee, just use the recipient Waves address, click on Send and fill out the sending form.
 
-  
+![](/assets/Webp.net-resizeimage-12.png)
 
-
-
-
-  
-
+Figure 4, Send Bitcoin to Internal Address through Waves Network \(0.001 Waves as transaction fee\).
 
