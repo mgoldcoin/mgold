@@ -17,9 +17,19 @@ Figure 1, Create Waves Account or Restore your Account.
 
 When you have done so, click on** Continue, **Figure 2.
 
-
-
 ![](/assets/Webp.net-resizeimage-2.png)
 
 Figure 2, Create New Account.
+
+
+
+**Step 4: **Now, it's important step to backup your account by clicking** Back Up Now, **Figure 3.
+
+![](/assets/Webp.net-resizeimage-3.png)
+
+Figure 3, Backup Your Account.
+
+
+
+
 
