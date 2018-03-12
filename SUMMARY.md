@@ -9,7 +9,7 @@
 
 ## Getting Started
 
-## Waves Client
+## Install
 
 * [Install Waves Client](waves-client/install-waves-client.md)
 
@@ -25,6 +25,8 @@
 * [Deposit Bitcoin \(BTC\)](wallet-management/deposit-bitcoin-btc.md)
 * [Send Waves](wallet-management/send-waves.md)
 * [Find Your Address](wallet-management/find-your-address.md)
+
+## Features
 
 ## Platform Features
 
