@@ -8,13 +8,11 @@ In the Waves section, click on **Send, **Figure 1.
 
 Figure 1, Send Waves Section in Waves Client.
 
-  
-The following pop-up will appear Then Fill In the sending form, Figure 2.  
-  
+The following pop-up will appear Then Fill In the sending form, Figure 2.
+
 ![](/assets/Webp.net-resizeimage-17.png)  
-Figure 2, Send Waves.  
-  
-  
+Figure 2, Send Waves.
+
 **Recipient: **Enter the Waves address of the recipient.
 
 **Amount: **Define a number of Waves you want to send.
@@ -25,14 +23,9 @@ Figure 2, Send Waves.
 
 After you have entered all necessary information, click on** Continue.**
 
-The following pop-up will appear, Re-check entered data and click on** Confirm, **Figure 3.  
+The following pop-up will appear, Re-check entered data and click on** Confirm, **Figure 3.
 
+![](/assets/Webp.net-resizeimage-18.png)
 
-
-
-
-
- 
-
-
+Figure 3, Confirm Sending WAVES.
 
