@@ -21,8 +21,6 @@ When you have done so, click on** Continue, **Figure 2.
 
 Figure 2, Create New Account.
 
-
-
 **Step 4: **Now, it's important step to backup your account by clicking** Back Up Now, **Figure 3.
 
 ![](/assets/Webp.net-resizeimage-3.png)
@@ -30,6 +28,8 @@ Figure 2, Create New Account.
 Figure 3, Backup Your Account.
 
 
+
+**Step 5: **Copy the proposed SEED consisting of 15 English words and save it on a paper or in a secure place that you prefer.In Waves wallet, there is no .dat file which keeps your private keys but a SEED which grants you access to them. The SEED is by default a string of 15 English words and basically your passphrase to your funds -**if you lose your SEED, you lose access to your account. **If you have done all of the above, click on** I've written it down, **Figure 5.
 
 
 
