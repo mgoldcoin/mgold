@@ -22,6 +22,7 @@
 ## Wallet Management
 
 * [Send Bitcoin \(BTC\)](wallet-management/send-bitcoin-btc.md)
+* [Deposit Bitcoin \(BTC\)](wallet-management/deposit-bitcoin-btc.md)
 
 ## Platform Features
 
