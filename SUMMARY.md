@@ -23,6 +23,8 @@
 
 * [Send Bitcoin \(BTC\)](wallet-management/send-bitcoin-btc.md)
 * [Deposit Bitcoin \(BTC\)](wallet-management/deposit-bitcoin-btc.md)
+* [Send Waves](wallet-management/send-waves.md)
+* Find Your Address
 
 ## Platform Features
 
