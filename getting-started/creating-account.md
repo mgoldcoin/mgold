@@ -11,7 +11,7 @@ Waves, the native currency within the Waves Platform system, is a Leased Proof o
 **Note: **In case that you have created an account before just choose your address from the drop down list or enter your saved unique seed.
 
 <img src="/assets/Webp.net-resizeimage.png" width="200" height="200" />
-![](/assets/Webp.net-resizeimage.png)
+
 
 Figure 1, Create Waves Account or Restore your Account.
 
