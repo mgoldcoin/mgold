@@ -52,7 +52,3 @@ Figure 5, Confirm Backup.
 **Step 7: **Read and check all the checkbox then click on** Confirm and Begin **and you're now forwarded to user interface, Figure 6.  
 ![](/assets/Webp.net-resizeimage-6.png)Figure 6, Check Review.
 
-
-
-
-

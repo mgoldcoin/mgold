@@ -16,7 +16,3 @@ Figure 1, Restore Your Account.
 
 Figure 2, Restore Account by creating a new password.
 
-
-
-
-
