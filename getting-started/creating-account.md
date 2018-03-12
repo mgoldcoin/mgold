@@ -9,6 +9,8 @@ Waves, the native currency within the Waves Platform system, is a Leased Proof o
 **Step2 : **After opening the Waves client for the first time, click **Get Started **to start the process of creating your account or click **Restore Account** if you forget your password as shown in Figure 1.
 
 **Note: **In case that you have created an account before just choose your address from the drop down list or enter your saved unique seed.
+![](/assets/Webp.net-resizeimage.png)
+
 
 <img src="/assets/Webp.net-resizeimage.png" width="200" height="200" />
 
@@ -21,7 +23,10 @@ Figure 1, Create Waves Account or Restore your Account.
 
 When you have done so, click on** Continue, **Figure 2.
 
-![](/assets/Screen Shot 2018-02-14 at 6.03.52 PM.png)
+
+<img src="/assets/Screen Shot 2018-02-14 at 6.03.52 PM.png" width="300" height="300" />
+
+
 
 
 
