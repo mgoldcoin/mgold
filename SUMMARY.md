@@ -60,8 +60,8 @@
 
 * [For Users](guidelines/for-users.md)
   * [How To Install a node](guidelines/how-to-install-a-node.md)
-    * On Mac
-    * On Windows
+    * [On Mac](guidelines/how-to-install-a-node/on-mac.md)
+    * [On Windows](guidelines/how-to-install-a-node/on-windows.md)
     * On Ubuntu
   * [How To Configure a Node](guidelines/how-to-configure-a-node.md)
 * For Developers
