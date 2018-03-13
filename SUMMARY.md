@@ -39,7 +39,7 @@
 
 ## Waves Full Node
 
-* [What is a Full Node ](waves-full-node/what-is-a-full-node.md)
+* [What is Waves Full Node ](waves-full-node/what-is-a-full-node.md)
 * Installation
 * Upgrading
 * Joining Testnet
@@ -54,7 +54,17 @@
 * Client Libraries
 * Node API Overview
 * Examples
-* Frequently Asked Questions \(FAQ\)
+* [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
+
+## Guidelines
+
+* [For Users](guidelines/for-users.md)
+  * [How To Install a node](guidelines/how-to-install-a-node.md)
+    * On Mac
+    * On Windows
+    * On Ubuntu
+  * [How To Configure a Node](guidelines/how-to-configure-a-node.md)
+* For Developers
 
 ## How To Contribute
 
