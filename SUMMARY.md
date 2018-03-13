@@ -9,15 +9,11 @@
 
 ## Getting Started
 
-## Install
-
 * [Install Waves Client](waves-client/install-waves-client.md)
-
-## Account Management
-
-* [Creating an Account](getting-started/creating-account.md)
-* [Restore an Account](getting-started/restoring-account-from-the-seed.md)
-* [Signing In to Your Account](getting-started/signing-in-to-your-account.md)
+* [Account Management](waves-client/account-management.md)
+  * [Creating an Account](waves-client/account-management/creating-an-account.md)
+  * [Restore an Account](waves-client/account-management/restore-an-account.md)
+  * [Signing In to Your Account](waves-client/account-management/signing-in-to-your-account.md)
 
 ## Wallet Management
 
