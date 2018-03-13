@@ -20,8 +20,6 @@
   * [Send WAVES](waves-client/send-waves.md)
   * [Find Your Address](waves-client/find-your-address.md)
 
-## Features
-
 ## Platform Features
 
 * [Decentralized cryptocurrency exchange \(DEX\)](decentralized-cryptocurrency-exchange-dex.md)
