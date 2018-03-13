@@ -39,6 +39,7 @@
 
 ## Waves Full Node
 
+* [What is a Full Node ](waves-full-node/what-is-a-full-node.md)
 * Installation
 * Upgrading
 * Joining Testnet
