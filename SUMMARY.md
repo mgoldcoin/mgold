@@ -7,10 +7,6 @@
 * [Waves Official Resources ](waves-official-resources.md)
 * [Security Notes](security-notes.md)
 
-## Test 1
-
-* [t1 ](test-1/t1.md)
-
 ## Getting Started
 
 ## Install
