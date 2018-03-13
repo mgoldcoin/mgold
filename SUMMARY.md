@@ -14,6 +14,8 @@
   * [Creating an Account](waves-client/account-management/creating-an-account.md)
   * [Restore an Account](waves-client/account-management/restore-an-account.md)
   * [Signing In to Your Account](waves-client/account-management/signing-in-to-your-account.md)
+* Wallet Management
+  * [Send Bitcoin \(BTC\)](waves-client/send-bitcoin-btc.md)
 
 ## Wallet Management
 
