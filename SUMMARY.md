@@ -16,6 +16,9 @@
   * [Signing In to Your Account](waves-client/account-management/signing-in-to-your-account.md)
 * Wallet Management
   * [Send Bitcoin \(BTC\)](waves-client/send-bitcoin-btc.md)
+  * [Deposit Bitcoin \(BTC\)](waves-client/deposit-bitcoin-btc.md)
+  * [Send WAVES](waves-client/send-waves.md)
+  * [Find Your Address](waves-client/find-your-address.md)
 
 ## Wallet Management
 
