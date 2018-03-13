@@ -20,13 +20,6 @@
   * [Send WAVES](waves-client/send-waves.md)
   * [Find Your Address](waves-client/find-your-address.md)
 
-## Wallet Management
-
-* [Send Bitcoin \(BTC\)](wallet-management/send-bitcoin-btc.md)
-* [Deposit Bitcoin \(BTC\)](wallet-management/deposit-bitcoin-btc.md)
-* [Send Waves](wallet-management/send-waves.md)
-* [Find Your Address](wallet-management/find-your-address.md)
-
 ## Features
 
 ## Platform Features
