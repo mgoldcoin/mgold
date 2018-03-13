@@ -62,7 +62,7 @@
   * [How To Install a node](guidelines/how-to-install-a-node.md)
     * [On Mac](guidelines/how-to-install-a-node/on-mac.md)
     * [On Windows](guidelines/how-to-install-a-node/on-windows.md)
-    * On Ubuntu
+    * [On Ubuntu](guidelines/how-to-install-a-node/on-ubuntu.md)
   * [How To Configure a Node](guidelines/how-to-configure-a-node.md)
 * For Developers
 
