@@ -70,6 +70,7 @@
   * [Validation Rules](guidelines/validation-rules.md)
   * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
   * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
+  * [Reducing disk space usage](guidelines/reducing-disk-space-usage.md)
 
 ## How To Contribute
 
