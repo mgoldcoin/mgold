@@ -200,8 +200,6 @@ The transaction's signature is calculated from the following bytes:
 | 13 | Attachment's length \(N\) | Short | 124+M \(156+M\*\) \(188+M\*\*\) | 2 |
 | 14 | Attachment's bytes | Bytes | 126+M \(158+M\*\) \(190+M\*\*\) | N |
 
-
-
 The transaction's signature is calculated from the following bytes:
 
 | \# | Field name | Type | Position | Length |
@@ -230,6 +228,19 @@ The transaction's signature is calculated from the following bytes:
 | 5 | Fee | Long | 73 | 8 |
 | 6 | Timestamp | Long | 81 | 8 |
 | 7 | Signature | Bytes | 89 | 64 |
+
+
+
+The transaction's signature is calculated from the following bytes:
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x06\) | Byte | 0 | 1 |
+| 2 | Sender's public key | Bytes | 1 | 32 |
+| 3 | Asset ID | Bytes | 33 | 32 |
+| 4 | Amount | Long | 65 | 8 |
+| 5 | Fee | Long | 73 | 8 |
+| 6 | Timestamp | Long | 81 | 8 |
 
 
 
