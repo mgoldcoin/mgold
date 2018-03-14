@@ -287,5 +287,16 @@ The transaction's signature is calculated from the following bytes:
 
 
 
+The transaction's signature is calculated from the following bytes:
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x08\) | Byte | 0 | 1 |
+| 2 | Sender's public key | Bytes | 1 | 32 |
+| 3 | Recipient's AddressOrAlias object bytes | Bytes | 33 | N |
+| 4 | Amount | Long | 33+N | 8 |
+| 5 | Fee | Long | 41+N | 8 |
+| 6 | Timestamp | Long | 49+N | 8 |
+
 
 
