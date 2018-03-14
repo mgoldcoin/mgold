@@ -19,6 +19,7 @@
   * [Deposit Bitcoin \(BTC\)](waves-client/deposit-bitcoin-btc.md)
   * [Send WAVES](waves-client/send-waves.md)
   * [Find Your Address](waves-client/find-your-address.md)
+  * [leasing WAVES](waves-client/leasing-waves.md)
 
 ## Platform Features
 
@@ -32,8 +33,6 @@
 
 * [Running Application](waves-client/running-application.md)
 * Main User Interface
-* Account Operations
-* Wallet Operations
 * Leasing Waves
 * Asset Creation
 
@@ -65,6 +64,7 @@
     * [On Ubuntu](guidelines/how-to-install-a-node/on-ubuntu.md)
   * [How To Configure a Node](guidelines/how-to-configure-a-node.md)
 * For Developers
+  * [Wave Node REST API](guidelines/wave-node-rest-api.md)
 
 ## How To Contribute
 

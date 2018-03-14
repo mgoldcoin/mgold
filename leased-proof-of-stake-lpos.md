@@ -1,3 +1,5 @@
+# Overview
+
 Any blockchain requires a mechanism allowing to decide which chain of blocks is valid and to ensure there are no double-spending \(e.g. sending same money to different parties in separate chains\). There are several approaches to achieve this. Waves use so-called Proof-of-Stake consensus algorithm. Here we'll describe it and compare with widely used Proof-of-Work algorithm which used, for example, in Bitcoin.
 
 Since each Blockchain is a system of decentralized “nodes” \(or computers confirming transactions occurring on the network and maintaining a decentralized consensus across the system\) it is important for these nodes, also known as “miners” in the Proof-of-Work system, or “validators” in the Proof-of-Stake system, to be incentivized to keep confirming transactions. The way in which “miner” or “validator” nodes confirm transactions and how those nodes are incentivized to doso - isthe main distinction between Proof-of-Work and Proof-of-Stake.
