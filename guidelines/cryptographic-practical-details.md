@@ -10,7 +10,7 @@ In order to ease human readable, all arrays of bytes in the project are encoded 
 
 ## Example
 
-The string`teststring`are coded into the bytes`[5, 83, 9, -20, 82, -65, 120, -11]`. The bytes`[1, 2, 3, 4, 5]`are coded into the string`7bWpTW`.
+The string`teststring`are coded into the bytes`[5, 83, 9, -20, 82, -65, 120, -11]`. The bytes`[1, 2, 3, 4, 5]`are coded into the string`7bWpTW`. 
 
 # Creating a private key from a seed
 
