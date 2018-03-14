@@ -66,6 +66,8 @@
 * For Developers
   * [Wave Node REST API](guidelines/wave-node-rest-api.md)
   * [Cryptographic Practical Details](guidelines/cryptographic-practical-details.md)
+  * [Data Structures](guidelines/data-structures.md)
+  * [Validation Rules](guidelines/validation-rules.md)
 
 ## How To Contribute
 
