@@ -285,8 +285,6 @@ The transaction's signature is calculated from the following bytes:
 | 6 | Timestamp | Long | 49+N | 8 |
 | 7 | Signature | Bytes | 57+N | 64 |
 
-
-
 The transaction's signature is calculated from the following bytes:
 
 | \# | Field name | Type | Position | Length |
@@ -298,5 +296,52 @@ The transaction's signature is calculated from the following bytes:
 | 5 | Fee | Long | 41+N | 8 |
 | 6 | Timestamp | Long | 49+N | 8 |
 
+#### Create alias transaction
 
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x0a\) | Byte | 0 | 1 |
+| 2 | Sender's public key | Bytes | 1 | 32 |
+| 3 | Alias object length \(N\) | Short | 33 | 2 |
+| 4 | Alias object bytes | Bytes | 35 | N |
+| 5 | Fee | Long | 35 + N | 8 |
+| 6 | Timestamp | Long | 43 + N | 8 |
+| 7 | Signature | Bytes | 51 + N | 32 |
+
+
+
+The transaction's signature is calculated from the following bytes:
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x0a\) | Byte | 0 | 1 |
+| 2 | Sender's public key | Bytes | 1 | 32 |
+| 3 | Alias object length \(N\) | Short | 33 | 2 |
+| 4 | Alias object bytes | Bytes | 35 | N |
+| 5 | Fee | Long | 35 + N | 8 |
+| 6 | Timestamp | Long | 43 + N | 8 |
+
+#### 
+
+#### Mass Transfer transaction
+
+| \# | Field name | Type | Length |
+| :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x0b\) | Byte | 1 |
+| 2 | Sender's public key | Bytes | 32 |
+| 3 | Asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
+| 4 | Asset ID, if any | Bytes | 0 / 32 |
+| 5 | Number of transfers | Short | 2 |
+| 6 | AddressOrAlias object for transfer 1 | Bytes | variable |
+| 7 | Amount for transfer 1 | Long | 8 |
+| 8 | AddressOrAlias object for transfer 2 | Bytes | variable |
+| 9 | Amount for transfer 2 | Long | 8 |
+| ... | ... |  |  |
+| N | Timestamp | Long | 8 |
+| N+1 | Fee | Long | 8 |
+| N+2 | Attachment length | Short | 2 |
+| N+3 | Attachment bytes | Bytes | variable |
+| N+4 | Signature | Bytes | 64 |
+
+The transaction's signature is calculated from the binary array described above, except for the signature \(last field\).
 
