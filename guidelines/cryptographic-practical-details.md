@@ -41,49 +41,42 @@ Brainwallet seed string
 
 ```
 manage manual recall harvest series desert melt police rose hollow moral pledge kitten position add
-
 ```
 
 As UTF-8 bytes encoded
 
 ```
 xrv7ffrv2A9g5pKSxt7gHGrPYJgRnsEMDyc4G7srbia6PhXYLDKVsDxnqsEqhAVbbko7N1tDyaSrWCZBoMyvdwaFNjWNPjKdcoZTKbKr2Vw9vu53Uf4dYpyWCyvfPbRskHfgt9q
-
 ```
 
 Account seed bytes with nonce 0 before apply hash function in Base58
 
 ```
 1111xrv7ffrv2A9g5pKSxt7gHGrPYJgRnsEMDyc4G7srbia6PhXYLDKVsDxnqsEqhAVbbko7N1tDyaSrWCZBoMyvdwaFNjWNPjKdcoZTKbKr2Vw9vu53Uf4dYpyWCyvfPbRskHfgt9q
-
 ```
 
 blake2b256\(account seed bytes\)
 
 ```
 6sKMMHVLyCQN7Juih2e9tbSmeE5Hu7L8XtBRgowJQvU7
-
 ```
 
 Account seed \( keccak256\(blake2b256\(account seed bytes\)\) \)
 
 ```
 H4do9ZcPUASvtFJHvESapnxfmQ8tjBXMU7NtUARk9Jrf
-
 ```
 
 Account seed after`Sha256`hashing \(optional, if your library does not do it yourself\)
 
 ```
 49mgaSSVQw6tDoZrHSr9rFySgHHXwgQbCRwFssboVLWX
-
 ```
 
 Created private key
 
 ```
 3kMEhU5z3v8bmer1ERFUUhW58Dtuhyo9hE5vrhjqAWYT
-
 ```
 
 Created public key
@@ -92,33 +85,29 @@ Created public key
 HBqhfdFASRQ5eBBpu2y6c6KKi1az6bMx8v1JxX4iW1Q8
 ```
 
-
-
 # Creating address from public key
 
-Our network address obtained from the public key depends on the byte chainId \('T' for testnet and 'W' for mainnet\), so different networks obtained a different address for a single seed \(and hence public keys\). Creating a byte addresses described in more detail [here](https://github.com/wavesplatform/Waves/wiki/Data-Structures#address).  
-  
+Our network address obtained from the public key depends on the byte chainId \('T' for testnet and 'W' for mainnet\), so different networks obtained a different address for a single seed \(and hence public keys\). Creating a byte addresses described in more detail [here](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/data-structures.html).
+
 Example
 
 For public key
 
 ```
 HBqhfdFASRQ5eBBpu2y6c6KKi1az6bMx8v1JxX4iW1Q8
-
 ```
 
 in mainnet network \(chainId 'W'\) will be created this address
 
 ```
 3PPbMwqLtwBGcJrTA5whqJfY95GqnNnFMDX
-
 ```
 
 # Signing
 
 `Curve25519`is used for all the signatures in the project.
 
-The process is as follows: create the special bytes for signing \(for transaction or block, you can find it [here](https://github.com/wavesplatform/Waves/wiki/Data-Structures)\), then create a signature using these bytes and the private key bytes.
+The process is as follows: create the special bytes for signing \(for transaction or block, you can find it [here](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/data-structures.html)\), then create a signature using these bytes and the private key bytes.
 
 For the validation of signature is enough signature bytes, signed object bytes and the public key.
 
