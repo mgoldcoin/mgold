@@ -31,6 +31,7 @@
 * [Leased Proof of Stake \(LPOS\)](leased-proof-of-stake-lpos.md)
 * [Waves-NG Protocol](waves-ng-protocol.md)
 * [Activation Protocol](activation-protocol.md)
+* [Mass Transfer Transaction](mass-transfer-transaction.md)
 
 ## Waves Full Node
 
