@@ -65,6 +65,7 @@
   * [How To Configure a Node](guidelines/how-to-configure-a-node.md)
 * For Developers
   * [Wave Node REST API](guidelines/wave-node-rest-api.md)
+  * [Cryptographic Practical Details](guidelines/cryptographic-practical-details.md)
 
 ## How To Contribute
 
