@@ -20,6 +20,8 @@
   * [Send WAVES](waves-client/send-waves.md)
   * [Find Your Address](waves-client/find-your-address.md)
   * [leasing WAVES](waves-client/leasing-waves.md)
+* [Assets Management](waves-client/assets-management.md)
+  * [Issue an Asset](waves-client/assets-management/issue-an-asset.md)
 
 ## Platform Features
 
