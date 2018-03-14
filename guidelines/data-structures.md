@@ -229,8 +229,6 @@ The transaction's signature is calculated from the following bytes:
 | 6 | Timestamp | Long | 81 | 8 |
 | 7 | Signature | Bytes | 89 | 64 |
 
-
-
 The transaction's signature is calculated from the following bytes:
 
 | \# | Field name | Type | Position | Length |
@@ -241,6 +239,53 @@ The transaction's signature is calculated from the following bytes:
 | 4 | Amount | Long | 65 | 8 |
 | 5 | Fee | Long | 73 | 8 |
 | 6 | Timestamp | Long | 81 | 8 |
+
+#### Exchange transaction
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x07\) | Byte | 0 | 1 |
+| 2 | Buy order object length \(BN\) | Bytes | 1 | 4 |
+| 3 | Sell order object length \(SN\) | Bytes | 5 | 4 |
+| 4 | Buy order object bytes | Bytes | 9 | BN |
+| 5 | Sell order object bytes | Bytes | 9 + BN | SN |
+| 6 | Price | Long | 9 + BN + SN | 8 |
+| 7 | Amount | Long | 17 + BN + SN | 8 |
+| 8 | Buy matcher fee | Long | 25 + BN + SN | 8 |
+| 9 | Sell matcher fee | Long | 33 + BN + SN | 8 |
+| 10 | Fee | Long | 41 + BN + SN | 8 |
+| 11 | Timestamp | Long | 49 + BN + SN | 8 |
+| 12 | Signature | Bytes | 57 + BN + SN | 64 |
+
+The transaction's signature is calculated from the following bytes:
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x07\) | Byte | 0 | 1 |
+| 2 | Buy order object length \(BN\) | Bytes | 1 | 4 |
+| 3 | Sell order object length \(SN\) | Bytes | 5 | 4 |
+| 4 | Buy order object bytes | Bytes | 9 | BN |
+| 5 | Sell order object bytes | Bytes | 9 + BN | SN |
+| 6 | Price | Long | 9 + BN + SN | 8 |
+| 7 | Amount | Long | 17 + BN + SN | 8 |
+| 8 | Buy matcher fee | Long | 25 + BN + SN | 8 |
+| 9 | Sell matcher fee | Long | 33 + BN + SN | 8 |
+| 10 | Fee | Long | 41 + BN + SN | 8 |
+| 11 | Timestamp | Long | 49 + BN + SN | 8 |
+
+#### Lease transaction
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x08\) | Byte | 0 | 1 |
+| 2 | Sender's public key | Bytes | 1 | 32 |
+| 3 | Recipient's AddressOrAlias object bytes | Bytes | 33 | N |
+| 4 | Amount | Long | 33+N | 8 |
+| 5 | Fee | Long | 41+N | 8 |
+| 6 | Timestamp | Long | 49+N | 8 |
+| 7 | Signature | Bytes | 57+N | 64 |
+
+
 
 
 
