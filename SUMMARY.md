@@ -69,6 +69,7 @@
   * [Data Structures](guidelines/data-structures.md)
   * [Validation Rules](guidelines/validation-rules.md)
   * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
+  * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
 
 ## How To Contribute
 
