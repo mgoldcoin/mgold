@@ -32,13 +32,6 @@
 * [Waves-NG Protocol](waves-ng-protocol.md)
 * [Activation Protocol](activation-protocol.md)
 
-## Waves Client
-
-* [Running Application](waves-client/running-application.md)
-* Main User Interface
-* Leasing Waves
-* Asset Creation
-
 ## Waves Full Node
 
 * [What is Waves Full Node ](waves-full-node/what-is-a-full-node.md)
