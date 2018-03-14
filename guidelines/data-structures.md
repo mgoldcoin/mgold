@@ -93,8 +93,6 @@ The price listed for amount asset in price asset \* 10^8.
 
 Expiration is order time to live, timestamp in future, max = 30 days in future.
 
-
-
 The signature is calculated from the following bytes:
 
 | \# | Field name | Type | Position | Length |
@@ -170,6 +168,39 @@ The transaction's signature is calculated from the following bytes:
 | 7 | Reissuable flag \(1-True, 0-False\) | 138 | 73 | 1 |
 | 8 | Fee | Long | 139 | 8 |
 | 9 | Timestamp | Long | 147 | 8 |
+
+
+
+The transaction's signature is calculated from the following bytes:
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x05\) | Byte | 0 | 1 |
+| 2 | Sender's public key | Bytes | 1 | 32 |
+| 3 | Asset ID | Bytes | 33 | 32 |
+| 4 | Quantity | Long | 65 | 8 |
+| 5 | Reissuable flag \(1-True, 0-False\) | Byte | 73 | 1 |
+| 6 | Fee | Long | 74 | 8 |
+| 7 | Timestamp | Long | 82 | 8 |
+
+#### Transfer transaction
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x04\) | Byte | 0 | 1 |
+| 2 | Signature | Bytes | 1 | 64 |
+| 3 | Transaction type \(0x04\) | Byte | 65 | 1 |
+| 4 | Sender's public key | Bytes | 66 | 32 |
+| 5 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 98 | 1 |
+| 6 | Amount's asset ID \(\*if used\) | Bytes | 99 | 0 \(32\*\) |
+| 7 | Fee's asset flag \(0-Waves, 1-Asset\) | Byte | 99 \(131\*\) | 1 |
+| 8 | Fee's asset ID \(\*\*if used\) | Bytes | 100 \(132\*\) | 0 \(32\*\*\) |
+| 9 | Timestamp | Long | 100 \(132\*\) \(164\*\*\) | 8 |
+| 10 | Amount | Long | 108 \(140\*\) \(172\*\*\) | 8 |
+| 11 | Fee | Long | 116 \(148\*\) \(180\*\*\) | 8 |
+| 12 | Recipient's AddressOrAlias object bytes | Bytes | 124 \(156\*\) \(188\*\*\) | M |
+| 13 | Attachment's length \(N\) | Short | 124+M \(156+M\*\) \(188+M\*\*\) | 2 |
+| 14 | Attachment's bytes | Bytes | 126+M \(158+M\*\) \(190+M\*\*\) | N |
 
 
 
