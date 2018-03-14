@@ -68,6 +68,7 @@
   * [Cryptographic Practical Details](guidelines/cryptographic-practical-details.md)
   * [Data Structures](guidelines/data-structures.md)
   * [Validation Rules](guidelines/validation-rules.md)
+  * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
 
 ## How To Contribute
 
