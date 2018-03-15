@@ -67,6 +67,7 @@
 * Asset Transactions
   * [Public Functions](waves-node-rest-api/public-functions.md)
     * [Assets Balance](/waves-node-rest-api/public-functions.md#get-assetsbalanceaddress)
+    * Balance by Asset
   * Private Functions
 
 ## Application Development and API

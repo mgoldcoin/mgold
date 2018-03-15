@@ -4,7 +4,6 @@ Balances for all assets that the given account ever had \(besides WAVES\).
 
 ```
   "address" - account's address in Base58 format
-
 ```
 
 **Response params:**
@@ -15,7 +14,6 @@ Balances for all assets that the given account ever had \(besides WAVES\).
 "assetId" - Asset ID in Base58 format
 "balance" - Balance of that Asset on account
 "issued" - Boolean flag whether this asset was issued by that account
-
 ```
 
 **Response JSON example:**
@@ -35,6 +33,28 @@ Balances for all assets that the given account ever had \(besides WAVES\).
       "issued": false
     }
   ]
+}
+```
+
+
+
+### GET /assets/balance/{address}/{assetId}
+
+Account's balance for the given asset.
+
+```
+  "address" - account's address in Base58 format
+  "assetId" - Asset ID in Base58 format
+
+```
+
+**Response JSON example:**
+
+```js
+{
+  "address": "3Mv61qe6egMSjRDZiiuvJDnf3Q1qW9tTZDB",
+  "assetId": "Ax9T4grFxx5m3KPUEKjMdnQkCKtBktf694wU2wJYvQUD",
+  "balance": 4879179221
 }
 ```
 
