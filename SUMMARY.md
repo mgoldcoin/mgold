@@ -70,6 +70,7 @@
     * [Balance by Asset](/waves-node-rest-api/public-functions.md#get-assetsbalanceaddressassetid)
     * [Broadcast Issue Assets](/waves-node-rest-api/public-functions.md#post-assetsbroadcastissue)
     * [Broadcast Reissue Assets](/waves-node-rest-api/address.md#post-assetsbroadcastreissue)
+    * [Broadcast Burn Assets](/waves-node-rest-api/address.md#post-assetsbroadcastburn)
   * Private Functions
 
 ## Application Development and API

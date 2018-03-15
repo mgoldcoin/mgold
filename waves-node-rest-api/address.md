@@ -89,8 +89,6 @@ Get account balance in WAVES by {address} after {confirmations} from now:
 }
 ```
 
-
-
 ### POST /assets/broadcast/reissue
 
 Re-issue additional quantity of the Asset. Publish signed Asset re-issue transaction to the network.
@@ -105,7 +103,6 @@ Re-issue additional quantity of the Asset. Publish signed Asset re-issue transac
 "reissuable" - Boolean flag whether it is possible to issue additional assets
 "timestamp" - Transaction timestamp
 "signature" - Signature of all transaction data, Base58-encoded
-
 ```
 
 **Request JSON example:**
@@ -127,7 +124,6 @@ Re-issue additional quantity of the Asset. Publish signed Asset re-issue transac
 ```
 "type" - Transaction type (5 for ReissueTransaction)
 Others the same as in [Broadcast Issue Assets]
-
 ```
 
 **Response JSON example:**
@@ -144,6 +140,53 @@ Others the same as in [Broadcast Issue Assets]
   "fee": 100000,
   "timestamp": 1479221697312,
   "signature": "49Gp5qit4GF5723LxQLjsBRoyJKKH41LpNUzwwi2ZM6dXuE9a18ApAJt9sfK3uMpjD1PiHXshS31nN9NtpYm8veu"
+}
+```
+
+
+
+### POST /assets/broadcast/burn
+
+Burn quantity of the Asset. Publish signed Asset burn transaction to the network.
+
+**Request params:**
+
+```
+"assetId" - Asset ID previously issued, Base58-encoded
+"senderPublicKey" - Sender account's public key, Base58-encoded
+"fee" - Transaction fee for Asset issue, min = 100000
+"quantity" - amount of asset'lets to burn (number of indivisible pieces of assets)
+"timestamp" - Transaction timestamp
+"signature" - Signature of all transaction data, Base58-encoded
+
+```
+
+**Request JSON example:**
+
+```js
+{
+  "senderPublicKey" : "EHDZiTW9uhZmpfKRyJtusHXCQ3ABwJ3t9dxZdiPp2GZC",
+  "fee" : 100000000,
+  "timestamp" : 1495623946088,
+  "signature" : "4sWPrZFpR379XC4Med1y8AK2Avmx8nVUxVAzsE4QMzEeMtQyHgjzfQsi2Y5VY7diCqMAzohy9ZSTP3yfiB3QPQMd",
+  "assetId" : "AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
+  "amount" : 50000
+}
+```
+
+**Response JSON example:**
+
+```js
+{
+  "type" : 6,
+  "id" : "AoqmyXSurAoLqH5zbcKPtksdPwadgudhE7tZ495cQDWs",
+  "sender" : "3HRUALDoUaWAmAndWRqhbiQFoqgamhAVggE",
+  "senderPublicKey" : "EHDZiTW9uhZmpfKRyJtusHXCQ3ABwJ3t9dxZdiPp2GZC",
+  "fee" : 100000000,
+  "timestamp" : 1495623946088,
+  "signature" : "4sWPrZFpR379XC4Med1y8AK2Avmx8nVUxVAzsE4QMzEeMtQyHgjzfQsi2Y5VY7diCqMAzohy9ZSTP3yfiB3QPQMd",
+  "assetId" : "AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
+  "amount" : 50000
 }
 ```
 
