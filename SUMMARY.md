@@ -45,17 +45,8 @@
 * Upgrading
 * Joining Testnet
 * Configuration
-* REST API
-* Using Node's Wallet
 * Mining
 * Node's Wallet
-
-## Application Development and API
-
-* Client Libraries
-* Node API Overview
-* Examples
-* [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
 ## Developers Guide
 
@@ -65,6 +56,13 @@
 * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
 * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
 * [Reducing disk space usage](guidelines/reducing-disk-space-usage.md)
+
+## Application Development and API
+
+* Client Libraries
+* Node API Overview
+* Examples
+* [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
 ## How To Contribute
 
