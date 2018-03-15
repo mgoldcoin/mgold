@@ -187,8 +187,6 @@ Burn quantity of the Asset. Publish signed Asset burn transaction to the network
 }
 ```
 
-
-
 ### POST /assets/broadcast/transfer
 
 Publish signed Asset transfer from one address to another as a transaction to the network.
@@ -205,7 +203,6 @@ Publish signed Asset transfer from one address to another as a transaction to th
 "attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
 "timestamp" - Transaction timestamp
 "signature" - Signature of all transaction data, Base58-encoded
-
 ```
 
 **Request JSON example:**
@@ -237,7 +234,6 @@ Publish signed Asset transfer from one address to another as a transaction to th
 "fee" - Amount of transaction fee
 "attachment" - Attachment, Base58-encoded
 "signature" - Signature of all transaction data, Base58-encoded
-
 ```
 
 **Response JSON example:**
@@ -257,6 +253,78 @@ Publish signed Asset transfer from one address to another as a transaction to th
   "attachment": "BJa6cfyGUmzBFTj3vvvaew",
   "signature": "2TyN8pNS7mS9gfCbX2ktpkWVYckoAmRmDZzKH3K35DKs6sUoXHArzukV5hvveK9t79uzT3cA8CYZ9z3Utj6CnCEo"
 }
+```
+
+### POST /assets/broadcast/batch-transfer
+
+Publish many signed Asset transfer from one address to another as a transaction to the network. The current limit on the size of the JSON object sent is 1 megabyte.
+
+**Request params:**
+
+```
+Array of JSON Objects:
+"assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
+"senderPublicKey" - Sender account's public key, Base58-encoded
+"recipient" - Recipient account's address, Base58-encoded
+"fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
+"feeAssetId" [optional] - Asset ID of transaction fee. WAVES by default, if empty or absent
+"amount" - amount of asset'lets (or wavelets) to transfer
+"attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
+"timestamp" - Transaction timestamp
+"signature" - Signature of all transaction data, Base58-encoded
+
+```
+
+**Request JSON example:**
+
+```js
+[{
+  "assetId": "E9yZC4cVhCDfbjFJCc9CqkAtkoFy5KaCe64iaxHM2adG",
+  "senderPublicKey": "CRxqEuxhdZBEHX42MU4FfyJxuHmbDBTaHMhM3Uki7pLw",
+  "recipient": "3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7",
+  "fee": 100000,
+  "amount": 5500000000,
+  "attachment": "BJa6cfyGUmzBFTj3vvvaew",
+  "timestamp": 1479222433704, 
+  "signature": "2TyN8pNS7mS9gfCbX2ktpkWVYckoAmRmDZzKH3K35DKs6sUoXHArzukV5hvveK9t79uzT3cA8CYZ9z3Utj6CnCEo"
+}]
+```
+
+**Response params:**
+
+```
+Array of JSON Objects:
+"type" - Transaction type (4 for TransferTransaction)
+"id" - Id(hash) of transaction, Base58-encoded
+"assetId" - Asset ID in Base58 format, effectively equals transaction id 
+"timestamp" - Transaction timestamp
+"sender" - Sender account's address, Base58-encoded
+"senderPublicKey" - Sender account's public key, Base58-encoded
+"recipient" - Recipient account's address, Base58-encoded
+"feeAsset" - Asset ID of transaction fee, currently is null, i.e. WAVES
+"fee" - Amount of transaction fee
+"attachment" - Attachment, Base58-encoded
+"signature" - Signature of all transaction data, Base58-encoded
+
+```
+
+**Response JSON example:**
+
+```js
+[{
+  "type": 4,
+  "id": "3xPyT73TGV7c5PKEJpicwSsX7PXyi3Lm1JFNQivFRLuy",
+  "sender": "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8",
+  "senderPublicKey": "CRxqEuxhdZBEHX42MU4FfyJxuHmbDBTaHMhM3Uki7pLw",
+  "recipient": "3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7",
+  "assetId": "E9yZC4cVhCDfbjFJCc9CqkAtkoFy5KaCe64iaxHM2adG",
+  "amount": 5500000000,
+  "feeAsset": null,
+  "fee": 100000,
+  "timestamp": 1479222433704,
+  "attachment": "BJa6cfyGUmzBFTj3vvvaew",
+  "signature": "2TyN8pNS7mS9gfCbX2ktpkWVYckoAmRmDZzKH3K35DKs6sUoXHArzukV5hvveK9t79uzT3cA8CYZ9z3Utj6CnCEo"
+}]
 ```
 
 

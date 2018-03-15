@@ -72,6 +72,7 @@
     * [Broadcast Reissue Assets](/waves-node-rest-api/address.md#post-assetsbroadcastreissue)
     * [Broadcast Burn Assets](/waves-node-rest-api/address.md#post-assetsbroadcastburn)
     * [Broadcast Transfer Assets](/waves-node-rest-api/address.md#post-assetsbroadcasttransfer)
+    * Broadcast Batch Transfer Assets
   * Private Functions
 
 ## Application Development and API
