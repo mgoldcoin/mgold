@@ -60,10 +60,10 @@
 ## Waves Node Rest API
 
 * [Address](waves-node-rest-api/address.md)
-  * [List of Wallet Addresses](waves-node-rest-api/list-of-wallet-addresses.md)
-  * Generate New Address
-  * WAVES Account Balance
-  * Confirmed WAVES Account Balance
+  * [List of Wallet Addresses](/waves-node-rest-api/address.md#get-addresses)
+  * [Generate New Address](/waves-node-rest-api/address.md#post-addresses)
+  * [WAVES Account Balance](/waves-node-rest-api/address.md#get-addressesbalanceaddress)
+  * [Confirmed WAVES Account Balance](/waves-node-rest-api/address.md#get-addressesbalanceaddressconfirmations)
 
 ## Application Development and API
 
