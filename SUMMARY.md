@@ -64,6 +64,9 @@
   * [Generate New Address](/waves-node-rest-api/address.md#post-addresses)
   * [WAVES Account Balance](/waves-node-rest-api/address.md#get-addressesbalanceaddress)
   * [Confirmed WAVES Account Balance](/waves-node-rest-api/address.md#get-addressesbalanceaddressconfirmations)
+* Asset Transactions
+  * [Public Functions](waves-node-rest-api/public-functions.md)
+  * Private Functions
 
 ## Application Development and API
 
