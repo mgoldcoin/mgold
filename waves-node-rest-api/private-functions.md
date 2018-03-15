@@ -11,7 +11,6 @@ Issue a new Asset for an address that exists in the node's wallet.
     The same as in [Broadcast Issue Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
     "sender" - Sender account's address that exists in the node's wallet, Base58-encoded
 
-
 **Request JSON example:**
 
 ```js
@@ -30,7 +29,6 @@ Issue a new Asset for an address that exists in the node's wallet.
 
 ```
 The same as in [Broadcast Issue Assets]
-
 ```
 
 **Response JSON example:**
@@ -39,5 +37,44 @@ The same as in [Broadcast Issue Assets]
 The same as in [Broadcast Issue Assets]
 ```
 
+### POST /assets/reissue
+
+Re-issue an additional quantity of the Asset
+
+**Request params:**
+
+    The same as in [Broadcast Reissue Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
+    "sender" - Sender account's address that exists in the node's wallet, Base58-encoded
+
+
+**Request JSON example:**
+
+```js
+{
+  "quantity": 22300000000,
+  "assetId": "E9yZC4cVhCDfbjFJCc9CqkAtkoFy5KaCe64iaxHM2adG",
+  "sender": "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8",
+  "reissuable": true,
+  "fee": 100000
+}
+```
+
+**Response params:**
+
+```
+The same as in [Broadcast Reissue Assets]
+
+```
+
+**Response JSON example:**
+
+```
+The same as in [Broadcast Reissue Assets]
+
+```
+
+### 
+
+  
 
 
