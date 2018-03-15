@@ -57,6 +57,14 @@
 * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
 * [Reducing disk space usage](guidelines/reducing-disk-space-usage.md)
 
+## Waves Node Rest API
+
+* [Address](waves-node-rest-api/address.md)
+  * [List of Wallet Addresses](waves-node-rest-api/list-of-wallet-addresses.md)
+  * Generate New Address
+  * WAVES Account Balance
+  * Confirmed WAVES Account Balance
+
 ## Application Development and API
 
 * Client Libraries
