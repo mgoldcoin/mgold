@@ -119,7 +119,6 @@ Create transaction to transfer assets from one address to another.
     The same as in [Broadcast Transfer Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
     "sender" - Sender account's address that exists in the node's wallet, Base58-encoded
 
-
 **Request JSON example:**
 
 ```js
@@ -137,14 +136,72 @@ Create transaction to transfer assets from one address to another.
 
 ```
 The same as in [Broadcast Transfer Assets]
-
 ```
 
 **Response JSON example:**
 
 ```
 The same as in [Broadcast Transfer Assets]
+```
 
+
+
+### POST /assets/masstransfer
+
+Create transaction to transfer an asset to several recipient addresses at once.
+
+**Request params:**
+
+```
+"sender" - Sender address, Base58-encoded
+"assetId" - ID of the asset to send. By default, WAVES is assumed.
+"transfers" - list of (recipient, amount) pairs where
+   "recipient" is a Base58 address, and
+   "amount" is the amount to send to that address.
+"fee" - Transaction fee, by default 100000 + 50000 * (number of transfers)
+"attachment" - Arbitrary message, Base58 encoded, 140 bytes max.
+
+```
+
+**Request JSON example:**
+
+```js
+{
+  "sender" : "3HhQxe5kLwuTfE3psYcorrhogY4fCwz2BSh",
+  "fee" : 200000,
+  "assetId" : null,
+  "attachment" : "59QuUcqP6p",
+  "transfers" : [ {
+    "recipient" : "3HUQa6qtLhNvBJNyPV1pDRahbrcuQkaDQv2",
+    "amount" : 100000000
+  }, {
+    "recipient" : "3HaAdZcCXAqhvFj113Gbe3Kww4rCGMUZaEZ",
+    "amount" : 200000000
+  } ]
+}
+```
+
+**Response JSON example:**
+
+```js
+{
+  "type" : 11,
+  "id" : "BG7MQF8KffVU6MMbJW5xPowVQsohwJhfEJ4wSF8cWdC2",
+  "sender" : "3HhQxe5kLwuTfE3psYcorrhogY4fCwz2BSh",
+  "senderPublicKey" : "7eAkEXtFGRPQ9pxjhtcQtbH889n8xSPWuswKfW2v3iK4",
+  "fee" : 200000,
+  "timestamp" : 1518091313964,
+  "signature" : "4Ph6RpcPFfBhU2fx6JgcHLwBuYSpnEzfHvuAHaVVi8mPjn9D69LX7UaCtBEGjtaTJ7uBwhF38nc7wMEZDL4rYLDV",
+  "assetId" : null,
+  "attachment" : "59QuUcqP6p",
+  "transfers" : [ {
+    "recipient" : "3HUQa6qtLhNvBJNyPV1pDRahbrcuQkaDQv2",
+    "amount" : 100000000
+  }, {
+    "recipient" : "3HaAdZcCXAqhvFj113Gbe3Kww4rCGMUZaEZ",
+    "amount" : 200000000
+  } ]
+}
 ```
 
 
