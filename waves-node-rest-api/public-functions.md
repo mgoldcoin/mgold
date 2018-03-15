@@ -36,8 +36,6 @@ Balances for all assets that the given account ever had \(besides WAVES\).
 }
 ```
 
-
-
 ### GET /assets/balance/{address}/{assetId}
 
 Account's balance for the given asset.
@@ -45,7 +43,6 @@ Account's balance for the given asset.
 ```
   "address" - account's address in Base58 format
   "assetId" - Asset ID in Base58 format
-
 ```
 
 **Response JSON example:**
