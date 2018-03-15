@@ -6,7 +6,7 @@ Get list of all accounts addresses in the node's wallet.
 
 **Response:**
 
-```
+```js
 [
 "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8",
 "3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7"
@@ -19,7 +19,7 @@ Get list of accounts addresses with indexes at this range in the node's wallet.
 
 **Response:**
 
-```
+```js
 [
 "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8",  
 "3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7"
@@ -38,7 +38,7 @@ Generate a new account address in the wallet._Requires API\_KEY to be provided_
 
 **Response JSON example:**
 
-```
+```js
 {
 
 "address": "3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7"
@@ -56,7 +56,7 @@ Get account balance in WAVES in {address}:
 
 **Response JSON example:**
 
-```
+```js
 {
 
   "address": "3N3keodUiS8WLEw9W4BKDNxgNdUpwSnpb3K",
@@ -77,7 +77,7 @@ Get account balance in WAVES by {address} after {confirmations} from now:
 
 **Response JSON example:**
 
-```
+```js
 {
 
 "address": "3N3keodUiS8WLEw9W4BKDNxgNdUpwSnpb3K",
