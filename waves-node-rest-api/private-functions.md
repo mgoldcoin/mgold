@@ -201,8 +201,6 @@ Create transaction to transfer an asset to several recipient addresses at once.
 }
 ```
 
-
-
 ### POST /assets/make-asset-name-unique
 
 Create transaction to make asset name unique.
@@ -214,7 +212,6 @@ Create transaction to make asset name unique.
 "sender" - Sender address, Base58-encoded
 "fee" - Transaction fee for Asset issue, min = 100000
 "networkByte" - network byte ('W' - 87 - mainnet, 'T' - 84 - testnet)
-
 ```
 
 **Request JSON example:**
@@ -230,12 +227,11 @@ Create transaction to make asset name unique.
     "signature" : "2XCbkLbKhKJrcnCUg18LEBykC54cUqtxCMbVpNrzDkXHJG11ZLQB9vSz2Ha8r4hCqgFPRAvvoo4zFecv27v4DCB3",
     "assetId" : "91MxUYbum9hrpJUcRwVe4no36ViqnQGAUaSmM8V8L8Jx",
     "networkByte" : 73
-  
 ```
 
 **Response JSON example:**
 
-```
+```js
 {
     "type" : 11,
     "id" : "GRhSHwLLNFz2HmxabiPU521U4NAkLshk2wgqbD9EBqEA",
