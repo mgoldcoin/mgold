@@ -79,7 +79,7 @@
     * [Burn Assets](/waves-node-rest-api/private-functions.md#post-assetsburn)
     * [Transfer Assets](/waves-node-rest-api/private-functions.md#post-assetstransfer)
     * Mass Transfer Assets
-    * Make Asset Name Unique
+    * [Make Asset Name Unique](/waves-node-rest-api/private-functions.md#post-assetsmake-asset-name-unique)
   * Private Functions
 
 ## Application Development and API
