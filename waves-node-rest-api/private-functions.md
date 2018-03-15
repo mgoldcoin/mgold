@@ -46,7 +46,6 @@ Re-issue an additional quantity of the Asset
     The same as in [Broadcast Reissue Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
     "sender" - Sender account's address that exists in the node's wallet, Base58-encoded
 
-
 **Request JSON example:**
 
 ```js
@@ -63,18 +62,54 @@ Re-issue an additional quantity of the Asset
 
 ```
 The same as in [Broadcast Reissue Assets]
-
 ```
 
 **Response JSON example:**
 
 ```
 The same as in [Broadcast Reissue Assets]
+```
+
+### POST /assets/burn
+
+Burn quantity of the Asset.
+
+**Request params:**
+
+```
+"assetId" - Asset ID previously issued, Base58-encoded
+"sender" - Sender address, Base58-encoded
+"fee" - Transaction fee for Asset issue, min = 100000
+"amount" - amount of asset'lets to burn (number of indivisible pieces of assets)
 
 ```
 
-### 
+**Request JSON example:**
 
-  
+```js
+{
+  "sender" : "EHDZiTW9uhZmpfKRyJtusHXCQ3ABwJ3t9dxZdiPp2GZC",
+  "fee" : 100000000,
+  "assetId" : "AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
+  "amount" : 50000
+}
+```
+
+**Response JSON example:**
+
+```js
+{
+  "type" : 6,
+  "id" : "AoqmyXSurAoLqH5zbcKPtksdPwadgudhE7tZ495cQDWs",
+  "sender" : "3HRUALDoUaWAmAndWRqhbiQFoqgamhAVggE",
+  "senderPublicKey" : "EHDZiTW9uhZmpfKRyJtusHXCQ3ABwJ3t9dxZdiPp2GZC",
+  "fee" : 100000000,
+  "timestamp" : 1495623946088,
+  "signature" : "4sWPrZFpR379XC4Med1y8AK2Avmx8nVUxVAzsE4QMzEeMtQyHgjzfQsi2Y5VY7diCqMAzohy9ZSTP3yfiB3QPQMd",
+  "assetId" : "AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
+  "amount" : 50000
+}
+```
+
 
 

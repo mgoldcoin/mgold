@@ -75,6 +75,11 @@
     * Broadcast Batch Transfer Assets
   * [Private Functions](waves-node-rest-api/private-functions.md)
     * [Issue Assets](/waves-node-rest-api/private-functions.md#post-assetsissue)
+    * [Reissue Assets](/waves-node-rest-api/private-functions.md#post-assetsreissue)
+    * Burn Assets
+    * Transfer Assets
+    * Mass Transfer Assets
+    * Make Asset Name Unique
   * Private Functions
 
 ## Application Development and API
