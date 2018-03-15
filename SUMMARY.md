@@ -7,7 +7,7 @@
 * [Waves Official Resources ](waves-official-resources.md)
 * [Security Notes](security-notes.md)
 
-## Getting Started
+## Waves Client
 
 * [Install Waves Client](waves-client/install-waves-client.md)
 * [Account Management](waves-client/account-management.md)
