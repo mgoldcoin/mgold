@@ -77,7 +77,7 @@
     * [Issue Assets](/waves-node-rest-api/private-functions.md#post-assetsissue)
     * [Reissue Assets](/waves-node-rest-api/private-functions.md#post-assetsreissue)
     * [Burn Assets](/waves-node-rest-api/private-functions.md#post-assetsburn)
-    * Transfer Assets
+    * [Transfer Assets](/waves-node-rest-api/private-functions.md#post-assetstransfer)
     * Mass Transfer Assets
     * Make Asset Name Unique
   * Private Functions

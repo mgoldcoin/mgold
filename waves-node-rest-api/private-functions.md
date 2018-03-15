@@ -81,7 +81,6 @@ Burn quantity of the Asset.
 "sender" - Sender address, Base58-encoded
 "fee" - Transaction fee for Asset issue, min = 100000
 "amount" - amount of asset'lets to burn (number of indivisible pieces of assets)
-
 ```
 
 **Request JSON example:**
@@ -109,6 +108,43 @@ Burn quantity of the Asset.
   "assetId" : "AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
   "amount" : 50000
 }
+```
+
+### POST /assets/transfer
+
+Create transaction to transfer assets from one address to another.
+
+**Request params:**
+
+    The same as in [Broadcast Transfer Assets] besides `senderPublicKey`, `timestamp` and `signature` params.
+    "sender" - Sender account's address that exists in the node's wallet, Base58-encoded
+
+
+**Request JSON example:**
+
+```js
+{
+  "assetId": "E9yZC4cVhCDfbjFJCc9CqkAtkoFy5KaCe64iaxHM2adG",
+  "sender": "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8",
+  "recipient": "3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7",
+  "fee": 100000,
+  "amount": 5500000000,
+  "attachment": "BJa6cfyGUmzBFTj3vvvaew"
+}
+```
+
+**Response params:**
+
+```
+The same as in [Broadcast Transfer Assets]
+
+```
+
+**Response JSON example:**
+
+```
+The same as in [Broadcast Transfer Assets]
+
 ```
 
 
