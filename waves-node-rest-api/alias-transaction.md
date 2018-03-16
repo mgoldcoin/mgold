@@ -114,5 +114,3 @@ Creates signed alias transaction for sender's address.
 
 
 
-
-
