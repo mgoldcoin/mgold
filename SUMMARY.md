@@ -81,6 +81,11 @@
     * Mass Transfer Assets
     * [Make Asset Name Unique](/waves-node-rest-api/private-functions.md#post-assetsmake-asset-name-unique)
   * Private Functions
+* [Lease Transactions](waves-node-rest-api/lease-transactions.md)
+  * Create Lease
+  * Cancel Lease
+  * Broadcast Create Lease
+  * [Broadcast Cancel Lease](waves-node-rest-api/broadcast-cancel-lease.md)
 
 ## Application Development and API
 
