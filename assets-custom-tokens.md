@@ -8,7 +8,7 @@ Issuing a token on the Waves Platform comes with multiple benefits, including th
 
 # Assets Operations\(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
 
-\[[https://github.com/wavesplatform/Waves/wiki/Waves-Node-REST-API\#private-functions](https://github.com/wavesplatform/Waves/wiki/Waves-Node-REST-API#private-functions)\]
+You can find more details about Asset Transactions [here](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/asset-transactions.html).
 
 ## Issue Asset Transaction {#Assets(customtokens)-IssueAssetTransaction}
 
