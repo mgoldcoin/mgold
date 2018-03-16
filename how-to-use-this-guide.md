@@ -58,11 +58,13 @@ This Section contains all Rest API.
 1. [Address](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/address.html)
 2. [Asset Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/asset-transactions.html) \([Public](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/public-functions.html) and [Private](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/private-functions.html)\)
 3. [Lease Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/lease-transactions.html)
-4. Alias Transaction
-5. Transactions
-6. Peers
-7. Blocks
-8. Utils
+4. [Alias Transaction](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/alias-transaction.html)
+5. [Transactions](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/transactions.html)
+6. [Peers](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/peers.html)
+7. [Blocks](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/blocks.html)
+8. [Utils](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/utils.html)
 
-.
+# 7. Application Development and API
+
+
 
