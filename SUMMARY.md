@@ -56,6 +56,7 @@
 * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
 * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
 * [Reducing disk space usage](guidelines/reducing-disk-space-usage.md)
+* [Matcher](guidelines/matcher.md)
 
 ## Waves Node Rest API
 

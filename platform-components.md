@@ -19,20 +19,14 @@ It allows to place and execute orders for buying or selling cryptocurrency or To
 
 # Nodes
 
-\[[https://github.com/wavesplatform/Waves/wiki/How-to-install-Waves-node](https://github.com/wavesplatform/Waves/wiki/How-to-install-Waves-node)\]
-
-\[[https://wavesplatform.com/leasing\#nodes](https://wavesplatform.com/leasing#nodes)\]
-
-* Easy to install.
+* [Easy to install](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html).
 * A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
 * It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
 * Receiving rewards from the network by leasing your balance to a full node. 
 
 # Networks
 
-\[[https://github.com/wavesplatform/Waves/wiki/Creating-a-private-Waves-blockchain-network](https://github.com/wavesplatform/Waves/wiki/Creating-a-private-Waves-blockchain-network)\]
-
-* Create private Waves network consisting of one node or more.
+* [Create private Waves network](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/creating-a-private-waves-blockchain-network.html) consisting of one node or more.
 * New versions of the Waves Node are tested by the development community on the TestNet cluster.
 
 # Matchers
