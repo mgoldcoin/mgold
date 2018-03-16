@@ -1,6 +1,6 @@
 # How To Use This Guide?
 
-This section captures the basic ways in which a user would want to participate in the Waves project.
+In this guide, you can find all documentation for Waves Platform as shown below:
 
 # 1. **Overview Section **
 
@@ -67,6 +67,4 @@ This Section contains all Rest API.
 # 7. Application Development and API
 
 This section still under development
-
-
 
