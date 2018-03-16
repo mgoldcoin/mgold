@@ -86,7 +86,7 @@
   * [Create Lease](/waves-node-rest-api/lease-transactions.md#post-leasinglease)
   * [Cancel Lease](/waves-node-rest-api/lease-transactions.md#post-leasingcancel)
   * [Broadcast Create Lease](/waves-node-rest-api/lease-transactions.md#post-leasingbroadcastlease)
-  * [Broadcast Cancel Lease](waves-node-rest-api/broadcast-cancel-lease.md)
+  * [Broadcast Cancel Lease](/waves-node-rest-api/lease-transactions.md#post-leasingbroadcastcancel)
 * Alias Transaction
   * [Broadcast Create Alias](/waves-node-rest-api/lease-transactions.md#post-aliasbroadcastcreate)
   * [Create Alias](/waves-node-rest-api/lease-transactions.md#post-aliascreate)
