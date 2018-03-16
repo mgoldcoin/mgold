@@ -79,7 +79,7 @@
     * [Reissue Assets](/waves-node-rest-api/private-functions.md#post-assetsreissue)
     * [Burn Assets](/waves-node-rest-api/private-functions.md#post-assetsburn)
     * [Transfer Assets](/waves-node-rest-api/private-functions.md#post-assetstransfer)
-    * Mass Transfer Assets
+    * [Mass Transfer Assets](/waves-node-rest-api/private-functions.md#post-assetsmasstransfer)
     * [Make Asset Name Unique](/waves-node-rest-api/private-functions.md#post-assetsmake-asset-name-unique)
   * Private Functions
 * [Lease Transactions](waves-node-rest-api/lease-transactions.md)
