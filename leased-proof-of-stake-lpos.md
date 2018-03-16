@@ -101,8 +101,6 @@ Get Rewards:
 
 # Leasing Transactions {#LeasedProofofStake(LPOS)-LeasingTransactions}
 
-\[[https://github.com/wavesplatform/Waves/wiki/Waves-Node-REST-API\#post-leasinglease](https://github.com/wavesplatform/Waves/wiki/Waves-Node-REST-API#post-leasinglease)\]
-
 ## Create Leasing Transaction {#LeasedProofofStake(LPOS)-CreateLeasingTransaction}
 
 ```
