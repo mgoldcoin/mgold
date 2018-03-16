@@ -2,7 +2,7 @@
 
 In this guide, you can find all documentation for Waves Platform as shown below:
 
-# 1. **Overview Section **
+# 1. **Overview  **
 
 This section will give you a general information about Waves Platform and its main components.
 
