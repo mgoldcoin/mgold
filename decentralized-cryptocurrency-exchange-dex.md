@@ -78,8 +78,6 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
 
 # Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
 
-\[[https://github.com/wavesplatform/Waves/wiki/Matcher](https://github.com/wavesplatform/Waves/wiki/Matcher)\]
-
 * Users can install their own matcher by installing the Waves software and enabling the matching functionality.
 * The Matcher earns fees from the services it provides, so you can substantially increase your mining revenues.
 * When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order.
