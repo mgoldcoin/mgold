@@ -8,7 +8,7 @@ To address this issue, we're going to introduce a new transaction type, Mass Tra
 
 The new transaction has a type value of 11. Below is a sample Mass Transfer transaction encoded as JSON:
 
-```
+```cpp
 {
   "type" : 11,
   "id" : "BG7MQF8KffVU6MMbJW5xPowVQsohwJhfEJ4wSF8cWdC2",
@@ -29,7 +29,6 @@ The new transaction has a type value of 11. Below is a sample Mass Transfer tran
   ...
   ]
 }
-
 ```
 
 It's easy to see how compact this transaction is compared to several Transfer transactions. Here we have a sequence of recipients and associated amounts, while sender, asset ID, fee, timestamp and signature occur just once.
@@ -58,12 +57,11 @@ Unlike other transactions, Mass Transfer fee is made up of two amounts: a fixed 
 
 ```
 100_000 + 50_000 * N
-
 ```
 
 where`N`is the number of recipients in transaction. Fee can be configured in miner node settings using the usual syntax, just keep in mind that there are two parts to it. Below is an excerpt from the configuration file that ships with the node:
 
-```
+```cpp
 transfer {
     WAVES = 100000
 }
@@ -72,7 +70,6 @@ mass-transfer {
     # [transfer fee] + [mass transfer fee] * [number of transfers in transaction]
     WAVES = 50000
 }
-
 ```
 
 Mass Transfer transaction accepts fees in WAVES only.
