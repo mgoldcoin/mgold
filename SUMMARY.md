@@ -97,6 +97,11 @@
   * [Unconfirmed Transactions](/waves-node-rest-api/transactions.md#get-transactionsunconfirmed)
   * [Sign Transaction](/waves-node-rest-api/transactions.md#post-transactionssign)
   * [Broadcast Transaction](/waves-node-rest-api/transactions.md#post-transactionsbroadcast)
+* [Peers](waves-node-rest-api/peers.md)
+  * Connect
+  * Connected Peers
+  * Blacklisted Peers
+  * All known Peers
 
 ## Application Development and API
 
