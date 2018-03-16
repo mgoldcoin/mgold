@@ -122,8 +122,3 @@
 * Examples
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
-## How To Contribute
-
-* Contribute To Waves
-* Contribute To Documentation
-
