@@ -91,6 +91,12 @@
   * [Create Alias](/waves-node-rest-api/lease-transactions.md#post-aliascreate)
   * [Get Address by Alias](/waves-node-rest-api/lease-transactions.md#get-aliasby-aliasalias)
   * [Get Aliases by Address](/waves-node-rest-api/lease-transactions.md#get-aliasby-addressaddress)
+* [Transactions](waves-node-rest-api/transactions.md)
+  * Transaction Info
+  * [Account Transactions](waves-node-rest-api/account-transactions.md)
+  * [Unconfirmed Transactions](waves-node-rest-api/unconfirmed-transactions.md)
+  * Sign Transaction
+  * Broadcast Transaction
 
 ## Application Development and API
 
