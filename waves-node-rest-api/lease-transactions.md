@@ -169,7 +169,6 @@ Creates signed alias transaction for sender's address.
 "alias" - alias for a sender's address
 "timestamp" - Transaction timestamp
 "signature" - Signature of all transaction data, Base58-encoded
-
 ```
 
 **Request JSON example**
@@ -182,7 +181,6 @@ Creates signed alias transaction for sender's address.
  "timestamp": 1488807184731,
  "signature": "3aB6cL1osRNopWyqBYpJQCVCXNLibkwM58dvK85PaTK5sLV4voMhe5E8zEARM6YDHnQP5YE3WX8mxdFp3ciGwVfy"
 }
-
 ```
 
 **Response JSON example**
@@ -198,7 +196,6 @@ Creates signed alias transaction for sender's address.
  "signature":"4gQyPXzJFEzMbsCd9u5n3B2WauEc4172ssyrXCL882oNa8NfNihnpKianHXrHWnZs1RzDLbQ9rcRYnSqxKWfEPJG",
  "alias":"dajzmj6gfuzmbfnhamsbuxivc"
 }
-
 ```
 
 ### POST /alias/create
@@ -209,7 +206,6 @@ Creates signed alias transaction for sender's address.
 "sender" - Sender's addresss, Base58-encoded
 "fee" - Amount of transaction fee
 "alias" - alias for a sender's address
-
 ```
 
 **Request JSON example**
@@ -220,7 +216,6 @@ Creates signed alias transaction for sender's address.
  "fee": 100000,
  "alias": "ALIAS",
 }
-
 ```
 
 **Response JSON example**
@@ -236,7 +231,6 @@ Creates signed alias transaction for sender's address.
  "signature":"4gQyPXzJFEzMbsCd9u5n3B2WauEc4172ssyrXCL882oNa8NfNihnpKianHXrHWnZs1RzDLbQ9rcRYnSqxKWfEPJG",
  "alias":"dajzmj6gfuzmbfnhamsbuxivc"
 }
-
 ```
 
 ### GET /alias/by-alias/{alias}
@@ -245,21 +239,14 @@ Creates signed alias transaction for sender's address.
 
 ```
 "alias" - alias
-
 ```
 
 **Response JSON example**
 
-```
+```js
 {
 
-"
-address
-"
-: 
-"
-address:3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7
-"
+"address": "address:3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7"
 
 }
 ```
@@ -270,28 +257,17 @@ address:3Mx2afTZ2KbRrLNbytyzTtXukZvqEB8SkW7
 
 ```
 "address" - address
-
 ```
 
 **Response JSON example**
 
-```
+```js
 [
-  
-"
-alias:HUMANREADABLE1
-"
-,
-  
-"
-alias:HUMANREADABLE2
-"
-,
-  
-"
-alias:HUMANREADABLE3
-"
-,
+
+"alias:HUMANREADABLE1",
+"alias:HUMANREADABLE2",
+"alias:HUMANREADABLE3",
+
 ]
 ```
 

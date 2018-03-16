@@ -89,8 +89,8 @@
 * Alias Transaction
   * [Broadcast Create Alias](/waves-node-rest-api/lease-transactions.md#post-aliasbroadcastcreate)
   * [Create Alias](/waves-node-rest-api/lease-transactions.md#post-aliascreate)
-  * Get Address by Alias
-  * Get Aliases by Address
+  * [Get Address by Alias](/waves-node-rest-api/lease-transactions.md#get-aliasby-aliasalias)
+  * [Get Aliases by Address](/waves-node-rest-api/lease-transactions.md#get-aliasby-addressaddress)
 
 ## Application Development and API
 
