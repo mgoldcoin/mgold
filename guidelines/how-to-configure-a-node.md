@@ -10,7 +10,7 @@ The configuration system of Waves Node uses HOCON format. HOCON stands for Human
 
 Below you can find a complete Waves Node configuration file. This is the default configuration shipped with the application. It is possible to overwrite any parameters by providing an additional configuration file. You can pass an additional configuration file by providing the path to it as the first command line parameter then starting Waves Node application.
 
-```cpp
+```js
 #
  Waves node settings
 
