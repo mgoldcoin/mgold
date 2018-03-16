@@ -108,6 +108,11 @@
   * [Block at Height](/waves-node-rest-api/blocks.md#get-blocksatheight)
   * [Block at Height Range](/waves-node-rest-api/blocks.md#get-blocksseqfromto)
   * [Block by Signature](/waves-node-rest-api/blocks.md#get-blockssignaturesignature)
+* [Utils](waves-node-rest-api/utils.md)
+  * Secure Hash of Specified Message
+  * Fast Hash of Specified Message
+  * Random Seed of Specified Length
+  * Random Seed
 
 ## Application Development and API
 
