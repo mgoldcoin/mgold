@@ -42,7 +42,7 @@
   * [On Windows](guidelines/how-to-install-a-node/on-windows.md)
   * [On Ubuntu](guidelines/how-to-install-a-node/on-ubuntu.md)
 * [How To Configure a Node](guidelines/how-to-configure-a-node.md)
-* Upgrading
+* [Upgrading](waves-full-node/upgrading.md)
 * Joining Testnet
 * Configuration
 * Mining

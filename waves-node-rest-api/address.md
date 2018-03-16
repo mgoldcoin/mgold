@@ -272,7 +272,6 @@ Array of JSON Objects:
 "attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
 "timestamp" - Transaction timestamp
 "signature" - Signature of all transaction data, Base58-encoded
-
 ```
 
 **Request JSON example:**
@@ -305,7 +304,6 @@ Array of JSON Objects:
 "fee" - Amount of transaction fee
 "attachment" - Attachment, Base58-encoded
 "signature" - Signature of all transaction data, Base58-encoded
-
 ```
 
 **Response JSON example:**
