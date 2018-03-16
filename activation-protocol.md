@@ -26,8 +26,7 @@ If a new feature was activated but the node was not updated to support it, the n
 
 ```
  On the Testnet approval and activation periods were set to 3000 blocks each.
- It will allow a faster activation of new features for testing purposes. 
-
+ It will allow a faster activation of new features for testing purposes.
 ```
 
 # 3. Configuration file changes
@@ -40,19 +39,18 @@ The new configuration file sectionfeatureswas introduced. It contains two parame
 
 Below you can see an example of the new section.
 
-```
+```js
  features {
    auto-shutdown-on-unsupported-feature = yes
    supported = []
  }
-
 ```
 
 # 4. Changes to REST API
 
 To support the Features Activation Protocol new API method was added under the node/activation route. In response, the JSON that describes the current state of features will be returned.
 
-```
+```cpp
  {
    "height": 678929,
    "approvalInterval": 10000,
@@ -83,11 +81,7 @@ To support the Features Activation Protocol new API method was added under the n
        }
    ]
  }
-
 ```
-
-  
-
 
 Fields of returned object:
 
