@@ -46,7 +46,6 @@ Creates lease cancel transaction.
 "sender" - Sender address, Base58-encoded
 "fee" - Amount of transaction fee
 "leaseId" - lease id for cancel
-
 ```
 
 **Request JSON example**
@@ -57,7 +56,6 @@ Creates lease cancel transaction.
   "fee" : 500000000,
   "leaseId" : "CYPYhYe9M94t958Nsa3DcYNBZTURwcFgQ3ojyjwEeZiK"
 }
-
 ```
 
 **Response JSON example**
@@ -72,6 +70,51 @@ Creates lease cancel transaction.
   "timestamp" : 1495625418143,
   "signature" : "2SUmFj4zo7NfZK7Xoqvqh7m7bhzFR8rT7eLtqe9Rrp18ugFH9SSvoTx1BtekWhU7PN1uLrnQCpJdS8JhmcBAjmb9",
   "leaseId" : "CYPYhYe9M94t958Nsa3DcYNBZTURwcFgQ3ojyjwEeZiK"
+}
+```
+
+### POST /leasing/broadcast/lease
+
+Creates signed lease transaction.
+
+**Request params**
+
+```
+"senderPublicKey" - Sender account's public key, Base58-encoded
+"fee" - Amount of transaction fee
+"amount" - amount of leased waves
+"timestamp" - Transaction timestamp
+"signature" - Signature of all transaction data, Base58-encoded
+
+```
+
+**Request JSON example**
+
+```js
+ {
+  "senderPublicKey" : "DddGQs63eWAA1G1ZJnJDVSrCpMS97NH4odnggwUV42kE",
+  "fee" : 500000000,
+  "timestamp" : 1495625416995,
+  "signature" : "rpvX5xpSZBxHSp8bais3MAzi4RbqiSWiCUQsgTt392ni8xEoohXv9TaHNYcXG4AsYNs8iUi8jQ5kLNokZiYDV1f",
+  "amount" : 500000000,
+  "recipient" : "address:3HQanDJhZSsSLbCjTCsMYpPvuj2ieGwKwQ9"
+}
+
+```
+
+**Response JSON example**
+
+```js
+{
+  "type" : 8,
+  "id" : "CYPYhYe9M94t958Nsa3DcYNBZTURwcFgQ3ojyjwEeZiK",
+  "sender" : "3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS",
+  "senderPublicKey" : "DddGQs63eWAA1G1ZJnJDVSrCpMS97NH4odnggwUV42kE",
+  "fee" : 500000000,
+  "timestamp" : 1495625416995,
+  "signature" : "rpvX5xpSZBxHSp8bais3MAzi4RbqiSWiCUQsgTt392ni8xEoohXv9TaHNYcXG4AsYNs8iUi8jQ5kLNokZiYDV1f",
+  "amount" : 500000000,
+  "recipient" : "address:3HQanDJhZSsSLbCjTCsMYpPvuj2ieGwKwQ9"
 }
 ```
 
