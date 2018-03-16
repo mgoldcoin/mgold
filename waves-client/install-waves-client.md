@@ -16,7 +16,5 @@ You can download the Desktop client from the [official site of Waves Platform](h
 
 ![](/assets/Screen Shot 2018-02-15 at 2.40.22 PM.png)
 
-# Test 1
-
 
 
