@@ -11,5 +11,5 @@ More specific steps depend on your operating system:
 * [On Windows](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node/on-windows.html)
 * [On Ubuntu](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node/on-ubuntu.html)
 
-
+Here you can find a tutorial about [Installing Waves Node Tutorial](https://www.youtube.com/watch?v=CDmMeZlzKbk&feature=youtu.be)
 
