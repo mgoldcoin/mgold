@@ -11,865 +11,427 @@ The configuration system of Waves Node uses HOCON format. HOCON stands for Human
 Below you can find a complete Waves Node configuration file. This is the default configuration shipped with the application. It is possible to overwrite any parameters by providing an additional configuration file. You can pass an additional configuration file by providing the path to it as the first command line parameter then starting Waves Node application.
 
 ```js
-#
- Waves node settings
-
+# Waves node settings
 waves {
+  # Node base directory
+  directory = ${user.home}"/waves"
 
-#
- Node base directory
-directory
- = ${user.home}
-"
-/waves
-"
-#
- Node data directory (LevelDB)
-data-directory
- = ${waves.directory}
-"
-/data
-"
-#
- LevelDB's internal cache size (in bytes)
-leveldb-cache-size
- = 256M
+  # Node data directory (LevelDB)
+  data-directory = ${waves.directory}"/data"
 
+  # LevelDB's internal cache size (in bytes)
+  leveldb-cache-size = 256M
 
-#
- P2P Network settings
-
+  # P2P Network settings
   network {
+    # Peers and blacklist storage file
+    file = ${waves.directory}"/peers.dat"
 
-#
- Peers and blacklist storage file
-file
- = ${waves.directory}
-"
-/peers.dat
-"
-#
- String with IP address and port to send as external address during handshake. Could be set automatically if UPnP
-#
- is enabled.
-#
-#
- If `declared-address` is set, which is the common scenario for nodes running in the cloud, the node will just
-#
- listen to incoming connections on `bind-address:port` and broadcast its `declared-address` to its peers. UPnP
-#
- is supposed to be disabled in this scenario.
-#
-#
- If declared address is not set and UPnP is not enabled, the node will not listen to incoming connections at all.
-#
-#
- If declared address is not set and UPnP is enabled, the node will attempt to connect to an IGD, retrieve its
-#
- external IP address and configure the gateway to allow traffic through. If the node succeeds, the IGD's external
-#
- IP address becomes the node's declared address.
-#
-#
- In some cases, you may both set `decalred-address` and enable UPnP (e.g. when IGD can't reliably determine its
-#
- external IP address). In such cases the node will attempt to configure an IGD to pass traffic from external port
-#
- to `bind-address:port`. Please note, however, that this setup is not recommended.
-#
- declared-address = "1.2.3.4:6863"
-#
- Network address
-bind-address
- = 
-"
-0.0.0.0
-"
-#
- Port number
-port
- = 6863
+    # String with IP address and port to send as external address during handshake. Could be set automatically if UPnP
+    # is enabled.
+    #
+    # If `declared-address` is set, which is the common scenario for nodes running in the cloud, the node will just
+    # listen to incoming connections on `bind-address:port` and broadcast its `declared-address` to its peers. UPnP
+    # is supposed to be disabled in this scenario.
+    #
+    # If declared address is not set and UPnP is not enabled, the node will not listen to incoming connections at all.
+    #
+    # If declared address is not set and UPnP is enabled, the node will attempt to connect to an IGD, retrieve its
+    # external IP address and configure the gateway to allow traffic through. If the node succeeds, the IGD's external
+    # IP address becomes the node's declared address.
+    #
+    # In some cases, you may both set `decalred-address` and enable UPnP (e.g. when IGD can't reliably determine its
+    # external IP address). In such cases the node will attempt to configure an IGD to pass traffic from external port
+    # to `bind-address:port`. Please note, however, that this setup is not recommended.
+    # declared-address = "1.2.3.4:6863"
 
+    # Network address
+    bind-address = "0.0.0.0"
 
-#
- Node name to send during handshake. Comment this string out to set random node name.
-#
- node-name = "default-node-name"
-#
- Node nonce to send during handshake. Should be different if few nodes runs on the same external IP address. Comment this out to set random nonce.
-#
- nonce = 0
-#
- List of IP addresses of well known nodes.
-known-peers
- = [
-"
-52.30.47.67:6863
-"
-, 
-"
-52.28.66.217:6863
-"
-, 
-"
-52.77.111.219:6863
-"
-, 
-"
-52.51.92.182:6863
-"
-]
+    # Port number
+    port = 6863
 
+    # Node name to send during handshake. Comment this string out to set random node name.
+    # node-name = "default-node-name"
 
-#
- How long the information about peer stays in database after the last communication with it
-peers-data-residence-time
- = 1d
+    # Node nonce to send during handshake. Should be different if few nodes runs on the same external IP address. Comment this out to set random nonce.
+    # nonce = 0
 
+    # List of IP addresses of well known nodes.
+    known-peers = ["52.30.47.67:6863", "52.28.66.217:6863", "52.77.111.219:6863", "52.51.92.182:6863"]
 
-#
- How long peer stays in blacklist after getting in it
-black-list-residence-time
- = 15m
+    # How long the information about peer stays in database after the last communication with it
+    peers-data-residence-time = 1d
 
+    # How long peer stays in blacklist after getting in it
+    black-list-residence-time = 15m
 
-#
- Number of inbound network connections
-max-inbound-connections
- = 30
+    # Number of inbound network connections
+    max-inbound-connections = 30
 
+    # Number of outbound network connections
+    max-outbound-connections = 30
 
-#
- Number of outbound network connections
-max-outbound-connections
- = 30
+    # Number of connections from single host
+    max-single-host-connections = 3
 
+    # Timeout on network communication with other peers
+    connection-timeout = 30s
 
-#
- Number of connections from single host
-max-single-host-connections
- = 3
+    # Size of buffer to store unverified (not properly handshaked) peers
+    max-unverified-peers = 100
 
+    # If yes the node requests peers and sends known peers
+    enable-peers-exchange = yes
 
-#
- Timeout on network communication with other peers
-connection-timeout
- = 30s
+    # If yes the node can blacklist others
+    enable-blacklisting = yes
 
+    # How often connected peers list should be broadcasted
+    peers-broadcast-interval = 2m
 
-#
- Size of buffer to store unverified (not properly handshaked) peers
-max-unverified-peers
- = 100
+    # When accepting connection from remote peer, this node will wait for handshake for no longer than this value. If
+    # remote peer fails to send handshake within this interval, it gets blacklisted. Likewise, when connecting to a
+    # remote peer, this node will wait for handshake response for no longer than this value. If remote peer does not
+    # respond in a timely manner, it gets blacklisted.
+    handshake-timeout = 30s
 
-
-#
- If yes the node requests peers and sends known peers
-enable-peers-exchange
- = yes
-
-
-#
- If yes the node can blacklist others
-enable-blacklisting
- = yes
-
-
-#
- How often connected peers list should be broadcasted
-peers-broadcast-interval
- = 2m
-
-
-#
- When accepting connection from remote peer, this node will wait for handshake for no longer than this value. If
-#
- remote peer fails to send handshake within this interval, it gets blacklisted. Likewise, when connecting to a
-#
- remote peer, this node will wait for handshake response for no longer than this value. If remote peer does not
-#
- respond in a timely manner, it gets blacklisted.
-handshake-timeout
- = 30s
-
-
-#
- Peers suspension time, the peer is suspended if it fails to respond before timeout occur
-suspension-residence-time
- = 1m
+    # Peers suspension time, the peer is suspended if it fails to respond before timeout occur
+    suspension-residence-time = 1m
 
     upnp {
+      # Enable UPnP tunnel creation only if you router/gateway supports it. Useful if your node is runnin in home
+      # network. Completely useless if you node is in cloud.
+      enable = no
 
-#
- Enable UPnP tunnel creation only if you router/gateway supports it. Useful if your node is runnin in home
-#
- network. Completely useless if you node is in cloud.
-enable
- = no
-
-
-#
- UPnP timeouts
-gateway-timeout
- = 7s
-
-discover-timeout
- = 3s
+      # UPnP timeouts
+      gateway-timeout = 7s
+      discover-timeout = 3s
     }
 
-
-#
- Logs incoming and outgoing messages
-
+    # Logs incoming and outgoing messages
     traffic-logger {
+      # Codes of transmitted messages to ignore. See MessageSpec.messageCode
+      ignore-tx-messages = [23, 25] # BlockMessageSpec, TransactionMessageSpec
 
-#
- Codes of transmitted messages to ignore. See MessageSpec.messageCode
-ignore-tx-messages
- = [23, 25] 
-#
- BlockMessageSpec, TransactionMessageSpec
-#
- Codes of received messages to ignore. See MessageSpec.messageCode
-ignore-rx-messages
- = [25] 
-#
- TransactionMessageSpec
-
+      # Codes of received messages to ignore. See MessageSpec.messageCode
+      ignore-rx-messages = [25] # TransactionMessageSpec
     }
   }
 
-
-#
- Wallet settings
-
+  # Wallet settings
   wallet {
+    # Path to wallet file
+    file = ${waves.directory}"/wallet/wallet.dat"
 
-#
- Path to wallet file
-file
- = ${waves.directory}
-"
-/wallet/wallet.dat
-"
-#
- Password to protect wallet file
-password
- = 
-"
-some string as password
-"
-#
- By default, the node will attempt to generate a new seed. To use a specific seed, uncomment the following line and
-#
- specify your base58-encoded seed.
-#
- seed = "BASE58SEED"
+    # Password to protect wallet file
+    password = "some string as password"
 
+    # By default, the node will attempt to generate a new seed. To use a specific seed, uncomment the following line and
+    # specify your base58-encoded seed.
+    # seed = "BASE58SEED"
   }
 
-
-#
- Blockchain settings
-
+  # Blockchain settings
   blockchain {
+    # Max transactions per block diff, affects size of atomic persistence.
+    max-transactions-per-block-diff = 6000
 
-#
- Max transactions per block diff, affects size of atomic persistence.
-max-transactions-per-block-diff
- = 6000
+    # Amount of blocks in memory. Fast rollback is possible up to this value.
+    min-blocks-in-memory = 100
 
+    # Blockchain type. Could be TESTNET | MAINNET | CUSTOM. Default value is TESTNET.
+    type = TESTNET
 
-#
- Amount of blocks in memory. Fast rollback is possible up to this value.
-min-blocks-in-memory
- = 100
-
-
-#
- Blockchain type. Could be TESTNET | MAINNET | CUSTOM. Default value is TESTNET.
-type
- = TESTNET
-
-
-#
- 'custom' section present only if CUSTOM blockchain type is set. It's impossible to overwrite predefined 'testnet' and 'mainnet' configurations.
-#
-    custom {
-#
-      # Address feature character. Used to prevent mixing up addresses from different networks.
-#
-      address-scheme-character = "C"
-#
-#
-      # Timestamps/heights of activation/deactivation of different functions.
-#
-      functionality {
-#
-        feature-check-blocks-period = 5000
-#
-        blocks-for-feature-activation = 4000
-#
-        allow-temporary-negative-until = 0
-#
-        allow-invalid-payment-transactions-by-timestamp = 0
-#
-        require-sorted-transactions-after = 0
-#
-        generation-balance-depth-from-50-to-1000-after-height = 0
-#
-        minimal-generating-balance-after = 0
-#
-        allow-transactions-from-future-until = 0
-#
-        allow-unissued-assets-until = 0
-#
-        require-payment-unique-id-after = 0
-#
-        allow-invalid-reissue-in-same-block-until-timestamp = 0
-#
-        allow-multiple-lease-cancel-transaction-until-timestamp = 0
-#
-        reset-effective-balances-at-height = 0
-#
-        block-version-3-after-height = 0
-#
-        pre-activated-features {}
-#
-        double-features-periods-after-height = 0
-#
-      }
-#
-#
-      # List of genesis transactions
-#
-      genesis {
-#
-        # Average delay between blocks
-#
-        average-block-delay = 60s
-#
-#
-        # Timestamp of genesis transactions
-#
-        timestamp = 1460678400000
-#
-#
-        # Timestamp of genesis block
-#
-        block-timestamp = 1500635421931
-#
-#
-        # Genesis block signature
-#
-        signature = "BASE58BLOCKSIGNATURE"
-#
-#
-        # Initial balance in smallest units
-#
-        initial-balance = 100000000000000
-#
-#
-        # Initial base target
-#
-        initial-base-target =153722867
-#
-#
-        # List of genesis transactions
-#
-        transactions = [
-#
-          {recipient = "BASE58ADDRESS1", amount = 50000000000000},
-#
-          {recipient = "BASE58ADDRESS2", amount = 50000000000000}
-#
-        ]
-#
-      }
-#
-    }
-
+    # 'custom' section present only if CUSTOM blockchain type is set. It's impossible to overwrite predefined 'testnet' and 'mainnet' configurations.
+    #    custom {
+    #      # Address feature character. Used to prevent mixing up addresses from different networks.
+    #      address-scheme-character = "C"
+    #
+    #      # Timestamps/heights of activation/deactivation of different functions.
+    #      functionality {
+    #        feature-check-blocks-period = 5000
+    #        blocks-for-feature-activation = 4000
+    #        allow-temporary-negative-until = 0
+    #        allow-invalid-payment-transactions-by-timestamp = 0
+    #        require-sorted-transactions-after = 0
+    #        generation-balance-depth-from-50-to-1000-after-height = 0
+    #        minimal-generating-balance-after = 0
+    #        allow-transactions-from-future-until = 0
+    #        allow-unissued-assets-until = 0
+    #        require-payment-unique-id-after = 0
+    #        allow-invalid-reissue-in-same-block-until-timestamp = 0
+    #        allow-multiple-lease-cancel-transaction-until-timestamp = 0
+    #        reset-effective-balances-at-height = 0
+    #        block-version-3-after-height = 0
+    #        pre-activated-features {}
+    #        double-features-periods-after-height = 0
+    #      }
+    #
+    #      # List of genesis transactions
+    #      genesis {
+    #        # Average delay between blocks
+    #        average-block-delay = 60s
+    #
+    #        # Timestamp of genesis transactions
+    #        timestamp = 1460678400000
+    #
+    #        # Timestamp of genesis block
+    #        block-timestamp = 1500635421931
+    #
+    #        # Genesis block signature
+    #        signature = "BASE58BLOCKSIGNATURE"
+    #
+    #        # Initial balance in smallest units
+    #        initial-balance = 100000000000000
+    #
+    #        # Initial base target
+    #        initial-base-target =153722867
+    #
+    #        # List of genesis transactions
+    #        transactions = [
+    #          {recipient = "BASE58ADDRESS1", amount = 50000000000000},
+    #          {recipient = "BASE58ADDRESS2", amount = 50000000000000}
+    #        ]
+    #      }
+    #    }
   }
 
-
-#
- Checkpoints settings
-
+  # Checkpoints settings
   checkpoints {
-
-#
- Public key for checkpoints verification, default TESTNET public key
-public-key
- = 
-"
-4PvoqxpWi7kCA9N3UXcEB9CZx4iPPeHX9jSYdAioPhnr
-"
-
+    # Public key for checkpoints verification, default TESTNET public key
+    public-key = "4PvoqxpWi7kCA9N3UXcEB9CZx4iPPeHX9jSYdAioPhnr"
   }
 
-
-#
- Transaction fees for different types of transactions
-
+  # Transaction fees for different types of transactions
   fees {
     issue {
-
-WAVES
- = 100000000
+      WAVES = 100000000
     }
     transfer {
-
-WAVES
- = 100000
+      WAVES = 100000
     }
     reissue {
-
-WAVES
- = 100000
+      WAVES = 100000
     }
     burn {
-
-WAVES
- = 100000
+      WAVES = 100000
     }
     exchange {
-
-WAVES
- = 300000
+      WAVES = 300000
     }
     lease {
-
-WAVES
- = 100000
+      WAVES = 100000
     }
     lease-cancel {
-
-WAVES
- = 100000
+      WAVES = 100000
     }
     create-alias {
-
-WAVES
- = 100000
+      WAVES = 100000
     }
   }
 
-
-#
- Matcher settings
-
+  # Matcher settings
   matcher {
+    # Enable/disable matcher
+    enable = no
 
-#
- Enable/disable matcher
-enable
- = no
+    # Matcher's account address
+    account = ""
 
+    # Matcher REST API bind address
+    bind-address = "127.0.0.1"
 
-#
- Matcher's account address
-account
- = 
-"
-"
-#
- Matcher REST API bind address
-bind-address
- = 
-"
-127.0.0.1
-"
-#
- Matcher REST API port
-port
- = 6886
+    # Matcher REST API port
+    port = 6886
 
+    # Minimum allowed order fee
+    min-order-fee = 300000
 
-#
- Minimum allowed order fee
-min-order-fee
- = 300000
+    # Fee of order match transaction
+    order-match-tx-fee = 300000
 
+    # Matcher's directories
+    matcher-directory = ${waves.directory}"/matcher"
+    data-directory = ${waves.matcher.matcher-directory}"/data"
+    journal-directory = ${waves.matcher.matcher-directory}"/journal"
+    snapshots-directory = ${waves.matcher.matcher-directory}"/snapshots"
 
-#
- Fee of order match transaction
-order-match-tx-fee
- = 300000
+    # LevelDB's internal cache size
+    leveldb-cache-size = ${waves.leveldb-cache-size}
 
+    # Snapshots creation interval
+    snapshots-interval = 1d
 
-#
- Matcher's directories
-matcher-directory
- = ${waves.directory}
-"
-/matcher
-"
-data-directory
- = ${waves.matcher.matcher-directory}
-"
-/data
-"
-journal-directory
- = ${waves.matcher.matcher-directory}
-"
-/journal
-"
-snapshots-directory
- = ${waves.matcher.matcher-directory}
-"
-/snapshots
-"
-#
- LevelDB's internal cache size
-leveldb-cache-size
- = ${waves.leveldb-cache-size}
+    # Invalid/Expired orders cleanup interval
+    order-cleanup-interval = 5m
 
+    # Maximum allowed amount of open orders
+    max-open-orders = 1000
 
-#
- Snapshots creation interval
-snapshots-interval
- = 1d
+    # Maximum allowed amount of orders retrieved via REST
+    rest-order-limit = 100
 
+    # Maximum orders stored in OrderHistory per address
+    max-orders-per-address = 1000
 
-#
- Invalid/Expired orders cleanup interval
-order-cleanup-interval
- = 5m
-
-
-#
- Maximum allowed amount of open orders
-max-open-orders
- = 1000
-
-
-#
- Maximum allowed amount of orders retrieved via REST
-rest-order-limit
- = 100
-
-
-#
- Maximum orders stored in OrderHistory per address
-max-orders-per-address
- = 1000
-
-
-#
- Base assets used as price assets
-
+    # Base assets used as price assets
     price-assets: []
 
-
-#
- Predefined ordering of base assets
-
+    # Predefined ordering of base assets
     predefined-pairs: []
 
+    # Maximum difference with Matcher server time
+    max-timestamp-diff = 3h
 
-#
- Maximum difference with Matcher server time
-max-timestamp-diff
- = 3h
-
-
-#
- Blacklisted assets id
-
+    # Blacklisted assets id
     blacklisted-assets: []
 
-
-#
- Blacklisted assets name
-
+    # Blacklisted assets name
     blacklisted-names: []
 
-
-#
- Blacklisted addresses
-
+    # Blacklisted addresses
     blacklisted-addresses: []
   }
 
-
-#
- New blocks generator settings
-
+  # New blocks generator settings
   miner {
+    # Enable/disable block generation
+    enable = yes
 
-#
- Enable/disable block generation
-enable
- = yes
+    # Required number of connections (both incoming and outgoing) to attempt block generation. Setting this value to 0
+    # enables "off-line generation".
+    quorum = 1
 
+    # Enable block generation only in the last block if not older the given period of time
+    interval-after-last-block-then-generation-is-allowed = 1d
 
-#
- Required number of connections (both incoming and outgoing) to attempt block generation. Setting this value to 0
-#
- enables "off-line generation".
-quorum
- = 1
+    # Interval between microblocks
+    micro-block-interval = 5s
 
+    # Mininmum time interval between blocks
+    minimal-block-generation-offset = 1001ms
 
-#
- Enable block generation only in the last block if not older the given period of time
-interval-after-last-block-then-generation-is-allowed
- = 1d
+    # Max amount of transactions in key block
+    max-transactions-in-key-block = 0
 
+    # Max amount of transactions in micro block
+    max-transactions-in-micro-block = 255
 
-#
- Interval between microblocks
-micro-block-interval
- = 5s
-
-
-#
- Mininmum time interval between blocks
-minimal-block-generation-offset
- = 1001ms
-
-
-#
- Max amount of transactions in key block
-max-transactions-in-key-block
- = 0
-
-
-#
- Max amount of transactions in micro block
-max-transactions-in-micro-block
- = 255
-
-
-#
- Miner references the best microblock which is at least this age
-min-micro-block-age
- = 6s
+    # Miner references the best microblock which is at least this age
+    min-micro-block-age = 6s
   }
 
-
-#
- Node's REST API settings
-
+  # Node's REST API settings
   rest-api {
+    # Enable/disable REST API
+    enable = yes
 
-#
- Enable/disable REST API
-enable
- = yes
+    # Network address to bind to
+    bind-address = "127.0.0.1"
 
+    # Port to listen to REST API requests
+    port = 6869
 
-#
- Network address to bind to
-bind-address
- = 
-"
-127.0.0.1
-"
-#
- Port to listen to REST API requests
-port
- = 6869
+    # Hash of API key string
+    api-key-hash = "H6nsiifwYKYEx6YzYD7woP1XCn72RVvx6tC1zjjLXqsu"
 
+    # Enable/disable CORS support
+    cors = yes
 
-#
- Hash of API key string
-api-key-hash
- = 
-"
-H6nsiifwYKYEx6YzYD7woP1XCn72RVvx6tC1zjjLXqsu
-"
-#
- Enable/disable CORS support
-cors
- = yes
-
-
-#
- Enable/disable api_key from different host
-api-key-different-host
- = no
+    # Enable/disable api_key from different host
+    api-key-different-host = no
   }
 
-
-#
- Nodes synchronization settings
-
+  # Nodes synchronization settings
   synchronization {
 
+    # How many blocks could be rolled back if fork is detected. If fork is longer than this rollback is impossible.
+    max-rollback = 100
 
-#
- How many blocks could be rolled back if fork is detected. If fork is longer than this rollback is impossible.
-max-rollback
- = 100
+    # I don't know
+    max-chain-length = 101
 
+    # Timeout to receive all requested blocks
+    synchronization-timeout = 60s
 
-#
- I don't know
-max-chain-length
- = 101
+    # Time to live for broadcasted score
+    score-ttl = 90s
 
+    # Time to wait for new score updates from the remote node
+    remote-score-debounce = 1s
 
-#
- Timeout to receive all requested blocks
-synchronization-timeout
- = 60s
-
-
-#
- Time to live for broadcasted score
-score-ttl
- = 90s
-
-
-#
- Time to wait for new score updates from the remote node
-remote-score-debounce
- = 1s
-
-
-#
- Settings for invalid blocks cache
-
+    # Settings for invalid blocks cache
     invalid-blocks-storage {
+      # Maximum elements in cache
+      max-size = 30000
 
-#
- Maximum elements in cache
-max-size
- = 30000
-
-
-#
- Time to store invalid blocks and blacklist their owners in advance
-timeout
- = 1d
+      # Time to store invalid blocks and blacklist their owners in advance
+      timeout = 1d
     }
 
-
-#
- History replier caching settings
-
+    # History replier caching settings
     history-replier {
+      # Max microblocks to cache
+      max-micro-block-cache-size = 50
 
-#
- Max microblocks to cache
-max-micro-block-cache-size
- = 50
-
-
-#
- Max blocks to cache
-max-block-cache-size
- = 20
+      # Max blocks to cache
+      max-block-cache-size = 20
     }
 
-
-#
- Utx synchronizer caching settings
-
+    # Utx synchronizer caching settings
     utx-synchronizer {
+      # Max microblocks to cache
+      network-tx-cache-size = 1000000
 
-#
- Max microblocks to cache
-network-tx-cache-size
- = 1000000
+      # Max time an unconfirmed transaction lives in cache
+      network-tx-cache-time = 10s
 
+      # Max number of transactions in buffer. When the limit is reached, the node processes all transactions in batch
+      max-buffer-size = 500
 
-#
- Max time an unconfirmed transaction lives in cache
-network-tx-cache-time
- = 10s
-
-
-#
- Max number of transactions in buffer. When the limit is reached, the node processes all transactions in batch
-max-buffer-size
- = 500
-
-
-#
- Max time for buffer. When time is out, the node processes all transactions in batch
-max-buffer-time
- = 100ms
+      # Max time for buffer. When time is out, the node processes all transactions in batch
+      max-buffer-time = 100ms
     }
 
-
-#
- MicroBlock synchronizer settings
-
+    # MicroBlock synchronizer settings
     micro-block-synchronizer {
+      # How much time to wait before a new request of a microblock will be done
+      wait-response-timeout = 2s
 
-#
- How much time to wait before a new request of a microblock will be done
-wait-response-timeout
- = 2s
+      # How much time to remember processed microblock signatures
+      processed-micro-blocks-cache-timeout = 3m
 
-
-#
- How much time to remember processed microblock signatures
-processed-micro-blocks-cache-timeout
- = 3m
-
-
-#
- How much time to remember microblocks and their nodes to prevent same processing
-inv-cache-timeout
- = 45s
+      # How much time to remember microblocks and their nodes to prevent same processing
+      inv-cache-timeout = 45s
     }
   }
 
-
-#
- Unverified transactions pool settings
-
+  # Unverified transactions pool settings
   utx {
+    # Pool size
+    max-size = 100000
 
-#
- Pool size
-max-size
- = 100000
+    # Evict transaction from UTX pool after it gets older than specified
+    max-transaction-age = 90m
 
+    # Utx cleanup task interval
+    cleanup-interval = 5m
 
-#
- Evict transaction from UTX pool after it gets older than specified
-max-transaction-age
- = 90m
+    # Blacklist transactions from these addresses (Base58 strings)
+    blacklist-sender-addresses = []
 
-
-#
- Utx cleanup task interval
-cleanup-interval
- = 5m
-
-
-#
- Blacklist transactions from these addresses (Base58 strings)
-blacklist-sender-addresses
- = []
-
-
-#
- Allow transfer transactions from the blacklisted addresses to these recipients (Base58 strings)
-allow-blacklisted-transfer-to
- = []
+    # Allow transfer transactions from the blacklisted addresses to these recipients (Base58 strings)
+    allow-blacklisted-transfer-to = []
   }
 
-
-#
- Vote for features
-
+  # Vote for features
   features {
+    # Auto shutdown node if a feature that is not supported by node was approved on blockchain
+    auto-shutdown-on-unsupported-feature = yes
 
-#
- Auto shutdown node if a feature that is not supported by node was approved on blockchain
-auto-shutdown-on-unsupported-feature
- = yes
-
-
-#
- List of IDs of features that is voted 'yes' by the node
-supported
- = [1, 2]
+    # List of IDs of features that is voted 'yes' by the node
+    supported = [1, 2]
   }
 }
 ```
