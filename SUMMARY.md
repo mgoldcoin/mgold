@@ -103,11 +103,11 @@
   * [Blacklisted Peers](/waves-node-rest-api/peers.md#get-peersblacklisted)
   * [All known Peers](/waves-node-rest-api/peers.md#get-peersall)
 * [Blocks](waves-node-rest-api/blocks.md)
-  * Current Blockchain Height
-  * Last block
-  * Block at Height
-  * Block at Height Range
-  * Block by Signature
+  * [Current Blockchain Height](/waves-node-rest-api/blocks.md#get-blocksheight)
+  * [Last block](/waves-node-rest-api/blocks.md#get-blockslast)
+  * [Block at Height](/waves-node-rest-api/blocks.md#get-blocksatheight)
+  * [Block at Height Range](/waves-node-rest-api/blocks.md#get-blocksseqfromto)
+  * [Block by Signature](/waves-node-rest-api/blocks.md#get-blockssignaturesignature)
 
 ## Application Development and API
 
