@@ -6,7 +6,6 @@ Return transaction data by transaction ID.
 
 ```
 "id" - Transaction ID
-
 ```
 
 **Response JSON example:**
@@ -38,7 +37,6 @@ Return the specified number of the latest transactions by the given account addr
 ```
 "address" - Account's address Base58-encoded
 "limit" - Number of transaction to return, max = 50.
-
 ```
 
 **Response JSON example:**
@@ -108,7 +106,6 @@ An optional`timestamp`parameter may be specified, which represents transaction t
 "type" - Transaction type
 "timestamp" - [optional] transaction timestamp in milliseconds
 and all the other parameters appropriate for a transaction of the given type.
-
 ```
 
 **Request JSON example**
@@ -121,7 +118,6 @@ and all the other parameters appropriate for a transaction of the given type.
  "fee": 100000,
  "alias": "ALIAS",
 }
-
 ```
 
 or
@@ -135,7 +131,6 @@ or
   "fee": 100000,
   "attachment": "string"
 }
-
 ```
 
 **Response JSON example**
@@ -151,7 +146,6 @@ or
  "signature":"4gQyPXzJFEzMbsCd9u5n3B2WauEc4172ssyrXCL882oNa8NfNihnpKianHXrHWnZs1RzDLbQ9rcRYnSqxKWfEPJG",
  "alias":"dajzmj6gfuzmbfnhamsbuxivc"
 }
-
 ```
 
 ### POST /transactions/broadcast
@@ -163,12 +157,11 @@ Broadcasts a signed transaction of any type.
 ```
 "type" - Transaction type
 and all the other parameters appropriate for a transaction of the given type.
-
 ```
 
 **Request JSON example**
 
-```
+```js
 {
  "type":10,
  "senderPublicKey":"G6h72icCSjdW2A89QWDb37hyXJoYKq3XuCUJY2joS3EU",
@@ -177,7 +170,6 @@ and all the other parameters appropriate for a transaction of the given type.
  "signature":"4gQyPXzJFEzMbsCd9u5n3B2WauEc4172ssyrXCL882oNa8NfNihnpKianHXrHWnZs1RzDLbQ9rcRYnSqxKWfEPJG",
  "alias":"dajzmj6gfuzmbfnhamsbuxivc"
 }
-
 ```
 
 **Response JSON example**
