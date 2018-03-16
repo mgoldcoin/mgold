@@ -2,16 +2,17 @@
 
 ## Overview
 
-* [What is Waves Platform](README.md)
+* [How to Use This Guide?](how-to-use-this-guide.md)
+* [What is Waves Platform?](README.md)
 * [Platform Components](platform-components.md)
 * [Waves Official Resources ](waves-official-resources.md)
 * [Security Notes](security-notes.md)
 
 ## Platform Features
 
-* [Decentralized cryptocurrency exchange \(DEX\)](decentralized-cryptocurrency-exchange-dex.md)
+* [Decentralized Cryptocurrency Exchange \(DEX\)](decentralized-cryptocurrency-exchange-dex.md)
 * [Assets \(custom tokens\)](assets-custom-tokens.md)
-* [Leased Proof of Stake \(LPOS\)](leased-proof-of-stake-lpos.md)
+* [Leased Proof of Stake \(LPoS\)](leased-proof-of-stake-lpos.md)
 * [Waves-NG Protocol](waves-ng-protocol.md)
 * [Activation Protocol](activation-protocol.md)
 * [Mass Transfer Transaction](mass-transfer-transaction.md)
@@ -55,7 +56,7 @@
 * [Validation Rules](guidelines/validation-rules.md)
 * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
 * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
-* [Reducing disk space usage](guidelines/reducing-disk-space-usage.md)
+* [Reducing Disk Space Usage](guidelines/reducing-disk-space-usage.md)
 * [Matcher](guidelines/matcher.md)
 
 ## Waves Node Rest API
@@ -81,13 +82,12 @@
     * [Transfer Assets](/waves-node-rest-api/private-functions.md#post-assetstransfer)
     * [Mass Transfer Assets](/waves-node-rest-api/private-functions.md#post-assetsmasstransfer)
     * [Make Asset Name Unique](/waves-node-rest-api/private-functions.md#post-assetsmake-asset-name-unique)
-  * Private Functions
 * [Lease Transactions](waves-node-rest-api/lease-transactions.md)
   * [Create Lease](/waves-node-rest-api/lease-transactions.md#post-leasinglease)
   * [Cancel Lease](/waves-node-rest-api/lease-transactions.md#post-leasingcancel)
   * [Broadcast Create Lease](/waves-node-rest-api/lease-transactions.md#post-leasingbroadcastlease)
   * [Broadcast Cancel Lease](/waves-node-rest-api/lease-transactions.md#post-leasingbroadcastcancel)
-* Alias Transaction
+* [Alias Transaction](waves-node-rest-api/alias-transaction.md)
   * [Broadcast Create Alias](/waves-node-rest-api/lease-transactions.md#post-aliasbroadcastcreate)
   * [Create Alias](/waves-node-rest-api/lease-transactions.md#post-aliascreate)
   * [Get Address by Alias](/waves-node-rest-api/lease-transactions.md#get-aliasby-aliasalias)
