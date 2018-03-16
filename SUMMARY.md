@@ -84,7 +84,7 @@
 * [Lease Transactions](waves-node-rest-api/lease-transactions.md)
   * [Create Lease](/waves-node-rest-api/lease-transactions.md#post-leasinglease)
   * [Cancel Lease](/waves-node-rest-api/lease-transactions.md#post-leasingcancel)
-  * Broadcast Create Lease
+  * [Broadcast Create Lease](/waves-node-rest-api/lease-transactions.md#post-leasingbroadcastlease)
   * [Broadcast Cancel Lease](waves-node-rest-api/broadcast-cancel-lease.md)
 
 ## Application Development and API
