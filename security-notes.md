@@ -1,22 +1,22 @@
-# Important Security Notes to Be Considered By End Users: {#SecurityNotes-ImportantSecurityNotestoBeConsideredByEndUsers:}
-
-## Secret Phrase\(Seed\) {#SecurityNotes-SecretPhrase(Seed)}
-
-* Forgetting the password, you can easily create a new one by using the form of account recovery through a secret phrase.
-* The secret phrase can not be changed. If you accidentally sent it to someone or suspect that it was taken by fraudsters, immediately create a new Waves wallet and transfer all funds to it, without forgetting to keep a new secret phrase.
+# Important Security Notes to Be Considered By End Users {#SecurityNotes-ImportantSecurityNotestoBeConsideredByEndUsers:}
 
 # SEED & Password {#AccountsOperations-SEED&Password}
 
 Before you create an account, you should know some important points about the Waves wallet system. In Waves wallet, there is no .dat file which keeps your private keys but a SEED which grants you access to them. The SEED is by default a string of 15 English words and basically your passphrase to your funds -**if you lose your SEED, you lose access to your account**.
 
-We strongly encourage you to additonally back up the SEED on a piece of paper and store it in a safe place. The provided string of 15 English words is cryptographically extremely secure and with the current technology unbreakable \(the chance someone can break a passphrase given by the client is 2048^15\). Each and every SEED is only linked to one single Waves account. Every digit, character, symbol and space counts - if there is one space too much, a different account opens up. If there is a wrong symbol, a different account opens up. If there is a spelling mistake, a different account opens up.
+We strongly encourage you to additonally back up the SEED on a piece of paper and store it in a safe place. The provided string of 15 English words is cryptographically extremely secure and with the current technology unbreakable \(the chance someone can break a passphrase given by the client is 2048^15\). Each and every SEED is only linked to one single Waves account. Every digit, character, symbol and space counts - if there is one space too much, a different account opens up. If there is a wrong symbol, a different account opens up. If there is a spelling mistake, a different account opens up.
 
 During the account creation, you will also be asked to generate a password for your address.
 
 The password has two purposes:
 
-1.  It encrypts the SEED locally so the SEED is never sent to the network unprotected.
+1. It encrypts the SEED locally so the SEED is never sent to the network unprotected.
 2. your account will be cached so you don't have to import the SEED from new everytime you want to log in. The password secures that only you can log into your cached account. If you happen to lose your password, you can simply delete the cached account, restore account by using your SEED.
+
+**Notes.**
+
+* Forgetting the password, you can easily create a new one by using the form of account recovery through a secret phrase.
+* The secret phrase can not be changed. If you accidentally sent it to someone or suspect that it was taken by fraudsters, immediately create a new Waves wallet and transfer all funds to it, without forgetting to keep a new secret phrase.
 
 ## Personal Account {#SecurityNotes-PersonalAccount}
 
