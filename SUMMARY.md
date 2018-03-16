@@ -102,6 +102,12 @@
   * [Connected Peers](/waves-node-rest-api/peers.md#get-peersconnected)
   * [Blacklisted Peers](/waves-node-rest-api/peers.md#get-peersblacklisted)
   * [All known Peers](/waves-node-rest-api/peers.md#get-peersall)
+* [Blocks](waves-node-rest-api/blocks.md)
+  * Current Blockchain Height
+  * Last block
+  * Block at Height
+  * Block at Height Range
+  * Block by Signature
 
 ## Application Development and API
 
