@@ -99,7 +99,7 @@ Get Rewards:
 * The more transactions that are made on the network, the more rewards leasers get.
 * These rewards mostly come in the form of WAVES but also can come in the form of different tokens with the unique Waves feature where different tokens can be accepted as a fee.
 
-# Leasing Transactions {#LeasedProofofStake(LPOS)-LeasingTransactions}
+# [Leasing Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/lease-transactions.html) {#LeasedProofofStake(LPOS)-LeasingTransactions}
 
 ## Create Leasing Transaction {#LeasedProofofStake(LPOS)-CreateLeasingTransaction}
 
