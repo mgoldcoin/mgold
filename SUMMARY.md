@@ -98,10 +98,10 @@
   * [Sign Transaction](/waves-node-rest-api/transactions.md#post-transactionssign)
   * [Broadcast Transaction](/waves-node-rest-api/transactions.md#post-transactionsbroadcast)
 * [Peers](waves-node-rest-api/peers.md)
-  * Connect
-  * Connected Peers
-  * Blacklisted Peers
-  * All known Peers
+  * [Connect](/waves-node-rest-api/peers.md#post-peersconnect)
+  * [Connected Peers](/waves-node-rest-api/peers.md#get-peersconnected)
+  * [Blacklisted Peers](/waves-node-rest-api/peers.md#get-peersblacklisted)
+  * [All known Peers](/waves-node-rest-api/peers.md#get-peersall)
 
 ## Application Development and API
 
