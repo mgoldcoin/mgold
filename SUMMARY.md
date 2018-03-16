@@ -92,11 +92,11 @@
   * [Get Address by Alias](/waves-node-rest-api/lease-transactions.md#get-aliasby-aliasalias)
   * [Get Aliases by Address](/waves-node-rest-api/lease-transactions.md#get-aliasby-addressaddress)
 * [Transactions](waves-node-rest-api/transactions.md)
-  * Transaction Info
-  * [Account Transactions](waves-node-rest-api/account-transactions.md)
-  * [Unconfirmed Transactions](waves-node-rest-api/unconfirmed-transactions.md)
-  * Sign Transaction
-  * Broadcast Transaction
+  * [Transaction Info](/waves-node-rest-api/transactions.md#get-transactionsinfoid)
+  * [Account Transactions](/waves-node-rest-api/transactions.md#get-transactionsaddressaddresslimitlimit)
+  * [Unconfirmed Transactions](/waves-node-rest-api/transactions.md#get-transactionsunconfirmed)
+  * [Sign Transaction](/waves-node-rest-api/transactions.md#post-transactionssign)
+  * [Broadcast Transaction](/waves-node-rest-api/transactions.md#post-transactionsbroadcast)
 
 ## Application Development and API
 
