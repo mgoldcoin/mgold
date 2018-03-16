@@ -39,6 +39,7 @@ This section contains all information about Installing, configuring and upgradin
 1. [What is Waves Full Node](https://waves-platform.gitbooks.io/wavesdocs/content/waves-full-node/what-is-a-full-node.html)
 2. [How To Install a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html)
 3. [How to Configure a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-configure-a-node.html)
+4. [Upgrading](https://waves-platform.gitbooks.io/wavesdocs/waves-full-node/upgrading.html)
 
 # 5. Developers Guide
 
