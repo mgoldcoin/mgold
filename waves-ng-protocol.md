@@ -141,7 +141,7 @@ Waves addresses this issue by allowing miner to continuously farm a block during
 
 # 3.2 Microblock Structure
 
-```
+```cpp
 generator: PublicKeyAccount 
 transactionData: Seq[Transaction]
 prevResBlockSig: BlockId
