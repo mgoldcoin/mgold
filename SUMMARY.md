@@ -109,10 +109,10 @@
   * [Block at Height Range](/waves-node-rest-api/blocks.md#get-blocksseqfromto)
   * [Block by Signature](/waves-node-rest-api/blocks.md#get-blockssignaturesignature)
 * [Utils](waves-node-rest-api/utils.md)
-  * Secure Hash of Specified Message
-  * Fast Hash of Specified Message
-  * Random Seed of Specified Length
-  * Random Seed
+  * [Secure Hash of Specified Message](/waves-node-rest-api/utils.md#post-utilshashsecure)
+  * [Fast Hash of Specified Message](/waves-node-rest-api/utils.md#post-utilshashfast)
+  * [Random Seed of Specified Length](/waves-node-rest-api/utils.md#get-utilsseedlength)
+  * [Random Seed](/waves-node-rest-api/utils.md#get-utilsseed)
 
 ## Application Development and API
 
