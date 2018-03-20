@@ -15,8 +15,6 @@
 * [Leased Proof of Stake \(LPoS\)](leased-proof-of-stake-lpos.md)
 * [Waves-NG Protocol](waves-ng-protocol.md)
 * [Activation Protocol](activation-protocol.md)
-* [Mass Transfer Transaction](mass-transfer-transaction.md)
-* [Waves Contracts Language Description](waves-contracts-language-description.md)
 
 ## Waves Client
 
@@ -44,10 +42,11 @@
   * [On Ubuntu](guidelines/how-to-install-a-node/on-ubuntu.md)
 * [How To Configure a Node](guidelines/how-to-configure-a-node.md)
 * [Upgrading](waves-full-node/upgrading.md)
+* [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
+* [Reducing Disk Space Usage](guidelines/reducing-disk-space-usage.md)
 * Joining Testnet
 * Configuration
 * Mining
-* Node's Wallet
 
 ## Developers Guide
 
@@ -55,8 +54,8 @@
 * [Data Structures](guidelines/data-structures.md)
 * [Validation Rules](guidelines/validation-rules.md)
 * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
-* [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
-* [Reducing Disk Space Usage](guidelines/reducing-disk-space-usage.md)
+* [Mass Transfer Transaction](mass-transfer-transaction.md)
+* [Waves Contracts Language Description](waves-contracts-language-description.md)
 
 ## Application Development and API
 
