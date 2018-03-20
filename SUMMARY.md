@@ -57,12 +57,13 @@
 * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
 * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
 * [Reducing Disk Space Usage](guidelines/reducing-disk-space-usage.md)
-* [Matcher](guidelines/matcher.md)
 
 ## Application Development and API
 
 * Client Libraries
 * [Node API Overview](waves-node-rest-api/node-api-overview.md)
+* [DEX API](waves-node-rest-api/dex-api.md)
+  * [Matcher](waves-node-rest-api/dex-api/matcher.md)
 * [Waves Node Rest API](waves-node-rest-api/waves-node-rest-api.md)
   * [Address](waves-node-rest-api/address.md)
   * [Lease Transactions](waves-node-rest-api/lease-transactions.md)
@@ -74,7 +75,6 @@
   * [Peers](waves-node-rest-api/peers.md)
   * [Blocks](waves-node-rest-api/blocks.md)
   * [Utils](waves-node-rest-api/utils.md)
-* [Dex API](waves-node-rest-api/dex-api.md)
 * Examples
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
