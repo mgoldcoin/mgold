@@ -74,6 +74,7 @@
   * [Peers](waves-node-rest-api/peers.md)
   * [Blocks](waves-node-rest-api/blocks.md)
   * [Utils](waves-node-rest-api/utils.md)
+* [Dex API](waves-node-rest-api/dex-api.md)
 * Examples
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
