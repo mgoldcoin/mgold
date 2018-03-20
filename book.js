@@ -2,8 +2,8 @@ var pkg = require('./package.json');
 
 module.exports = {
     // Documentation for GitBook is stored under "docs"
-    root: './docs',
-    title: 'GitBook Toolchain Documentation',
+    root: './Users/nazimfaour/GitBook/Library/waves-platform/wavesdocs',
+    title: 'WavesDocs',
 
 
     // Enforce use of GitBook v3
@@ -21,7 +21,7 @@ module.exports = {
 
     pluginsConfig: {
         sitemap: {
-            hostname: 'https://toolchain.gitbook.com'
+            hostname: 'https://waves-platform.gitbooks.io/wavesdocs/content/'
         }
     }
 
