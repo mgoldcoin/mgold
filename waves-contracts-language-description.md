@@ -42,23 +42,24 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 1. `Transaction`contains all possible transaction fields like
 
-2. `sender`:`ByteArray`
+* `sender`:`ByteArray`
 
-3. `recipient`:`ByteArray`
-4. `assetId`:`ByteArray`
-5. `alias`:`String`
-6. `id`:`ByteArray`
-7. `amount`:`Long`
-8. `proof0`:`ByteArray`
-9. `proof1`:`ByteArray`
-10. `proof2`:`ByteArray`
-11. etc
+* `recipient`:`ByteArray`
 
-    1. `Block`data type contains
+* `assetId`:`ByteArray`
+* `alias`:`String`
+* `id`:`ByteArray`
+* `amount`:`Long`
+* `proof0`:`ByteArray`
+* `proof1`:`ByteArray`
+* `proof2`:`ByteArray`
+* etc
 
-12. `timestamp`:`Long`
+  2. `Block`data type contains
 
-13. `height`:`Long`
+* `timestamp`:`Long`
+
+* `height`:`Long`
 
 In every script, available instances are`tx`:`Transaction`and`prevBlock`:`Block`
 

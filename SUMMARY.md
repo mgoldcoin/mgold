@@ -61,6 +61,9 @@
 ## Application Development and API
 
 * Client Libraries
+  * WavesCS
+  * WavesJ
+  * PyWaves
 * [Node API Overview](waves-node-rest-api/node-api-overview.md)
 * [DEX API](waves-node-rest-api/dex-api.md)
   * [Matcher](waves-node-rest-api/dex-api/matcher.md)
