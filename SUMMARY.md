@@ -63,7 +63,7 @@
 
 * Client Libraries
 * [Node API Overview](waves-node-rest-api/node-api-overview.md)
-* Waves Node Rest API
+* [Waves Node Rest API](waves-node-rest-api/waves-node-rest-api.md)
   * [Address](waves-node-rest-api/address.md)
   * [Lease Transactions](waves-node-rest-api/lease-transactions.md)
   * [Asset Transactions](waves-node-rest-api/asset-transactions.md)
