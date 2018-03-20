@@ -59,23 +59,21 @@
 * [Reducing Disk Space Usage](guidelines/reducing-disk-space-usage.md)
 * [Matcher](guidelines/matcher.md)
 
-## Waves Node Rest API
-
-* [Asset Transactions](waves-node-rest-api/asset-transactions.md)
-  * [Public Functions](waves-node-rest-api/public-functions.md)
-  * [Private Functions](waves-node-rest-api/private-functions.md)
-* [Address](waves-node-rest-api/address.md)
-* [Lease Transactions](waves-node-rest-api/lease-transactions.md)
-* [Alias Transaction](waves-node-rest-api/alias-transaction.md)
-* [Transactions](waves-node-rest-api/transactions.md)
-* [Peers](waves-node-rest-api/peers.md)
-* [Blocks](waves-node-rest-api/blocks.md)
-* [Utils](waves-node-rest-api/utils.md)
-
 ## Application Development and API
 
 * Client Libraries
-* Node API Overview
+* [Node API Overview](waves-node-rest-api/node-api-overview.md)
+* Waves Node Rest API
+  * [Address](waves-node-rest-api/address.md)
+  * [Lease Transactions](waves-node-rest-api/lease-transactions.md)
+  * [Asset Transactions](waves-node-rest-api/asset-transactions.md)
+    * [Public Functions](waves-node-rest-api/asset-transactions/public-functions.md)
+    * [Private Functions](waves-node-rest-api/asset-transactions/private-functions.md)
+  * [Alias Transaction](waves-node-rest-api/alias-transaction.md)
+  * [Transactions](waves-node-rest-api/transactions.md)
+  * [Peers](waves-node-rest-api/peers.md)
+  * [Blocks](waves-node-rest-api/blocks.md)
+  * [Utils](waves-node-rest-api/utils.md)
 * Examples
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
