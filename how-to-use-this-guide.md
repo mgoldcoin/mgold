@@ -20,7 +20,7 @@ This section contains explantions about Waves main Features such as \(Waves-NG P
 3. [Leased Proof of Stake \(LPoS\)](https://waves-platform.gitbooks.io/wavesdocs/content/leased-proof-of-stake-lpos.html).
 4. [Waves-NG Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/waves-ng-protocol.html).
 5. [Activation Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/activation-protocol.html).
-6. 
+
 # 3. Waves Client
 
 This section contains step-by-step guides for Installing Waves Client, Creating Account, Leasing Waves and Issue as asset.
