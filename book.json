@@ -15,7 +15,8 @@
     "usabilla",
     "include-html@0.2.0",
     "codetabs",
-    "custom-js-css"
+    "custom-js-css",
+    "scripts"
   ],
   "pluginsConfig": {
     "theme-bandwidth": {
