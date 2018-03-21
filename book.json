@@ -15,8 +15,7 @@
     "usabilla",
     "include-html@0.2.0",
     "codetabs",
-    "custom-js-css",
-    "scripts"
+    "custom-js-css"
   ],
   "pluginsConfig": {
     "theme-bandwidth": {
@@ -80,11 +79,6 @@
       ],
       "css": [
         "./theme/test.css"
-      ]
-    },
-    "scripts": {
-      "files": [
-        "./theme/test.js"
       ]
     }
   }
