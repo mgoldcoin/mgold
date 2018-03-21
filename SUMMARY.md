@@ -31,7 +31,7 @@
   * [leasing WAVES](waves-client/leasing-waves.md)
 * [Assets Management](waves-client/assets-management.md)
   * [Issue an Asset](waves-client/assets-management/issue-an-asset.md)
-  * ReIssue an Asset
+  * [ReIssue an Asset](waves-client/assets-management/reissue-an-asset.md)
 
 ## Waves Full Node
 
