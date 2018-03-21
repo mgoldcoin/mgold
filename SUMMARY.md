@@ -44,9 +44,9 @@
 * [Upgrading](waves-full-node/upgrading.md)
 * [Export and Import From The Blockchain](guidelines/export-and-import-from-the-blockchain.md)
 * [Reducing Disk Space Usage](guidelines/reducing-disk-space-usage.md)
-* Joining Testnet
-* Configuration
-* Mining
+* [Joining Testnet](waves-full-node/joining-testnet.md)
+* [Configuration](waves-full-node/configuration.md)
+* [Mining](waves-full-node/mining.md)
 
 ## Developers Guide
 
