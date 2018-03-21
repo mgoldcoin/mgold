@@ -2,7 +2,7 @@
 
 In this guide, you can find all documentation for Waves Platform as shown below:
 
-# 1. Overview  
+# 1. Overview
 
 This section will give you a general information about Waves Platform and its main components.
 
@@ -20,9 +20,7 @@ This section contains explantions about Waves main Features such as \(Waves-NG P
 3. [Leased Proof of Stake \(LPoS\)](https://waves-platform.gitbooks.io/wavesdocs/content/leased-proof-of-stake-lpos.html).
 4. [Waves-NG Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/waves-ng-protocol.html).
 5. [Activation Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/activation-protocol.html).
-6. [Mass Transfer Transactions.](https://waves-platform.gitbooks.io/wavesdocs/content/mass-transfer-transaction.html)
-7. [Waves Contracts Language Description.](https://waves-platform.gitbooks.io/wavesdocs/content/waves-contracts-language-description.html)
-
+6. 
 # 3. Waves Client
 
 This section contains step-by-step guides for Installing Waves Client, Creating Account, Leasing Waves and Issue as asset.
@@ -40,6 +38,8 @@ This section contains all information about Installing, configuring and upgradin
 2. [How To Install a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html)
 3. [How to Configure a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-configure-a-node.html)
 4. [Upgrading](https://waves-platform.gitbooks.io/wavesdocs/waves-full-node/upgrading.html)
+5. [Export and Import From The Blockchain](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/export-and-import-from-the-blockchain.html)
+6. [Reducing Disk Space Usage](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/reducing-disk-space-usage.html)
 
 # 5. Developers Guide
 
@@ -49,8 +49,8 @@ This Section contains technical details about Waves Platform
 2. [Data Structures](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/data-structures.html)
 3. [Validation Rules](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/validation-rules.html)
 4. [Creating a Private Waves Blockchain Network](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/creating-a-private-waves-blockchain-network.html)
-5. [Export and Import From The Blockchain](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/export-and-import-from-the-blockchain.html)
-6. [Reducing Disk Space Usage](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/reducing-disk-space-usage.html)
+5. [Mass Transfer Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/mass-transfer-transaction.html).
+6. [Waves Contracts Language Description.](https://waves-platform.gitbooks.io/wavesdocs/content/waves-contracts-language-description.html)
 
 # 6. Waves Node Rest API
 
