@@ -1,79 +1,83 @@
 {
-    "plugins": [
-        "theme-bandwidth@1.9.3",
-        "header",
-        "sharing",
-        "custom-jquery-postprocessing",
-        "bandwidth-toggle-chapters",
-        "swagger",
-        "custom-favicon",
-        "gtm",
-        "-hightlight",
-        "-fontsettings",
-        "bandwidth-highlight",
-        "bandwidth-fonts",
-        "usabilla",
-        "include-html@0.2.0",
-        "codetabs",
-        "custom-js-css"
-    ],
-    "pluginsConfig": {
-        "theme-bandwidth": {
-            "languages": [
-                {
-                    "lang": "js",
-                    "name": "Js",
-                    "default": true
-                },
-                {
-                    "lang": "csharp",
-                    "name": "C#"
-                },
-                {
-                    "lang": "ruby",
-                    "name": "ruby"
-
-                },
-                {
-                    "lang": "bash",
-                    "name": "cURL"
-                }
-            ]
+  "plugins": [
+    "theme-bandwidth@1.9.3",
+    "header",
+    "sharing",
+    "custom-jquery-postprocessing",
+    "bandwidth-toggle-chapters",
+    "swagger",
+    "custom-favicon",
+    "gtm",
+    "-hightlight",
+    "-fontsettings",
+    "bandwidth-highlight",
+    "bandwidth-fonts",
+    "usabilla",
+    "include-html@0.2.0",
+    "codetabs",
+    "custom-js-css"
+  ],
+  "pluginsConfig": {
+    "theme-bandwidth": {
+      "languages": [
+        {
+          "lang": "js",
+          "name": "Js",
+          "default": true
         },
-        "custom-js-css": {
-            "js": ["./theme/test.js"],
-            "css": []
+        {
+          "lang": "csharp",
+          "name": "C#"
         },
-      "layout": {
-            "headerPath" : "layouts/header.html"
+        {
+          "lang": "ruby",
+          "name": "ruby"
         },
-      "customJquery": {
-        "js": "theme/test.js"
-      },
-      "gtm": {
-        "token": "GTM-P2JT7Z",
-        "virtualPageViews": true
-      },
-      "usabilla" : {
-            "usabillaId" : "c590d7d0e7ac"
-      },
-      "favicon" : "favicon/favicon.ico",
-      "sharing": {
-            "facebook": false,
-            "twitter": false,
-            "google": false,
-            "weibo": false,
-            "instapaper": false,
-            "vk": false,
-            "all": [
-            "facebook", "google", "twitter",
-            "weibo", "instapaper"
-        ]
-      },
-     "fontsettings": {
-            "theme": "white",
-            "family": "sans",
-            "size": 2
+        {
+          "lang": "bash",
+          "name": "cURL"
         }
+      ]
+    },
+    "custom-js-css": {
+      "js": [
+        "/theme/test.js"
+      ],
+      "css": []
+    },
+    "layout": {
+      "headerPath": "layouts/header.html"
+    },
+    "customJquery": {
+      "js": "theme/test.js"
+    },
+    "gtm": {
+      "token": "GTM-P2JT7Z",
+      "virtualPageViews": true
+    },
+    "usabilla": {
+      "usabillaId": "c590d7d0e7ac"
+    },
+    "favicon": "favicon/favicon.ico",
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "google": false,
+      "weibo": false,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+        "facebook",
+        "google",
+        "twitter",
+        "weibo",
+        "instapaper"
+      ]
+    },
+    "fontsettings": {
+      "theme": "white",
+      "family": "sans",
+      "size": 2
     }
+  }
 }
