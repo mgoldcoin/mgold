@@ -14,7 +14,8 @@
         "bandwidth-fonts",
         "usabilla",
         "include-html@0.2.0",
-        "codetabs"
+        "codetabs",
+        "custom-js-css"
     ],
     "pluginsConfig": {
         "theme-bandwidth": {
@@ -38,6 +39,10 @@
                     "name": "cURL"
                 }
             ]
+        },
+        "custom-js-css": {
+            "js": ["./theme/test.js"],
+            "css": []
         },
       "layout": {
             "headerPath" : "layouts/header.html"
