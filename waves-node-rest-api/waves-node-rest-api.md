@@ -6,5 +6,5 @@
 
 # The Web Interface to Waves Full Node API
 
-Please check [**here**](http://nodes.wavesplatform.com/api-docs/index.html) for The Web Interface to the Waves Full Node API or [**Here**](https://documenter.getpostman.com/view/2733299/waves-full-node/RVnWiKZJ).
+For The Web Interface to the Waves Full Node API, Please check [**here**](http://nodes.wavesplatform.com/api-docs/index.html) or [**Here**](https://documenter.getpostman.com/view/2733299/waves-full-node/RVnWiKZJ).
 
