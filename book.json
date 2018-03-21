@@ -6,11 +6,7 @@
     "swagger",
     "custom-favicon",
     "gtm",
-    "-hightlight",
-    "-fontsettings",
     "bandwidth-highlight",
-    "bandwidth-fonts",
-    "usabilla",
     "include-html@0.2.0",
     "codetabs",
     "custom-js-css"
