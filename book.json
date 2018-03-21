@@ -75,7 +75,7 @@
     },
     "custom-js-css": {
       "js": [
-        "./theme/text.js"
+        "./theme/test.js"
       ],
       "css": [
         "./theme/test.css"
