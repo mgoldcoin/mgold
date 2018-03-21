@@ -79,4 +79,5 @@
   * [Utils](waves-node-rest-api/utils.md)
 * [Examples](waves-node-rest-api/examples.md)
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
+* [Swagger](waves-node-rest-api/swagger.md)
 
