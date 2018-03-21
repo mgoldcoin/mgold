@@ -59,7 +59,7 @@
 
 ## Application Development and API
 
-* Client Libraries
+* [Client Libraries](waves-node-rest-api/client-libraries.md)
   * WavesCS
   * WavesJ
   * PyWaves
@@ -77,6 +77,6 @@
   * [Peers](waves-node-rest-api/peers.md)
   * [Blocks](waves-node-rest-api/blocks.md)
   * [Utils](waves-node-rest-api/utils.md)
-* Examples
+* [Examples](waves-node-rest-api/examples.md)
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
