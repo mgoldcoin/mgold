@@ -14,8 +14,7 @@
     "bandwidth-fonts",
     "usabilla",
     "include-html@0.2.0",
-    "codetabs",
-    "custom-js-css"
+    "codetabs"
   ],
   "pluginsConfig": {
     "theme-bandwidth": {
@@ -39,17 +38,11 @@
         }
       ]
     },
-    "custom-js-css": {
-      "js": [
-        "/theme/test.js"
-      ],
-      "css": []
-    },
     "layout": {
       "headerPath": "layouts/header.html"
     },
     "customJquery": {
-      "js": "theme/test.js"
+      "js": "./theme/test.js"
     },
     "gtm": {
       "token": "GTM-P2JT7Z",
