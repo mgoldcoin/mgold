@@ -4,3 +4,6 @@ module.exports = function ($) {
     
     return $.html();
 }
+
+
+console.log(1);
