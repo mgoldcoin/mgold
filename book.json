@@ -42,7 +42,7 @@
       "headerPath": "layouts/header.html"
     },
     "customJquery": {
-      "js": "./theme/test.js"
+      "js": "/theme/test.js"
     },
     "gtm": {
       "token": "GTM-P2JT7Z",
