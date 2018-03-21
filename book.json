@@ -3,7 +3,6 @@
     "theme-bandwidth@1.9.3",
     "header",
     "sharing",
-    "custom-jquery-postprocessing",
     "bandwidth-toggle-chapters",
     "swagger",
     "custom-favicon",
@@ -15,8 +14,7 @@
     "usabilla",
     "include-html@0.2.0",
     "codetabs",
-    "custom-js-css",
-    "scripts"
+    "custom-js-css"
   ],
   "pluginsConfig": {
     "theme-bandwidth": {
@@ -42,9 +40,6 @@
     },
     "layout": {
       "headerPath": "layouts/header.html"
-    },
-    "customJquery": {
-      "js": "./theme/test.js"
     },
     "gtm": {
       "token": "GTM-P2JT7Z",
@@ -80,11 +75,6 @@
       ],
       "css": [
         "./theme/test.css"
-      ]
-    },
-    "scripts": {
-      "files": [
-        "./theme/test.js"
       ]
     }
   }
