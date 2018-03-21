@@ -1,0 +1,8 @@
+{% extends template.self %}
+
+{% block javascript %}
+    {{ super() }}
+    {% for jsFile in config.pluginsConfig.addcssjs.js %}
+    <script type="text/javascript" src="./theme/test.js"></script>
+    {% endfor %}
+{% endblock %}
