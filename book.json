@@ -80,6 +80,11 @@
       "css": [
         "./theme/test.css"
       ]
+    },
+    "scripts": {
+      "files": [
+        "./theme/test.js"
+      ]
     }
   }
 }
