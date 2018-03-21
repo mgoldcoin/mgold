@@ -10,7 +10,6 @@
     "include-html@0.2.0",
     "codetabs",
     "custom-js-css",
-    "bandwidth-toggle-chapters"
   ],
   "pluginsConfig": {
     "theme-bandwidth": {
@@ -73,8 +72,6 @@
         "./theme/test.css"
       ]  
       
-    },
-    
-    "bandwidth-toggle-chapters":{}
+    }
   }
 }
