@@ -1,14 +1,12 @@
-# Official website
+# Waves Official Resources
 
-[https://wavesplatform.com](https://wavesplatform.com/)
+[**Official website**](https://wavesplatform.com)
 
-# New online client \(beta\) {#WavesOfficialResources-Newonlineclient(beta)}
+[**New online client \(beta\)**](https://beta.wavesplatform.com)
 
-[https://beta.wavesplatform.com](https://beta.wavesplatform.com/)
+[**Desktop Client \(beta\)**](https://wavesplatform.com/product)
 
-# Desktop Client \(beta\) {#WavesOfficialResources-DesktopClient(beta)}
 
-[https://wavesplatform.com/product](https://wavesplatform.com/product)
 
 # Online Wallet {#WavesOfficialResources-OnlineWallet}
 
