@@ -1,3 +1,5 @@
+# Waves Platform Components
+
 # Lite Client
 
 \[[https://beta.wavesplatform.com](https://beta.wavesplatform.com)\]
