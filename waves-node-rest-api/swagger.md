@@ -1,7 +1,6 @@
 ```
-<swagger>swagger.json</swagger>
+
 ```
 
-  
 
 
