@@ -4,7 +4,7 @@ Any blockchain requires a mechanism allowing to decide which chain of blocks is 
 
 Since each Blockchain is a system of decentralized “nodes” \(or computers confirming transactions occurring on the network and maintaining a decentralized consensus across the system\) it is important for these nodes, also known as “miners” in the Proof-of-Work system, or “validators” in the Proof-of-Stake system, to be incentivized to keep confirming transactions. The way in which “miner” or “validator” nodes confirm transactions and how those nodes are incentivized to doso - isthe main distinction between Proof-of-Work and Proof-of-Stake.
 
-# Proof-of-Work \(PoW\) {#LeasedProofofStake(LPOS)-Proof-of-Work(PoW)}
+# 1. Proof-of-Work \(PoW\) {#LeasedProofofStake(LPOS)-Proof-of-Work(PoW)}
 
 Proof-of-Work is a consensus algorithm which require a block generator to perform an expensive computer calculation, also called mining, that needs to be performed in order to create a new group of trustless transactions \(the so-called block\) on adistributed ledger called blockchain.
 
@@ -34,14 +34,14 @@ The advantage of a Proof-of-work network is that the majority of voting power wh
 
 This centralisation of voting power and, essentially, control of the network defeats the purpose of a distributed ledger-based cryptocurrency since it contradicts its entire principle of distributing all elements within the network to avoid the presence of a central authority.
 
-## Proof-of-Work downsides {#LeasedProofofStake(LPOS)-Proof-of-Workdownsides}
+## 1.1 Proof-of-Work downsides {#LeasedProofofStake(LPOS)-Proof-of-Workdownsides}
 
 * Requires more electric power which in turn costs the miner.
 * High computing power hardware which is expensive.
 * Possibility of miners moving their hardware to mine a different coin if the reward is better there \(loyalty\).
 * With more and more coins \(like more count of bitcoins\) getting released, miner’s reward would come down as the coin becomes scarce to mine.
 
-# Proof-of-Stake \(PoS\) {#LeasedProofofStake(LPOS)-Proof-of-Stake(PoS)}
+# 2. Proof-of-Stake \(PoS\) {#LeasedProofofStake(LPOS)-Proof-of-Stake(PoS)}
 
 Proof of stake is a different way to validate transactions based and achieve the distributed consensus. The purpose is the same of the proof of work, but the process to reach the goal is quite different.
 
@@ -56,7 +56,7 @@ PoS has to constratints to avoid some kinds of attacks:
 * Minimum amount of WAVES to generate is 1000 WAVES
 * When balance is increased generating balance will be increased after 1000 blocks.
 
-## Why we use Proof-of-Stake {#LeasedProofofStake(LPOS)-WhyweuseProof-of-Stake}
+## 2.1 Why we use Proof-of-Stake {#LeasedProofofStake(LPOS)-WhyweuseProof-of-Stake}
 
 * Significant advantages of Poof-of-Stake include energy efficiency
 * Waves Implement the Proof-of-Stake method for a more greener and cheaper distributed form of consensus.
@@ -64,7 +64,7 @@ PoS has to constratints to avoid some kinds of attacks:
 
 ![](/assets/Screen Shot 2018-01-17 at 5.09.04 PM.png)Figure 1, PoW vs PoS
 
-# Leased Proof-of-Stake \(LPoS\) {#LeasedProofofStake(LPOS)-LeasedProof-of-Stake(LPoS)}
+# 3. Leased Proof-of-Stake \(LPoS\) {#LeasedProofofStake(LPOS)-LeasedProof-of-Stake(LPoS)}
 
 LPoS is an enhanced version of Proof-of-Stake. In a regular Proof-of-Stake system, each node that holds a certain amount of cryptocurrency is eligible to add the next block to the blockchain but in the LPoS system, on the Waves Platform, users can leasetheir balance to full nodes. WithLPoS, the user will have the ability to Lease WAVES form the wallet to different contractors which can pay percentage as a reward. The larger the amount that is leased to a full node, the higher the chances of that full node being selected to produce the next block. If that full node is selected to produce the next block, the leaser will then receive a percentage of the transaction fee that is collected by the full node.
 
@@ -75,7 +75,7 @@ User can leas his waves through leasing on any computer or mobile device that ha
 ![](/assets/Webp.net-resizeimage-2.jpg)  
 Figure 2, LPOS System
 
-## Benefits of leasing your WAVES {#LeasedProofofStake(LPOS)-BenefitsofleasingyourWAVES}
+## 3.1 Benefits of leasing your WAVES {#LeasedProofofStake(LPOS)-BenefitsofleasingyourWAVES}
 
 Safety \(your WAVES never leave your wallet\):
 
@@ -99,9 +99,9 @@ Get Rewards:
 * The more transactions that are made on the network, the more rewards leasers get.
 * These rewards mostly come in the form of WAVES but also can come in the form of different tokens with the unique Waves feature where different tokens can be accepted as a fee.
 
-# [Leasing Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/lease-transactions.html) {#LeasedProofofStake(LPOS)-LeasingTransactions}
+# 3.2 Leasing Transactions {#LeasedProofofStake(LPOS)-LeasingTransactions}
 
-## Create Leasing Transaction {#LeasedProofofStake(LPOS)-CreateLeasingTransaction}
+## 3.2.1 Create Leasing Transaction {#LeasedProofofStake(LPOS)-CreateLeasingTransaction}
 
 ```
 "Id": 9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr ,
@@ -112,14 +112,14 @@ Get Rewards:
 "timestamp":46305781705234713
 ```
 
-## Cancel Leasing Transaction {#LeasedProofofStake(LPOS)-CancelLeasingTransaction}
+## 3.2.2 Cancel Leasing Transaction {#LeasedProofofStake(LPOS)-CancelLeasingTransaction}
 
 ```
 "sender" : 3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS ,
 "leaseId": 9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr
 ```
 
-# Useful links for leasing {#LeasedProofofStake(LPOS)-Usefullinksforleasing}
+# 3.2.3 Useful links for leasing {#LeasedProofofStake(LPOS)-Usefullinksforleasing}
 
 For Step-by-Step guide to lease your waves, click [here](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/leasing-waves.html).
 
