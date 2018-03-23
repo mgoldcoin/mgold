@@ -1,43 +1,43 @@
 # Waves Platform Components
 
-# Lite Client
+# 1. Lite Client
 
 \[[https://beta.wavesplatform.com](https://beta.wavesplatform.com)\]
 
 The Waves Lite Client is a Chrome Extension that can be easily installed and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
-# Token Generation Tool
+# 2. Token Generation Tool
 
 It allows to issue special digital items within the Platform \(“Tokens”\).
 
-# Electronic wallet \(“Waves Wallet”\)
+# 3. Electronic wallet \(“Waves Wallet”\)
 
 * It allows to store, track, transfer and manage your cryptocurrencies, the Tokens that you issue or the Tokens that you acquire.
 * The wallet has a built-in decentralized exchange platform that can be used to exchange assets, cryptocurrencies and fiat tokens.
 
-# Decentralized cryptocurrency exchange \(“DEX”\)
+# 4. Decentralized cryptocurrency exchange \(“DEX”\)
 
 It allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
-# Nodes
+# 5. Nodes
 
 * [Easy to install](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html).
 * A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
 * It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
 * Receiving rewards from the network by leasing your balance to a full node. 
 
-# Networks
+# 6. Networks
 
 * [Create private Waves network](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/creating-a-private-waves-blockchain-network.html) consisting of one node or more.
 * New versions of the Waves Node are tested by the development community on the TestNet cluster.
 
-# Matchers
+# 7. Matchers
 
 * Nodes contain an order matcher which is used to power the decentralised exchange.
 * Matcher nodes pair buyers and sellers, executing trades instantly whilst still ensuring these are ultimately settled on the blockchain for maximum transparency and security.
 * Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
 
-# Mobile apps
+# 8. Mobile apps
 
 * Waves Wallet is a mobile client to WavesPlatform available on Android and IOS.
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
