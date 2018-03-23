@@ -2,17 +2,17 @@
 
 Asset is a sort of a digital asset that has a certain consensus value. The Waves platform allows users to create their own tokens to fulfill their specific need.
 
-# Issuing your own Token {#Assets(customtokens)-IssuingyourownToken}
+# 1. Issuing your own Token {#Assets(customtokens)-IssuingyourownToken}
 
 Waves platform allows business to issue their own tokens for whatever need they have. By releasing tokens, a business is able to create an internal digital currency via the blockchain. This way, it can use the blockchain to pay for the services and goods within projects or even crowdfunding.
 
 Issuing a token on the Waves Platform comes with multiple benefits, including the ability to trade the token instantly on the Waves Decentralized Exchange. Not only that, but Waves tokens can also be used to pay fees within the network, creating additional demand for custom assets on its blockchain. After initial creation of an asset, the total tokens supply can be further increased.
 
-# Assets Operations\(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
+# 2. Assets Operations\(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
 
 You can find more details about Asset Transactions [here](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/asset-transactions.html).
 
-## Issue Asset Transaction {#Assets(customtokens)-IssueAssetTransaction}
+## 2.1 Issue Asset Transaction {#Assets(customtokens)-IssueAssetTransaction}
 
 This transaction is responsible to create a new asset depending on the user specific needs.
 
@@ -26,7 +26,7 @@ This transaction is responsible to create a new asset depending on the user spec
 | Issue Date | \[Asset creation date\]. |
 | Fee | \[The fees for creating your own tokens is 1 WAVES\] Int - fee offered to the miners. |
 
-## Reissue Asset Transaction {#Assets(customtokens)-ReissueAssetTransaction}
+## 2.2 Reissue Asset Transaction {#Assets(customtokens)-ReissueAssetTransaction}
 
 Only the asset issuer is able to reissue the asset if the issuer needs to increase the amount of his total token supply.
 
@@ -38,7 +38,7 @@ Only the asset issuer is able to reissue the asset if the issuer needs to increa
 | Reissue Date | \[Reissue asset creation date\]. |
 | Fee | \[The fees for creating your own tokens is 1 WAVES\] Int - fee offered to the miners. |
 
-## Burn Asset {#Assets(customtokens)-BurnAsset}
+## 2.3 Burn Asset {#Assets(customtokens)-BurnAsset}
 
 Any address holding a given asset can choose to destroy some or all of the assets it holds. The asset state and skip lists are being recalculated based on the Delete transaction.
 
@@ -49,7 +49,7 @@ Any address holding a given asset can choose to destroy some or all of the asset
 | Burn Date | \[Burn asset deletion date\]. |
 | Fee | \[Transaction Fee\]. |
 
-# Examples of Current Verified Assets {#Assets(customtokens)-HowtoIssueCustomizedTokenontheWavesPlatform}
+# 3. Examples of Current Verified Assets {#Assets(customtokens)-HowtoIssueCustomizedTokenontheWavesPlatform}
 
 * [Waves Community Token \(WCT\)](http://www.waveswiki.org/index.php?title=Waves_Community_Token_%28WCT%29)
 * [Miner Reward Token \(MRT\)](http://www.waveswiki.org/index.php?title=Miner_Reward_Token_%28MRT%29)
@@ -64,7 +64,7 @@ Any address holding a given asset can choose to destroy some or all of the asset
 
 [Here](http://support.wavesplatform.com/forums/2-knowledge-base/topics/8141-list-of-verified-assets/) you can find a more complete, but still non-exhaustivelist of verified asset \(the list is constantly updated\).
 
-# Pre-ICO Token Sale on Waves DEX {#Assets(customtokens)-Pre-ICOTokenSaleonWavesDEX}
+# 4. Pre-ICO Token Sale on Waves DEX {#Assets(customtokens)-Pre-ICOTokenSaleonWavesDEX}
 
 You need to do the following if you want to pre-sell your ICO tokens on the DEX platform:
 
