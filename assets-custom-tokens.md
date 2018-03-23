@@ -8,7 +8,7 @@ Waves platform allows business to issue their own tokens for whatever need they 
 
 Issuing a token on the Waves Platform comes with multiple benefits, including the ability to trade the token instantly on the Waves Decentralized Exchange. Not only that, but Waves tokens can also be used to pay fees within the network, creating additional demand for custom assets on its blockchain. After initial creation of an asset, the total tokens supply can be further increased.
 
-# 2. Assets Operations\(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
+# 2. Assets Operations \(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
 
 You can find more details about Asset Transactions [here](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/asset-transactions.html).
 
