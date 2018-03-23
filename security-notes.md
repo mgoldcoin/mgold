@@ -1,6 +1,6 @@
 # Important Security Notes to Be Considered By End Users {#SecurityNotes-ImportantSecurityNotestoBeConsideredByEndUsers:}
 
-# SEED & Password {#AccountsOperations-SEED&Password}
+# 1. SEED & Password {#AccountsOperations-SEED&Password}
 
 Before you create an account, you should know some important points about the Waves wallet system. In Waves wallet, there is no .dat file which keeps your private keys but a SEED which grants you access to them. The SEED is by default a string of 15 English words and basically your passphrase to your funds -**if you lose your SEED, you lose access to your account**.
 
@@ -18,7 +18,7 @@ The password has two purposes:
 * Forgetting the password, you can easily create a new one by using the form of account recovery through a secret phrase.
 * The secret phrase can not be changed. If you accidentally sent it to someone or suspect that it was taken by fraudsters, immediately create a new Waves wallet and transfer all funds to it, without forgetting to keep a new secret phrase.
 
-## Personal Account {#SecurityNotes-PersonalAccount}
+## 2. Personal Account {#SecurityNotes-PersonalAccount}
 
 * To access your account, do not use browsers that have extensions and plug-ins installed, they can access your secret passphrase.
 * Protect the account with a password.
@@ -26,7 +26,7 @@ The password has two purposes:
 * Password protects your account as part of a specific device or browser.
 * Check whether the connection is in secure SSL mode - in the address bar of your web browser, you should see the closed lock icon \(on the right or on the left, depending on the browser\).
 
-## General Notes {#SecurityNotes-GeneralNotes}
+## 3. General Notes {#SecurityNotes-GeneralNotes}
 
 * Use the official resources of Waves \(groups in social networks, sites, applications\).
 * Before you enter a secret phrase from your account or download the application, carefully look at the address bar of the browser and make sure that you are on the official resource of the company:
