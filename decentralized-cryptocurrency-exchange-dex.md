@@ -2,7 +2,7 @@
 
 The need to convert and exchange between crypto tokens is increasing with the enlargement of cryptocurrencies number. One of the main features of the blockchain environment is decentralization, but until recently only centralized exchanges existed, even for cryptocurrencies such as Bitcoin or Etherium. Many exchanges support the buy and sale of cryptocurrencies, fiat currencies, and cryptocurrency tokens. Examples of such centralized exchanges are Coinbase, BTC-e, ShapeShift and Mt.Gox.The centralization experience in this sphere are lamentable, cause of a single point of failure - the exchange. In this case all users funds should be kept at one place for participation in trade. The users funds are stored directly in the exchange, and it is responsible not only for matching orders and keep the current order book in the correct state, but also for depositors' funds. The Mt.Gox collapse is the brightest example of why it is not reliable, the resulting loss after compromised it was about 650,000 BTC. Someone can hack into exchange system and all users will lost everything, cause their private keys is kept all together, like in one of version BTC-e fund's theft. And these are not the only exchanges that have lost the funds of depositors in this way. The use of a decentralized approach in the entity of an exchange helps to avoid the involvement of many users assets into problems caused by the danger of frontrunning by intruders into the work of exchange.
 
-# Decentralized Exchange {#Decentralizedcryptocurrencyexchange(DEX)-DecentralizedExchange}
+# 1. Decentralized Exchange {#Decentralizedcryptocurrencyexchange(DEX)-DecentralizedExchange}
 
 Thedecentralize exchanges do not require users to trust them with their money: user's wallet do not controlled by a single entity. Orders are digitally signed directly by owners, as an authorization process.Users control their funds, but on-chain trading have the side effect of not real-time trading as at a centralized exchange.
 
@@ -14,7 +14,7 @@ Also withsuch lack of automatic matching and fast cancellation, there is vulnera
 
 What if we decentralize not all component of exchange, but only the matcher part? This design eliminates two of the described problems above: the arbitrageur with already cancelled orders, and miners front-running. Unlike centralized exchanges, the decentralized solution with centralized matcher won’t have the power to steal users’ deposits.
 
-# Waves DEX {#Decentralizedcryptocurrencyexchange(DEX)-WavesDEX}
+# 2. Waves DEX {#Decentralizedcryptocurrencyexchange(DEX)-WavesDEX}
 
 Waves provides a decentralized exchange \(DEX\),which allows to trade different assets back and forth between users, as a traditional exchange, with stronger security guarantees to end users due to its decentralized nature. An opportunity of creation some new assets, based on Waves, allows early trading of a crowdfunding stake, that provides liquidity for tokens. For this purpose tokens should be sold in public locations, where buyers and sellers may post orders.
 
@@ -26,6 +26,8 @@ A user initiates his willingness to purchase or sale assets by creating, signing
 
 ![](/assets/DEX1.png)Figure 1
 
+
+
 User can set an expiration time \(maximum timestamp\) to the order, and when the order expires it will be automatically canceled. One of the rules at DEX is that all orders older than 30 days will be canceled by default. An expiration time for each order is specified by the user at the time the order is signed. The expiration time is a long integer value that represents the absolute number of seconds since the unix epoch. When order is unfilled and its expiration time is more than now unix timestamp,it can becanceled by user. In this case the order get into blockchain as Cancelled order and nobody can fill it sinse that.
 
 The full execution cycle for one order is following:
@@ -36,7 +38,7 @@ The full execution cycle for one order is following:
 
 In every time of order's life it has a certain state, depending on which stage of its life cycle it is now. When order is in order book, but not filled yet - it has "Accepted" state, also it can be "Filled", "Partially Filled" or "Canceled". Orders, which are not fully filled, can be canceled, after that the order will be removed from matcher's order book.
 
-# Matcher fee calculation {#Decentralizedcryptocurrencyexchange(DEX)-Matcherfeecalculation}
+# 3. Matcher fee calculation {#Decentralizedcryptocurrencyexchange(DEX)-Matcherfeecalculation}
 
 The fix full transaction fee now is equal to**0.003 waves for one order**, whether buying or selling, regardless of the amount of the future deal. The exchange transaction contains two separate fields for Matcher's fee, which goes from buyer's order and seller's order. An order can be fully executed by some transaction, in this case all matcher fee from it is included in that transaction.
 
@@ -46,7 +48,7 @@ If the order is**partially**executed by some deal-transaction, matcherFee is inc
 
 The remaining matcher fee for this order will be included into other transactions until order's fully execution.
 
-### Example: {#Decentralizedcryptocurrencyexchange(DEX)-Example:}
+## 3.1 Example:
 
 There are 3 different orders \(Figure 2\): two buy orders and one sell.For each full order user have to pay exactly**0.003 waves**of fee, and this fee will be written off as the order is executed. In our example:
 
@@ -68,7 +70,7 @@ Thus, the fee that the matcher gets from users for these transactions is**0.0021
 
 To sum up, for all time the matcher keeps only 18.74% of fees and everything else it pays to miners for placing transactions in blocks \(data for 8.02.2018\).
 
-# Installing DEX {#Decentralizedcryptocurrencyexchange(DEX)-InstallingDEX}
+# 4. Installing DEX {#Decentralizedcryptocurrencyexchange(DEX)-InstallingDEX}
 
 * Download the Waves client from our official website,
   [www.WavesPlatform.com](http://www.wavesplatform.com/)
@@ -76,7 +78,7 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
   [Waveswallet.io](http://waveswallet.io/)
 * Deposit your bitcoins into the wallet and start trading using the Exchange tab.
 
-# Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
+# 5. Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
 
 * Users can install their own matcher by installing the Waves software and enabling the matching functionality.
 * The Matcher earns fees from the services it provides, so you can substantially increase your mining revenues.
