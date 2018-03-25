@@ -33,7 +33,7 @@ If a new feature was activated but the node was not updated to support it, the n
 
 # 3. Configuration file changes
 
-The new configuration file sectionfeatureswas introduced. It contains two parameters:
+The new configuration file section `features` was introduced. It contains two parameters:
 
 * auto-shutdown-on-unsupported-feature could be yes or no. If this setting is turned on, the node will be shut down on activation of a feature that is not implemented by node’s codebase. By default, it set to yes.
 
@@ -50,9 +50,9 @@ Below you can see an example of the new section.
 
 # 4. Changes to REST API
 
-To support the Features Activation Protocol new API method was added under the node/activation route. In response, the JSON that describes the current state of features will be returned.
+To support the Features Activation Protocol new API method was added to the node/activation route. In response, the JSON that describes the current state of features will be returned.
 
-```cpp
+```js
  {
    "height": 678929,
    "approvalInterval": 10000,
@@ -101,7 +101,7 @@ Fields of returned object:
 
 * blockchainStatus - Current status of the feature on the blockchain, could be DEFINED, VOTING, APPROVED or ACTIVATED
 
-* nodeStatus - Node feature status, could be SUPPORTED of UNSUPPORTED
+* nodeStatus - Node feature status, could be SUPPORTED or UNSUPPORTED
 
 * supportBlocks - Number of blocks that contains support for the feature
 

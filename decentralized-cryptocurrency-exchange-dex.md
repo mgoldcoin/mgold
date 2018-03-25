@@ -28,31 +28,31 @@ A user initiates his willingness to purchase or sell assets by creating, signing
 
 
 
-User can set an expiration time \(maximum timestamp\) to the order, and when the order expires it will be automatically canceled. One of the rules at DEX is that all orders older than 30 days will be canceled by default. An expiration time for each order is specified by the user at the time the order is signed. The expiration time is a long integer value that represents the absolute number of seconds since the unix epoch. When order is unfilled and its expiration time is more than now unix timestamp,it can becanceled by user. In this case the order get into blockchain as Cancelled order and nobody can fill it sinse that.
+User can set an expiration time \(maximum timestamp\) to the order, and when the order expires it will be automatically canceled. One of the rules at DEX is that all orders older than 30 days will be canceled by default. An expiration time for each order is specified by the user at the time the order is signed. The expiration time is a long integer value that represents the absolute number of seconds since the UNIX epoch. When the order is unfilled and its expiration time is more than now UNIX timestamp, it can be canceled by the user. In this case, the order gets into blockchain as Cancelled order and nobody can fill it since that.
 
 The full execution cycle for one order is following:
 
-1. If for a submitted order there is no counter-order matched by price, then order would be put in the corresponding order book.
+1. If for a submitted order there is no counter-order matched by price, then the order would be put in the corresponding order book.
 2. If there is a counter-order that matches with the submitted order, then the order execution is performed. That means the counter-order is removed from order book and the matcher creates exchange transaction, signs it by matcher's private key and is sent to the Waves network for including in the blockchain.
-3. If an amount of a submitted order is a big enough to execute a few order, Matcher creates several transaction. Created transactions have amounts equal to matched counter-order amounts. Matched counter-orders are chosen in order of their acceptance time \(First In, First Out\).
+3. If an amount of a submitted order is a big enough to execute a few orders, Matcher creates several transactions. Created transactions have amounts equal to matched counter-order amounts. Matched counter-orders are chosen in order of their acceptance time \(First In, First Out\).
 
-In every time of order's life it has a certain state, depending on which stage of its life cycle it is now. When order is in order book, but not filled yet - it has "Accepted" state, also it can be "Filled", "Partially Filled" or "Canceled". Orders, which are not fully filled, can be canceled, after that the order will be removed from matcher's order book.
+In every time of order's life, it has a certain state, depending on which stage of its life cycle it is now. When an order is in an order book, but not filled yet - it has "Accepted" state, also it can be "Filled", "Partially Filled" or "Canceled". Orders, which are not fully filled, can be canceled, after that the order will be removed from matcher's order book.
 
 # 3. Matcher fee calculation {#Decentralizedcryptocurrencyexchange(DEX)-Matcherfeecalculation}
 
-The fix full transaction fee now is equal to**0.003 waves for one order**, whether buying or selling, regardless of the amount of the future deal. The exchange transaction contains two separate fields for Matcher's fee, which goes from buyer's order and seller's order. An order can be fully executed by some transaction, in this case all matcher fee from it is included in that transaction.
+The fix full transaction fee now is equal to **0.003 waves for one order**, whether buying or selling, regardless of the amount of the future deal. The exchange transaction contains two separate fields for Matcher's fee, which goes from buyer's order and seller's order. An order can be fully executed by some transaction, in this case, all matcher fee from it is included in that transaction.
 
-If the order is**partially**executed by some deal-transaction, matcherFee is included in that transaction proportionally to the executed amount, i.e.
+If the order is **partially** executed by some deal-transaction, matcherFee is included in that transaction proportionally to the executed amount, i.e.
 
 **executedAmount \* orderMatcherFee / orderAmount.**
 
-The remaining matcher fee for this order will be included into other transactions until order's fully execution.
+The remaining matcher fee for this order will be included in other transactions until order's full execution.
 
 ## 3.1 Example:
 
-There are 3 different orders \(Figure 2\): two buy orders and one sell.For each full order user have to pay exactly**0.003 waves**of fee, and this fee will be written off as the order is executed. In our example:
+There are 3 different orders \(Figure 2\): two buy orders and one sell. For each full order, a user has to pay exactly **0.003 waves** of a fee, and this fee will be written off as the order is executed. In our example:
 
-* the Order1 is fully matched with a 70% part of Order3 by Transaction1 and matcher's fee for this transaction is equal to 0.003 + 0.0021 - 0.003 = 0.0021 waves since Matcher pay to miners transaction fee wich is also equal to 0.003 waves .
+* the Order1 is fully matched with a 70% part of Order3 by Transaction1 and matcher's fee for this transaction is equal to 0.003 + 0.0021 - 0.003 = 0.0021 waves since Matcher pay to miners transaction fee which is also equal to 0.003 Waves.
 * The 50% of Order2 matches with 30% part of Order3 by Transaction2 and matcher's fee for this transaction is equal to 0.0009 + 0.0015 - 0.003 = -0.0006 waves. 
 
 Thus, the fee that the matcher gets from users for these transactions is**0.0021 - 0.0006  = 0.0015 waves**. And the fee that the matcher pays to miners is**0.006waves**.
