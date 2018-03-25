@@ -1,13 +1,8 @@
 {
   "plugins": [
-    "theme-bandwidth@1.9.3",
-    "header",
     "sharing",
     "custom-favicon",
     "gtm",
-    "bandwidth-highlight",
-    "include-html@0.2.0",
-    "codetabs",
     "custom-js-css"
   ],
   "pluginsConfig": {
@@ -39,38 +34,15 @@
       "token": "GTM-P2JT7Z",
       "virtualPageViews": true
     },
-    "usabilla": {
-      "usabillaId": "c590d7d0e7ac"
-    },
     "favicon": "favicon/favicon.ico",
-    "sharing": {
-      "facebook": false,
-      "twitter": false,
-      "google": false,
-      "weibo": false,
-      "instapaper": false,
-      "vk": false,
-      "all": [
-        "facebook",
-        "google",
-        "twitter",
-        "weibo",
-        "instapaper"
-      ]
-    },
-    "fontsettings": {
-      "theme": "white",
-      "family": "sans",
-      "size": 2
-    },
     "custom-js-css": {
       "js": [
-        "./theme/test.js"
+        "./theme/tree-shaper.js"
       ],
       "css": [
-        "./theme/test.css"
-      ]  
-      
+        "./theme/tree-shaper.css"
+      ]
+
     }
   }
 }
