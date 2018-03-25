@@ -87,23 +87,23 @@ To support the Features Activation Protocol new API method was added to the node
 
 Fields of returned object:
 
-* height - current blockchain height on node
+* `height` - current blockchain height on node
 
-* approvalInterval - Approval or Activation periods length in blocks
+* `approvalInterval` - Approval or Activation periods length in blocks
 
-* approvalThreshold - Number of blocks that supports a feature to approve it
+* `approvalThreshold` - Number of blocks that supports a feature to approve it
 
-* nextCheck - Next height to calculate approval or activation statuses of features
+* `nextCheck` - Next height to calculate approval or activation statuses of features
 
-* features - List of all features
+* `features` - List of all features
 
-* id - Feature ID
+* `id` - Feature ID
 
-* blockchainStatus - Current status of the feature on the blockchain, could be DEFINED, VOTING, APPROVED or ACTIVATED
+* `blockchainStatus` - Current status of the feature on the blockchain, could be DEFINED, VOTING, APPROVED or ACTIVATED
 
-* nodeStatus - Node feature status, could be SUPPORTED or UNSUPPORTED
+* `nodeStatus` - Node feature status, could be SUPPORTED or UNSUPPORTED
 
-* supportBlocks - Number of blocks that contains support for the feature
+* `supportBlocks` - Number of blocks that contains support for the feature
 
 # 5. Example
 

@@ -40,15 +40,11 @@ The following pop-up will appear. After that, fill up all the details:
 
 Figure 3, Send Bitcoin to External Address not through Waves Network \(0.001 BTC as gateway fee + 0.001 Waves as transaction fee\).
 
-
-
-The following pop-up will appear.To complete the operation, click on **Confirm, **Figure 3.
+The following pop-up will appear.To complete the operation, click on **Confirm,** Figure 3.
 
 ![](/assets/Webp.net-resizeimage-13.png)
 
 Figure 3, Confirm Sending BTC.
-
-
 
 #### 2. **Send to Internal Address through Waves network, Figure 4:**
 
