@@ -59,11 +59,11 @@
 
 ## Application Development and API
 
-* [Client Libraries](waves-node-rest-api/client-libraries.md)
-  * [WavesCS](waves-node-rest-api/client-libraries/wavescs.md)
-  * [WavesJ](waves-node-rest-api/client-libraries/wavesj.md)
-  * [PyWaves](waves-node-rest-api/client-libraries/pywaves.md)
 * [Node API Overview](waves-node-rest-api/node-api-overview.md)
+* [Client Libraries](waves-node-rest-api/client-libraries.md)
+  * [PyWaves](waves-node-rest-api/client-libraries/pywaves.md)
+  * [WavesJ](waves-node-rest-api/client-libraries/wavesj.md)
+  * [WavesCS](waves-node-rest-api/client-libraries/wavescs.md)
 * [DEX API](waves-node-rest-api/dex-api.md)
   * [Matcher](waves-node-rest-api/dex-api/matcher.md)
 * [Waves Node Rest API](waves-node-rest-api/waves-node-rest-api.md)
