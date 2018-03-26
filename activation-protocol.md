@@ -33,7 +33,7 @@ If a new feature was activated but the node was not updated to support it, the n
 
 # 3. Configuration file changes
 
-The new configuration file sectionfeatureswas introduced. It contains two parameters:
+The new configuration file section `features` was introduced. It contains two parameters:
 
 * auto-shutdown-on-unsupported-feature could be yes or no. If this setting is turned on, the node will be shut down on activation of a feature that is not implemented by node’s codebase. By default, it set to yes.
 
@@ -50,9 +50,9 @@ Below you can see an example of the new section.
 
 # 4. Changes to REST API
 
-To support the Features Activation Protocol new API method was added under the node/activation route. In response, the JSON that describes the current state of features will be returned.
+To support the Features Activation Protocol new API method was added to the node/activation route. In response, the JSON that describes the current state of features will be returned.
 
-```cpp
+```js
  {
    "height": 678929,
    "approvalInterval": 10000,
@@ -87,23 +87,23 @@ To support the Features Activation Protocol new API method was added under the n
 
 Fields of returned object:
 
-* height - current blockchain height on node
+* `height` - current blockchain height on node
 
-* approvalInterval - Approval or Activation periods length in blocks
+* `approvalInterval` - Approval or Activation periods length in blocks
 
-* approvalThreshold - Number of blocks that supports a feature to approve it
+* `approvalThreshold` - Number of blocks that supports a feature to approve it
 
-* nextCheck - Next height to calculate approval or activation statuses of features
+* `nextCheck` - Next height to calculate approval or activation statuses of features
 
-* features - List of all features
+* `features` - List of all features
 
-* id - Feature ID
+* `id` - Feature ID
 
-* blockchainStatus - Current status of the feature on the blockchain, could be DEFINED, VOTING, APPROVED or ACTIVATED
+* `blockchainStatus` - Current status of the feature on the blockchain, could be DEFINED, VOTING, APPROVED or ACTIVATED
 
-* nodeStatus - Node feature status, could be SUPPORTED of UNSUPPORTED
+* `nodeStatus` - Node feature status, could be SUPPORTED or UNSUPPORTED
 
-* supportBlocks - Number of blocks that contains support for the feature
+* `supportBlocks` - Number of blocks that contains support for the feature
 
 # 5. Example
 

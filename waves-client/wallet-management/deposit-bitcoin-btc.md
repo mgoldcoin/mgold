@@ -1,6 +1,6 @@
 # **Deposit Bitcoin**
 
-After creating Deposit request, Bitcoins are sent to a user's deposit address available in the Waves Client and after the deposit the user receives a Bitcoin token \(wBTC\) on the Waves blockchain. Every single Bitcoin token is backed 1:1 with a real Bitcoin.
+After creating Deposit request, Bitcoins are sent to a user's deposit address available in the Waves Client and after the deposit, the user receives a Bitcoin token \(wBTC\) on the Waves blockchain. Every single Bitcoin token is backed 1:1 with a real Bitcoin.
 
 **Step 1:** Open your Waves wallet In the Bitcoin section, click on **Deposit**.
 

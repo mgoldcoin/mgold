@@ -4,9 +4,9 @@ Asset is a sort of a digital asset that has a certain consensus value. The Waves
 
 # 1. Issuing your own Token {#Assets(customtokens)-IssuingyourownToken}
 
-Waves platform allows business to issue their own tokens for whatever need they have. By releasing tokens, a business is able to create an internal digital currency via the blockchain. This way, it can use the blockchain to pay for the services and goods within projects or even crowdfunding.
+Waves platform allows business to issue their own tokens for whatever needs they have. By releasing tokens, a business is able to create an internal digital currency via the blockchain. This way, it can use the blockchain to pay for the services and goods within projects or even crowdfunding.
 
-Issuing a token on the Waves Platform comes with multiple benefits, including the ability to trade the token instantly on the Waves Decentralized Exchange. Not only that, but Waves tokens can also be used to pay fees within the network, creating additional demand for custom assets on its blockchain. After initial creation of an asset, the total tokens supply can be further increased.
+Issuing a token on the Waves Platform comes with multiple benefits, including the ability to trade the token instantly on the Waves Decentralized Exchange. Not only that, but Waves tokens can also be used to pay fees within the network, creating additional demand for custom assets on its blockchain. After the initial creation of an asset, the total tokens supply can be further increased.
 
 # 2. Assets Operations \(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
 
@@ -14,14 +14,14 @@ You can find more details about Asset Transactions [here](https://waves-platform
 
 ## 2.1 Issue Asset Transaction {#Assets(customtokens)-IssueAssetTransaction}
 
-This transaction is responsible to create a new asset depending on the user specific needs.
+This transaction is responsible to create a new asset depending on the user-specific needs.
 
 | Field | Field Value |
 | :--- | :--- |
-| Name | \[Asset name\] String \[4-16\] - asset identificator. Does not have to be unique. |
+| Name | \[Asset name\] String \[4-16\] - asset identification. Does not have to be unique. |
 | Details | \[Brief description of the asset\] String \[0-1000\] - asset description text. |
 | Quantity | \[Total number of tokens\] Long - quantity of the assets issued. The decimal places have to be taken into account, that is Quantity is multiplied by the number of decimal places on API level in order to be able to work only with integer values. |
-| Reissuable | \[Possibility of additional issuance which determines if additional assets can be issued later\]Boolean - flag which determines if additional assets can be issued later. |
+| Reissuable | \[Possibility of additional issuance which determines if additional assets can be issued later\]Boolean - a flag which determines if additional assets can be issued later. |
 | Decimals | Byte \[0-8\] - the number of decimal places. |
 | Issue Date | \[Asset creation date\]. |
 | Fee | \[The fees for creating your own tokens is 1 WAVES\] Int - fee offered to the miners. |

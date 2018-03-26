@@ -1,0 +1,41 @@
+.icon-triangle {
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    display: block;
+    float: left;
+    line-height: 18px;
+    margin-right: 4px;
+    margin-left: -4px;
+}
+
+.octicon {
+    font: normal normal normal 16px/1 octicons;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.expanded > .icon-triangle > .octicon-triangle:before {
+    content: '▾';
+}
+
+.octicon-triangle:before,
+.collapsed > .icon-triangle > .octicon-triangle:before {
+    content: '▸';
+}
+
+.icon-triangle:hover {
+    background: rgba(0, 0, 0, .05);
+    cursor: pointer;
+}
+
+.header {
+    cursor: pointer;
+}

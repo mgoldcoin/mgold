@@ -2,9 +2,9 @@
 
 Windows users can install the Oracle JRE 8 from [the official site](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html).
 
-You must add a line`;JAVA_HOME/bin`to your existing PATH environment variable to access the JRE from the command line. You can find detailed instructions on this step [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html).
+You must add a line `;JAVA_HOME/bin` to your existing PATH environment variable to access the JRE from the command line. You can find detailed instructions on this step [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html).
 
-Now you can check your JRE installation. Run start Windows Command line app`cmd.exe`and execute command`java -version`. If you see
+Now you can check your JRE installation. Run start Windows Command line app `cmd.exe` and execute command `java -version`. If you see
 
 ```
 java version "1.8.0_74"
@@ -19,17 +19,17 @@ If you get an error check your installation and try find a solution or a better 
 
 # Download Waves package and configure the application
 
-Download the latest version of waves.jar and the required configuration file \(for mainnet or testnet\) to any folder, for example`~/waves`.
+Download the latest version of waves.jar and the required configuration file \(for mainnet or testnet\) to any folder, for example `~/waves`.
 
-Carefully edit the configuration waves .conf file,**it is very important**!**the safety of your wallet and money**depends on this!
+Carefully edit the configuration waves .conf file, **it is very important! The safety of your wallet and money depends on this!**
 
 Just open it with your favorite text editor, pour a cup of tea and read [the documentation of the configuration file](https://github.com/wavesplatform/Waves/wiki/Waves-Node-configuration-file).
 
-Then start Windows Command line app`cmd.exe`, navigate to the folder with the jar file with the command`cd C:/waves`and start waves node with command`java -jar waves.jar waves.conf`.
+Then start Windows Command line app `cmd.exe`, navigate to the folder with the jar file with the command `cd C:/waves` and start waves node with command `java -jar waves.jar waves.conf`.
 
 # Additional security
 
-For added security, it is recommended to store your wallet and configuration applications on an encrypted partition. You can use software like [BitLocker](https://technet.microsoft.com/en-us/library/cc731549%28v=ws.10%29.aspx), [TrueCrypt](http://truecrypt.sourceforge.net/), [AxCrypt](http://www.axcrypt.net/), [DiskCryptor](https://diskcryptor.net/), [FreeOTFE](https://sourceforge.net/projects/freeotfe.mirror/), [GostCrypt](https://www.gostcrypt.org/), [VeraCrypt](https://veracrypt.codeplex.com/) or else. You choose this application**at your own risk**!
+For added security, it is recommended to store your wallet and configuration applications on an encrypted partition. You can use software like [BitLocker](https://technet.microsoft.com/en-us/library/cc731549%28v=ws.10%29.aspx), [TrueCrypt](http://truecrypt.sourceforge.net/), [AxCrypt](http://www.axcrypt.net/), [DiskCryptor](https://diskcryptor.net/), [FreeOTFE](https://sourceforge.net/projects/freeotfe.mirror/), [GostCrypt](https://www.gostcrypt.org/), [VeraCrypt](https://veracrypt.codeplex.com/) or else. You choose this application **at your own risk**!
 
 Also, you may want to limit the use of these folders to designated users only. You can read about it [here](https://technet.microsoft.com/en-us/library/cc754344%28v=ws.11%29.aspx).
 
