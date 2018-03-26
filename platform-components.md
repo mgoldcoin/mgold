@@ -10,8 +10,6 @@ Matcher nodes \(one official\)
 
 Clients apps
 
-Mobile apps
-
 MainNet / TestNet
 
 # 1. Lite Client
@@ -64,7 +62,7 @@ the USD and EUR gateways offer Waves users an easy way to move money into the bl
 
 ## 8.2 Crypto Gateways
 
-All currencies listed below are integrated in Waves through gateways. You can see gateways as a means to transfer a currency to a platform. 
+All currencies listed below are integrated in Waves through gateways. You can see gateways as a means to transfer a currency to a platform.
 
 Current List of crypto gateways:
 
@@ -79,6 +77,4 @@ WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move th
 Fees are minimal and the only delays are those required by blockchain confirmation times.
 
 ![](/assets/Waves Gateways.png)
-
-
 
