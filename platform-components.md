@@ -20,12 +20,16 @@ MainNet / TestNet
 
 # 2. Waves Wallet
 
+* It’s a fully-featured client that lets you access all features of the Waves platform. 
+
+* It offers fiat integration, fast speeds, an intuitive interface, and custom tokens. It’s also constantly being updated.
+
 * It allows to store, track, transfer and manage your cryptocurrencies, the Tokens that you issue or the Tokens that you acquire.
 * The wallet has a built-in decentralized exchange platform that can be used to exchange assets, cryptocurrencies and fiat tokens.
 
 # 4. Decentralized cryptocurrency exchange \(“DEX”\)
 
-It allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
+[DEX](https://docs.wavesplatform.com/decentralized-cryptocurrency-exchange-dex.html) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
 # 5. Nodes
 
