@@ -34,9 +34,9 @@ A user initiates his willingness to buy or sell assets by creating, signing and 
 AssetPair(spendAssetId, receiveAssetId) == AssetPair(receiveAssetId, spendAssetId) = (Asset1, Asset2)
 ```
 
-For each `AssetPair`, there is exactly one `OrderBook`.`AsetPair` exists independently of which asset is 'spend' and which is 'received'. Thus for two different assets one `AssetPair` is created and corresponding Order Book is used for trading that `AssetPair`.
+For each `AssetPair`, there is exactly one `OrderBook`. `AsetPair` exists independently of which asset is 'spend' and which is 'received'. Thus for two different assets one `AssetPair` is created and corresponding Order Book is used for trading that `AssetPair`.
 
-After `AssetPair` is determined,`Order` can be considered of 'BUY' or 'SELL' type with the following rule:
+After `AssetPair` is determined, `Order` can be considered of 'BUY' or 'SELL' type with the following rule:
 
 ```cpp
 val (Asset1, Asset2) = AssetPair(spendAssetId, receiveAssetId)
