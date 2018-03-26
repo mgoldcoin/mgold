@@ -8,7 +8,7 @@ After reading this instruction you will be able to:
 
 1. [Create Your Account](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/account-management/creating-an-account.html)
 2. [Restore Your Account](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/account-management/restore-an-account.html) 
-3. [Singing In To Your Waves Account](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/account-management/signing-in-to-your-account.html)
+3. [Sing In To Your Waves Account](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/account-management/signing-in-to-your-account.html)
 
 
 
