@@ -64,5 +64,18 @@ the USD and EUR gateways offer Waves users an easy way to move money into the bl
 
 ## 8.2 Crypto Gateways
 
-![](/assets/Waves Gateways.png)
+All currencies listed below are integrated in Waves through gateways. You can see gateways as a means to transfer a currency to a platform.  
+Current List of crypto gateways:
+
+1. WAVES
+2. Bitcoin
+3. Ethereum
+4. ZCash
+5. Litecoin ![](/assets/Waves Gateways.png)
+
+
+
+
+
+
 
