@@ -53,11 +53,7 @@ The Waves US dollar and EUR gateways are available within the Waves Client —
 
 the USD and EUR gateways offer Waves users an easy way to move money into the blockchain ecosystem, enabling them to invest in tokens and ICOs with fiat. This was always one of the key propositions for the Waves platform: the ability to send and trade with fiat-backed tokens.
 
-## 8.2 Cryptocurrencies Gateways
+## 8.2 Crypto Gateways
 
 ![](/assets/Waves Gateways.png)
-
-
-
-
 
