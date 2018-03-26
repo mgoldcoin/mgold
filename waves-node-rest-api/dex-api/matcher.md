@@ -225,3 +225,6 @@ POST /matcher/orders/cancel
 | fee | Long | Fee for Asset transaction, min = 100000 \(WAVElets\) |
 | timestamp | Long | UNIX timestamp in millisec |
 | signature | Array\[Byte\] | Signature of all transaction data |
+
+
+
