@@ -23,6 +23,8 @@ Figure 2, Create New Account.
 
 **Step 4:** Now, it's an important step to backup your account by clicking **Back Up Now,** Figure 3.
 
+Waves will display an important reminder. Never provide your backup phrase to anyone except the official Waves client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
+
 ![](/assets/Webp.net-resizeimage-3.png)
 
 Figure 3, Backup Your Account.
