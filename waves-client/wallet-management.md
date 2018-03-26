@@ -1,4 +1,6 @@
-# **This Chapter Includes All Details About Send and Deposit Operations To Each Cryptocurrency Which Is Supported by Waves Platfrom**
+# Chapter Contents
 
-After reading this instruction you will be able to create your Waves wallet.
+Wallet Management Chapter Includes all details about send and deposit operations to each cryptocurrency which Is supported within Waves Platform. After reading this instruction you will be able to:
+
+
 
