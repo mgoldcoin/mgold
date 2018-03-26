@@ -47,7 +47,7 @@ It allows to place and execute orders for buying or selling cryptocurrency or To
 
 # 8. Waves Gateways
 
-Fiat Gateways such as USD/EUR/CNY will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
+Fiat Gateways such as USD/EUR/CNY will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/Zcash/\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
 ## 8.1 Fiat Gateways \(Dollars and Euros\)
 
