@@ -55,7 +55,7 @@ The Waves US dollar and EUR gateways are available within the Waves Client —
 
 the USD and EUR gateways offer Waves users an easy way to move money into the blockchain ecosystem, enabling them to invest in tokens and ICOs with fiat. This was always one of the key propositions for the Waves platform: the ability to send and trade with fiat-backed tokens.
 
-**Note.** KYC/AML is needed to deposit and withdraw fiat money. However, KYC is not necessary for cryptocurrency transactions.
+**Note.** KYC/AML verification is needed to deposit and withdraw fiat money. However, KYC is not necessary for cryptocurrency transactions.
 
 ## 8.2 Crypto Gateways
 
