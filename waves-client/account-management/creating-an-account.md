@@ -23,7 +23,7 @@ Figure 2, Create New Account.
 
 **Step 4:** Now, it's an important step to backup your account by clicking **Back Up Now,** Figure 3.
 
-Waves will display an important reminder. Never provide your backup phrase to anyone except the official Waves client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
+Waves will display an important reminder. Never provide your backup phrase to anyone except the official Waves client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
 
 ![](/assets/Webp.net-resizeimage-3.png)
 
@@ -36,6 +36,8 @@ Figure 3, Backup Your Account.
 Figure 4, Save Backup Phrase \(your unique seed\).
 
 **Step 6:** Confirm your backup by putting your unique seed that was created in the previous step in the correct order and then **click Confirm,** Figure 5.
+
+Waves wants to make sure you actually wrote down the backup phrase. Therefore, Waves will ask you to verify the backup phrase before proceeding to your Waves account.
 
 ![](/assets/Webp.net-resizeimage-5.png)
 
