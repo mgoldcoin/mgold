@@ -72,14 +72,12 @@ Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wave
 
 # 9.1 Mining nodes \(pools\)
 
-
-
 # 9.2 Official nodes with open API
 
 1. [**WavesGo**](http://www.wavesgo.com) is the foremost Waves node, with the biggest balance \(16,214,530 WAVES\) and a thriving community of supporters. The node distributes the WavesGo token to anyone who leases their funds to it.
 2. [**Wavesnode.NET**](https://wavesnode.net) represents a developing community in Holland with a balance of 10,589,578 WAVES. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Waves merchandise.
 
-**Note.** You can find a full list at [dev.pywaves.org](http://dev.pywaves.org/generators/)
+**Note.** You can find a full nodes list at [dev.pywaves.org](http://dev.pywaves.org/generators/) and [Here](https://wavesplatform.com/leasing#nodes) you can find a list of the top nodes by WAVES balance.
 
 # 9.3 Matcher nodes \(one official\)
 
