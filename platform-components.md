@@ -64,23 +64,26 @@ WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move th
 
 Fees are minimal and the only delays are those required by blockchain confirmation times.
 
-![](/assets/Waves Gateways.png)Nodes
+# ![](/assets/Waves Gateways.png)9. Nodes
 
-Mining nodes \(pools\)
+Nodes are a critical part of our ecosystem. Run a Waves node, help process transactions, ask the community to lease their WAVES to you and get paid for securing the network.
 
-Official nodes with open API \( wavesnodes.com \)
+**Note.** Current number of nodes is 168 in 23 different countries.
 
-# Matcher nodes \(one official\)
+# 9.1 Mining nodes \(pools\)
 
-Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher.
 
-orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation.
+
+# 9.2 Official nodes with open API \( wavesnodes.com \)
+
+1. [**WavesGo**](http://www.wavesgo.com) is the foremost Waves node, with the biggest balance \(16,214,530 WAVES\) and a thriving community of supporters. The node distributes the WavesGo token to anyone who leases their funds to it.
+2. [**Wavesnode.NET**](https://wavesnode.net) represents a developing community in Holland with a balance of 10,589,578 WAVES. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Waves merchandise.
+
+# 9.3 Matcher nodes \(one official\)
+
+Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher. Orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation.
 
 Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/guidelines/how-to-configure-a-node.html) in the section of Matcher Settings.
-
-
-
-
 
 Clients apps
 
