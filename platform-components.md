@@ -84,7 +84,7 @@ You can also run a public mining pool and have users lease their funds to you, t
 
 # 8.3 Matcher nodes
 
-Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher. Orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation.
+Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher. Orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation. These nodes connect the seller to the buyer for a commission, and then fix the transaction in the Waves_ _blockchain.
 
 **Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/guidelines/how-to-configure-a-node.html) in the section of Matcher Settings.
 

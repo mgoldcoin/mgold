@@ -7,7 +7,7 @@ Blockchains protocols have some scalability limits and challenges that tradeoff 
 There is a united agreement between miners, consumers, and developers with several perspectives that we need to deploy scalability measures, and there has been an ongoing argument on how to improve Bitcoin’s scalability. Current proposals have focused on how big to make the blocks and how to handle the block size increases in the future.
 
 All proposals suffer from a major scalability bottleneck:  
-no matter what block size is chosen, the blockchain system can at best reach a proper transaction throughput, increasing from ~3 transactions per second to ~7 transactions per second. This is so far from the 30,000 transactions per second which necessary to compete with the existing systems such as VISA transactions. The same major limitations apply to litecoin, Ethereum, and all other currencies that share Bitcoin’s blockchain protocol.  
+no matter what block size is chosen, the blockchain system can at best reach a proper transaction throughput, increasing from ~3 transactions per second to ~7 transactions per second. This is so far from the 30,000 transactions per second which necessary to compete with the existing systems such as VISA transactions. The same major limitations apply to litecoin, Ethereum, and all other currencies that share Bitcoin’s blockchain protocol.
 
 Waves-NG will address the scalability bottleneck by making the network to reach the highest throughput depends on the network conditions. It will not only enhance the transaction throughput, it will also reduce transaction latencies. So it will be possible to get an initial transaction confirmation in seconds rather than in minutes.
 
@@ -19,6 +19,8 @@ Waves-NG will address the scalability bottleneck by making the network to reach 
 | Waves-NG | 1 minute between key blocks.3 seconds between micro blocks. | 1 Mb.65535Tx/KeyBlock.200 Tx/MicroBlock | 100 Tx/second |
 
 Table1, Scalability comparison between Bitcoin, Ethereum, Waves and Waves-NG.
+
+![](/assets/waves_dex_ng.jpg)
 
 ## **1.2 Weaknesses of Current Proposals to Improve Scalability** {#Waves-NGProtocol-1.2WeaknessesofCurrentProposalstoImproveScalability}
 
