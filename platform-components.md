@@ -76,7 +76,11 @@ Matcher nodes are responsible for pairing orders and executing trades quickly, w
 
 orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation.
 
-Waves node contains DEX Matcher which can be enabled while settings the Waves node configuration file in the section of Matcher Settings.
+Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/guidelines/how-to-configure-a-node.html) in the section of Matcher Settings.
+
+
+
+
 
 Clients apps
 
