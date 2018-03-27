@@ -71,9 +71,9 @@ Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wave
 
 # 8.1 Mining nodes \(pools\)
 
-You don’t need any fancy hardware — just a simple hosted server and at least 1,000 WAVES. 
+You don’t need any fancy hardware — just a simple hosted server and at least 1,000 WAVES.
 
-You can also run a public mining pool and have users lease their funds to you, thereby increasing your profits and sharing them with the community.
+You can also run a public mining pool and have users lease their funds to you, thereby increasing your profits and sharing them with the community.
 
 # 8.2 Official nodes with open API
 
@@ -86,7 +86,7 @@ You can also run a public mining pool and have users lease their funds to you,
 
 Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher. Orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation.
 
-Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/guidelines/how-to-configure-a-node.html) in the section of Matcher Settings.
+**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/guidelines/how-to-configure-a-node.html) in the section of Matcher Settings.
 
 # Clients apps
 
