@@ -90,8 +90,8 @@ Matchers will receive fees for the service they provide, adding an additional re
 
 # 8. MainNet / TestNet
 
-1. **Mainnet** - this is the real deal the live Waves blockchain where you in the worst case could lose money if you are not careful
-2. **Testnet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
+1. **MainNet** - this is the real deal, the live Waves blockchain where you in the worst case could lose money if you are not careful. You can access the mainnet via a full node. it's integrated with the GUI in the Waves client, allowing anyone to use it without any technical knowledge or blockchain downloads.
+2. **TestNet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
 
 
 
