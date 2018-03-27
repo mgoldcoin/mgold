@@ -35,37 +35,32 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
 1. [What is Waves Full Node](https://docs.wavesplatform.com/waves-full-node/what-is-a-full-node.html)
-2. [How To Install a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html)
-3. [How to Configure a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-configure-a-node.html)
-4. [Upgrading](https://waves-platform.gitbooks.io/wavesdocs/waves-full-node/upgrading.html)
-5. [Export and Import From The Blockchain](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/export-and-import-from-the-blockchain.html)
-6. [Reducing Disk Space Usage](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/reducing-disk-space-usage.html)
+2. [How To Install a node](https://docs.wavesplatform.com/waves-full-node/how-to-install-a-node/how-to-install-a-node.html)
+3. [How to Configure a node](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html)
+4. [Upgrading](https://docs.wavesplatform.com/waves-full-node/upgrading.html)
+5. [Export and Import From The Blockchain](https://docs.wavesplatform.com/waves-full-node/export-and-import-from-the-blockchain.html)
+6. [Reducing Disk Space Usage](https://docs.wavesplatform.com/waves-full-node/reducing-disk-space-usage.html)
 
 # 5. Developers Guide
 
 This Section contains technical details about Waves Platform
 
-1. [Cryptographic Practical Details](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/cryptographic-practical-details.html)
-2. [Data Structures](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/data-structures.html)
-3. [Validation Rules](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/validation-rules.html)
-4. [Creating a Private Waves Blockchain Network](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/creating-a-private-waves-blockchain-network.html)
-5. [Mass Transfer Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/mass-transfer-transaction.html).
-6. [Waves Contracts Language Description.](https://waves-platform.gitbooks.io/wavesdocs/content/waves-contracts-language-description.html)
+1. [Cryptographic Practical Details](https://docs.wavesplatform.com/developers-guide/cryptographic-practical-details.html)
+2. [Data Structures](https://docs.wavesplatform.com/developers-guide/data-structures.html)
+3. [Validation Rules](https://docs.wavesplatform.com/developers-guide/validation-rules.html)
+4. [Creating a Private Waves Blockchain Network](https://docs.wavesplatform.com/developers-guide/creating-a-private-waves-blockchain-network.html)
+5. [Mass Transfer Transactions](https://docs.wavesplatform.com/developers-guide/mass-transfer-transaction.html)
+6. [Data Transaction](https://docs.wavesplatform.com/developers-guide/data-transaction.html)
+7. [Waves Contracts Language Description.](https://docs.wavesplatform.com/developers-guide/waves-contracts-language-description.html)
 
-# 6. Waves Node Rest API
+# 6. Application Development and API
 
-This Section contains all Rest API.
+1. [Node API Overview](https://docs.wavesplatform.com/application-development-and-api/node-api-overview.html)
+2. [Client Libraries ](https://docs.wavesplatform.com/application-development-and-api/client-libraries.html)\([PyWaves](https://docs.wavesplatform.com/application-development-and-api/client-libraries/pywaves.html), [WavesJ](https://docs.wavesplatform.com/application-development-and-api/client-libraries/wavesj.html) and [WavesCS](https://docs.wavesplatform.com/application-development-and-api/client-libraries/wavescs.html)\)
+3. [DEX API](https://docs.wavesplatform.com/application-development-and-api/dex-api.html) \([Matcher](https://docs.wavesplatform.com/application-development-and-api/dex-api/matcher.html)\)
+4. [Waves Node Rest API](https://docs.wavesplatform.com/application-development-and-api/waves-node-rest-api.html)
+5. [Examples](https://docs.wavesplatform.com/application-development-and-api/examples.html)
+6. [FAQ](https://docs.wavesplatform.com/application-development-and-api/frequently-asked-questions-faq.html)
 
-1. [Address](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/address.html)
-2. [Asset Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/asset-transactions.html) \([Public](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/public-functions.html) and [Private](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/private-functions.html)\)
-3. [Lease Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/lease-transactions.html)
-4. [Alias Transaction](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/alias-transaction.html)
-5. [Transactions](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/transactions.html)
-6. [Peers](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/peers.html)
-7. [Blocks](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/blocks.html)
-8. [Utils](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/utils.html)
 
-# 7. Application Development and API
-
-This section still under development
 
