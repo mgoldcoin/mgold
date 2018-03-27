@@ -57,9 +57,9 @@ WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move th
 
 Fees are minimal and the only delays are those required by blockchain confirmation times.
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:platform-components.md
+![](/_assets/Waves Gateways.png)
 
-# ![](/assets/Waves Gateways.png)8. Nodes
+# 8. Nodes
 
 Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wavesplatform.com/guidelines/how-to-install-a-node.html), help process transactions, ask the community to [lease their WAVES](https://docs.wavesplatform.com/waves-client/wallet-management/leasing-waves.html) to you and get paid for securing the network.
 
@@ -82,8 +82,6 @@ You can also run a public mining pool and have users lease their funds to you, t
 1. [**WavesGo**](http://www.wavesgo.com) is the foremost Waves node, with the biggest balance \(16,214,530 WAVES\) and a thriving community of supporters. The node distributes the WavesGo token to anyone who leases their funds to it.
 2. [**Wavesnode.NET**](https://wavesnode.net)** **represents a developing community in Holland with a balance of 10,589,578 WAVES. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Waves merchandise.
 
-   ![](/_assets/Waves Gateways.png)
-
 **Note.** You can find a full nodes list at [dev.pywaves.org](http://dev.pywaves.org/generators/) and [Here](https://wavesplatform.com/leasing#nodes) you can find a list of the top nodes by WAVES balance.
 
 # 8.3 Matcher nodes
@@ -92,7 +90,7 @@ Matcher nodes are responsible for pairing orders and executing trades quickly, w
 
 In principle, **any full node** can become a **Matcher**. Waves client connects to Matchers at [nodes.wavesnodes.com ](/nodes.wavesnodes.com)by default.
 
-**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/guidelines/how-to-configure-a-node.html) in the section of Matcher Settings.
+**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html) in the section of Matcher Settings.
 
 # MainNet / TestNet
 
