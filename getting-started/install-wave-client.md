@@ -14,7 +14,7 @@ You can download the desktop client or use the Online client from the [official 
 
 Linux, Mac OS and Windows Then you need to follow the step by step guide for creating your account.
 
-![](/assets/install-waves-client-screenshot.png)Figure 1, Download Waves Client.
+![](/_assets/install-waves-client-screenshot.png)Figure 1, Download Waves Client.
 
   
 

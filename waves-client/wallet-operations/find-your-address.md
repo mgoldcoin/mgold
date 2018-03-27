@@ -9,7 +9,7 @@ You can find and copy your Waves Address by clicking on** Your Address **button.
 So you can give your public address to anyone in order to receive cryptocurrencies on your Waves Wallet.  
 
 
-![](/assets/Webp.net-resizeimage-19.png)
+![](/_assets/Webp.net-resizeimage-19.png)
 
-![](/assets/Webp.net-resizeimage-20.png)
+![](/_assets/Webp.net-resizeimage-20.png)
 

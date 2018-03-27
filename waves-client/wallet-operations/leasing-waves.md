@@ -62,23 +62,23 @@ To lease your Waves, all you have to do is:
 * Be aware that the leasing fees is 0.001 WAVES.
 * Click “Start Lease” button.
 
-![](/assets/Screen%20Shot%202018-01-16%20at%205.24.48%20PM.png)Figure 1, GUI for Leasing your WAVES.
+![](/_assets/Screen%20Shot%202018-01-16%20at%205.24.48%20PM.png)Figure 1, GUI for Leasing your WAVES.
 
 
 
 Once you Clicked **Start Leasing **button, Your leasing transaction will be completed, Figure 2.
 
-![](/assets/Screen%20Shot%202018-01-17%20at%206.18.06%20PM.png)Figure 2, Leasing Completed.
+![](/_assets/Screen%20Shot%202018-01-17%20at%206.18.06%20PM.png)Figure 2, Leasing Completed.
 
 
 
 You can see the full details about your leasing transaction by clicking on **View Details**, Figure 3.
 
-![](/assets/Screen%20Shot%202018-01-17%20at%206.18.31%20PM.png)Figure 3, Leasing Transaction Details.  
+![](/_assets/Screen%20Shot%202018-01-17%20at%206.18.31%20PM.png)Figure 3, Leasing Transaction Details.  
   
 You will always be able to cancel your leasing transaction by going to the **Leasing **tab in main menu, then to the right end click the transactions details and click **Cancel Leasing**, Figure 4.
 
-![](/assets/Screen%20Shot%202018-01-24%20at%203.38.08%20PM.png)Figure 4, Cancel Leasing.
+![](/_assets/Screen%20Shot%202018-01-24%20at%203.38.08%20PM.png)Figure 4, Cancel Leasing.
 
 
 

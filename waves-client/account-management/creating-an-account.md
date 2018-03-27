@@ -9,7 +9,7 @@ Waves, the native currency within the Waves Platform system, is a Leased Proof o
 **Step 2:** After opening the Waves client for the first time, click **Get Started **to start the process of creating your account or click **Restore Account** if you forget your password as shown in Figure 1.
 
 **Note:** In case that you have created an account before just choose your address from the drop down list or enter your saved unique seed.  
-![](/assets/Webp.net-resizeimage.png)
+![](/_assets/Webp.net-resizeimage.png)
 
 Figure 1, Create Waves Account or Restore your Account.
 
@@ -17,7 +17,7 @@ Figure 1, Create Waves Account or Restore your Account.
 
 When you have done so, click on **Continue,** Figure 2.
 
-![](/assets/Webp.net-resizeimage-2.png)
+![](/_assets/Webp.net-resizeimage-2.png)
 
 Figure 2, Create New Account.
 
@@ -25,13 +25,13 @@ Figure 2, Create New Account.
 
 Waves will display an important reminder. Never provide your backup phrase to anyone except the official Waves client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
 
-![](/assets/Webp.net-resizeimage-3.png)
+![](/_assets/Webp.net-resizeimage-3.png)
 
 Figure 3, Backup Your Account.
 
 **Step 5:** Copy the proposed SEED consisting of 15 English words and save it on a paper or in a secure place that you prefer.In Waves wallet, there is no .dat file which keeps your private keys but a SEED which grants you access to them. The SEED is by default a string of 15 English words and basically your passphrase to your funds - **if you lose your SEED, you lose access to your account.** If you have done all of the above, click on **I've written it down,** Figure 4.
 
-![](/assets/Webp.net-resizeimage-4.png)
+![](/_assets/Webp.net-resizeimage-4.png)
 
 Figure 4, Save Backup Phrase \(your unique seed\).
 
@@ -39,10 +39,10 @@ Figure 4, Save Backup Phrase \(your unique seed\).
 
 Waves wants to make sure you actually wrote down the backup phrase. Therefore, Waves will ask you to verify the backup phrase before proceeding to your Waves account.
 
-![](/assets/Webp.net-resizeimage-5.png)
+![](/_assets/Webp.net-resizeimage-5.png)
 
 Figure 5, Confirm Backup.
 
 **Step 7:** Read and check all the checkbox then click on **Confirm and Begin** and you're now forwarded to the user interface, Figure 6.  
-![](/assets/Webp.net-resizeimage-6.png)Figure 6, Check Review.
+![](/_assets/Webp.net-resizeimage-6.png)Figure 6, Check Review.
 
