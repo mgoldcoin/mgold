@@ -64,7 +64,7 @@ WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move th
 
 Fees are minimal and the only delays are those required by blockchain confirmation times.
 
-![](/assets/Waves Gateways.png)Nodes
+![](/_assets/Waves%20Gateways.png)Nodes
 
 Mining nodes \(pools\)
 
