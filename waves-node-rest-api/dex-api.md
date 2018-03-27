@@ -1,6 +1,6 @@
 # DEX API
 
-Our nodes contain an order matcher which is used to power our decentralised exchange — enabling token trades that don’t require tokens to be transferred from your blockchain account to a separate exchange.
+Our nodes contain an order matcher which is used to power our decentralized exchange — enabling token trades that don’t require tokens to be transferred from your blockchain account to a separate exchange.
 
 All operations within the DEX are secure and validated by blockchain nodes. Since the DEX is open source and a part of every node, each user can run their own instance of the DEX.
 

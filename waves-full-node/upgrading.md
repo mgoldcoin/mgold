@@ -1,10 +1,10 @@
 # Upgrading Node
 
-First of all you need to check the[ latest Waves Release.](https://github.com/wavesplatform/Waves/releases)
+First of all, you need to check the[ latest Waves Release.](https://github.com/wavesplatform/Waves/releases)
 
 ## Update notes
 
-If you are updating from version 0.9.x just update the binaries and put voting for feature[\#3](https://github.com/wavesplatform/Waves/pull/3) in the configuration file.  
+If you are updating from version 0.9.x just update the binaries and put voting for feature [\#3](https://github.com/wavesplatform/Waves/pull/3) in the configuration file.  
 In case of updating from earlier versions, please, follow these steps.
 
 ## How to update
@@ -22,18 +22,18 @@ sudo -u waves java -cp '/usr/share/waves/lib/*' -Dwaves.directory=/var/lib/waves
 
 ### Drop the data
 
-You have to drop existing`data`folder because now there will be LevelDB folder.
+You have to drop existing `data` folder because now there will be LevelDB folder.
 
 ### Update the configuration
 
 Please, read the updated [documentation of Waves node configuration file](https://waves-platform.gitbooks.io/wavesdocs/guidelines/how-to-configure-a-node.html)
 
-* Move`peers.dat`out of the`data`directory. Change the value of the parameter`waves.network.file`to`${waves.directory}"/peers.dat"`or remove it from your configuration file to use the default value which is the same.
+* Move `peers.dat` out of the `data` directory. Change the value of the parameter `waves.network.file` to `${waves.directory}"/peers.dat"` or remove it from your configuration file to use the default value which is the same.
 
-* Remove obsolete parameters`waves.blockchain.blockchain-file`,`waves.blockchain.state-file`,`waves.blockchain.checkpoint-file`and`waves.blockchain.store-transactions-in-state`.
+* Remove obsolete parameters `waves.blockchain.blockchain-file`, `waves.blockchain.state-file`, `waves.blockchain.checkpoint-file` and `waves.blockchain.store-transactions-in-state`.
 
-With LevelDB the recommended minimum value of`Xmx`parameter  
-is 2GB, so you can update your memory settings in`application.ini`file accordingly.
+With LevelDB the recommended minimum value of `Xmx` parameter  
+is 2GB, so you can update your memory settings in `application.ini` file accordingly.
 
 ### Import the binary file to LevelDB
 

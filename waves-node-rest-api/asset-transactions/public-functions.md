@@ -95,7 +95,7 @@ Publish signed Asset issue transaction to the network.
 ```
 "type" - Transaction type (3 for IssueTransaction)
 "id" - Id(hash) of transaction in Base58 format
-"assetId" - Asset ID in Base58 format, effectively equals tx id 
+"assetId" - Asset ID in Base58 format, effectively equals tx id
 "fee" - Transaction fee
 "timestamp" - Transaction timestamp
 "sender" - Sender account's address, Base58-encoded
@@ -237,7 +237,7 @@ Publish signed Asset transfer from one address to another as a transaction to th
 "senderPublicKey" - Sender account's public key, Base58-encoded
 "recipient" - Recipient account's address, Base58-encoded
 "fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
-"feeAssetId" [optional] - Asset ID of transaction fee. WAVES by default, if empty or absent 
+"feeAssetId" [optional] - Asset ID of transaction fee. WAVES by default, if empty or absent
 "amount" - amount of asset'lets (or wavelets) to transfer
 "attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
 "timestamp" - Transaction timestamp
@@ -254,7 +254,7 @@ Publish signed Asset transfer from one address to another as a transaction to th
   "fee": 100000,
   "amount": 5500000000,
   "attachment": "BJa6cfyGUmzBFTj3vvvaew",
-  "timestamp": 1479222433704, 
+  "timestamp": 1479222433704,
   "signature": "2TyN8pNS7mS9gfCbX2ktpkWVYckoAmRmDZzKH3K35DKs6sUoXHArzukV5hvveK9t79uzT3cA8CYZ9z3Utj6CnCEo"
 }
 ```
@@ -264,7 +264,7 @@ Publish signed Asset transfer from one address to another as a transaction to th
 ```
 "type" - Transaction type (4 for TransferTransaction)
 "id" - Id(hash) of transaction, Base58-encoded
-"assetId" - Asset ID in Base58 format, effectively equals transaction id 
+"assetId" - Asset ID in Base58 format, effectively equals transaction id
 "timestamp" - Transaction timestamp
 "sender" - Sender account's address, Base58-encoded
 "senderPublicKey" - Sender account's public key, Base58-encoded
@@ -323,7 +323,7 @@ Array of JSON Objects:
   "fee": 100000,
   "amount": 5500000000,
   "attachment": "BJa6cfyGUmzBFTj3vvvaew",
-  "timestamp": 1479222433704, 
+  "timestamp": 1479222433704,
   "signature": "2TyN8pNS7mS9gfCbX2ktpkWVYckoAmRmDZzKH3K35DKs6sUoXHArzukV5hvveK9t79uzT3cA8CYZ9z3Utj6CnCEo"
 }]
 ```
@@ -334,7 +334,7 @@ Array of JSON Objects:
 Array of JSON Objects:
 "type" - Transaction type (4 for TransferTransaction)
 "id" - Id(hash) of transaction, Base58-encoded
-"assetId" - Asset ID in Base58 format, effectively equals transaction id 
+"assetId" - Asset ID in Base58 format, effectively equals transaction id
 "timestamp" - Transaction timestamp
 "sender" - Sender account's address, Base58-encoded
 "senderPublicKey" - Sender account's public key, Base58-encoded
@@ -363,6 +363,3 @@ Array of JSON Objects:
   "signature": "2TyN8pNS7mS9gfCbX2ktpkWVYckoAmRmDZzKH3K35DKs6sUoXHArzukV5hvveK9t79uzT3cA8CYZ9z3Utj6CnCEo"
 }]
 ```
-
-
-

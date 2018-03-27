@@ -1,3 +1,5 @@
+# How to Install a Node
+
 To run the Waves node have to go through 2 steps:
 
 1. Install the JRE 1.8
