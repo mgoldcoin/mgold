@@ -94,5 +94,8 @@ In principle, **any full node** can become a **Matcher**. Waves client connects 
 
 # MainNet / TestNet
 
+1. **Mainnet** - this is the real deal the live Waves blockchain where you in the worst case could lose money if you are not careful
+2. **Testnet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
+
 
 
