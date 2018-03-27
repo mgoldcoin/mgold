@@ -98,7 +98,7 @@ Signs an arbitrary transaction. This requires an API key, and transaction type t
 | 9 | Lease Cancel |
 | 10 | Alias |
 
-An optional`timestamp`parameter may be specified, which represents transaction timestamp in milliseconds. If it is omitted, current server time is used.
+An optional `timestamp` parameter may be specified, which represents transaction timestamp in milliseconds. If it is omitted, current server time is used.
 
 **Request params**
 
@@ -186,6 +186,3 @@ and all the other parameters appropriate for a transaction of the given type.
  "alias":"dajzmj6gfuzmbfnhamsbuxivc"
 }
 ```
-
-
-

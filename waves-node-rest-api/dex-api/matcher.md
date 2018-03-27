@@ -1,6 +1,6 @@
 ## Matcher
 
-The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Waves platform. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create`ExchangeTransaction`on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
+The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secure exchange of assets issued on Waves platform. When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order. And Matcher guarantees to create `ExchangeTransaction` on the conditions that are not worse than in user's order. After the transaction is confirmed on blockchain user account balances of assets are changed according to amount and order execution price.
 
 ## Limit Order
 
@@ -34,13 +34,13 @@ A user initiates his willingness to buy or sell assets by creating, signing and 
 AssetPair(spendAssetId, receiveAssetId) == AssetPair(receiveAssetId, spendAssetId) = (Asset1, Asset2)
 ```
 
-For each `AssetPair`, there is exactly one `OrderBook`.`AsetPair` exists independently of which asset is 'spend' and which is 'received'. Thus for two different assets one `AssetPair` is created and corresponding Order Book is used for trading that `AssetPair`.
+For each `AssetPair`, there is exactly one `OrderBook`. `AsetPair` exists independently of which asset is 'spend' and which is 'received'. Thus for two different assets one `AssetPair` is created and corresponding Order Book is used for trading that `AssetPair`.
 
-After `AssetPair` is determined,`Order` can be considered of 'BUY' or 'SELL' type with the following rule:
+After `AssetPair` is determined, `Order` can be considered of 'BUY' or 'SELL' type with the following rule:
 
 ```cpp
 val (Asset1, Asset2) = AssetPair(spendAssetId, receiveAssetId)
-if (receiveAssetId == Asset1) OrderType.BUY 
+if (receiveAssetId == Asset1) OrderType.BUY
 else if (spendAssetId == Asset1) OrderType.SELL
 ```
 

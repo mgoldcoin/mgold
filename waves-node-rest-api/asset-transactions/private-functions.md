@@ -1,6 +1,6 @@
 ## Private Functions
 
-All private functions below require API Key to be provided in every HTTP request using`X-Api-Key`header. The default value is`ridethewaves!`. Securely hashed header value is stored in`rest-api.api-key-hash`setting in the waves.conf configuration file. See [/utils/hash/secure](https://github.com/wavesplatform/Waves/wiki/Waves-Node-REST-API#post-utilshashsecure) for more information on how to obtain a secure hash.
+All private functions below require API Key to be provided in every HTTP request using `X-Api-Key` header. The default value is `ridethewaves!`. Securely hashed header value is stored in `rest-api.api-key-hash` setting in the waves.conf configuration file. See [/utils/hash/secure](https://github.com/wavesplatform/Waves/wiki/Waves-Node-REST-API#post-utilshashsecure) for more information on how to obtain a secure hash.
 
 ### POST /assets/issue
 
@@ -244,6 +244,3 @@ Create transaction to make asset name unique.
     "networkByte" : 73
   }
 ```
-
-
-
