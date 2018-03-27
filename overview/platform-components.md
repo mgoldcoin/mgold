@@ -14,7 +14,7 @@
 
 * The wallet has a built-in decentralized exchange platform that can be used to exchange assets, cryptocurrencies and fiat tokens.
 
-# 4. Decentralized cryptocurrency exchange \(“DEX”\)
+# 4. Decentralized cryptocurrency exchange \(DEX\)
 
 [DEX](https://docs.wavesplatform.com/decentralized-cryptocurrency-exchange-dex.html) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
@@ -82,12 +82,9 @@ You can also run a public mining pool and have users lease their funds to you, t
 
 Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher. Orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation. These nodes connect the seller to the buyer for a commission, and then fix the transaction in the Waves blockchain.
 
-Matcher Nodes contain an order matcher which is used to power the decentralised exchange.
-
-* Matcher nodes pair buyers and sellers, executing trades instantly whilst still ensuring these are ultimately settled on the blockchain for maximum transparency and security.
-* Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
-
 In principle, **any full node** can become a **Matcher**. Waves client connects to Matchers at [nodes.wavesnodes.com ](/nodes.wavesnodes.com)by default.
+
+Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
 
 **Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html) in the section of Matcher Settings.
 
