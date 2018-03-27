@@ -43,8 +43,8 @@ At the final stage, read carefully the conditions and if you are agree, put the 
 
 Click on **Confirm and Begin**.
 
-![](/assets/account_creation_07.png)
+![](/_assets/account_creation_07.png)
 
 If you have done all of the above, you are forwarded to the user interface.
 
-![](/assets/account_creation_08.png)
+![](/_assets/account_creation_08.png)
