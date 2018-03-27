@@ -78,6 +78,6 @@
   * [Peers](waves-node-rest-api/peers.md)
   * [Blocks](waves-node-rest-api/blocks.md)
   * [Utils](waves-node-rest-api/utils.md)
-* [Examples](waves-node-rest-api/examples.md)
+* [Examples](application-development-and-api/examples.md)
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
