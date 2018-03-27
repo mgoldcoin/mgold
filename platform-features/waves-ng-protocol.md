@@ -20,7 +20,7 @@ Waves-NG will address the scalability bottleneck by making the network to reach 
 
 Table1, Scalability comparison between Bitcoin, Ethereum, Waves and Waves-NG.
 
-![](/assets/waves_dex_ng.jpg)
+![](/_assets/waves_dex_ng.jpg)
 
 ## **1.2 Weaknesses of Current Proposals to Improve Scalability** {#Waves-NGProtocol-1.2WeaknessesofCurrentProposalstoImproveScalability}
 
