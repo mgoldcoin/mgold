@@ -1,17 +1,5 @@
 # Waves Platform Components
 
-Nodes
-
-Mining nodes \(pools\)
-
-Official nodes with open API \( wavesnodes.com \)
-
-Matcher nodes \(one official\)
-
-Clients apps
-
-MainNet / TestNet
-
 # 1. Lite Client
 
 [The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/install-waves-client.html) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
@@ -76,5 +64,21 @@ WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move th
 
 Fees are minimal and the only delays are those required by blockchain confirmation times.
 
-![](/assets/Waves Gateways.png)
+![](/assets/Waves Gateways.png)Nodes
+
+Mining nodes \(pools\)
+
+Official nodes with open API \( wavesnodes.com \)
+
+# Matcher nodes \(one official\)
+
+Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher.
+
+orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation.
+
+Waves node contains DEX Matcher which can be enabled while settings the Waves node configuration file in the section of Matcher Settings.
+
+Clients apps
+
+MainNet / TestNet
 
