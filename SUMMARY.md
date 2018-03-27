@@ -55,6 +55,7 @@
 * [Validation Rules](guidelines/validation-rules.md)
 * [Creating a Private Waves Blockchain Network](guidelines/creating-a-private-waves-blockchain-network.md)
 * [Mass Transfer Transaction](mass-transfer-transaction.md)
+* [Data Transaction](data-transaction.md)
 * [Waves Contracts Language Description](waves-contracts-language-description.md)
 
 ## Application Development and API
