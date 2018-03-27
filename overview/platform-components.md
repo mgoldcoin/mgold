@@ -67,7 +67,7 @@ Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wave
 
 # 7.1 Mining nodes \(pools\)
 
-You don’t need any fancy hardware — just a simple hosted server and at least 1,000 WAVES.
+You don’t need any fancy hardware, just a simple hosted server and at least 1,000 WAVES.
 
 You can also run a public mining pool and have users lease their funds to you, thereby increasing your profits and sharing them with the community.
 
