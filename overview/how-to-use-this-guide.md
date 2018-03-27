@@ -6,8 +6,8 @@ In this guide, you can find all documentation for Waves Platform as shown below:
 
 This section will give you a general information about Waves Platform and its main components.
 
-1. [What is Waves Platform](https://waves-platform.gitbooks.io/wavesdocs/content/)
-2. [Platform Components](https://waves-platform.gitbooks.io/wavesdocs/content/platform-components.html)
+1. [What is Waves Platform](https://docs.wavesplatform.com)
+2. [Platform Components](https://docs.wavesplatform.com/overview/platform-components.html)
 3. [Waves Official Resources](https://waves-platform.gitbooks.io/wavesdocs/content/waves-official-resources.html)
 4. [Security Notes](https://waves-platform.gitbooks.io/wavesdocs/content/security-notes.html)
 
