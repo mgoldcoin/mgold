@@ -82,8 +82,7 @@ You can also run a public mining pool and have users lease their funds to you, t
 1. [**WavesGo**](http://www.wavesgo.com) is the foremost Waves node, with the biggest balance \(16,214,530 WAVES\) and a thriving community of supporters. The node distributes the WavesGo token to anyone who leases their funds to it.
 2. [**Wavesnode.NET**](https://wavesnode.net)** **represents a developing community in Holland with a balance of 10,589,578 WAVES. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Waves merchandise.
 
-   ![](/_assets/Waves Gateways.png)Nodes
-   > > > > > > > efbcfcabb05fef60ae72a64c33a9434a62b3319c:overview/platform-components.md
+   ![](/_assets/Waves Gateways.png)
 
 **Note.** You can find a full nodes list at [dev.pywaves.org](http://dev.pywaves.org/generators/) and [Here](https://wavesplatform.com/leasing#nodes) you can find a list of the top nodes by WAVES balance.
 
