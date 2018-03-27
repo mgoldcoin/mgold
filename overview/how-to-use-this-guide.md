@@ -8,18 +8,18 @@ This section will give you a general information about Waves Platform and its ma
 
 1. [What is Waves Platform](https://docs.wavesplatform.com)
 2. [Platform Components](https://docs.wavesplatform.com/overview/platform-components.html)
-3. [Waves Official Resources](https://waves-platform.gitbooks.io/wavesdocs/content/waves-official-resources.html)
-4. [Security Notes](https://waves-platform.gitbooks.io/wavesdocs/content/security-notes.html)
+3. [Waves Official Resources](https://docs.wavesplatform.com/overview/waves-official-resources.html)
+4. [Security Notes](https://docs.wavesplatform.com/overview/security-notes.html)
 
 # 2. Platform Features
 
 This section contains explantions about Waves main Features such as \(Waves-NG Protocol\).
 
-1. [Decentralized Cryptocurrency Exchange \(DEX\).](https://waves-platform.gitbooks.io/wavesdocs/content/decentralized-cryptocurrency-exchange-dex.html)
-2. [Assets \(Custom Tokens\).](https://waves-platform.gitbooks.io/wavesdocs/content/assets-custom-tokens.html)
-3. [Leased Proof of Stake \(LPoS\)](https://waves-platform.gitbooks.io/wavesdocs/content/leased-proof-of-stake-lpos.html).
-4. [Waves-NG Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/waves-ng-protocol.html).
-5. [Activation Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/activation-protocol.html).
+1. [Decentralized Cryptocurrency Exchange \(DEX\).](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
+2. [Assets \(Custom Tokens\).](https://docs.wavesplatform.com/platform-features/assets-custom-tokens.html)
+3. [Leased Proof of Stake \(LPoS\).](https://docs.wavesplatform.com/platform-features/leased-proof-of-stake-lpos.html)
+4. [Waves-NG Protocol.](https://docs.wavesplatform.com/platform-features/waves-ng-protocol.html)
+5. [Activation Protocol.](https://docs.wavesplatform.com/platform-features/activation-protocol.html)
 
 # 3. Waves Client
 
