@@ -36,7 +36,7 @@
 ## Waves Full Node
 
 * [What is Waves Full Node ](waves-full-node/what-is-a-full-node.md)
-* [How To Install a node](guidelines/how-to-install-a-node.md)
+* [How To Install a node](waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
   * [On Mac](waves-full-node/how-to-install-a-node/on-mac.md)
   * [On Windows](waves-full-node/how-to-install-a-node/on-windows.md)
   * [On Ubuntu](waves-full-node/how-to-install-a-node/on-ubuntu.md)

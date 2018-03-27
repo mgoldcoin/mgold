@@ -25,16 +25,16 @@ This section contains explantions about Waves main Features such as \(Waves-NG P
 
 This section contains step-by-step guides for Installing Waves Client, Creating Account, Leasing Waves and Issue as asset.
 
-1. [Install Waves Client](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/install-waves-client.html)
-2. [Account Management \(Create and Restore an Account\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/account-management.html)
-3. [Wallet Management \(Send and Deposit several cryptocurrencies\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-management.html)
-4. [Assets Management \(Issue and Reissue an Asset\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/assets-management.html)
+1. [Install Waves Client](https://docs.wavesplatform.com/waves-client/install-waves-client.html)
+2. [Account Management](https://docs.wavesplatform.com/waves-client/account-management.html) \([Create](https://docs.wavesplatform.com/waves-client/account-management/creating-an-account.html) and [Restore](https://docs.wavesplatform.com/waves-client/account-management/restore-an-account.html) an Account\)
+3. [Wallet Operations \(Send and Deposit several cryptocurrencies\)](https://docs.wavesplatform.com/waves-client/wallet-management.html)
+4. [Custom Assets \(Issue and Reissue an Asset\)](https://docs.wavesplatform.com/waves-client/assets-management.html)
 
 # 4. Waves Full Node
 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
-1. [What is Waves Full Node](https://waves-platform.gitbooks.io/wavesdocs/content/waves-full-node/what-is-a-full-node.html)
+1. [What is Waves Full Node](https://docs.wavesplatform.com/waves-full-node/what-is-a-full-node.html)
 2. [How To Install a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html)
 3. [How to Configure a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-configure-a-node.html)
 4. [Upgrading](https://waves-platform.gitbooks.io/wavesdocs/waves-full-node/upgrading.html)
