@@ -27,7 +27,7 @@
 
 Fiat Gateways such as USD/EUR/CNY will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/ZCash/Litecoin\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
-## 6.1 Fiat Gateways \(Dollars and Euros\)
+## 6.1 Fiat Gateways
 
 The Waves US dollar and EUR gateways are available within the Waves Client — allowing anyone to deposit and withdraw USD, EUR and use the backed token within the Waves ecosystem. Waves users can deposit USD and EUR via the secure gateways, receiving in return a token that is 100% backed by USD or EUR reserves. This can be held, transferred and exchanged for other tokens quickly and at low cost, and withdrawn back through the gateway into the traditional financial system when required.
 
