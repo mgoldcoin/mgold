@@ -1,6 +1,6 @@
 # Waves Platform Components
 
-# 1. Lite Client
+# 1. Waves Client
 
 [The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/install-waves-client.html) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
