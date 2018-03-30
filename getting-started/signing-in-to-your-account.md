@@ -2,7 +2,7 @@ If you have already created a Waves account, you can sing in directly by choosin
   
 
 
-![](/assets/Webp.net-resizeimage-3.jpg)
+![](/_assets/Webp.net-resizeimage-3.jpg)
 
 Figure 1, Signing In to Your Acount.
 

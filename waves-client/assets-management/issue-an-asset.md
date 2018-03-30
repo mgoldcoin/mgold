@@ -8,7 +8,7 @@ Go to the **Tokens Creation** tab to create an asset, Figure 1.
 
 **Important.** Before creating a new asset, please make sure that you have at least 1 WAVES on your account to pay the fee charged for the asset creation.
 
-![](/assets/Screen Shot 2018-01-22 at 6.44.12 PM.png)Figure1, Asset Creation Tab
+![](/_assets/Screen Shot 2018-01-22 at 6.44.12 PM.png)Figure1, Asset Creation Tab
 
 Then you need to fill the details of your Token, Figure 2:
 
@@ -21,7 +21,7 @@ Then you need to fill the details of your Token, Figure 2:
 
 After you have filled out all fields of the table, make sure they are filled out correctly. Press **"Generate"** if all fields are correct.
 
-![](/assets/Screen Shot 2018-01-22 at 6.43.54 PM.png)Figure 2, New asset description.
+![](/_assets/Screen Shot 2018-01-22 at 6.43.54 PM.png)Figure 2, New asset description.
 
 **Important.** The Waves network confirmation is required to create your asset. Currently, confirmation takes about one minute. You can see the asset status on the homepage of the Waves account in the "TRANSACTIONS" section.
 

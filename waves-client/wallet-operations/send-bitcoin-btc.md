@@ -4,7 +4,7 @@ Waves allows you to hold and transfer WAVES, Bitcoin, Litecoin, Zcash, Ethereum,
 
 The user can send Bitcoins or another cryptocurrencies \( which are supported by Waves Client\) to another address within seconds. Moreover, it allows a cryptocurrency to be traded on the Waves decentralized exchange against any other token issued on the Waves blockchain.
 
-![](/assets/Webp.net-resizeimage-9.png)Figure 1, List of all Cryptocurrencies to Send and Deposit.
+![](/_assets/Webp.net-resizeimage-9.png)Figure 1, List of all Cryptocurrencies to Send and Deposit.
 
 ## **Send Operation**
 
@@ -22,7 +22,7 @@ There are two ways to send bitcoins:
 
 #### 1. **Send To External Address not through Waves Network, Figure2:**
 
-![](/assets/Webp.net-resizeimage-10.png)Figure 2, Send BTC.
+![](/_assets/Webp.net-resizeimage-10.png)Figure 2, Send BTC.
 
 Open your Waves wallet In the Bitcoin section, click on **Send**.
 
@@ -36,13 +36,13 @@ The following pop-up will appear. After that, fill up all the details:
 
 **Note: **Be aware of choosing the Recipient Address as the transaction fee can be different depending on the Recipient address if it’s a Waves one or a Bitcoin one. The gateway charges 0.001 BTC for the gateway fee as well as 0.001 Waves for the network fee. Read the conditions carefully in yellow boxes before proceeding.
 
-![](/assets/Webp.net-resizeimage-11.png)
+![](/_assets/Webp.net-resizeimage-11.png)
 
 Figure 3, Send Bitcoin to External Address not through Waves Network \(0.001 BTC as gateway fee + 0.001 Waves as transaction fee\).
 
 The following pop-up will appear.To complete the operation, click on **Confirm,** Figure 3.
 
-![](/assets/Webp.net-resizeimage-13.png)
+![](/_assets/Webp.net-resizeimage-13.png)
 
 Figure 3, Confirm Sending BTC.
 
@@ -50,7 +50,7 @@ Figure 3, Confirm Sending BTC.
 
 You can send Bitcoins directly to another Waves account with 0.001 Waves as Transaction fee, just use the recipient Waves address, click on Send and fill out the sending form.
 
-![](/assets/Webp.net-resizeimage-12.png)
+![](/_assets/Webp.net-resizeimage-12.png)
 
 Figure 4, Send Bitcoin to Internal Address through Waves Network \(0.001 Waves as transaction fee\).
 

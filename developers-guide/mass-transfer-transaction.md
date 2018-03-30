@@ -61,7 +61,7 @@ Unlike other transactions, Mass Transfer fee is made up of two amounts: a fixed 
 100_000 + 50_000 * N
 ```
 
-where`N`is the number of recipients in transaction. Fee can be configured in miner node settings using the usual syntax, just keep in mind that there are two parts to it. Below is an excerpt from the configuration file that ships with the node:
+where `N` is the number of recipients in transaction. Fee can be configured in miner node settings using the usual syntax, just keep in mind that there are two parts to it. Below is an excerpt from the configuration file that ships with the node:
 
 ```cpp
 transfer {
@@ -78,9 +78,9 @@ Mass Transfer transaction accepts fees in WAVES only.
 
 ### Changes to REST API
 
-There is just a single new REST endpoint,`/assets/masstransfer`, to sign and send a mass transfer transaction. Like its counterparts, it requires authentication using`X-Api-Key`header.
+There is just a single new REST endpoint, `/assets/masstransfer`, to sign and send a mass transfer transaction. Like its counterparts, it requires authentication using `X-Api-Key` header.
 
-Just as with other transaction types,`/transactions/sign`can be used to create and sign a Mass Transfer transaction without broadcasting it. Use`/transactions/broadcast`to broadcast a signed transaction.
+Just as with other transaction types, `/transactions/sign` can be used to create and sign a Mass Transfer transaction without broadcasting it. Use `/transactions/broadcast` to broadcast a signed transaction.
 
 ### Related Changes
 

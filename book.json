@@ -37,10 +37,10 @@
     "favicon": "favicon/favicon.ico",
     "custom-js-css": {
       "js": [
-        "./theme/tree-shaper.js"
+        "./_theme/tree-shaper.js"
       ],
       "css": [
-        "./theme/tree-shaper.css"
+        "./_theme/tree-shaper.css"
       ]
 
     }
