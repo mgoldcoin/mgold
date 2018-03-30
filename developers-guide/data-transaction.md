@@ -14,20 +14,21 @@ Binary format of a data transaction is as follows:
 
 | Field | Size in bytes | Comment |
 | ----- | -------------:| ----- |
-| type | 1 | == 12 |
-| version | 1 | == 1 at this time |
-| sender's public key | 32 |
-| number of data entries | 2 |
-| key1 length | 1 | key1 byte size |
-| key1 bytes | ? | UTF-8 encoded |
-| value1 type | 1 | 0 = integer<br>1 = boolean<br>2 = binary array |
-| value1 bytes | ? |
-|...|
-| timestamp | 8 |
-| fee | 8 |
-| proofs | ? | currently only signature is supported |
+| magic byte | 1 | == 0
+| type | 1 | == 12
+| version | 1 | == 1 at this time
+| sender's public key | 32
+| number of data entries | 2
+| key1 length | 2 | key1 byte size
+| key1 bytes | ? | UTF-8 encoded
+| value1 type | 1 | 0 = integer<br>1 = boolean<br>2 = binary array
+| value1 bytes | ?
+|...
+| timestamp | 8
+| fee | 8
+| proofs | ? | currently only signature is supported
 
-Maximum size of a data transaction is 2+32+2+(1+127+1+2+1024)*127+16+2+64 = about 144 kilobytes. (See Constraints for limits on key and value size)
+Maximum size of a data transaction is 3+32+2+(2+400+1+2+1024)*100+16+2+64 = about 140 kilobytes. (See Constraints for limits on key and value size)
 
 Data transactions issued by a single account define this account's state in a cumulative fashion. E.g. once the following two transactions have been mined:
 
@@ -72,7 +73,7 @@ fees {
 }
 ```
 
-As maximum size of a transaction in bytes is just under 144K (see Implementation above), maximum fee is 0.144 WAVES.
+As maximum size of a transaction in bytes is just under 140K (see Implementation above), maximum fee is 0.14 WAVES.
 
 ### API
 
@@ -151,9 +152,10 @@ With all endpoints, byte arrays are Base58-encoded.
 
 ### Constraints
 
-Size limits are 127 bytes for keys and 1024 bytes for values.
+Maximum key size is 100 characters. A key can contain arbitrary Unicode code points including spaces and other non-printable symbols.
+Byte string values have a limit of 1024 bytes.
 
-Maximum number of entries in data transaction is 127.
+Maximum number of entries in data transaction is 100.
 
 ### Related Changes
 
