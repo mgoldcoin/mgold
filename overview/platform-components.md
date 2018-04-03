@@ -71,6 +71,17 @@ You don’t need any fancy hardware, just a simple hosted server and at least 1,
 
 You can also run a public mining pool and have users lease their funds to you, thereby increasing your profits and sharing them with the community.
 
+You can find the full list of Waves nodes for leasing with their corresponding address here [http://dev.pywaves.org/generators-weekly/](http://dev.pywaves.org/generators-weekly/) :
+
+* [**wavesgo.com**](http://wavesgo.com/)
+* [**wavesfullnode.com**](http://wavesfullnode.com/)
+* [**wavescommunitynode.com**](http://wavescommunitynode.com/)
+* [**wavesnode.com**](http://wavesnode.com/)
+* [**wavespool.net**](http://wavespool.net/)
+* [**pospool.io**](http://pospool.io/)
+* [**wavesnode.net**](http://wavesnode.net/)
+* [**bearwaves.nl**](http://bearwaves.nl/)
+
 # 7.2 Official nodes with open API
 
 1. [**WavesGo**](http://www.wavesgo.com) is the foremost Waves node, with the biggest balance \(16,214,530 WAVES\) and a thriving community of supporters. The node distributes the WavesGo token to anyone who leases their funds to it.

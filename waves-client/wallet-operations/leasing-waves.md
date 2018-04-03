@@ -1,6 +1,6 @@
 # Leasing WAVES
 
-Leasing essentially means giving your forging power to a running full node without your WAVES actually leaving the wallet. This enables anyone to participate in the forging process without having to operate a node himself.  In order to get more details about Waves Leased-Proof-of-Stake protocol please click [here](https://waves-platform.gitbooks.io/wavesdocs/content/leased-proof-of-stake-lpos.html).
+Leasing essentially means giving your forging power to a running full node without your WAVES actually leaving the wallet. This enables anyone to participate in the forging process without having to operate a node himself.  In order to get more details about Waves Leased-Proof-of-Stake protocol please click [here](https://docs.wavesplatform.com/platform-features/leased-proof-of-stake-lpos.html).
 
 Waves implemented balance leasing within its lite client to allow every user to take part in securing the network and profit from transaction fees — without requiring any additional technical knowledge or the need to download the blockchain. Leased WAVES remain in the full control of the account holder.
 
@@ -62,23 +62,17 @@ To lease your Waves, all you have to do is:
 * Be aware that the leasing fees is 0.001 WAVES.
 * Click “Start Lease” button.
 
-![](/_assets/Screen%20Shot%202018-01-16%20at%205.24.48%20PM.png)Figure 1, GUI for Leasing your WAVES.
-
-
+![](/_assets/Screen Shot 2018-01-16 at 5.24.48 PM.png)Figure 1, GUI for Leasing your WAVES.
 
 Once you Clicked **Start Leasing **button, Your leasing transaction will be completed, Figure 2.
 
-![](/_assets/Screen%20Shot%202018-01-17%20at%206.18.06%20PM.png)Figure 2, Leasing Completed.
-
-
+![](/_assets/Screen Shot 2018-01-17 at 6.18.06 PM.png)Figure 2, Leasing Completed.
 
 You can see the full details about your leasing transaction by clicking on **View Details**, Figure 3.
 
-![](/_assets/Screen%20Shot%202018-01-17%20at%206.18.31%20PM.png)Figure 3, Leasing Transaction Details.  
-  
+![](/_assets/Screen Shot 2018-01-17 at 6.18.31 PM.png)Figure 3, Leasing Transaction Details.
+
 You will always be able to cancel your leasing transaction by going to the **Leasing **tab in main menu, then to the right end click the transactions details and click **Cancel Leasing**, Figure 4.
 
-![](/_assets/Screen%20Shot%202018-01-24%20at%203.38.08%20PM.png)Figure 4, Cancel Leasing.
-
-
+![](/_assets/Screen Shot 2018-01-24 at 3.38.08 PM.png)Figure 4, Cancel Leasing.
 

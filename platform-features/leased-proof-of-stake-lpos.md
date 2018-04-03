@@ -117,7 +117,7 @@ Get Rewards:
 
 # 3.2.3 Useful links for leasing {#LeasedProofofStake(LPOS)-Usefullinksforleasing}
 
-For Step-by-Step guide to lease your waves, click [here](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/leasing-waves.html).
+For Step-by-Step guide to lease your waves, click [here](https://docs.wavesplatform.com/waves-client/wallet-operations/leasing-waves.html).
 
 For the List of generators click [here](http://dev.pywaves.org/generators/).
 
