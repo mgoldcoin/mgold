@@ -1,4 +1,4 @@
-# Waves[![](https://camo.githubusercontent.com/72b6866e22012a45d6af1cda42c381a9e87adaa7/68747470733a2f2f7472617669732d63692e6f72672f7761766573706c6174666f726d2f57617665732e7376673f6272616e63683d6d6173746572 "Build Status")](https://travis-ci.org/wavesplatform/Waves)[![](https://camo.githubusercontent.com/175cc2bec7c97bdb762cc926fc3cf15b7c8b0c63/68747470733a2f2f696d616765732e6d6963726f6261646765722e636f6d2f6261646765732f76657273696f6e2f7761766573706c6174666f726d2f77617665732d746573746e65742e737667)](http://microbadger.com/images/wavesplatform/waves-testnet)
+# Waves
 
 In the master branch there is a code with functions that is under development. The latest release for each network can be found in the [Releases section](https://github.com/wavesplatform/Waves/releases), you can switch to the corresponding tag and build the application.
 
