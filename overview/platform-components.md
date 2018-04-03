@@ -1,6 +1,6 @@
 # Waves Platform Components
 
-# 1. Lite Client
+# 1. Waves Client
 
 [The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/install-waves-client.html) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
@@ -27,7 +27,7 @@
 
 Fiat Gateways such as USD/EUR/CNY will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/ZCash/Litecoin\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
-## 6.1 Fiat Gateways \(Dollars and Euros\)
+## 6.1 Fiat Gateways
 
 The Waves US dollar and EUR gateways are available within the Waves Client — allowing anyone to deposit and withdraw USD, EUR and use the backed token within the Waves ecosystem. Waves users can deposit USD and EUR via the secure gateways, receiving in return a token that is 100% backed by USD or EUR reserves. This can be held, transferred and exchanged for other tokens quickly and at low cost, and withdrawn back through the gateway into the traditional financial system when required.
 
@@ -67,7 +67,7 @@ Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wave
 
 # 7.1 Mining nodes \(pools\)
 
-You don’t need any fancy hardware — just a simple hosted server and at least 1,000 WAVES.
+You don’t need any fancy hardware, just a simple hosted server and at least 1,000 WAVES.
 
 You can also run a public mining pool and have users lease their funds to you, thereby increasing your profits and sharing them with the community.
 
@@ -90,8 +90,8 @@ Matchers will receive fees for the service they provide, adding an additional re
 
 # 8. MainNet / TestNet
 
-1. **Mainnet** - this is the real deal the live Waves blockchain where you in the worst case could lose money if you are not careful
-2. **Testnet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
+1. **MainNet** - this is the real deal, the live Waves blockchain where you in the worst case could lose money if you are not careful. You can access the mainnet via a full node. it's integrated with the GUI in the Waves client, allowing anyone to use it without any technical knowledge or blockchain downloads.
+2. **TestNet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
 
 
 
