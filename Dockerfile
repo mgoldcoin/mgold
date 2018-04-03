@@ -1,34 +1,20 @@
-FROM ubuntu:16.04
-MAINTAINER iKardanov <ikardanov@wavesplatform.com>
-
-RUN apt-get -y update
+FROM node:alpine
 
 # Install dependencies
-RUN apt-get install -y curl git calibre && \
-	curl -sL https://deb.nodesource.com/setup | bash - && \
-	apt-get install -y nodejs && \
-	npm install -g gitbook-cli
+RUN apk update && apk upgrade && apk add --no-cache bash git openssh \
+    && rm -rf /var/cache/apk/*
 
-
-# Install latest version
-RUN gitbook install latest
+RUN npm install -g gitbook-cli
 
 RUN mkdir /gitbook
 WORKDIR /gitbook
 RUN git clone https://github.com/wavesplatform/waves-documentation.git
 WORKDIR waves-documentation
+RUN gitbook install
 
 EXPOSE 4000
 
-
 CMD ["gitbook", "serve"]
-
-
-
-
-
-
-
 
 
 # serve
