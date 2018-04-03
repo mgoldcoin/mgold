@@ -46,7 +46,6 @@
 * [Reducing Disk Space Usage](waves-full-node/reducing-disk-space-usage.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
 * [Configuration](waves-full-node/configuration.md)
-* [Mining](waves-full-node/mining.md)
 
 ## Developers Guide
 
