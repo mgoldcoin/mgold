@@ -57,6 +57,7 @@
 * [Mass Transfer Transaction](developers-guide/mass-transfer-transaction.md)
 * [Data Transaction](developers-guide/data-transaction.md)
 * [Waves Contracts Language Description](developers-guide/waves-contracts-language-description.md)
+* [Waves-NG Solution](developers-guide/waves-ng-solution.md)
 
 ## Application Development and API
 
