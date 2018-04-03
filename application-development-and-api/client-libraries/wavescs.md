@@ -1,38 +1,34 @@
 # WavesCS
+A C# library for interacting with the Waves blockchain
 
-It's a C\# library for interacting with the Waves blockchain.
-The library is developing by community and open source. Latest documentation and examples can be found in [Github repository](https://github.com/wavesplatform/WavesCS)
+Supports node interaction, offline transaction signing, Matcher orders, and creating addresses and keys.
 
 ## Getting Started
 
-You can install PyWaves using:
-
-    pip install pywaves
-
-## Documentation
-
-The library utilizes classes to represent various Waves data structures:
-
-- pywaves.Address
-- pywaves.Asset
-- pywaves.AssetPair
-- pywaves.Order
-
-#### Code Example
-```python
-import pywaves as pw
-
-myAddress = pw.Address(privateKey='CtMQWJZqfc7PRzSWiMKaGmWFm4q2VN5fMcYyKDBPDx6S')
-otherAddress = pw.Address('3PNTcNiUzppQXDL9RZrK3BcftbujiFqrAfM')
-myAddress.sendWaves(otherAddress, 10000000)
-myToken = myAddress.issueAsset('Token1', 'My Token', 1000, 0)
-while not myToken.status():
-	pass
-myAddress.sendAsset(otherAddress, myToken, 50)
-
+You can download **WavesCS.dll** from [releases](https://github.com/wavesplatform/WavesCS/releases) and add it to your project's References and in your code as:
+```
+using WavesCS;
 ```
 
+If you want to work with full WavesCS project as contributor you should use also all crypto **.dll** from releases in your References.
 
+Target framework .NET Framework 4.6.1
+## Documentation
+
+The library utilizes classes to represent various Waves data structures and encoding and serialization methods:
+
+- WavesCS.Node
+- WavesCS.Order
+- WavesCS.OrderBook
+- WavesCS.PrivateKeyAccount
+- WavesCS.Transaction
+- WavesCS.AddressEncoding
+- WavesCS.Base58
+- WavesCS.Utils
+
+
+#### Code Example
+Code examples are in [WavesCSTests](https://github.com/wavesplatform/WavesCS/tree/master/WavesCSTests) project.
 
 ### Source code
-[PyWaves Github repository](https://github.com/PyWaves/PyWaves/)
+[WavesCS Github repository](https://github.com/wavesplatform/WavesCS)
