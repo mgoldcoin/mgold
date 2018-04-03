@@ -1,6 +1,6 @@
 # Waves
 
-In the master branch there is a code with functions that is under development. The latest release for each network can be found in the [Releases section](https://github.com/wavesplatform/Waves/releases), you can switch to the corresponding tag and build the application.
+The latest release for each network can be found in the [Releases section](https://github.com/wavesplatform/Waves/releases), you can switch to the corresponding tag and build the application.
 
 [How to configure Waves node](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html)
 
