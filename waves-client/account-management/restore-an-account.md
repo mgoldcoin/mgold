@@ -2,7 +2,7 @@
 
 If you forgot your password, you can easily restore your account.
 
-Open up your Beta wallet - https://beta.wavesplatform.com
+Open up Waves wallet.
 Click on **Restore account** on the main page.
 
 ![](/_assets/account_restoring_01.png)
