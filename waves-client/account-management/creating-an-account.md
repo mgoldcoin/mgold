@@ -1,9 +1,4 @@
 # **How to Create an Account**
-
-The Waves wallet features stable fiat, Bitcoin, Ethereum, Litecoin, Zcash, more than 10,000 Waves-based tokens, one of the fastest blockchains in the cryptosphere and the Waves Decentralized Exchange \(Waves DEX\).
-
-Waves, the native currency within the Waves Platform system, is a Leased Proof of Stake \(LPoS\) cryptocurrency that allows users to earn rewards by hosting a full node or by leasing their balance to a node.
-
 Open up Waves wallet or download it by using either the [Online Client](https://wavesplatform.com/product), [Desktop Client](https://wavesplatform.com/product).
 
 After opening the Waves client for the first time, click **Get Started** to start the process of creating your account
@@ -26,7 +21,7 @@ Carefully read the warning and only then click on **I understand**
 
 ![](/_assets/account_creation_04.png)
 
-After that, you will get account seed phrase. 
+After that, you will get account seed phrase.
 Waves wants to make sure you actually wrote down the backup phrase. Therefore, Waves will ask you to verify the backup phrase before proceeding to your Waves account.
 Create several copies of the seed phrase and click on **I've written it down**
 
