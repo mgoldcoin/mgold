@@ -10,5 +10,7 @@
 * The fiat-crypto problem is solved through Waves fiat gateways.
 * Built on top of the Scorex framework.
 
+**Note. **Please find [**here**](https://docs.wavesplatform.com/overview/how-to-use-this-guide.html) the instructions of using this guide.
+
 
 
