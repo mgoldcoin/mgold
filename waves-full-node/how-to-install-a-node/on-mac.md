@@ -8,7 +8,6 @@ Now you can check your JRE installation. Run terminal and execute command `java 
 java version "1.8.0_74"
 Java(TM) SE Runtime Environment (build 1.8.0_74-b02)
 Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
-
 ```
 
 then all is ok, and you can move on to the next step!
@@ -21,7 +20,7 @@ Download the latest version of waves.jar and the required .conf configuration fi
 
 Carefully edit the configuration waves.conf file, **it is very important! The safety of your wallet and money depends on this!**
 
-Just open it with your favorite text editor, pour a cup of tea and read [the documentation of the configuration file](https://github.com/wavesplatform/Waves/wiki/Waves-Node-configuration-file).
+Just open it with your favorite text editor, pour a cup of tea and read[ the documentation of the configuration file.](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html)
 
 Then start Terminal app `Terminal.app`, navigate to the folder with the jar file with the command `cd ~/waves`and start waves node with command `java -jar waves.jar waves.conf`.
 
