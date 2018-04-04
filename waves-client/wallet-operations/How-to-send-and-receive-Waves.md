@@ -12,8 +12,11 @@ The following pop-up will appear.
 Fill In the sending form.
 
 **Recipient**: Enter the recipient Waves address.
+
 **Amount**: Define a number of Waves you want to send.
+
 **Description**: Optional. You can write a message for the recipient in the Description field.
+
 **Note**: Some exchanges require users to include description when depositing assets. Otherwise, they cannot credit your account.
 
 After you have entered all necessary information, click on the **Continue** button.
