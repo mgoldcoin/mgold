@@ -40,6 +40,8 @@ This section contains all information about Installing, configuring and upgradin
 4. [Upgrading](https://docs.wavesplatform.com/waves-full-node/upgrading.html)
 5. [Export and Import From The Blockchain](https://docs.wavesplatform.com/waves-full-node/export-and-import-from-the-blockchain.html)
 6. [Reducing Disk Space Usage](https://docs.wavesplatform.com/waves-full-node/reducing-disk-space-usage.html)
+7. [Joining Testnet](https://docs.wavesplatform.com/waves-full-node/joining-testnet.html)
+8. [Configuration](https://docs.wavesplatform.com/waves-full-node/configuration.html)
 
 # 5. Developers Guide
 
@@ -51,7 +53,8 @@ This Section contains technical details about Waves Platform
 4. [Creating a Private Waves Blockchain Network](https://docs.wavesplatform.com/developers-guide/creating-a-private-waves-blockchain-network.html)
 5. [Mass Transfer Transactions](https://docs.wavesplatform.com/developers-guide/mass-transfer-transaction.html)
 6. [Data Transaction](https://docs.wavesplatform.com/developers-guide/data-transaction.html)
-7. [Waves Contracts Language Description.](https://docs.wavesplatform.com/developers-guide/waves-contracts-language-description.html)
+7. [Waves Contracts Language Description](https://docs.wavesplatform.com/developers-guide/waves-contracts-language-description.html)
+8. [Waves-NG Solution](https://docs.wavesplatform.com/developers-guide/waves-ng-solution.html)
 
 # 6. Application Development and API
 
