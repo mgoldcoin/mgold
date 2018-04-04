@@ -55,7 +55,7 @@ Fees are minimal and the only delays are those required by blockchain confirmati
 
 # 7. Nodes
 
-Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wavesplatform.com/guidelines/how-to-install-a-node.html), help process transactions, ask the community to [lease their WAVES](https://docs.wavesplatform.com/waves-client/wallet-management/leasing-waves.html) to you and get paid for securing the network.
+Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wavesplatform.com/waves-full-node/how-to-install-a-node/how-to-install-a-node.html), help process transactions, ask the community to [lease their WAVES](https://docs.wavesplatform.com/waves-client/wallet-management/leasing-waves.html) to you and get paid for securing the network.
 
 **Features:**
 
