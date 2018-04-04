@@ -2,7 +2,7 @@
 
 Wallet Management Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. After reading this instruction you will be able to:
 
-1. [Send and receive Waves](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-operations/How-to-send-and-receive-Waves.html)
+1. [Send and receive Waves](https://github.com/wavesplatform/waves-documentation/blob/master/waves-client/wallet-operations/How-to-send-and-receive-Waves.md)
 2. [Send and receive Asset](Link)
 3. [Deposit and withdraw Bitcoin](Link)
 4. [Deposit and withdraw Ethereum](Link)
@@ -10,8 +10,6 @@ Wallet Management Chapter includes all details about send and deposit operations
 6. [Deposit and withdraw Zcash](Link)
 7. [Deposit and withdraw Bitcoin Cash](Link)
 8. [Send and receive fiat money (EUR, USD)](Link)
-
-https://waves-platform.gitbooks.io/wavesdocs/content/waves-client
 
 As first, it is needed to feed your wallet with some crypto. If you don’t have Bitcoin \(Ether, LiteCoin or Z-Cash\), purchase them via your trusted exchange and send them to the wallet.
 
