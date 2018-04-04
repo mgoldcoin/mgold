@@ -2,16 +2,29 @@
 
 If you forget your password, you can easily restore your account.
 
-**Step 1:** click **Restore Account** and then enter your saved wallet seed and then click **continue**, Figure 1.
+Open up your Beta wallet - https://beta.wavesplatform.com
+Click on **Restore account** on the main page.
 
-**Note:** Each and every SEED is only linked to one single Waves account. So you must enter exactly the all 15 words of your seed with considering the spaces and every character otherwise another account will open.
+![](/_assets/account_restoring_01)
 
-![](/_assets/Webp.net-resizeimage-7.png)
+You will be forwarded to the following page.
+Copy and paste or type your SEED into the blank text field.
+The Waves wallet will automatically generate the corresponding address right below the text field.
 
-Figure 1, Restore Your Account.
+![](/_assets/account_restoring_02)
 
-**Step 2:** After entering your wallet seed, you will be able to enter the password and sign in to your account, Figure 2.
+If you entered the correct SEED, it will display your Waves address.
+Then, click on Continue. Set a password for encryption of the SEED.
 
-![](/_assets/Webp.net-resizeimage-8.png)
+To finish the process, click on **Sign in**
 
-Figure 2, Restore Account by creating a new password.
+![](/_assets/account_restoring_03)
+
+At the final stage, read carefully the conditions and if you are agree put the checkboxes.
+Click on **Confirm and Begin**.
+
+![](/_assets/account_restoring_04)
+
+If you have done all of the above, you are forwarded to the user interface
+
+![](/_assets/account_restoring_04)
