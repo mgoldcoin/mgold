@@ -1,16 +1,41 @@
-# **Deposit Bitcoin**
+# **How to send and receive Waves**
 
-After creating Deposit request, Bitcoins are sent to a user's deposit address available in the Waves Client and after the deposit, the user receives a Bitcoin token \(wBTC\) on the Waves blockchain. Every single Bitcoin token is backed 1:1 with a real Bitcoin.
+**How to send Waves**
 
-**Step 1:** Open your Waves wallet In the Bitcoin section, click on **Deposit**.
+Open up your Waves wallet.
+At the top left corner click on the **Send** button.
 
-![](/_assets/Webp.net-resizeimage-14.png)Figure 1,  Deposit BTC section in Waves Client.
+![](/_assets/waves_transfers_01.png)
 
-**Step 2:** The following pop-up will appear, Figure 2. Copy the shown Bitcoin address or Scan QR Code and send a payment.Read the conditions carefully in yellow boxes before proceeding. The deposited amount of Bitcoin will be sent to your Waves account in form of a Bitcoin token \(wBTC\) within a few minutes.
+The following pop-up will appear.
 
-**Note: **The minimum amount of deposit is 0.001 BTC and Processing can take up to 120 minutes.
+Fill In the sending form.
 
-![](/_assets/Webp.net-resizeimage-15.png)
+**Recipient**: Enter the recipient Waves address.
+**Amount**: Define a number of Waves you want to send.
+**Description**: Optional. You can write a message for the recipient in the Description field.
+**Note**: Some exchanges require users to include description when depositing assets. Otherwise, they cannot credit your account.
 
-Figure 2, Deposit Bitcoin by copying your address.
+After you have entered all necessary information, click on the **Continue** button.
 
+![](/_assets/waves_transfers_02.png)
+
+The following pop-up will appear.
+
+Re-check entered data and click on the **Confirm** button.
+
+![](/_assets/waves_transfers_03.png)
+
+**How to receive Waves**
+
+Receiving Waves is very straightforward. Just copy your Waves address and hand it to the person who wants to send you Waves.
+
+At the top left corner click on **Your Address**.
+
+![](/_assets/waves_transfers_04.png)
+
+The following pop-up will appear.
+
+Copy the shown Waves address or Scan QR Code and send a payment.
+
+![](/_assets/waves_transfers_05.png)
