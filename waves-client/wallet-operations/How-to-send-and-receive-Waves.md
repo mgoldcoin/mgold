@@ -1,4 +1,4 @@
-# **How to send and receive Waves**
+# How to send and receive Waves
 
 **How to send Waves**
 
