@@ -16,7 +16,7 @@
 
 # 4. Decentralized cryptocurrency exchange \(DEX\)
 
-[DEX](https://docs.wavesplatform.com/decentralized-cryptocurrency-exchange-dex.html) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
+[DEX](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
 # 5. Mobile apps
 
