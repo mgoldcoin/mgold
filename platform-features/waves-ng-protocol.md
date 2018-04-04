@@ -124,7 +124,6 @@ Figure 5: chain structure of the Waves-NG protocol. Microblocks \(circles\) are 
 
 In practice, the remuneration is implemented by having each key block contain a single coinbase transaction that mints new coins and deposits the funds to the current and previous leaders.
 
-As in Bitcoin, this transaction can only be spent after a maturity period of 100 key blocks, to avoid non-mergeable transactions following a fork.
-
-
+As in Bitcoin, this transaction can only be spent after a maturity period of 100 key blocks, to avoid non-mergeable transactions following a fork.   
+**Note.** Find [**here**](https://docs.wavesplatform.com/developers-guide/waves-ng-solution.html) more technical details about Wave-NG.
 
