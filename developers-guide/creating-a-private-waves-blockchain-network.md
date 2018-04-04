@@ -23,10 +23,9 @@ genesis-generator {
     "foo0": 10000000000000
   }
 }
-
 ```
 
-   4. Run the genesis block generator using`sbt "test:runMain tools.GenesisBlockGenerator src/test/resources/genesis.example.conf"`Result will be like this:
+1. Run the genesis block generator using`sbt "test:runMain tools.GenesisBlockGenerator src/test/resources/genesis.example.conf"`Result will be like this:
 
 ```
 Addresses:
@@ -50,10 +49,9 @@ genesis {
     {recipient: "3JfE6tjeT7PnpuDQKxiVNLn4TJUFhuMaaT5", amount: 10000000000000}
   ]
 }
-
 ```
 
-     5. Open your favorite text editor and create waves-custom-network.conf \(or any other name\) file like this:
+1. Open your favorite text editor and create waves-custom-network.conf \(or any other name\) file like this:
 
 ```
 # Waves node settins
@@ -102,7 +100,7 @@ waves {
       }
     }
   }
-  
+
   network {
     bind-address = "0.0.0.0"
     port = 6860
@@ -128,12 +126,11 @@ waves {
     quorum = 0
   }
 }
-
 ```
 
 Pay attention to the parameters`waves.blockchain.custom.address-scheme-character`and`waves.blockchain.custom.genesis`, they was copied from the result and settings of genesis generator tool. Also look at`waves.wallet.seed`value, this value can be copied from "Seed" value for one of genesis addresses from the result of genesis generator tool.
 
-   6. Start your custom network node with`sbt "run waves-custom-network.conf"`Also you can run already builded release package \(deb or jar\) with this configuration file manually.
+1. Start your custom network node with`sbt "run waves-custom-network.conf"`Also you can run already builded release package \(deb or jar\) with this configuration file manually.
 
 Done! You create your private Waves network consisting of one node!
 
@@ -141,5 +138,5 @@ You can add more nodes to your network using`waves.network.known-peers`parameter
 
 `waves.blockchain.custom.functionality`section contains parameters that allow you to enable and disable some features in your blockchain system. Note that the developers can add new parameters in`waves.blockchain.custom.functionality`section, which are not present in this example; for an example of a working configuration, you can look at the[`waves-devnet.conf`file in root folder of repository](https://github.com/wavesplatform/Waves/blob/master/waves-devnet.conf).
 
-Check our [configuration file documentation](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-configure-a-node.html) for more information.
+Check our [configuration file documentation](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html) for more information.
 
