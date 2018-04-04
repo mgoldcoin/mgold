@@ -79,5 +79,7 @@
   * [Blocks](application-development-and-api/waves-node-rest-api/blocks.md)
   * [Utils](application-development-and-api/waves-node-rest-api/utils.md)
 * [Examples](application-development-and-api/examples.md)
+  * [Create Your First crypto Trading Bot](application-development-and-api/examples/trading-bot.md)
+  * [Setting Up a Waves Platform Full Node on Digital Ocean](application-development-and-api/examples/set-up-full-node-on-digital-ocean.md)
 * [Frequently Asked Questions \(FAQ\)](application-development-and-api/frequently-asked-questions-faq.md)
 
