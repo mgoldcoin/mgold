@@ -6,8 +6,8 @@ Read more about
 
 **How to deposit Bitcoin**
 
-Open up your Waves wallet.
-At the top left corner click on the **Deposit** button.
+Open your Waves wallet
+In the Bitcoin section, click on the **Deposit** button.
 
 ![](/_assets/bitcoin_transfers_01.png)
 
@@ -39,7 +39,7 @@ To complete the operation, click on the **Confirm** or **Back** to repeat the pr
 
 ![](/_assets/bitcoin_transfers_05.png)
 
-**Note**: Processing can take up to 120 minutes.
+**Note**: Processing can take up to 120 minutes, the minimum amount is 0.002 BTC.
 
 **How to create internal transaction through Waves network**
 

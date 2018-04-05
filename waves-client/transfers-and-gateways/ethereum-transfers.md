@@ -6,8 +6,8 @@ Read more about
 
 **How to deposit Ethereum**
 
-Open up your Waves wallet.
-At the top left corner click on the **Deposit** button.
+Open your Waves wallet
+In the Ethereum section, click on the **Deposit** button.
 
 ![](/_assets/ethereum_transfers_01.png)
 
@@ -34,14 +34,12 @@ After you have filled the form, click on the **Continue** button.
 
 ![](/_assets/ethereum_transfers_04.png)
 
-Note: Processing can take up to 120 minutes, the minimum amount is 0.005 ETH.
-
 The following pop-up will appear.
 To complete the operation, click on the **Confirm** or **Back** to repeat the process.
 
 ![](/_assets/ethereum_transfers_05.png)
 
-**Note**: Processing can take up to 120 minutes.
+**Note**: Processing can take up to 120 minutes, the minimum amount is 0.005 ETH.
 
 **How to create internal transaction through Waves network**
 
