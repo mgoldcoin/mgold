@@ -2,9 +2,9 @@
 
 Transfers and gayeways Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform.
 
-1. [Waves transfers](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/transfers-and-gateways/waves-transfers.html)
-2. [Asset transfers](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/transfers-and-gateways/asset-transfers.html)
-3. [Bitcoin transfers](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/transfers-and-gateways/bitcoin-transfers.html)
+1. [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
+2. [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
+3. [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
 4. [Ethereum transfers](Link)
 5. [Litecoin transfers](Link)
 6. [Zcash transfers](Link)
