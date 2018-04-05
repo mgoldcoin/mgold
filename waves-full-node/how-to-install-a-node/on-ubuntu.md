@@ -20,6 +20,8 @@ then it good, you can move to the next step!
 
 But if you get an error, then check your installation and try to find some better tutorials in google.
 
+**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version.**
+
 # Installation from deb package
 
 There are two types of deb packages of waves nodes: with upstart loader and systemd loader.

@@ -1,6 +1,6 @@
 # Install the JRE 1.8
 
-Windows users can install the Oracle JRE 8 from [the official site](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html).
+Windows users can install the Oracle JRE 8 \(**64-bit version**\)  from [the official site](http://www.oracle.com/technetwork/java/javase/downloads/index-jsp-138363.html).
 
 You must add a line `;JAVA_HOME/bin` to your existing PATH environment variable to access the JRE from the command line. You can find detailed instructions on this step [here](https://docs.oracle.com/javase/tutorial/essential/environment/paths.html).
 
@@ -15,6 +15,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
 then all is ok, and you can move on to the next step!
 
 If you get an error check your installation and try find a solution or a better tutorial online.
+
+**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version.**
 
 # Download Waves package and configure the application
 
