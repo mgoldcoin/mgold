@@ -1,9 +1,9 @@
-# Chapter Contents
+# Transfers and gayeways
 
 Wallet Management Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. After reading this instruction you will be able to:
 
-1. [Send and receive Waves](/waves-client/wallet-operations/How-to-send-and-receive-Waves.md)
-2. [Send and receive Asset](Link)
+1. [Send and receive Waves](/waves-client/transfers-and-gateways/How-to-send-and-receive-Waves.md)
+2. [Send and receive Asset](/waves-client/transfers-and-gateways/How-to-send-and-receive-Asset.md)
 3. [Deposit and withdraw Bitcoin](Link)
 4. [Deposit and withdraw Ethereum](Link)
 5. [Deposit and withdraw Litecoin](Link)

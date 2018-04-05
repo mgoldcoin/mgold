@@ -28,4 +28,3 @@ The following pop-up will appear, Re-check entered data and click on **Confirm,*
 ![](/_assets/Webp.net-resizeimage-18.png)
 
 Figure 3, Confirm Sending WAVES.
-
