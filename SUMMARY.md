@@ -25,6 +25,7 @@
   * [Signing In to Your Account](waves-client/account-management/signing-in-to-your-account.md)
   * [Use your Waves address](waves-client/account-management/waves-address.md)
 * [Transfers and gateways](waves-client/wallet-management.md)
+  * [What is a payment gateway?](/waves-client/transfers-and-gateways/payment-gateway.md)
   * [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
   * [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
   * [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
