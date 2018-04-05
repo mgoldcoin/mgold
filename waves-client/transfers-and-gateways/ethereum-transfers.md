@@ -9,7 +9,7 @@ Read more about
 Open up your Waves wallet.
 At the top left corner click on the **Deposit** button.
 
-![](/_assets/etherem_transfers_01.png)
+![](/_assets/ethereum_transfers_01.png)
 
 The following pop-up will appear.
 Copy the shown Ethereum address or Scan QR Code and send a payment.
