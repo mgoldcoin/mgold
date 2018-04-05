@@ -2,6 +2,8 @@
 
 Transfers and gayeways Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform.
 
+[What is a payment gateway?](/waves-client/transfers-and-gateways/payment-gateway.md)
+
 1. [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
 2. [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
 3. [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
