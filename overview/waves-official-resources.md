@@ -9,12 +9,10 @@
 * [**Open Source code on GitHub**](https://github.com/wavesplatform/)
 * [**Test Net**](https://testnet.wavesexplorer.com)
 * [**Main Net**](http://wavesexplorer.com)
+* [**Support service**](https://support.wavesplatform.com/)
 * [**Waves desk**](https://wavesdesk.com)
 * [**WavesGo**](http://wavesgo.com)
 * [**Official Facebook group**](https://www.facebook.com/wavesplatform)
 * [**Twitter**](https://twitter.com/wavesplatform?lang=en)
 * [**Blog**](https://blog.wavesplatform.com)
 * [**Community Website**](https://wavescommunity.com)
-
-
-
