@@ -28,7 +28,7 @@
   * [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
   * [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
   * [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
-  * [Ethereum transfers](Link)
+  * [Ethereum transfers](/waves-client/transfers-and-gateways/ethereum-transfers.md)
   * [Litecoin transfers](Link)
   * [Zcash transfers](Link)
   * [Bitcoin Cash transfers](Link)
