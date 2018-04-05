@@ -6,7 +6,7 @@ Transfers and gayeways Chapter includes all details about send and deposit opera
 2. [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
 3. [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
 4. [Ethereum transfers](/waves-client/transfers-and-gateways/ethereum-transfers.md)
-5. [Litecoin transfers](Link)
+5. [Litecoin transfers](/waves-client/transfers-and-gateways/litecoin-transfers.md)
 6. [Zcash transfers](Link)
 7. [Bitcoin Cash transfers](Link)
 8. [EURO and USD transfers](Link)
