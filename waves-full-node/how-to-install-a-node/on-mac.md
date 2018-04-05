@@ -1,6 +1,6 @@
 # Install the JRE 1.8
 
-Mac OS X users can install the Oracle JRE 8 from the [Homebrew](http://brew.sh/) throw [Cask](https://caskroom.github.io/). It is enough to run `brew cask install Caskroom/cask/java`.
+Mac OS X users can install the Oracle JRE 8 \(64-bit version\) from the [Homebrew](http://brew.sh/) throw [Cask](https://caskroom.github.io/). It is enough to run `brew cask install Caskroom/cask/java`.
 
 Now you can check your JRE installation. Run terminal and execute command `java -version`. If you see
 
@@ -13,6 +13,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.74-b02, mixed mode)
 then all is ok, and you can move on to the next step!
 
 If you get an error check your installation and try to find a solution or a better tutorial online.
+
+**Note.** It's necessary to install Oracle JRE 8 with 64-bit version.
 
 # Download Waves package and configure the application
 
