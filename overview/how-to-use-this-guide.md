@@ -27,7 +27,7 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 
 1. [Install Waves Client](https://docs.wavesplatform.com/waves-client/install-waves-client.html)
 2. [Account Management](https://docs.wavesplatform.com/waves-client/account-management.html) \([Create](https://docs.wavesplatform.com/waves-client/account-management/creating-an-account.html) and [Restore](https://docs.wavesplatform.com/waves-client/account-management/restore-an-account.html) an Account\)
-3. [Wallet Operations \(Send and Deposit several cryptocurrencies\)](https://docs.wavesplatform.com/waves-client/wallet-management.html)
+3. [Transfers and gateways](https://docs.wavesplatform.com/waves-client/wallet-management.html)
 4. [Custom Assets \(Issue and Reissue an Asset\)](https://docs.wavesplatform.com/waves-client/assets-management.html)
 
 # 4. Waves Full Node
@@ -64,6 +64,3 @@ This Section contains technical details about Waves Platform
 4. [Waves Node Rest API](https://docs.wavesplatform.com/application-development-and-api/waves-node-rest-api.html)
 5. [Examples](https://docs.wavesplatform.com/application-development-and-api/examples.html)
 6. [FAQ](https://docs.wavesplatform.com/application-development-and-api/frequently-asked-questions-faq.html)
-
-
-
