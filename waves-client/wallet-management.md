@@ -1,15 +1,15 @@
 # Transfers and gayeways
 
-Wallet Management Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. After reading this instruction you will be able to:
+Transfers and gayeways Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform.
 
-1. [Send and receive Waves](/waves-client/transfers-and-gateways/How-to-send-and-receive-Waves.md)
-2. [Send and receive Asset](/waves-client/transfers-and-gateways/How-to-send-and-receive-Asset.md)
-3. [Deposit and withdraw Bitcoin](Link)
-4. [Deposit and withdraw Ethereum](Link)
-5. [Deposit and withdraw Litecoin](Link)
-6. [Deposit and withdraw Zcash](Link)
-7. [Deposit and withdraw Bitcoin Cash](Link)
-8. [Send and receive fiat money (EUR, USD)](Link)
+1. [Waves transfers](/waves-client/transfers-and-gateways/How-to-send-and-receive-Waves.md)
+2. [Asset transfers](/waves-client/transfers-and-gateways/How-to-send-and-receive-Asset.md)
+3. [Bitcoin transfers](Link)
+4. [Ethereum transfers](Link)
+5. [Litecoin transfers](Link)
+6. [Zcash transfers](Link)
+7. [Bitcoin Cash transfers](Link)
+8. [EURO and USD transfers](Link)
 
 As first, it is needed to feed your wallet with some crypto. If you don’t have Bitcoin \(Ether, LiteCoin or Z-Cash\), purchase them via your trusted exchange and send them to the wallet.
 
