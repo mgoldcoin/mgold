@@ -2,7 +2,7 @@
 
 Waves allow you to hold and transfer Zcash on its blockchain. This works through a so-called Multigateway approach: Zcash sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Zcash token (wZEC) on the Waves blockchain. Every single Zcash token is backed 1:1 with a real Zcash.
 
-Read more about
+Read more about [What is a payment gateway?](/waves-client/transfers-and-gateways/payment-gateway.md)
 
 **How to deposit Zcash**
 
@@ -32,7 +32,7 @@ Please note that the gateway charges 0.01 ZEC for the gateway fee as well as 0.0
 
 After you have filled the form, click on the **Continue** button.
 
-![](/_assets/zash_transfers_04.png)
+![](/_assets/zcash_transfers_04.png)
 
 The following pop-up will appear.
 To complete the operation, click on the **Confirm** or **Back** to repeat the process.
