@@ -23,7 +23,7 @@
   * [Creating an Account](waves-client/account-management/creating-an-account.md)
   * [Restore an Account](waves-client/account-management/restore-an-account.md)
   * [Signing In to Your Account](waves-client/account-management/signing-in-to-your-account.md)
-* [Transfers abd gateways](waves-client/wallet-management.md)
+* [Transfers and gateways](waves-client/wallet-management.md)
   * [Send and receive Waves](/waves-client/transfers-and-gateways/How-to-send-and-receive-Waves.md)
   * [Send and receive Asset](/waves-client/transfers-and-gateways/How-to-send-and-receive-Asset.md)
   * [Deposit and withdraw Bitcoin](Link)
