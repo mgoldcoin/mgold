@@ -319,29 +319,53 @@ The transaction's signature is calculated from the following bytes:
 | 5 | Fee | Long | 35 + N | 8 |
 | 6 | Timestamp | Long | 43 + N | 8 |
 
-#### 
-
 #### Mass Transfer transaction
 
-| \# | Field name | Type | Length |
-| :--- | :--- | :--- | :--- |
-| 1 | Transaction type \(0x0b\) | Byte | 1 |
-| 2 | Sender's public key | Bytes | 32 |
-| 3 | Asset flag \(0-Waves, 1-Asset\) | Byte | 1 |
-| 4 | Asset ID, if any | Bytes | 0 / 32 |
-| 5 | Number of transfers | Short | 2 |
-| 6 | AddressOrAlias object for transfer 1 | Bytes | variable |
-| 7 | Amount for transfer 1 | Long | 8 |
-| 8 | AddressOrAlias object for transfer 2 | Bytes | variable |
-| 9 | Amount for transfer 2 | Long | 8 |
-| ... | ... |  |  |
-| N | Timestamp | Long | 8 |
-| N+1 | Fee | Long | 8 |
-| N+2 | Attachment length | Short | 2 |
-| N+3 | Attachment bytes | Bytes | variable |
-| N+4 | Signature | Bytes | 64 |
+| \# | Field name | Length |
+| :--- | :--- | :--- |
+| 1 | Transaction type \(0x0b\) | 1 |
+| 2 | Version (0x01) | 1 |
+| 3 | Sender's public key | 32 |
+| 4 | Asset flag \(0-Waves, 1-Asset\) | 1 |
+| 5 | Asset ID, if any | 0 / 32 |
+| 6 | Number of transfers | 2 |
+| 7 | AddressOrAlias object for transfer 1 | variable |
+| 8 | Amount for transfer 1 | 8 |
+| 9 | AddressOrAlias object for transfer 2 | variable |
+| 10 | Amount for transfer 2 | 8 |
+| ... | ... | ... |
+| N+0 | Timestamp | 8 |
+| N+1 | Fee | 8 |
+| N+2 | Attachment length | 2 |
+| N+3 | Attachment bytes | variable |
+| N+4 | Proofs version (0x01) | 1 |
+| N+5 | Proof count (1) | 1 |
+| N+6 | Signature length (64) | 2 |
+| N+7 | Signature | 64 |
 
-The transaction's signature is calculated from the binary array described above, except for the signature \(last field\).
+The transaction signature is calculated from the fields 1 to N+3, i.e. proofs and signatures are not included.
+
+#### Data transaction
+
+| \# | Field name | Length |
+| :--- | :--- | :--- |
+| 1 | Transaction type (0x0c) | 1 |
+| 2 | Version (0x01) | 1 |
+| 3 | Sender's public key | 32 |
+| 4 | Number of data entries | 2 |
+| 5 | Key1 byte size | 2 |
+| 6 | Key1 bytes, UTF-8 encoded | variable | 
+| 7 | Value1 type:<br>0 = integer<br>1 = boolean<br>2 = binary array | 1 | 
+| 8 | Value1 bytes | variable |
+| ... | ... | ... |
+| N | Timestamp | 8 |
+| N+1 | Fee | 8 |
+| N+2 | Proofs version (0x01) | 1 |
+| N+3 | Proof count (1) | 1 |
+| N+4 | Signature length (64) | 2 |
+| N+5 | Signature | 64 |
+
+The transaction signature is calculated from the fields 1 to N+1, i.e. proofs and signatures are not included.
 
 ## Network messages
 

@@ -14,7 +14,6 @@ Binary format of a data transaction is as follows:
 
 | Field | Size in bytes | Comment |
 | ----- | -------------:| ----- |
-| magic byte | 1 | == 0
 | type | 1 | == 12
 | version | 1 | == 1 at this time
 | sender's public key | 32
