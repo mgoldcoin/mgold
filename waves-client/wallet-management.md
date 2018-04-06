@@ -1,14 +1,14 @@
-# Transfers and gayeways
+# Transfers and gateways
 
-Transfers and gayeways Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform.
+Transfers and gayeways chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. All operations with external coins are processing with the [payment gateway](/waves-client/transfers-and-gateways/payment-gateway.md).
 
-1. [Waves transfers](/waves-client/transfers-and-gateways/How-to-send-and-receive-Waves.md)
-2. [Asset transfers](/waves-client/transfers-and-gateways/How-to-send-and-receive-Asset.md)
-3. [Bitcoin transfers](Link)
-4. [Ethereum transfers](Link)
-5. [Litecoin transfers](Link)
-6. [Zcash transfers](Link)
-7. [Bitcoin Cash transfers](Link)
+1. [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
+2. [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
+3. [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
+4. [Ethereum transfers](/waves-client/transfers-and-gateways/ethereum-transfers.md)
+5. [Litecoin transfers](/waves-client/transfers-and-gateways/litecoin-transfers.md)
+6. [Zcash transfers](/waves-client/transfers-and-gateways/zcash-transfers.md)
+7. [Bitcoin Cash transfers](/waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
 8. [EURO and USD transfers](Link)
 
 As first, it is needed to feed your wallet with some crypto. If you don’t have Bitcoin \(Ether, LiteCoin or Z-Cash\), purchase them via your trusted exchange and send them to the wallet.
