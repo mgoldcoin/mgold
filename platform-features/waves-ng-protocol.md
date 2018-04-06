@@ -59,6 +59,10 @@ Waves-NG is based on bitcoin next generation protocol that serializes transactio
 
 Waves approach this scalability matter by providing the miner with the ability to farm a block during the time of mining in continuous approach. This block continues increments called liquid block. This liquid block is unchangeable over time once the next block referencing is created and appended.
 
+This approach increases effective bandwidth and speed of block creation, which is described as being “especially significant for businesses” using the Waves platform since it allows for conducting micro transactions - without any delays that are typical with traditional blockchain systems.
+
+Furthermore, it allows the platform to withstand high loads, such as distribution of tokens following crowdsales and airdrops of bonus tokens. The speed of processing trading transactions on Waves decentralized exchange \(DEX\) is increased as well.
+
 ## **2.1 Waves-NG operations** {#Waves-NGProtocol-2.1Waves-NGoperations}
 
 The main and core idea of Waves-NG is to split the Liquid block into two types, Key blocks and Micro blocks. The process of creating liquid block works as follows:
@@ -124,6 +128,6 @@ Figure 5: chain structure of the Waves-NG protocol. Microblocks \(circles\) are 
 
 In practice, the remuneration is implemented by having each key block contain a single coinbase transaction that mints new coins and deposits the funds to the current and previous leaders.
 
-As in Bitcoin, this transaction can only be spent after a maturity period of 100 key blocks, to avoid non-mergeable transactions following a fork.   
+As in Bitcoin, this transaction can only be spent after a maturity period of 100 key blocks, to avoid non-mergeable transactions following a fork.  
 **Note.** Find [**here**](https://docs.wavesplatform.com/developers-guide/waves-ng-solution.html) more technical details about Wave-NG.
 
