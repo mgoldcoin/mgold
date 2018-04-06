@@ -1,8 +1,8 @@
 # How to send and receive Waves
 
-**How to send Waves**
+## **How to send Waves**
 
-Open up your Waves wallet.
+Open up your Waves wallet.  
 At the top left corner click on the **Send** button.
 
 ![](/_assets/waves_transfers_01.png)
@@ -26,7 +26,7 @@ Re-check entered data and click on the **Confirm** button.
 
 ![](/_assets/waves_transfers_03.png)
 
-**How to receive Waves**
+## **How to receive Waves**
 
 Receiving Waves is very straightforward. Just copy your Waves address and hand it to the person who wants to send you Waves.
 
@@ -39,3 +39,4 @@ The following pop-up will appear.
 Copy the shown Waves address or Scan QR Code and send a payment.
 
 ![](/_assets/waves_transfers_05.png)
+
