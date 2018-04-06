@@ -12,7 +12,7 @@ Data inside a transaction is structured as key-value pairs. Keys are arbitrary U
 
 Binary format of a data transaction is as follows:
 
-| Field | Size in bytes | Comment |
+| Field | Size in Bytes | Comment |
 | ----- | -------------:| ----- |
 | type | 1 | == 12
 | version | 1 | == 1 at this time
@@ -26,6 +26,14 @@ Binary format of a data transaction is as follows:
 | timestamp | 8
 | fee | 8
 | proofs | ? | currently only signature is supported
+
+For values, a one byte type code is written first, indicating the value type. Then the value is encoded as follows:
+
+| Value Type | Type Byte | Encoding | Total Size |
+| ---------- | ---------:| ------------ | ---------: |
+| integer | 0 | value as 8 bytes | 9 | |
+| boolean | 1 | 0=false, 1=true | 2 |
+| binary | 2 | size as 2 bytes + N value bytes | N + 3 |
 
 Maximum size of a data transaction is 3+32+2+(2+400+1+2+1024)*100+16+2+64 = about 140 kilobytes. (See Constraints for limits on key and value size)
 
