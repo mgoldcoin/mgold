@@ -147,5 +147,102 @@ balance
 }
 ```
 
+### POST /addresses/data
 
+Post a Data transaction. The data are added to the sender account's state.
 
+**Request:**
+```
+{
+  "version": 1,
+  "sender": "3N5GRqzDBhjVXnCn44baHcz2GoZy5qLxtTh",
+  "data": [
+    {"key": "how much?", "type": "integer", "value": 122333},
+    {"key": "I'm fine!", "type": "boolean", "value": true},
+    {"key": "blob", "type": "binary", "value": "Base58encoded"}
+  ],
+  "fee": 100000
+}
+```
+
+**Response JSON example:**
+```
+{
+  "type": 12,
+  "id": "2eV6zNKUiHYE3htNbRc8Dva15xxvPT2zzZPvBce2mxoc",
+  "sender": "3N5GRqzDBhjVXnCn44baHcz2GoZy5qLxtTh",
+  "senderPublicKey": "FM5ojNqW7e9cZ9zhPYGkpSP1Pcd8Z3e3MNKYVS5pGJ8Z",
+  "fee": 100000,
+  "timestamp": 1523278209988,
+  "proofs": [
+    "3HXf7cV7GyAkj9dTuskQPxLQEcpv8RrRfXEqzReXdwguCdcLBbH6HqZAGTMzw2f7wxVdGm9rrNdqd5AjsffWqLQJ"
+  ],
+  "version": 1,
+  "data": [
+    {
+      "key": "how much?",
+      "type": "integer",
+      "value": 122333
+    },
+    {
+      "key": "I'm fine!",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "key": "blob",
+      "type": "binary",
+      "value": "Base58encoded"
+    }
+  ]
+}
+```
+
+### GET /addresses/data/{address}
+
+Get all data published by an address.
+
+```
+  "address" - address in Base58 format
+```
+
+**Response JSON example:**
+
+```
+[
+  {
+    "key": "I'm fine!",
+    "type": "boolean",
+    "value": true
+  },
+  {
+    "key": "blob",
+    "type": "binary",
+    "value": "Base58encoded"
+  },
+  {
+    "key": "how much?",
+    "type": "integer",
+    "value": 122333
+  }
+]
+```
+
+### GET /addresses/data/{address}/{key}
+
+Get data entry associated with an address and a key.
+
+```
+  "address" - address in Base58 format
+  "key" - data key
+```
+
+**Response JSON example:**
+
+```
+{
+  "key": "blob",
+  "type": "binary",
+  "value": "Base58encoded"
+}
+```
