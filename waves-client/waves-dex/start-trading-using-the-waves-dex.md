@@ -2,14 +2,14 @@
 
 Open up your Waves wallet.
 
-Click on the DEX button (![](/_assets/dex_01.png)) in the main right menu.
+Click on the DEX button ![](/_assets/dex_01.png) in the main right menu.
 
 Then select trading pair from the list.
 After that the selected pair will open.
 
 ![](/_assets/dex_02.png)
 
-You can also use the search, just type a name or asset Id in the search box (![](/_assets/dex_03.png)).
+You can also use the search, just type a name or asset Id in the search box ![](/_assets/dex_03.png).
 
 Select the found Asset.
 
