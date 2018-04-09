@@ -51,7 +51,7 @@ The remaining matcher fee for this order will be included in other transactions 
 There are 3 different orders \(Figure 2\): two buy orders and one sell. For each full order, a user has to pay exactly **0.003 waves** of a fee, and this fee will be written off as the order is executed. In our example:
 
 * the Order1 is fully matched with a 70% part of Order3 by Transaction1 and matcher's fee for this transaction is equal to 0.003 + 0.0021 - 0.003 = 0.0021 waves since Matcher pay to miners transaction fee which is also equal to 0.003 Waves.
-* The 50% of Order2 matches with 30% part of Order3 by Transaction2 and matcher's fee for this transaction is equal to 0.0009 + 0.0015 - 0.003 = -0.0006 waves. 
+* The 50% of Order2 matches with 30% part of Order3 by Transaction2 and matcher's fee for this transaction is equal to 0.0009 + 0.0015 - 0.003 = -0.0006 waves.
 
 Thus, the fee that the matcher gets from users for these transactions is**0.0021 - 0.0006  = 0.0015 waves**. And the fee that the matcher pays to miners is**0.006waves**.
 
@@ -71,10 +71,10 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
 # 4. Installing DEX {#Decentralizedcryptocurrencyexchange(DEX)-InstallingDEX}
 
 * Download the Waves client from our official website,
-  [www.WavesPlatform.com](http://www.wavesplatform.com/)
+  [www.wavesplatform.com](http://www.wavesplatform.com/)
   , or use the webwallet, available at
-  [Waveswallet.io](http://waveswallet.io/)
-* Deposit your bitcoins into the wallet and start trading using the Exchange tab.
+  [beta.wavesplatform.com](https://beta.wavesplatform.com/)
+* [Deposit your bitcoins](/waves-client/transfers-and-gateways/bitcoin-transfers.md) or any [supported coins and tokens](waves-client/wallet-management.md) into the wallet and [start trading using the Waves DEX](/waves-client/waves-dex.md).
 
 # 5. Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
 
@@ -83,6 +83,3 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
 * When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order.
 
 **Note.** Find more technical details about the Matcher [**here.**](https://docs.wavesplatform.com/application-development-and-api/dex-api/matcher.html)
-
-
-
