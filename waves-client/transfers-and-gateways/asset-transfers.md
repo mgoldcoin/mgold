@@ -1,8 +1,8 @@
 # How to send and receive Asset
 
-**How to send Asset**
+## **How to send Asset**
 
-Open up your Waves wallet.
+Open up your Waves wallet.  
 At the top left corner click on the **Send** button.
 
 ![](/_assets/asset_transfers_01.png)
@@ -30,7 +30,7 @@ Re-check entered data and click on the **Confirm** button.
 
 ![](/_assets/asset_transfers_04.png)
 
-**How to receive Asset**
+## **How to receive Asset**
 
 Think of the Waves account as a multi-wallet. It, obviously, supports Waves and also any other token existing on the Waves blockchain.
 
@@ -45,3 +45,4 @@ The following pop-up will appear.
 Copy the shown Waves address or Scan QR Code and send a payment.
 
 ![](/_assets/asset_transfers_06.png)
+
