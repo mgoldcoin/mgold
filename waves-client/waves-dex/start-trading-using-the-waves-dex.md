@@ -66,4 +66,6 @@ After that your order appears in the **My orders** and in the **Order Book** (up
 
 **Note**: You can cancel opened order by clicking on the cross ("**X**") button at the end of the row in the **My Orders** box.
 
+![](/_assets/dex_11.png)
+
 **Attention**: The commission for creating one buy or sell order on the DEX platform is **0.003 Waves**.
