@@ -34,6 +34,9 @@ You need to subscribe on events, if you want to be notified about data changes.
         "balances" : {
             "address_filter": {
                 "accept" : ...
+            },
+            "asset_filter": {
+                "accept" : ...
             }
         },
         "blocks" : true/false
@@ -58,6 +61,8 @@ Filter examples:
 Resend "subscriptions" object, described below, if you want to update your subscriptions.
 
 #### Events examples
+
+Any event contains field, discribing type of event, and payload with event data.
 
 Confirmed transaction:
 
