@@ -1,6 +1,6 @@
 # How to send and receive fiat money (EUR, USD)
 
-How to register in the Euro/USD gateways
+## How to register in the Euro/USD gateways
 
 The verification process is handled by [IDnow](https://www.idnow.eu/) service.
 
@@ -83,7 +83,7 @@ Verify that your e-mail comes from the right source - **support@coinomat.com** a
 
 If all is good, you can make a deposit following the step described in the email you just receive and above.
 
-**How to withdraw Euro/USD**
+## How to withdraw Euro/USD
 
 If you've been verified and deposited with Euro or USD, you can withdraw Euro or USD back to your bank account.
 
