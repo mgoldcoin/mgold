@@ -16,7 +16,7 @@ This section will give you a general information about Waves Platform and its ma
 
 This section contains explantions about Waves main Features such as \(Waves-NG Protocol\).
 
-1. [Decentralized Cryptocurrency Exchange \(DEX\).](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
+1. [Decentralized Exchange \(DEX\).](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
 2. [Assets \(Custom Tokens\).](https://docs.wavesplatform.com/platform-features/assets-custom-tokens.html)
 3. [Leased Proof of Stake \(LPoS\).](https://docs.wavesplatform.com/platform-features/leased-proof-of-stake-lpos.html)
 4. [Waves-NG Protocol.](https://docs.wavesplatform.com/platform-features/waves-ng-protocol.html)
