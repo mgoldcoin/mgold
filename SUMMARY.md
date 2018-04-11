@@ -24,6 +24,7 @@
   * [Restore an Account](waves-client/account-management/restore-an-account.md)
   * [Signing in to Your Account](waves-client/account-management/signing-in-to-your-account.md)
   * [Use Your Waves address](waves-client/account-management/waves-address.md)
+  * [Create a personal Alias](waves-client/account-management/creating-an-alias.md)
   * [Lease Your Waves tokens](/waves-client/account-management/waves-leasing.md)
 * [Transfers and gateways](waves-client/wallet-management.md)
   * [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
