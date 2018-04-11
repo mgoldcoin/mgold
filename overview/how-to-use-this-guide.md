@@ -66,7 +66,7 @@ This Section contains technical details about Waves Platform
 4. [Waves Node Rest API](https://docs.wavesplatform.com/application-development-and-api/waves-node-rest-api.html)
 5. [Examples](https://docs.wavesplatform.com/application-development-and-api/examples.html)
 
-7. Frequently Asked Questions \(FAQ\)
+# 7. Frequently Asked Questions \(FAQ\)
 
 
 
