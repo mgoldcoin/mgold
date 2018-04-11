@@ -38,7 +38,6 @@
   * [EURO and USD transfers](waves-client/transfers-and-gateways/eur-usd-transfers.md)
 * [Waves DEX](/waves-client/waves-dex.md)
   * [Start trading using the Waves DEX](/waves-client/waves-dex/start-trading-using-the-waves-dex.md)
-  * [Frequently asked Questions](...)
 * [Custom Assets](waves-client/assets-management.md)
   * [Issue an Asset](waves-client/assets-management/issue-an-asset.md)
   * [ReIssue an Asset](waves-client/assets-management/reissue-an-asset.md)
