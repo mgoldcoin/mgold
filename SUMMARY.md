@@ -7,6 +7,7 @@
 * [Platform Components](overview/platform-components.md)
 * [Waves Official Resources ](overview/waves-official-resources.md)
 * [Security Notes](overview/security-notes.md)
+* [Waves Releases](overview/waves-releases.md)
 
 ## Platform Features
 
