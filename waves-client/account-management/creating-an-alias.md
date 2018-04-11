@@ -13,7 +13,6 @@ Step 1: Login to your Wallet.
 ![](/_assets/creating_an_alias_01.png)
 
 Step 2: Click on the User icon ![](/_assets/creating_an_alias_02.png) in the top left corner.
-
 The following windows will appear, then click on the **Create new**.
 
 ![](/_assets/creating_an_alias_03.png)
