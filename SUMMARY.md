@@ -11,7 +11,7 @@
 
 ## Platform Features
 
-* [Decentralized Cryptocurrency Exchange \(DEX\)](platform-features/decentralized-cryptocurrency-exchange-dex.md)
+* [Decentralized Exchange \(DEX\)](platform-features/decentralized-cryptocurrency-exchange-dex.md)
 * [Assets \(custom tokens\)](platform-features/assets-custom-tokens.md)
 * [Leased Proof of Stake \(LPoS\)](platform-features/leased-proof-of-stake-lpos.md)
 * [Waves-NG Protocol](platform-features/waves-ng-protocol.md)
