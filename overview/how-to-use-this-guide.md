@@ -10,6 +10,7 @@ This section will give you a general information about Waves Platform and its ma
 2. [Platform Components](https://docs.wavesplatform.com/overview/platform-components.html)
 3. [Waves Official Resources](https://docs.wavesplatform.com/overview/waves-official-resources.html)
 4. [Security Notes](https://docs.wavesplatform.com/overview/security-notes.html)
+5. [Waves Releases](https://docs.wavesplatform.com/overview/waves-releases.html)
 
 # 2. Platform Features
 
@@ -28,7 +29,8 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 1. [Install Waves Client](https://docs.wavesplatform.com/waves-client/install-waves-client.html)
 2. [Account Management](https://docs.wavesplatform.com/waves-client/account-management.html) \([Create](https://docs.wavesplatform.com/waves-client/account-management/creating-an-account.html) and [Restore](https://docs.wavesplatform.com/waves-client/account-management/restore-an-account.html) an Account\)
 3. [Transfers and gateways](https://docs.wavesplatform.com/waves-client/wallet-management.html)
-4. [Custom Assets \(Issue and Reissue an Asset\)](https://docs.wavesplatform.com/waves-client/assets-management.html)
+4. [Waves DEX](https://docs.wavesplatform.com/waves-client/waves-dex.html) \(Trading Using DEX\)
+5. [Custom Assets \(Issue and Reissue an Asset\)](https://docs.wavesplatform.com/waves-client/assets-management.html)
 
 # 4. Waves Full Node
 
@@ -63,4 +65,8 @@ This Section contains technical details about Waves Platform
 3. [DEX API](https://docs.wavesplatform.com/application-development-and-api/dex-api.html) \([Matcher](https://docs.wavesplatform.com/application-development-and-api/dex-api/matcher.html)\)
 4. [Waves Node Rest API](https://docs.wavesplatform.com/application-development-and-api/waves-node-rest-api.html)
 5. [Examples](https://docs.wavesplatform.com/application-development-and-api/examples.html)
-6. [FAQ](https://docs.wavesplatform.com/application-development-and-api/frequently-asked-questions-faq.html)
+
+7. Frequently Asked Questions \(FAQ\)
+
+
+
