@@ -2,7 +2,7 @@
 
 ## What is a payment gateway?
 
-Waves allows you to hold and transfer external currencies on its blockchain. This works through an established centralised Coinomat gateway: Bitcoins or any supported external coins are sent to a user's personal Waves address via standard transfer and after the deposit user receives BTC/ETH_ tokens \(wBTC/wETH\) on the Waves blockchain. Every single wBCT/wETH tokens is backed 1:1 with a real BTC/ETH_.
+Waves allows you to hold and transfer external currencies on its blockchain. This works through an established centralised Coinomat gateway: Bitcoins or any supported external coins are sent to a user's personal Waves address via standard transfer and after the deposit user receives BTC/ETH tokens \(wBTC/wETH\) on the Waves blockchain. Every single wBCT/wETH tokens is backed 1:1 with a real BTC/ETH.
 
 ## How does it work?
 

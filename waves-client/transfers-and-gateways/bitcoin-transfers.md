@@ -6,7 +6,7 @@ Read more about [What is a payment gateway?](/waves-client/transfers-and-gateway
 
 ## **How to Deposit Bitcoin**
 
-Open your Waves wallet  
+Open your Waves wallet,  
 In the Bitcoin section, click on the **Deposit** button.
 
 ![](/_assets/bitcoin_transfers_01.png)
@@ -21,7 +21,7 @@ Read the conditions carefully in yellow boxes before proceeding.
 
 ## **How to withdraw Bitcoin**
 
-Open your Waves wallet  
+Open your Waves wallet,  
 In the Bitcoin section, click on the **Send** button.
 
 ![](/_assets/bitcoin_transfers_03.png)
@@ -44,6 +44,8 @@ To complete the operation, click on the **Confirm** or **Back** to repeat the pr
 ## **How to create internal transaction through Waves network**
 
 You can send Bitcoins directly to another Waves account, just use the recipient Waves address, click on Send and fill-in the sending form.
+
+**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
 
 ![](/_assets/bitcoin_transfers_06.png)
 
