@@ -94,7 +94,7 @@
 
 ## Frequently Asked Questions \(FAQ\)
 
-* [Waves Dex FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-* [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
+* [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+* [Waves Dex FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
 
