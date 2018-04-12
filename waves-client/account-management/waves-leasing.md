@@ -2,19 +2,23 @@
 
 **Leasing or LPoS**
 
-LPoS (Leased Proof of Stake) gives you the opportunity to make the network stronger and safer while receiving more Waves and other assets as a reward for doing so. It's the so called "Leasing".
+LPoS \(Leased Proof of Stake\) gives you the opportunity to make the network stronger and safer while receiving more Waves and other assets as a reward for doing so. It's the so called "Leasing".
 
 Most people don't have 1000 WAVES to run their own node, so they are still able to help the whole project through leasing their Waves to someone who is able to run a node.
 
 Most big nodes pay in a one week cycle to their users.
 
-**How to Lease your Waves**
+# **How to Lease Your Waves**
 
 Open your Waves wallet and click on the **Leasing** button in the main menu
 
 ![](/_assets/waves_leasing_01.png)
 
+
+
 The new tab will open
+
+
 
 ![](/_assets/waves_leasing_02.png)
 
@@ -38,9 +42,9 @@ So it means that you have successfully leased your Waves.
 
 ![](/_assets/waves_leasing_05.png)
 
-**How to close active Lease**
+# **How To Close Active Lease**
 
-To cancel your lease simply open **Leasing** section in the Waves wallet and scroll down to Leasing Transactions.
+To cancel your lease simply open **Leasing** section in the Waves wallet and scroll down to Leasing Transactions.  
 Select the required leasing click on the icon in the right. Select **Cancel Leasing** in the drop-down menu.
 
 ![](/_assets/waves_leasing_06.png)
@@ -52,3 +56,6 @@ The LPoS reward depends on the conditions of the selected pool.
 We do not regulate the payment process, so before using LPoS service, please read carefully the terms of payment and do your investigation of the pool that you want to use.
 The terms can vary between LPOS pools. Please use list of LPoS pools - https://wavesplatform.com/leasing#nodes
 ```
+
+
+
