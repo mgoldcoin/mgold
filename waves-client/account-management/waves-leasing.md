@@ -53,7 +53,5 @@ We do not regulate the payment process, so before using LPoS service, please rea
 The terms can vary between LPOS pools. Please use list of LPoS pools - https://wavesplatform.com/leasing#nodes
 ```
 
-Note. To find the List of generators click [here](http://dev.pywaves.org/generators/).
-
-To find Waves Nodes click [here](https://wavesplatform.com/leasing#nodes).
+**Note.** To find the List of generators click [here](http://dev.pywaves.org/generators/) and to find Waves Nodes click [here](https://wavesplatform.com/leasing#nodes).
 
