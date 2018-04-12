@@ -45,6 +45,8 @@ To complete the operation, click on the **Confirm** or **Back** to repeat the pr
 
 You can send Bitcoin Cash directly to another Waves account, just use the recipient Waves address, click on Send and fill-in the sending form.
 
+**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
+
 ![](/_assets/bch_transfers_06.png)
 
 After you have completed the form, click on the **Continue** button.
