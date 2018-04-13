@@ -19,9 +19,9 @@ Read the conditions carefully in yellow boxes before proceeding.
 
 **Note**: Processing can take up to 120 minutes.
 
-**How to withdraw Ethereum**
+# **How to withdraw Ethereum**
 
-Open your Waves wallet  
+Open your Waves wallet,  
 In the Ethereum section, click on the **Send** button.
 
 ![](/_assets/ethereum_transfers_03.png)
