@@ -96,5 +96,5 @@
 
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
 * [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+  * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md.md)
 * [Waves Dex FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-
