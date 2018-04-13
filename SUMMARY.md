@@ -30,7 +30,6 @@
 * [Transfers and gateways](waves-client/wallet-management.md)
   * [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
   * [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
-  * [What is a payment gateway?](/waves-client/transfers-and-gateways/payment-gateway.md)
   * [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
   * [Ethereum transfers](/waves-client/transfers-and-gateways/ethereum-transfers.md)
   * [Litecoin transfers](/waves-client/transfers-and-gateways/litecoin-transfers.md)
@@ -96,5 +95,6 @@
 
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
 * [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+  * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves Dex FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
