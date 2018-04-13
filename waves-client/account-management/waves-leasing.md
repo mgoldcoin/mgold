@@ -1,6 +1,6 @@
 # **How to Lease your Waves**
 
-**Leasing or LPoS**
+# **Leasing or LPoS**
 
 LPoS \(Leased Proof of Stake\) gives you the opportunity to make the network stronger and safer while receiving more Waves and other assets as a reward for doing so. It's the so called "Leasing".
 
