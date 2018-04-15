@@ -13,3 +13,7 @@ You will receive coins to specified address, deposits and withdrawals may takes 
 **Warning**: The gateway transactions are always processing only with the payment address: **3PAs2qSeUAfgqSKS8LpZPKGYEjJKcud9Djr**
 
 \*At the moment, there are gateways for BTC, ETH, LTC, ZEC and BCH. We are planning to integrate more payment gateways in the future.
+
+Also, please check wallet notification
+
+![](/_assets/payment_gateway_01.png)
