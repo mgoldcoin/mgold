@@ -1,10 +1,10 @@
 # Client libraries
 
-Waves Full Node provides access to the [REST API](waves-node-rest-api/node-api-overview.md) also there are community-driven open source libraries for different programming languages:
+Waves Full Node provides access to the [REST API](/application-development-and-api/node-api-overview.md) also there are community-driven open source libraries for different programming languages:
 
-* [PyWaves for Python](https://docs.wavesplatform.com/waves-node-rest-api/client-libraries/pywaves.html)
-* [WavesJ for Java](https://docs.wavesplatform.com/waves-node-rest-api/client-libraries/wavesj.html)
-* [WavesCS for C\#](https://docs.wavesplatform.com/waves-node-rest-api/client-libraries/wavescs.html)
+* [PyWaves for Python](/application-development-and-api/client-libraries/pywaves.md)
+* [WavesJ for Java](/application-development-and-api/client-libraries/wavesj.md)
+* [WavesCS for C\#](/application-development-and-api/client-libraries/wavescs.md)
 * [Waves-API for TypeScript/JavaScript](https://github.com/wavesplatform/waves-api) 
 
 All libraries are open for contribution and testing.

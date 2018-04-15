@@ -1,6 +1,6 @@
 # Leasing WAVES
 
-Leasing essentially means giving your forging power to a running full node without your WAVES actually leaving the wallet. This enables anyone to participate in the forging process without having to operate a node himself.  In order to get more details about Waves Leased-Proof-of-Stake protocol please click [here](https://docs.wavesplatform.com/platform-features/leased-proof-of-stake-lpos.html).
+Leasing essentially means giving your forging power to a running full node without your WAVES actually leaving the wallet. This enables anyone to participate in the forging process without having to operate a node himself.  In order to get more details about Waves Leased-Proof-of-Stake protocol please click [here](/platform-features/leased-proof-of-stake-lpos.md).
 
 Waves implemented balance leasing within its lite client to allow every user to take part in securing the network and profit from transaction fees — without requiring any additional technical knowledge or the need to download the blockchain. Leased WAVES remain in the full control of the account holder.
 

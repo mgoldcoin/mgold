@@ -2,7 +2,7 @@
 
 # 1. Waves Client
 
-[The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/install-waves-client.html) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
+[The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
 # 2. Waves Wallet
 
@@ -16,7 +16,7 @@
 
 # 4. Decentralized cryptocurrency exchange \(DEX\)
 
-[DEX](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
+[DEX](/platform-features/decentralized-cryptocurrency-exchange-dex.md) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
 # 5. Mobile apps
 
@@ -55,7 +55,7 @@ Fees are minimal and the only delays are those required by blockchain confirmati
 
 # 7. Nodes
 
-Nodes are a critical part of our ecosystem. [Run a Waves node](https://docs.wavesplatform.com/waves-full-node/how-to-install-a-node/how-to-install-a-node.html), help process transactions, ask the community to [lease their WAVES](https://docs.wavesplatform.com/waves-client/wallet-operations/leasing-waves.html) to you and get paid for securing the network.
+Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](/waves-client/wallet-operations/leasing-waves.md) to you and get paid for securing the network.
 
 **Features:**
 
@@ -97,7 +97,7 @@ In principle, **any full node** can become a **Matcher**. Waves client connects 
 
 Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
 
-**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html) in the section of Matcher Settings.
+**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](/waves-full-node/how-to-configure-a-node.md) in the section of Matcher Settings.
 
 # 8. MainNet / TestNet
 
