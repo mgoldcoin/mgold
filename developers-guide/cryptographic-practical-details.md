@@ -87,7 +87,7 @@ HBqhfdFASRQ5eBBpu2y6c6KKi1az6bMx8v1JxX4iW1Q8
 
 # Creating address from public key
 
-Our network address obtained from the public key depends on the byte chainId \('T' for testnet and 'W' for mainnet\), so different networks obtained a different address for a single seed \(and hence public keys\). Creating a byte addresses described in more detail [here](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/data-structures.html).
+Our network address obtained from the public key depends on the byte chainId \('T' for testnet and 'W' for mainnet\), so different networks obtained a different address for a single seed \(and hence public keys\). Creating a byte addresses described in more detail [here](/wavesdocs/content/guidelines/data-structures.md).
 
 Example
 
@@ -107,7 +107,7 @@ in mainnet network \(chainId 'W'\) will be created this address
 
 `Curve25519`is used for all the signatures in the project.
 
-The process is as follows: create the special bytes for signing \(for transaction or block, you can find it [here](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/data-structures.html)\), then create a signature using these bytes and the private key bytes.
+The process is as follows: create the special bytes for signing \(for transaction or block, you can find it [here](/developers-guide/data-structures.md)\), then create a signature using these bytes and the private key bytes.
 
 For the validation of signature is enough signature bytes, signed object bytes and the public key.
 

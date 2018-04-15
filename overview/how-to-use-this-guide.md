@@ -6,65 +6,65 @@ In this guide, you can find all documentation for Waves Platform as shown below:
 
 This section will give you a general information about Waves Platform and its main components.
 
-1. [What is Waves Platform](https://docs.wavesplatform.com)
-2. [Platform Components](https://docs.wavesplatform.com/overview/platform-components.html)
-3. [Waves Official Resources](https://docs.wavesplatform.com/overview/waves-official-resources.html)
-4. [Security Notes](https://docs.wavesplatform.com/overview/security-notes.html)
-5. [Waves Releases](https://docs.wavesplatform.com/overview/waves-releases.html)
+1. [What is Waves Platform]()
+2. [Platform Components](/overview/platform-components.md)
+3. [Waves Official Resources](/overview/waves-official-resources.md)
+4. [Security Notes](/overview/security-notes.md)
+5. [Waves Releases](/overview/waves-releases.md)
 
 # 2. Platform Features
 
 This section contains explantions about Waves main Features such as \(Waves-NG Protocol\).
 
-1. [Decentralized Exchange \(DEX\).](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
-2. [Assets \(Custom Tokens\).](https://docs.wavesplatform.com/platform-features/assets-custom-tokens.html)
-3. [Leased Proof of Stake \(LPoS\).](https://docs.wavesplatform.com/platform-features/leased-proof-of-stake-lpos.html)
-4. [Waves-NG Protocol.](https://docs.wavesplatform.com/platform-features/waves-ng-protocol.html)
-5. [Activation Protocol.](https://docs.wavesplatform.com/platform-features/activation-protocol.html)
+1. [Decentralized Exchange \(DEX\).](/platform-features/decentralized-cryptocurrency-exchange-dex.md)
+2. [Assets \(Custom Tokens\).](/platform-features/assets-custom-tokens.md)
+3. [Leased Proof of Stake \(LPoS\).](/platform-features/leased-proof-of-stake-lpos.md)
+4. [Waves-NG Protocol.](/platform-features/waves-ng-protocol.md)
+5. [Activation Protocol.](/platform-features/activation-protocol.md)
 
 # 3. Waves Client
 
 This section contains step-by-step guides for Installing Waves Client, Creating Account, Leasing Waves and Issue as asset.
 
-1. [Install Waves Client](https://docs.wavesplatform.com/waves-client/install-waves-client.html)
-2. [Account Management](https://docs.wavesplatform.com/waves-client/account-management.html) \([Create](https://docs.wavesplatform.com/waves-client/account-management/creating-an-account.html) and [Restore](https://docs.wavesplatform.com/waves-client/account-management/restore-an-account.html) an Account\)
-3. [Transfers and gateways](https://docs.wavesplatform.com/waves-client/wallet-management.html)
-4. [Waves DEX](https://docs.wavesplatform.com/waves-client/waves-dex.html) \(Trading Using DEX\)
-5. [Custom Assets \(Issue and Reissue an Asset\)](https://docs.wavesplatform.com/waves-client/assets-management.html)
+1. [Install Waves Client](/waves-client/install-waves-client.md)
+2. [Account Management](/waves-client/account-management.md) \([Create](/waves-client/account-management/creating-an-account.md) and [Restore](/waves-client/account-management/restore-an-account.md) an Account\)
+3. [Transfers and gateways](/waves-client/wallet-management.md)
+4. [Waves DEX](/waves-client/waves-dex.md) \(Trading Using DEX\)
+5. [Custom Assets \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
 
 # 4. Waves Full Node
 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
-1. [What is Waves Full Node](https://docs.wavesplatform.com/waves-full-node/what-is-a-full-node.html)
-2. [How To Install a node](https://docs.wavesplatform.com/waves-full-node/how-to-install-a-node/how-to-install-a-node.html)
-3. [How to Configure a node](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html)
-4. [Upgrading](https://docs.wavesplatform.com/waves-full-node/upgrading.html)
-5. [Export and Import From The Blockchain](https://docs.wavesplatform.com/waves-full-node/export-and-import-from-the-blockchain.html)
-6. [Reducing Disk Space Usage](https://docs.wavesplatform.com/waves-full-node/reducing-disk-space-usage.html)
-7. [Joining Testnet](https://docs.wavesplatform.com/waves-full-node/joining-testnet.html)
-8. [Configuration](https://docs.wavesplatform.com/waves-full-node/configuration.html)
+1. [What is Waves Full Node](/waves-full-node/what-is-a-full-node.md)
+2. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
+3. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
+4. [Upgrading](/waves-full-node/upgrading.md)
+5. [Export and Import From The Blockchain](/waves-full-node/export-and-import-from-the-blockchain.md)
+6. [Reducing Disk Space Usage](/waves-full-node/reducing-disk-space-usage.md)
+7. [Joining Testnet](/waves-full-node/joining-testnet.md)
+8. [Configuration](/waves-full-node/configuration.md)
 
 # 5. Developers Guide
 
 This Section contains technical details about Waves Platform
 
-1. [Cryptographic Practical Details](https://docs.wavesplatform.com/developers-guide/cryptographic-practical-details.html)
-2. [Data Structures](https://docs.wavesplatform.com/developers-guide/data-structures.html)
-3. [Validation Rules](https://docs.wavesplatform.com/developers-guide/validation-rules.html)
-4. [Creating a Private Waves Blockchain Network](https://docs.wavesplatform.com/developers-guide/creating-a-private-waves-blockchain-network.html)
-5. [Mass Transfer Transactions](https://docs.wavesplatform.com/developers-guide/mass-transfer-transaction.html)
-6. [Data Transaction](https://docs.wavesplatform.com/developers-guide/data-transaction.html)
-7. [Waves Contracts Language Description](https://docs.wavesplatform.com/developers-guide/waves-contracts-language-description.html)
-8. [Waves-NG Solution](https://docs.wavesplatform.com/developers-guide/waves-ng-solution.html)
+1. [Cryptographic Practical Details](/developers-guide/cryptographic-practical-details.md)
+2. [Data Structures](/developers-guide/data-structures.md)
+3. [Validation Rules](/developers-guide/validation-rules.md)
+4. [Creating a Private Waves Blockchain Network](/developers-guide/creating-a-private-waves-blockchain-network.md)
+5. [Mass Transfer Transactions](/developers-guide/mass-transfer-transaction.md)
+6. [Data Transaction](/developers-guide/data-transaction.md)
+7. [Waves Contracts Language Description](/developers-guide/waves-contracts-language-description.md)
+8. [Waves-NG Solution](/developers-guide/waves-ng-solution.md)
 
 # 6. Application Development and API
 
-1. [Node API Overview](https://docs.wavesplatform.com/application-development-and-api/node-api-overview.html)
-2. [Client Libraries ](https://docs.wavesplatform.com/application-development-and-api/client-libraries.html)\([PyWaves](https://docs.wavesplatform.com/application-development-and-api/client-libraries/pywaves.html), [WavesJ](https://docs.wavesplatform.com/application-development-and-api/client-libraries/wavesj.html) and [WavesCS](https://docs.wavesplatform.com/application-development-and-api/client-libraries/wavescs.html)\)
-3. [DEX API](https://docs.wavesplatform.com/application-development-and-api/dex-api.html) \([Matcher](https://docs.wavesplatform.com/application-development-and-api/dex-api/matcher.html)\)
-4. [Waves Node Rest API](https://docs.wavesplatform.com/application-development-and-api/waves-node-rest-api.html)
-5. [Examples](https://docs.wavesplatform.com/application-development-and-api/examples.html)
+1. [Node API Overview](/application-development-and-api/node-api-overview.md)
+2. [Client Libraries ](/application-development-and-api/client-libraries.md)\([PyWaves](/application-development-and-api/client-libraries/pywaves.md), [WavesJ](/application-development-and-api/client-libraries/wavesj.md) and [WavesCS](/application-development-and-api/client-libraries/wavescs.md)\)
+3. [DEX API](/application-development-and-api/dex-api.md) \([Matcher](/application-development-and-api/dex-api/matcher.md)\)
+4. [Waves Node Rest API](/application-development-and-api/waves-node-rest-api.md)
+5. [Examples](/application-development-and-api/examples.md)
 
 # 7. Frequently Asked Questions \(FAQ\)
 

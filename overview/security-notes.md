@@ -15,7 +15,7 @@ The password has two purposes:
 
 **Notes.**
 
-* Forgetting the password, you can easily create a new one by using the form of [account recovery](https://docs.wavesplatform.com/waves-client/account-management/restore-an-account.html) through a secret phrase.
+* Forgetting the password, you can easily create a new one by using the form of [account recovery](/waves-client/account-management/restore-an-account.md) through a secret phrase.
 * The secret phrase can not be changed. If you accidentally sent it to someone or suspect that it was taken by fraudsters, immediately create a new Waves wallet and transfer all funds to it, without forgetting to keep a new secret phrase.
 
 ## 2. Personal Account {#SecurityNotes-PersonalAccount}
@@ -28,7 +28,7 @@ The password has two purposes:
 
 ## 3. General Notes {#SecurityNotes-GeneralNotes}
 
-* Use the [official resources of Waves ](https://docs.wavesplatform.com/overview/waves-official-resources.html)\(groups in social networks, sites, applications\).
+* Use the [official resources of Waves ](/overview/waves-official-resources.md)\(groups in social networks, sites, applications\).
 * Before you enter a secret phrase from your account or download the application, carefully look at the address bar of the browser and make sure that you are on the official resource of the company:
 * Use the official software. Do not install unknown or hacked programs.
 * Do not open letters or links from unknown senders.

@@ -22,7 +22,7 @@ Download the latest version of waves.jar and the required .conf configuration fi
 
 Carefully edit the configuration waves.conf file, **it is very important! The safety of your wallet and money depends on this!**
 
-Just open it with your favorite text editor, pour a cup of tea and read[ the documentation of the configuration file.](https://docs.wavesplatform.com/waves-full-node/how-to-configure-a-node.html)
+Just open it with your favorite text editor, pour a cup of tea and read[ the documentation of the configuration file.](/waves-full-node/how-to-configure-a-node.md)
 
 Then start Terminal app `Terminal.app`, navigate to the folder with the jar file with the command `cd ~/waves`and start waves node with command `java -jar waves.jar waves.conf`.
 
