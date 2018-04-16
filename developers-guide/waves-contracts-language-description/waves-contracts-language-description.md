@@ -9,11 +9,11 @@ Waves Contracts language is:
 
 Operations and constructs available are:
 
-* Binary operations:`>=`,`>`,`<`,`<=`,`+`,`&&`,`||`
-* Constants declaration via`let`
-* `if-then-else`clause
-* Accessing fields of any of instances of predifined sctructures via`.`
-* Calls to predefined functions via`()`
+* Binary operations:`>=`, `>`, `<`, `<=`, `+`, `&&`, `||`
+* Constants declaration via `let`
+* `if-then-else` clause
+* Accessing fields of any of instances of predifined sctructures via `.`
+* Calls to predefined functions via `()`
 
 Avaliable data types are
 
@@ -22,44 +22,57 @@ Avaliable data types are
 * `Boolean`
 * `ByteArray`
 * `Option[T]`
-* Predefined non-recursive data structure like`Transaction`,`Block`etc
+* Predefined non-recursive data structure like `Transaction`, `Block`etc
 * `Nothing`- "bottom type", no instance of this type can exist
 
 ### Option\[T\]
 
-`Option[T]`can be represented as
+`Option[T]` can be represented as
 
-* `Some(t)`for any`t`of type`T`
+* `Some(t)` for any `t` of type `T`
 * `None`
 
 It is higher-kind data type indicating a possibility of absence of value of inner type. This rather popular construct from functional programming languages\(Haskell, Scala, Clojure\) nowdays gets included in majority of standard libraries for many popular languages like Java, C\#, etc.
 
 # Predefined data structures
 
-1. `Transaction`contains all possible transaction fields like
+1. `Address` and `AddressOrAlias` \(case for recipient\) contains `bytes`
 
-2. `sender`:`ByteArray`
+2. `Transaction`contains all possible transaction fields like:
 
-3. `recipient`:`ByteArray`
+3. `type` : `Long`
 
-4. `assetId`:`ByteArray`
+4. `id` : `ByteArray`
+5. `fee` : `Long`
+6. `feeAssetId` : `Option[ByteArray]`
+7. `timestamp` : `Long`
+8. `amount` : `Long`
+9. `bodyBytes` : `ByteArray`
+10. `senderPk` : `ByteArray`
+11. `assetId` : `Option[ByteArray]`
+12. `recipient` : `AddressOrAlias`
+13. `proof0` : `ByteArray`
+14. `proof1` : `ByteArray`
+15. `proof2` : `ByteArray`
+16. `proof3` : `ByteArray`
+17. `proof4` : `ByteArray`
+18. `proof5` : `ByteArray`
+19. `proof6` : `ByteArray`
+20. `proof7` : `ByteArray`
 
-5. `alias`:`String`
+Note that if transaction doesn't contain certain field, like `PaymentTransaction` doesn't contain `assetId` , the script execution will fail and result in exectution result being `false`.
 
-6. `id`:`ByteArray`
-7. `amount`:`Long`
-8. `proof0`:`ByteArray`
-9. `proof1`:`ByteArray`
-10. `proof2`:`ByteArray`
-11. etc
+In order to protect from that failure, good practice is to check tx type upront, e.g.
 
-    1. `Block`data type contains
+```java
+if (tx.type == 4) then (tx.assetId == base58'8Pm...') else false
+```
 
-12. `timestamp`:`Long`
+In every script, available instances are
 
-13. `height`:`Long`
-
-In every script, available instances are`tx`:`Transaction`and`prevBlock`:`Block`
+* `tx` : `Transaction`
+* `height` : `Long`
+* `None` : `Option[Nothing]`
 
 # Predefined functions
 
