@@ -66,3 +66,7 @@ Example: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6
 #### Address
 
 `?a=base58EncodedAddress` — user's Waves address.
+
+### How to check signature validity
+
+You can use the `Waves.crypto.isValidTransactionSignature()` method from [@waves/waves-api](https://www.npmjs.com/package/@waves/waves-api) npm package.
