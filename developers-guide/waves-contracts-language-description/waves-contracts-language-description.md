@@ -1,15 +1,11 @@
-# Waves Contracts
-
-Disclaimer: WavesContracts are in early development phase at the moment. This is an incomplete list of not completely implemented features of WavesContracts. Some features may be changed, added or removed completely.
-
 # Introduction
 
-WavesContracts language is
+Waves Contracts language is:
 
-* lazy
-* strong typed
-* statically typed
-* expression-based.
+* Lazy
+* Strong typed
+* Statically typed
+* Expression-based.
 
 Operations and constructs available are:
 
@@ -49,6 +45,7 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 4. `assetId`:`ByteArray`
 
 5. `alias`:`String`
+
 6. `id`:`ByteArray`
 7. `amount`:`Long`
 8. `proof0`:`ByteArray`
