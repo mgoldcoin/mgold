@@ -39,8 +39,9 @@
 * [Waves DEX](/waves-client/waves-dex.md)
   * [Start trading using the Waves DEX](/waves-client/waves-dex/start-trading-using-the-waves-dex.md)
 * [Custom Assets](waves-client/assets-management.md)
-  * [Issue an Asset](waves-client/assets-management/issue-an-asset.md)
-  * [ReIssue an Asset](waves-client/assets-management/reissue-an-asset.md)
+  * [How to create a Token](/waves-client/assets-management/issue-an-asset.md)
+  * [How to reissue created Token](waves-client/assets-management/reissue-an-asset.md)
+  * [​How to burn issued Token](/waves-client/assets-management/burn-an-asset.md)
 
 ## Waves Full Node
 
@@ -100,4 +101,3 @@
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves Dex FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-
