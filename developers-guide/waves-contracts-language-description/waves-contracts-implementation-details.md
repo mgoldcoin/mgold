@@ -35,10 +35,10 @@ All types available are:
 | Types | Equal Types in Waves Contract Language |
 | :--- | :--- |
 | Bottom Type | NOTHING |
-| Primitive Types |  |
-| Complex Types |  |
+| Primitive Types | UNIT, LONG, BYTEVECTOR, BOOLEAN, STRING |
+| Complex Types | TYPEREF\(typename\) and Option\(Type\) |
 
-
+**Note. **User can't create new types, only predefined ones are available.
 
 
 
