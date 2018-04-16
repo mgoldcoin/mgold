@@ -97,22 +97,25 @@ WavesContracts standard librarty not only contains predefined data types and ins
 * `sigVerify`:`(body: ByteArray, pubKey: ByteArray, signature: ByteArray) => Boolean`
 * `keccack`,`blake2b`and other hashing algorithms:`ByteArray => ByteArray`
 * `extract`:`Option[T] => T`,`isDefined`:`Option[T] => Boolean`defined over`Option[_]`
-* etc
+* `isDefined` : `Option[T] => Boolean`
+* `Some `: `T` =&gt; Option\[T\]\`
+* `size `: `ByteArray => Long`
 
 ### Accessing blockchain state and Oracle data
 
 WavesContracts can access last transacion for a given account address. Note last transaction may or may no exist:
 
-* `lastTransaction`:`(accountAddress: ByteArray) => Option[Transaction]`
-* `accountBalance`,`accountAssetBalance`provide balance info for any account
-* etc
+* `getTransactionById` provides tx in blockchain by id, `ByteArray => Option[Transaction]`
+* \[NOT IMPLEMENTED\] `accountBalance`, `accountAssetBalance` provide balance info for any account, `Address => Long`
+* \[NOT IMPLEMENTED\] `transactionHeight` provides height of tx in blockchain by id, `ByteArray => Option[Long]`
 
-`DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from WavesContracts via
+`DataTransaction`can set/overwrite a typed primitive value for a key on account of sender.
+
+ These fields can be accessed from WavesContracts via
 
 * `getLong`:`(accountAddress: ByteArray, key: String) => Option[Long]`
 * `getBoolean`:`(accountAddress: ByteArray, key: String) => Option[Boolean]`
 * `getByteArray`:`(accountAddress: ByteArray, key: String) => Option[ByteArray]`
-* etc
 
 # Examples
 
