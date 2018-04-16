@@ -41,22 +41,39 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 2. `Transaction`contains all possible transaction fields like:
 
 * `type` : `Long`
+
 * `id` : `ByteArray`
+
 * `fee` : `Long`
+
 * `feeAssetId` : `Option[ByteArray]`
+
 * `timestamp` : `Long`
+
 * `amount` : `Long`
+
 * `bodyBytes` : `ByteArray`
+
 * `senderPk` : `ByteArray`
+
 * `assetId` : `Option[ByteArray]`
+
 * `recipient` : `AddressOrAlias`
+
 * `proof0` : `ByteArray`
+
 * `proof1` : `ByteArray`
+
 * `proof2` : `ByteArray`
+
 * `proof3` : `ByteArray`
+
 * `proof4` : `ByteArray`
+
 * `proof5` : `ByteArray`
+
 * `proof6` : `ByteArray`
+
 * `proof7` : `ByteArray`
 
 Note that if transaction doesn't contain certain field, like `PaymentTransaction` doesn't contain `assetId` , the script execution will fail and result in exectution result being `false`.
