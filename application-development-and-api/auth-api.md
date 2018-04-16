@@ -43,6 +43,10 @@ Example: `https://beta.wavesplatform.com?r=https://example.com&n=Example&d=01234
 
 `?s=/path/to/an/API/method` — a path to the method to redirect the user to while the signing is successful. By default the user is redirected to the referer root. Optional.
 
+#### Debug mode
+
+`?debug=true` — a flag to display error messages. Optional.
+
 ### Response
 
 Example: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6XwuMdcx4bhsCJAq3e8yhP7j64UD3aLyn9fFSK454o427raRmSn6a9FkaJpvXrc&p=2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr&a=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj`.
