@@ -2,6 +2,8 @@
 
 If you want to authorize a user in your service by means of his Waves account, here's the solution. In general, you should redirect the user to the official Waves Client (https://beta.wavesplatform.com/ — to be changed later) with certain query parameters including some arbitrary data for him to sign.
 
+That might be needed in cases when you need to either work with user personal data and be sure that a given blockchain account belongs to that user.
+
 ## Process
 
 0.  You add the Waves Auth widget to your site.
@@ -70,3 +72,5 @@ Example: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6
 ### How to check signature validity
 
 You can use the `Waves.crypto.isValidTransactionSignature()` method from [@waves/waves-api](https://www.npmjs.com/package/@waves/waves-api) npm package.
+
+Signature is taken from the data in the following order: a `WavesWalletAuthentication` string, then a string with your host parameter value, then a string with your data parameter value.
