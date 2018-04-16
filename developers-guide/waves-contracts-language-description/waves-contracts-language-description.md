@@ -40,25 +40,24 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 2. `Transaction`contains all possible transaction fields like:
 
-3. `type` : `Long`
-
-4. `id` : `ByteArray`
-5. `fee` : `Long`
-6. `feeAssetId` : `Option[ByteArray]`
-7. `timestamp` : `Long`
-8. `amount` : `Long`
-9. `bodyBytes` : `ByteArray`
-10. `senderPk` : `ByteArray`
-11. `assetId` : `Option[ByteArray]`
-12. `recipient` : `AddressOrAlias`
-13. `proof0` : `ByteArray`
-14. `proof1` : `ByteArray`
-15. `proof2` : `ByteArray`
-16. `proof3` : `ByteArray`
-17. `proof4` : `ByteArray`
-18. `proof5` : `ByteArray`
-19. `proof6` : `ByteArray`
-20. `proof7` : `ByteArray`
+* `type` : `Long`
+* `id` : `ByteArray`
+* `fee` : `Long`
+* `feeAssetId` : `Option[ByteArray]`
+* `timestamp` : `Long`
+* `amount` : `Long`
+* `bodyBytes` : `ByteArray`
+* `senderPk` : `ByteArray`
+* `assetId` : `Option[ByteArray]`
+* `recipient` : `AddressOrAlias`
+* `proof0` : `ByteArray`
+* `proof1` : `ByteArray`
+* `proof2` : `ByteArray`
+* `proof3` : `ByteArray`
+* `proof4` : `ByteArray`
+* `proof5` : `ByteArray`
+* `proof6` : `ByteArray`
+* `proof7` : `ByteArray`
 
 Note that if transaction doesn't contain certain field, like `PaymentTransaction` doesn't contain `assetId` , the script execution will fail and result in exectution result being `false`.
 
