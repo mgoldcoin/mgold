@@ -64,7 +64,8 @@
 * [Creating a Private Waves Blockchain Network](developers-guide/creating-a-private-waves-blockchain-network.md)
 * [Mass Transfer Transaction](developers-guide/mass-transfer-transaction.md)
 * [Data Transaction](developers-guide/data-transaction.md)
-* [Waves Contracts Language Description](developers-guide/waves-contracts-language-description.md)
+* [Waves Smart Contracts](developers-guide/waves-contracts-language-description.md)
+  * [Waves Contracts Language Description](developers-guide/waves-contracts-language-description/waves-contracts-language-description.md)
 * [Waves-NG Solution](developers-guide/waves-ng-solution.md)
 
 ## Application Development and API
@@ -98,3 +99,4 @@
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves Dex FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
+
