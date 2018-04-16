@@ -66,6 +66,7 @@
 * [Data Transaction](developers-guide/data-transaction.md)
 * [Waves Smart Contracts](developers-guide/waves-contracts-language-description.md)
   * [Waves Contracts Language Description](developers-guide/waves-contracts-language-description/waves-contracts-language-description.md)
+  * [Waves Contracts Implementation Details](developers-guide/waves-contracts-language-description/waves-contracts-implementation-details.md)
 * [Waves-NG Solution](developers-guide/waves-ng-solution.md)
 
 ## Application Development and API
