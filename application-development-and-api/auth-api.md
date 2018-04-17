@@ -23,7 +23,9 @@ Due to the length limitations of the query string all parameters are expressed w
 
 ### Request
 
-Example: `https://beta.wavesplatform.com?r=https://example.com&n=Example&d=0123456789&i=/img/logo.png&success=/wavesAuth`.
+Example: `https://beta.wavesplatform.com#gateway/auth?r=https://example.com&n=Example&d=0123456789&i=/img/logo.png&success=/wavesAuth`.
+
+Basic path is `https://beta.wavesplatform.com#gateway/auth`. Then the query parameters go.
 
 #### Referrer
 
