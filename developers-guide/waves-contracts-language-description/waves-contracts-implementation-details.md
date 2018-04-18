@@ -51,7 +51,7 @@ Parser generated AST is based on the following constructs:
 | IF\(clause, ifTrue, ifFalse\) | Used for lazy branching |
 | CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),   CONST\_STRING\(st… | Used as Leafs |
 | BINARY\_OP\(EXPR, OP\_KIND, EXPR\) | Used exclusively for ease of parsing |
-|  |  |
 
-
+# 2. Type checking and compiling
+Untyped AST is enriched with types, types are checked, according to function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates **BLOCK**, which consists of **EXPRs**. Each **EXPR** has a type and is one of:
 
