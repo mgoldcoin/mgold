@@ -49,7 +49,7 @@ Parser generated AST is based on the following constructs:
 | GETTER\(expr, fieldName\) | Used to access field of structure |
 | FUNCTION\_CALL\(name, argExprs\) | Used to invoke a predefined function within context |
 | IF\(clause, ifTrue, ifFalse\) | Used for lazy branching |
-| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),      CONST\_STRING\(st… | Used as Leafs |
+| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),      CONST\_STRING\(string\) | Used as Leafs |
 | BINARY\_OP\(EXPR, OP\_KIND, EXPR\) | Used exclusively for ease of parsing |
 
 # 2. Type checking and compiling
@@ -62,6 +62,7 @@ Untyped AST is enriched with types, types are checked, according to function sig
 | GETTER\(expr, fieldName, resultTtype\) | Used to access field of structure |
 | FUNCTION\_CALL\(name, argBlocks, resultType\) | Used to invoke a predefined function within context |
 | IF\(clause, ifTrueBlock, ifFalseBlock, resultType\) | Used for Lazy branching |
+| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\), CONST\_STRING\(string\), REF\(name, resultType\) | Used as Leafs |
 |  |  |
 
 These are very similar to those in previous step, but they are typed\(for example, Untyped `REF` is enriched with type, derived from right-side expression\). This set doesn't include `BINARY_OP` as well, it gets translated to `FUNCTION_CALL`. This set doesn’t include constructs that are used exclusively for ease of parsing.
