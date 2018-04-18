@@ -32,13 +32,15 @@ atom = if | functionCall | byteVector | string | number | braces | curlyBraces |
 
 All types available are:
 
-| Types | Equal Types in Waves Contract Language |
+| Types | Description  |
 | :--- | :--- |
 | Bottom Type | NOTHING |
 | Primitive Types | UNIT, LONG, BYTEVECTOR, BOOLEAN, STRING |
 | Complex Types | TYPEREF\(typename\) and Option\(Type\) |
 
 **Note. **User can't create new types, only predefined ones are available.
+
+Parser generated AST is based on the following constructs:
 
 
 
