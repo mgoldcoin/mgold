@@ -63,7 +63,6 @@ Untyped AST is enriched with types, types are checked, according to function sig
 | FUNCTION\_CALL\(name, argBlocks, resultType\) | Used to invoke a predefined function within context |
 | IF\(clause, ifTrueBlock, ifFalseBlock, resultType\) | Used for Lazy branching |
 | CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\), CONST\_STRING\(string\), REF\(name, resultType\) | Used as Leafs |
-|  |  |
 
 These are very similar to those in previous step, but they are typed\(for example, Untyped `REF` is enriched with type, derived from right-side expression\). This set doesn't include `BINARY_OP` as well, it gets translated to `FUNCTION_CALL`. This set doesn’t include constructs that are used exclusively for ease of parsing.
 
