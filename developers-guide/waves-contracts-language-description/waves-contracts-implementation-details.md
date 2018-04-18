@@ -49,9 +49,25 @@ Parser generated AST is based on the following constructs:
 | GETTER\(expr, fieldName\) | Used to access field of structure |
 | FUNCTION\_CALL\(name, argExprs\) | Used to invoke a predefined function within context |
 | IF\(clause, ifTrue, ifFalse\) | Used for lazy branching |
-| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),   CONST\_STRING\(st… | Used as Leafs |
+| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),      CONST\_STRING\(st… | Used as Leafs |
 | BINARY\_OP\(EXPR, OP\_KIND, EXPR\) | Used exclusively for ease of parsing |
 
 # 2. Type checking and compiling
+
 Untyped AST is enriched with types, types are checked, according to function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates **BLOCK**, which consists of **EXPRs**. Each **EXPR** has a type and is one of:
+
+| Types | Description |
+| :--- | :--- |
+| LET\(name, block\) | Used to define a variable |
+| GETTER\(expr, fieldName, resultTtype\) | Used to access field of structure |
+| FUNCTION\_CALL\(name, argBlocks, resultType\) | Used to invoke a predefined function within context |
+| IF\(clause, ifTrueBlock, ifFalseBlock, resultType\) | Used for Lazy branching |
+|  |  |
+
+These are very similar to those in previous step, but they are typed\(for example, Untyped `REF` is enriched with type, derived from right-side expression\). This set doesn't include `BINARY_OP` as well, it gets translated to `FUNCTION_CALL`. This set doesn’t include constructs that are used exclusively for ease of parsing.
+
+This step is important to validate user input so that less mistakes are made: for instance, `3 + false` is valid syntaxically, but typechecker won't compile it, because `+`  function requires two arguments of type `Long`.  
+**Note.** The output of this stage is exactly what is sent to the blockchain.
+
+This set doesn’t include constructs that are used exclusively for ease of parsing. This step is important to validate user input.
 
