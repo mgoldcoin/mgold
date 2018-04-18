@@ -92,7 +92,7 @@ In every script, available instances are
 
 # Predefined functions
 
-WavesContracts standard librarty not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
+WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
 * `sigVerify`:`(body: ByteArray, pubKey: ByteArray, signature: ByteArray) => Boolean`
 * `keccack`,`blake2b`and other hashing algorithms:`ByteArray => ByteArray`
