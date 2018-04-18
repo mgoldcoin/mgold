@@ -7,5 +7,5 @@ Our realisation of smart contracts will contain two parts:
 
 We see the syntax of our language as functional, similar to F\#: strong and statically typed.
 
-Note. [**Here**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf) you can find our White Paper which describes Waves Smart Contract.
+**Note.** [**Here**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf) you can find our White Paper which describes Waves Smart Contract.
 
