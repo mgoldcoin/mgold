@@ -139,8 +139,22 @@ jQuery(document).ready(function () {
 	gitbook.page.hasChanged = function (e, t, n) {
 		pageHasChanged(e, t, n);
 		buildCurrentTreeState();
+		addBranding();
 	};
 	
 	buildCurrentTreeState();
+	
+	
+	/**/
+	var addBranding = function () {
+		var $bookSummary = $('.book-summary');
+		var $logo = $('<div class="sidebar-brand">' +
+			'<a href="/"><img class="brand-logo" src="/_theme/brand-logo/waves-docs-logo.png"\n' +
+			'     srcset="/_theme/brand-logo/waves-docs-logo@2x.png 2x,\n' +
+			'             /_theme/brand-logo/waves-docs-logo@3x.png 3x"\n alt="Waves Docs"></a>' +
+			'</div>');
+		$bookSummary.prepend($logo);
+	};
+	addBranding();
 	
 });
