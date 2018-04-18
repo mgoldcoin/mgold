@@ -32,7 +32,7 @@ atom = if | functionCall | byteVector | string | number | braces | curlyBraces |
 
 All types available are:
 
-| Types | Description  |
+| Types | Description |
 | :--- | :--- |
 | Bottom Type | NOTHING |
 | Primitive Types | UNIT, LONG, BYTEVECTOR, BOOLEAN, STRING |
@@ -40,7 +40,19 @@ All types available are:
 
 **Note. **User can't create new types, only predefined ones are available.
 
-Parser generated AST is based on the following constructs:
+Parser generated AST is based on the following constructs:   
+
+
+| Constract | Description |
+| :--- | :--- |
+| LET\(name, expr\) | Used to define a variable |
+| REF\(name\) | Used to access its value |
+| GETTER\(expr, fieldName\) | Used to access field of structure |
+| FUNCTION\_CALL\(name, argExprs\) | Used to invoke a predefined function within context |
+| IF\(clause, ifTrue, ifFalse\) | Used for lazy branching |
+| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),   CONST\_STRING\(st… | Used as Leafs |
+| BINARY\_OP\(EXPR, OP\_KIND, EXPR\) | Used exclusively for ease of parsing |
+|  |  |
 
 
 
