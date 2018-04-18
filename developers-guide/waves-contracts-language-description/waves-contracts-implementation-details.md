@@ -40,8 +40,7 @@ All types available are:
 
 **Note. **User can't create new types, only predefined ones are available.
 
-Parser generated AST is based on the following constructs:   
-
+Parser generated AST is based on the following constructs:
 
 | Constract | Description |
 | :--- | :--- |
