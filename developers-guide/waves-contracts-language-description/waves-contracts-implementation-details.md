@@ -6,7 +6,7 @@ While the user writes WavesContracts code in high-level language, Waves Contract
 2. Typechecking & Compiling.
 3. Evaluating.
 
-# 1. Parsing Stage
+## 1. Parsing Stage
 
 Parser builds untyped Abstract Syntax Tree\(AST\) from script text. Only syntax rules are checked at this phase, like correct variable names, function invocation with `()` and so on.
 
@@ -52,7 +52,7 @@ Parser generated AST is based on the following constructs:
 | CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),      CONST\_STRING\(string\) | Used as Leafs |
 | BINARY\_OP\(EXPR, OP\_KIND, EXPR\) | Used exclusively for ease of parsing |
 
-# 2. Type Checking and Compiling Stage
+## 2. Type Checking and Compiling Stage
 
 Untyped AST is enriched with types, types are checked, according to function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates **BLOCK**, which consists of **EXPRs**. Each **EXPR** has a type and is one of:
 
@@ -70,4 +70,18 @@ This step is important to validate user input so that less mistakes are made: fo
 **Note.** The output of this stage is exactly what is sent to the blockchain.
 
 This set doesn’t include constructs that are used exclusively for ease of parsing. This step is important to validate user input.
+
+## 3. Evaluator Stage
+
+Evaluator operates a typed expression tree within a context. It traverses the low-level typed AST, produced at the previous step, returning either the execution result or an execution error.
+
+`Context` contains:
+
+* A map of predefined functions with implementation.
+* Predefined types, e.g. structures.
+* Lazy values that can be calculated upon calls within given tree path. They cannot be re-defined.
+
+Lazy values are calculated maximum once.
+
+If evaluator results in exception\(for instance, Long Overflow\), result of script evaluation is `false`.
 
