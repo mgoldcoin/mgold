@@ -42,6 +42,9 @@
   * [How to create a Token](/waves-client/assets-management/issue-an-asset.md)
   * [How to reissue created Token](waves-client/assets-management/reissue-an-asset.md)
   * [​How to burn issued Token](/waves-client/assets-management/burn-an-asset.md)
+  * [Mobile applications](/waves-client/mobile-apps.md)
+   * [Waves wallet for iOS devices](/waves-client/mobile-apps/iOS/iOS.md)
+   * [Waves wallet for Android devices](/waves-client/mobile-apps/android/android.md)
 
 ## Waves Full Node
 
