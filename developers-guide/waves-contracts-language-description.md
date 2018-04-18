@@ -2,8 +2,8 @@
 
 Our realisation of smart contracts will contain two parts:
 
-1. A smart account language implementation.
-2. A foundational layer for developing various decentralised applications and smart contracts on the blockchain, with a built-in Turing-complete programming language.
+1. A **Smart Account** language implementation (It is an important property that the smart account does not store any data on the blockchain. A smart account will only have access to blockchain state values that can be retrieved and executed relatively fast, in a “constant” time).
+2. A **Foundational Layer** for developing various decentralised applications and smart contracts on the blockchain, with a built-in Turing-complete programming language.
 
 We see the syntax of our language as functional, similar to F\#: strong and statically typed.
 
