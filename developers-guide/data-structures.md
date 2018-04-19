@@ -27,6 +27,13 @@ Alias is a UTF-8 string with the following constraints:
 * It contains from 4 to 30 UTF-8 characters
 * It cannot contain '\n' or any leading/trailing whitespaces
 
+### Proof
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Proof size \(N\) | Short | 0 | 2 |
+| 2 | Proof | Bytes | 2 | N |
+
 ### AddressOrAlias
 
 A recipient that can be encoded either as pure address or alias. Both`Address`and`Alias`are`AddressOrAlias`.
@@ -200,22 +207,28 @@ The transaction's signature is calculated from the following bytes:
 | 13 | Attachment's length \(N\) | Short | 124+M \(156+M\*\) \(188+M\*\*\) | 2 |
 | 14 | Attachment's bytes | Bytes | 126+M \(158+M\*\) \(190+M\*\*\) | N |
 
-The transaction's signature is calculated from the following bytes:
+#### Versioned transfer transaction
 
 | \# | Field name | Type | Position | Length |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | Transaction type \(0x04\) | Byte | 0 | 1 |
-| 2 | Sender's public key | Bytes | 1 | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 33 | 1 |
-| 4 | Amount's asset ID \(\*if used\) | Bytes | 34 | 0 \(32\*\) |
-| 5 | Fee's asset flag \(0-Waves, 1-Asset\) | Byte | 34 \(66\*\) | 1 |
-| 6 | Fee's asset ID \(\*\*if used\) | Bytes | 35 \(67\*\) | 0 \(32\*\*\) |
-| 7 | Timestamp | Long | 35 \(67\*\) \(99\*\*\) | 8 |
-| 8 | Amount | Long | 43 \(75\*\) \(107\*\*\) | 8 |
-| 9 | Fee | Long | 51 \(83\*\) \(115\*\*\) | 8 |
-| 10 | Recipient's AddressOrAlias object bytes | Bytes | 59 \(91\*\) \(123\*\*\) | M |
-| 11 | Attachment's length \(N\) | Short | 59+M \(91+M\*\) \(123+M\*\*\) | 2 |
-| 12 | Attachment's bytes | Bytes | 61+M \(93+M\*\) \(125+M\*\*\) | N |
+| 1 | Reserved | Byte | 0 | 1
+| 2 | Transaction type | Byte | 1 | 1 |
+| 3 | Version | Byte | 2 | 1
+| 4 | Sender's public key | Bytes | 3 | 32 |
+| 5 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 35 | 1 |
+| 6 | Amount's asset ID \(\*if used\) | Bytes | 36 | 0 \(32\*\) |
+| 7 | Timestamp | Long | 36 \(68\*\) | 8 |
+| 8 | Amount | Long | 44 \(76\*\) | 8 |
+| 9 | Fee | Long | 52 \(84\*\) | 8 |
+| 10 | Recipient's AddressOrAlias object bytes | Bytes | 60 \(92\*\) | M |
+| 11 | Attachment's length \(N\) | Short | 60+M \(92+M\*\) | 2 |
+| 12 | Attachment's bytes | Bytes | 62+M \(94+M\*\) | N |
+| 13 | Proofs' version | Byte | 62+M+N \(94+M+N\*\) | 1 |
+| 14 | Proofs' number \(P\) | Short | 63+M+N \(95+M+N\*\) | 2 |
+| 15 | Proofs | Proof | 65+M+N \(97+M+N\*\) | S |
+
+* The fee only in Waves;
+* You may sign your transaction in your way and place the signature in proofs. 
 
 #### Burn transaction
 
