@@ -207,6 +207,23 @@ The transaction's signature is calculated from the following bytes:
 | 13 | Attachment's length \(N\) | Short | 124+M \(156+M\*\) \(188+M\*\*\) | 2 |
 | 14 | Attachment's bytes | Bytes | 126+M \(158+M\*\) \(190+M\*\*\) | N |
 
+The transaction's signature is calculated from the following bytes:
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Transaction type \(0x04\) | Byte | 0 | 1 |
+| 2 | Sender's public key | Bytes | 1 | 32 |
+| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 33 | 1 |
+| 4 | Amount's asset ID \(\*if used\) | Bytes | 34 | 0 \(32\*\) |
+| 5 | Fee's asset flag \(0-Waves, 1-Asset\) | Byte | 34 \(66\*\) | 1 |
+| 6 | Fee's asset ID \(\*\*if used\) | Bytes | 35 \(67\*\) | 0 \(32\*\*\) |
+| 7 | Timestamp | Long | 35 \(67\*\) \(99\*\*\) | 8 |
+| 8 | Amount | Long | 43 \(75\*\) \(107\*\*\) | 8 |
+| 9 | Fee | Long | 51 \(83\*\) \(115\*\*\) | 8 |
+| 10 | Recipient's AddressOrAlias object bytes | Bytes | 59 \(91\*\) \(123\*\*\) | M |
+| 11 | Attachment's length \(N\) | Short | 59+M \(91+M\*\) \(123+M\*\*\) | 2 |
+| 12 | Attachment's bytes | Bytes | 61+M \(93+M\*\) \(125+M\*\*\) | N |
+
 #### Versioned transfer transaction
 
 | \# | Field name | Type | Position | Length |
