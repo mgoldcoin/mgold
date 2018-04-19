@@ -49,14 +49,14 @@ This section contains all information about Installing, configuring and upgradin
 
 This Section contains technical details about Waves Platform
 
-1. [Cryptographic Practical Details](/developers-guide/cryptographic-practical-details.md)
-2. [Data Structures](/developers-guide/data-structures.md)
-3. [Validation Rules](/developers-guide/validation-rules.md)
-4. [Creating a Private Waves Blockchain Network](/developers-guide/creating-a-private-waves-blockchain-network.md)
-5. [Mass Transfer Transactions](/developers-guide/mass-transfer-transaction.md)
-6. [Data Transaction](/developers-guide/data-transaction.md)
-7. [Waves Contracts Language Description](/developers-guide/waves-contracts-language-description.md)
-8. [Waves-NG Solution](/developers-guide/waves-ng-solution.md)
+1. [Cryptographic Practical Details](/technical-details/cryptographic-practical-details.md)
+2. [Data Structures](/technical-details/data-structures.md)
+3. [Validation Rules](/technical-details/validation-rules.md)
+4. [Creating a Private Waves Blockchain Network](/technical-details/creating-a-private-waves-blockchain-network.md)
+5. [Mass Transfer Transactions](/technical-details/mass-transfer-transaction.md)
+6. [Data Transaction](/technical-details/data-transaction.md)
+7. [Waves Contracts Language Description](/technical-details/waves-contracts-language-description.md)
+8. [Waves-NG Solution](/technical-details/waves-ng-solution.md)
 
 # 6. Application Development and API
 
