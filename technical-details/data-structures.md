@@ -40,20 +40,20 @@ A recipient that can be encoded either as pure address or alias. Both `Address` 
 
 ### Block
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Version \(0x02 for Genesis block,, 0x03 for common block\) | Byte | 0 | 1 |
-| 2 | Timestamp | Long | 1 | 8 |
-| 3 | Parent block signature | Bytes | 9 | 64 |
-| 4 | Consensus block length \(always 40 bytes\) | Int | 73 | 4 |
-| 5 | Base target | Long | 77 | 8 |
-| 6 | Generation signature\* | Bytes | 85 | 32 |
-| 7 | Transactions block length \(N\) | Int | 117 | 4 |
-| 8 | Transaction \#1 bytes | Bytes | 121 | M1 |
-| ... | ... | ... | ... | ... |
-| 8 + \(K - 1\) | Transaction \#K bytes | Bytes | 121 + N - MK | MK |
-| 9 + \(K - 1\) | Generator's public key | Bytes | 121 + N | 32 |
-| 10 + \(K - 1\) | Block's signature | Bytes | 153 + N - MK | 64 |
+| \#           | Field name                                              | Type  | Position     | Length |
+|--------------|---------------------------------------------------------|-------|--------------|--------|
+| 1            | Version (0x02 for Genesis block, 0x03 for common block) | Byte  | 0            | 1      |
+| 2            | Timestamp                                               | Long  | 1            | 8      |
+| 3            | Parent block signature                                  | Bytes | 9            | 64     |
+| 4            | Consensus block length (always 40 bytes)                | Int   | 73           | 4      |
+| 5            | Base target                                             | Long  | 77           | 8      |
+| 6            | Generation signature*                                   | Bytes | 85           | 32     |
+| 7            | Transactions block length (N)                           | Int   | 117          | 4      |
+| 8            | Transaction #1 bytes                                    | Bytes | 121          | M1     |
+| ...          | ...                                                     | ...   | ...          | ...    |
+| 8 + (K - 1)  | Transaction #K bytes                                    | Bytes | 121 + N - MK | MK     |
+| 9 + (K - 1)  | Generator's public key                                  | Bytes | 121 + N      | 32     |
+| 10 + (K - 1) | Block's signature                                       | Bytes | 153 + N - MK | 64     |
 
 Generation signature is calculated as Blake2b256 hash of the following bytes:
 
