@@ -60,21 +60,20 @@
 * [Joining Testnet](waves-full-node/joining-testnet.md)
 * [Configuration](waves-full-node/configuration.md)
 
-## Developers Guide
 
-* [Cryptographic Practical Details](developers-guide/cryptographic-practical-details.md)
-* [Data Structures](developers-guide/data-structures.md)
-* [Validation Rules](developers-guide/validation-rules.md)
-* [Creating a Private Waves Blockchain Network](developers-guide/creating-a-private-waves-blockchain-network.md)
-* [Mass Transfer Transaction](developers-guide/mass-transfer-transaction.md)
-* [Data Transaction](developers-guide/data-transaction.md)
-* [Waves Smart Contracts](developers-guide/waves-contracts-language-description.md)
-  * [Waves Contracts Language Description](developers-guide/waves-contracts-language-description/waves-contracts-language-description.md)
-  * [Waves Contracts Implementation Details](developers-guide/waves-contracts-language-description/waves-contracts-implementation-details.md)
-* [Waves-NG Solution](developers-guide/waves-ng-solution.md)
 
-## Application Development and API
-
+## Development and API
+* Technical details
+  * [Cryptographic Practical Details](technical-details/cryptographic-practical-details.md)
+  * [Data Structures](technical-details/data-structures.md)
+  * [Validation Rules](technical-details/validation-rules.md)
+  * [Creating a Private Waves Blockchain Network](technical-details/creating-a-private-waves-blockchain-network.md)
+  * [Mass Transfer Transaction](technical-details/mass-transfer-transaction.md)
+  * [Data Transaction](technical-details/data-transaction.md)
+  * [Waves Smart Contracts](technical-details/waves-contracts-language-description.md)
+    * [Waves Contracts Language Description](technical-details/waves-contracts-language-description/waves-contracts-language-description.md)
+    * [Waves Contracts Implementation Details](technical-details/waves-contracts-language-description/waves-contracts-implementation-details.md)
+  * [Waves-NG Solution](technical-details/waves-ng-solution.md)
 * [Node API Overview](application-development-and-api/node-api-overview.md)
 * [Client Libraries](application-development-and-api/client-libraries.md)
   * [PyWaves](application-development-and-api/client-libraries/pywaves.md)
@@ -97,7 +96,8 @@
   * [Create Your First crypto Trading Bot](application-development-and-api/examples/trading-bot.md)
   * [Setting Up a Waves Platform Full Node on Digital Ocean](application-development-and-api/examples/set-up-full-node-on-digital-ocean.md)
 
-## Frequently Asked Questions \(FAQ\)
+
+## FAQ
 
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
 * [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
