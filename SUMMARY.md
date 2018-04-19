@@ -43,8 +43,8 @@
   * [How to reissue created Token](waves-client/assets-management/reissue-an-asset.md)
   * [​How to burn issued Token](/waves-client/assets-management/burn-an-asset.md)
 * [Mobile applications](/waves-client/mobile-apps.md)
-   * [Waves wallet for iOS devices](/waves-client/mobile-apps/iOS/iOS.md)
-   * [Waves wallet for Android devices](/waves-client/mobile-apps/android/android.md)
+  * [Waves wallet for iOS devices](/waves-client/mobile-apps/iOS/iOS.md)
+  * [Waves wallet for Android devices](/waves-client/mobile-apps/android/android.md)
 
 ## Waves Full Node
 
@@ -60,9 +60,8 @@
 * [Joining Testnet](waves-full-node/joining-testnet.md)
 * [Configuration](waves-full-node/configuration.md)
 
-
-
 ## Development and API
+
 * [Technical details](technical-details/technical-details.md)
   * [Cryptographic Practical Details](technical-details/cryptographic-practical-details.md)
   * [Data Structures](technical-details/data-structures.md)
@@ -96,11 +95,11 @@
   * [Create Your First crypto Trading Bot](application-development-and-api/examples/trading-bot.md)
   * [Setting Up a Waves Platform Full Node on Digital Ocean](application-development-and-api/examples/set-up-full-node-on-digital-ocean.md)
 
-
 ## FAQ
 
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
 * [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
-* [Waves Dex FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
+* [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
+

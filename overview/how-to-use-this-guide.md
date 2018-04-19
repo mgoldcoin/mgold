@@ -45,28 +45,20 @@ This section contains all information about Installing, configuring and upgradin
 7. [Joining Testnet](/waves-full-node/joining-testnet.md)
 8. [Configuration](/waves-full-node/configuration.md)
 
-# 5. Developers Guide
+# 5. Development and API
 
-This Section contains technical details about Waves Platform
+1. [Technical Details](/technical-details/technical-details.md)
+2. [Node API Overview](/application-development-and-api/node-api-overview.md)
+3. [Client Libraries ](/application-development-and-api/client-libraries.md)\([PyWaves](/application-development-and-api/client-libraries/pywaves.md), [WavesJ](/application-development-and-api/client-libraries/wavesj.md) and [WavesCS](/application-development-and-api/client-libraries/wavescs.md)\)
+4. [DEX API](/application-development-and-api/dex-api.md) \([Matcher](/application-development-and-api/dex-api/matcher.md)\)
+5. [Waves Node Rest API](/application-development-and-api/waves-node-rest-api.md)
+6. [Examples](/application-development-and-api/examples.md)
 
-1. [Cryptographic Practical Details](/technical-details/cryptographic-practical-details.md)
-2. [Data Structures](/technical-details/data-structures.md)
-3. [Validation Rules](/technical-details/validation-rules.md)
-4. [Creating a Private Waves Blockchain Network](/technical-details/creating-a-private-waves-blockchain-network.md)
-5. [Mass Transfer Transactions](/technical-details/mass-transfer-transaction.md)
-6. [Data Transaction](/technical-details/data-transaction.md)
-7. [Waves Contracts Language Description](/technical-details/waves-contracts-language-description.md)
-8. [Waves-NG Solution](/technical-details/waves-ng-solution.md)
+# 6. Frequently Asked Questions \(FAQ\)
 
-# 6. Application Development and API
-
-1. [Node API Overview](/application-development-and-api/node-api-overview.md)
-2. [Client Libraries ](/application-development-and-api/client-libraries.md)\([PyWaves](/application-development-and-api/client-libraries/pywaves.md), [WavesJ](/application-development-and-api/client-libraries/wavesj.md) and [WavesCS](/application-development-and-api/client-libraries/wavescs.md)\)
-3. [DEX API](/application-development-and-api/dex-api.md) \([Matcher](/application-development-and-api/dex-api/matcher.md)\)
-4. [Waves Node Rest API](/application-development-and-api/waves-node-rest-api.md)
-5. [Examples](/application-development-and-api/examples.md)
-
-# 7. Frequently Asked Questions \(FAQ\)
+1. Account Management FAQ
+2. Transfers and Gateways FAQ
+3. Waves DEX FAQ
 
 
 
