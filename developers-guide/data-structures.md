@@ -27,6 +27,13 @@ Alias is a UTF-8 string with the following constraints:
 * It contains from 4 to 30 UTF-8 characters
 * It cannot contain '\n' or any leading/trailing whitespaces
 
+### Proof
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Proof size \(N\) | Short | 0 | 2 |
+| 2 | Proof | Bytes | 2 | N |
+
 ### AddressOrAlias
 
 A recipient that can be encoded either as pure address or alias. Both`Address`and`Alias`are`AddressOrAlias`.
@@ -217,6 +224,29 @@ The transaction's signature is calculated from the following bytes:
 | 11 | Attachment's length \(N\) | Short | 59+M \(91+M\*\) \(123+M\*\*\) | 2 |
 | 12 | Attachment's bytes | Bytes | 61+M \(93+M\*\) \(125+M\*\*\) | N |
 
+#### Versioned transfer transaction
+
+| \# | Field name | Type | Position | Length |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Reserved (Always 0) | Byte | 0 | 1
+| 2 | Transaction type | Byte | 1 | 1 |
+| 3 | Version | Byte | 2 | 1
+| 4 | Sender's public key | Bytes | 3 | 32 |
+| 5 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 35 | 1 |
+| 6 | Amount's asset ID \(\*if used\) | Bytes | 36 | 0 \(32\*\) |
+| 7 | Timestamp | Long | 36 \(68\*\) | 8 |
+| 8 | Amount | Long | 44 \(76\*\) | 8 |
+| 9 | Fee | Long | 52 \(84\*\) | 8 |
+| 10 | Recipient's AddressOrAlias object bytes | Bytes | 60 \(92\*\) | M |
+| 11 | Attachment's length \(N\) | Short | 60+M \(92+M\*\) | 2 |
+| 12 | Attachment's bytes | Bytes | 62+M \(94+M\*\) | N |
+| 13 | Proofs' version | Byte | 62+M+N \(94+M+N\*\) | 1 |
+| 14 | Proofs' number \(P\) | Short | 63+M+N \(95+M+N\*\) | 2 |
+| 15 | Proofs | Proof | 65+M+N \(97+M+N\*\) | S |
+
+* The fee only in Waves;
+* You may sign your transaction in your way and place the signature in proofs. 
+
 #### Burn transaction
 
 | \# | Field name | Type | Position | Length |
@@ -349,14 +379,15 @@ The transaction signature is calculated from the fields 1 to N+3, i.e. proofs an
 
 | \# | Field name | Length |
 | :--- | :--- | :--- |
-| 1 | Transaction type (0x0c) | 1 |
-| 2 | Version (0x01) | 1 |
-| 3 | Sender's public key | 32 |
-| 4 | Number of data entries | 2 |
-| 5 | Key1 byte size | 2 |
-| 6 | Key1 bytes, UTF-8 encoded | variable | 
-| 7 | Value1 type:<br>0 = integer<br>1 = boolean<br>2 = binary array | 1 | 
-| 8 | Value1 bytes | variable |
+| 1 | Reserved (Always 0) | 1
+| 2 | Transaction type (0x0c) | 1 |
+| 3 | Version (0x01) | 1 |
+| 4 | Sender's public key | 32 |
+| 5 | Number of data entries | 2 |
+| 6 | Key1 byte size | 2 |
+| 7 | Key1 bytes, UTF-8 encoded | variable | 
+| 8 | Value1 type:<br>0 = integer<br>1 = boolean<br>2 = binary array | 1 | 
+| 9 | Value1 bytes | variable |
 | ... | ... | ... |
 | N | Timestamp | 8 |
 | N+1 | Fee | 8 |
