@@ -63,7 +63,7 @@
 
 
 ## Development and API
-* Technical details
+* [Technical details](technical-details/technical-details.md)
   * [Cryptographic Practical Details](technical-details/cryptographic-practical-details.md)
   * [Data Structures](technical-details/data-structures.md)
   * [Validation Rules](technical-details/validation-rules.md)
