@@ -29,14 +29,14 @@ Alias is a UTF-8 string with the following constraints:
 
 ### Proof
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Proof size \(N\) | Short | 0 | 2 |
-| 2 | Proof | Bytes | 2 | N |
+| \# | Field name     | Type  | Position | Length |
+|----|----------------|-------|----------|--------|
+| 1  | Proof size (N) | Short |     0    |    2   |
+| 2  |      Proof     | Bytes |     2    |    N   |
 
 ### AddressOrAlias
 
-A recipient that can be encoded either as pure address or alias. Both `Address` and`Alias` are `AddressOrAlias`.
+A recipient that can be encoded either as pure address or alias. Both `Address` and `Alias` are `AddressOrAlias`.
 
 ### Block
 
