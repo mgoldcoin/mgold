@@ -211,7 +211,7 @@ The transaction's signature is calculated from the following bytes:
 
 | \# | Field name | Type | Position | Length |
 | :--- | :--- | :--- | :--- | :--- |
-| 1 | Reserved | Byte | 0 | 1
+| 1 | Reserved (Always 0) | Byte | 0 | 1
 | 2 | Transaction type | Byte | 1 | 1 |
 | 3 | Version | Byte | 2 | 1
 | 4 | Sender's public key | Bytes | 3 | 32 |
@@ -362,14 +362,15 @@ The transaction signature is calculated from the fields 1 to N+3, i.e. proofs an
 
 | \# | Field name | Length |
 | :--- | :--- | :--- |
-| 1 | Transaction type (0x0c) | 1 |
-| 2 | Version (0x01) | 1 |
-| 3 | Sender's public key | 32 |
-| 4 | Number of data entries | 2 |
-| 5 | Key1 byte size | 2 |
-| 6 | Key1 bytes, UTF-8 encoded | variable | 
-| 7 | Value1 type:<br>0 = integer<br>1 = boolean<br>2 = binary array | 1 | 
-| 8 | Value1 bytes | variable |
+| 1 | Reserved (Always 0) | 1
+| 2 | Transaction type (0x0c) | 1 |
+| 3 | Version (0x01) | 1 |
+| 4 | Sender's public key | 32 |
+| 5 | Number of data entries | 2 |
+| 6 | Key1 byte size | 2 |
+| 7 | Key1 bytes, UTF-8 encoded | variable | 
+| 8 | Value1 type:<br>0 = integer<br>1 = boolean<br>2 = binary array | 1 | 
+| 9 | Value1 bytes | variable |
 | ... | ... | ... |
 | N | Timestamp | 8 |
 | N+1 | Fee | 8 |
