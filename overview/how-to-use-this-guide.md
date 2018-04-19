@@ -1,6 +1,6 @@
 # How To Use This Guide?
 
-In this guide, you can find all the documentation for Waves Platform as shown below: 
+In this guide, you can find all the documentation for Waves Platform as shown below:
 
 # 1. Overview
 
@@ -14,7 +14,7 @@ This section will give you a general information about Waves Platform and its ma
 
 # 2. Platform Features
 
-This section contains explantions about Waves main Features such as \(Waves-NG Protocol\).
+This section contains explanations about Waves main Features such as \(Waves-NG Protocol\).
 
 1. [Decentralized Exchange \(DEX\).](/platform-features/decentralized-cryptocurrency-exchange-dex.md)
 2. [Assets \(Custom Tokens\).](/platform-features/assets-custom-tokens.md)
