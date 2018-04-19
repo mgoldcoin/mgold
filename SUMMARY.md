@@ -42,27 +42,27 @@
   * [How to create a Token](waves-client/assets-management/issue-an-asset.md)
   * [How to reissue created Token](waves-client/assets-management/reissue-an-asset.md)
   * [How to burn issued Token](waves-client/assets-management/burn-an-asset.md)
-  
-  ## Mobile applications
 
-* [iOS: Account Management](waves-client/mobile-apps/iOS/account-management.md)
-  * [Create Your Account](waves-client/mobile-apps/iOS/account-managment/creating-an-account.md)
-  * [Restore Your Account](waves-client/mobile-apps/iOS/account-managment/restore-an-account.md)
+## Mobile applications
+
+* [iOS: Account Management](mobile-apps/iOS/account-management.md)
+  * [Create Your Account](mobile-apps/iOS/account-managment/creating-an-account.md)
+  * [Restore Your Account](mobile-apps/iOS/account-managment/restore-an-account.md)
   * [Sing In To Your Waves Account](...)
-* [iOS: Transfers and gateways](waves-client/mobile-apps/iOS/wallet-management.md)
-  * [Waves transfers](waves-client/mobile-apps/iOS/transfers-and-gateways/asset-transfers.md)
-  * [Asset transfers](waves-client/mobile-apps/iOS/transfers-and-gateways/waves-transfers.md)
-* [iOS: Waves DEX](waves-client/mobile-apps/iOS/waves-dex.md)
-  * [Start trading using the Waves DEX](waves-client/mobile-apps/iOS/waves-dex/start-trading-using-the-waves-dex.md)   
-* [Android: Account Management](waves-client/mobile-apps/android/account-management.md)
-  * [Create Your Account](waves-client/mobile-apps/android/account-managment/creating-an-account.md)
-  * [Restore Your Account](/waves-client/mobile-apps/android/account-managment/restore-an-account.md)
+* [iOS: Transfers and gateways](mobile-apps/iOS/wallet-management.md)
+  * [Waves transfers](mobile-apps/iOS/transfers-and-gateways/asset-transfers.md)
+  * [Asset transfers](mobile-apps/iOS/transfers-and-gateways/waves-transfers.md)
+* [iOS: Waves DEX](mobile-apps/iOS/waves-dex.md)
+  * [Start trading using the Waves DEX](mobile-apps/iOS/waves-dex/start-trading-using-the-waves-dex.md)   
+* [Android: Account Management](mobile-apps/android/account-management.md)
+  * [Create Your Account](mobile-apps/android/account-managment/creating-an-account.md)
+  * [Restore Your Account](/mobile-apps/android/account-managment/restore-an-account.md)
   * [Sing In To Your Waves Account](...)
-* [Android: Transfers and gateways](waves-client/mobile-apps/android/wallet-management.md)
-  * [Waves transfers](waves-client/mobile-apps/android/transfers-and-gateways/asset-transfers.md)
-  * [Asset transfers](waves-client/mobile-apps/android/transfers-and-gateways/waves-transfers.md)
-* [Android: Waves DEX](waves-client/mobile-apps/android/waves-dex.md)
-  * [Start trading using the Waves DEX](waves-client/mobile-apps/android/waves-dex/start-trading-using-the-waves-dex.md)
+* [Android: Transfers and gateways](mobile-apps/android/wallet-management.md)
+  * [Waves transfers](mobile-apps/android/transfers-and-gateways/asset-transfers.md)
+  * [Asset transfers](mobile-apps/android/transfers-and-gateways/waves-transfers.md)
+* [Android: Waves DEX](mobile-apps/android/waves-dex.md)
+  * [Start trading using the Waves DEX](mobile-apps/android/waves-dex/start-trading-using-the-waves-dex.md)
 
 ## Waves Full Node
 
@@ -120,4 +120,3 @@
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-
