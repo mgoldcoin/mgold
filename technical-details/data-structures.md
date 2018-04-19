@@ -15,12 +15,12 @@ Public key hash is first 20 bytes of\_SecureHash\_of public key bytes. Checksum 
 
 ### Alias
 
-| \# | Field name                                               | Type  | Position | Length |
-|----|----------------------------------------------------------|-------|----------|--------|
-| 1  | Version \(0x02\)                                         | Byte  | 0        | 1      |
-| 2  | Address scheme \(0x54 for Testnet and 0x57 for Mainnet\) | Byte  | 1        | 1      |
-| 3  | Alias bytes length \(N\)                                 | Int   | 2        | 2      |
-| 4  | Alias bytes                                              | Bytes | 4        | N      |
+| \# | Field name                                             | Type  | Position | Length |
+|----|--------------------------------------------------------|-------|----------|--------|
+| 1  |                     Version (0x02)                     |  Byte |     0    |    1   |
+| 2  | Address scheme (0x54 for Testnet and 0x57 for Mainnet) |  Byte |     1    |    1   |
+| 3  |                 Alias bytes length (N)                 |  Int  |     2    |    2   |
+| 4  |                       Alias bytes                      | Bytes |     4    |    N   |
 
 Alias is a UTF-8 string with the following constraints:
 
