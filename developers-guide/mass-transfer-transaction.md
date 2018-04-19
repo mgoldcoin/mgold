@@ -13,6 +13,7 @@ The new transaction has a type value of 11. Below is a sample Mass Transfer tran
 ```cpp
 {
   "type" : 11,
+  "version" : 1,
   "id" : "BG7MQF8KffVU6MMbJW5xPowVQsohwJhfEJ4wSF8cWdC2",
   "sender" : "3HhQxe5kLwuTfE3psYcorrhogY4fCwz2BSh",
   "senderPublicKey" : "7eAkEXtFGRPQ9pxjhtcQtbH889n8xSPWuswKfW2v3iK4",
