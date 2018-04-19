@@ -4,6 +4,6 @@ The iOS application has basic functionality, such as: sending and receiving Wave
 
 Some functions are not yet available, but they will be implemented in the future.
 
-[Account Management](mobile-apps/iOS/account-management.md)
-[Transfers and gateways](mobile-apps/iOS/wallet-management.md)
-[Waves DEX](mobile-apps/iOS/waves-dex.md)
+1. [Account Management](mobile-apps/iOS/account-management.md)
+2. [Transfers and gateways](mobile-apps/iOS/wallet-management.md)
+3. [Waves DEX](mobile-apps/iOS/waves-dex.md)
