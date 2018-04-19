@@ -1,15 +1,15 @@
 # Binary Data Structures
 
-## Block chain objects
+## Blockchain objects
 
 ### Address
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Version \(0x01\) | Byte | 0 | 1 |
-| 2 | Address scheme \(0x54 for Testnet and 0x57 for Mainnet\) | Byte | 1 | 1 |
-| 3 | Public key hash | Bytes | 2 | 20 |
-| 4 | Checksum | Bytes | 22 | 4 |
+| # |                       Field name                      |  Type | Position | Length |
+|---|:-----------------------------------------------------:|:-----:|:--------:|--------|
+| 1 |                     Version(0x01)                     |  Byte |     0    |    1   |
+| 2 | Address scheme (0x54 for Testnet and 0x57for Mainnet) |  Byte |     1    |    1   |
+| 3 |                    Public key hash                    | Bytes |     2    |   20   |
+| 4 |                        Checksum                       | Bytes |    22    |    4   |
 
 Public key hash is first 20 bytes of\_SecureHash\_of public key bytes. Checksum is first 4 bytes of\_SecureHash\_of version, scheme and hash bytes. SecureHash is hash function Keccak256\(Blake2b256\(data\)\).
 
@@ -29,7 +29,7 @@ Alias is a UTF-8 string with the following constraints:
 
 ### AddressOrAlias
 
-A recipient that can be encoded either as pure address or alias. Both`Address`and`Alias`are`AddressOrAlias`.
+A recipient that can be encoded either as pure address or alias. Both `Address` and`Alias` are `AddressOrAlias`.
 
 ### Block
 
