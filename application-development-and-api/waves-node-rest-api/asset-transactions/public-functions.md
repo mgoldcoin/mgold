@@ -232,17 +232,33 @@ Publish signed Asset transfer from one address to another as a transaction to th
 
 **Request params:**
 
-```
-"assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
-"senderPublicKey" - Sender account's public key, Base58-encoded
-"recipient" - Recipient account's address, Base58-encoded
-"fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
-"feeAssetId" [optional] - Asset ID of transaction fee. WAVES by default, if empty or absent
-"amount" - amount of asset'lets (or wavelets) to transfer
-"attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
-"timestamp" - Transaction timestamp
-"signature" - Signature of all transaction data, Base58-encoded
-```
+* Signed transfer request:
+
+    ```
+    "assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
+    "senderPublicKey" - Sender account's public key, Base58-encoded
+    "recipient" - Recipient account's address, Base58-encoded
+    "fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
+    "feeAssetId" [optional] - Asset ID of transaction fee. WAVES by default, if empty or absent
+    "amount" - amount of asset'lets (or wavelets) to transfer
+    "attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
+    "timestamp" - Transaction timestamp
+    "signature" - Signature of all transaction data, Base58-encoded
+    ```
+
+* Signed versioned transfer request:
+
+    ```
+    "assetId" [optional] - Asset ID to transfer or omit that param when transfer WAVES, Base58-encoded
+    "senderPublicKey" - Sender account's public key, Base58-encoded
+    "recipient" - Recipient account's address, Base58-encoded
+    "fee" - Transaction fee for Asset transfer, min = 100000 (WAVElets)
+    "amount" - Amount of wavelets to transfer
+    "attachment" - Arbitrary additional data included in transaction, max length is 140 bytes, Base58-encoded
+    "timestamp" - Transaction timestamp
+    "verson" - Version of transaction. Always 2.
+    "proofs" - Proofs, Base58-encoded. It could be a signtature or a secret word, that could be verified in a smart contract
+    ```
 
 **Request JSON example:**
 
@@ -261,19 +277,38 @@ Publish signed Asset transfer from one address to another as a transaction to th
 
 **Response params:**
 
-```
-"type" - Transaction type (4 for TransferTransaction)
-"id" - Id(hash) of transaction, Base58-encoded
-"assetId" - Asset ID in Base58 format, effectively equals transaction id
-"timestamp" - Transaction timestamp
-"sender" - Sender account's address, Base58-encoded
-"senderPublicKey" - Sender account's public key, Base58-encoded
-"recipient" - Recipient account's address, Base58-encoded
-"feeAsset" - Asset ID of transaction fee, currently is null, i.e. WAVES
-"fee" - Amount of transaction fee
-"attachment" - Attachment, Base58-encoded
-"signature" - Signature of all transaction data, Base58-encoded
-```
+* Signed transfer response:
+
+    ```
+    "type" - Transaction type (4 for TransferTransaction)
+    "id" - Id(hash) of transaction, Base58-encoded
+    "assetId" - Asset ID in Base58 format, effectively equals transaction id
+    "timestamp" - Transaction timestamp
+    "sender" - Sender account's address, Base58-encoded
+    "senderPublicKey" - Sender account's public key, Base58-encoded
+    "recipient" - Recipient account's address, Base58-encoded
+    "feeAsset" - Asset ID of transaction fee, currently is null, i.e. WAVES
+    "fee" - Amount of transaction fee
+    "attachment" - Attachment, Base58-encoded
+    "signature" - Signature of all transaction data, Base58-encoded
+    ```
+
+* Signed versioned transfer response:
+
+    ```
+    "type" - Transaction type (4 for VersionedTransferTransaction)
+    "id" - Id(hash) of transaction, Base58-encoded
+    "sender" - Sender account's address, Base58-encoded
+    "senderPublicKey" - Sender account's public key, Base58-encoded
+    "fee" - Amount of transaction fee
+    "timestamp" - Transaction timestamp
+    "proofs" - Array of Base58-encoded proofs
+    "version" - Version of transaction (Always 2)
+    "recipient" - Recipient account's address, Base58-encoded
+    "assetId" - Asset ID in Base58 format, effectively equals transaction id
+    "amount" - Amount of wavelets to transfer
+    "attachment" - Attachment, Base58-encoded
+    ```
 
 **Response JSON example:**
 
