@@ -15,12 +15,12 @@ Public key hash is first 20 bytes of\_SecureHash\_of public key bytes. Checksum 
 
 ### Alias
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Version \(0x02\) | Byte | 0 | 1 |
-| 2 | Address scheme \(0x54 for Testnet and 0x57 for Mainnet\) | Byte | 1 | 1 |
-| 3 | Alias bytes length \(N\) | Int | 2 | 2 |
-| 4 | Alias bytes | Bytes | 4 | N |
+| \# | Field name                                               | Type  | Position | Length |
+|----|----------------------------------------------------------|-------|----------|--------|
+| 1  | Version \(0x02\)                                         | Byte  | 0        | 1      |
+| 2  | Address scheme \(0x54 for Testnet and 0x57 for Mainnet\) | Byte  | 1        | 1      |
+| 3  | Alias bytes length \(N\)                                 | Int   | 2        | 2      |
+| 4  | Alias bytes                                              | Bytes | 4        | N      |
 
 Alias is a UTF-8 string with the following constraints:
 
@@ -245,7 +245,7 @@ The transaction's signature is calculated from the following bytes:
 | 15 | Proofs | Proof | 65+M+N \(97+M+N\*\) | S |
 
 * The fee only in Waves;
-* You may sign your transaction in your way and place the signature in proofs. 
+* You may sign your transaction in your way and place the signature in proofs.
 
 #### Burn transaction
 
@@ -385,8 +385,8 @@ The transaction signature is calculated from the fields 1 to N+3, i.e. proofs an
 | 4 | Sender's public key | 32 |
 | 5 | Number of data entries | 2 |
 | 6 | Key1 byte size | 2 |
-| 7 | Key1 bytes, UTF-8 encoded | variable | 
-| 8 | Value1 type:<br>0 = integer<br>1 = boolean<br>2 = binary array | 1 | 
+| 7 | Key1 bytes, UTF-8 encoded | variable |
+| 8 | Value1 type:<br>0 = integer<br>1 = boolean<br>2 = binary array | 1 |
 | 9 | Value1 bytes | variable |
 | ... | ... | ... |
 | N | Timestamp | 8 |
@@ -550,6 +550,3 @@ Peers message is a reply on GetPeers message.
 | ... | ... | ... | ... | ... |
 | 6 + 2 \* N - 1 | Checkpoint \#N height | Long | 13 + 72 \* \(N - 1\) + 4 | 8 |
 | 6 + 2 \* N | Checkpoint \#N signature | Bytes | 13 + 72 \* \(N - 1\) + 12 | 64 |
-
-
-
