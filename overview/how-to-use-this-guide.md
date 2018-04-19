@@ -56,9 +56,9 @@ This section contains all information about Installing, configuring and upgradin
 
 # 6. Frequently Asked Questions \(FAQ\)
 
-1. Account Management FAQ
-2. Transfers and Gateways FAQ
-3. Waves DEX FAQ
+1. [Account Management FAQ](/frequently-asked-questions-faq/account-management-faq.md)
+2. [Transfers and Gateways FAQ](/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+3. [Waves DEX FAQ](/frequently-asked-questions-faq/waves-dex-faq.md)
 
 
 
