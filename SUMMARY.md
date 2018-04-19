@@ -44,7 +44,7 @@
   * [​How to burn issued Token](waves-client/assets-management/burn-an-asset.md)
 * [Mobile applications](waves-client/mobile-apps/mobile-apps.md)
    * [Waves wallet for iOS devices](waves-client/mobile-apps/iOS.md)
-     * [Account Management](waves-client/mobile-apps/iOS/account-management.md)
+     * [Mobile Account Management](waves-client/mobile-apps/iOS/account-management.md)
        * [Create Your Account](waves-client/mobile-apps/iOS/account-managment/creating-an-account.md)
        * [Restore Your Account](waves-client/mobile-apps/iOS/account-managment/restore-an-account.md)
        * [Sing In To Your Waves Account](...)
