@@ -4,4 +4,3 @@ This section will discuss and show step by step instructions on how to set up a 
 
 1. [Create Your Account](mobile-apps/android/account-managment/creating-an-account.md)
 2. [Restore Your Account](/mobile-apps/android/account-managment/restore-an-account.md)
-3. [Sing In To Your Waves Account](...)
