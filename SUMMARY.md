@@ -42,7 +42,7 @@
   * [How to create a Token](waves-client/assets-management/issue-an-asset.md)
   * [How to reissue created Token](waves-client/assets-management/reissue-an-asset.md)
   * [​How to burn issued Token](waves-client/assets-management/burn-an-asset.md)
-* [Mobile applications](waves-client/mobile-apps.md)
+* [Mobile applications](waves-client/mobile-apps/mobile-apps.md)
    * [Waves wallet for iOS devices](waves-client/mobile-apps/iOS.md)
      * [Account Management](waves-client/mobile-apps/iOS/account-management.md)
        * [Create Your Account](waves-client/mobile-apps/iOS/account-managment/creating-an-account.md)
@@ -63,6 +63,7 @@
        * [Asset transfers](/waves-client/mobile-apps/android/transfers-and-gateways/waves-transfers.md)
      * [Waves DEX](waves-client/mobile-apps/android/waves-dex.md)
        * [Start trading using the Waves DEX](waves-client/mobile-apps/android/waves-dex/start-trading-using-the-waves-dex.md)
+
 ## Waves Full Node
 
 * [What is Waves Full Node ](waves-full-node/what-is-a-full-node.md)
