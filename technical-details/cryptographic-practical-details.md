@@ -107,7 +107,7 @@ in mainnet network \(chainId 'W'\) will be created this address
 
 `Curve25519`is used for all the signatures in the project.
 
-The process is as follows: create the special bytes for signing \(for transaction or block, you can find it [here](/developers-guide/data-structures.md)\), then create a signature using these bytes and the private key bytes.
+The process is as follows: create the special bytes for signing \(for transaction or block, you can find it [here](/technical-details/data-structures.md)\), then create a signature using these bytes and the private key bytes.
 
 For the validation of signature is enough signature bytes, signed object bytes and the public key.
 
