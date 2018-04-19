@@ -1,6 +1,6 @@
 # How To Use This Guide?
 
-In this guide, you can find all documentation for Waves Platform as shown below:
+In this guide, you can find all the documentation for Waves Platform as shown below: 
 
 # 1. Overview
 
@@ -59,6 +59,3 @@ This section contains all information about Installing, configuring and upgradin
 1. [Account Management FAQ](/frequently-asked-questions-faq/account-management-faq.md)
 2. [Transfers and Gateways FAQ](/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
 3. [Waves DEX FAQ](/frequently-asked-questions-faq/waves-dex-faq.md)
-
-
-
