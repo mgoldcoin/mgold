@@ -3,7 +3,8 @@
     "sharing",
     "custom-favicon",
     "gtm",
-    "custom-js-css"
+    "custom-js-css",
+    "custom-favicon"
   ],
   "pluginsConfig": {
     "theme-bandwidth": {
@@ -34,7 +35,7 @@
       "token": "GTM-P2JT7Z",
       "virtualPageViews": true
     },
-    "favicon": "favicon/favicon.ico",
+    "favicon": "/_theme/favicon.ico",
     "custom-js-css": {
       "js": [
         "./_theme/tree-shaper.js"
