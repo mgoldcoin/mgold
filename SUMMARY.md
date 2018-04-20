@@ -47,8 +47,8 @@
 
 * [Waves wallet for iOS devices](mobile-apps/iOS.md)
   * [iOS: Account Management](mobile-apps/iOS/account-management.md)
-    * [Create Your Account](mobile-apps/iOS/account-managment/creating-an-account.md)
-    * [Restore Your Account](mobile-apps/iOS/account-managment/restore-an-account.md)
+    * [Create Your Account](account-managment/creating-an-account.md)
+    * [Restore Your Account](account-managment/restore-an-account.md)
   * [iOS: Transfers and gateways](mobile-apps/iOS/wallet-management.md)
     * [Waves transfers](mobile-apps/iOS/transfers-and-gateways/waves-transfers.md)
     * [Asset transfers](mobile-apps/iOS/transfers-and-gateways/asset-transfers.md)
