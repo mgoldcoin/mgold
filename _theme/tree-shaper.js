@@ -28,7 +28,6 @@ jQuery(document).ready(function () {
 				parentEl.hide(animationTime);
 				currentTreeState[_key] = collapsedState;
 			}
-			console.table(currentTreeState);
 			e.preventDefault();
 			return false;
 		});
@@ -86,7 +85,6 @@ jQuery(document).ready(function () {
 			'<i class="octicon octicon-triangle"></i>' +
 			'</div>');
 		
-		console.table(currentTreeState);
 		$('.header').each(function (index) {
 			var $header = $(this);
 			var _key = $header.text().trim();
