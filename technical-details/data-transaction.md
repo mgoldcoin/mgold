@@ -173,5 +173,4 @@ Data transaction will go through feature activation routine as Feature 5.
 * Some use cases (voting is one example) might benefit from immutable key-value pairs. Several options are possible:
    * Add a mutable flag to each entry indicating whether value associated with a key may be overwritten or not.
    * Just make all values immutable. This is inconvenient for oracles, will lead to state bloat quickly.
-* Should minimum fee be specified in consensus or node's settings?
 * Should we support UTF8 strings for values?
