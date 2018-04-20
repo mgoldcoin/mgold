@@ -57,44 +57,44 @@ A recipient that can be encoded either as pure address or alias. Both `Address` 
 
 Generation signature is calculated as Blake2b256 hash of the following bytes:
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Previous block's generation signature | Bytes | 0 | 32 |
-| 2 | Generator's public key | Bytes | 32 | 32 |
+| \# | Field name                            | Type  | Position | Length |
+|----|---------------------------------------|-------|----------|--------|
+| 1  | Previous block's generation signature | Bytes | 0        | 32     |
+| 2  | Generator's public key                | Bytes | 32       | 32     |
 
 Block's signature is calculated from the following bytes:
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Version \(0x02 for Genesis block,, 0x03 for common block\) | Byte | 0 | 1 |
-| 2 | Timestamp | Long | 1 | 8 |
-| 3 | Parent block signature | Bytes | 9 | 64 |
-| 4 | Consensus block length \(always 40 bytes\) | Int | 73 | 4 |
-| 5 | Base target | Long | 77 | 8 |
-| 6 | Generation signature\* | Bytes | 85 | 32 |
-| 7 | Transactions block length \(N\) | Int | 117 | 4 |
-| 8 | Transaction \#1 bytes | Bytes | 121 | M1 |
-| ... | ... | ... | ... | ... |
-| 8 + \(K - 1\) | Transaction \#K bytes | Bytes | 121 + N - MK | MK |
-| 9 + \(K - 1\) | Generator's public key | Bytes | 121 + N | 32 |
+| \#          | Field name                                               | Type  | Position     | Length |
+|-------------|----------------------------------------------------------|-------|--------------|--------|
+| 1           | Version (0x02 for Genesis block,, 0x03 for common block) | Byte  | 0            | 1      |
+| 2           | Timestamp                                                | Long  | 1            | 8      |
+| 3           | Parent block signature                                   | Bytes | 9            | 64     |
+| 4           | Consensus block length (always 40 bytes)                 | Int   | 73           | 4      |
+| 5           | Base target                                              | Long  | 77           | 8      |
+| 6           | Generation signature*                                    | Bytes | 85           | 32     |
+| 7           | Transactions block length (N)                            | Int   | 117          | 4      |
+| 8           | Transaction #1 bytes                                     | Bytes | 121          | M1     |
+| ...         | ...                                                      | ...   | ...          | ...    |
+| 8 + (K - 1) | Transaction #K bytes                                     | Bytes | 121 + N - MK | MK     |
+| 9 + (K - 1) | Generator's public key                                   | Bytes | 121 + N      | 32     |
 
 ### Order
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Sender's public key | Bytes | 0 | 32 |
-| 2 | Matcher's public key | Bytes | 32 | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 64 | 1 |
-| 4 | Amount's asset ID \(\*if used\) | Bytes | 65 | 0 \(32\*\) |
-| 5 | Price's asset flag \(0-Waves, 1-Asset\) | Byte | 65 \(97\*\) | 1 |
-| 6 | Price's asset ID \(\*\*if used\) | Bytes | 66 \(98\*\) | 0 \(32\*\*\) |
-| 7 | Order type \(0 - Buy, 1 - Sell\) | Bytes | 66 \(98\*\) \(130\*\*\) | 1 |
-| 8 | Price | Long | 67 \(99\*\) \(131\*\*\) | 8 |
-| 9 | Amount | Long | 75 \(107\*\) \(139\*\*\) | 8 |
-| 10 | Timestamp | Long | 83 \(115\*\) \(147\*\*\) | 8 |
-| 11 | Expiration | Long | 91 \(123\*\) \(155\*\*\) | 8 |
-| 12 | Matcher fee | Long | 99 \(131\*\) \(163\*\*\) | 8 |
-| 13 | Signature | Bytes | 107 \(139\*\) \(171\*\*\) | 64 |
+| \# | Field name                             | Type  | Position           | Length   |
+|----|----------------------------------------|-------|--------------------|----------|
+| 1  | Sender's public key                    | Bytes | 0                  | 32       |
+| 2  | Matcher's public key                   | Bytes | 32                 | 32       |
+| 3  | Amount's asset flag (0-Waves, 1-Asset) | Byte  | 64                 | 1        |
+| 4  | Amount's asset ID (*if used)           | Bytes | 65                 | 0 (32*)  |
+| 5  | Price's asset flag (0-Waves, 1-Asset)  | Byte  | 65 (97*)           | 1        |
+| 6  | Price's asset ID (**if used)           | Bytes | 66 (98*)           | 0 (32**) |
+| 7  | Order type (0 - Buy, 1 - Sell)         | Bytes | 66 (98*) (130**)   | 1        |
+| 8  | Price                                  | Long  | 67 (99*) (131**)   | 8        |
+| 9  | Amount                                 | Long  | 75 (107*) (139**)  | 8        |
+| 10 | Timestamp                              | Long  | 83 (115*) (147**)  | 8        |
+| 11 | Expiration                             | Long  | 91 (123*) (155**)  | 8        |
+| 12 | Matcher fee                            | Long  | 99 (131*) (163**)  | 8        |
+| 13 | Signature                              | Bytes | 107 (139*) (171**) | 64       |
 
 The price listed for amount asset in price asset \* 10^8.
 
@@ -102,20 +102,20 @@ Expiration is order time to live, timestamp in future, max = 30 days in future.
 
 The signature is calculated from the following bytes:
 
-| \# | Field name | Type | Position | Length |
-| :--- | :--- | :--- | :--- | :--- |
-| 1 | Sender's public key | Bytes | 0 | 32 |
-| 2 | Matcher's public key | Bytes | 32 | 32 |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 64 | 1 |
-| 4 | Amount's asset ID \(\*if used\) | Bytes | 65 | 0 \(32\*\) |
-| 5 | Price's asset flag \(0-Waves, 1-Asset\) | Byte | 65 \(97\*\) | 1 |
-| 6 | Price's asset ID \(\*\*if used\) | Bytes | 66 \(98\*\) | 0 \(32\*\*\) |
-| 7 | Order type \(0 - Buy, 1 - Sell\) | Bytes | 66 \(98\*\) \(130\*\*\) | 1 |
-| 8 | Price | Long | 67 \(99\*\) \(131\*\*\) | 8 |
-| 9 | Amount | Long | 75 \(107\*\) \(139\*\*\) | 8 |
-| 10 | Timestamp | Long | 83 \(115\*\) \(147\*\*\) | 8 |
-| 11 | Expiration | Long | 91 \(123\*\) \(155\*\*\) | 8 |
-| 12 | Matcher fee | Long | 99 \(131\*\) \(163\*\*\) | 8 |
+| \# | Field name                             | Type  | Position          | Length   |
+|----|----------------------------------------|-------|-------------------|----------|
+| 1  | Sender's public key                    | Bytes | 0                 | 32       |
+| 2  | Matcher's public key                   | Bytes | 32                | 32       |
+| 3  | Amount's asset flag (0-Waves, 1-Asset) | Byte  | 64                | 1        |
+| 4  | Amount's asset ID (*if used)           | Bytes | 65                | 0 (32*)  |
+| 5  | Price's asset flag (0-Waves, 1-Asset)  | Byte  | 65 (97*)          | 1        |
+| 6  | Price's asset ID (**if used)           | Bytes | 66 (98*)          | 0 (32**) |
+| 7  | Order type (0 - Buy, 1 - Sell)         | Bytes | 66 (98*) (130**)  | 1        |
+| 8  | Price                                  | Long  | 67 (99*) (131**)  | 8        |
+| 9  | Amount                                 | Long  | 75 (107*) (139**) | 8        |
+| 10 | Timestamp                              | Long  | 83 (115*) (147**) | 8        |
+| 11 | Expiration                             | Long  | 91 (123*) (155**) | 8        |
+| 12 | Matcher fee                            | Long  | 99 (131*) (163**) | 8        |
 
 ### Transactions
 
