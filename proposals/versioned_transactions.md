@@ -1,5 +1,7 @@
 # Versioned Transactions binary representation
 
+In order to make API more consistent and flexible, all transactions will have vesion field and use proofs instead of signature.
+
 ## Common
 
 Fields, existing in transactions of any kind
@@ -11,7 +13,7 @@ Fields, existing in transactions of any kind
 | 2     | Transaction type  | Byte  | 1      |
 | 3     | Sender public key | Bytes | 32     |
 | 4     | Timestamp         | Long  | 8      |
-|...|
+| ...   |
 | N     | Proofs version    | Byte  | 1      |
 | N + 1 | Proofs count      | Short | 1      |
 | N + 2 | Proofs            | Bytes | 64     |
@@ -20,15 +22,13 @@ Fields, existing in transactions of any kind
 
 | #    | Transaction type         | Byte |
 | ---: | :----------------------- | ---: |
-| 1    | Issue transaction        | 0x0d |
-| 2    | Reissue transaction      | 0x0e |
-| 3    | Transfer transaction     | ???? |
-| 4    | Burn transaction         | 0x0f |
-| 5    | Exchange transaction     | 0x10 |
-| 6    | Lease transaction        | 0x11 |
-| 7    | Create alias transaction | 0x12 |
-| 8    | MassTransfer transaction | 0x0b |
-| 9    | Data transaction         | 0x0c |
+| 1    | Issue transaction        | 3    |
+| 2    | Reissue transaction      | 5    |
+| 3    | Transfer transaction     | 4    |
+| 4    | Burn transaction         | 6    |
+| 7    | Create alias transaction | 10   |
+| 8    | MassTransfer transaction | 11   |
+| 9    | Data transaction         | 12   |
 
 ## Burn Transaction
 
@@ -81,3 +81,20 @@ Fields, existing in transactions of any kind
 | 11   | Recipient's AddressOrAlias object bytes | Bytes | M        |
 | 12   | Attachment's length (N)                 | Short | 2        |
 | 13   | Attachment's bytes                      | Bytes | N        |
+
+## MassTransfer Transaction
+
+| #    | Field name                           | Type  | Length   |
+| ---: | :----------------------------------- | :---: | -------: |
+| 4    | Asset flag (0-Waves, 1-Asset)        | Byte  | 1        |
+| 5    | Asset ID, if any                     | Bytes | 0/32     |
+| 6    | Number of transfers                  | Short | 2        |
+| 7    | AddressOrAlias object for transfer 1 | Bytes | variable |
+| 8    | Amount for transfer 1                | Long  | 8        |
+| 9    | AddressOrAlias object for transfer 2 | Bytes | variable |
+| 10   | Amount for transfer 2                | Long  | 8        |
+| ...  | ...                                  | ...   | ...      |
+| N+0  | Timestamp                            | Long  | 8        |
+| N+1  | Fee                                  | Long  | 8        |
+| N+2  | Attachment length                    | Short | 2        |
+| N+3  | Attachment bytes                     | Bytes | variable |
