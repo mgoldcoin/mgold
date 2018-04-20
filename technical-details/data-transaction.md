@@ -29,20 +29,20 @@ Binary format of a data transaction is as follows:
 
 For values, a one byte type code is written first, indicating the value type. Then the value is encoded as follows:
 
-| Value Type | Type Byte | Encoding | Total Size |
-| ---------- | ---------:| ------------ | ---------: |
-| integer | 0 | value as 8 bytes | 9 | |
-| boolean | 1 | 0=false, 1=true | 2 |
-| binary | 2 | size as 2 bytes + N value bytes | N + 3 |
+| Value Type | Type Byte | Encoding                        | Total Size |
+|------------|----------:|---------------------------------|-----------:|
+| integer    |         0 | value as 8 bytes                |          9 |
+| boolean    |         1 | 0=false, 1=true                 |          2 |
+| binary     |         2 | size as 2 bytes + N value bytes |      N + 3 |
 
 Maximum size of a data transaction is 3+32+2+(2+400+1+2+1024)*100+16+2+64 = about 140 kilobytes. (See Constraints for limits on key and value size)
 
 Data transactions issued by a single account define this account's state in a cumulative fashion. E.g. once the following two transactions have been mined:
 
-| tx # | key | value |
-| --- | --- | --- |
-| 1 | "smart"<br>"IQ" | true<br>79 |
-| 2 | "IQ" | 130 |
+| tx # | key          | value   |
+|------|--------------|---------|
+| 1    | "smart" "IQ" | true 79 |
+| 2    | "IQ"         | 130     |
 
 the account state will be `{"smart": true, "IQ": 130}`, this is, the latter transaction can overwrite existing keys but not delete them. There is currently no planned way to clear the state of an account.
 
@@ -76,7 +76,7 @@ fees {
     # fee = [data fee] * [size in Kbytes]
     WAVES = 100000
   }
-  ... 
+  ...
 }
 ```
 
