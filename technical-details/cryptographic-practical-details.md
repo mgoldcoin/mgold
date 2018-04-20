@@ -10,7 +10,7 @@ In order to ease human readable, all arrays of bytes in the project are encoded 
 
 ## Example
 
-The string`teststring`are coded into the bytes`[5, 83, 9, -20, 82, -65, 120, -11]`. The bytes`[1, 2, 3, 4, 5]`are coded into the string`7bWpTW`. 
+The string`teststring`are coded into the bytes`[5, 83, 9, -20, 82, -65, 120, -11]`. The bytes`[1, 2, 3, 4, 5]`are coded into the string`7bWpTW`.
 
 # Creating a private key from a seed
 
@@ -117,35 +117,35 @@ Do not forget that there are many valid \(not unique!\) signatures for a one arr
 
 Transaction data:
 
-| Field | Value |
-| :--- | :--- |
-| Sender address \(not used, just for information\) | 3N9Q2sdkkhAnbR4XCveuRaSMLiVtvebZ3wp |
-| Private key \(used for signing, not in tx data\) | 7VLYNhmuvAo5Us4mNGxWpzhMSdSSdEbEPFUDKSnA6eBv |
-| Public key | EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH |
-| Recipient address | 3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8 |
-| Asset id | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
-| Amount | 1 |
-| Fee | 1 |
-| Fee asset id | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
-| Timestamp | 1479287120875 |
-| Attachment \(as byte array\) | \[1, 2, 3, 4\] |
+| Field                                           | Value                                        |
+|-------------------------------------------------|----------------------------------------------|
+| Sender address (not used, just for information) | 3N9Q2sdkkhAnbR4XCveuRaSMLiVtvebZ3wp          |
+| Private key (used for signing, not in tx data)  | 7VLYNhmuvAo5Us4mNGxWpzhMSdSSdEbEPFUDKSnA6eBv |
+| Public key                                      | EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH |
+| Recipient address                               | 3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8          |
+| Asset id                                        | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
+| Amount                                          | 1                                            |
+| Fee                                             | 1                                            |
+| Fee asset id                                    | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
+| Timestamp                                       | 1479287120875                                |
+| Attachment (as byte array)                      | [1, 2, 3, 4]                                 |
 
 Bytes:
 
-| \# | Field name | Type | Position | Length | Value | Base58 bytes value |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| 1 | Transaction type \(0x04\) | Byte | 0 | 1 | 4 | 5 |
-| 2 | Sender's public key | Bytes | 1 | 32 | ... | EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH |
-| 3 | Amount's asset flag \(0-Waves, 1-Asset\) | Byte | 33 | 1 | 1 | 2 |
-| 4 | Amount's asset ID \(\*if used\) | Bytes | 34 | 0 \(32\*\) | ... | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
-| 5 | Fee's asset flag \(0-Waves, 1-Asset\) | Byte | 34 \(66\*\) | 1 | 1 | 2 |
-| 6 | Fee's asset ID \(\*\*if used\) | Bytes | 35 \(67\*\) | 0 \(32\*\*\) | ... | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
-| 7 | Timestamp | Long | 35 \(67\*\) \(99\*\*\) | 8 | 1479287120875 | 11frnYASv |
-| 8 | Amount | Long | 43 \(75\*\) \(107\*\*\) | 8 | 1 | 11111112 |
-| 9 | Fee | Long | 51 \(83\*\) \(115\*\*\) | 8 | 1 | 11111112 |
-| 10 | Recipient's address | Bytes | 59 \(91\*\) \(123\*\*\) | 26 | ... | 3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8 |
-| 11 | Attachment's length \(N\) | Short | 85 \(117\*\) \(149\*\*\) | 2 | 4 | 15 |
-| 12 | Attachment's bytes | Bytes | 87 \(119\*\) \(151\*\*\) | N | \[1,2,3,4\] | 2VfUX |
+| #  | Field name                             | Type  | Position          | Length   | Value         | Base58 bytes value                           |
+|----|----------------------------------------|-------|-------------------|----------|---------------|----------------------------------------------|
+| 1  | Transaction type (0x04)                | Byte  | 0                 | 1        | 4             | 5                                            |
+| 2  | Sender's public key                    | Bytes | 1                 | 32       | ...           | EENPV1mRhUD9gSKbcWt84cqnfSGQP5LkCu5gMBfAanYH |
+| 3  | Amount's asset flag (0-Waves, 1-Asset) | Byte  | 33                | 1        | 1             | 2                                            |
+| 4  | Amount's asset ID (*if used)           | Bytes | 34                | 0 (32*)  | ...           | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
+| 5  | Fee's asset flag (0-Waves, 1-Asset)    | Byte  | 34 (66*)          | 1        | 1             | 2                                            |
+| 6  | Fee's asset ID (**if used)             | Bytes | 35 (67*)          | 0 (32**) | ...           | BG39cCNUFWPQYeyLnu7tjKHaiUGRxYwJjvntt9gdDPxG |
+| 7  | Timestamp                              | Long  | 35 (67*) (99**)   | 8        | 1479287120875 | 11frnYASv                                    |
+| 8  | Amount                                 | Long  | 43 (75*) (107**)  | 8        | 1             | 11111112                                     |
+| 9  | Fee                                    | Long  | 51 (83*) (115**)  | 8        | 1             | 11111112                                     |
+| 10 | Recipient's address                    | Bytes | 59 (91*) (123**)  | 26       | ...           | 3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8          |
+| 11 | Attachment's length (N)                | Short | 85 (117*) (149**) | 2        | 4             | 15                                           |
+| 12 | Attachment's bytes                     | Bytes | 87 (119*) (151**) | N        | [1,2,3,4]     | 2VfUX                                        |
 
 Total data bytes for sign:`Ht7FtLJBrnukwWtywum4o1PbQSNyDWMgb4nXR5ZkV78krj9qVt17jz74XYSrKSTQe6wXuPdt3aCvmnF5hfjhnd1gyij36hN1zSDaiDg3TFi7c7RbXTHDDUbRgGajXci8PJB3iJM1tZvh8AL5wD4o4DCo1VJoKk2PUWX3cUydB7brxWGUxC6mPxKMdXefXwHeB4khwugbvcsPgk8F6YB`
 
@@ -156,4 +156,3 @@ Total transaction bytes with signature:`6zY3LYmrh981Qbzj7SRLQ2FP9EmXFpUTX9cA7bD5
 # Calculating Transaction Id
 
 Transaction Id is not stored in the transaction bytes and for most of transactions \(except Payment\) it can be easily calculated from the special bytes for signing using`blake2b256(bytes_for_signing)`. For Payment transaction Id is just the signature of this transaction.
-
