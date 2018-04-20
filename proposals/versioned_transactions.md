@@ -1,6 +1,15 @@
 # Versioned Transactions binary representation
 
-In order to make API more consistent and flexible, all transactions will have vesion field and use proofs instead of signature.
+In order to make API more consistent and flexible, all transactions will have vesion field and use proofs.
+
+## Proof
+
+Proofs are an alternative way to authorize the transaction that is more flexible than signatures and enables smart contracts such as multisig and atomic swap. Each proof is a Base58 encoded byte string and can be a signature, a secret, or anything else – the semantics of a proof is dictated by the smart contract that interprets it. There can be up to 8 proofs at most 64 bytes each.
+
+| #    | Field name     | Type  | Length |
+| ---: | :------------- | :---: | -----: |
+| 1    | Proof size (N) | Short | 2      |
+| 2    | Proof          | Bytes | N      |
 
 ## Common
 
