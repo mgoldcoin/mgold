@@ -4,6 +4,7 @@ jQuery(document).ready(function () {
 	var collapsedState = 'collapsed';
 	var expandedState = 'expanded';
 	var animationTime = 200;
+	var pathToGithubFile = 'https://github.com/wavesplatform/waves-documentation/blob/master/';
 	
 	var attachChapterClickHandler = function ($collapseIcon) {
 		$collapseIcon.on('click', function (e) {
@@ -140,6 +141,7 @@ jQuery(document).ready(function () {
 		pageHasChanged(e, t, n);
 		buildCurrentTreeState();
 		addBranding();
+		addLinkToGithub();
 	};
 	
 	buildCurrentTreeState();
@@ -157,4 +159,12 @@ jQuery(document).ready(function () {
 	};
 	addBranding();
 	
+	
+	/**/
+	var addLinkToGithub = function () {
+		var path = pathToGithubFile + gitbook.page.getState().file.path;
+		var $button = $('<a class="btn pull-right" style="text-transform: none;" aria-label="" target="_blank" href="' + path + '"><i class="fa fa-github"></i> Open on Github</a>');
+		$('.dropdown.pull-left.font-settings').before($button);
+	}
+	addLinkToGithub();
 });

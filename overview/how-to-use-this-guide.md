@@ -48,11 +48,11 @@ This section contains all information about Installing, configuring and upgradin
 # 5. Development and API
 
 1. [Technical Details](/technical-details/technical-details.md)
-2. [Node API Overview](/application-development-and-api/node-api-overview.md)
-3. [Client Libraries ](/application-development-and-api/client-libraries.md)\([PyWaves](/application-development-and-api/client-libraries/pywaves.md), [WavesJ](/application-development-and-api/client-libraries/wavesj.md) and [WavesCS](/application-development-and-api/client-libraries/wavescs.md)\)
-4. [DEX API](/application-development-and-api/dex-api.md) \([Matcher](/application-development-and-api/dex-api/matcher.md)\)
-5. [Waves Node Rest API](/application-development-and-api/waves-node-rest-api.md)
-6. [Examples](/application-development-and-api/examples.md)
+2. [Node API Overview](/development-and-api/node-api-overview.md)
+3. [Client Libraries ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md) and [WavesCS](/development-and-api/client-libraries/wavescs.md)\)
+4. [DEX API](/development-and-api/dex-api.md) \([Matcher](/development-and-api/dex-api/matcher.md)\)
+5. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
+6. [Examples](/development-and-api/examples.md)
 
 # 6. Frequently Asked Questions \(FAQ\)
 

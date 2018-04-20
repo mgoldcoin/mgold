@@ -82,4 +82,4 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
 * The Matcher earns fees from the services it provides, so you can substantially increase your mining revenues.
 * When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order.
 
-**Note.** Find more technical details about the Matcher [**here.**](/application-development-and-api/dex-api/matcher.md)
+**Note.** Find more technical details about the Matcher [**here.**](/development-and-api/dex-api/matcher.md)
