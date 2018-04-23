@@ -22,7 +22,7 @@
 
 * Waves Wallet is a mobile client to WavesPlatform available on [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) and [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
-* Get started with Waves wallet for IOS or Android
+* Get started with Waves wallet for [IOS](/mobile-apps/iOS.md) or [Android](//mobile-apps/android.md)
 
 # 6. Waves Gateways
 
