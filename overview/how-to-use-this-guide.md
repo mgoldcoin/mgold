@@ -32,7 +32,12 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 4. [Waves DEX](/waves-client/waves-dex.md) \(Trading Using DEX\)
 5. [Custom Assets \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
 
-# 4. Waves Full Node
+# 4. Mobile Applications
+
+1. [Waves Wallet for IOS Devices](/mobile-apps/iOS.md)
+2. [Waves Wallet for Android Devices](//mobile-apps/android.md)
+
+# 5. Waves Full Node
 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
@@ -45,7 +50,7 @@ This section contains all information about Installing, configuring and upgradin
 7. [Joining Testnet](/waves-full-node/joining-testnet.md)
 8. [Configuration](/waves-full-node/configuration.md)
 
-# 5. Development and API
+# 6. Development and API
 
 1. [Technical Details](/technical-details/technical-details.md)
 2. [Node API Overview](/development-and-api/node-api-overview.md)
@@ -54,8 +59,11 @@ This section contains all information about Installing, configuring and upgradin
 5. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
 6. [Examples](/development-and-api/examples.md)
 
-# 6. Frequently Asked Questions \(FAQ\)
+# 7. Frequently Asked Questions \(FAQ\)
 
 1. [Account Management FAQ](/frequently-asked-questions-faq/account-management-faq.md)
 2. [Transfers and Gateways FAQ](/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
 3. [Waves DEX FAQ](/frequently-asked-questions-faq/waves-dex-faq.md)
+
+
+

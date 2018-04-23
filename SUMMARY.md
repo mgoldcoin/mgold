@@ -45,7 +45,7 @@
 
 ## Mobile applications
 
-* [Waves wallet for iOS devices](mobile-apps/iOS.md)
+* [Waves Wallet for IOS Devices](mobile-apps/iOS.md)
   * [iOS: Account Management](mobile-apps/iOS/account-management.md)
     * [Create Your Account](mobile-apps/iOS/account-managment/creating-an-account.md)
     * [Restore Your Account](mobile-apps/iOS/account-managment/restore-an-account.md)
@@ -53,8 +53,8 @@
     * [Waves transfers](mobile-apps/iOS/transfers-and-gateways/waves-transfers.md)
     * [Asset transfers](mobile-apps/iOS/transfers-and-gateways/asset-transfers.md)
   * [iOS: Waves DEX](mobile-apps/iOS/waves-dex.md)
-    * [Start trading using the Waves DEX](mobile-apps/iOS/waves-dex/start-trading-using-the-waves-dex.md)   
-* [Waves wallet for Android devices](/mobile-apps/android.md)    
+    * [Start trading using the Waves DEX](mobile-apps/iOS/waves-dex/start-trading-using-the-waves-dex.md)
+* [Waves Wallet for Android Devices](/mobile-apps/android.md)
   * [Android: Account Management](mobile-apps/android/account-management.md)
     * [Create Your Account](mobile-apps/android/account-managment/creating-an-account.md)
     * [Restore Your Account](/mobile-apps/android/account-managment/restore-an-account.md)
@@ -120,3 +120,4 @@
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
+
