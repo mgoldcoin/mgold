@@ -65,5 +65,48 @@ Generate a random seed.
 
 ```
 
+### POST /utils/script/compile
 
+Compiles a human-readable code into a Base58 representation for Node.
 
+**Request body:**
+A code.
+
+**Response params:**
+
+```
+"script" - Base58-encoded representation of compiled script for Node
+"complexity" - How script is complex
+"extraFee" - An extra fee for all transactions going from an account with this script if the miner is this node
+```
+
+**A valid request body example:**
+
+```
+let x = 1
+(x + 1) == 2
+```
+
+**Response for it:**
+
+```json
+{
+  "script": "3rbFDtbPwAvSp2vBvqGfGR9nRS1nBVnfuSCN3HxSZ7fVRpt3tuFG5JSmyTmvHPxYf34SocMRkRKFgzTtXXnnv7upRHXJzZrLSQo8tUW6yMtEiZ",
+  "complexity": 11,
+  "extraFee": 10001
+}
+```
+
+**An invalid request body example:**
+
+```
+x == 1
+```
+
+**Response for it:**
+
+```json
+{
+  "error": "Typecheck failed: A definition of 'x' is not found"
+}
+```
