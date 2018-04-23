@@ -36,6 +36,8 @@
   * [Zcash transfers](waves-client/transfers-and-gateways/zcash-transfers.md)
   * [Bitcoin Cash transfers](waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
   * [EURO and USD transfers](waves-client/transfers-and-gateways/eur-usd-transfers.md)
+  * [Buying Waves using credit or debit card](/waves-client/transfers-and-gateways/buying-waves-using-card.md)
+  * [Buying Bitcoins using credit or debit card](/waves-client/transfers-and-gateways/buying-bitcoin-using-card.md)
 * [Waves DEX](waves-client/waves-dex.md)
   * [Start trading using the Waves DEX](waves-client/waves-dex/start-trading-using-the-waves-dex.md)
 * [Custom Assets](waves-client/assets-management.md)
@@ -120,4 +122,3 @@
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-
