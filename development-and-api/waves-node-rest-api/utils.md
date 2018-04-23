@@ -121,6 +121,7 @@ A code.
 **Response params:**
 
 ```
+"script" - Base58-encoded representation of compiled script for Node (what did you send in the body)
 "complexity" - How script is complex
 "extraFee" - An extra fee for all transactions going from an account with this script if the miner is this node
 ```
@@ -135,6 +136,7 @@ A code.
 
 ```json
 {
+  "script": "3rbFDtbPwAvSp2vBvqGfGR9nRS1nBVnfuSCN3HxSZ7fVRpt3tuFG5JSmyTmvHPxYf34SocMRkRKFgzTtXXnnv7upRHXJzZrLSQo8tUW6yMtEiZ",
   "complexity": 11,
   "extraFee": 10001
 }
