@@ -97,7 +97,7 @@ Get a script information by address.
   "address" - account's address in Base58 format
   "script" - Base58 representation of compiled script. The field is not present, if no script is set for address
   "scriptText" - Text representation of script. The field is not present, if no script is set for address
-  "complexity" - How script is complex
+  "complexity" - How script is complicated
   "extraFee" - An extra fee for all transactions going from this account if the miner is this node
 ```
 

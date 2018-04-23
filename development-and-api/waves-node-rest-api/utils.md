@@ -76,7 +76,7 @@ A code.
 
 ```
 "script" - Base58-encoded representation of compiled script for Node
-"complexity" - How script is complex
+"complexity" - How script is complicated
 "extraFee" - An extra fee for all transactions going from an account with this script if the miner is this node
 ```
 
@@ -113,7 +113,7 @@ x == 1
 
 ### POST /utils/script/estimate
 
-Compiles a human-readable code into a Base58 representation for Node.
+Estimates a human-readable code into a Base58 representation for Node.
 
 **Request body:**
 A code.
@@ -122,7 +122,8 @@ A code.
 
 ```
 "script" - Base58-encoded representation of compiled script for Node (what did you send in the body)
-"complexity" - How script is complex
+"scriptText" - String representation of a script (not decompiled!)
+"complexity" - How script is complicated
 "extraFee" - An extra fee for all transactions going from an account with this script if the miner is this node
 ```
 
@@ -137,6 +138,7 @@ A code.
 ```json
 {
   "script": "3rbFDtbPwAvSp2vBvqGfGR9nRS1nBVnfuSCN3HxSZ7fVRpt3tuFG5JSmyTmvHPxYf34SocMRkRKFgzTtXXnnv7upRHXJzZrLSQo8tUW6yMtEiZ",
+  "scriptText": "FUNCTION_CALL(FunctionHeader(==,List(LONG, LONG)),List(CONST_LONG(1), CONST_LONG(2)),BOOLEAN)",
   "complexity": 11,
   "extraFee": 10001
 }
