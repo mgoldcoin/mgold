@@ -75,7 +75,7 @@ fees {
 }
 ```
 
-Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetId)
+Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetid).
 
 ### Constraints
 
