@@ -52,12 +52,10 @@ fees {
 }
 ```
 
-As maximum size of a transaction in bytes is just under 140K (see Implementation above), maximum fee is 0.14 WAVES.
-
 ### API
 
-`POST /asset/sponsor` signs and sends a start sponsorship transaction. This endpoint requires API key. Sample input is as follows (binary arrays are Base58-encoded):
-```
+`POST /asset/sponsor` signs and sends a start/update sponsorship transaction. This endpoint requires API key. Sample input is as follows:
+```js
 {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
@@ -67,8 +65,8 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
 }
 ```
 
-`POST /asset/cancel` signs and sends a canceling sponsorship transaction. This endpoint requires API key. Sample input is as follows (binary arrays are Base58-encoded):
-```
+`POST /asset/cancel` signs and sends a canceling sponsorship transaction. This endpoint requires API key. Sample input is as follows:
+```js
 {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
@@ -78,7 +76,7 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
 ```
 
 `GET /assets/balance/{assetId}` returns asset description included sponsorship information:
-```
+```js
 {
   "assetId" : "8tdULCMr598Kn2dUaKwHkvsNyFbDB1Uj5NxvVRTQRnMQ",
   "issueHeight" : 140194,
