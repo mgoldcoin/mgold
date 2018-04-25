@@ -93,6 +93,7 @@
     * [Waves Contracts Language Description](technical-details/waves-contracts-language-description/waves-contracts-language-description.md)
     * [Waves Contracts Implementation Details](technical-details/waves-contracts-language-description/waves-contracts-implementation-details.md)
   * [Waves-NG Solution](technical-details/waves-ng-solution.md)
+  * [Sponsored Fee](technical-details/sponsored-fee.md)
 * [Node API Overview](development-and-api/node-api-overview.md)
 * [Client Libraries](development-and-api/client-libraries.md)
   * [PyWaves](development-and-api/client-libraries/pywaves.md)
