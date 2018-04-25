@@ -75,7 +75,8 @@ fees {
 }
 ```
 
-`GET /assets/balance/{assetId}` returns asset description included sponsorship information:
+Sponsorship information for the asset present in [asset description](docs.wavesplatform.com/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetId)
+`GET /assets/details/{assetId}` returns asset description included sponsorship information:
 ```js
 {
   "assetId" : "8tdULCMr598Kn2dUaKwHkvsNyFbDB1Uj5NxvVRTQRnMQ",
