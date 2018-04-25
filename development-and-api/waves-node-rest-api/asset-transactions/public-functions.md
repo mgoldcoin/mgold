@@ -55,7 +55,7 @@ Account's balance for the given asset.
 }
 ```
 
-### GET /assets/details/{assetId}
+### <a name="get-assetsdetailsassetId"></a>GET /assets/details/{assetId}
 
 Asset description.
 
