@@ -41,9 +41,10 @@
 * [Waves DEX](waves-client/waves-dex.md)
   * [Start trading using the Waves DEX](waves-client/waves-dex/start-trading-using-the-waves-dex.md)
 * [Custom Assets](waves-client/assets-management.md)
-  * [How to create a Token](waves-client/assets-management/issue-an-asset.md)
-  * [How to reissue created Token](waves-client/assets-management/reissue-an-asset.md)
-  * [How to burn issued Token](waves-client/assets-management/burn-an-asset.md)
+  * [Token creation](/waves-client/assets-management/issue-an-asset.md)
+  * [Token reissuing](/waves-client/assets-management/reissue-an-asset.md)
+  * [​Token burning](/waves-client/assets-management/burn-an-asset.md)
+  * [Token distribution](/waves-client/assets-management/mass-transfer.md)
 
 ## Mobile applications
 
