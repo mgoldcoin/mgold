@@ -40,11 +40,11 @@
   * [Buying Bitcoins using credit or debit card](/waves-client/transfers-and-gateways/buying-bitcoin-using-card.md)
 * [Waves DEX](waves-client/waves-dex.md)
   * [Start trading using the Waves DEX](waves-client/waves-dex/start-trading-using-the-waves-dex.md)
-* [Custom Assets](waves-client/assets-management.md)
-  * [Token creation](/waves-client/assets-management/issue-an-asset.md)
-  * [Token reissuing](/waves-client/assets-management/reissue-an-asset.md)
-  * [​Token burning](/waves-client/assets-management/burn-an-asset.md)
-  * [Token distribution](/waves-client/assets-management/mass-transfer.md)
+* [Assets managment](waves-client/assets-management.md)
+  * [Token creation](waves-client/assets-management/issue-an-asset.md)
+  * [Token reissuing](waves-client/assets-management/reissue-an-asset.md)
+  * [​Token burning](waves-client/assets-management/burn-an-asset.md)
+  * [Token distribution](waves-client/assets-management/mass-transfer.md)
 
 ## Mobile applications
 
