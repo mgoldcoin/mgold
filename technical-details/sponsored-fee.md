@@ -43,8 +43,8 @@ fees {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
   "asettId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
-  "quantity": 100000,
-  "fee": 100000
+  "baseFee": 100000,
+  "fee": 100000000
 }
 ```
 
@@ -54,7 +54,7 @@ fees {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
   "asettId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
-  "fee": 100000
+  "fee": 100000000
 }
 ```
 
