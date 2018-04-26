@@ -6,7 +6,7 @@
 
 ### Implementation
 
-#### Start sponsorship
+#### Sponsored Fee Transaction representations
 
 Binary format of a SponsorFee transaction is as follows:
 
@@ -21,6 +21,23 @@ Binary format of a SponsorFee transaction is as follows:
 | fee | 8 |
 | proofs | ? | currently only signature is supported
 
+
+Json representation
+
+```js
+{
+  "type" : 14,
+  "id" : "CwHecsEjYemKR7wqRkgkZxGrb5UEfD8yvZpFF5wXm2Su",
+  "sender" : "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
+  "senderPublicKey" : "5AzfA9UfpWVYiwFwvdr77k6LWupSTGLb14b24oVdEpMM",
+  "minAssetFee": 100000, // null assume canceling sponsorship, number - minimum amount assets require to fee.
+  "fee" : 100000000,
+  "timestamp" : 1520945679531,
+  "proofs" : [ "4huvVwtbALH9W2RQSF5h1XG6PFYLA6nvcAEgv79nVLW7myCysWST6t4wsCqhLCSGoc5zeLxG6MEHpcnB6DPy3XWr" ],
+  "version" : 1,
+  "height" : 303
+}
+```
 
 ### Fees
 
