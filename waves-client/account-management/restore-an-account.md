@@ -1,8 +1,10 @@
 # Restore Your Account
 
-If you forgot your password, you can easily restore your account.
+You can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
+Also downloads are available from the official site - https://wavesplatform.com/product
 
-Open up Waves wallet.
+Choose and open up your Waves wallet.
+
 Click on **Restore account** on the main page.
 
 ![](/_assets/account_restoring_01.png)
@@ -14,11 +16,11 @@ The Waves wallet will automatically generate the corresponding address right bel
 ![](/_assets/account_restoring_02.png)
 
 If you entered the correct SEED, it will display your Waves address.
-Then, click on Continue. Set a password for encryption of the SEED.
+Choose account name and wallet password then repeat the password.
 
 To finish the process, click on **Sign in**
 
-![](/_assets/account_restoring_03.png)
+![](/_assets/account_restoring_003.png)
 
 At the final stage, read carefully the conditions and if you are agree put the checkboxes.
 Click on **Confirm and Begin**.

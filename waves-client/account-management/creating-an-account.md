@@ -1,15 +1,29 @@
 # **How to Create an Account**
-Open up Waves wallet or download it by using either the [Online Client](https://wavesplatform.com/product), [Desktop Client](https://wavesplatform.com/product).
 
-After opening the Waves client for the first time, click **Get Started** to start the process of creating your account
+You can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
+Also downloads are available from the official site - https://wavesplatform.com/product
+
+Choose and open up your Waves wallet.
+
+Please take some time to understand some important things for your own safety.
+We cannot recover your funds or freeze your account if you visit a phishing site or lose your backup phrase (aka SEED phrase).
+By continuing to use our platform, you agree to accept all risks associated with the loss of your SEED, including but not limited to the inability to obtain your funds and dispose of them.
+In case you lose your SEED, you agree and acknowledge that the Waves Platform would not be responsible for the negative consequences of this.
+
+To continue, click on the **What you need to know about your SEED**
+
+We strongly recommend reading all articles before you begin.
+
+![](/_assets/account_creation_001.png)
+
+Click on the **Get Started** to start the process of creating your account.
 
 ![](/_assets/account_creation_01.png)
 
-Choose your unique address avatar and then you have to define a password for your account. The password's sole purpose is to encrypt the SEED so it never leaves your computer in blank text form. Your password protects your account when working on a certain device or browser. It is needed in order to ensure that your seed is not saved in storage. If you forget your password, simply delete the affected address from the list on the main page and restore the account using your SEED. You will go through the same process as just described and be able to set the password.
+Choose your address avatar. When you have done so, choose account name and wallet password then repeat the password.
+Click on the **Continue** button.
 
-When you have done so, click on **Continue**.
-
-![](/_assets/account_creation_02.png)
+![](/_assets/account_creation_002.png)
 
 Now, it's an important step to backup your account by clicking **Back Up Now**.
 
