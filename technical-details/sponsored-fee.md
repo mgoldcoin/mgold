@@ -16,21 +16,7 @@ Binary format of a SponsorFee transaction is as follows:
 | version | 1 | == 1 at this time
 | sender's public key | 32
 | Asset ID | 32     |
-| minimal fee in assets | 8 |
-| timestamp | 8 |
-| fee | 8 |
-| proofs | ? | currently only signature is supported
-
-#### Cancel sponsorship
-
-Binary format of a CancelFeeSponsorship transaction is as follows:
-
-| Field | Size in Bytes | Comment |
-| ----- | -------------:| ----- |
-| type | 1 | == 15
-| version | 1 | == 1 at this time
-| sender's public key | 32
-| Asset ID | 32     |
+| minimal fee in assets | 8 | Zero value assume canceling sponsorship.
 | timestamp | 8 |
 | fee | 8 |
 | proofs | ? | currently only signature is supported
@@ -43,9 +29,6 @@ Fee is payable in WAVES only and is configured in node settings file as usual:
 ```
 fees {
     sponsor-fee {
-      WAVES = 100000000
-    }
-    cancel-fee-sponsorship {
       WAVES = 100000000
     }
   ...
@@ -65,7 +48,7 @@ fees {
 }
 ```
 
-`POST /asset/cancel` signs and sends a canceling sponsorship transaction. This endpoint requires API key. Sample input is as follows:
+`POST /asset/sponsor` signs and sends a canceling sponsorship transaction. This endpoint requires API key. Sample input is as follows:
 ```js
 {
   "version": 1,
