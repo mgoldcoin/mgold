@@ -158,7 +158,7 @@ jQuery(document).ready(function () {
 	addBranding();
 	
 	
-	/**/
+	/*Another important function*/
 	var addLinkToGithub = function () {
 		var path = pathToGithubFile + gitbook.page.getState().file.path;
 		var $button = $('<a class="btn pull-right" style="text-transform: none;" aria-label="" target="_blank" href="' + path + '"><i class="fa fa-github"></i> Open on Github</a>');
