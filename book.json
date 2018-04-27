@@ -4,7 +4,8 @@
     "custom-favicon",
     "gtm",
     "custom-js-css",
-    "custom-favicon"
+    "custom-favicon",
+    "anchors"
   ],
   "pluginsConfig": {
     "theme-bandwidth": {

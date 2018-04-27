@@ -55,6 +55,32 @@ Account's balance for the given asset.
 }
 ```
 
+### GET /assets/details/{assetId}
+
+Asset description.
+
+```
+  "assetId" - Asset ID in Base58 format
+```
+
+**Response JSON example:**
+```js
+{
+  "assetId" : "8tdULCMr598Kn2dUaKwHkvsNyFbDB1Uj5NxvVRTQRnMQ",
+  "issueHeight" : 140194,
+  "issueTimestamp" : 1504015013373,
+  "issuer" : "3NCBMxgdghg4tUhEEffSXy11L6hUi6fcBpd",
+  "name" : "name",
+  "description" : "Sponsored asset",
+  "decimals" : 1,
+  "reissuable" : true,
+  "quantity" : 1221905614,
+  "script" : "",
+  "scriptText" : "",
+  "minSponsoredAssetFee" : 100000 // null assume no sponsorship, number - amount of assets for minimal fee
+}
+```
+
 ### POST /assets/broadcast/issue
 
 Publish signed Asset issue transaction to the network.
