@@ -30,7 +30,7 @@ Json representation
   "id" : "CwHecsEjYemKR7wqRkgkZxGrb5UEfD8yvZpFF5wXm2Su",
   "sender" : "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
   "senderPublicKey" : "5AzfA9UfpWVYiwFwvdr77k6LWupSTGLb14b24oVdEpMM",
-  "minAssetFee": 100000, // null assume canceling sponsorship, number - minimum amount assets require to fee.
+  "minSponsoredAssetFee": 100000, // null assume canceling sponsorship, number - minimum amount assets require to fee.
   "fee" : 100000000,
   "timestamp" : 1520945679531,
   "proofs" : [ "4huvVwtbALH9W2RQSF5h1XG6PFYLA6nvcAEgv79nVLW7myCysWST6t4wsCqhLCSGoc5zeLxG6MEHpcnB6DPy3XWr" ],
@@ -60,7 +60,7 @@ fees {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
   "asettId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
-  "minAssetFee": 100000,
+  "minSponsoredAssetFee": 100000,
   "fee": 100000000
 }
 ```
@@ -71,7 +71,7 @@ fees {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
   "asettId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
-  "minAssetFee": null,
+  "minSponsoredAssetFee": null,
   "fee": 100000000
 }
 ```
