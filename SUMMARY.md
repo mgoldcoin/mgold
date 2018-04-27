@@ -27,7 +27,7 @@
   * [Use Your Waves address](waves-client/account-management/waves-address.md)
   * [Create a personal Alias](waves-client/account-management/creating-an-alias.md)
   * [Lease Your Waves tokens](waves-client/account-management/waves-leasing.md)
-* [Transfers and gateways](waves-client/wallet-management.md)
+* [Transfers and Gateways](waves-client/wallet-management.md)
   * [Waves transfers](waves-client/transfers-and-gateways/waves-transfers.md)
   * [Asset transfers](waves-client/transfers-and-gateways/asset-transfers.md)
   * [Bitcoin transfers](waves-client/transfers-and-gateways/bitcoin-transfers.md)
@@ -40,7 +40,7 @@
   * [Buying Bitcoins using credit or debit card](/waves-client/transfers-and-gateways/buying-bitcoin-using-card.md)
 * [Waves DEX](waves-client/waves-dex.md)
   * [Start trading using the Waves DEX](waves-client/waves-dex/start-trading-using-the-waves-dex.md)
-* [Assets managment](waves-client/assets-management.md)
+* [Assets Management](waves-client/assets-management.md)
   * [Token creation](waves-client/assets-management/issue-an-asset.md)
   * [Token reissuing](waves-client/assets-management/reissue-an-asset.md)
   * [​Token burning](waves-client/assets-management/burn-an-asset.md)
@@ -124,3 +124,4 @@
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
+

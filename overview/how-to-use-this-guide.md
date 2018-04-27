@@ -30,7 +30,7 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 2. [Account Management](/waves-client/account-management.md) \([Create](/waves-client/account-management/creating-an-account.md) and [Restore](/waves-client/account-management/restore-an-account.md) an Account\)
 3. [Transfers and gateways](/waves-client/wallet-management.md)
 4. [Waves DEX](/waves-client/waves-dex.md) \(Trading Using DEX\)
-5. [Custom Assets \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
+5. [Assets Management \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
 
 # 4. Mobile Applications
 
