@@ -9,3 +9,8 @@ We see the syntax of our language as functional, similar to F\#: strong and stat
 
 **Note.** [**Here**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf) you can find our White Paper which describes Waves Smart Contract.
 
+More technical details you can find in the articles below:
+
+1. [Approach and Capabilities](./waves-contracts-language-description/approach-and-capabilities.md)
+2. [Language and Standard Library Documentation](./waves-contracts-language-description/waves-contracts-language-description.md)
+3. [Syntax Processor and Executor Implementation Details](./waves-contracts-language-description/waves-contracts-implementation-details.md)
