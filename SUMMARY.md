@@ -118,6 +118,12 @@
   * [Create Your First crypto Trading Bot](development-and-api/examples/trading-bot.md)
   * [Setting Up a Waves Platform Full Node on Digital Ocean](development-and-api/examples/set-up-full-node-on-digital-ocean.md)
 
+## Proposals
+
+* [Sponsored transactions](proposals/sponsored-transactions.md)
+* [Versioned transactions](proposals/versioned-transactions.md)
+* [Trezor hardware wallet integration specification](proposals/trezor-hardware-wallet-integration-specification.md)
+
 ## FAQ
 
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
