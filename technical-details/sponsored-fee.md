@@ -2,7 +2,10 @@
 
 ### Use Cases
 
-* Users can fee in accet but nodes owner don't need to allow payments in this asset. 
+* Users can set fee in asset but node owners don't need to allow payments in this asset. 
+
+Then sponsorship is set for an asset, the miner will receive a fee in Waves for the processing of a transaction with the fee in the sponsored asset.
+Only the issuer of the asset can set the sponsorship. The sponsorship is set by giving the rate at which the fee in the asset is converted in the fee in Waves.
 
 ### Implementation
 
