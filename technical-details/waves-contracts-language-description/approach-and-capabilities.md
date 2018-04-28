@@ -1,4 +1,4 @@
-# Waves Smart Contracts 
+# Approach and capabilities
 Waves Contracts are simple predicates, answering a question whether a given transaction is allowed.
 
 There're 2 places to restrict a transaction: AccountScript and AssetScript.
