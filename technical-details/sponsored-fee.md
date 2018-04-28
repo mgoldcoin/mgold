@@ -4,6 +4,12 @@
 
 * Users can fee in accet but nodes owner don't need to allow payments in this asset. 
 
+### Feature activation
+
+* SponsorFeeTransaction is invalid unless "Fee Sponsorship" feature isn't activated.
+* After "Fee Sponsorship" feature activation SponsorFeeTransaction is avaliable to process. Asset Fee calulation works like an early 10000 more blocks.
+* After 10000 blocks sponsor pays 1/minSponsoredAssetFee for each token used fo fee.
+
 ### Implementation
 
 #### Sponsored Fee Transaction representations
