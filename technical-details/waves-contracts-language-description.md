@@ -12,5 +12,5 @@ We see the syntax of our language as functional, similar to F\#: strong and stat
 More technical details you can find in the articles below:
 
 1. [Approach and Capabilities](./waves-contracts-language-description/approach-and-capabilities.md)
-2. [Language and Standard Library Documentation](./waves-contracts-language-description/waves-contracts-language-description.md)
-3. [Syntax Processor and Executor Implementation Details](./waves-contracts-language-description/waves-contracts-implementation-details.md)
+2. [Language and Standard Library Documentation](waves-contracts-language-description/language-description.md)
+3. [Syntax Processor and Executor Implementation Details](waves-contracts-language-description/implementation-details.md)
