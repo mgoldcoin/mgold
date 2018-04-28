@@ -1,4 +1,7 @@
-# Introduction
+# Language description
+
+
+## Introduction
 
 Waves Contracts language is:
 
