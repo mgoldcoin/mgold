@@ -6,7 +6,7 @@ There're 2 places to restrict a transaction: AccountScript and AssetScript.
 ## Account Script
 An account can be restricted of any outgoing transaction based on signature(s) and other supplied data, named proofs, other transaction fields, current blockchain height and an arbitrary data existing in a blockchain, like data from Oracles, which post the data via `DataTransaction`.
 
-To setup an `AccountScript`, account needs to issue `SetScriptTransaction` which contains the predicate. Upon success every outgoing transaction will be validated not by the default mechanism of signature validation, but according to predicate logic. `AccountScript` can further be changed or cleared if the script installed allows the new `SetScriptTransaction` to process. The default account has no scк   ipt, which is equivalent(except for restrictions -- read further!) to this script:
+To setup an `AccountScript`, account needs to issue `SetScriptTransaction` which contains the predicate. Upon success every outgoing transaction will be validated not by the default mechanism of signature validation, but according to predicate logic. `AccountScript` can further be changed or cleared if the script installed allows the new `SetScriptTransaction` to process. The default account has no script, which is equivalent(except for restrictions -- read further!) to this script:
 
 ```
 checkSig(tx.bodyBytes, tx.proof0, tx.senderPk)
