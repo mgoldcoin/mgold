@@ -87,6 +87,7 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
 `POST /addresses/data` signs and sends a data transaction. This endpoint requires API key. Sample input is as follows (binary arrays are Base58-encoded):
 ```
 {
+  "version" : 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
   "data": [
     {"key": "int", "type": "integer", "value": 24},
