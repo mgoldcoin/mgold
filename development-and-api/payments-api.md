@@ -1,15 +1,15 @@
 # Waves Payments API
 
-If you want to make someone pay with WAVES or any of Waves tokens, you can use our Payments API.
+If you want to make someone pay with WAVES or any other Waves tokens, you can use our Payments API.
 
 ## Process
 
-0. You set up a button on your site which triggers a creation of an URL and a redirect to it.
-1. A user decides to buy something and presses that button.
-2. He then is redirected to the Waves Client with a payment parameters window.
-3. He modifies those parameters if possible and submits the form.
-4. If everything's okay, he is redirected back to referer.
-5. Referer is provided with transaction ID and can check if it's in the blockchain.
+0. You need to set up a button on your site which triggers a creation of an URL and a redirect to it.
+1. A user decides to buy something and the user presses that button.
+2. After that, The user is redirected to the Waves Client with a payment parameters window.
+3. The user modifies those parameters if possible and submits the form.
+4. If everything's okay, The user is redirected back to referer.
+5. Referer is provided with transaction ID which can be checked if it's in the blockchain.
 
 If the user interrupts the process, he stays on the Waves Client page.
 
