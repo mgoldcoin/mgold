@@ -11,8 +11,9 @@ let maybeAccepted = getBoolean(tx.recipient, tx.id)
 let recipientAcceptsTransfer = isDefined(maybeAccepted)
     then extract(maybeAccepted) else false
 notaryAcceptsTransfer && recipientAcceptsTransfer
-
 ```
 
 Here there is the notary **notary**. In **notaryAcceptsTransfer**, here is a check to confirm that the transfer transaction has the signature of the notary. In **maybeAccepted**, we check that the recipient allows the current transaction, and in the end we return **true** if both of these conditions are satisfied, or **false** otherwise.
+
+**Note**. Please check the example on our [IDE](https://ide.wavesplatform.com/).
 
