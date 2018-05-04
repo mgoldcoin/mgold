@@ -95,6 +95,7 @@
     * [Approach and Capabilities](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
     * [Language Description](technical-details/waves-contracts-language-description/language-description.md)
     * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
+    * [Functions](technical-details/waves-contracts-language-description/functions.md)
   * [Waves-NG Solution](technical-details/waves-ng-solution.md)
   * [Sponsored Fee](technical-details/sponsored-fee.md)
 * [Node API Overview](development-and-api/node-api-overview.md)
