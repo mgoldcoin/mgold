@@ -1,4 +1,4 @@
-# Predefined Functions Smart Account language
+# Predefined Functions in Smart Account language
 
 | Function | Description |
 | :--- | :--- |
@@ -12,8 +12,6 @@
 | getbyteVector | It gets byte array fro Data Transaction by Key |
 | addressFromPublicKey | It gets the address from a public key |
 | addressFromString | It gets the address from string |
-
-
 
 There is an important property that the **smart account** does not store any data on the blockchain. A **smart account** will only have access to blockchain state values that can be retrieved and executed relatively fast, in a “constant” time, for example to such fields as:
 
@@ -35,7 +33,7 @@ For example, if we want to get some transactions that do not exist in the blockc
 
 All constants will be declared in lazy **let** constructions, which delays the evaluation of an expression until its value is needed, and does it at most once. For instance: **let hash = blake2b\(preImage\)**.
 
-The hash is not a variable: once created its values never change. 
+The hash is not a variable: once created its values never change.
 
 **SetScriptTransaction **sets the script which verifies all outgoing transactions. The set script can be changed by another **SetScriptTransaction** call unless it’s prohibited by a previously set script.
 
