@@ -97,6 +97,9 @@ Signs an arbitrary transaction. This requires an API key, and transaction type t
 | 8 | Lease |
 | 9 | Lease Cancel |
 | 10 | Alias |
+| 12 | Data |
+| 13 | Set Script |
+| 14 | Sponsorship |
 
 An optional `timestamp` parameter may be specified, which represents transaction timestamp in milliseconds. If it is omitted, current server time is used.
 
