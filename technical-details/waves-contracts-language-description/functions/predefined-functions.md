@@ -39,5 +39,3 @@ The hash is not a variable: once created its values never change.
 
 
 
-
-

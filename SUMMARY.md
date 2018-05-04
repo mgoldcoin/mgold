@@ -98,6 +98,9 @@
     * [Functions](technical-details/waves-contracts-language-description/functions.md)
       * [Predefined Functions](technical-details/waves-contracts-language-description/functions/predefined-functions.md)
       * [Cryptographic Functions](technical-details/waves-contracts-language-description/functions/cryptographic-functions.md)
+    * [Examples](technical-details/waves-contracts-language-description/examples.md)
+      * [Multi-Signature Account](technical-details/waves-contracts-language-description/examples/multi-signature-account.md)
+      * Smart Asset With Notary Proof
   * [Waves-NG Solution](technical-details/waves-ng-solution.md)
   * [Sponsored Fee](technical-details/sponsored-fee.md)
 * [Node API Overview](development-and-api/node-api-overview.md)
