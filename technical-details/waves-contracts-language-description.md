@@ -17,7 +17,7 @@ More technical details you can find in the articles below:
 
 ## Creating and deploying a script manually
 
-Without `Waves Client` or any API libraries. We will try to make manually a simple 2FA here.
+Without `Waves Client` or any API libraries. We will try to make manually a simple multisig 2 of 2 here.
 
 Assumptions:
 1. We have own node. For example, it has the `example.org` domain
@@ -27,6 +27,8 @@ For example, we generated these addresses:
 * `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE` - Alice's account;
 * `3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf` - Bob's account;
 * `3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN` - Shared account with waves we want to spend.
+
+If Alice and Bob are the one person, it may be treated as 2FA.
 
 ### Creating a script
 
@@ -129,7 +131,56 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
 
 Fine! Now we able to make transfers from this account.
 
-### Trying to transfer waves with bad request 
+### Trying to transfer waves with bad request
+
+**From shared account to `3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj`**
+
+```json
+{
+  "type": 4,
+  "id": "B8nAhMtaXzPTBeuKBj19hhmrNjqSeHW8ndHJFGXiAqxF",
+  "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN",
+  "senderPublicKey": "J33iZ1GztmNEtW3ecmp9hjaDz77s1n5HwPoNvsMAMkfn",
+  "fee": 100000,
+  "timestamp": 1525454572947,
+  "proofs": [
+    "5MjA1paSsFvyvEfimaxDaXzSbWWp64U1yDiYsfb2LDcnqwDkTTprau1yJLcbPApjhTAuBufScPycRbudVmLzt2Vb"
+  ],
+  "version": 2,
+  "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj",
+  "assetId": null,
+  "feeAssetId": null,
+  "amount": 100000,
+  "attachment": ""
+}
+```
+
+Let's try:
+```bash
+$ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-API-Key: <it is a secret>' \
+-d '{ "type": 4, "id": "B8nAhMtaXzPTBeuKBj19hhmrNjqSeHW8ndHJFGXiAqxF", "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN", \
+"senderPublicKey": "J33iZ1GztmNEtW3ecmp9hjaDz77s1n5HwPoNvsMAMkfn", "fee": 100000, "timestamp": 1525454572947, \
+"proofs": [ "5MjA1paSsFvyvEfimaxDaXzSbWWp64U1yDiYsfb2LDcnqwDkTTprau1yJLcbPApjhTAuBufScPycRbudVmLzt2Vb" ], \
+"version": 2, "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj", "assetId": null, "feeAssetId": null, \
+"amount": 100000, "attachment": "" }' 'https://testnet-aws-fr-1.wavesnodes.com/transactions/broadcast'
+```
+
+And we got:
+> State check failed. Reason: TransactionNotAllowedByScript
+
+**From shared account to Alice**
+
+Alice wants to fool Bob:
+
+```json
+```
+
+If we try to broadcast it, we will get the same error:
+> State check failed. Reason: TransactionNotAllowedByScript
+
+### Scenario with a successful transfer
+
+Now, let's try to make a transactions with all required proofs.
 
 2. Alice gives JSON to Bob
 3. Bob signs it by his private key
