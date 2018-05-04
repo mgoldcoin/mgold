@@ -96,6 +96,8 @@
     * [Language Description](technical-details/waves-contracts-language-description/language-description.md)
     * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
     * [Functions](technical-details/waves-contracts-language-description/functions.md)
+      * [Predefined Functions](technical-details/waves-contracts-language-description/functions/predefined-functions.md)
+      * [Cryptographic Functions](technical-details/waves-contracts-language-description/functions/cryptographic-functions.md)
   * [Waves-NG Solution](technical-details/waves-ng-solution.md)
   * [Sponsored Fee](technical-details/sponsored-fee.md)
 * [Node API Overview](development-and-api/node-api-overview.md)
