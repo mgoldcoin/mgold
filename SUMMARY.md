@@ -8,6 +8,7 @@
 * [Waves Official Resources ](overview/waves-official-resources.md)
 * [Security Notes](overview/security-notes.md)
 * [Waves Releases](overview/waves-releases.md)
+* [Waves Tokens](overview/waves-tokens.md)
 
 ## Platform Features
 
