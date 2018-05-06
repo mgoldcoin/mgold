@@ -1,13 +1,13 @@
-# How to deposit and withdraw Zcash
+# How to receive and send Zcash
 
 Waves allow you to hold and transfer Zcash on its blockchain. This works through a so-called Multigateway approach: Zcash sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Zcash token \(wZEC\) on the Waves blockchain. Every single Zcash token is backed 1:1 with a real Zcash.
 
 Read more about [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
-## **How to deposit Zcash**
+## **How to receive Zcash**
 
 Open your Waves wallet  
-In the Zcash section, click on the **Deposit** button.
+In the Zcash section, click on the **Receive** button.
 
 ![](/_assets/zcash_transfers_01.png)
 
@@ -19,12 +19,12 @@ Read the conditions carefully in yellow boxes before proceeding.
 
 **Note**: Processing can take up to 120 minutes.
 
-## **How to withdraw Zcash**
+## **How to send Zcash**
 
 Open your Waves wallet  
 In the Zcash section, click on the **Send** button.
 
-![](/_assets/zcash_transfers_03.png)
+![](/_assets/zcash_transfers_01.png)
 
 The following pop-up will appear.  
 Paste the Zcash address you want to send to as well as the amount of Zcash.  
@@ -47,7 +47,7 @@ You can send Zcash directly to another Waves account, just use the recipient Wav
 
 **Note.** The network fee is only 0.001 Waves \(no gateway fee\)
 
-![](/_assets/zcash_transfers_06.png)
+![](/_assets/zcash_transfers_01.png)
 
 After you have completed the form, click on the **Continue** button.
 
