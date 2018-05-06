@@ -1,7 +1,7 @@
-# How to deposit Waves using credit or debit card.
+# How to receive Waves using credit or debit card.
 
 Open up your wallet.
-In the Waves section click on the **Deposit** button.
+In the Waves section click on the **Receive** button.
 
 ![](/_assets/buying_waves_using_card_01.png)
 
