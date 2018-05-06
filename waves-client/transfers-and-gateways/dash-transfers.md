@@ -2,7 +2,7 @@
 
 Waves allow you to hold and transfer Dash on its blockchain. This works through a so-called Multigateway approach: Dash sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Dash token \(wDASH\) on the Waves blockchain. Every single Dash token is backed 1:1 with a real Dash.
 
-Read more about [What is a payment gateway?](/waves-client/transfers-and-gateways/payment-gateway.md)
+Read more about [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **How to receive Dash**
 

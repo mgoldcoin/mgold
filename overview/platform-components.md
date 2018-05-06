@@ -51,7 +51,7 @@ Current List of crypto gateways:
 
 BTC/ETH/LTC/ZCash/BCH/Dash gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
 
-Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future
+Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future.
 
 ![](/_assets/Waves Gateways.png)
 
