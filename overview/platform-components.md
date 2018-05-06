@@ -26,7 +26,7 @@
 
 # 6. Waves Gateways
 
-Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/ZCash/Litecoin\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
+Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/LTC/ZCash/BCH/Dash\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
 ## 6.1 Fiat Gateways
 
@@ -42,15 +42,16 @@ All currencies listed below are integrated in Waves through gateways. You can se
 
 Current List of crypto gateways:
 
-1. WAVES
-2. Bitcoin
-3. Ethereum
+1. Bitcoin
+2. Ethereum
+3. Litecoin
 4. ZCash
-5. Litecoin
+5. Bitcoin cash
+6. Dash
 
-WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
+BTC/ETH/LTC/ZCash/BCH/Dash gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
 
-Fees are minimal and the only delays are those required by blockchain confirmation times.
+Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future
 
 ![](/_assets/Waves Gateways.png)
 
