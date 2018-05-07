@@ -1,4 +1,4 @@
-# Chapter Contents
+# Asset Management
 
 Assets Management Chapter includes all details about Issue and Reissue Assets which allows you to create your own asset or reissue more of the same token in the future to increase the total supply of tokens or decrease it by using the burn feature. Also in this section you will find desription of the Mass Transfer feuture.
 
