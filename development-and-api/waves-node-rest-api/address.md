@@ -89,7 +89,26 @@ Get account balance in WAVES by {address} after {confirmations} from now:
 }
 ```
 
+### GET /addresses/scriptInfo/{address}
 
+Get a script information by address.
 
+```
+  "address" - account's address in Base58 format
+  "script" - Base58 representation of compiled script. The field is not present, if no script is set for address
+  "scriptText" - Text representation of script. The field is not present, if no script is set for address
+  "complexity" - How script is complicated
+  "extraFee" - An extra fee for all transactions going from this account if the miner is this node
+```
 
+**Response JSON example:**
 
+```js
+{
+  "address": "3N3keodUiS8WLEw9W4BKDNxgNdUpwSnpb3K",
+  "script": "3rbFDtbPwAvSp2vBvqGfGR9nRS1nBVnfuSCN3HxSZ7fVRpt3tuFG5JSmyTmvHPxYf34SocMRkRKFgzTtXXnnv7upRHXJzZrLSQo8tUW6yMtEiZ",
+  "scriptText": "ScriptV1(BLOCK(LET(x,CONST_LONG(1)),FUNCTION_CALL(FunctionHeader(==,List(LONG, LONG)),List(FUNCTION_CALL(FunctionHeader(+,List(LONG, LONG)),List(REF(x,LONG), CONST_LONG(1)),LONG), CONST_LONG(2)),BOOLEAN),BOOLEAN))",
+  "complexity": 11,
+  "extraFee": 10001
+}
+```

@@ -1,4 +1,7 @@
-# Introduction
+# Language description
+
+
+## Introduction
 
 Waves Contracts language is:
 
@@ -94,7 +97,7 @@ In every script, available instances are
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
-* `sigVerify`:`(body: ByteArray, pubKey: ByteArray, signature: ByteArray) => Boolean`
+* `sigVerify`:`(body: ByteArray, signature: ByteArray, pubKey: ByteArray) => Boolean`
 * `keccack`,`blake2b`and other hashing algorithms:`ByteArray => ByteArray`
 * `extract`:`Option[T] => T`,`isDefined`:`Option[T] => Boolean`defined over`Option[_]`
 * `isDefined` : `Option[T] => Boolean`
@@ -126,9 +129,9 @@ let alicePubKey  = base58'B1Yz7fH1bJ2gVDjyJnuyKNTdMFARkKEpV'
 let bobPubKey    = base58'7hghYeWtiekfebgAcuCg9ai2NXbRreNzc'
 let cooperPubKey = base58'BVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'
 
-let aliceSigned  = if(checkSig(tx.bodyBytes, tx.proof0, alicePubKey  )) then 1 else 0
-let bobSigned    = if(checkSig(tx.bodyBytes, tx.proof1, bobPubKey    )) then 1 else 0
-let cooperSigned = if(checkSig(tx.bodyBytes, tx.proof2, cooperPubKey )) then 1 else 0
+let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proof0, alicePubKey  )) then 1 else 0
+let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proof1, bobPubKey    )) then 1 else 0
+let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proof2, cooperPubKey )) then 1 else 0
 
 aliceSigned + bobSigned + cooperSigned >= 2
 ```
