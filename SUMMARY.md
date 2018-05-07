@@ -138,9 +138,5 @@
   * [What is a payment gateway](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-<<<<<<< HEAD
-  * [Order execution time](frequently-asked-questions-faq/waves-dex/order-time.md)
-  * [Asset ID on the Waves DEX](frequently-asked-questions-faq/waves-dex/asset-id.md)
-=======
-  * [I have place an order, when it will be filled](frequently-asked-questions-faq/waves-dex/order-time.md)
->>>>>>> 32e4730d178829a7cd9890f75c7abea4365ba0b5
+  * [Order execution time](/frequently-asked-questions-faq/waves-dex/order-time.md)
+  * [Asset ID on the Waves DEX](/frequently-asked-questions-faq/waves-dex/asset-id.md) 
