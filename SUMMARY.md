@@ -8,6 +8,7 @@
 * [Waves Official Resources ](overview/waves-official-resources.md)
 * [Security Notes](overview/security-notes.md)
 * [Waves Releases](overview/waves-releases.md)
+* [Waves Tokens](overview/waves-tokens.md)
 
 ## Platform Features
 
@@ -27,7 +28,7 @@
   * [Use Your Waves address](waves-client/account-management/waves-address.md)
   * [Create a personal Alias](waves-client/account-management/creating-an-alias.md)
   * [Lease Your Waves tokens](waves-client/account-management/waves-leasing.md)
-* [Transfers and gateways](waves-client/wallet-management.md)
+* [Transfers and Gateways](waves-client/wallet-management.md)
   * [Waves transfers](waves-client/transfers-and-gateways/waves-transfers.md)
   * [Asset transfers](waves-client/transfers-and-gateways/asset-transfers.md)
   * [Bitcoin transfers](waves-client/transfers-and-gateways/bitcoin-transfers.md)
@@ -40,7 +41,7 @@
   * [Buying Waves using credit or debit card](/waves-client/transfers-and-gateways/buying-waves-using-card.md)
 * [Waves DEX](waves-client/waves-dex.md)
   * [Start trading using the Waves DEX](waves-client/waves-dex/start-trading-using-the-waves-dex.md)
-* [Assets managment](waves-client/assets-management.md)
+* [Assets Management](waves-client/assets-management.md)
   * [Token creation](waves-client/assets-management/issue-an-asset.md)
   * [Token reissuing](waves-client/assets-management/reissue-an-asset.md)
   * [​Token burning](waves-client/assets-management/burn-an-asset.md)
@@ -91,9 +92,17 @@
   * [Mass Transfer Transaction](technical-details/mass-transfer-transaction.md)
   * [Data Transaction](technical-details/data-transaction.md)
   * [Waves Smart Contracts](technical-details/waves-contracts-language-description.md)
-    * [Waves Contracts Language Description](technical-details/waves-contracts-language-description/waves-contracts-language-description.md)
-    * [Waves Contracts Implementation Details](technical-details/waves-contracts-language-description/waves-contracts-implementation-details.md)
+    * [Approach and Capabilities](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
+    * [Language Description](technical-details/waves-contracts-language-description/language-description.md)
+    * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
+    * [Functions](technical-details/waves-contracts-language-description/functions.md)
+      * [Predefined Functions](technical-details/waves-contracts-language-description/functions/predefined-functions.md)
+      * [Cryptographic Functions](technical-details/waves-contracts-language-description/functions/cryptographic-functions.md)
+    * [Examples](technical-details/waves-contracts-language-description/examples.md)
+      * [Multi-Signature Account](technical-details/waves-contracts-language-description/examples/multi-signature-account.md)
+      * [Smart Asset With Notary Proof](technical-details/waves-contracts-language-description/examples/smart-asset-with-notary-proof.md)
   * [Waves-NG Solution](technical-details/waves-ng-solution.md)
+  * [Sponsored Fee](technical-details/sponsored-fee.md)
 * [Node API Overview](development-and-api/node-api-overview.md)
 * [Client Libraries](development-and-api/client-libraries.md)
   * [PyWaves](development-and-api/client-libraries/pywaves.md)
@@ -116,6 +125,12 @@
   * [Create Your First crypto Trading Bot](development-and-api/examples/trading-bot.md)
   * [Setting Up a Waves Platform Full Node on Digital Ocean](development-and-api/examples/set-up-full-node-on-digital-ocean.md)
 
+## Proposals
+
+* [Sponsored transactions](proposals/sponsored-transactions.md)
+* [Versioned transactions](proposals/versioned-transactions.md)
+* [Trezor hardware wallet integration specification](proposals/trezor-hardware-wallet-integration-specification.md)
+
 ## FAQ
 
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
@@ -123,4 +138,4 @@
   * [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
   * [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-  * [I have place an order, when it will be filled](/frequently-asked-questions-faq/waves-dex/order-time.md)
+  * [I have place an order, when it will be filled](frequently-asked-questions-faq/waves-dex/order-time.md)
