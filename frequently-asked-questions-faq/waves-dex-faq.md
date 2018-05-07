@@ -2,4 +2,5 @@
 
 This section contains frequently asked questions related to the Waves Decentralised Exchange.
 
-* [I have place an order, when it will be filled](/frequently-asked-questions-faq/waves-dex/order-time.md)
+* [Order execution time](/frequently-asked-questions-faq/waves-dex/order-time.md)
+* [Asset ID on the Waves DEX](/frequently-asked-questions-faq/waves-dex/asset-id.md) 
