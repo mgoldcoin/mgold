@@ -2,9 +2,9 @@
 
 | Function | Description |
 | :--- | :--- |
-| IsDefined\("isDefined", 1, BOOLEAN, List\(\("opt", optionT\)\) | It checks if the option contains some value |
-| Extract | Extract the value from the option |
-| Some | To create the option |
+| IsDefined\("isDefined", 1, BOOLEAN, List\(\("opt", optionT\)\)\) | It checks if the option contains some value |
+| Extract\("extract", 1, TYPEPARAM\('T'\), List\(\("opt", optionT\)\)\) | Extract the value from the option |
+| Some\("Some", 1, optionT, List\(\("obj", TYPEPARAM\('T'\)\)\)\) | To create the option |
 | Size | It returns the size of byte array |
 | txById | It returns the transaction by ID |
 | getLong | It gets Long value from Data Transaction by Key |
