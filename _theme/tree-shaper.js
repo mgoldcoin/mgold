@@ -4,6 +4,7 @@ jQuery(document).ready(function () {
 	var collapsedState = 'collapsed';
 	var expandedState = 'expanded';
 	var animationTime = 200;
+	var pathToGithubFile = 'https://github.com/wavesplatform/waves-documentation/blob/master/';
 	
 	var attachChapterClickHandler = function ($collapseIcon) {
 		$collapseIcon.on('click', function (e) {
@@ -27,7 +28,6 @@ jQuery(document).ready(function () {
 				parentEl.hide(animationTime);
 				currentTreeState[_key] = collapsedState;
 			}
-			console.table(currentTreeState);
 			e.preventDefault();
 			return false;
 		});
@@ -85,7 +85,6 @@ jQuery(document).ready(function () {
 			'<i class="octicon octicon-triangle"></i>' +
 			'</div>');
 		
-		console.table(currentTreeState);
 		$('.header').each(function (index) {
 			var $header = $(this);
 			var _key = $header.text().trim();
@@ -139,8 +138,31 @@ jQuery(document).ready(function () {
 	gitbook.page.hasChanged = function (e, t, n) {
 		pageHasChanged(e, t, n);
 		buildCurrentTreeState();
+		addBranding();
+		addLinkToGithub();
 	};
 	
 	buildCurrentTreeState();
 	
+	
+	/**/
+	var addBranding = function () {
+		var $bookSummary = $('.book-summary');
+		var $logo = $('<div class="sidebar-brand">' +
+			'<a href="/"><img class="brand-logo" src="/_theme/brand-logo/waves-docs-logo.png"\n' +
+			'     srcset="/_theme/brand-logo/waves-docs-logo@2x.png 2x,\n' +
+			'             /_theme/brand-logo/waves-docs-logo@3x.png 3x"\n alt="Waves Docs"></a>' +
+			'</div>');
+		$bookSummary.prepend($logo);
+	};
+	addBranding();
+	
+	
+	/*Another important function*/
+	var addLinkToGithub = function () {
+		var path = pathToGithubFile + gitbook.page.getState().file.path;
+		var $button = $('<a class="btn pull-right" style="text-transform: none;" aria-label="" target="_blank" href="' + path + '"><i class="fa fa-github"></i> Open on Github</a>');
+		$('.dropdown.pull-left.font-settings').before($button);
+	}
+	addLinkToGithub();
 });

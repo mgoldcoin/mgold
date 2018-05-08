@@ -151,6 +151,7 @@ Create transaction to transfer an asset to several recipient addresses at once.
 **Request params:**
 
 ```
+"version" - Currently 1
 "sender" - Sender address, Base58-encoded
 "assetId" - ID of the asset to send. By default, WAVES is assumed.
 "transfers" - list of (recipient, amount) pairs where
@@ -164,6 +165,7 @@ Create transaction to transfer an asset to several recipient addresses at once.
 
 ```js
 {
+  "version" : 1,
   "sender" : "3HhQxe5kLwuTfE3psYcorrhogY4fCwz2BSh",
   "fee" : 200000,
   "assetId" : null,

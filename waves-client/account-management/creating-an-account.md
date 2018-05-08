@@ -1,48 +1,59 @@
 # **How to Create an Account**
 
-The Waves wallet features stable fiat, Bitcoin, Ethereum, Litecoin, Zcash, more than 10,000 Waves-based tokens, one of the fastest blockchains in the cryptosphere and the Waves Decentralized Exchange \(Waves DEX\).
+You can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
+Also downloads are available from the official site - https://wavesplatform.com/product
 
-Waves, the native currency within the Waves Platform system, is a Leased Proof of Stake \(LPoS\) cryptocurrency that allows users to earn rewards by hosting a full node or by leasing their balance to a node.
+Choose and open up your Waves wallet.
 
-**Step 1:** Download your Waves client using either the [Online Client](https://wavesplatform.com/product), [Desktop Client](https://wavesplatform.com/product).
+Please take some time to understand some important things for your own safety.
+We cannot recover your funds or freeze your account if you visit a phishing site or lose your backup phrase (aka SEED phrase).
+By continuing to use our platform, you agree to accept all risks associated with the loss of your SEED, including but not limited to the inability to obtain your funds and dispose of them.
+In case you lose your SEED, you agree and acknowledge that the Waves Platform would not be responsible for the negative consequences of this.
 
-**Step 2:** After opening the Waves client for the first time, click **Get Started **to start the process of creating your account or click **Restore Account** if you forget your password as shown in Figure 1.
+To continue, click on the **What you need to know about your SEED**
 
-**Note:** In case that you have created an account before just choose your address from the drop down list or enter your saved unique seed.  
-![](/_assets/Webp.net-resizeimage.png)
+We strongly recommend reading all articles before you begin.
 
-Figure 1, Create Waves Account or Restore your Account.
+![](/_assets/account_creation_001.png)
 
-**Step 3:** Choose your unique address avatar and then you have to define a password for your account. The password's sole purpose is to encrypt the SEED so it never leaves your computer in blank text form.Your password protects your account when working on a certain device or browser. It is needed in order to ensure that your seed is not saved in storage.If you forget your password, simply delete the affected address from the list on the main page and restore the account using your SEED. You will go through the same process as just described and be able to set the password.
+Click on the **Get Started** to start the process of creating your account.
 
-When you have done so, click on **Continue,** Figure 2.
+![](/_assets/account_creation_01.png)
 
-![](/_assets/Webp.net-resizeimage-2.png)
+Choose your address avatar. When you have done so, choose account name and wallet password then repeat the password.
+Click on the **Continue** button.
 
-Figure 2, Create New Account.
+![](/_assets/account_creation_002.png)
 
-**Step 4:** Now, it's an important step to backup your account by clicking **Back Up Now,** Figure 3.
+Now, it's an important step to backup your account by clicking **Back Up Now**.
 
 Waves will display an important reminder. Never provide your backup phrase to anyone except the official Waves client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
 
-![](/_assets/Webp.net-resizeimage-3.png)
+![](/_assets/account_creation_03.png)
 
-Figure 3, Backup Your Account.
+Carefully read the warning and only then click on **I understand**
 
-**Step 5:** Copy the proposed SEED consisting of 15 English words and save it on a paper or in a secure place that you prefer.In Waves wallet, there is no .dat file which keeps your private keys but a SEED which grants you access to them. The SEED is by default a string of 15 English words and basically your passphrase to your funds - **if you lose your SEED, you lose access to your account.** If you have done all of the above, click on **I've written it down,** Figure 4.
+![](/_assets/account_creation_04.png)
 
-![](/_assets/Webp.net-resizeimage-4.png)
-
-Figure 4, Save Backup Phrase \(your unique seed\).
-
-**Step 6:** Confirm your backup by putting your unique seed that was created in the previous step in the correct order and then **click Confirm,** Figure 5.
-
+After that, you will get account seed phrase.
 Waves wants to make sure you actually wrote down the backup phrase. Therefore, Waves will ask you to verify the backup phrase before proceeding to your Waves account.
+Create several copies of the seed phrase and click on **I've written it down**
 
-![](/_assets/Webp.net-resizeimage-5.png)
+![](/_assets/account_creation_05.png)
 
-Figure 5, Confirm Backup.
+Сonfirm your seed phrase with a correct sequence of words (just click on the words).
+If you made a mistake just click on Clear and start the process again.
 
-**Step 7:** Read and check all the checkbox then click on **Confirm and Begin** and you're now forwarded to the user interface, Figure 6.  
-![](/_assets/Webp.net-resizeimage-6.png)Figure 6, Check Review.
+After finishing, click on the **Confirm**.
 
+![](/_assets/account_creation_06.png)
+
+At the final stage, read carefully the conditions and if you are agree, put the checkboxes.
+
+Click on **Confirm and Begin**.
+
+![](/_assets/account_creation_07.png)
+
+If you have done all of the above, you are forwarded to the user interface.
+
+![](/_assets/account_creation_08.png)

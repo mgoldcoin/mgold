@@ -1,71 +1,70 @@
 # How To Use This Guide?
 
-In this guide, you can find all documentation for Waves Platform as shown below:
+In this guide, you can find all the documentation for Waves Platform as shown below:
 
 # 1. Overview
 
 This section will give you a general information about Waves Platform and its main components.
 
-1. [What is Waves Platform](https://waves-platform.gitbooks.io/wavesdocs/content/)
-2. [Platform Components](https://waves-platform.gitbooks.io/wavesdocs/content/platform-components.html)
-3. [Waves Official Resources](https://waves-platform.gitbooks.io/wavesdocs/content/waves-official-resources.html)
-4. [Security Notes](https://waves-platform.gitbooks.io/wavesdocs/content/security-notes.html)
+1. [What is Waves Platform]()
+2. [Platform Components](/overview/platform-components.md)
+3. [Waves Official Resources](/overview/waves-official-resources.md)
+4. [Security Notes](/overview/security-notes.md)
+5. [Waves Releases](/overview/waves-releases.md)
 
 # 2. Platform Features
 
-This section contains explantions about Waves main Features such as \(Waves-NG Protocol\).
+This section contains explanations about Waves main Features such as \(Waves-NG Protocol\).
 
-1. [Decentralized Cryptocurrency Exchange \(DEX\).](https://waves-platform.gitbooks.io/wavesdocs/content/decentralized-cryptocurrency-exchange-dex.html)
-2. [Assets \(Custom Tokens\).](https://waves-platform.gitbooks.io/wavesdocs/content/assets-custom-tokens.html)
-3. [Leased Proof of Stake \(LPoS\)](https://waves-platform.gitbooks.io/wavesdocs/content/leased-proof-of-stake-lpos.html).
-4. [Waves-NG Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/waves-ng-protocol.html).
-5. [Activation Protocol](https://waves-platform.gitbooks.io/wavesdocs/content/activation-protocol.html).
+1. [Decentralized Exchange \(DEX\).](/platform-features/decentralized-cryptocurrency-exchange-dex.md)
+2. [Assets \(Custom Tokens\).](/platform-features/assets-custom-tokens.md)
+3. [Leased Proof of Stake \(LPoS\).](/platform-features/leased-proof-of-stake-lpos.md)
+4. [Waves-NG Protocol.](/platform-features/waves-ng-protocol.md)
+5. [Activation Protocol.](/platform-features/activation-protocol.md)
 
 # 3. Waves Client
 
 This section contains step-by-step guides for Installing Waves Client, Creating Account, Leasing Waves and Issue as asset.
 
-1. [Install Waves Client](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/install-waves-client.html)
-2. [Account Management \(Create and Restore an Account\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/account-management.html)
-3. [Wallet Management \(Send and Deposit several cryptocurrencies\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-management.html)
-4. [Assets Management \(Issue and Reissue an Asset\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/assets-management.html)
+1. [Install Waves Client](/waves-client/install-waves-client.md)
+2. [Account Management](/waves-client/account-management.md) \([Create](/waves-client/account-management/creating-an-account.md) and [Restore](/waves-client/account-management/restore-an-account.md) an Account\)
+3. [Transfers and gateways](/waves-client/wallet-management.md)
+4. [Waves DEX](/waves-client/waves-dex.md) \(Trading Using DEX\)
+5. [Assets Management \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
 
-# 4. Waves Full Node
+# 4. Mobile Applications
+
+1. [Waves Wallet for IOS Devices](/mobile-apps/iOS.md)
+2. [Waves Wallet for Android Devices](//mobile-apps/android.md)
+
+# 5. Waves Full Node
 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
-1. [What is Waves Full Node](https://waves-platform.gitbooks.io/wavesdocs/content/waves-full-node/what-is-a-full-node.html)
-2. [How To Install a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html)
-3. [How to Configure a node](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-configure-a-node.html)
-4. [Upgrading](https://waves-platform.gitbooks.io/wavesdocs/waves-full-node/upgrading.html)
-5. [Export and Import From The Blockchain](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/export-and-import-from-the-blockchain.html)
-6. [Reducing Disk Space Usage](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/reducing-disk-space-usage.html)
+1. [What is Waves Full Node](/waves-full-node/what-is-a-full-node.md)
+2. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
+3. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
+4. [Upgrading](/waves-full-node/upgrading.md)
+5. [Export and Import From The Blockchain](/waves-full-node/export-and-import-from-the-blockchain.md)
+6. [Reducing Disk Space Usage](/waves-full-node/reducing-disk-space-usage.md)
+7. [Joining Testnet](/waves-full-node/joining-testnet.md)
+8. [Configuration](/waves-full-node/configuration.md)
 
-# 5. Developers Guide
+# 6. Development and API
 
-This Section contains technical details about Waves Platform
+1. [Technical Details](/technical-details/technical-details.md)
+2. [Waves Smart Contracts](/technical-details/waves-contracts-language-description.md)
+3. [Client Libraries ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md) and [WavesCS](/development-and-api/client-libraries/wavescs.md)\)
+4. [DEX API](/development-and-api/dex-api.md) \([Matcher](/development-and-api/dex-api/matcher.md)\)
+5. [Node API Overview](https://legacy.gitbook.com/book/waves-platform/wavesdocs/edit#)
+6. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
+7. [Examples](/development-and-api/examples.md)
 
-1. [Cryptographic Practical Details](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/cryptographic-practical-details.html)
-2. [Data Structures](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/data-structures.html)
-3. [Validation Rules](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/validation-rules.html)
-4. [Creating a Private Waves Blockchain Network](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/creating-a-private-waves-blockchain-network.html)
-5. [Mass Transfer Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/mass-transfer-transaction.html).
-6. [Waves Contracts Language Description.](https://waves-platform.gitbooks.io/wavesdocs/content/waves-contracts-language-description.html)
+# 7. Frequently Asked Questions \(FAQ\)
 
-# 6. Waves Node Rest API
+1. [Account Management FAQ](/frequently-asked-questions-faq/account-management-faq.md)
+2. [Transfers and Gateways FAQ](/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+3. [Waves DEX FAQ](/frequently-asked-questions-faq/waves-dex-faq.md)
 
-This Section contains all Rest API.
 
-1. [Address](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/address.html)
-2. [Asset Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/asset-transactions.html) \([Public](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/public-functions.html) and [Private](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/private-functions.html)\)
-3. [Lease Transactions](https://waves-platform.gitbooks.io/wavesdocs/content/waves-node-rest-api/lease-transactions.html)
-4. [Alias Transaction](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/alias-transaction.html)
-5. [Transactions](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/transactions.html)
-6. [Peers](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/peers.html)
-7. [Blocks](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/blocks.html)
-8. [Utils](https://waves-platform.gitbooks.io/wavesdocs/waves-node-rest-api/utils.html)
-
-# 7. Application Development and API
-
-This section still under development
 

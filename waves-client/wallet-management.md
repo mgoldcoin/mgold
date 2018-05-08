@@ -1,16 +1,23 @@
-# Chapter Contents
+# Transfers and gateways
 
-Wallet Management Chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. After reading this instruction you will be able to:
+Transfers and gateways chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. All operations with external coins are processing with the [payment gateways](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
-1. [Send Bitcoin \(BTC\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-management/send-bitcoin-btc.html)
-2. [Deposit Bitcoin \(BTC\)](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-management/deposit-bitcoin-btc.html)
-3. [Send Waves](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-management/send-waves.html)
-4. [Leasing Waves](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-management/leasing-waves.html)
-5. [Find Your Address](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/wallet-management/find-your-address.html)
+1. [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
+2. [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
+3. [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
+4. [Ethereum transfers](/waves-client/transfers-and-gateways/ethereum-transfers.md)
+5. [Litecoin transfers](/waves-client/transfers-and-gateways/litecoin-transfers.md)
+6. [Zcash transfers](/waves-client/transfers-and-gateways/zcash-transfers.md)
+7. [Bitcoin Cash transfers](/waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
+8. [Dash transfers](/waves-client/transfers-and-gateways/dash-transfers.md)
+9. [EURO and USD transfers](/waves-client/transfers-and-gateways/eur-usd-transfers.md)
+
+The Waves wallet also supports small purchases of Waves in Euro and US Dollar (minimum 30 EUR/USD, maximum 200 EUR/USD) using plastic card.
+
+1. [Buying Waves using credit or debit card](/waves-client/transfers-and-gateways/buying-waves-using-card.md)
 
 As first, it is needed to feed your wallet with some crypto. If you don’t have Bitcoin \(Ether, LiteCoin or Z-Cash\), purchase them via your trusted exchange and send them to the wallet.
 
-In order to feed your wallet, Waves-platform proposes a third-party exchange able to process credit/debit card, however that procedure could result much more time consuming respect your trusted supplier \(The verification process is handled by [IDnow](#) service\).
+In order to feed your wallet, Waves-platform proposes a third-party exchange able to process your banl account, however that procedure could result much more time consuming respect your trusted supplier \(The verification process is handled by [IDnow](#) service\).
 
 To apply for a wire transfer using your bank account you must be an identified user under the KYC/AML procedures. If you would like to apply for that, be prepared to submit your scanned ID/Passport and get prepared for a very brief webcam session. Once the procedure will be completed you will be authorized to wire bank funds _in and out _the platform.
-

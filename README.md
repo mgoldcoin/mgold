@@ -1,6 +1,6 @@
 # What is Waves Platform
 
-Waves Platform is an open blockchain platform which is designed for ease of use and mass adoption.
+**Waves Platform** is an open blockchain platform which is designed for **ease of use** and **mass adoption.**
 
 * It's a comprehensive blockchain ecosystem that provides all necessary features for business adoption.
 * Fully functional exchange that is as fast as a centralized one but does not suffer from the same security issues.
@@ -10,5 +10,4 @@ Waves Platform is an open blockchain platform which is designed for ease of use 
 * The fiat-crypto problem is solved through Waves fiat gateways.
 * Built on top of the Scorex framework.
 
-
-
+**Note** Please find [**here**](/overview/how-to-use-this-guide.md) the instructions of using this guide.

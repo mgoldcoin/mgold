@@ -1,8 +1,8 @@
 # Waves Platform Components
 
-# 1. Lite Client
+# 1. Waves Client
 
-[The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](https://waves-platform.gitbooks.io/wavesdocs/content/waves-client/install-waves-client.html) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
+[The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
 # 2. Waves Wallet
 
@@ -14,33 +14,21 @@
 
 * The wallet has a built-in decentralized exchange platform that can be used to exchange assets, cryptocurrencies and fiat tokens.
 
-# 4. Decentralized cryptocurrency exchange \(“DEX”\)
+# 4. Decentralized cryptocurrency exchange \(DEX\)
 
-[DEX](https://docs.wavesplatform.com/decentralized-cryptocurrency-exchange-dex.html) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
+[DEX](/platform-features/decentralized-cryptocurrency-exchange-dex.md) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
-# 5. Nodes
-
-* [Easy to install](https://waves-platform.gitbooks.io/wavesdocs/content/guidelines/how-to-install-a-node.html).
-* A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
-* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
-* Receiving rewards from the network by leasing your balance to a full node. 
-
-# 6. Matchers
-
-* Nodes contain an order matcher which is used to power the decentralised exchange.
-* Matcher nodes pair buyers and sellers, executing trades instantly whilst still ensuring these are ultimately settled on the blockchain for maximum transparency and security.
-* Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
-
-# 7. Mobile apps
+# 5. Mobile apps
 
 * Waves Wallet is a mobile client to WavesPlatform available on [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) and [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
+* Get started with Waves wallet for [IOS](/mobile-apps/iOS.md) or [Android](//mobile-apps/android.md)
 
-# 8. Waves Gateways
+# 6. Waves Gateways
 
-Fiat Gateways such as USD/EUR/CNY will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/ZCash/Litecoin\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
+Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/LTC/ZCash/BCH/Dash\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
-## 8.1 Fiat Gateways \(Dollars and Euros\)
+## 6.1 Fiat Gateways
 
 The Waves US dollar and EUR gateways are available within the Waves Client — allowing anyone to deposit and withdraw USD, EUR and use the backed token within the Waves ecosystem. Waves users can deposit USD and EUR via the secure gateways, receiving in return a token that is 100% backed by USD or EUR reserves. This can be held, transferred and exchanged for other tokens quickly and at low cost, and withdrawn back through the gateway into the traditional financial system when required.
 
@@ -48,37 +36,72 @@ the USD and EUR gateways offer Waves users an easy way to move money into the bl
 
 **Note.** KYC/AML verification is needed to deposit and withdraw fiat money. However, KYC is not necessary for cryptocurrency transactions.
 
-## 8.2 Crypto Gateways
+## 6.2 Crypto Gateways
 
 All currencies listed below are integrated in Waves through gateways. You can see gateways as a means to transfer a currency to a platform.
 
 Current List of crypto gateways:
 
-1. WAVES
-2. Bitcoin
-3. Ethereum
+1. Bitcoin
+2. Ethereum
+3. Litecoin
 4. ZCash
-5. Litecoin 
+5. Bitcoin cash
+6. Dash
 
-WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
+BTC/ETH/LTC/ZCash/BCH/Dash gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
 
-Fees are minimal and the only delays are those required by blockchain confirmation times.
+Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future.
 
-![](/_assets/Waves%20Gateways.png)Nodes
+![](/_assets/Waves Gateways.png)
 
-Mining nodes \(pools\)
+# 7. Nodes
 
-Official nodes with open API \( wavesnodes.com \)
+Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](/waves-client/wallet-operations/leasing-waves.md) to you and get paid for securing the network.
 
-# Matcher nodes \(one official\)
+**Features:**
 
-Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher.
+* A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
+* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
+* Receiving rewards from the network by leasing your balance to a full node.
 
-orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation.
+**Note.** The current number of nodes is 168 in 23 different countries.
 
-Waves node contains DEX Matcher which can be enabled while settings the Waves node configuration file in the section of Matcher Settings.
+# 7.1 Mining nodes \(pools\)
 
-Clients apps
+You don’t need any fancy hardware, just a simple hosted server and at least 1,000 WAVES.
 
-MainNet / TestNet
+You can also run a public mining pool and have users lease their funds to you, thereby increasing your profits and sharing them with the community.
 
+You can find the full list of Waves nodes for leasing with their corresponding address here [http://dev.pywaves.org/generators-weekly/](http://dev.pywaves.org/generators-weekly/) :
+
+* [**wavesgo.com**](http://wavesgo.com/)
+* [**wavesfullnode.com**](http://wavesfullnode.com/)
+* [**wavescommunitynode.com**](http://wavescommunitynode.com/)
+* [**wavesnode.com**](http://wavesnode.com/)
+* [**wavespool.net**](http://wavespool.net/)
+* [**pospool.io**](http://pospool.io/)
+* [**wavesnode.net**](http://wavesnode.net/)
+* [**bearwaves.nl**](http://bearwaves.nl/)
+
+# 7.2 Official nodes with open API
+
+1. [**WavesGo**](http://www.wavesgo.com) is the foremost Waves node, with the biggest balance \(16,214,530 WAVES\) and a thriving community of supporters. The node distributes the WavesGo token to anyone who leases their funds to it.
+2. [**Wavesnode.NET**](https://wavesnode.net)** **represents a developing community in Netherlands with a balance of 10,589,578 WAVES. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Waves merchandise.
+
+**Note.** You can find a full nodes list at [dev.pywaves.org](http://dev.pywaves.org/generators/) and [Here](https://wavesplatform.com/leasing#nodes) you can find a list of the top nodes by WAVES balance.
+
+# 7.3 Matcher nodes
+
+Matcher nodes are responsible for pairing orders and executing trades quickly, whilst they are still settled on the blockchain. You’ll need to send your orders to a Matcher. Orders are transferred to the matcher across an encrypted channel and will not be visible to others until it is executed. This largely eliminates the possibility of market manipulation. These nodes connect the seller to the buyer for a commission, and then fix the transaction in the Waves blockchain.
+
+In principle, **any full node** can become a **Matcher**. Waves client connects to Matchers at [nodes.wavesnodes.com](https://nodes.wavesnodes.com/) by default.
+
+Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
+
+**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](/waves-full-node/how-to-configure-a-node.md) in the section of Matcher Settings.
+
+# 8. MainNet / TestNet
+
+1. **MainNet** - this is the real deal, the live Waves blockchain where you in the worst case could lose money if you are not careful. You can access the mainnet via a full node. it's integrated with the GUI in the Waves client, allowing anyone to use it without any technical knowledge or blockchain downloads.
+2. **TestNet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
