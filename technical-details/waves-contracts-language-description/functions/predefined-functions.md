@@ -2,10 +2,10 @@
 
 | Function | Description |
 | :--- | :--- |
-| IsDefined\("isDefined", 1, BOOLEAN, List\(\("opt", optionT\)\)\) | It checks if the option contains some value |
-| Extract\("extract", 1, TYPEPARAM\('T'\), List\(\("opt", optionT\)\)\) | Extract the value from the option |
-| Some\("Some", 1, optionT, List\(\("obj", TYPEPARAM\('T'\)\)\)\) | To create the option |
-| Size\("size", 1, LONG, List\(\("byteVector", BYTEVECTOR\)\)\) | It returns the size of byte array |
+| IsDefined\(opt\) | It checks if the option contains some value \(opt - optionT\) |
+| Extract\(opt\) | Extract the value from the option \(opt - optionT\) |
+| Some\(obj\) | To create the option \(obj - TYPEPARAM\('T'\)\) |
+| Size\(byteVector\) | It returns the size of byte array \(byteVector - BYTEVECTOR\) |
 | txById\(id\) | It returns the transaction by ID \(id - tx id\) |
 | getLong\(DataType.Long\) | It gets Long value from Data Transaction by Key |
 | getBoolean\(DataType.Boolean\) | It gets boolean value from Data Transaction by Key |
