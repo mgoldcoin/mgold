@@ -2,7 +2,7 @@
 
 | Function | Description |
 | :--- | :--- |
-| IsDefined | It checks if the option contains some value |
+| IsDefined\("isDefined", 1, BOOLEAN, List\(\("opt", optionT\)\) | It checks if the option contains some value |
 | Extract | Extract the value from the option |
 | Some | To create the option |
 | Size | It returns the size of byte array |
@@ -36,6 +36,4 @@ All constants will be declared in lazy **let** constructions, which delays the e
 The hash is not a variable: once created its values never change.
 
 **SetScriptTransaction **sets the script which verifies all outgoing transactions. The set script can be changed by another **SetScriptTransaction** call unless it’s prohibited by a previously set script.
-
-
 
