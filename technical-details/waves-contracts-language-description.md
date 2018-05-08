@@ -26,9 +26,9 @@ Assumptions:
 For example, we generated these addresses:
 * `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE` - Alice's account;
 * `3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf` - Bob's account;
-* `3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN` - Shared account with waves we want to spend.
+* `3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X` - Shared account with waves we want to spend.
 
-If Alice and Bob are the one person, it may be treated as 2FA.
+If Alice and Bob are the one person, it may be treated as 2FA (some kind).
 
 ### Creating a script
 
@@ -38,15 +38,13 @@ You can create a script at our [IDE site](http://ide.wavesplatform.com/).
 2. Edit a way you want. For this example we will use the following script:
 
   ```
-
-  let alicePubKey  = base58'3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE'
-  let bobPubKey    = base58'3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf'
+  let alicePubKey  = base58'Ey6Z9XkWsvG8JZwyxhkTjydRcGp1wg6rbC3AYcxq7Efr'
+  let bobPubKey    = base58'5PvhyouzHn2Pcev56oBvwpnsGK5fEu1dA8fM2nJQM4HR'
 
   let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proof0, alicePubKey)) then 1 else 0
   let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proof1, bobPubKey  )) then 1 else 0
 
   aliceSigned + bobSigned >= 2
-
   ```
 
 3. Switch to the `BINARY` tab
@@ -54,12 +52,13 @@ You can create a script at our [IDE site](http://ide.wavesplatform.com/).
 
 For example, compiled and Base58-encoded script is (separated by lines):
 ```
-wR9LfQrBFkyRVWqKkdjJAFEmgEYSPPJ37wysd6ABjDnvKBBwmoGUhuKj7n79eXe6Y8UTPmZsdAGTcu84xMDwXPXcKbcHbahS9QXsySCUYWnkaeWsVvoPmrmDMaPZakqpy
-T7zx8VciYLtfznKrTdaeD81eDsK9jdMDbpWN3ZfbW48u5nyFMmm7rtt3Bv4S83bj8ENAWub16qUeGUzMEvTWDogd1rWPuXz2HZxpjYoYDaat9TmoxhXbAvT91MWSzL3mi
-awRnwh3yC5SVxT6hxqYSav3rDZ1q7zdyW1VLgN62uwALEWVcVa6MyFCNt1Yqw3SFkbF5CmV7NVVTaeVbPdf4QLi9zn8W1ZReArHhuxj9G6zxDWdJ1vgKEYypMXQQQZUum
-FUMxA38ELyrGiS7VgqakeEUf3mJCKCGry6QRFoqdDrgmKpPcWbLNYvNQeko6mLsPhXB9hFjGMMsXUycBtuHtd3UbShdK3Hwmj4e5fRVfstjhXPHP35JUCrKkFwYrcsHom
-n3WK6fvPn6TtVxb6sbV6WHCaMVKqyH3w8N8Y7qBSfe4UH8aXdvJ2U3nc16jzJhSjXXJZdjYGCLoJM3GzAvyh99q6kNE3fRbweuEW4SECKkCJNWDMvBghBjhVTgoDkuQvr
-wTBQXKun5nx9tSBf
+5Xt9H8mHtikSytHF72xAU3NJwDydxXYMMhmWiNVLbYdBRQ3FHXksc8kW8tKFm3fGto1EwTt4YSybEUrpT2yB71hCvUS3WxWfsC4PxU7
+oTGt687w8T195NVeMPUqdWeHT5BwVrsoFkXF5SuMEGTaB4RyP43ygfTCNNdWauiV7guKmSvH3V2dFpK1HvhVPBjG1QafJ63Awp5qLzQ
+orFAbBVxgfqFLk6c99vrHCHpdjjiPv3vMN7FWLFrMPhGZbzBdyqQ8pCy1dkadxdkAytxZ3AUszTM2cfREgh9QjVVtcody7VsxDsbTPv
+uETHgcrk96jY7Pzft2nE7W9VF3EcGXJ7VDSKX5ucVpkZwugJCa4SgAkBGPnCxmUf3RmrAUuWaCQPMPfUyayyWfZ4wDguz74cLuDpmU3
+htVHbcuVQ7KrU55b5w4QFZyLDzHvgXXtCiqMEKFTrepcdy2LjA55D63EUhmQgVA6yqQbmLU6WKFabEsXETBRtzmCqPmGeB4iQXS16rB
+WBMHK214mYRoxdAH3zvKyWQcqndnWETd59mCEGkRjB9UUL6vmCF1ZQCSytdJKgyRhRQ7pzxxa5iL92hGSCRdw7yFWAv77aCV3ujJjqs
+SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
 ```
 
 I'll replace this huge script with `<our huge script>` to make examples cleaner.
@@ -72,9 +71,9 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
   {
     "type": 13,
     "version": 1,
-    "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN",
+    "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
     "fee": 100000,
-    "script": "<our huge script>"
+    "script": "<our huge script>`"
   }
   ```
 
@@ -83,22 +82,23 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
 2. And send it to [/transactions/sign](../development-and-api/waves-node-rest-api/transactions.md#post-transactionssign):
 
   ```bash
-  $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-API-Key: <it is a secret>' \
-  -d '{ "type": 13, "version": 1, "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN", "fee": 100000, "script": "<our huge script>" }' \
-  'https://example.org/transactions/sign'
+  $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
+  --header 'X-API-Key: <it is a secret>' \
+  -d '{ "type": 13, "version": 1, "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X", "fee": 100000, \
+  "script": "<our huge script>" }' 'https://example.org/transactions/sign'
   ```
 
   and receive a JSON ready to broadcast:
   ```json
   {
     "type": 13,
-    "id": "HnqsUwKu8iWLzWUFowbfNe55hABM9tBwqyD7kynVU45f",
-    "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN",
-    "senderPublicKey": "J33iZ1GztmNEtW3ecmp9hjaDz77s1n5HwPoNvsMAMkfn",
+    "id": "8w7yauNiENsJP8oDUpVEfiAzyEzMKoXbJEqS26Ht99mg",
+    "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+    "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe",
     "fee": 100000,
-    "timestamp": 1525451702956,
+    "timestamp": 1525797758819,
     "proofs": [
-      "4RVefCGCjZSvndCXWsGPFhEU3Jt5uJRocJByKScdHWkhzyJcFVgWZJtZAXif78yowsU4qfbzYCPa52KuGcY3C8Rc"
+      "4Ro4e4UrsVkaFbHtu96qZwHAdf8N4TtpjSGik9kRusmmYKCxicdsEqcgQrYden36nurqhY9EBkTKwD499kAi5rxe"
     ],
     "version": 1,
     "script": "<our huge script>"
@@ -108,10 +108,11 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
 3. Then we [broadcast](../development-and-api/waves-node-rest-api/transactions.md#post-transactionsbroadcast) a prepared request:
 
   ```bash
-  $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-API-Key: <it is a secret>' \
-  -d '{ "type": 13, "id": "HnqsUwKu8iWLzWUFowbfNe55hABM9tBwqyD7kynVU45f", "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN", \
-    "senderPublicKey": "J33iZ1GztmNEtW3ecmp9hjaDz77s1n5HwPoNvsMAMkfn", "fee": 100000, "timestamp": 1525451702956, \
-    "proofs": [ "4RVefCGCjZSvndCXWsGPFhEU3Jt5uJRocJByKScdHWkhzyJcFVgWZJtZAXif78yowsU4qfbzYCPa52KuGcY3C8Rc" ], \
+  $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
+  --header 'X-API-Key: <it is a secret>' \
+  -d '{ "type": 13, "id": "8w7yauNiENsJP8oDUpVEfiAzyEzMKoXbJEqS26Ht99mg", "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X", \
+    "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe", "fee": 100000, "timestamp": 1525797758819, \
+    "proofs": [ "4Ro4e4UrsVkaFbHtu96qZwHAdf8N4TtpjSGik9kRusmmYKCxicdsEqcgQrYden36nurqhY9EBkTKwD499kAi5rxe" ], \
     "version": 1, "script": "<our huge script>" }' \
   'https://example.org/transactions/broadcast'
   ```
@@ -119,9 +120,9 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
 4. And check it was applied:
 
   ```bash
-  $ curl http://example.org/addresses/scriptInfo/3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN
+  $ curl http://example.org/addresses/scriptInfo/3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X
   {
-    "address" : "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN",
+    "address" : "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
     "script" : "<our huge script>",
     "scriptText" : "<a text of our huge script>",
     "complexity" : 27,
@@ -133,18 +134,18 @@ Fine! Now we able to make transfers from this account.
 
 ### Trying to transfer waves with bad request
 
-**From shared account to `3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj`**
+**From shared account to another account: `3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj`**
 
 ```json
 {
   "type": 4,
-  "id": "B8nAhMtaXzPTBeuKBj19hhmrNjqSeHW8ndHJFGXiAqxF",
-  "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN",
-  "senderPublicKey": "J33iZ1GztmNEtW3ecmp9hjaDz77s1n5HwPoNvsMAMkfn",
+  "id": "B7G5KGorZDNrGZbVJ4bi4bhHKX62SVvf18gopK5pi43o",
+  "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+  "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe",
   "fee": 100000,
-  "timestamp": 1525454572947,
+  "timestamp": 1525797949015,
   "proofs": [
-    "5MjA1paSsFvyvEfimaxDaXzSbWWp64U1yDiYsfb2LDcnqwDkTTprau1yJLcbPApjhTAuBufScPycRbudVmLzt2Vb"
+    "yJKWiny1LtcamWxkxJvuYLxAJoxEnc9QTV4WHDk5D2N2rKsvuJjcobwgo1Mu1yRuPm5BZeYEW1nKaDSkZi7xSo5"
   ],
   "version": 2,
   "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj",
@@ -158,30 +159,163 @@ Fine! Now we able to make transfers from this account.
 Let's try:
 ```bash
 $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'X-API-Key: <it is a secret>' \
--d '{ "type": 4, "id": "B8nAhMtaXzPTBeuKBj19hhmrNjqSeHW8ndHJFGXiAqxF", "sender": "3N13xTzVpM2ukPLwyP46KJcuTxZ7mSf8ieN", \
-"senderPublicKey": "J33iZ1GztmNEtW3ecmp9hjaDz77s1n5HwPoNvsMAMkfn", "fee": 100000, "timestamp": 1525454572947, \
-"proofs": [ "5MjA1paSsFvyvEfimaxDaXzSbWWp64U1yDiYsfb2LDcnqwDkTTprau1yJLcbPApjhTAuBufScPycRbudVmLzt2Vb" ], \
+-d '{ "type": 4, "id": "B7G5KGorZDNrGZbVJ4bi4bhHKX62SVvf18gopK5pi43o", "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X", \
+"senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe", "fee": 100000, "timestamp": 1525797949015, \
+"proofs": [ "yJKWiny1LtcamWxkxJvuYLxAJoxEnc9QTV4WHDk5D2N2rKsvuJjcobwgo1Mu1yRuPm5BZeYEW1nKaDSkZi7xSo5" ], \
 "version": 2, "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj", "assetId": null, "feeAssetId": null, \
-"amount": 100000, "attachment": "" }' 'https://testnet-aws-fr-1.wavesnodes.com/transactions/broadcast'
+"amount": 100000, "attachment": "" }' 'https://example.org/transactions/broadcast'
 ```
 
 And we got:
 > State check failed. Reason: TransactionNotAllowedByScript
 
-**From shared account to Alice**
-
-Alice wants to fool Bob:
-
-```json
-```
-
-If we try to broadcast it, we will get the same error:
-> State check failed. Reason: TransactionNotAllowedByScript
-
 ### Scenario with a successful transfer
 
-Now, let's try to make a transactions with all required proofs.
+Now, let's try to make a valid transactions with all required proofs. For example, we want to sign this transfer request:
 
-2. Alice gives JSON to Bob
-3. Bob signs it by his private key
+```json
+{
+  "type": 4,
+  "version": 2,
+  "amount": 100000,
+  "fee": 500000,
+  "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+  "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj"
+}
+```
+
+1. Alice signs this request by her private key through [POST /transactions/sign/{signerAddress}](../development-and-api/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
+
+    * Signer address: `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE`
+    * JSON:
+
+      ```json
+      {
+        "type": 4,
+        "version": 2,
+        "amount": 100000,
+        "fee": 500000,
+        "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+        "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj"
+      }
+      ```
+
+    She gets:
+
+      ```json
+      {
+        "type": 4,
+        "id": "3Pin3DBWL9oW353sGzjdiuvdNp3xKwf2N6B69U5Bv6FS",
+        "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+        "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe",
+        "fee": 500000,
+        "timestamp": 1525798423735,
+        "proofs": [
+          "idjwEn3KZWD4R8mKMbonfu6NMuZnyergXXG4T4d5rUQmJu3gs6ChKwAvSXgxai9G7ASZKAm7CExFCt8z59Bv8WB"
+        ],
+        "version": 2,
+        "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj",
+        "assetId": null,
+        "feeAssetId": null,
+        "amount": 100000,
+        "attachment": ""
+      }
+      ```
+
+2. Alice gives received JSON of her transaction to Bob
+3. Bob signs it by his private key by same method [POST /transactions/sign/{signerAddress}](../development-and-api/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
+
+    * Signer address: `3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf`
+    * JSON:
+
+      ```json
+      {
+        "type": 4,
+        "id": "3Pin3DBWL9oW353sGzjdiuvdNp3xKwf2N6B69U5Bv6FS",
+        "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+        "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe",
+        "fee": 500000,
+        "timestamp": 1525798423735,
+        "proofs": [
+          "idjwEn3KZWD4R8mKMbonfu6NMuZnyergXXG4T4d5rUQmJu3gs6ChKwAvSXgxai9G7ASZKAm7CExFCt8z59Bv8WB"
+        ],
+        "version": 2,
+        "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj",
+        "assetId": null,
+        "feeAssetId": null,
+        "amount": 100000,
+        "attachment": ""
+      }
+      ```
+
+    He gets:
+
+      ```json
+      {
+        "type": 4,
+        "id": "3Pin3DBWL9oW353sGzjdiuvdNp3xKwf2N6B69U5Bv6FS",
+        "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+        "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe",
+        "fee": 500000,
+        "timestamp": 1525798423734,
+        "proofs": [
+          "J1VEeSFpNE5sE9Gf3GiZ5NarqUWtd5SUAH3HGGmnFVsHntbKsyQxubHS3itaPguYXoEcwFMdtMuLTuZYbmrjifG"
+        ],
+        "version": 2,
+        "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj",
+        "assetId": null,
+        "feeAssetId": null,
+        "amount": 100000,
+        "attachment": ""
+      }
+      ```
+
+4. Bob merges proofs:
+
+  ```json
+  {
+    "type": 4,
+    "id": "3Pin3DBWL9oW353sGzjdiuvdNp3xKwf2N6B69U5Bv6FS",
+    "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+    "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe",
+    "fee": 500000,
+    "timestamp": 1525798423735,
+    "proofs": [
+      "idjwEn3KZWD4R8mKMbonfu6NMuZnyergXXG4T4d5rUQmJu3gs6ChKwAvSXgxai9G7ASZKAm7CExFCt8z59Bv8WB",
+      "J1VEeSFpNE5sE9Gf3GiZ5NarqUWtd5SUAH3HGGmnFVsHntbKsyQxubHS3itaPguYXoEcwFMdtMuLTuZYbmrjifG"
+    ],
+    "version": 2,
+    "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj",
+    "assetId": null,
+    "feeAssetId": null,
+    "amount": 100000,
+    "attachment": ""
+  }
+  ```
+  
+  Note, according to our script, the Alice's signature should be the first.
+
 4. Bob [broadcasts](../development-and-api/waves-node-rest-api/transactions.md#post-transactionsbroadcast) the transaction
+
+    ```json
+    {
+      "type": 4,
+      "id": "3Pin3DBWL9oW353sGzjdiuvdNp3xKwf2N6B69U5Bv6FS",
+      "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
+      "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe",
+      "fee": 500000,
+      "timestamp": 1525798423735,
+      "proofs": [
+        "idjwEn3KZWD4R8mKMbonfu6NMuZnyergXXG4T4d5rUQmJu3gs6ChKwAvSXgxai9G7ASZKAm7CExFCt8z59Bv8WB",
+        "J1VEeSFpNE5sE9Gf3GiZ5NarqUWtd5SUAH3HGGmnFVsHntbKsyQxubHS3itaPguYXoEcwFMdtMuLTuZYbmrjifG"
+      ],
+      "version": 2,
+      "recipient": "3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj",
+      "assetId": null,
+      "feeAssetId": null,
+      "amount": 100000,
+      "attachment": ""
+    }
+    ```
+
+And now it works!
