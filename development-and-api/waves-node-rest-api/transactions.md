@@ -151,6 +151,66 @@ or
 }
 ```
 
+### POST /transactions/sign/{signerAddress}
+
+![master](https://img.shields.io/badge/master-branch-0056FF.svg)
+
+Signs an arbitrary transaction by a private key of signer. This requires an API key, a signer address and transaction type to be specified in the request body. 
+
+`signerAddress` should be created by [POST /addresses](https://docs.wavesplatform.com/development-and-api/waves-node-rest-api/address.html#post-addresses).
+
+The types are as follows:
+
+| Type Code | Transaction Type |
+| :--- | :--- |
+| 3 | Issue |
+| 4 | Transfer |
+| 5 | Reissue |
+| 6 | Burn |
+| 8 | Lease |
+| 9 | Lease Cancel |
+| 10 | Alias |
+| 12 | Data |
+| 13 | Set Script |
+| 14 | Sponsorship |
+
+An optional `timestamp` parameter may be specified, which represents transaction timestamp in milliseconds. If it is omitted, current server time is used.
+
+**Request params**
+
+```
+"type" - Transaction type
+"timestamp" - [optional] transaction timestamp in milliseconds
+and all the other parameters appropriate for a transaction of the given type.
+```
+
+**Request JSON example**
+
+```js
+{
+ "type": 10,
+ "timestamp": 1516171819000,
+ "sender": "3MtrNP7AkTRuBhX4CBti6iT21pQpEnmHtyw",
+ "fee": 100000,
+ "alias": "ALIAS",
+}
+```
+
+**Response JSON example**
+
+```js
+{
+ "type":10,
+ "id":"9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr",
+ "sender":"3MtrNP7AkTRuBhX4CBti6iT21pQpEnmHtyw",
+ "senderPublicKey":"G6h72icCSjdW2A89QWDb37hyXJoYKq3XuCUJY2joS3EU",
+ "fee":100000000,
+ "timestamp":46305781705234713,
+ "signature":"4gQyPXzJFEzMbsCd9u5n3B2WauEc4172ssyrXCL882oNa8NfNihnpKianHXrHWnZs1RzDLbQ9rcRYnSqxKWfEPJG",
+ "alias":"dajzmj6gfuzmbfnhamsbuxivc"
+}
+```
+
 ### POST /transactions/broadcast
 
 Broadcasts a signed transaction of any type.
