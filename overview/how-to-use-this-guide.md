@@ -53,11 +53,12 @@ This section contains all information about Installing, configuring and upgradin
 # 6. Development and API
 
 1. [Technical Details](/technical-details/technical-details.md)
-2. [Node API Overview](/development-and-api/node-api-overview.md)
+2. [Waves Smart Contracts](/technical-details/waves-contracts-language-description.md)
 3. [Client Libraries ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md) and [WavesCS](/development-and-api/client-libraries/wavescs.md)\)
 4. [DEX API](/development-and-api/dex-api.md) \([Matcher](/development-and-api/dex-api/matcher.md)\)
-5. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
-6. [Examples](/development-and-api/examples.md)
+5. [Node API Overview](https://legacy.gitbook.com/book/waves-platform/wavesdocs/edit#)
+6. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
+7. [Examples](/development-and-api/examples.md)
 
 # 7. Frequently Asked Questions \(FAQ\)
 
