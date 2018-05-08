@@ -47,6 +47,7 @@
   * [​Token burning](waves-client/assets-management/burn-an-asset.md)
   * [Token distribution](waves-client/assets-management/mass-transfer.md)
 
+
 ## Mobile applications
 
 * [Waves Wallet for IOS Devices](mobile-apps/iOS.md)
@@ -121,6 +122,9 @@
   * [Peers](development-and-api/waves-node-rest-api/peers.md)
   * [Blocks](development-and-api/waves-node-rest-api/blocks.md)
   * [Utils](development-and-api/waves-node-rest-api/utils.md)
+* [Client API](development-and-api/client-api/overview.md)
+  * [Web auth API](development-and-api/client-api/auth-api.md)
+  * [Payment API](development-and-api/client-api/payments-api.md)
 * [Examples](development-and-api/examples.md)
   * [Create Your First crypto Trading Bot](development-and-api/examples/trading-bot.md)
   * [Setting Up a Waves Platform Full Node on Digital Ocean](development-and-api/examples/set-up-full-node-on-digital-ocean.md)
