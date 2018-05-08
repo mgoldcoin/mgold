@@ -1,4 +1,4 @@
-# Smart Asset With Notary Proof
+# Smart Asset With Notary Proof Example
 
 Suppose that we want to transfer some assets only when we receive proof of possession from the notary, who we can trust.
 
