@@ -5,13 +5,13 @@
 | IsDefined\("isDefined", 1, BOOLEAN, List\(\("opt", optionT\)\)\) | It checks if the option contains some value |
 | Extract\("extract", 1, TYPEPARAM\('T'\), List\(\("opt", optionT\)\)\) | Extract the value from the option |
 | Some\("Some", 1, optionT, List\(\("obj", TYPEPARAM\('T'\)\)\)\) | To create the option |
-| Size | It returns the size of byte array |
-| txById | It returns the transaction by ID |
-| getLong | It gets Long value from Data Transaction by Key |
-| getBoolean | It gets boolean value from Data Transaction by Key |
-| getbyteVector | It gets byte array fro Data Transaction by Key |
-| addressFromPublicKey | It gets the address from a public key |
-| addressFromString | It gets the address from string |
+| Size\("size", 1, LONG, List\(\("byteVector", BYTEVECTOR\)\)\) | It returns the size of byte array |
+| txById\(id\) | It returns the transaction by ID \(id - tx id\) |
+| getLong\(DataType.Long\) | It gets Long value from Data Transaction by Key |
+| getBoolean\(DataType.Boolean\) | It gets boolean value from Data Transaction by Key |
+| getByteArray\(DataType.ByteArray\) | It gets byte array fro Data Transaction by Key |
+| addressFromPublicKey\(publicKey\) | It gets the address from a public key \(pk - byte vector\) |
+| addressFromString\(String\) | It gets the address from string \(string - STRING\) |
 
 There is an important property that the **smart account** does not store any data on the blockchain. A **smart account** will only have access to blockchain state values that can be retrieved and executed relatively fast, in a “constant” time, for example to such fields as:
 
