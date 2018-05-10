@@ -4,6 +4,9 @@ This document describes how the algorithms used in the project to create private
 
 Briefly: in the project to create a cryptographic hashes used`Blake2b256`and`Keccak256`algorithms \(in the form of hash chain and separately\).`Curve25519`\(ED25519 with X25519 keys\) scheme applied to create and verify signatures.`Base58`is used to create the string form of bytes. If you want to create an application, you should find the implementation of these algorithms on your programming language.
 
+**Note**: We use KECCAK which differs slightly than that assigned as the SHA-3 (FIPS-202).
+
+
 # Bytes encoding Base58
 
 In order to ease human readable, all arrays of bytes in the project are encoded by Base58 algorithm with Bitcoin alphabet.
