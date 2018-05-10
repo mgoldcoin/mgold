@@ -10,8 +10,9 @@
 | getLong\(DataType.Long\) | It gets Long value from Data Transaction by Key |
 | getBoolean\(DataType.Boolean\) | It gets boolean value from Data Transaction by Key |
 | getByteArray\(DataType.ByteArray\) | It gets byte array fro Data Transaction by Key |
-| addressFromPublicKey\(publicKey\) | It gets the address from a public key \(pk - BYTEVECTOR\) |
-| addressFromString\(String\) | It gets the address from string \(string - STRING\) |
+| addressFromPublicKey\(pk\) | It gets the address from a public key \(pk - BYTEVECTOR\) |
+| addressFromString\(Str\) | It gets the address from string \(str - STRING\) |
+| getData\(addr, key, dataType\) | It gets the data from \(addr: Obj, Key: String, dataType: DataType\) |
 
 There is an important property that the **smart account** does not store any data on the blockchain. A **smart account** will only have access to blockchain state values that can be retrieved and executed relatively fast, in a “constant” time, for example to such fields as:
 
