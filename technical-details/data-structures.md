@@ -403,7 +403,7 @@ Below is a sample **Mass Transfer transaction** encoded as **JSON**:
 }
 ```
 
-#### 
+####
 
 #### Data transaction
 
@@ -429,6 +429,35 @@ Below is a sample **Mass Transfer transaction** encoded as **JSON**:
 The transaction signature is calculated from the fields 1 to N+1, i.e. proofs and signatures are not included.
 
 **Note.** [**Here**](/technical-details/data-transaction.md) you can find more details about Data Transaction.
+
+Below is a sample **Data transaction** encoded as **JSON**:
+
+```cpp
+{
+ "type" : 12,
+ "id" : "CwHecsEjYemKR7wqRkgkZxGrb5UEfD8yvZpFF5wXm2Su",
+ "sender" : "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
+ "senderPublicKey" : "5AzfA9UfpWVYiwFwvdr77k6LWupSTGLb14b24oVdEpMM",
+ "fee" : 100000,
+ "timestamp" : 1520945679531,
+ "proofs" : [ "4huvVwtbALH9W2RQSF5h1XG6PFYLA6nvcAEgv79nVLW7myCysWST6t4wsCqhLCSGoc5zeLxG6MEHpcnB6DPy3XWr" ],
+ "data" : [ {
+   "key" : "int",
+   "type" : "integer",
+   "value" : 24
+ }, {
+   "key" : "bool",
+   "type" : "boolean",
+   "value" : true
+ }, {
+   "key" : "blob",
+   "type" : "binary",
+   "value" : "BzWHaQU"
+ } ],
+ "version" : 1,
+ "height" : 303
+}
+```
 
 ## Network messages
 
@@ -582,6 +611,3 @@ Peers message is a reply on GetPeers message.
 | ... | ... | ... | ... | ... |
 | 6 + 2 \* N - 1 | Checkpoint \#N height | Long | 13 + 72 \* \(N - 1\) + 4 | 8 |
 | 6 + 2 \* N | Checkpoint \#N signature | Bytes | 13 + 72 \* \(N - 1\) + 12 | 64 |
-
-
-
