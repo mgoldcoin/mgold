@@ -47,7 +47,6 @@
   * [​Token burning](waves-client/assets-management/burn-an-asset.md)
   * [Token distribution](waves-client/assets-management/mass-transfer.md)
 
-
 ## Mobile applications
 
 * [Waves Wallet for IOS Devices](mobile-apps/iOS.md)
@@ -108,6 +107,7 @@
   * [PyWaves](development-and-api/client-libraries/pywaves.md)
   * [WavesJ](development-and-api/client-libraries/wavesj.md)
   * [WavesCS](development-and-api/client-libraries/wavescs.md)
+  * [Waves-C](development-and-api/client-libraries/waves-c.md)
 * [DEX API](development-and-api/dex-api.md)
   * [Matcher](development-and-api/dex-api/matcher.md)
 * [Node API Overview](development-and-api/node-api-overview.md)
