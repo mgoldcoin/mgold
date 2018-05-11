@@ -326,6 +326,18 @@ The transaction's signature is calculated from the following bytes:
 | 5 | Fee | Long | 41+N | 8 |
 | 6 | Timestamp | Long | 49+N | 8 |
 
+#### Lease Cancel Transactions
+
+| # | Field               | Length | Type    |
+|---|---------------------|--------|---------|
+| 1 |    Version(0x01)    |    1   | Byte    |
+| 2 |      chainByte      |    1   | Bytes   |
+| 3 |       LeaseId       |    1   | ByteStr |
+| 4 |         fee         |    8   | Long    |
+| 5 | Sender's public key | 32     | Bytes   |
+| 6 |      TineStamp      | 8      | Long    |
+
+
 #### Create alias transaction
 
 | \# | Field name | Type | Position | Length |
