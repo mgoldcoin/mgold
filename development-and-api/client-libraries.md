@@ -6,7 +6,7 @@ Waves Full Node provides access to the [REST API](/development-and-api/node-api-
 * [WavesJ for Java](/development-and-api/client-libraries/wavesj.md)
 * [WavesCS for C\#](/development-and-api/client-libraries/wavescs.md)
 * [Waves-API for TypeScript/JavaScript](https://github.com/wavesplatform/waves-api) 
-* Waves-C
+* [WavesC](/development-and-api/client-libraries/waves-c.md)
 
 All libraries are open for contribution and testing.
 

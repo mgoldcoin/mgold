@@ -1,4 +1,4 @@
-# Waves-C
+# WavesC
 
 C library for working with Waves.
 

@@ -107,7 +107,7 @@
   * [PyWaves](development-and-api/client-libraries/pywaves.md)
   * [WavesJ](development-and-api/client-libraries/wavesj.md)
   * [WavesCS](development-and-api/client-libraries/wavescs.md)
-  * [Waves-C](development-and-api/client-libraries/waves-c.md)
+  * [WavesC](development-and-api/client-libraries/waves-c.md)
 * [DEX API](development-and-api/dex-api.md)
   * [Matcher](development-and-api/dex-api/matcher.md)
 * [Node API Overview](development-and-api/node-api-overview.md)
