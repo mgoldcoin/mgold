@@ -17,9 +17,9 @@ Smart contracts will bring new additions and added benefits to the Waves ecosyst
 
 There are two Stages, Figure 2:
 
-1. Non-Turing Complete contracts which cover a large proportion of use cases, including smart accounts and smart tokens.
+1. Non-Turing Complete Smart Contracts which cover a large proportion of use cases, including smart accounts and smart tokens.
 
-2. Fully-Fledged Turing Complete contracts which will allow the creation of decentralised applications on the blockchain and the possibility to send the transactions themselves.
+2. Turing Complete Smart Contracts which will allow the creation of decentralised applications on the blockchain and the possibility to send the transactions themselves.
 
 ![](/_assets/Stages-of-Waves-Smart-Contracts-Implementation.png)Figure 2, Stages of Waves Smart Contracts Implementation.
 
