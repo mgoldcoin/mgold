@@ -1,5 +1,7 @@
 # Waves Smart Contracts
 
+Smart contracts are an important mechanism for any blockchain platform and their realisation should be convenient and understandable for people.
+
 ## Benefits of Smart Contracts on Waves Platform
 
 Smart contracts will bring new additions and added benefits to the Waves ecosystem, Figure 1:
@@ -23,7 +25,22 @@ There are two Stages, Figure 2:
 
 ![](/_assets/Stages-of-Waves-Smart-Contracts-Implementation.png)Figure 2, Stages of Waves Smart Contracts Implementation.
 
+## Smart Accounts
 
+The idea of a smart account is the following:
 
+Before the transaction is submitted for inclusion in the next block, the account checks if the transaction meets certain requirements, defined in a script. The script is attached to the account so the account can validate every transaction before confirming it. The main requirement for our smart accounts is that they can be run for the price of normal transactions with a predefined fee, **without** any additional **“gas”** or other costs.
 
+Smart accounts cannot send transactions themselves or transfer funds according to given conditions, but can read data from the blockchain \(for example, the height of a block or signatures from the transaction\) and return the result of a predicate obtained on the basis of this data.
+
+## Smart Assets
+
+If we plan to apply constraints on all operations for a specific asset, we cannot use a smart account. In our paradigm, we have smart assets for this purpose: the script will be attached to the asset and will work in a similar way. Transactions for such assets are valid only if the script returns True. For example, a script can verify proofs from a transaction, check if a notary/escrow approves the transaction, and that operations with the asset aren’t locked for a specified time. The script for the token is invoked upon the following operations with an asset:
+
+* Transfer Transaction
+* Mass Transfer Transaction
+* Reissue Transaction
+* Burn Transaction
+
+**Note.** you can find more technical details about our smart contracts implementation [**here**](/technical-details/waves-contracts-language-description.md).
 
