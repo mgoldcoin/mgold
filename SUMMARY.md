@@ -17,6 +17,7 @@
 * [Leased Proof of Stake \(LPoS\)](platform-features/leased-proof-of-stake-lpos.md)
 * [Waves-NG Protocol](platform-features/waves-ng-protocol.md)
 * [Activation Protocol](platform-features/activation-protocol.md)
+* [Smart Contracts](platform-features/smart-contracts.md)
 
 ## Waves Client
 
