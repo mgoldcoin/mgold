@@ -21,6 +21,7 @@ This section contains explanations about Waves main Features such as \(Waves-NG 
 3. [Leased Proof of Stake \(LPoS\).](/platform-features/leased-proof-of-stake-lpos.md)
 4. [Waves-NG Protocol.](/platform-features/waves-ng-protocol.md)
 5. [Activation Protocol.](/platform-features/activation-protocol.md)
+6. [Smart Contracts.](/platform-features/smart-contracts.md)
 
 # 3. Waves Client
 
