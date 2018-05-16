@@ -4,7 +4,7 @@ Suppose that there are 3 people in a team and they hold common funds for corpora
 
 It is convenient for the team to make a decision about the allocation of common funds according to the majority decision, and they use a multi-signature account to do this.
 
-They create an account and doSetScriptTransactionwith the multi-sig account, which can be implemented as follows:
+They create an account and do SetScriptTransaction with the multi-sig account, which can be implemented as follows:
 
 ```js
 let alicePubKey  = base58’B1Yz7fH1bJ2gVDjyJnuyKNTdMFARkKEpV’
