@@ -2,9 +2,7 @@
 
 ### Use Cases
 
-* Users can set fee in asset but node owners don't need to allow payments in this asset. 
-
-Then sponsorship is set for an asset, the miner will receive a fee in Waves for the processing of a transaction with the fee in the sponsored asset.
+Users can set fee in asset but node owners don't need to allow payments in this asset. Then sponsorship is set for an asset, the miner will receive a fee in Waves for the processing of a transaction with the fee in the sponsored asset.  
 Only the issuer of the asset can set the sponsorship. The sponsorship is set by giving the rate at which the fee in the asset is converted in the fee in Waves.
 
 ### Feature activation
@@ -20,18 +18,17 @@ Only the issuer of the asset can set the sponsorship. The sponsorship is set by 
 Binary format of a SponsorFee transaction is as follows:
 
 | Field | Size in Bytes | Comment |
-| ----- | -------------:| ----- |
-| type | 1 | == 14
-| version | 1 | == 1 at this time
-| sender's public key | 32
-| Asset ID | 32     |
-| minimal fee in assets | 8 | Zero value assume canceling sponsorship.
-| timestamp | 8 |
-| fee | 8 |
-| proofs | ? | currently only signature is supported
+| --- | ---: | --- |
+| type | 1 | == 14 |
+| version | 1 | == 1 at this time |
+| sender's public key | 1 | 32 |
+| Asset ID |  | 32 |
+| minimal fee in assets | 8 | Zero value assume canceling sponsorship. |
+| timestamp | 1 | 8 |
+| fee | 1 | 8 |
+| proofs | ? | currently only signature is supported |
 
-
-Json representation
+JSON representation
 
 ```js
 {
@@ -52,7 +49,7 @@ Json representation
 
 Fee is payable in WAVES only and is configured in node settings file as usual:
 
-```
+```js
 fees {
     sponsor-fee {
       WAVES = 100000000
@@ -63,23 +60,25 @@ fees {
 
 ### API
 
-`POST /asset/sponsor` signs and sends a start/update sponsorship transaction. This endpoint requires API key. Sample input is as follows:
+`POST /assets/sponsor` signs and sends a start/update sponsorship transaction. This endpoint requires API key. Sample input is as follows:
+
 ```js
 {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
-  "asettId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
+  "assetId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
   "minSponsoredAssetFee": 100000,
   "fee": 100000000
 }
 ```
 
 `POST /asset/sponsor` signs and sends a canceling sponsorship transaction. This endpoint requires API key. Sample input is as follows:
+
 ```js
 {
   "version": 1,
   "sender": "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
-  "asettId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
+  "assetId":"AP5dp4LsmdU7dKHDcgm6kcWmeaqzWi2pXyemrn4yTzfo",
   "minSponsoredAssetFee": null,
   "fee": 100000000
 }
@@ -98,3 +97,6 @@ Minimal fee was moved to consensus.
 ### Open Questions
 
 * Should we allow sponsorship by non issuer?
+
+
+
