@@ -25,6 +25,7 @@ Avaliable data types are
 * `Boolean`
 * `ByteArray`
 * `Option[T]`
+* `List[T]`
 * Predefined non-recursive data structure like `Transaction`, `Block`etc
 * `Nothing`- "bottom type", no instance of this type can exist
 
@@ -65,6 +66,8 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 `proofs` : `List[ByteArray]`
 
+`transfers` : `List[Transfers]`
+
 Note that if transaction doesn't contain certain field, like `PaymentTransaction` doesn't contain `assetId` , the script execution will fail and result in exectution result being `false`.
 
 In order to protect from that failure, good practice is to check tx type upront, e.g.
@@ -89,6 +92,7 @@ WavesContracts standard library not only contains predefined data types and inst
 * `isDefined` : `Option[T] => Boolean`
 * `Some `: `T` =&gt; Option\[T\]\`
 * `size `: `ByteArray => Long`
+* `size `: `List[T] => Long`
 
 ### Accessing blockchain state and Oracle data
 
