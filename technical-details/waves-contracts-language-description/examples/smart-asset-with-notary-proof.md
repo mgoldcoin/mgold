@@ -6,7 +6,7 @@ Also, we want to check that the recipient is able to accept the transfer. For th
 
 ```js
 let notary = addressFromBytes(base583PM...)
-let notaryAcceptsTransfer = checkProof(tx.body, tx.proof7, notary)
+let notaryAcceptsTransfer = checkProof(tx.body, tx.proofs[7], notary)
 let maybeAccepted = getBoolean(tx.recipient, tx.id)
 let recipientAcceptsTransfer = isDefined(maybeAccepted)
     then extract(maybeAccepted) else false

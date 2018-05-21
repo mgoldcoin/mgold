@@ -41,8 +41,8 @@ You can create a script at our [IDE site](http://ide.wavesplatform.com/).
   let alicePubKey  = base58'Ey6Z9XkWsvG8JZwyxhkTjydRcGp1wg6rbC3AYcxq7Efr'
   let bobPubKey    = base58'5PvhyouzHn2Pcev56oBvwpnsGK5fEu1dA8fM2nJQM4HR'
 
-  let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proof0, alicePubKey)) then 1 else 0
-  let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proof1, bobPubKey  )) then 1 else 0
+  let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proofs[0], alicePubKey)) then 1 else 0
+  let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proofs[1], bobPubKey  )) then 1 else 0
 
   aliceSigned + bobSigned >= 2
   ```

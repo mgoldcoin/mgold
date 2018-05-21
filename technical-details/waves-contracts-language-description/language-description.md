@@ -63,21 +63,7 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 `recipient` : `AddressOrAlias`
 
-`proof0` : `ByteArray`
-
-`proof1` : `ByteArray`
-
-`proof2` : `ByteArray`
-
-`proof3` : `ByteArray`
-
-`proof4` : `ByteArray`
-
-`proof5` : `ByteArray`
-
-`proof6` : `ByteArray`
-
-`proof7` : `ByteArray`
+`proofs` : `List[ByteArray]`
 
 Note that if transaction doesn't contain certain field, like `PaymentTransaction` doesn't contain `assetId` , the script execution will fail and result in exectution result being `false`.
 
@@ -129,9 +115,9 @@ let alicePubKey  = base58'B1Yz7fH1bJ2gVDjyJnuyKNTdMFARkKEpV'
 let bobPubKey    = base58'7hghYeWtiekfebgAcuCg9ai2NXbRreNzc'
 let cooperPubKey = base58'BVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'
 
-let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proof0, alicePubKey  )) then 1 else 0
-let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proof1, bobPubKey    )) then 1 else 0
-let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proof2, cooperPubKey )) then 1 else 0
+let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proofs[0], alicePubKey  )) then 1 else 0
+let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proofs[1], bobPubKey    )) then 1 else 0
+let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proofs[2], cooperPubKey )) then 1 else 0
 
 aliceSigned + bobSigned + cooperSigned >= 2
 ```
