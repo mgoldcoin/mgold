@@ -38,6 +38,14 @@ Avaliable data types are
 
 It is higher-kind data type indicating a possibility of absence of value of inner type. This rather popular construct from functional programming languages\(Haskell, Scala, Clojure\) nowdays gets included in majority of standard libraries for many popular languages like Java, C\#, etc.
 
+### List\[T\]
+
+User cann't create `List[T]` instances but input data can contains some `List[T]` fields.
+Now all of transactions contain field `proofs: List[ByteArray]` and MassTransfer transactions contain field `transfers: List[Transfer]`.
+
+To determinate count of lists elements you cat use function `size`.
+To access lists element you can use syntax `list[index]`.
+
 # Predefined data structures
 
 1. `Address` and `AddressOrAlias` \(case for recipient\) contains `bytes`
@@ -66,7 +74,7 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 `proofs` : `List[ByteArray]`
 
-`transfers` : `List[Transfers]`
+`transfers` : `List[Transfer]`
 
 Note that if transaction doesn't contain certain field, like `PaymentTransaction` doesn't contain `assetId` , the script execution will fail and result in exectution result being `false`.
 
@@ -81,6 +89,12 @@ In every script, available instances are
 * `tx` : `Transaction`
 * `height` : `Long`
 * `None` : `Option[Nothing]`
+
+3. `Transfer` represent earch transfer of MassTransfer transaction and contains fields:
+
+`amount` : `Long`
+
+`address` : `AddressOrAlias`
 
 # Predefined functions
 
