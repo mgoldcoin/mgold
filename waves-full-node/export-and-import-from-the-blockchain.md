@@ -1,13 +1,11 @@
 # Export and import of the blockchain
 
 | Note | This functionality available since version 0.8. |
-| :--- | :--- |
 
 
 ## Export existing blocks to a binary file {#user-content-export-existing-blocks-to-a-binary-file}
 
 | Note | You have to stop the node before starting export of blocks. |
-| :--- | :--- |
 
 
 To export existing blockchain to the binary file run following command. Export is quite a fast operation, but resulting binary file could additionally take up to 1/3 of`data`folder size on disk.
@@ -33,7 +31,6 @@ The output file name parameter is optional, name 'blockchain' is used by default
 ## Import blocks from the binary file {#user-content-import-blocks-from-the-binary-file}
 
 | Warning | This operation will completely overwrite existing node data. Do not forget to make a backup of your node’s`data`folder. |
-| :--- | :--- |
 
 
 To import the blockchain and fully rebuild the state run the following command.
@@ -52,5 +49,10 @@ sudo -u waves[-testnet] java -cp '/usr/share/waves[-testnet]/lib/*' -Dwaves.dire
 
 Import is a heavy operation and could take few hours to complete.
 
+## Downloading exported blockchain
+
+You can download recent exported blockchain here: 
+* TestNet: http://blockchain.testnet.wavesnodes.com/
+* MainNet: http://blockchain.wavesnodes.com/
 
 
