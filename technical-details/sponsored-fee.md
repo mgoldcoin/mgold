@@ -21,11 +21,11 @@ Binary format of a SponsorFee transaction is as follows:
 | --- | ---: | --- |
 | type | 1 | == 14 |
 | version | 1 | == 1 at this time |
-| sender's public key | 1 | 32 |
-| Asset ID |  | 32 |
+| sender's public key | 32 |
+| Asset ID | 32 |
 | minimal fee in assets | 8 | Zero value assume canceling sponsorship. |
-| timestamp | 1 | 8 |
-| fee | 1 | 8 |
+| timestamp | 8 |
+| fee | 8 |
 | proofs | ? | currently only signature is supported |
 
 JSON representation
