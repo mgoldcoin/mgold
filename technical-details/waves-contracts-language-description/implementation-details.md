@@ -25,9 +25,10 @@ if = "if" , "(" , block , ")" , "then" , block , "else" , block
 ref = varName
 getter = ref , "." , varName
 functionCall = varName , "(" , expr* , ")"
+listAccess = expr , "[" , expr* , "]"
 braces = "(" , block , ")"
 curlyBraces = "{" , block , "}"
-atom = if | functionCall | byteVector | string | number | braces | curlyBraces | getter | ref
+atom = if | functionCall | listAccess | byteVector | string | number | braces | curlyBraces | getter | ref
 ```
 
 All types available are:
@@ -36,7 +37,7 @@ All types available are:
 | :--- | :--- |
 | Bottom Type | NOTHING |
 | Primitive Types | UNIT, LONG, BYTEVECTOR, BOOLEAN, STRING |
-| Complex Types | TYPEREF\(typename\) and Option\(Type\) |
+| Complex Types | TYPEREF\(typename\), Option\(Type\) and List\(Type\) |
 
 **Note. **User can't create new types, only predefined ones are available.
 

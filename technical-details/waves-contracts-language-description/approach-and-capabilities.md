@@ -9,7 +9,7 @@ An account can be restricted of any outgoing transaction based on signature(s) a
 To setup an `AccountScript`, account needs to issue `SetScriptTransaction` which contains the predicate. Upon success every outgoing transaction will be validated not by the default mechanism of signature validation, but according to predicate logic. `AccountScript` can further be changed or cleared if the script installed allows the new `SetScriptTransaction` to process. The default account has no script, which is equivalent(except for restrictions -- read further!) to this script:
 
 ```
-checkSig(tx.bodyBytes, tx.proof0, tx.senderPk)
+checkSig(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 ```
 
 Some actions are denied for `ScriptedAccount`s:

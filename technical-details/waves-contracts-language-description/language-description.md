@@ -25,6 +25,7 @@ Avaliable data types are
 * `Boolean`
 * `ByteArray`
 * `Option[T]`
+* `List[T]`
 * Predefined non-recursive data structure like `Transaction`, `Block`etc
 * `Nothing`- "bottom type", no instance of this type can exist
 
@@ -36,6 +37,14 @@ Avaliable data types are
 * `None`
 
 It is higher-kind data type indicating a possibility of absence of value of inner type. This rather popular construct from functional programming languages\(Haskell, Scala, Clojure\) nowdays gets included in majority of standard libraries for many popular languages like Java, C\#, etc.
+
+### List\[T\]
+
+User cann't create `List[T]` instances but input data can contains some `List[T]` fields.
+Now all of transactions contain field `proofs: List[ByteArray]` and MassTransfer transactions contain field `transfers: List[Transfer]`.
+
+To determinate count of lists elements you cat use function `size`.
+To access lists element you can use syntax `list[index]`.
 
 # Predefined data structures
 
@@ -63,21 +72,9 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 `recipient` : `AddressOrAlias`
 
-`proof0` : `ByteArray`
+`proofs` : `List[ByteArray]`
 
-`proof1` : `ByteArray`
-
-`proof2` : `ByteArray`
-
-`proof3` : `ByteArray`
-
-`proof4` : `ByteArray`
-
-`proof5` : `ByteArray`
-
-`proof6` : `ByteArray`
-
-`proof7` : `ByteArray`
+`transfers` : `List[Transfer]`
 
 Note that if transaction doesn't contain certain field, like `PaymentTransaction` doesn't contain `assetId` , the script execution will fail and result in exectution result being `false`.
 
@@ -93,6 +90,12 @@ In every script, available instances are
 * `height` : `Long`
 * `None` : `Option[Nothing]`
 
+3. `Transfer` represent earch transfer of MassTransfer transaction and contains fields:
+
+`amount` : `Long`
+
+`address` : `AddressOrAlias`
+
 # Predefined functions
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
@@ -103,6 +106,7 @@ WavesContracts standard library not only contains predefined data types and inst
 * `isDefined` : `Option[T] => Boolean`
 * `Some `: `T` =&gt; Option\[T\]\`
 * `size `: `ByteArray => Long`
+* `size `: `List[T] => Long`
 
 ### Accessing blockchain state and Oracle data
 
@@ -129,9 +133,9 @@ let alicePubKey  = base58'B1Yz7fH1bJ2gVDjyJnuyKNTdMFARkKEpV'
 let bobPubKey    = base58'7hghYeWtiekfebgAcuCg9ai2NXbRreNzc'
 let cooperPubKey = base58'BVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'
 
-let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proof0, alicePubKey  )) then 1 else 0
-let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proof1, bobPubKey    )) then 1 else 0
-let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proof2, cooperPubKey )) then 1 else 0
+let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proofs[0], alicePubKey  )) then 1 else 0
+let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proofs[1], bobPubKey    )) then 1 else 0
+let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proofs[2], cooperPubKey )) then 1 else 0
 
 aliceSigned + bobSigned + cooperSigned >= 2
 ```
