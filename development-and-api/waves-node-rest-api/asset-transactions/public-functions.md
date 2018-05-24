@@ -13,7 +13,11 @@ Balances for all assets that the given account ever had \(besides WAVES\).
 "balances" - List of balance objects for assets that the given account has ever
 "assetId" - Asset ID in Base58 format
 "balance" - Balance of that Asset on account
-"issued" - Boolean flag whether this asset was issued by that account
+"balance" - total issued assets
+"reissuable" - is this asset reissuable?
+"issueTransaction" - transaction witch create this asset
+"minSponsoredAssetFee" - minimal tokens number to fee, optional, avaliable for sponsored assets
+"sponsorBalance" - sponsor balance in waves
 ```
 
 **Response JSON example:**
@@ -25,12 +29,24 @@ Balances for all assets that the given account ever had \(besides WAVES\).
     {
       "assetId": "Ax9T4grFxx5m3KPUEKjMdnQkCKtBktf694wU2wJYvQUD",
       "balance": 4879179221,
-      "issued": true
+      "quantity": 48791792210,
+      "reissuable": true,
+      "minSponsoredAssetFee" : 100,
+      "sponsorBalance" : 1233221,
+      "issueTransaction" : {
+         "type" : 3,
+         ...
+      }
     },
     {
       "assetId": "49KfHPJcKvSAvNKwM7CTofjKHzL87SaSx8eyADBjv5Wi",
-      "balance": 0,
-      "issued": false
+      "balance": 10,
+      "quantity": 10000000000,
+      "reissuable": false,
+      "issueTransaction" : {
+         "type" : 3,
+         ...
+      }
     }
   ]
 }
