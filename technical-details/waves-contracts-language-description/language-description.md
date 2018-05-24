@@ -12,10 +12,12 @@ Waves Contracts language is:
 
 Operations and constructs available are:
 
-* Binary operations:`>=`, `>`, `<`, `<=`, `+`, `&&`, `||`
+* Binary operations:`>=`, `>`, `<`, `<=`, `+`, `-`, `&&`, `||`
+* Unary operations `-`, `!`
 * Constants declaration via `let`
 * `if-then-else` clause
 * Accessing fields of any of instances of predifined sctructures via `.`
+* Accessing list element by index `[]`
 * Calls to predefined functions via `()`
 
 Avaliable data types are
