@@ -42,11 +42,11 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 ### List\[T\]
 
-User cann't create `List[T]` instances but input data can contains some `List[T]` fields.
+User can't create `List[T]` instances but input data can contains some `List[T]` fields.
 Now all of transactions contain field `proofs: List[ByteArray]` and MassTransfer transactions contain field `transfers: List[Transfer]`.
 
-To determinate count of lists elements you cat use function `size`.
-To access lists element you can use syntax `list[index]`.
+To determinate count of lists elements you can use function `size`.
+To access lists element you can use syntax `list[index]` with the first element at index 0.
 
 # Predefined data structures
 
