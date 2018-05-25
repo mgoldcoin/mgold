@@ -82,6 +82,7 @@
 * [Reducing Disk Space Usage](waves-full-node/reducing-disk-space-usage.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
 * [Configuration](waves-full-node/configuration.md)
+* [Setting Up a Waves Platform Full Node on Digital Ocean](waves-full-node/setting-up-a-waves-platform-full-node-on-digital-ocean.md)
 
 ## Development and API
 
@@ -128,7 +129,6 @@
   * [Payment API](development-and-api/client-api/payments-api.md)
 * [Examples](development-and-api/examples.md)
   * [Create Your First crypto Trading Bot](development-and-api/examples/trading-bot.md)
-  * [Setting Up a Waves Platform Full Node on Digital Ocean](development-and-api/examples/set-up-full-node-on-digital-ocean.md)
 
 ## Proposals
 

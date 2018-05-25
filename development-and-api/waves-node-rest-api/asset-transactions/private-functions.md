@@ -244,3 +244,6 @@ Create transaction to make asset name unique.
     "networkByte" : 73
   }
 ```
+
+
+
