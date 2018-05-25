@@ -15,7 +15,7 @@ Operations and constructs available are:
 * Binary operations:`>=`, `>`, `<`, `<=`, `+`, `-`, `&&`, `||`
 * Unary operations `-`, `!`
 * Constants declaration via `let`
-* `if-then-else` clause
+* `IF-THEN-ELSE` clause
 * Accessing fields of any of instances of predifined sctructures via `.`
 * Accessing list element by index `[]`
 * Calls to predefined functions via `()`
