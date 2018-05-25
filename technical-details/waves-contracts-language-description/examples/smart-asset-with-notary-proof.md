@@ -4,16 +4,35 @@ Suppose that we want to transfer some assets only when we receive proof of posse
 
 Also, we want to check that the recipient is able to accept the transfer. For this purposes we can write a script for our smart asset:
 
-```js
-let notary = addressFromBytes(base583PM...)
-let notaryAcceptsTransfer = checkProof(tx.body, tx.proofs[7], notary)
-let maybeAccepted = getBoolean(tx.recipient, tx.id)
-let recipientAcceptsTransfer = isDefined(maybeAccepted)
-    then extract(maybeAccepted) else false
-notaryAcceptsTransfer && recipientAcceptsTransfer
+```
+let king = extract(addressFromString("${king.address}"))
+let company = extract(addressFromString("${company.address}"))
+let notary1 = addressFromPublicKey(extract(getByteArray(king,"notary1PK")))
+let txIdBase58String = toBase58String(tx.id)
+let notary1Agreement = getBoolean(notary1,txIdBase58String)
+let isNotary1Agreed = if(isDefined(notary1Agreement)) then extract(notary1Agreement) else false
+let recipientAddress = addressFromRecipient(tx.recipient)
+let recipientAgreement = getBoolean(recipientAddress,txIdBase58String)
+let isRecipientAgreed = if(isDefined(recipientAgreement)) then extract(recipientAgreement) else false
+let senderAddress = addressFromPublicKey(tx.senderPk)
+
+senderAddress.bytes == company.bytes || (isNotary1Agreed && isRecipientAgreed)
 ```
 
-Here there is the notary **notary**. In **notaryAcceptsTransfer**, here is a check to confirm that the transfer transaction has the signature of the notary. In **maybeAccepted**, we check that the recipient allows the current transaction, and in the end we return **true** if both of these conditions are satisfied, or **false** otherwise.
+In `isNotary1Agreed`, here is a check to confirm that the transfer transaction has the signature of the notary. 
+In `recipientAgreement`, we check that the recipient allows the current 
+transaction, and in the end we return `true` if both of these conditions are satisfied, or `false` otherwise.
+
+For example transactions list will be:
+1) kingDataTransaction -> DataTransaction for king's address with BinaryDataEntry("notary1PK", ByteStr(notary.publicKey))
+
+2) transferFromCompanyToA -> TransferTransactionV1 from accountA to accountB
+
+3) notaryDataTransaction -> DataTransaction for notary's address with BooleanDataEntry(transferFromAToB.id().base58, true)
+
+4) accountBDataTransaction -> DataTransaction for accountB's address with BooleanDataEntry(transferFromAToB.id().base58, true)
+
+5) transferFromAToB -> TransferTransactionV1 from accountA to accountB
 
 **Note**. Please check the example on our [IDE](https://ide.wavesplatform.com/).
 

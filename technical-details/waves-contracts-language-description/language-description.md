@@ -20,7 +20,7 @@ Operations and constructs available are:
 * Accessing list element by index `[]`
 * Calls to predefined functions via `()`
 
-Avaliable data types are
+## Available data types
 
 * `Long`
 * `String`
@@ -42,13 +42,13 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 
 ### List\[T\]
 
-User cann't create `List[T]` instances but input data can contains some `List[T]` fields.
+User can't create `List[T]` instances but input data can contains some `List[T]` fields.
 Now all of transactions contain field `proofs: List[ByteArray]` and MassTransfer transactions contain field `transfers: List[Transfer]`.
 
 To determinate count of lists elements you cat use function `size`.
 To access lists element you can use syntax `list[index]`.
 
-# Predefined data structures
+## Predefined data structures
 
 1. `Address` and `AddressOrAlias` \(case for recipient\) contains `bytes`
 
@@ -98,7 +98,7 @@ In every script, available instances are
 
 `address` : `AddressOrAlias`
 
-# Predefined functions
+## Predefined functions
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
