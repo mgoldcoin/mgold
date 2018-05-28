@@ -20,7 +20,7 @@ Operations and constructs available are:
 * Accessing list element by index `[]`
 * Calls to predefined functions via `()`
 
-Avaliable data types are
+## Available data types
 
 * `Long`
 * `String`
@@ -48,7 +48,7 @@ Now all of transactions contain field `proofs: List[ByteArray]` and MassTransfer
 To determinate count of lists elements you can use function `size`.
 To access lists element you can use syntax `list[index]` with the first element at index 0.
 
-# Predefined data structures
+## Predefined data structures
 
 1. `Address` and `AddressOrAlias` \(case for recipient\) contains `bytes`
 
@@ -98,7 +98,7 @@ In every script, available instances are
 
 `address` : `AddressOrAlias`
 
-# Predefined functions
+## Predefined functions
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
