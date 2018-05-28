@@ -7,3 +7,14 @@
 # The Web Interface to Waves Full Node API
 
 For The Web Interface to the Waves Full Node API, Please check [**Swagger**](http://nodes.wavesplatform.com/api-docs/index.html) or [**Postman**](https://documenter.getpostman.com/view/2733299/waves-full-node/RVnWiKZJ).
+
+# Waves Node API
+
+The Waves Node API provides RESTful platform for implementing blockchain functionality in trading apps.
+
+Use the API to integrate a variety of functionalities including orders, transaction history, and balances.
+
+# 
+
+
+

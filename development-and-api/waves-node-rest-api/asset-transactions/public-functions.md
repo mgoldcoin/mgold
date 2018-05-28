@@ -91,10 +91,10 @@ Asset description.
   "decimals" : 1,
   "reissuable" : true,
   "quantity" : 1221905614,
-  "script" : "",
-  "scriptText" : "",
-  "complexity" : 150,
-  "extraFee": 400000,
+  "script" : null,
+  "scriptText" : null,
+  "complexity" : 0,
+  "extraFee": 0,
   "minSponsoredAssetFee" : 100000 // null assume no sponsorship, number - amount of assets for minimal fee
 }
 ```

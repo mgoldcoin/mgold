@@ -82,6 +82,7 @@
 * [Reducing Disk Space Usage](waves-full-node/reducing-disk-space-usage.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
 * [Configuration](waves-full-node/configuration.md)
+* [Setting Up a Full Node on Digital Ocean](waves-full-node/setting-up-a-waves-platform-full-node-on-digital-ocean.md)
 
 ## Development and API
 
@@ -98,6 +99,7 @@
   * [Approach and Capabilities](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
   * [Language Description](technical-details/waves-contracts-language-description/language-description.md)
   * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
+  * [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
   * [Functions](technical-details/waves-contracts-language-description/functions.md)
     * [Predefined Functions](technical-details/waves-contracts-language-description/functions/predefined-functions.md)
     * [Cryptographic Functions](technical-details/waves-contracts-language-description/functions/cryptographic-functions.md)
@@ -128,7 +130,6 @@
   * [Payment API](development-and-api/client-api/payments-api.md)
 * [Examples](development-and-api/examples.md)
   * [Create Your First crypto Trading Bot](development-and-api/examples/trading-bot.md)
-  * [Setting Up a Waves Platform Full Node on Digital Ocean](development-and-api/examples/set-up-full-node-on-digital-ocean.md)
 
 ## Proposals
 
