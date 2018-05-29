@@ -30,13 +30,14 @@ Re-check entered data and click on the **Confirm** button.
 
 Receiving Waves is very straightforward. Just copy your Waves address and hand it to the person who wants to send you Waves.
 
-At the top left corner click on **Your Address**.
+Open your Waves wallet. At the top left corner click on the avatar of your account.
 
 ![](/_assets/waves_transfers_04.png)
 
 The following pop-up will appear.
 
-Copy the shown Waves address or Scan QR Code and send a payment.
+There you will find the Waves address of your account.
 
 ![](/_assets/waves_transfers_05.png)
 
+Copy the shown Waves address and use it as recipient address.

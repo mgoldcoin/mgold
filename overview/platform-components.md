@@ -22,10 +22,11 @@
 
 * Waves Wallet is a mobile client to WavesPlatform available on [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) and [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
+* Get started with Waves wallet for [IOS](/mobile-apps/iOS.md) or [Android](//mobile-apps/android.md)
 
 # 6. Waves Gateways
 
-Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/ZCash/Litecoin\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
+Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/LTC/ZCash/BCH/Dash\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
 ## 6.1 Fiat Gateways
 
@@ -41,15 +42,16 @@ All currencies listed below are integrated in Waves through gateways. You can se
 
 Current List of crypto gateways:
 
-1. WAVES
-2. Bitcoin
-3. Ethereum
+1. Bitcoin
+2. Ethereum
+3. Litecoin
 4. ZCash
-5. Litecoin 
+5. Bitcoin cash
+6. Dash
 
-WAVES, BTC, ETH, Litecoin \(LTC\), Zcash \(ZEC\) gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
+BTC/ETH/LTC/ZCash/BCH/Dash gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
 
-Fees are minimal and the only delays are those required by blockchain confirmation times.
+Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future.
 
 ![](/_assets/Waves Gateways.png)
 
@@ -61,7 +63,7 @@ Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/
 
 * A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
 * It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
-* Receiving rewards from the network by leasing your balance to a full node. 
+* Receiving rewards from the network by leasing your balance to a full node.
 
 **Note.** The current number of nodes is 168 in 23 different countries.
 
@@ -85,7 +87,7 @@ You can find the full list of Waves nodes for leasing with their corresponding a
 # 7.2 Official nodes with open API
 
 1. [**WavesGo**](http://www.wavesgo.com) is the foremost Waves node, with the biggest balance \(16,214,530 WAVES\) and a thriving community of supporters. The node distributes the WavesGo token to anyone who leases their funds to it.
-2. [**Wavesnode.NET**](https://wavesnode.net)** **represents a developing community in Holland with a balance of 10,589,578 WAVES. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Waves merchandise.
+2. [**Wavesnode.NET**](https://wavesnode.net)** **represents a developing community in Netherlands with a balance of 10,589,578 WAVES. The node accepts multiple tokens for fees and has a growing list of supporters — as well as offering unique Waves merchandise.
 
 **Note.** You can find a full nodes list at [dev.pywaves.org](http://dev.pywaves.org/generators/) and [Here](https://wavesplatform.com/leasing#nodes) you can find a list of the top nodes by WAVES balance.
 
@@ -103,6 +105,3 @@ Matchers will receive fees for the service they provide, adding an additional re
 
 1. **MainNet** - this is the real deal, the live Waves blockchain where you in the worst case could lose money if you are not careful. You can access the mainnet via a full node. it's integrated with the GUI in the Waves client, allowing anyone to use it without any technical knowledge or blockchain downloads.
 2. **TestNet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
-
-
-

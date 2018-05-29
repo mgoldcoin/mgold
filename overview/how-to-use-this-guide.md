@@ -1,6 +1,6 @@
 # How To Use This Guide?
 
-In this guide, you can find all documentation for Waves Platform as shown below:
+In this guide, you can find all the documentation for Waves Platform as shown below:
 
 # 1. Overview
 
@@ -14,13 +14,14 @@ This section will give you a general information about Waves Platform and its ma
 
 # 2. Platform Features
 
-This section contains explantions about Waves main Features such as \(Waves-NG Protocol\).
+This section contains explanations about Waves main Features such as \(Waves-NG Protocol\).
 
 1. [Decentralized Exchange \(DEX\).](/platform-features/decentralized-cryptocurrency-exchange-dex.md)
 2. [Assets \(Custom Tokens\).](/platform-features/assets-custom-tokens.md)
 3. [Leased Proof of Stake \(LPoS\).](/platform-features/leased-proof-of-stake-lpos.md)
 4. [Waves-NG Protocol.](/platform-features/waves-ng-protocol.md)
 5. [Activation Protocol.](/platform-features/activation-protocol.md)
+6. [Smart Contracts.](/platform-features/smart-contracts.md)
 
 # 3. Waves Client
 
@@ -30,9 +31,14 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 2. [Account Management](/waves-client/account-management.md) \([Create](/waves-client/account-management/creating-an-account.md) and [Restore](/waves-client/account-management/restore-an-account.md) an Account\)
 3. [Transfers and gateways](/waves-client/wallet-management.md)
 4. [Waves DEX](/waves-client/waves-dex.md) \(Trading Using DEX\)
-5. [Custom Assets \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
+5. [Assets Management \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
 
-# 4. Waves Full Node
+# 4. Mobile Applications
+
+1. [Waves Wallet for IOS Devices](/mobile-apps/iOS.md)
+2. [Waves Wallet for Android Devices](//mobile-apps/android.md)
+
+# 5. Waves Full Node
 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
@@ -45,28 +51,21 @@ This section contains all information about Installing, configuring and upgradin
 7. [Joining Testnet](/waves-full-node/joining-testnet.md)
 8. [Configuration](/waves-full-node/configuration.md)
 
-# 5. Developers Guide
+# 6. Development and API
 
-This Section contains technical details about Waves Platform
-
-1. [Cryptographic Practical Details](/developers-guide/cryptographic-practical-details.md)
-2. [Data Structures](/developers-guide/data-structures.md)
-3. [Validation Rules](/developers-guide/validation-rules.md)
-4. [Creating a Private Waves Blockchain Network](/developers-guide/creating-a-private-waves-blockchain-network.md)
-5. [Mass Transfer Transactions](/developers-guide/mass-transfer-transaction.md)
-6. [Data Transaction](/developers-guide/data-transaction.md)
-7. [Waves Contracts Language Description](/developers-guide/waves-contracts-language-description.md)
-8. [Waves-NG Solution](/developers-guide/waves-ng-solution.md)
-
-# 6. Application Development and API
-
-1. [Node API Overview](/application-development-and-api/node-api-overview.md)
-2. [Client Libraries ](/application-development-and-api/client-libraries.md)\([PyWaves](/application-development-and-api/client-libraries/pywaves.md), [WavesJ](/application-development-and-api/client-libraries/wavesj.md) and [WavesCS](/application-development-and-api/client-libraries/wavescs.md)\)
-3. [DEX API](/application-development-and-api/dex-api.md) \([Matcher](/application-development-and-api/dex-api/matcher.md)\)
-4. [Waves Node Rest API](/application-development-and-api/waves-node-rest-api.md)
-5. [Examples](/application-development-and-api/examples.md)
+1. [Technical Details](/technical-details/technical-details.md)
+2. [Waves Smart Contracts](/technical-details/waves-contracts-language-description.md)
+3. [Client Libraries ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md), [WavesCS](/development-and-api/client-libraries/wavescs.md) and [WavesC](/development-and-api/client-libraries/waves-c.md)\)
+4. [DEX API](/development-and-api/dex-api.md) \([Matcher](/development-and-api/dex-api/matcher.md)\)
+5. [Node API Overview](https://legacy.gitbook.com/book/waves-platform/wavesdocs/edit#)
+6. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
+7. [Examples](/development-and-api/examples.md)
 
 # 7. Frequently Asked Questions \(FAQ\)
+
+1. [Account Management FAQ](/frequently-asked-questions-faq/account-management-faq.md)
+2. [Transfers and Gateways FAQ](/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+3. [Waves DEX FAQ](/frequently-asked-questions-faq/waves-dex-faq.md)
 
 
 

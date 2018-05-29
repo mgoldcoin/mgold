@@ -1,12 +1,11 @@
-# Chapter Contents
+# Asset Management
 
-This Chapter Includes All Details About Issue and Reissue Assets.
+Assets Management Chapter includes all details about Issue and Reissue Assets which allows you to create your own asset or reissue more of the same token in the future to increase the total supply of tokens or decrease it by using the burn feature. Also in this section you will find desription of the Mass Transfer feuture.
 
-Assets Management Chapter includes all details about how to issue your own asset \(generate tokens\) and how to reissue your asset which allows you to create more of the same token in the future to increase the total supply of tokens or decrease it by using the burn feature.
-
-1. [How to create a Token](/waves-client/assets-management/issue-an-asset.md)
-2. [How to reissue created Token](/waves-client/assets-management/reissue-an-asset.md)
-3. [​How to burn issued Token](/waves-client/assets-management/burn-an-asset.md)
+1. [Token creation](waves-client/assets-management/issue-an-asset.md)
+2. [Token reissuing](waves-client/assets-management/reissue-an-asset.md)
+3. [​Token burning](waves-client/assets-management/burn-an-asset.md)
+4. [Token distribution](waves-client/assets-management/mass-transfer.md)
 
 **Note. **It costs just 1 WAVES to do so and then your token can be traded on the Waves DEX.
 
