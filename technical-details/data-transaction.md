@@ -84,7 +84,7 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
 
 ### API
 
-`POST /addresses/data` signs and sends a data transaction. This endpoint requires API key. Sample input is as follows (binary arrays are Base58-encoded):
+`POST /addresses/data` signs and sends a data transaction. This endpoint requires API key. Sample input is as follows (binary arrays are Base64-encoded):
 ```
 {
   "version" : 1,
@@ -92,7 +92,8 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
   "data": [
     {"key": "int", "type": "integer", "value": 24},
     {"key": "bool", "type": "boolean", "value": true},
-    {"key": "blob", "type": "binary", "value": "BzWHaQU"}
+    {"key": "blob", "type": "binary", "value": "base64:BzWHaQU"}
+    {"key": "My poem", "type": "string", "value": "Oh waves!"}
   ],
   "fee": 100000
 }
@@ -103,7 +104,7 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
 [ {
   "key" : "blob",
   "type" : "binary",
-  "value" : "BzWHaQU"
+  "value" : "base64:BzWHaQU"
 }, {
   "key" : "bool",
   "type" : "boolean",
@@ -112,6 +113,10 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
   "key" : "int",
   "type" : "integer",
   "value" : 24
+}, {
+  "key": "My poem",
+  "type": "string",
+  "value": "Oh waves!"
 } ]
 ```
 
@@ -149,14 +154,18 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
   }, {
     "key" : "blob",
     "type" : "binary",
-    "value" : "BzWHaQU"
+    "value" : "base64:BzWHaQU"
+  }, {
+    "key" : "My poem",
+    "type" : "string",
+    "value" : "Oh waves!"
   } ],
   "version" : 1,
   "height" : 303
 }
 ```
 
-With all endpoints, byte arrays are Base58-encoded.
+With all endpoints, byte arrays are Base64-encoded and prefixed with "base64:".
 
 ### Constraints
 

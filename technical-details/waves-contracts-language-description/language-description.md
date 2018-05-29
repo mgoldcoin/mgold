@@ -125,6 +125,7 @@ WavesContracts can access last transacion for a given account address. Note last
 * `getLong`:`(accountAddress: ByteArray, key: String) => Option[Long]`
 * `getBoolean`:`(accountAddress: ByteArray, key: String) => Option[Boolean]`
 * `getByteArray`:`(accountAddress: ByteArray, key: String) => Option[ByteArray]`
+* `getString`:`(accountAddress: ByteArray, key: String) => Option[String]`
 
 # Examples
 
