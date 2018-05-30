@@ -12,7 +12,7 @@ To setup an `AccountScript`, account needs to issue `SetScriptTransaction` which
 sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 ```
 
-Some actions are denied for `ScriptedAccount`s:
+Some actions are denied for ScriptedAccounts:
  - Mining, since supporting multisignature blocks looks like  unnecessary complication
  - Trading on DEX, since that would require multisignature orders, which is a lot of work and, most importantly, unclear usability scenario
 
@@ -33,7 +33,7 @@ For example, In a scenario when both sender account and token are scripted, a `T
 
 The same set of rules apply to `BurnTransaction` and `ReissueTransaction`. Keep in mind that for `ReissueTransaction` there's an additional invariant: asset can be only be reissued if `reissuable` flag must be set to `true`.
 
-The following actions age denied with `ScriptedAsset`s:
+The following actions are denied with ScriptedAssets:
 
  - Trading on DEX
  - Using as fees
