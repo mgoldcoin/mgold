@@ -25,17 +25,17 @@ There is an important property that the **smart account** does not store any dat
 
 * Data stored in other transactions referenced by transactions \(e.g. proofs, DataTransaction\).
 
-The types which will be used to predicate are **LONG, BOOLEAN, STRING, Option\[T\], byteVector, Nothing**.
+The types which will be used to predicate are `LONG, BOOLEAN, STRING, Option[T], byteVector, Nothing`.
 
-An **Option\[T\] **can be either **Some\[T\]** or **None **object, which represents a missing value.
+An `Option[T]` can be either `Some[T]` or `None` object, which represents a missing value.
 
-For example, if we want to get some transactions that do not exist in the blockchain we should receive **None**, but if this transaction is contained in the blockchain, the method should return **Some\(transaction\)**.
+For example, if we want to get some transactions that do not exist in the blockchain we should receive `None`, but if this transaction is contained in the blockchain, the method should return `Some(transaction)`.
 
 **Note.** A user cannot create new types; only predefined ones are available.
 
-All constants will be declared in lazy **let** constructions, which delays the evaluation of an expression until its value is needed, and does it at most once. For instance: **let hash = blake2b\(preImage\)**.
+All constants will be declared in lazy `let` constructions, which delays the evaluation of an expression until its value is needed, and does it at most once. For instance: `let hash = blake2b(preImage)`.
 
 The hash is not a variable: once created its values never change.
 
-**SetScriptTransaction **sets the script which verifies all outgoing transactions. The set script can be changed by another **SetScriptTransaction** call unless it’s prohibited by a previously set script.
+`SetScriptTransaction` sets the script which verifies all outgoing transactions. The set script can be changed by another `SetScriptTransaction` call unless it’s prohibited by a previously set script.
 
