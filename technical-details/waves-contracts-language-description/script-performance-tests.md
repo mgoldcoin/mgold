@@ -1,4 +1,4 @@
-# Performance tests
+# Script Performance Tests
 We conducted performance tests for all aspects of our scripts. In every test, we conducted 10 tests and calculated the average cost. The performance tests' results are the following:
 ## Environment Functions Benchmark 
 Functions used in the script that do not refer to the state:
