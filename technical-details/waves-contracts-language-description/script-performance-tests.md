@@ -1,5 +1,5 @@
 # Script Performance Tests
-We conducted performance tests for all aspects of our scripts. In every test, we conducted 10 tests and calculated the average cost. The performance tests' results are the following:
+We conducted performance tests for all aspects of our scripts. For this purpose, we developed an estimator class, that computing cost of scripts in nanoseconds after compilation phase by AST (Abstract Syntax Tree) traversal. In every test, we conducted 10 tests and calculated the average cost. The performance tests' results are the following:
 ## Environment Functions Benchmark 
 Functions used in the script that do not refer to the state:
 
@@ -66,4 +66,12 @@ Comparison the applying of a block with 5\,000 tx for a scripted account and for
 |----------------|-------------------------------|-----------------------------|
 |`appendBlock_smart`| 2\,861.589 ms/op|± 108.005 ms/op|
 |`appendBlock` | 2\,069.613 ms/op|± 449.040 ms/op|
+
+## Results
+We found the most expensive functions:
+ - base58
+ - sigVerify
+
+As a result, we define the following constraint for a script cost: a script must have a size no more than `20*cost(sigVerify) ≈ 8kB`. 
+The fixed cost for each scripted unit is equal to 400\,000 _wavelets_ (Waves coins, 100\,000\,000 wavelets = 1 Wave), i.e. if you use a scripted asset (smart asset) then you pay 400\,000 wavelets, if you also have a scripted transaction then you have to pay 2 * 400\,000 wavelets. 
 
