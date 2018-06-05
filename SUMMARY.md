@@ -100,6 +100,7 @@
   * [Language Description](technical-details/waves-contracts-language-description/language-description.md)
   * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
   * [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
+  * [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
   * [Functions](technical-details/waves-contracts-language-description/functions.md)
     * [Predefined Functions](technical-details/waves-contracts-language-description/functions/predefined-functions.md)
     * [Cryptographic Functions](technical-details/waves-contracts-language-description/functions/cryptographic-functions.md)
