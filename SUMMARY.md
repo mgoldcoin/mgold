@@ -38,6 +38,7 @@
   * [Zcash transfers](waves-client/transfers-and-gateways/zcash-transfers.md)
   * [Bitcoin Cash transfers](waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
   * [Dash transfers](/waves-client/transfers-and-gateways/dash-transfers.md)
+  * [Monero transfers](/waves-client/transfers-and-gateways/monero-transfers.md)
   * [EURO and USD transfers](waves-client/transfers-and-gateways/eur-usd-transfers.md)
   * [Buying Waves using credit or debit card](/waves-client/transfers-and-gateways/buying-waves-using-card.md)
 * [Waves DEX](waves-client/waves-dex.md)
@@ -149,4 +150,3 @@
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
   * [Order execution time](/frequently-asked-questions-faq/waves-dex/order-time.md)
   * [Asset ID on the Waves DEX](/frequently-asked-questions-faq/waves-dex/asset-id.md)
-
