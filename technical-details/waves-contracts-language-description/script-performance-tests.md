@@ -1,5 +1,5 @@
 # Script Performance Tests
-We conducted performance tests for all aspects of our scripts. For this purpose, we developed an estimator class, that computing cost of scripts in nanoseconds after compilation phase by AST (Abstract Syntax Tree) traversal. In every test, we conducted 10 tests and calculated the average cost. The performance tests' results are the following:
+We conducted performance tests for all aspects of our scripts. For this purpose, we developed an estimator subproject with [JMH](http://openjdk.java.net/projects/code-tools/jmh/), that computes a complexity of scripts after compilation phase by AST (Abstract Syntax Tree) traversal in special _complexity units_. _Complexity units_ is a measure of the script's relative cost: we found out the most expensive operation in terms of computational complexity and defined it equal to 100 complexity units. In every test, we conducted 10 tests and calculated the average cost. The performance tests' results are the following:
 ## Environment Functions Benchmark 
 Functions used in the script that do not refer to the state:
 
@@ -72,6 +72,6 @@ We found the most expensive functions:
  - base58
  - sigVerify
 
-As a result, we define the following constraint for a script cost: a script must have a size no more than `20*cost(sigVerify) ≈ 8kB`. 
-The fixed cost for each scripted unit is equal to 400\,000 _wavelets_ (Waves coins, 100\,000\,000 wavelets = 1 Wave), i.e. if you use a scripted asset (smart asset) then you pay 400\,000 wavelets, if you also have a scripted transaction then you have to pay 2 * 400\,000 wavelets. 
+As a result, we define the following constraint for a script cost: a script must have a size no more 8 kB and must be faster than 20 executions of `sigVerify`, that is most expensive operation.
+The fixed fee for each scripted unit is equal to 400\,000 _wavelets_ (Waves coins, 100\,000\,000 wavelets = 1 Wave), i.e. if you use a scripted asset (smart asset) then you pay 400\,000 wavelets, if you also have a scripted transaction then you have to pay 2 * 400\,000 wavelets. 
 
