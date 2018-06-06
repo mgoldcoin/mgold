@@ -62,7 +62,7 @@ Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/
 **Features:**
 
 * A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
-* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
+* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and to act as a leasing pool to aggregate mining power from other users.
 * Receiving rewards from the network by leasing your balance to a full node.
 
 **Note.** The current number of nodes is 168 in 23 different countries.
