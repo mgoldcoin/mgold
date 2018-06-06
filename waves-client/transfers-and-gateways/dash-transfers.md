@@ -22,7 +22,7 @@ Read the conditions carefully in yellow boxes before proceeding.
 ## **How to send Dash**
 
 Open your Waves wallet  
-In the Bitcoin Cash section, click on the **Send** button.
+In the Dash section, click on the **Send** button.
 
 ![](/_assets/dash_transfers_03.png)
 
