@@ -44,12 +44,11 @@ If we plan to apply constraints on all operations for a specific asset, we canno
 
 ## Scripts' Cost
 
-For estimation of script cost, we developed an estimator class, that computing cost of scripts in nanoseconds after compilation phase. The result of compilation stage is typed abstract syntax tree (AST). The estimator class do AST traversal and compute sums for every depth: the biggest depth is an estimation of the operation's complexity. We added additional costs for `let` and `+` operators to avoid the node's overstrain. 
-We found the most expensive functions:
+We conducted performance tests for all aspects of our scripts. For this purpose, we developed an estimator subproject with [JMH](http://openjdk.java.net/projects/code-tools/jmh/), that computes a complexity of scripts after compilation phase by AST (Abstract Syntax Tree) traversal in special _complexity units_. _Complexity units_ is a measure of the script's relative cost: we found out the most expensive operation in terms of computational complexity and defined it equal to 100 complexity units. The most expensive functions:
  - base58
  - sigVerify
-The full results of performance tests that we conducted are presented [here](/technical-details/waves-contracts-language-description/script-performance-tests.md).
-As a result, we define the following constraint for a script cost: a script must have a size no more than `20*cost(sigVerify) ≈ 8kB`. 
+In every test, we conducted 10 tests and calculated the average cost. The full results of performance tests that we conducted are presented [here](/technical-details/waves-contracts-language-description/script-performance-tests.md).
+As a result, we define the following constraint for a script cost: a script must have a size no more 8 kB and must be faster than 20 executions of `sigVerify`, that is most expensive operation.
 The fixed cost for each scripted unit is equal to 400\,000 _wavelets_ (Waves coins, 100\,000\,000 wavelets = 1 Wave), i.e. if you use a scripted asset (smart asset) then you pay 400\,000 wavelets, if you also have a scripted transaction then you have to pay 2 * 400\,000 wavelets. 
 
 **Note.** you can find more technical details about our smart contracts implementation [**here**](/technical-details/waves-contracts-language-description.md).
