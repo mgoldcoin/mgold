@@ -15,6 +15,6 @@ More technical details you can find in the articles below:
 2. [Language and Standard Library Documentation](waves-contracts-language-description/language-description.md)
 3. [Syntax Processor and Executor Implementation Details](waves-contracts-language-description/implementation-details.md)
 4. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
-
+5. [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
 
 

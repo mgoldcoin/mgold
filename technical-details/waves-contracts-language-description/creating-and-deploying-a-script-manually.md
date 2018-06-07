@@ -47,7 +47,7 @@ WBMHK214mYRoxdAH3zvKyWQcqndnWETd59mCEGkRjB9UUL6vmCF1ZQCSytdJKgyRhRQ7pzxxa5iL92hG
 SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
 ```
 
-I'll replace this huge script with `<our huge script>` to make examples cleaner.
+In futher instruction we define this script with `<script>` to make examples as short as possible.
 
 ### Attaching a script to account
 
@@ -59,7 +59,7 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
     "version": 1,
     "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
     "fee": 100000,
-    "script": "<our huge script>`"
+    "script": "<script>`"
    }
    ```
 
@@ -71,7 +71,7 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
    $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
    --header 'X-API-Key: <it is a secret>' \
    -d '{ "type": 13, "version": 1, "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X", "fee": 100000, \
-   "script": "<our huge script>" }' 'https://example.org/transactions/sign'
+   "script": "<script>" }' 'https://example.org/transactions/sign'
    ```
 
    and receive a JSON ready to broadcast:
@@ -88,7 +88,7 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
       "4Ro4e4UrsVkaFbHtu96qZwHAdf8N4TtpjSGik9kRusmmYKCxicdsEqcgQrYden36nurqhY9EBkTKwD499kAi5rxe"
     ],
     "version": 1,
-    "script": "<our huge script>"
+    "script": "<script>"
    }
    ```
 
@@ -100,7 +100,7 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
    -d '{ "type": 13, "id": "8w7yauNiENsJP8oDUpVEfiAzyEzMKoXbJEqS26Ht99mg", "sender": "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X", \
     "senderPublicKey": "66xdGznqt2AVLMZRHme9vFPC6cvN4yV95wRWPfTus3Qe", "fee": 100000, "timestamp": 1525797758819, \
     "proofs": [ "4Ro4e4UrsVkaFbHtu96qZwHAdf8N4TtpjSGik9kRusmmYKCxicdsEqcgQrYden36nurqhY9EBkTKwD499kAi5rxe" ], \
-    "version": 1, "script": "<our huge script>" }' \
+    "version": 1, "script": "<script>" }' \
    'https://example.org/transactions/broadcast'
    ```
 
@@ -110,12 +110,13 @@ I'll replace this huge script with `<our huge script>` to make examples cleaner.
    $ curl http://example.org/addresses/scriptInfo/3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X
    {
     "address" : "3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X",
-    "script" : "<our huge script>",
-    "scriptText" : "<a text of our huge script>",
+    "script" : "<script>",
+    "scriptText" : "<scriptText>",
     "complexity" : 27,
     "extraFee" : 400000
    }
    ```
+   where `<scriptText>` is a String representation of compiled `<script>` (expression tree)
 
 Fine! Now we able to make transfers from this account.
 
@@ -175,7 +176,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
 
 1. Alice signs this request by her private key through [POST /transactions/sign/{signerAddress}](../development-and-api/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
 
-   * Signer address: `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE`
+   * Alice address: `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE`
    * JSON:
 
      ```json
@@ -260,7 +261,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
      }
      ```
 
-4. Bob merges proofs:
+4. Bob merges proofs in such a way that Alice's proof must be the first, and his proof - the second:
 
    ```json
    {
@@ -282,8 +283,6 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
     "attachment": ""
    }
    ```
-
-   Note, according to our script, the Alice's signature should be the first.
 
 5. Bob [broadcasts](../development-and-api/waves-node-rest-api/transactions.md#post-transactionsbroadcast) the transaction
 
@@ -307,6 +306,4 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
       "attachment": ""
     }
    ```
-
-And now it works!
 

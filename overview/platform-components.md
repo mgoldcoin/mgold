@@ -14,17 +14,17 @@
 
 * The wallet has a built-in decentralized exchange platform that can be used to exchange assets, cryptocurrencies and fiat tokens.
 
-# 4. Decentralized cryptocurrency exchange \(DEX\)
+# 3. Decentralized cryptocurrency exchange \(DEX\)
 
 [DEX](/platform-features/decentralized-cryptocurrency-exchange-dex.md) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
-# 5. Mobile apps
+# 4. Mobile apps
 
 * Waves Wallet is a mobile client to WavesPlatform available on [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) and [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
 * Get started with Waves wallet for [IOS](/mobile-apps/iOS.md) or [Android](//mobile-apps/android.md)
 
-# 6. Waves Gateways
+# 5. Waves Gateways
 
 Fiat Gateways such as USD/EUR will allow you to exchange any token issued on the Waves platform \(or any other cryptocurrency like BTC/ETH/LTC/ZCash/BCH/Dash\) for “real” money, which can be deposited in a bank. All transactions between cryptocurrency to fiat or fiat to cryptocurrency will be recorded on the Waves blockchain. This is like mixing the best of both worlds \(i.e. centralized systems and decentralized systems\).
 
@@ -48,21 +48,22 @@ Current List of crypto gateways:
 4. ZCash
 5. Bitcoin cash
 6. Dash
+7. Monero
 
-BTC/ETH/LTC/ZCash/BCH/Dash gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
+Cryptocurrency gateways can be used to move external currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
 
 Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future.
 
-![](/_assets/Waves Gateways.png)
+![](/_assets/Waves Gateways.png)Figure 1, Waves Crypto Gateways \(current and upcoming\).
 
 # 7. Nodes
 
-Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](/waves-client/wallet-operations/leasing-waves.md) to you and get paid for securing the network.
+Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](/waves-client/account-management/waves-leasing.md) to you and get paid for securing the network.
 
 **Features:**
 
 * A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
-* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
+* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and to act as a leasing pool to aggregate mining power from other users.
 * Receiving rewards from the network by leasing your balance to a full node.
 
 **Note.** The current number of nodes is 168 in 23 different countries.
