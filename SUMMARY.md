@@ -106,7 +106,6 @@
     * [Predefined Functions](technical-details/waves-contracts-language-description/functions/predefined-functions.md)
     * [Cryptographic Functions](technical-details/waves-contracts-language-description/functions/cryptographic-functions.md)
   * [Examples](technical-details/waves-contracts-language-description/examples.md)
-    * [Language Structures](technical-details/waves-contracts-language-description/examples/language-structures.md)
     * [Multi-Signature Account](technical-details/waves-contracts-language-description/examples/multi-signature-account.md)
     * [Language Structures](technical-details/waves-contracts-language-description/examples/language-structures.md)
     * [Smart Asset With Notary Proof](technical-details/waves-contracts-language-description/examples/smart-asset-with-notary-proof.md)
