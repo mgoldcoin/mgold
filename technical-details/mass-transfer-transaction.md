@@ -62,7 +62,7 @@ Unlike other transactions, Mass Transfer fee is made up of two amounts: a fixed 
 100_000 + 50_000 * N
 ```
 
-where `N` is the number of recipients in transaction. Fee can be configured in miner node settings using the usual syntax, just keep in mind that there are two parts to it. Below is an excerpt from the configuration file that ships with the node:
+where `N` is the number of recipients in transaction. The total is rounded up to the nearest 100_000. Fee can be configured in miner node settings using the usual syntax, just keep in mind that there are two parts to it. Below is an excerpt from the configuration file that ships with the node:
 
 ```cpp
 transfer {
@@ -82,12 +82,3 @@ Mass Transfer transaction accepts fees in WAVES only.
 There is just a single new REST endpoint, `/assets/masstransfer`, to sign and send a mass transfer transaction. Like its counterparts, it requires authentication using `X-Api-Key` header.
 
 Just as with other transaction types, `/transactions/sign` can be used to create and sign a Mass Transfer transaction without broadcasting it. Use `/transactions/broadcast` to broadcast a signed transaction.
-
-### Related Changes
-
-There's currently a limit of 6,000 transactions per block. This works well as long as all transactions have about the same size. With the introduction of Mass Transfer this is no longer the case, as this transaction can take up to 5K bytes. Hence, we'll need to set block limit in bytes.
-
-So the new maximum block size is going to be 1M bytes. The limit on microblock is not changing, and remains 255 transactions per microblock.
-
-Both the Mass Transfer transaction and the new block size limit will go through feature activation routine under Feature \#3.
-
