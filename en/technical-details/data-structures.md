@@ -440,7 +440,7 @@ Below is a sample **Mass Transfer transaction** encoded as **JSON**:
 
 The transaction signature is calculated from the fields 1 to N+1, i.e. proofs and signatures are not included.
 
-**Note.** [**Here**](/technical-details/data-transaction.md) you can find more details about Data Transaction.
+**Note.** [**Here**](/en/technical-details/data-transaction.md) you can find more details about Data Transaction.
 
 Below is a sample **Data transaction** encoded as **JSON**:
 

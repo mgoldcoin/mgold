@@ -10,7 +10,7 @@ Issuing a token on the Waves Platform comes with multiple benefits, including th
 
 # 2. Assets Operations \(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
 
-You can find more details about Asset Transactions [here](/development-and-api/waves-node-rest-api/asset-transactions.md).
+You can find more details about Asset Transactions [here](/en/development-and-api/waves-node-rest-api/asset-transactions.md).
 
 ## 2.1 Issue Asset Transaction {#Assets(customtokens)-IssueAssetTransaction}
 
@@ -73,4 +73,3 @@ You need to do the following if you want to pre-sell your ICO tokens on the DEX 
 3. Issue a series of sell orders.
 
 The tokens sold will be automatically available to all clients immediately after investing in your project.
-

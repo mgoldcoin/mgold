@@ -18,7 +18,7 @@ Waves addresses this issue by allowing the miner to continuously farm a block du
 # 1.2 Microblock Structure
 
 ```cpp
-generator: PublicKeyAccount 
+generator: PublicKeyAccount
 transactionData: Seq[Transaction]
 prevResBlockSig: BlockId
 totalResBlockSig: BlockId
@@ -66,6 +66,3 @@ The following miner parameters can be tuned\(though it's best not to change them
 * Upon applying every microblock, last block gets changed, which means`/blocks/last`and`/blocks/at/...`will reflect that.
 * `/peers/blacklisted`now expose ban reason, one can clear a node's blacklist via`/peers/clearblacklist`
 * `/debug/`and`/consensus/`section are expanded, \_stateHash \_doesn't take \_liquid block \_into consideration.
-
-
-

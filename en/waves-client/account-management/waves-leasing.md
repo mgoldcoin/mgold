@@ -54,4 +54,3 @@ The terms can vary between LPOS pools. Please use list of LPoS pools - https://w
 ```
 
 **Note.** To find the List of generators click [here](http://dev.pywaves.org/generators/) and to find Waves Nodes click [here](https://wavesplatform.com/leasing#nodes).
-

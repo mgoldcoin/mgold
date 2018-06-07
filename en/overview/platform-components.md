@@ -99,7 +99,7 @@ In principle, **any full node** can become a **Matcher**. Waves client connects 
 
 Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
 
-**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](en/waves-full-node/how-to-configure-a-node.md) in the section of Matcher Settings.
+**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](/en/waves-full-node/how-to-configure-a-node.md) in the section of Matcher Settings.
 
 # 8. MainNet / TestNet
 
