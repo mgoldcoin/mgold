@@ -48,8 +48,9 @@ Current List of crypto gateways:
 4. ZCash
 5. Bitcoin cash
 6. Dash
+7. Monero
 
-BTC/ETH/LTC/ZCash/BCH/Dash gateways can be used to move these currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
+Cryptocurrency gateways can be used to move external currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
 
 Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future.
 
@@ -62,7 +63,7 @@ Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/
 **Features:**
 
 * A hosted server is adequate to run a node and no mining rigs or specialist hardware are required.
-* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and act as a leasing pool to aggregate mining power from other users.
+* It allows to mine WAVES and MRTs \(Miners Reward Tokens\) and to act as a leasing pool to aggregate mining power from other users.
 * Receiving rewards from the network by leasing your balance to a full node.
 
 **Note.** The current number of nodes is 168 in 23 different countries.
@@ -105,6 +106,3 @@ Matchers will receive fees for the service they provide, adding an additional re
 
 1. **MainNet** - this is the real deal, the live Waves blockchain where you in the worst case could lose money if you are not careful. You can access the mainnet via a full node. it's integrated with the GUI in the Waves client, allowing anyone to use it without any technical knowledge or blockchain downloads.
 2. **TestNet **- this is the test version of the Waves blockchain. [here](https://github.com/wavesplatform/Waves/releases) you'll find always the latest versions and newest futures before they go live.
-
-
-
