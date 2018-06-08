@@ -13,7 +13,7 @@ Balances for all assets that the given account ever had \(besides WAVES\).
 "balances" - List of balance objects for assets that the given account has ever
 "assetId" - Asset ID in Base58 format
 "balance" - Balance of that Asset on account
-"balance" - total issued assets
+"quantity" - total issued assets
 "reissuable" - is this asset reissuable?
 "issueTransaction" - transaction witch create this asset
 "minSponsoredAssetFee" - minimal tokens number to fee, optional, avaliable for sponsored assets
