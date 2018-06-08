@@ -15,6 +15,7 @@
 * [Decentralized Exchange \(DEX\)](platform-features/decentralized-cryptocurrency-exchange-dex.md)
 * [Assets \(custom tokens\)](platform-features/assets-custom-tokens.md)
 * [Leased Proof of Stake \(LPoS\)](platform-features/leased-proof-of-stake-lpos.md)
+* [Fair Proof of Stake](platform-features/fair-pos.md)
 * [Waves-NG Protocol](platform-features/waves-ng-protocol.md)
 * [Activation Protocol](platform-features/activation-protocol.md)
 * [Smart Contracts](platform-features/smart-contracts.md)
