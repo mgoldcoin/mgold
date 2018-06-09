@@ -72,9 +72,9 @@ WavesContracts standard library not only contains predefined data types and inst
    - `getByteArray`:`(accountAddress: ByteArray, key: String) => Option[ByteArray]`
   
 * Crypto functions:
- * `sigVerify`:`(body: ByteArray, signature: ByteArray, pubKey: ByteArray) => Boolean`
- * `keccak256`,`blake2b256`, `sha256` : `ByteArray => ByteArray`
- * `base58'`, `base64'`: `ByteArray => String` 
+ - `sigVerify`:`(body: ByteArray, signature: ByteArray, pubKey: ByteArray) => Boolean`
+ - `keccak256`,`blake2b256`, `sha256` : `ByteArray => ByteArray`
+ - `base58'`, `base64'`: `ByteArray => String` 
 
 
 
