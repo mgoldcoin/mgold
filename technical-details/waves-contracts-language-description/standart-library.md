@@ -2,19 +2,20 @@
 ## General fields
 This fields are usual for all transaction types (except GenesisTransaction, it has no `.proven` field):
 
-* `.header` - 
+* `.header` - the general information about transaction
   - `.id` - return a transaction's idByteArray
   - `.fee` - return a transaction's fee as a Long number
   - `.timestamp` - return a transaction's unix timestamp * 1000 as Long number of ms
   - `.version` - return a transaction's version as a Long number
 
-* `.proven` - 
+* `.proven` -  the general information about proven of transaction
    - `.senderPk` - return the sender public key as ByteArray
-   - `.bodyBytes` - return ByteArray
+   - `.bodyBytes` - return a transaction's body as ByteArray
    - `.proofs` - return the list of proofs for transaction as List[ByteArray]
+   
 ## Group 1
 
-| field	| IssueTransaction |	ReissueTransaction	| BurnTransaction |
+| field	| [IssueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html) |	[ReissueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html)	| [BurnTransaction](https://docs.wavesplatform.com/waves-client/assets-management/burn-an-asset.html) |
 | ------------- | ------------- | ------------- | ------------- |
 | quantity	| + |	+	| + |
 | name	| +	| | | 
@@ -34,7 +35,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 
 ## Group 2
 
-| field | TransferTransaction	| MassTransferTransaction	| PaymentTransaction |
+| field | TransferTransaction	| [MassTransferTransaction](https://docs.wavesplatform.com/technical-details/mass-transfer-transaction.html)	| PaymentTransaction* |
 | ------------- | ------------- | ------------- | ------------- |
 | feeAssetId	| +	| +	| |
 | amount	| +	|	 | + | 
@@ -47,6 +48,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 |transferCount|	|	+ |	| 
 |recepient|+|||
 
+*PaymentTransaction - the old version of TransferTransaction
 * `.feeAssetId` - return an id of fee's asset as Option[ByteArray]
 * `.assetId` - return an id of transferred asset as Option[ByteArray]
 * `.totalAmount` - return a total amount of transferred asset as a Long number 
@@ -54,22 +56,22 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * `.transferCount` - return a total count of transfers in mass transfer as a Long number 
 * `.attachment` - return an arbitrary attachment of transfer as ByteArray
 
-## Leasing
+## [Leasing](https://docs.wavesplatform.com/waves-client/account-management/waves-leasing.html)
 * LeaseTransaction
    - `.amount` - return an amount of asset which are leased as a Long number
-   - `.recepient` -	return a recepient adress as addressOrAliasType  
+   - `.recepient` -	return a recepient address as addressOrAliasType  
 * LeaseCancelTransaction - 
    - `.leaseId` - return an id of cancelled leasing
 
 # Exchange Transaction and Order 
-* `ExchangeTransaction` - 
+* `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
   - `.buyOrder` - return an order that is bought as orderType.typeRef,
   - `.sellOrder` -  return an order that is sold as orderType.typeRef,
   - `.price` - return a deal's price as a Long number
   - `.amount` - return a deal's amount as a Long number
   - `.buyMatcherFee` - return a Matcher's fee from the buy order as a Long number
   - `.sellMatcherFee` - return a Matcher's fee from the sell order as a Long number
-* `Order`   
+* `Order` - an order for Matcher's order book   
   - `senderPublicKey` - return ByteArray, sender's public key
   - `.matcherPublicKey` - return ByteArray, matcher public key
   - `.assetPair` - return assetPairType.typeRef
@@ -82,17 +84,17 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
   - `.signature` - return the signature of order's sender as ByteArray 
     
 ## Other
-* `CreateAliasTransaction` - 
+* `CreateAliasTransaction` - create a personal [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
    - `.alias` - return an alias name as String
 * GenesisTransaction - 
-   - `.amount` - return Long
-   - `.recipient` - return Adress
-* DataTransaction -
+   - `.amount` - return an initial amount of assets as a Long number
+   - `.recipient` - return an address for initial assets placing as Address
+* DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
    - `.data` - List[DataEntriesType]
-* SetScriptTransaction - 
+* SetScriptTransaction - sets the script which veri es all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
    - `.script` - Option[ByteArray]
-* SponsorFeeTransaction - 
-   - `.assetId` - return ByteArray
-   - `.minSponsoredAssetFee` -> Option[Long]
+* SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details aboutfee sponsorship.
+   - `.assetId` - return an asset id as ByteArray
+   - `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Option[Long]
  
 		
