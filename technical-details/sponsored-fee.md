@@ -84,7 +84,7 @@ fees {
 }
 ```
 
-Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetid) and [asset balance](https://docs.wavesplatform.com/development-and-api/waves-node-rest-api/asset-transactions/public-functions.html#get-assetsbalanceaddress).
+Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetid) and [asset balance](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsbalanceaddress).
 
 ### Constraints
 
