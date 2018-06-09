@@ -97,4 +97,26 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
    - `.assetId` - return an asset id as ByteArray
    - `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Option[Long]
  
-		
+# Predefined functions
+
+WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
+
+* Waves specific functions:
+   - `addressFromPublicKey` : `ByteArray => ByteArray`
+   - `addressFromRecipient` : `Option(ByteArray) => ByteArray`
+   - `addressFromString` : `String => ByteArray`
+   - `getTransactionById` : `ByteArray => Option[Transaction]` - provides tx in blockchain by id
+   - `accountBalance`: `Obj(bytes) => Long` - provide balance info for any account
+   - `accountAssetBalance` : `Obj(bytes), ByteArray => Long` - provide balance info for any account
+   - `transactionHeightById`: `ByteArray => Option[Long]` - provides height of tx in blockchain by id
+ 
+    `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from         WavesContracts via:
+    
+   - `getLong`:`(accountAddress: ByteArray, key: String) => Option[Long]`
+   - `getBoolean`:`(accountAddress: ByteArray, key: String) => Option[Boolean]`
+   - `getByteArray`:`(accountAddress: ByteArray, key: String) => Option[ByteArray]`
+  
+* Crypto functions:
+	- `sigVerify`:`(body: ByteArray, signature: ByteArray, pubKey: ByteArray) => Boolean`
+	- `keccak256`,`blake2b256`, `sha256` : `ByteArray => ByteArray`
+	- `base58'`, `base64'`: `ByteArray => String` 		
