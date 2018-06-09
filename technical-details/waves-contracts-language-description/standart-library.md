@@ -13,7 +13,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
    - `.bodyBytes` - return a transaction's body as ByteArray
    - `.proofs` - return the list of proofs for transaction as List[ByteArray]
    
-## Group 1
+## Iissuing
 
 | field	| [IssueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html) |	[ReissueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html)	| [BurnTransaction](https://docs.wavesplatform.com/waves-client/assets-management/burn-an-asset.html) |
 | ------------- | ------------- | ------------- | ------------- |
@@ -33,7 +33,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * `.script` - return a script if it is a smart asset and None otherwise (Option[ByteArray])
 * `.assetId` - return id of an existed asset as ByteArray
 
-## Group 2
+## Transferring
 
 | field | TransferTransaction	| [MassTransferTransaction](https://docs.wavesplatform.com/technical-details/mass-transfer-transaction.html)	| PaymentTransaction* |
 | ------------- | ------------- | ------------- | ------------- |
@@ -63,7 +63,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * LeaseCancelTransaction - 
    - `.leaseId` - return an id of cancelled leasing
 
-# Exchange Transaction and Order 
+## Exchange Transaction and Order 
 * `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
   - `.buyOrder` - return an order that is bought as orderType.typeRef,
   - `.sellOrder` -  return an order that is sold as orderType.typeRef,
