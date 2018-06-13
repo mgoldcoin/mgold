@@ -2,8 +2,8 @@
 
 In this section you can find examples of Full Node configuration and usage of REST API usage.
 
-* [Create your first crypto trading bot ](en/development-and-api/examples/trading-bot.md)by [Antonina Begicheva](https://github.com/gingerabsurdity)
-* [Setting Up a Waves Platform Full Node on Digital Ocean ](en/development-and-api/examples/set-up-full-node-on-digital-ocean.md)by [The Applicationist](https://github.com/theapplicationist)
+* [Create your first crypto trading bot ](../development-and-api/examples/trading-bot.md)by [Antonina Begicheva](https://github.com/gingerabsurdity)
+* [Setting Up a Waves Platform Full Node on Digital Ocean](../development-and-api/examples/set-up-full-node-on-digital-ocean.md)by [The Applicationist](https://github.com/theapplicationist)
 
 ## Contributing
 
