@@ -128,6 +128,7 @@
   * [Peers](development-and-api/waves-node-rest-api/peers.md)
   * [Blocks](development-and-api/waves-node-rest-api/blocks.md)
   * [Utils](development-and-api/waves-node-rest-api/utils.md)
+  * [Examples of Transactions](development-and-api/waves-node-rest-api/example-transactions.md)
 * [Client API](development-and-api/client-api/overview.md)
   * [Web auth API](development-and-api/client-api/auth-api.md)
   * [Payment API](development-and-api/client-api/payments-api.md)
