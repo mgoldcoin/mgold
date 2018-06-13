@@ -117,7 +117,6 @@
   * [WavesC](development-and-api/client-libraries/waves-c.md)
 * [DEX API](development-and-api/dex-api.md)
   * [Matcher](development-and-api/dex-api/matcher.md)
-* [Node API Overview](development-and-api/node-api-overview.md)
 * [Waves Node Rest API](development-and-api/waves-node-rest-api.md)
   * [Address](development-and-api/waves-node-rest-api/address.md)
   * [Lease Transactions](development-and-api/waves-node-rest-api/lease-transactions.md)
@@ -150,3 +149,4 @@
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
   * [Order execution time](/frequently-asked-questions-faq/waves-dex/order-time.md)
   * [Asset ID on the Waves DEX](/frequently-asked-questions-faq/waves-dex/asset-id.md)
+
