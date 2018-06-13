@@ -9,4 +9,4 @@ There you will find the Waves address of your account.
 
 ![](/_assets/waves_address_02.png)
 
-Also in this section you can create personal Alias, for more information please follow another article [How to create an Alias](waves-client/account-management/creating-an-alias.md)
+Also in this section you can create personal Alias, for more information please follow another article [How to create an Alias](/en/waves-client/account-management/creating-an-alias.md)
