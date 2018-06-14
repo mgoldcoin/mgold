@@ -56,7 +56,7 @@ To support the Features Activation Protocol new API method was added to the node
  {
    "height": 678929,
    "approvalInterval": 10000,
-   "approvalThreshold": 9000,
+   "approvalThreshold": 8000,
    "nextCheck": 680000,
    "features": [
        {
