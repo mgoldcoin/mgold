@@ -188,7 +188,7 @@ match tx {
 }
 ```
 
-In this example,`tx`,`d`don't have`recipient`field, but`t`has. All calls to transaction fields are now exception-free.
+In this example,`tx`, `d` don't have `recipient` field, but `t` has. All calls to transaction fields are now exception-free.
 
 ### Crypto functions
 
