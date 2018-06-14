@@ -94,9 +94,3 @@ Only issuer may sponsor asset.
 
 Minimal fee was moved to consensus.
 
-### Open Questions
-
-* Should we allow sponsorship by non issuer?
-
-
-
