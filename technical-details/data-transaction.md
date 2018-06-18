@@ -8,7 +8,7 @@
 
 ### Implementation
 
-Data inside a transaction is structured as key-value pairs. Keys are arbitrary UTF-8 strings and are case sensitive. Each value has a data type associated with it. 4 data types are supported: boolean, integer, string, and byte array.
+Data inside a transaction is structured as key-value pairs. Keys are non-empty UTF-8 strings and are case sensitive. Each value has a data type associated with it. 4 data types are supported: boolean, integer, string, and byte array.
 
 Binary format of a data transaction is as follows:
 
@@ -40,7 +40,7 @@ Data transactions issued by a single account define this account's state in a cu
 
 | tx # | key          | value   |
 |------|--------------|---------|
-| 1    | "smart" "IQ" | true 79 |
+| 1    | "smart"<br>"IQ" | true<br>79 |
 | 2    | "IQ"         | 130     |
 
 the account state will be `{"smart": true, "IQ": 130}`, this is, the latter transaction can overwrite existing keys but not delete them. There is currently no planned way to clear the state of an account.
@@ -69,18 +69,9 @@ def accountData(acc: Address, key: String): Option[DataEntry[_]]
 
 ### Fees
 
-Fee is proportional to transaction size. By default it is 100,000 per kilobyte, rounded up. Fee is payable in WAVES only and is configured in node settings file as usual:
-```
-fees {
-  data {
-    # fee = [data fee] * [size in Kbytes]
-    WAVES = 100000
-  }
-  ...
-}
-```
+Fee is proportional to transaction size. Minimal fee is 100,000 per kilobyte, rounded up.
 
-As maximum size of a transaction in bytes is just under 140K (see Implementation above), maximum fee is 0.14 WAVES.
+Fee is payable in WAVES only.
 
 ### API
 
@@ -169,12 +160,14 @@ With all endpoints, byte arrays are Base64-encoded and prefixed with "base64:".
 
 ### Constraints
 
-Maximum key size is 100 characters. A key can contain arbitrary Unicode code points including spaces and other non-printable symbols.
+Keys must be between 1 and 100 characters long. A key can contain arbitrary Unicode code points including spaces and other non-printable symbols.
 Byte array and string values have a limit of 32k bytes.
 
 Maximum number of entries in data transaction is 100.
 
 Maximum size of a data transaction is 150 kilobytes.
+
+A data transaction cannot contain multiple entries sharing the same key. Such a transaction would make little sense and would most likely indicate a user error, so it is prohibited.
 
 ### Related Changes
 
