@@ -13,7 +13,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
    - `.bodyBytes` - return a transaction's body as ByteArray
    - `.proofs` - return the list of proofs for transaction as List[ByteArray]
    
-## Iissuing
+## Issuing
 
 | field	| [IssueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html) |	[ReissueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html)	| [BurnTransaction](https://docs.wavesplatform.com/waves-client/assets-management/burn-an-asset.html) |
 | ------------- | ------------- | ------------- | ------------- |
@@ -46,7 +46,6 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 | totalAmount	| |	+	| |
 | transfers	|		| + | |
 |transferCount|	|	+ |	| 
-|recepient|+|||
 
 *PaymentTransaction - the old version of TransferTransaction
 * `.feeAssetId` - return an id of fee's asset as Option[ByteArray]
@@ -97,7 +96,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
    - `.assetId` - return an asset id as ByteArray
    - `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Option[Long]
  
-# Predefined functions
+## Predefined functions
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
@@ -120,3 +119,12 @@ WavesContracts standard library not only contains predefined data types and inst
 	- `sigVerify`:`(body: ByteArray, signature: ByteArray, pubKey: ByteArray) => Boolean`
 	- `keccak256`,`blake2b256`, `sha256` : `ByteArray => ByteArray`
 	- `base58'`, `base64'`: `ByteArray => String` 		
+## Pattern Matching
+
+There is a mechanism for checking a value against a pattern and you can handle the different expected types in a match expression. A match expression has a value, the match keyword, and at least one case clause:
+```
+match tx {
+	case t:Transfer => t.recepient
+	case t:MassTransfer => t.transfers
+}
+```
