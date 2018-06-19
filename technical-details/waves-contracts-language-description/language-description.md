@@ -26,7 +26,7 @@ Operations and constructs available are:
 * `String`
 * `Boolean`
 * `ByteArray`
-* `Option[T]`
+* `Option[T]`- implements as Union `T | Unit`
 * `List[T]`
 * Predefined non-recursive data structure like `Transaction`, `Block`etc
 * `Nothing`- "bottom type", no instance of this type can exist
@@ -70,7 +70,9 @@ To access lists element you can use syntax `list[index]` with the first element 
 
 `senderPk` : `ByteArray`
 
-`assetId` : `Option[ByteArray]`
+`transferAssetId` : `Option[ByteArray]` - id of transeded by Transfer or MassTransfer transaction asset
+
+`assetId` : `ByteArray`  - id of processed asset for Reissue, Burn and SponsoredFee transactions
 
 `recipient` : `AddressOrAlias`
 
@@ -83,7 +85,10 @@ Note that if transaction doesn't contain certain field, like `PaymentTransaction
 In order to protect from that failure, good practice is to check tx type upront, e.g.
 
 ```java
-if (tx.type == 4) then (tx.assetId == base58'8Pm...') else false
+match tx {
+  case tx: TransferTransaction | MassTransferTransaction => tx.assetId == base58'8Pm...'
+  case _ => false
+}
 ```
 
 In every script, available instances are
@@ -142,6 +147,4 @@ let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proofs[2], cooperPubKey )) then
 
 aliceSigned + bobSigned + cooperSigned >= 2
 ```
-
-
 
