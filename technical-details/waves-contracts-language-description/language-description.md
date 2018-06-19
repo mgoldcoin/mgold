@@ -51,7 +51,6 @@ To determinate count of lists elements you can use function `size`:
 This is also true for ByteArray:
 * `size `: `ByteArray => Long`
 
-
 # Examples
 
 Here's a complete multisig 2 of 3 example. Keep in mind all`let`s could actually be inlined, they exist only for the sake of readability.

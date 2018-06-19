@@ -97,6 +97,7 @@ Signs an arbitrary transaction. This requires an API key, and transaction type t
 | 8 | Lease |
 | 9 | Lease Cancel |
 | 10 | Alias |
+| 11 | Mass Transfer |
 | 12 | Data |
 | 13 | Set Script |
 | 14 | Sponsorship |
@@ -155,7 +156,7 @@ or
 
 ![master](https://img.shields.io/badge/master-branch-0056FF.svg)
 
-Signs an arbitrary transaction by a private key of signer. This requires an API key, a signer address and transaction type to be specified in the request body. 
+Signs an arbitrary transaction by a private key of signer. This requires an API key, a signer address and transaction type to be specified in the request body.
 
 `signerAddress` should be created by [POST /addresses](https://docs.wavesplatform.com/development-and-api/waves-node-rest-api/address.html#post-addresses).
 
@@ -170,6 +171,7 @@ The types are as follows:
 | 8 | Lease |
 | 9 | Lease Cancel |
 | 10 | Alias |
+| 11 | Mass Transfer |
 | 12 | Data |
 | 13 | Set Script |
 | 14 | Sponsorship |
@@ -249,3 +251,6 @@ and all the other parameters appropriate for a transaction of the given type.
  "alias":"dajzmj6gfuzmbfnhamsbuxivc"
 }
 ```
+
+
+

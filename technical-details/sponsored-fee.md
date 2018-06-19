@@ -84,7 +84,7 @@ fees {
 }
 ```
 
-Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetid).
+Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetid) and [asset balance](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsbalanceaddress).
 
 ### Constraints
 
@@ -93,10 +93,4 @@ Only issuer may sponsor asset.
 ### Related Changes
 
 Minimal fee was moved to consensus.
-
-### Open Questions
-
-* Should we allow sponsorship by non issuer?
-
-
 

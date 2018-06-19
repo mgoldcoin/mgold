@@ -471,6 +471,21 @@ Below is a sample **Data transaction** encoded as **JSON**:
 }
 ```
 
+#### Sponsored Fee Transaction
+
+Set and cancel [fee sponsorship](sponsored-fee.md) for asset.
+
+| Field | Size in Bytes | Comment |
+| --- | ---: | --- |
+| type | 1 | == 14 |
+| version | 1 | == 1 at this time |
+| sender's public key | 32 |
+| Asset ID | 32 |
+| minimal fee in assets | 8 | Zero value assume canceling sponsorship. |
+| timestamp | 8 |
+| fee | 8 |
+| proofs | ? | currently only signature is supported |
+
 ## Network messages
 
 ### Network message structure

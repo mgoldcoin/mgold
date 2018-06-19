@@ -8,7 +8,7 @@
 
 ### Implementation
 
-Data inside a transaction is structured as key-value pairs. Keys are arbitrary UTF-8 strings and are case sensitive. Each value has a data type associated with it. 4 data types are supported: boolean, integer, string, and byte array.
+Data inside a transaction is structured as key-value pairs. Keys are non-empty UTF-8 strings and are case sensitive. Each value has a data type associated with it. 4 data types are supported: boolean, integer, string, and byte array.
 
 Binary format of a data transaction is as follows:
 
@@ -20,7 +20,7 @@ Binary format of a data transaction is as follows:
 | number of data entries | 2 |
 | key1 length | 2 | key1 byte size
 | key1 bytes | ? | UTF-8 encoded
-| value1 type | 1 | 0 = integer<br>1 = boolean<br>2 = binary array
+| value1 type | 1 | 0 = integer<br>1 = boolean<br>2 = binary array<br>3 = string
 | value1 bytes | ? |
 |... | |
 | timestamp | 8 |
@@ -40,7 +40,7 @@ Data transactions issued by a single account define this account's state in a cu
 
 | tx # | key          | value   |
 |------|--------------|---------|
-| 1    | "smart" "IQ" | true 79 |
+| 1    | "smart"<br>"IQ" | true<br>79 |
 | 2    | "IQ"         | 130     |
 
 the account state will be `{"smart": true, "IQ": 130}`, this is, the latter transaction can overwrite existing keys but not delete them. There is currently no planned way to clear the state of an account.
@@ -69,22 +69,13 @@ def accountData(acc: Address, key: String): Option[DataEntry[_]]
 
 ### Fees
 
-Fee is proportional to transaction size. By default it is 100,000 per kilobyte, rounded up. Fee is payable in WAVES only and is configured in node settings file as usual:
-```
-fees {
-  data {
-    # fee = [data fee] * [size in Kbytes]
-    WAVES = 100000
-  }
-  ...
-}
-```
+Fee is proportional to transaction size. Minimal fee is 100,000 per kilobyte, rounded up.
 
-As maximum size of a transaction in bytes is just under 140K (see Implementation above), maximum fee is 0.14 WAVES.
+Fee is payable in WAVES only.
 
 ### API
 
-`POST /addresses/data` signs and sends a data transaction. This endpoint requires API key. Sample input is as follows (binary arrays are Base58-encoded):
+`POST /addresses/data` signs and sends a data transaction. This endpoint requires API key. Sample input is as follows (binary arrays are Base64-encoded):
 ```
 {
   "version" : 1,
@@ -92,7 +83,8 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
   "data": [
     {"key": "int", "type": "integer", "value": 24},
     {"key": "bool", "type": "boolean", "value": true},
-    {"key": "blob", "type": "binary", "value": "BzWHaQU"}
+    {"key": "blob", "type": "binary", "value": "base64:BzWHaQU"}
+    {"key": "My poem", "type": "string", "value": "Oh waves!"}
   ],
   "fee": 100000
 }
@@ -103,7 +95,7 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
 [ {
   "key" : "blob",
   "type" : "binary",
-  "value" : "BzWHaQU"
+  "value" : "base64:BzWHaQU"
 }, {
   "key" : "bool",
   "type" : "boolean",
@@ -112,6 +104,10 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
   "key" : "int",
   "type" : "integer",
   "value" : 24
+}, {
+  "key": "My poem",
+  "type": "string",
+  "value": "Oh waves!"
 } ]
 ```
 
@@ -149,30 +145,30 @@ As maximum size of a transaction in bytes is just under 140K (see Implementation
   }, {
     "key" : "blob",
     "type" : "binary",
-    "value" : "BzWHaQU"
+    "value" : "base64:BzWHaQU"
+  }, {
+    "key" : "My poem",
+    "type" : "string",
+    "value" : "Oh waves!"
   } ],
   "version" : 1,
   "height" : 303
 }
 ```
 
-With all endpoints, byte arrays are Base58-encoded.
+With all endpoints, byte arrays are Base64-encoded and prefixed with "base64:".
 
 ### Constraints
 
-Maximum key size is 100 characters. A key can contain arbitrary Unicode code points including spaces and other non-printable symbols.
-Byte string values have a limit of 1024 bytes.
+Keys must be between 1 and 100 characters long. A key can contain arbitrary Unicode code points including spaces and other non-printable symbols.
+Byte array and string values have a limit of 32k bytes.
 
 Maximum number of entries in data transaction is 100.
 
 Maximum size of a data transaction is 150 kilobytes.
 
+A data transaction cannot contain multiple entries sharing the same key. Such a transaction would make little sense and would most likely indicate a user error, so it is prohibited.
+
 ### Related Changes
 
 Data transaction will go through feature activation routine as Feature 5.
-
-### Open Questions
-
-* Some use cases (voting is one example) might benefit from immutable key-value pairs. Several options are possible:
-   * Add a mutable flag to each entry indicating whether value associated with a key may be overwritten or not.
-   * Just make all values immutable. This is inconvenient for oracles, will lead to state bloat quickly.

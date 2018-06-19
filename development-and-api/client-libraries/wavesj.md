@@ -14,7 +14,7 @@ Use the codes below to add WavesJ as a dependency for your project.
 <dependency>
     <groupId>com.wavesplatform</groupId>
     <artifactId>wavesj</artifactId>
-    <version>0.2</version>
+    <version>0.8</version>
 </dependency>
 ```
 

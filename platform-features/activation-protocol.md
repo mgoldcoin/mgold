@@ -16,7 +16,7 @@ State of features is stored on the blockchain. The feature can be in one of thre
 
 # 2. Voting
 
-Voting is performed by miners. If miner supports some feature and wants to vote "yes" it has to put its number \(ID\) in the list of supported features in the configuration file. From now on every block forged by this miner will contain the IDs of supported features. Every 10000 blocks \(this number may differ on other blockchains\) the node sums up the number of blocks with support for a feature. If a feature was supported in more than 90% of blocks during the last calculation period it became Approved. Otherwise, the voting continues and could take another voting period \(10k blocks for Mainnet\) or more.
+Voting is performed by miners. If miner supports some feature and wants to vote "yes" it has to put its number \(ID\) in the list of supported features in the configuration file. From now on every block forged by this miner will contain the IDs of supported features. Every 10000 blocks \(this number may differ on other blockchains\) the node sums up the number of blocks with support for a feature. If a feature was supported in more than 80% of blocks during the last calculation period it became Approved. Otherwise, the voting continues and could take another voting period \(10k blocks for Mainnet\) or more.
 
 If the node sees that a new feature was approved, but the node does not implement it, it will log the warning message about the upcoming activation of an unsupported feature.
 
@@ -56,7 +56,7 @@ To support the Features Activation Protocol new API method was added to the node
  {
    "height": 678929,
    "approvalInterval": 10000,
-   "approvalThreshold": 9000,
+   "approvalThreshold": 8000,
    "nextCheck": 680000,
    "features": [
        {
