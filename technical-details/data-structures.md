@@ -475,16 +475,39 @@ Below is a sample **Data transaction** encoded as **JSON**:
 
 Set and cancel [fee sponsorship](sponsored-fee.md) for asset.
 
-| Field | Size in Bytes | Comment |
-| --- | ---: | --- |
-| type | 1 | == 14 |
-| version | 1 | == 1 at this time |
-| sender's public key | 32 |
-| Asset ID | 32 |
-| minimal fee in assets | 8 | Zero value assume canceling sponsorship. |
-| timestamp | 8 |
-| fee | 8 |
-| proofs | ? | currently only signature is supported |
+| \# | Field name | Type | Position | Length |
+| --- | ---: | --- | --- | --- |
+| 1 | Transaction type (0x0e) | Byte | 0 | 1 |
+| 2 | Version (0x01) |  Byte | 1 | 1 | 
+| 3 | Sender's public key | Bytes | 2 | 32 |
+| 4 | Asset ID | Bytes | 34 | 32 |
+| 5 | Minimal fee in assets\* | Long | 66 | 8 | 
+| 6 | Timestamp | Long | 72 | 8 |
+| 7 | Fee | Long | 80 | 8 |
+| 8 | Proofs\*\* | Bytes | 88 | 64 | 
+
+\* Zero value assume canceling sponsorship.
+
+\*\* Currently only signature is supported, signature have Length = 64
+
+**Note.** [**Here**](/technical-details/sponsored-fee.md) you can find more details about Sponsored Transaction.
+
+Below is a sample **Sponsored transaction** encoded as **JSON**:
+
+```cpp
+{
+  "type" : 14,
+  "id" : "CwHecsEjYemKR7wqRkgkZxGrb5UEfD8yvZpFF5wXm2Su",
+  "sender" : "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
+  "senderPublicKey" : "5AzfA9UfpWVYiwFwvdr77k6LWupSTGLb14b24oVdEpMM",
+  "minSponsoredAssetFee": 100000, 
+  "fee" : 100000000,
+  "timestamp" : 1520945679531,
+  "proofs" : [ "4huvVwtbALH9W2RQSF5h1XG6PFYLA6nvcAEgv79nVLW7myCysWST6t4wsCqhLCSGoc5zeLxG6MEHpcnB6DPy3XWr" ],
+  "version" : 1,
+  "height" : 303
+}
+```
 
 ## Network messages
 
