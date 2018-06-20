@@ -2,13 +2,16 @@
 
 ### Use Cases
 
-Users can set fee in asset but node owners don't need to allow payments in this asset. Then sponsorship is set for an asset, the miner will receive a fee in Waves for the processing of a transaction with the fee in the sponsored asset.  
-Only the issuer of the asset can set the sponsorship. The sponsorship is set by giving the rate at which the fee in the asset is converted in the fee in Waves.
+Users can set a transaction fee nominated in an asset. However, node owners need to explicitly allow transaction fees in the asset by manually editing node configuration file. Otherwise, node won't be able to mine a block with these transactions.
+
+To avoid an extra configuration step, sponsorship could be set for an asset. In this case miner will receive fee in Waves for processing of transactions if their fee is nominated in sponsored asset.
+
+Only the issuer of an asset can set up sponsorship. The sponsorship is set by giving the rate at which fee in an asset is converted to Waves.
 
 ### Feature activation
 
 * SponsorFeeTransaction is invalid unless "Fee Sponsorship" feature isn't activated.
-* After "Fee Sponsorship" feature activation SponsorFeeTransaction is avaliable to process. Asset Fee calulation works like an early 10000 more blocks.
+* After "Fee Sponsorship" feature activation SponsorFeeTransaction is available to process, but it starts work only after 10000 blocks after activation. Before that, the Asset Fee calculation remains unchanged.
 * After 10000 blocks sponsor pays 1/minSponsoredAssetFee for each token used fo fee.
 
 ### Implementation
@@ -17,18 +20,21 @@ Only the issuer of the asset can set the sponsorship. The sponsorship is set by 
 
 Binary format of a SponsorFee transaction is as follows:
 
-| Field | Size in Bytes | Comment |
-| --- | ---: | --- |
-| type | 1 | == 14 |
-| version | 1 | == 1 at this time |
-| sender's public key | 32 |
-| Asset ID | 32 |
-| minimal fee in assets | 8 | Zero value assume canceling sponsorship. |
-| timestamp | 8 |
-| fee | 8 |
-| proofs | ? | currently only signature is supported |
+| \# | Field name | Type | Position | Length |
+| --- | ---: | --- | --- | --- |
+| 1 | Transaction type (0x0e) | Byte | 0 | 1 |
+| 2 | Version (0x01) |  Byte | 1 | 1 | 
+| 3 | Sender's public key | Bytes | 2 | 32 |
+| 4 | Asset ID | Bytes | 34 | 32 |
+| 5 | Minimal fee in assets\* | Long | 66 | 8 | 
+| 6 | Timestamp | Long | 72 | 8 |
+| 7 | Fee | Long | 80 | 8 |
+| 8 | Proofs\*\* | Bytes | 88 | 64 | 
 
-JSON representation
+\* Zero value assume canceling sponsorship.
+\*\* Currently only signature is supported, signature have Length = 64
+
+JSON representation example:
 
 ```js
 {
@@ -47,7 +53,8 @@ JSON representation
 
 ### Fees
 
-Fee is payable in WAVES only and is configured in node settings file as usual:
+#### Fee for Sponsored Fee Transaction
+A fee for a sponsor is payable in WAVES only and is configured in node settings file as usual:
 
 ```js
 fees {
@@ -57,6 +64,17 @@ fees {
   ...
 }
 ```
+The fee for this transaction is fixed and equal to 1.0 WAVES.
+
+#### Fee for miner in WAVES
+The total miner's fee in WAVES for transactions with a fee in sponsored (after sponsorship activation) can be compute by this formula:
+```
+    feeInWaves = assetFee * feeUnit / sponsorship
+```
+where: 
+* `assetFee` - a fee in asset from transaction
+* `feeUnit` - for sponsorship is equal to 100000
+* `sponsorship` - the `minSponsoredAssetFee` value from Sponsored Fee Transaction for this asset 
 
 ### API
 
