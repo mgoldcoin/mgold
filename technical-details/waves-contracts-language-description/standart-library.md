@@ -39,17 +39,15 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 | ------------- | ------------- | ------------- | ------------- |
 | feeAssetId	| +	| +	| |
 | amount	| +	|	 | + | 
-| transferAssetId	| +	| 	|  | 
+| transferAssetId	| +	| + |  | 
 | recepient |	+	|	| + |
 | attachment	| +	| +	| | 
-| assetId	|	+ |	| |
 | totalAmount	| |	+	| |
 | transfers	|		| + | |
 |transferCount|	|	+ |	| 
 
 *PaymentTransaction - the old version of TransferTransaction
 * `.feeAssetId` - return an id of fee's asset as Option[ByteArray]
-* `.assetId` - return an id of transferred asset as Option[ByteArray]
 * `.totalAmount` - return a total amount of transferred asset as a Long number 
 * `.transfers` - return all transfer's transactions of mass transfer as List[Transfer]
 * `.transferCount` - return a total count of transfers in mass transfer as a Long number 
