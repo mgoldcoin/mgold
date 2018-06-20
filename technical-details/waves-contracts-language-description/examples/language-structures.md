@@ -164,7 +164,7 @@ match tx {
  }
 ```
 
-## Union Types, Case Types and Type Matching
+## Union Types
 
 It's very important to check transaction type before accessing field:
 
@@ -194,7 +194,7 @@ In this example,`tx`, `d` don't have `recipient` field, but `t` has. All calls t
 
 ### Crypto functions
 
-Sometimes users need operate confidential information, for such needs RIDE has crypto functions `"sha256", "blake2b256",     
+Sometimes users need operate confidential information, for such needs RIDE has crypto functions `"sha256", "blake2b256",       
 "keccak256"`. In very popular use case as AtomicSwap, you can find an example of such usage:
 
 ```
