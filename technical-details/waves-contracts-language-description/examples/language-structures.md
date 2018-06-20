@@ -8,16 +8,16 @@ You can use the following recommendations to make your scripts readable, maintai
 
 ### Spaces
 
-We support the following chars `" ", "\r", "\t", "\n"`. Try to avoid long lines, sometimes you'll work with   
+We support the following chars `" ", "\r", "\t", "\n"`. Try to avoid long lines, sometimes you'll work with  
 scripts from terminals or browsers frames. For readability you can use blank lines between logic blocks.
 
 ### Constant Naming
 
 Language Version 1.0 supports only a constants. To define constant you should use `let` structure  
- `let = constName (";"|"\r"|"\n") BLOCK`. For multi definition structure is   
+ `let = constName (";"|"\r"|"\n") BLOCK`. For multi definition structure is  
  `let = constName (";"|"\r"|"\n")[let = constName (";"|"\r"|"\n")]+ BLOCK`.  
-Use clear and understandable names, avoid using keywords of the language such as `height`, `tx`, `None`,   
-`if-then-else`,  or functions names. Main points are: clearness, understandable and shortness. The language parser   
+Use clear and understandable names, avoid using keywords of the language such as `height`, `tx`, `None`,  
+`if-then-else`,  or functions names. Main points are: clearness, understandable and shortness. The language parser  
 uses rules:
 
 ```
@@ -70,8 +70,8 @@ will be implemented soon :\)
 
 ## Types
 
-As described in [Available data types](/technical-details/waves-contracts-language-description/language-description.md#available-data-types),   
-language has the following types: `Bottom Type, Primitive Types, Complex Types`. Users shouldn't specify type,   
+As described in [Available data types](/technical-details/waves-contracts-language-description/language-description.md#available-data-types),  
+language has the following types: `Bottom Type, Primitive Types, Complex Types`. Users shouldn't specify type,  
 the language will do it automatically, but remember basic rules:
 
 * don't mix up different types `100500 + true` or `Some(tx.timestamp) - "hash"` 
@@ -95,7 +95,7 @@ let accSig = sigVerify(tx.bodyBytes,tx.proofs[0],accountPK) (...)
 
 ### Binary Operations
 
-Operations include `">=", ">", "<", "<=", "+", "-", "&&", "||", "=="`. Consider examples for binary operators   
+Operations include `">=", ">", "<", "<=", "+", "-", "&&", "||", "=="`. Consider examples for binary operators  
 in RIDE:
 
 ```
@@ -108,7 +108,7 @@ let sig = ((tx.type == 8) || sigVerify(tx.bodyBytes,tx.proofs[0],sigA)) (...)
 
 ### Getter structures
 
-You can use getter structures for field access of transactions or something with a complicated structure, just use   
+You can use getter structures for field access of transactions or something with a complicated structure, just use  
 `"."` symbol:
 
 ```
@@ -119,8 +119,8 @@ You can use getter structures for field access of transactions or something with
 
 ### Recursion
 
-RIDE doesn't support recursion in scripts, because each contract's run is stateless. But you can read stored data from   
-blockchain, and validate it as you need. For example you can read some  attached data by address or from a previous   
+RIDE doesn't support recursion in scripts, because each contract's run is stateless. But you can read stored data from  
+blockchain, and validate it as you need. For example you can read some  attached data by address or from a previous  
 transactions.
 
 Here is example of ID extraction of a previous transaction:
@@ -151,8 +151,8 @@ let numberOfRecipients = if(isDefined(Oracle)) then 5 else 1 (...)
 
 ### Pattern matching
 
-As Scala's documentation says: "Pattern matching is a mechanism for checking a value against a pattern. A successful   
-match can also deconstruct a value into its constituent parts. It is a more powerful version of the switch statement   
+As Scala's documentation says: "Pattern matching is a mechanism for checking a value against a pattern. A successful  
+match can also deconstruct a value into its constituent parts. It is a more powerful version of the switch statement  
 in Java and it can likewise be used in place of a series of if/else statements."
 
 RIDE also inherits such functionality but in a more simple mode, a basic statement for usage:
@@ -164,23 +164,25 @@ match tx {
  }
 ```
 
-The main functionality of "Pattern Matching" is to check the transaction type before accessing field:
+## Union Types
 
-```java
+It's very important to check transaction type before accessing field:
+
+```js
 if (tx.type == 4) tx.recipent == ...
 ```
 
 But that's error-prone, because
 
-```java
+```js
 if (tx.type == 44) tx.recipent == ...
 ```
 
 would still compile and result in execution error.
 
-With Pattern Matching, each transaction type has its own fields, and you have to match tx type first:
+With this change, each transaction type has its own fields, and you have to match transaction type first:
 
-```java
+```js
 match tx {
  case t: TransferTransaction => t.recipient = ...          # works
  case d: DataTransaction =>     d.recipient = ...          # won't compile!
@@ -192,7 +194,7 @@ In this example,`tx`, `d` don't have `recipient` field, but `t` has. All calls t
 
 ### Crypto functions
 
-Sometimes users need operate confidential information, for such needs RIDE has crypto functions `"sha256", "blake2b256",   
+Sometimes users need operate confidential information, for such needs RIDE has crypto functions `"sha256", "blake2b256",       
 "keccak256"`. In very popular use case as AtomicSwap, you can find an example of such usage:
 
 ```
@@ -209,7 +211,7 @@ let backToAliceAfterHeight = ((height >= (21 + $beforeHeight)) && (txRecipient =
 txToBob || backToAliceAfterHeight
 ```
 
-where `$shaSecret` is `sha256"BN6RTYGWcwektQfSFzH8raYo9awaLgQ7pLyWLQY4S4F5"` of `"some secret message from Alice"`,   
+where `$shaSecret` is `sha256"BN6RTYGWcwektQfSFzH8raYo9awaLgQ7pLyWLQY4S4F5"` of `"some secret message from Alice"`,  
 `$beforeHeight` is some predefined height.
 
 For example transaction's list will be:  
