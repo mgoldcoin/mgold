@@ -16,7 +16,7 @@ Some actions are denied for ScriptedAccounts:
  - Mining, since supporting multisignature blocks looks like  unnecessary complication
  - Trading on DEX, since that would require multisignature orders i.e. a lot of work and, most importantly, unclear usability scenario
 
-## AssetSctipt
+## Asset Script
 
 One can issue a new token and restrict its transfer. The script is invoked upon the following operations with an asset:
 
