@@ -22,8 +22,8 @@ Operations and constructs available are:
 * `Long`
 * `String`
 * `Boolean`
-* `ByteArray` 
-* `Option[T]`
+* `ByteArray`
+* `Option[T]`- implements as Union `T | Unit`
 * `List[T]`
 * Predefined non-recursive data structure like `Transaction`, `Block`etc
 * `Nothing`- "bottom type", no instance of this type can exist
@@ -66,6 +66,4 @@ let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proofs[2], cooperPubKey )) then
 
 aliceSigned + bobSigned + cooperSigned >= 2
 ```
-
-
 
