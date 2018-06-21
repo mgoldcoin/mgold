@@ -35,7 +35,7 @@ Smart accounts cannot send transactions themselves or transfer funds according t
 
 ## Smart Assets
 
-If we plan to apply constraints on all operations for a specific asset, we cannot use a smart account. In our paradigm, we have smart assets for this purpose: the script will be attached to the asset and will work in a similar way. Transactions for such assets are valid only if the script returns True. For example, a script can verify proofs from a transaction, check if a notary/escrow approves the transaction, and that operations with the asset aren’t locked for a specified time. The script for the token is invoked upon the following operations with an asset:
+If we plan to apply constraints on all operations for a specific asset, we cannot use a smart account. In our paradigm, we have smart assets for this purpose: the script will be attached to the asset and will work in a similar way. Transactions for such assets are valid only if the script returns True. For example, a script can verify proofs from a transaction, check if a notary/escrow approves the transaction and the fact that operations with the asset aren’t locked for a specified time. The script for the token is invoked upon the following operations with an asset:
 
 * Transfer Transaction
 * Mass Transfer Transaction
