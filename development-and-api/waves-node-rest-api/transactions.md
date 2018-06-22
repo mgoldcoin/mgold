@@ -154,7 +154,7 @@ or
 
 ### POST /transactions/sign/{signerAddress}
 
-![master](https://img.shields.io/badge/master-branch-0056FF.svg)
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
 Signs an arbitrary transaction by a private key of signer. This requires an API key, a signer address and transaction type to be specified in the request body.
 

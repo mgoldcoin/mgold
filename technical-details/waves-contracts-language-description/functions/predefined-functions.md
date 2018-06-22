@@ -1,4 +1,6 @@
 # Predefined Functions in Smart Account language
+![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node-&gt;%3D0.12.0-4bc51d.svg)
+
 
 | Function | Description |
 | :--- | :--- |
