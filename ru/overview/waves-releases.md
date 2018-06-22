@@ -4,7 +4,7 @@
 
 # Последняя версия full ноды
 
-[**Здесь**](https://github.com/wavesplatform/Waves/releases) вы можете найти последнюю версию full ноды
+[**Здесь**](https://github.com/wavesplatform/Waves/releases) вы можете найти последнюю версию full-ноды
 
 # Android приложение
 
