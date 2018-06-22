@@ -1,4 +1,11 @@
 ### GET /assets/balance/{address}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Balances for all assets that the given account ever had \(besides WAVES\).
 
@@ -53,6 +60,10 @@ Balances for all assets that the given account ever had \(besides WAVES\).
 ```
 
 ### GET /assets/balance/{address}/{assetId}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
 
 Account's balance for the given asset.
 
@@ -72,6 +83,13 @@ Account's balance for the given asset.
 ```
 
 ### GET /assets/details/{assetId}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Asset description.
 
@@ -100,6 +118,13 @@ Asset description.
 ```
 
 ### POST /assets/broadcast/issue
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Publish signed Asset issue transaction to the network.
 
@@ -173,6 +198,13 @@ Publish signed Asset issue transaction to the network.
 ```
 
 ### POST /assets/broadcast/reissue
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Re-issue additional quantity of the Asset. Publish signed Asset re-issue transaction to the network.
 
@@ -227,6 +259,13 @@ Others the same as in [Broadcast Issue Assets]
 ```
 
 ### POST /assets/broadcast/burn
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Burn quantity of the Asset. Publish signed Asset burn transaction to the network.
 
@@ -271,6 +310,13 @@ Burn quantity of the Asset. Publish signed Asset burn transaction to the network
 ```
 
 ### POST /assets/broadcast/transfer
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Publish signed Asset transfer from one address to another as a transaction to the network.
 
@@ -374,6 +420,13 @@ Publish signed Asset transfer from one address to another as a transaction to th
 ```
 
 ### POST /assets/broadcast/batch-transfer
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Publish many signed Asset transfer from one address to another as a transaction to the network. The current limit on the size of the JSON object sent is 1 megabyte.
 
