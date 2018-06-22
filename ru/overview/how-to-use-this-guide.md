@@ -37,7 +37,7 @@
 # 4. Мобильные приложения
 
 1. [Waves кошелек для устройств на IOS](/en/mobile-apps/iOS.md)
-2. [Waves кошелек для устройтсв на Android](/en/mobile-apps/android.md)
+2. [Waves кошелек для устройств на Android](/en/mobile-apps/android.md)
 
 # 5. Waves full-нода
 
@@ -50,7 +50,7 @@
 5. [Экспорт и импорт из блокчейна](/en/waves-full-node/export-and-import-from-the-blockchain.md)
 6. [Уменьшение используемого места на диске](/en/waves-full-node/reducing-disk-space-usage.md)
 7. [Присоединение к Testnet](/en/waves-full-node/joining-testnet.md)
-8. [настройка](/en/waves-full-node/configuration.md)
+8. [Настройка](/en/waves-full-node/configuration.md)
 
 # 6. Разработка и API
 
