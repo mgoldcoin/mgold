@@ -1,4 +1,7 @@
 ### GET /transactions/info/{id}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Return transaction data by transaction ID.
 
@@ -29,6 +32,9 @@ Return transaction data by transaction ID.
 ```
 
 ### GET /transactions/address/{address}/limit/{limit}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Return the specified number of the latest transactions by the given account address.
 
@@ -60,6 +66,9 @@ Return the specified number of the latest transactions by the given account addr
 ```
 
 ### GET /transactions/unconfirmed
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Return a list of unconfirmed transactions in the node pool.
 
@@ -85,6 +94,7 @@ Return a list of unconfirmed transactions in the node pool.
 ```
 
 ### POST /transactions/sign
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
 Signs an arbitrary transaction. This requires an API key, and transaction type to be specified in the request body. The types are as follows:
 
@@ -214,6 +224,8 @@ and all the other parameters appropriate for a transaction of the given type.
 ```
 
 ### POST /transactions/broadcast
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
 
 Broadcasts a signed transaction of any type.
 
