@@ -28,6 +28,21 @@ Operations and constructs available are:
 * Predefined non-recursive data structure like `Transaction`, `Block`etc
 * `Nothing`- "bottom type", no instance of this type can exist
 
+### Structures
+
+* `Address(ByteArray)`
+* `Alias(String)`
+* `LongDataEntry(String key, Long value)`
+* `BoolDataEntry(String key, Boolean value)`
+* `ByteVectorDataEntry(String key, ByteVector value)`
+* `StrDataEntry(String key, String value)`
+
+Structure types can be instantiated by calling their constructor, which has the same name as the type itself, and passing the necessary parameters:
+```
+let addr = Address(base58'3My3KZgFQ3CrVHgz6vGRt8687sH4oAA1qp8')
+let alias = Alias("alicia")
+```
+
 ### Option\[T\]
 
 `Option[T]` can be represented as

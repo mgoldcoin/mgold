@@ -66,7 +66,11 @@ let massTransferAttrs = ((tx.type == 11) && (size(tx.transfers) == 2)) (...)
 
 ### Comments
 
-will be implemented soon :\)
+Start with a `#`
+```
+# add up some numbers
+let total = 3 + 5 + 8 + 11  # Fibonacci
+```
 
 ## Types
 
