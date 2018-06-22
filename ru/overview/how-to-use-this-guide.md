@@ -29,7 +29,7 @@
 Секция содержит пошаговое руководство для установки Waves клиента, создания аккаунта, Лизинга и Выпуска ассета.
 
 1. [Установка клиента Waves](/en/waves-client/install-waves-client.md)
-2. [Управление аккаунтом](/en/waves-client/account-management.md) \([Create](/waves-client/account-management/creating-an-account.md) and [Restore](/en/waves-client/account-management/restore-an-account.md) an Account\)
+2. [Управление аккаунтом](/en/waves-client/account-management.md) \([Создание](/ru/waves-client/account-management/creating-an-account.md) и [Восстановление](/en/waves-client/account-management/restore-an-account.md) аккаунта\)
 3. [Переводы и вывод средств](/en/waves-client/wallet-management.md)
 4. [Waves DEX](/en/waves-client/waves-dex.md) \(Trading Using DEX\)
 5. [Управление ассетами \(выпуск и перевыпуск ассетов\)](/en/waves-client/assets-management.md)
