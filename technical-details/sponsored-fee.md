@@ -54,17 +54,7 @@ JSON representation example:
 ### Fees
 
 #### Fee for Sponsored Fee Transaction
-A fee for a sponsor is payable in WAVES only and is configured in node settings file as usual:
-
-```js
-fees {
-    sponsor-fee {
-      WAVES = 100000000
-    }
-  ...
-}
-```
-The fee for this transaction is fixed and equal to 1.0 WAVES.
+A fee for a sponsor is payable in WAVES only. The fee for this transaction is fixed and equal to 1.0 WAVES.
 
 #### Fee for miner in WAVES
 The total miner's fee in WAVES for transactions with a fee in sponsored (after sponsorship activation) can be compute by this formula:
