@@ -518,12 +518,12 @@ Sets the script which veries all outgoing transactions. The set script can be ch
 | 1 | Transaction type (0x0d) | Byte | 0 | 1 |
 | 2 | Version (0x01) |  Byte | 1 | 1 | 
 | 3 | ChainId | Byte | 2 | 1 |
-| 4 | Sender's public key | Bytes | 2 | 32 |
-| 5 | 1 if script is not null, 0 otherwise |  Byte | 34 | 1 | 
-| 6 | Script object length \(N\) | Short | 35 | 2 |
-| 7 | Script object bytes | Bytes | 37 | N |
-| 8 | Fee | Long | 37 + N | 8 |
-| 9 | Timestamp | Long | 45 + N | 8 |
+| 4 | Sender's public key | Bytes | 3 | 32 |
+| 5 | 1 if script is not null, 0 otherwise |  Byte | 35 | 1 | 
+| 6 | Script object length \(N\) | Short | 36 | 2 |
+| 7 | Script object bytes | Bytes | 38 | N |
+| 8 | Fee | Long | 38 + N | 8 |
+| 9 | Timestamp | Long | 46 + N | 8 |
 
 [**Here**](/technical-details/waves-contracts-language-description.md) you can find more details about Waves smart-contracts.
 [**Here**](/technical-details/waves-contracts-language-description/standart-library.md) you can find more details about smart-contracts standart library.
