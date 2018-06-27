@@ -27,9 +27,9 @@ Binary format of a SponsorFee transaction is as follows:
 | 3 | Sender's public key | Bytes | 2 | 32 |
 | 4 | Asset ID | Bytes | 34 | 32 |
 | 5 | Minimal fee in assets\* | Long | 66 | 8 | 
-| 6 | Timestamp | Long | 72 | 8 |
-| 7 | Fee | Long | 80 | 8 |
-| 8 | Proofs\*\* | Bytes | 88 | 64 | 
+| 6 | Timestamp | Long | 74 | 8 |
+| 7 | Fee | Long | 82 | 8 |
+| 8 | Proofs\*\* | Bytes | 90 | 64 | 
 
 \* Zero value assume canceling sponsorship.
 \*\* Currently only signature is supported, signature have Length = 64
