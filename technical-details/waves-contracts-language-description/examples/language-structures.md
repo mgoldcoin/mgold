@@ -59,7 +59,8 @@ Braces are used to create logical expressions or functions calls:
 ```
 let notaryAgreement = if(isDefined(tx.proof[1])) then (...)
 
-let massTransferAttrs = ((tx.type == 11) && (size(tx.transfers) == 2)) (...)
+let massTransferAttrs = ((match tx {
+              case a: MasstransferTransaction => true} && (size(tx.transfers) == 2)) (...)
 
 (...) (txToGovAttrsAllow && sig && txToGov)  || (txToUsers && sig)
 ```
@@ -105,7 +106,8 @@ in RIDE:
 ```
 let amountTxCorrect = tx.amount == 300000 (...)
 
-let sig = ((tx.type == 8) || sigVerify(tx.bodyBytes,tx.proofs[0],sigA)) (...)
+let sig = ((match tx {
+              case a: LeaseTransaction => true}) || sigVerify(tx.bodyBytes,tx.proofs[0],sigA)) (...)
 
 (...) height <= 15000000
 ```
@@ -173,17 +175,10 @@ match tx {
 It's very important to check transaction type before accessing field:
 
 ```js
-if (tx.type == 4) tx.recipent == ...
+match tx {
+	case t:TransferTransaction => t.recepient
+}
 ```
-
-But that's error-prone, because
-
-```js
-if (tx.type == 44) tx.recipent == ...
-```
-
-would still compile and result in execution error.
-
 With this change, each transaction type has its own fields, and you have to match transaction type first:
 
 ```js
