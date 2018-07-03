@@ -39,10 +39,10 @@
     "favicon": "/_theme/favicon.ico",
     "custom-js-css": {
       "js": [
-        "./_theme/tree-shaper.js"
+        "_theme/tree-shaper.js"
       ],
       "css": [
-        "./_theme/tree-shaper.css"
+        "_theme/tree-shaper.css"
       ]
 
     }
