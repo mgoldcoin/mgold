@@ -1,19 +1,27 @@
 # Predefined Functions in Smart Account language
+![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node-&gt;%3D0.12.0-4bc51d.svg)
+
 
 | Function | Description |
 | :--- | :--- |
-| isDefined\(opt\) | It checks if the option contains some value \(opt - optionT\) |
-| extract\(opt\) | Extract the value from the option \(opt - optionT\) |
-| Some\(obj\) | To create the option \(obj - TYPEPARAM\('T'\)\) |
-| size\(byteVector\) | It returns the size of byte array \(byteVector - BYTEVECTOR\) |
-| size\(list\) | It returns the count of list's elements \(list - LIST[T]\) |
-| txById\(id\) | It returns the transaction by ID \(id - tx id\) |
-| getLong\(DataType.Long\) | It gets Long value from Data Transaction by Key |
-| getBoolean\(DataType.Boolean\) | It gets boolean value from Data Transaction by Key |
-| getByteArray\(DataType.ByteArray\) | It gets byte array fro Data Transaction by Key |
-| addressFromPublicKey\(pk\) | It gets the address from a public key \(pk - BYTEVECTOR\) |
-| addressFromString\(Str\) | It gets the address from string \(str - STRING\) |
-| getData\(addr, key, dataType\) | It gets the data from \(addr: Obj, Key: String, dataType: DataType\) |
+| isDefined\(opt\) | It checks if the option contains some value \(opt - optionT\). |
+| extract\(opt\) | Extract the value from the option \(opt - optionT\). |
+| Some\(obj\) | To create the option \(obj - TYPEPARAM\('T'\)\). |
+| size\(byteVector\) | It returns the size of byte array \(byteVector - BYTEVECTOR\). |
+| size\(list\) | It returns the count of list's elements \(list - LIST\[T\]\). |
+| getTransactionById\(id\) | It returns the transaction by ID \(id - tx id\). |
+| transactionHeightById\(transactionId: BYTE\_VECTOR\) | it returns transaction's height by it's id. |
+| getLong\(DataType.Long\) | It gets Long value from Data Transaction by Key. |
+| getBoolean\(DataType.Boolean\) | It gets boolean value from Data Transaction by Key. |
+| getString\(address, key\) | it gets string value from address data table. |
+| getBytes\(DataType.ByteArray\) | It gets byte array fro Data Transaction by Key. |
+| addressFromPublicKey\(pk\) | It gets the address from a public key \(pk - BYTEVECTOR\). |
+| addressFromString\(Str\) | It gets the address from string \(str - STRING\). |
+| addressFromRecipient\(recipient: Obj\(bytes\)\) | it gets the address from recipient. |
+| getData\(addr, key, dataType\) | It gets the data from \(addr: Obj, Key: String, dataType: DataType\). |
+| accountAssetBalance\(addressOrAlias: Obj\(bytes\), assetId: BYTE\_VECTOR\) | It returns asset balance for address or alias. |
+| accountBalance\(addressOrAlias: Obj\(bytes\)\) | It returns account balance for address or alias. |
+| height | It returns current blockchain height. |
 
 There is an important property that the **smart account** does not store any data on the blockchain. A **smart account** will only have access to blockchain state values that can be retrieved and executed relatively fast, in a “constant” time, for example to such fields as:
 

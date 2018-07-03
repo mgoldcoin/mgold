@@ -471,6 +471,64 @@ Below is a sample **Data transaction** encoded as **JSON**:
 }
 ```
 
+#### Sponsored Fee Transaction
+
+Set and cancel [fee sponsorship](sponsored-fee.md) for asset.
+
+| \# | Field name | Type | Position | Length |
+| --- | ---: | --- | --- | --- |
+| 1 | Transaction type (0x0e) | Byte | 0 | 1 |
+| 2 | Version (0x01) |  Byte | 1 | 1 | 
+| 3 | Sender's public key | Bytes | 2 | 32 |
+| 4 | Asset ID | Bytes | 34 | 32 |
+| 5 | Minimal fee in assets\* | Long | 66 | 8 | 
+| 6 | Fee | Long | 74 | 8 |
+| 7 | Timestamp | Long | 82 | 8 |
+| 8 | Proofs\*\* | Bytes | 90 | 64 | 
+
+\* Zero value assume canceling sponsorship.
+
+\*\* Currently only signature is supported, signature have Length = 64
+
+**Note.** [**Here**](/technical-details/sponsored-fee.md) you can find more details about Sponsored Transaction.
+
+Below is a sample **Sponsored transaction** encoded as **JSON**:
+
+```cpp
+{
+  "type" : 14,
+  "id" : "CwHecsEjYemKR7wqRkgkZxGrb5UEfD8yvZpFF5wXm2Su",
+  "sender" : "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
+  "senderPublicKey" : "5AzfA9UfpWVYiwFwvdr77k6LWupSTGLb14b24oVdEpMM",
+  "minSponsoredAssetFee": 100000, 
+  "fee" : 100000000,
+  "timestamp" : 1520945679531,
+  "proofs" : [ "4huvVwtbALH9W2RQSF5h1XG6PFYLA6nvcAEgv79nVLW7myCysWST6t4wsCqhLCSGoc5zeLxG6MEHpcnB6DPy3XWr" ],
+  "version" : 1,
+  "height" : 303
+}
+```
+
+#### Set Script Transaction
+
+Sets the script which veries all outgoing transactions. The set script can be changed by another. 
+
+| \# | Field name | Type | Position | Length |
+| --- | ---: | --- | --- | --- |
+| 1 | Transaction type (0x0d) | Byte | 0 | 1 |
+| 2 | Version (0x01) |  Byte | 1 | 1 | 
+| 3 | ChainId | Byte | 2 | 1 |
+| 4 | Sender's public key | Bytes | 3 | 32 |
+| 5 | 1 if script is not null, 0 otherwise |  Byte | 35 | 1 | 
+| 6 | Script object length \(N\) | Short | 36 | 2 |
+| 7 | Script object bytes | Bytes | 38 | N |
+| 8 | Fee | Long | 38 + N | 8 |
+| 9 | Timestamp | Long | 46 + N | 8 |
+
+[**Here**](/technical-details/waves-contracts-language-description.md) you can find more details about Waves smart-contracts.
+[**Here**](/technical-details/waves-contracts-language-description/standart-library.md) you can find more details about smart-contracts standart library.
+[**Here**](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md) you can find detailed instruction how to create and deploy a script manually. 
+
 ## Network messages
 
 ### Network message structure

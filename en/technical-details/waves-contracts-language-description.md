@@ -1,4 +1,6 @@
 # Waves Smart Contract
+![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node-&gt;%3D0.12.0-4bc51d.svg)
+
 
 Our realisation of smart contracts will contain two parts:
 
@@ -12,9 +14,10 @@ We see the syntax of our language as functional, similar to F\#: strong and stat
 More technical details you can find in the articles below:
 
 1. [Approach and Capabilities](./waves-contracts-language-description/approach-and-capabilities.md)
-2. [Language and Standard Library Documentation](waves-contracts-language-description/language-description.md)
+2. [Language Description](waves-contracts-language-description/language-description.md)
+3. [Standard Library Documentation](waves-contracts-language-description/standart-library.md)
 3. [Syntax Processor and Executor Implementation Details](waves-contracts-language-description/implementation-details.md)
 4. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
-
+5. [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
 
 

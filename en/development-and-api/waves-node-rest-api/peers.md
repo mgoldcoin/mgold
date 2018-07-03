@@ -1,4 +1,7 @@
 ### POST /peers/connect
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Connect to peer.
 
@@ -12,6 +15,9 @@ Connect to peer.
 ```
 
 ### GET /peers/connected
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Returns list of all currently connected peers to the node.
 
@@ -37,10 +43,16 @@ Returns list of all currently connected peers to the node.
 ```
 
 ### GET /peers/blacklisted
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Returns list of all currently blacklisted peers to the node.
 
 ### GET /peers/all
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Returns list of all ever known not blacklisted peers with publicly available declared address.
 

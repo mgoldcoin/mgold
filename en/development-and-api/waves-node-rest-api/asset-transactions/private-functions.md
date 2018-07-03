@@ -3,6 +3,13 @@
 All private functions below require API Key to be provided in every HTTP request using `X-Api-Key` header. The default value is `ridethewaves!`. Securely hashed header value is stored in `rest-api.api-key-hash` setting in the waves.conf configuration file. See [/utils/hash/secure](https://github.com/wavesplatform/Waves/wiki/Waves-Node-REST-API#post-utilshashsecure) for more information on how to obtain a secure hash.
 
 ### POST /assets/issue
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Issue a new Asset for an address that exists in the node's wallet.
 
@@ -38,6 +45,13 @@ The same as in [Broadcast Issue Assets]
 ```
 
 ### POST /assets/reissue
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Re-issue an additional quantity of the Asset
 
@@ -71,6 +85,13 @@ The same as in [Broadcast Reissue Assets]
 ```
 
 ### POST /assets/burn
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Burn quantity of the Asset.
 
@@ -111,6 +132,13 @@ Burn quantity of the Asset.
 ```
 
 ### POST /assets/transfer
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Create transaction to transfer assets from one address to another.
 
@@ -145,6 +173,13 @@ The same as in [Broadcast Transfer Assets]
 ```
 
 ### POST /assets/masstransfer
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
+
+
 
 Create transaction to transfer an asset to several recipient addresses at once.
 
@@ -201,49 +236,7 @@ Create transaction to transfer an asset to several recipient addresses at once.
 }
 ```
 
-### POST /assets/make-asset-name-unique
 
-Create transaction to make asset name unique.
-
-**Request params:**
-
-```
-"assetId" - Asset ID previously issued, Base58-encoded
-"sender" - Sender address, Base58-encoded
-"fee" - Transaction fee for Asset issue, min = 100000
-"networkByte" - network byte ('W' - 87 - mainnet, 'T' - 84 - testnet)
-```
-
-**Request JSON example:**
-
-```js
-{
-    "type" : 11,
-    "id" : "GRhSHwLLNFz2HmxabiPU521U4NAkLshk2wgqbD9EBqEA",
-    "sender" : "3Hb3qXPdr3UikMBefgyu6dZKwG5Hjuphpc4",
-    "senderPublicKey" : "8fYJWvPAyUQgVCMuSVNwpZEAgg4E4vn8gz9hRWMsRu31",
-    "fee" : 1000000000,
-    "timestamp" : 1495637586986,
-    "signature" : "2XCbkLbKhKJrcnCUg18LEBykC54cUqtxCMbVpNrzDkXHJG11ZLQB9vSz2Ha8r4hCqgFPRAvvoo4zFecv27v4DCB3",
-    "assetId" : "91MxUYbum9hrpJUcRwVe4no36ViqnQGAUaSmM8V8L8Jx",
-    "networkByte" : 73
-```
-
-**Response JSON example:**
-
-```js
-{
-    "type" : 11,
-    "id" : "GRhSHwLLNFz2HmxabiPU521U4NAkLshk2wgqbD9EBqEA",
-    "sender" : "3Hb3qXPdr3UikMBefgyu6dZKwG5Hjuphpc4",
-    "senderPublicKey" : "8fYJWvPAyUQgVCMuSVNwpZEAgg4E4vn8gz9hRWMsRu31",
-    "fee" : 1000000000,
-    "timestamp" : 1495637586986,
-    "signature" : "2XCbkLbKhKJrcnCUg18LEBykC54cUqtxCMbVpNrzDkXHJG11ZLQB9vSz2Ha8r4hCqgFPRAvvoo4zFecv27v4DCB3",
-    "assetId" : "91MxUYbum9hrpJUcRwVe4no36ViqnQGAUaSmM8V8L8Jx",
-    "networkByte" : 73
-  }
-```
 
 
 

@@ -1,4 +1,9 @@
 ### POST /alias/broadcast/create
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
 
 Creates signed alias transaction for sender's address.
 
@@ -40,6 +45,11 @@ Creates signed alias transaction for sender's address.
 ```
 
 ### POST /alias/create
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
 
 **Request params**
 
@@ -75,6 +85,11 @@ Creates signed alias transaction for sender's address.
 ```
 
 ### GET /alias/by-alias/{alias}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
 
 **Request params**
 
@@ -93,6 +108,11 @@ Creates signed alias transaction for sender's address.
 ```
 
 ### GET /alias/by-address/{address}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
+
+
 
 **Request params**
 

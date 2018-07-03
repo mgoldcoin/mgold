@@ -1,4 +1,7 @@
 ### GET /transactions/info/{id}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Return transaction data by transaction ID.
 
@@ -29,6 +32,9 @@ Return transaction data by transaction ID.
 ```
 
 ### GET /transactions/address/{address}/limit/{limit}
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Return the specified number of the latest transactions by the given account address.
 
@@ -60,6 +66,9 @@ Return the specified number of the latest transactions by the given account addr
 ```
 
 ### GET /transactions/unconfirmed
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+
 
 Return a list of unconfirmed transactions in the node pool.
 
@@ -85,6 +94,7 @@ Return a list of unconfirmed transactions in the node pool.
 ```
 
 ### POST /transactions/sign
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
 Signs an arbitrary transaction. This requires an API key, and transaction type to be specified in the request body. The types are as follows:
 
@@ -97,6 +107,7 @@ Signs an arbitrary transaction. This requires an API key, and transaction type t
 | 8 | Lease |
 | 9 | Lease Cancel |
 | 10 | Alias |
+| 11 | Mass Transfer |
 | 12 | Data |
 | 13 | Set Script |
 | 14 | Sponsorship |
@@ -153,9 +164,9 @@ or
 
 ### POST /transactions/sign/{signerAddress}
 
-![master](https://img.shields.io/badge/master-branch-0056FF.svg)
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
-Signs an arbitrary transaction by a private key of signer. This requires an API key, a signer address and transaction type to be specified in the request body. 
+Signs an arbitrary transaction by a private key of signer. This requires an API key, a signer address and transaction type to be specified in the request body.
 
 `signerAddress` should be created by [POST /addresses](https://docs.wavesplatform.com/development-and-api/waves-node-rest-api/address.html#post-addresses).
 
@@ -170,6 +181,7 @@ The types are as follows:
 | 8 | Lease |
 | 9 | Lease Cancel |
 | 10 | Alias |
+| 11 | Mass Transfer |
 | 12 | Data |
 | 13 | Set Script |
 | 14 | Sponsorship |
@@ -212,6 +224,8 @@ and all the other parameters appropriate for a transaction of the given type.
 ```
 
 ### POST /transactions/broadcast
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
 
 Broadcasts a signed transaction of any type.
 
@@ -249,3 +263,6 @@ and all the other parameters appropriate for a transaction of the given type.
  "alias":"dajzmj6gfuzmbfnhamsbuxivc"
 }
 ```
+
+
+

@@ -33,7 +33,7 @@ Clone this repo and execute
 sbt packageAll
 ```
 
-.deb and .jar packages will be in /package folder. To build testnet packages use
+.deb and .jar (the correct JAR-file has name `waves-all-*.jar`) packages will be in /package folder. To build testnet packages use
 
 ```js
 sbt -Dnetwork=testnet packageAll

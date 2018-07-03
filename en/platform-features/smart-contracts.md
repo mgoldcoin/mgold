@@ -1,4 +1,6 @@
 # Waves Smart Contracts
+![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node-&gt;%3D0.12.0-4bc51d.svg)
+
 
 Smart contracts are an important mechanism for any blockchain platform and their realisation should be convenient and understandable for people.
 
@@ -35,11 +37,25 @@ Smart accounts cannot send transactions themselves or transfer funds according t
 
 ## Smart Assets
 
-If we plan to apply constraints on all operations for a specific asset, we cannot use a smart account. In our paradigm, we have smart assets for this purpose: the script will be attached to the asset and will work in a similar way. Transactions for such assets are valid only if the script returns True. For example, a script can verify proofs from a transaction, check if a notary/escrow approves the transaction, and that operations with the asset aren’t locked for a specified time. The script for the token is invoked upon the following operations with an asset:
+If we plan to apply constraints on all operations for a specific asset, we cannot use a smart account. In our paradigm, we have smart assets for this purpose: the script will be attached to the asset and will work in a similar way. Transactions for such assets are valid only if the script returns True. For example, a script can verify proofs from a transaction, check if a notary/escrow approves the transaction and the fact that operations with the asset aren’t locked for a specified time. The script for the token is invoked upon the following operations with an asset:
 
 * Transfer Transaction
 * Mass Transfer Transaction
 * Reissue Transaction
 * Burn Transaction
 
+<<<<<<< HEAD:en/platform-features/smart-contracts.md
 **Note.** you can find more technical details about our smart contracts implementation [**here**](/en/technical-details/waves-contracts-language-description.md).
+=======
+## Scripts' Cost
+
+We conducted performance tests for all aspects of our scripts. For this purpose, we developed an benchmark subproject with [JMH](http://openjdk.java.net/projects/code-tools/jmh/), that computes a complexity of scripts after compilation phase by AST (Abstract Syntax Tree) traversal in special _complexity units_. _Complexity units_ is a measure of the script's relative cost: we found out the most expensive operation in terms of computational complexity and defined it equal to 100 complexity units. The most expensive functions:
+ - base58
+ - sigVerify
+In every test, we conducted 10 tests and calculated the average cost. The full results of performance tests that we conducted are presented [here](/technical-details/waves-contracts-language-description/script-performance-tests.md).
+As a result, we define the following constraint for a script cost: a script must have a size no more 8 kB and must be faster than 20 executions of `sigVerify`, that is most expensive operation.
+The fixed cost for each scripted unit is equal to 400000 _wavelets_ (Waves coins, 100000000 wavelets = 1 Wave), i.e. if you use a scripted asset (smart asset) then you pay 400000 wavelets, if you also have a scripted transaction then you have to pay 2 * 400000 wavelets. 
+
+**Note.** you can find more technical details about our smart contracts implementation [**here**](/technical-details/waves-contracts-language-description.md).
+
+>>>>>>> origin/master:platform-features/smart-contracts.md
