@@ -1,6 +1,6 @@
 # How To Use This Guide?
 
-In this guide, you can find all the documentation for Waves Platform as shown below:
+In this guide, you can find all the information about Waves Platform as the structure shown below:
 
 # 1. Overview
 
