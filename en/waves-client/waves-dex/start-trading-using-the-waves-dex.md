@@ -24,7 +24,7 @@ If you want to open an order with other pair, such as "Asset"/BTC please click o
 
 If you need more options, just click on the ETH and select the base currency from the drop-down menu.
 
-![](/_assets/dex_05.1.png)
+![](/_assets/dex_05_1.png)
 
 ## **How to buy crypto currency**
 
@@ -48,7 +48,7 @@ After the expiration of the selected period, the order will be forcibly canceled
 
 The placed order will appears in the **My Open Orders** box and in the **Order Book** (upper right corner). All executed orders are available in the My Trade History section.
 
-![](/_assets/dex_06.1.png)
+![](/_assets/dex_06_1.png)
 
 **Note**: You can cancel opened order by clicking on the **X Cancel** in the **My Open Orders box**.
 
