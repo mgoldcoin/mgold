@@ -30,7 +30,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * `.description` - return a descriptions of asset as ByteVector
 * `.reissuable` - return "true" is the asset are reissuable and "false" otherwise (Boolean)
 * `.decimals` - return a number of simbols after comma as a Long
-* `.script` - return a script if it is a smart asset and None otherwise (Union[ByteVector])
+* `.script` - return a script if it is a smart asset and None otherwise (Option[ByteVector])
 * `.assetId` - return id of an existed asset as ByteVector
 
 ## Transferring
@@ -47,7 +47,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 |transferCount|	|	+ |	| 
 
 * PaymentTransaction - the old version of TransferTransaction
-* `.feeAssetId` - return an id of fee's asset as Union[ByteVector]
+* `.feeAssetId` - return an id of fee's asset as Option[ByteVector]
 * `.totalAmount` - return a total amount of transferred asset as a Long number 
 * `.transfers` - return all transfer's transactions of mass transfer as List[Transfer]
 * `.transferCount` - return a total count of transfers in mass transfer as a Long number 
@@ -89,10 +89,10 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
    - `.data` - List[DataEntriesType]
 * SetScriptTransaction - sets the script which veri es all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
-   - `.script` - Union[ByteVector]
+   - `.script` - Option[ByteVector]
 * SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details aboutfee sponsorship.
    - `.assetId` - return an asset id as ByteVector
-   - `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Union[Long]
+   - `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Option[Long]
  
 ## Predefined functions
 
@@ -100,8 +100,8 @@ WavesContracts standard library not only contains predefined data types and inst
 
 
 * Native Waves context functions:
-   - `addressFromRecipient` : `Union(ByteVector) => addressType`
-   - `transactionById` : `ByteVector => Union[Transaction]` - provides tx in blockchain by id
+   - `addressFromRecipient` : `Option(ByteVector) => addressType`
+   - `transactionById` : `ByteVector => Option[Transaction]` - provides tx in blockchain by id
    - `assetBalance`: `addressOrAliasType => Long` - provide balance info for any account
    - `transactionHeightById`: `ByteVector => UNION(LONG, UNIT)` - provides height of tx in blockchain by id
    
@@ -112,10 +112,10 @@ WavesContracts standard library not only contains predefined data types and inst
  
 * `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from         WavesContracts via:
     
-   - `getInteger`:`(accountAddress: ByteVector, key: String) => Union[Long]`
-   - `getBoolean`:`(accountAddress: ByteVector, key: String) => Union[Boolean]`
-   - `getBinary`:`(accountAddress: ByteVector, key: String) => Union[ByteVector]`
-   - `getString`:`(accountAddress: ByteVector, key: String) => Union[String]`
+   - `getInteger`:`(accountAddress: ByteVector, key: String) => Option[Long]`
+   - `getBoolean`:`(accountAddress: ByteVector, key: String) => Option[Boolean]`
+   - `getBinary`:`(accountAddress: ByteVector, key: String) => Option[ByteVector]`
+   - `getString`:`(accountAddress: ByteVector, key: String) => Option[String]`
   
 * Crypto functions:
 	- `sigVerify`:`(body: ByteVector, signature: ByteVector, pubKey: ByteVector) => Boolean`
