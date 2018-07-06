@@ -76,6 +76,10 @@ Standart ByteVector type
 * `dropRight`: `ByteVector`, `Long` => `ByteVector`
 * `takeRight`: `ByteVector`, `Long` => `ByteVector`
 
+### Long
+
+* `fraction(value: LONG, numerator: LONG, denominator: LONG) => LONG`
+
 ### String
 Standart string type
 
