@@ -98,25 +98,31 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
-* Waves specific functions:
-   - `addressFromPublicKey` : `ByteArray => ByteArray`
-   - `addressFromRecipient` : `Option(ByteArray) => ByteArray`
-   - `addressFromString` : `String => ByteArray`
-   - `getTransactionById` : `ByteArray => Option[Transaction]` - provides tx in blockchain by id
-   - `accountBalance`: `Obj(bytes) => Long` - provide balance info for any account
-   - `accountAssetBalance` : `Obj(bytes), ByteArray => Long` - provide balance info for any account
-   - `transactionHeightById`: `ByteArray => Option[Long]` - provides height of tx in blockchain by id
+
+* Native Waves context functions:
+   - `addressFromRecipient` : `Option(ByteArray) => addressType`
+   - `transactionById` : `ByteArray => Option[Transaction]` - provides tx in blockchain by id
+   - `assetBalance`: `addressOrAliasType => Long` - provide balance info for any account
+   - `transactionHeightById`: `ByteArray => UNION(LONG, UNIT)` - provides height of tx in blockchain by id
+   
+* User's Waves context functions
+   - `addressFromPublicKey` : `ByteArray => addressType`
+   - `addressFromString` : `String => UNION(addressType.typeRef, UNIT)`
+   - `wavesBalance`: `addressOrAliasType => Long` - provide balance info for any account
  
-    `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from         WavesContracts via:
+* `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from         WavesContracts via:
     
-   - `getLong`:`(accountAddress: ByteArray, key: String) => Option[Long]`
+   - `getInteger`:`(accountAddress: ByteArray, key: String) => Option[Long]`
    - `getBoolean`:`(accountAddress: ByteArray, key: String) => Option[Boolean]`
-   - `getByteArray`:`(accountAddress: ByteArray, key: String) => Option[ByteArray]`
+   - `getBinary`:`(accountAddress: ByteArray, key: String) => Option[ByteArray]`
+   - `getString`:`(accountAddress: ByteArray, key: String) => Option[String]`
   
 * Crypto functions:
 	- `sigVerify`:`(body: ByteArray, signature: ByteArray, pubKey: ByteArray) => Boolean`
 	- `keccak256`,`blake2b256`, `sha256` : `ByteArray => ByteArray`
-	- `base58'`, `base64'`: `ByteArray => String` 		
+	- `fromBase58String'`, `fromBase64String'`: `String => ByteArray` 		
+	- `toBase58String'`, `toBase64String'`: `ByteArray => String` 	
+	
 ## Pattern Matching
 
 There is a mechanism for checking a value against a pattern and you can handle the different expected types in a match expression. A match expression has a value, the match keyword, and at least one case clause:
