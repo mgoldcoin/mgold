@@ -2,7 +2,7 @@
 
 # 1. Waves Client
 
-[The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](en/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
+[The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
 # 2. Waves Wallet
 
@@ -16,13 +16,13 @@
 
 # 3. Decentralized cryptocurrency exchange \(DEX\)
 
-[DEX](en/platform-features/decentralized-cryptocurrency-exchange-dex.md) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
+[DEX](/platform-features/decentralized-cryptocurrency-exchange-dex.md) allows to place and execute orders for buying or selling cryptocurrency or Tokens for another cryptocurrency or exchanging them to other Tokens.
 
 # 4. Mobile apps
 
 * Waves Wallet is a mobile client to WavesPlatform available on [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) and [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
-* Get started with Waves wallet for [IOS](en/mobile-apps/iOS.md) or [Android](//mobile-apps/android.md)
+* Get started with Waves wallet for [IOS](/mobile-apps/iOS.md) or [Android](//mobile-apps/android.md)
 
 # 5. Waves Gateways
 
@@ -58,7 +58,7 @@ Fees are minimal and the only delays are those required by blockchain confirmati
 
 # 7. Nodes
 
-Nodes are a critical part of our ecosystem. [Run a Waves node](en/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](en/waves-client/account-management/waves-leasing.md) to you and get paid for securing the network.
+Nodes are a critical part of our ecosystem. [Run a Waves node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), help process transactions, ask the community to [lease their WAVES](/waves-client/account-management/waves-leasing.md) to you and get paid for securing the network.
 
 **Features:**
 
@@ -100,7 +100,7 @@ In principle, **any full node** can become a **Matcher**. Waves client connects 
 
 Matchers will receive fees for the service they provide, adding an additional revenue stream for Waves full nodes.
 
-**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](/en/waves-full-node/how-to-configure-a-node.md) in the section of Matcher Settings.
+**Note.** Waves node contains DEX Matcher which can be enabled while settings [the Waves node configuration file](/waves-full-node/how-to-configure-a-node.md) in the section of Matcher Settings.
 
 # 8. MainNet / TestNet
 
