@@ -6,11 +6,11 @@ In this guide, you can find all the information about Waves Platform as the stru
 
 This section will give you a general information about Waves Platform and its main components.
 
-1. [What is Waves Platform]()
-2. [Platform Components]()
+1. [What is Waves Platform](/README.md)
+2. [Platform Components](/overview/platform-components.md)
 3. [Waves Official Resources](/en/overview/waves-official-resources.md)
-4. [Security Notes](/en/overview/security-notes.md)
-5. [Waves Releases](/en/overview/waves-releases.md)
+4. [Security Notes](/overview/security-notes.md)
+5. [Waves Releases](/overview/waves-releases.md)
 
 # 2. Platform Features
 
