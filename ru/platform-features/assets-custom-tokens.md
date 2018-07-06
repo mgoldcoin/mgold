@@ -18,7 +18,7 @@ Waves токены также могут использоваться для о�
 
 # 2. Операции над ассетами \(Issue, Reissue and Burn an Asset\) {#Assets(customtokens)-AssetsOperations(Issue,ReissueandBurnanAsset)}
 
-Более подробную информацию об ассет-транзакциях можно найти [здесь](/en/development-and-api/waves-node-rest-api/asset-transactions.md).
+Более подробную информацию об ассет-транзакциях можно найти [здесь](/development-and-api/waves-node-rest-api/asset-transactions.md).
 
 ## 2.1 Выпуск ассет-транзакции {#Assets(customtokens)-IssueAssetTransaction}
 
