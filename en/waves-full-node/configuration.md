@@ -2,11 +2,11 @@
 
 The latest release for each network can be found in the [Releases section](https://github.com/wavesplatform/Waves/releases), you can switch to the corresponding tag and build the application.
 
-[How to configure Waves node](/en/waves-full-node/how-to-configure-a-node.md)
+[How to configure Waves node](/waves-full-node/how-to-configure-a-node.md)
 
 # Installation
 
-Please read the [Waves Node Installation guide](/en/waves-full-node/how-to-install-a-node/how-to-install-a-node.md).
+Please read the [Waves Node Installation guide](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md).
 
 ## Compiling Packages from source
 
