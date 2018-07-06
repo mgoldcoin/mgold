@@ -9,7 +9,7 @@ Waves Contracts language is:
 
 Operations and constructs available are:
 
-* Binary operations:`>=`, `>`, `<`, `<=`, `+`, `-`, `&&`, `||`
+* Binary operations:`>=`, `>`, `<`, `<=`, `+`, `-`, `&&`, `||`, `*`, `%`, `/`, `==`, `!=`
 * Unary operations `-`, `!`
 * Constants declaration via `let`
 * `IF-THEN-ELSE` clause
@@ -22,20 +22,21 @@ Operations and constructs available are:
 * `Long`
 * `String`
 * `Boolean`
-* `ByteArray`
-* `Option[T]`- implements as Union `T | Unit`
+* `ByteVector`
+* `Unit` - is analogous to method which is declared in some languages as `void`.
+* `Option[T]`- implements as Option `T | Unit`
 * `List[T]`
 * Predefined non-recursive data structure like `Transaction`, `Block`etc
 * `Nothing`- "bottom type", no instance of this type can exist
 
 ### Structures
 
-* `Address(ByteArray)`
+* `Address(ByteVector)`
 * `Alias(String)`
-* `LongDataEntry(String key, Long value)`
-* `BoolDataEntry(String key, Boolean value)`
-* `ByteVectorDataEntry(String key, ByteVector value)`
-* `StrDataEntry(String key, String value)`
+* `DataType.Long`
+* `DataType.Boolean`
+* `DataType.ByteArray`
+* `DataType.String`
 
 Structure types can be instantiated by calling their constructor, which has the same name as the type itself, and passing the necessary parameters:
 ```
@@ -57,14 +58,36 @@ It is higher-kind data type indicating a possibility of absence of value of inne
 ### List\[T\]
 
 User can't create `List[T]` instances but input data can contains some `List[T]` fields.
-Now all of transactions contain field `proofs: List[ByteArray]` and MassTransfer transactions contain field `transfers: List[Transfer]`.
+Now all of transactions contain field `proofs: List[ByteVector]` and MassTransfer transactions contain field `transfers: List[Transfer]`.
 
 To access lists element you can use syntax `list[index]` with the first element at index 0.
 
 To determinate count of lists elements you can use function `size`:
 * `size `: `List[T] => Long`
-This is also true for ByteArray:
-* `size `: `ByteArray => Long`
+This is also true for `DataType.ByteArray`:
+* `size `: `DataType.ByteArray => Long`
+
+### ByteVector
+Standart ByteVector type 
+
+* `size `: `ByteVector => Long`
+* `take`: `ByteVector`, `Long` => `ByteVector`
+* `drop`: `ByteVector`, `Long` => `ByteVector`
+* `dropRight`: `ByteVector`, `Long` => `ByteVector`
+* `takeRight`: `ByteVector`, `Long` => `ByteVector`
+
+### Long
+
+* `fraction(value: LONG, numerator: LONG, denominator: LONG) => LONG`
+
+### String
+Standart string type
+
+* `size `: `String => Long`
+* `take`: `String`, `Long` => `String`
+* `drop`: `String`, `Long` => `String`
+* `takeRight`: `String`, `Long` => `String`
+* `dropRight`: `String`, `Long` => `String`
 
 # Examples
 
