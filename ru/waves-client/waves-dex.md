@@ -1,8 +1,8 @@
 # Waves DEX
 
-This chapter includes all details about decentralized exchange \(DEX\).
+Данная глава содержит все сведения о децентрализованной бирже \(DEX\).
 
-Waves provides a decentralized exchange, which allows trading different assets back and forth between users, as a traditional exchange, with stronger security guarantees to end users due to its decentralized nature. An opportunity of creating some new assets, based on Waves, allows early trading of a crowdfunding stake, that provides liquidity for tokens. For this purpose, tokens should be sold in public locations, where buyers and sellers may post orders.
+Платформа Waves предоставляет возможность децентрализованного обмена, что позволяет пользователям торговать друг с другом различными активами также, как и на традиционных биржах. Однако, такая торговля более безопасна для пользователей из-за ее децентрализованного характера. Возможность создания новых активов, основанных на блокчейне Waves, даёт возможность сбора средств для дальнейшей реализации проекта, что обеспечивает ценность актива. Для осуществления этих целей активы должны продаваться публично там, где покупатели и продавцы могут размещать свои заказы.
 
 
 1. [Использование биржи DEX](/ru/waves-client/waves-dex/start-trading-using-the-waves-dex.md)
