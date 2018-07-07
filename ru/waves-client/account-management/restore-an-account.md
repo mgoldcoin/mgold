@@ -1,32 +1,30 @@
-# Restore Your Account
+# Восстановление доступа к аккаунту.
 
-You can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
-Also downloads are available from the official site - https://wavesplatform.com/product
+Вы можете использовать онлайн или настольную версию приложения на Mac, PC или Linux. Все версии поддерживают автоматическое обновление. Загрузки доступны на официальном сайте - https://wavesplatform.com/product
 
-Choose and open up your Waves wallet.
+Выберите и откройте свой Waves кошелек.
 
-Click on **Restore account** on the main page.
+Нажмите **Восстановить кошелёк**.
 
-![](/_assets/account_restoring_01.png)
+![](/ru/_assets/account_restoring_01.png)
 
-You will be forwarded to the following page.
-Copy and paste or type your SEED into the blank text field.
-The Waves wallet will automatically generate the corresponding address right below the text field.
+Скопируйте или впишите вручную слова Seed фразы в текстовое поле.
+Waves кошелек автоматически сгенерирует соответствующий адрес в строке под текстовым полем. Если вы введете Seed фразу верно, то в этой строке появится ваш Waves адрес.
 
-![](/_assets/account_restoring_02.png)
+Затем нажмите **Продолжить**.
 
-If you entered the correct SEED, it will display your Waves address.
-Choose account name and wallet password then repeat the password.
+![](/ru/_assets/account_restoring_02.png)
 
-To finish the process, click on **Sign in**
+Придумайте пароль для защиты вашего кошелька: введите его в первое поле и подтвердите его во втором поле.
+После этого нажмите **Войти**.  
 
-![](/_assets/account_restoring_003.png)
+![](/ru/_assets/account_restoring_003.png)
 
-At the final stage, read carefully the conditions and if you are agree put the checkboxes.
-Click on **Confirm and Begin**.
+Далее внимательно прочитайте условия и в знак согласия поставьте отметку напротив соответствующего условия.
+Затем нажмите **Подтвердить и начать**.
 
-![](/_assets/account_restoring_04.png)
+![](/ru/_assets/account_restoring_04.png)
 
-If you have done all of the above, you are forwarded to the user interface
+После выполнения этих нехитрых действий перед вами предстанет интерфейс Waves кошелька.
 
-![](/_assets/account_restoring_05.png)
+![](/ru/_assets/account_restoring_05.png)
