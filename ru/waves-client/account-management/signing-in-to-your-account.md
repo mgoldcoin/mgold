@@ -1,5 +1,5 @@
-# Sign In to Your Account
+# **Вход в зарегестрированный аккаунт**.
 
-If you have already created a Waves account, you can sing in directly by choosing your address from the drop down list and put your own password, then click **Log in** button.
+Для входа в уже зарегестрированный аккаунт достаточно выбрать Waves адрес из списка и ввести используемый пароль аккаунт, после этого нажать на кнопку **Войти**.
 
-![](/_assets/login_page.png)
+![](/ru/_assets/login_page.png)
