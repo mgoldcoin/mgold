@@ -1,12 +1,11 @@
-# **Where Can I Find My Waves Address**
+# **Где я могу найти мой Waves адрес**.
 
-Open your Waves wallet. At the top left corner click on the avatar of your account.
+Откройте Waves приложение. В левом верхнем углу нажмите на аватар вашего аккаунта.
 
-![](/_assets/waves_address_01.png)
+![](/ru/_assets/waves_address_01.png)
 
-The following pop-up will appear.
-There you will find the Waves address of your account.
+После этого появится окно с вашим Waves адресом.
 
-![](/_assets/waves_address_02.png)
+![](/ru/_assets/waves_address_02.png)
 
-Also in this section you can create personal Alias, for more information please follow another article [How to create an Alias](/en/waves-client/account-management/creating-an-alias.md)
+Также в этом разделе вы можете создать персональный Alias. Для получения дополнительной информации, пожалуйста следуйте инструкции [Создание персонального алиаса](/ru/waves-client/account-management/creating-an-alias.md)

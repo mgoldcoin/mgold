@@ -25,7 +25,7 @@
     * [Создание аккаунта](/ru/waves-client/account-management/creating-an-account.md)
     * [Восстановление аккаунта](/ru/waves-client/account-management/restore-an-account.md)
     * [Вход в аккаунт](/ru/waves-client/account-management/signing-in-to-your-account.md)
-    * [Использование Waves адреса](/ru/waves-client/account-management/waves-address.md)
+    * [Ваш Waves адрес](/ru/waves-client/account-management/waves-address.md)
     * [Создание персонального алиаса](/ru/waves-client/account-management/creating-an-alias.md)
     * [Лизинг Waves токенов](/ru/waves-client/account-management/waves-leasing.md)
   * [Переводы и шлюзы](/ru/waves-client/wallet-management.md)
