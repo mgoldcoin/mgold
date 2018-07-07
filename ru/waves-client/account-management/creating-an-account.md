@@ -1,59 +1,52 @@
-# **How to Create an Account**
+# **Как создать Waves аккаунт**
 
-You can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
-Also downloads are available from the official site - https://wavesplatform.com/product
+Вы можете использовать онлайн или настольную версию приложения на Mac, PC или Linux. Все версии поддерживают автоматическое обновление. Загрузки доступны на официальном сайте - https://wavesplatform.com/product
 
-Choose and open up your Waves wallet.
+Выберите и откройте выбранный тип приложения.
 
-Please take some time to understand some important things for your own safety.
-We cannot recover your funds or freeze your account if you visit a phishing site or lose your backup phrase (aka SEED phrase).
-By continuing to use our platform, you agree to accept all risks associated with the loss of your SEED, including but not limited to the inability to obtain your funds and dispose of them.
-In case you lose your SEED, you agree and acknowledge that the Waves Platform would not be responsible for the negative consequences of this.
+Пожалуйста, уделите немного времени для того, чтобы ознакомиться с важной информацией.
+Мы не можем вернуть ваши средства или заморозить ваш аккаунт, если вы ввели свой SEED на фишинговом сайте или потеряли секретную фразу (SEED).
 
-To continue, click on the **What you need to know about your SEED**
+Продолжая использовать нашу платформу, вы соглашаетесь с тем, что в случае утраты вами секретной фразы (SEED), платформа Waves не сможет восстановить доступ к вашему аккаунту или вернуть вам ваши средства. Только вы контролируете свой аккаунт и ответственны за сохранность секретной фразы.
 
-We strongly recommend reading all articles before you begin.
+Для продолжения нажмите на **Что вам нужно знать о секретной фразе**. Мы настоятельно рекомендуем вам внимательно прочесть статьи перед началом.
 
-![](/_assets/account_creation_001.png)
+![](/ru/_assets/account_creation_001.png)
 
-Click on the **Get Started** to start the process of creating your account.
+Нажмите на **Давайте начнем**.
 
-![](/_assets/account_creation_01.png)
+![](/ru/_assets/account_creation_01.png)
 
-Choose your address avatar. When you have done so, choose account name and wallet password then repeat the password.
-Click on the **Continue** button.
+**Выбирете аватар вашего адреса**. После этого, укажите **Название аккаунта**, затем введите пароль и повторите ввод пароля.
+Для перехода на следующий этап нажмите на кнопку **Продолжить**.
 
-![](/_assets/account_creation_002.png)
+![](/ru/_assets/account_creation_002.png)
 
-Now, it's an important step to backup your account by clicking **Back Up Now**.
+Далее вам следует создать резервную копию Seed фразы.
+Для этого нажмите **Сохранить сейчас**.
 
-Waves will display an important reminder. Never provide your backup phrase to anyone except the official Waves client.  We recommend that you write the backup phrase on a piece of paper and store it in a secure location.  Do not store the backup phrase unencrypted on any electronic device.
+![](/ru/_assets/account_creation_03.png)
 
-![](/_assets/account_creation_03.png)
+Внимательно прочитайте предупреждение и только после этого нажмите **Я понимаю**.
 
-Carefully read the warning and only then click on **I understand**
+![](/ru/_assets/account_creation_04.png)
 
-![](/_assets/account_creation_04.png)
+После этого вы получите Seed фразу от вашего аккаунта.
+Запишите Seed фразу и сохраните в надёжном месте - после этого нажмите **Я все записал**.
 
-After that, you will get account seed phrase.
-Waves wants to make sure you actually wrote down the backup phrase. Therefore, Waves will ask you to verify the backup phrase before proceeding to your Waves account.
-Create several copies of the seed phrase and click on **I've written it down**
+![](/ru/_assets/account_creation_05.png)
 
-![](/_assets/account_creation_05.png)
+Расположите все слова Seed фразы в верном порядке для перехода к следующему шагу (просто нажимайте на слова).
+Если вы допустили ошибку, то нажмите **Стереть и ввести заново**.
+После завершения нажмите **Подтвердить**.
 
-Сonfirm your seed phrase with a correct sequence of words (just click on the words).
-If you made a mistake just click on Clear and start the process again.
+![](/ru/_assets/account_creation_06.png)
 
-After finishing, click on the **Confirm**.
+Далее вам останется только внимательно прочитать условия и поставить отметки о прочтении.
+После прочтения нажмите **Подтвердить и начать**.
 
-![](/_assets/account_creation_06.png)
+![](/ru/_assets/account_creation_07.png)
 
-At the final stage, read carefully the conditions and if you are agree, put the checkboxes.
+Если вы справились со всеми заданиями на "пятёрку", то перед собой вы увидите рабочий интерфейс Waves приложения.
 
-Click on **Confirm and Begin**.
-
-![](/_assets/account_creation_07.png)
-
-If you have done all of the above, you are forwarded to the user interface.
-
-![](/_assets/account_creation_08.png)
+![](/ru/_assets/account_creation_08.png)
