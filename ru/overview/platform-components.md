@@ -2,7 +2,7 @@
 
 # 1. Waves Client
 
-[Waves Lite Client](https://beta.wavesplatform.com) можно [установить](/en/waves-client/install-waves-client.md) и пользоваться большей частью функций,
+[Waves Lite Client](https://beta.wavesplatform.com) можно [установить](/waves-client/install-waves-client.md) и пользоваться большей частью функций,
 предоставляемых платформой Waves: выпускать, передавать или торговать ассетами.
 
 # 2. Waves Wallet
@@ -17,13 +17,13 @@
 
 # 3. Decentralized cryptocurrency exchange \(DEX\)
 
-[DEX](/ru/platform-features/decentralized-cryptocurrency-exchange-dex.md) (децентрализованная криптовалютная биржа) позволяет размещать и выполнять заявки на покупку или продажу криптовалюты или токенов за другую криптовалюту или обменивать их на другие токены (в т.ч. фиат).
+[DEX](/platform-features/decentralized-cryptocurrency-exchange-dex.md) (децентрализованная криптовалютная биржа) позволяет размещать и выполнять заявки на покупку или продажу криптовалюты или токенов за другую криптовалюту или обменивать их на другие токены (в т.ч. фиат).
 
 # 4. Мобильные приложения
 
 * Waves Wallet, мобильный клиент, для Waves доступен для платформ [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) и [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
 * Кошелек  подключен к общедоступным нодам Waves, что обеспечивает возможность получения транзакции и отправки платежей.
-* Руководство по началу работы с Waves Wallet для [IOS](/en/mobile-apps/iOS.md) и [Android](/en/mobile-apps/android.md)
+* Руководство по началу работы с Waves Wallet для [IOS](/en/mobile-apps/iOS.md) и [Android](/mobile-apps/android.md)
 
 # 5. Шлюзы Waves
 
@@ -58,7 +58,7 @@ BTC/ETH/LTC/ZCash/BCH/Dash шлюзы могут использоваться д
 
 # 7. Ноды
 
-Ноды являются основой экосистемы Waves. [Запустите Waves ноду](/en/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), помогите в обработке транзакций, попросите у комьюнити [сдать вам в лизинг WAVES](/en/waves-client/account-management/waves-leasing.md) и получите оплату за обеспечение безопасности сети.
+Ноды являются основой экосистемы Waves. [Запустите Waves ноду](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), помогите в обработке транзакций, попросите у комьюнити [сдать вам в лизинг WAVES](/waves-client/account-management/waves-leasing.md) и получите оплату за обеспечение безопасности сети.
 
 **Особенности:**
 
@@ -100,7 +100,7 @@ BTC/ETH/LTC/ZCash/BCH/Dash шлюзы могут использоваться д
 
 Матчер получает плату за предоставляемую им услугу, что является дополнительным источником дохода для всех нод Waves.
 
-**Примечание.** Waves нода содержит DEX Матчер который может быть включен в настройках [файла конфигурации Waves ноды](/en/waves-full-node/how-to-configure-a-node.md) в разделе Matcher Settings.
+**Примечание.** Waves нода содержит DEX Матчер который может быть включен в настройках [файла конфигурации Waves ноды](/waves-full-node/how-to-configure-a-node.md) в разделе Matcher Settings.
 
 # 8. MainNet / TestNet
 

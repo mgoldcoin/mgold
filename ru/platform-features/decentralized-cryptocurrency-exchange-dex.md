@@ -79,7 +79,7 @@ Waves предлагает децентрализованную биржу \(DEX
   [www.wavesplatform.com](http://www.wavesplatform.com/)
   , или использовать онлайн кошелёк, доступный здесь
   [beta.wavesplatform.com](https://beta.wavesplatform.com/)
-* [Поместите свои биткоины](/en/waves-client/transfers-and-gateways/bitcoin-transfers.md) или любые другие [поддерживаемые монеты и токены](/en/waves-client/wallet-management.md) в свой кошелёк [и начните торговать на Waves DEX](/en/waves-client/waves-dex.md).
+* [Поместите свои биткоины](/waves-client/transfers-and-gateways/bitcoin-transfers.md) или любые другие [поддерживаемые монеты и токены](/waves-client/wallet-management.md) в свой кошелёк [и начните торговать на Waves DEX](/waves-client/waves-dex.md).
 
 # 5. Установка своего собственного матчера {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
 
@@ -87,4 +87,4 @@ Waves предлагает децентрализованную биржу \(DEX
 * Матчер получает комиссию за предоставляемые им услуги, что позволяет so you can значительно повысить вознаграждение за майнинг.
 * Когда пользователь отправляет свои ордера матчеру, он не переводит никому свои средства, деньги пользователя остаются на их аккаунтах до тех пор, пока матчер их не сведёт.
 
-**Примечание:** Больше информации о матчере можно найти [**здесь.**](/en/development-and-api/dex-api/matcher.md)
+**Примечание:** Больше информации о матчере можно найти [**здесь.**](/development-and-api/dex-api/matcher.md)

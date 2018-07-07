@@ -4,7 +4,7 @@ Without `Waves Client` or any API libraries. We will try to make manually a simp
 
 Assumptions:  
 1. We have own node. For example, it has the `example.org` domain  
-2. We set up a script for a [generated](../development-and-api/waves-node-rest-api/address.md#post-addresses) account
+2. We set up a script for a [generated](/development-and-api/waves-node-rest-api/address.md#post-addresses) account
 
 For example, we generated these addresses:
 
@@ -65,7 +65,7 @@ In futher instruction we define this script with `<script>` to make examples as 
 
    Note, `fee` is `100000` - a minimal required fee to deploy your script
 
-2. And send it to [/transactions/sign](../development-and-api/waves-node-rest-api/transactions.md#post-transactionssign):
+2. And send it to [/transactions/sign](/development-and-api/waves-node-rest-api/transactions.md#post-transactionssign):
 
    ```bash
    $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
@@ -92,7 +92,7 @@ In futher instruction we define this script with `<script>` to make examples as 
    }
    ```
 
-3. Then we [broadcast](../development-and-api/waves-node-rest-api/transactions.md#post-transactionsbroadcast) a prepared request:
+3. Then we [broadcast](/development-and-api/waves-node-rest-api/transactions.md#post-transactionsbroadcast) a prepared request:
 
    ```bash
    $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
@@ -174,7 +174,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
 }
 ```
 
-1. Alice signs this request by her private key through [POST /transactions/sign/{signerAddress}](../development-and-api/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
+1. Alice signs this request by her private key through [POST /transactions/sign/{signerAddress}](/development-and-api/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
 
    * Alice address: `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE`
    * JSON:
@@ -214,7 +214,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
 
 2. Alice gives received JSON of her transaction to Bob
 
-3. Bob signs it by his private key by same method [POST /transactions/sign/{signerAddress}](../development-and-api/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
+3. Bob signs it by his private key by same method [POST /transactions/sign/{signerAddress}](/development-and-api/waves-node-rest-api/transactions.md#post-transactionssignsigneraddress)
 
    * Signer address: `3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf`
    * JSON:
@@ -284,7 +284,7 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
    }
    ```
 
-5. Bob [broadcasts](../development-and-api/waves-node-rest-api/transactions.md#post-transactionsbroadcast) the transaction
+5. Bob [broadcasts](/development-and-api/waves-node-rest-api/transactions.md#post-transactionsbroadcast) the transaction
 
    ```json
     {
