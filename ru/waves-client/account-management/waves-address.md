@@ -2,10 +2,10 @@
 
 Откройте Waves приложение. В левом верхнем углу нажмите на аватар вашего аккаунта.
 
-![](/_assets/waves_address_01.png)
+![](/ru/_assets/waves_address_01.png)
 
 После этого появится окно с вашим Waves адресом.
 
-![](/_assets/waves_address_02.png)
+![](/ru/_assets/waves_address_02.png)
 
 Также в этом разделе вы можете создать персональный Alias. Для получения дополнительной информации, пожалуйста следуйте инструкции [Создание персонального алиаса](/ru/waves-client/account-management/creating-an-alias.md)
