@@ -1,27 +1,25 @@
-# **Create a personal Alias**
+# **Создание персонального alias**
 
-An Alias is a string between 4 and 30 characters long consisting of lowercase Latin letters, digits and symbols **@, -, \_,** used to simplify transactions.  
-It is possible to specify aliases instead of full address for asset transfers and leasing transactions.  
-The cost is limited to 0.001 WAVES \(the Tx fee\).
+Alias - это строка длиной от 4 до 30 знаков, состоящая из строчных латинских букв, цифр и символов **(@, -, _)**, используемых для упрощения транзакций. При совершении транзакции, в том числе транзакций лизинга вы можете указать вместо Waves адреса получателя, его Alias. Комиссия за создание Alias составляет 0,001 Waves.
 
-# **Creating an Alias in 3 Simple Steps**
+Создать Alias очень просто.
 
 The creation of an Alias is very straightforward;
 
-**Step 1:** Login to your Wallet.
+**Шаг 1**: Войдите в свой Кошелек.
 
-![](/_assets/creating_an_alias_01.png)
+![](/ru/_assets/creating_an_alias_01.png)
 
-**Step 2:** Click on the User icon ![](/_assets/creating_an_alias_02.png) in the top left corner.  
-The following windows will appear, then click on the **Create new**.
+**Шаг 2**: нажмите на иконку пользователя ![](/ru/_assets/creating_an_alias_02.png) в левом верхнем углу.  
+В появившемся окне нажмите на **Создать новый**.
 
-![](/_assets/creating_an_alias_03.png)
+![](/ru/_assets/creating_an_alias_03.png)
 
-**Step 3:** Choose an Alias  
-You can use only lowercase latin letters, digits and symbols **@, -, \_,** between 4 and 30 chars long.  
-After you have done it, just click on the Create new to complete the procedure.
+**Шаг 3**: выберите и введите Alias.
 
-![](/_assets/creating_an_alias_04.png)
+Принимаются только строчные латинские буквы, цифры и символы **(@, -, _,)** от 4 до 30 знаков длиной.
+После этого нажмите на **Создать новый** для завершения процедуры.
 
-Your Alias should be ready to use as from the next block update.
+![](/ru/_assets/creating_an_alias_04.png)
 
+Вы сможете использовать Alias по назначению спустя 1 блок (1 минута).
