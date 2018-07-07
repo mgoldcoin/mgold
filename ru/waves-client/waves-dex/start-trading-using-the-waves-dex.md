@@ -1,83 +1,74 @@
-# Start trading using the Waves DEX
+# Использование биржи DEX
 
-Open up your Waves wallet.
+Откройте ваш Waves аккаунт и нажмите на кнопку DEX ![](/ru/_assets/dex_01.png).
 
-Click on the DEX button ![](/en/_assets/dex_01.png).
+Затем выберите нужную торговую пару из списка. Нажмите на нее, что открыть площадку выбранной торговой пары.
 
-Then, choose trading pair from the list. After that, the selected market will open.
+![](/ru/_assets/dex_02.png)
 
-![](/en/_assets/dex_02.png)
+Также для поиска и выбора торговой пары вы можете использовать поисковую строку  ![](/ru/_assets/dex_03.png).
 
-You can also find any available assets. Just type a name or asset Id in the search box ![](/en/_assets/dex_03.png).
+В этой строке введите названия ассетов или их идентификаторы (asset id) через дробь ( / ).
 
-Click on the found token.
+![](/ru/_assets/dex_04.png)
 
-![](/en/_assets/dex_04.png)
+**Важно**: для добавления торговой пары в Избранное нажмите на кнопку в виде Звезды рядом с названием торговой пары.
+**Важно**: вы можете получить информацию о любом ассете, нажав на его идентификатор (asset id) рядом с названием торговой пары.
 
-**Note**: In order to add the selected token to favourite list, just click on the star button. Also, you can get quick information about the selected token through a simple click on the Asset ID.
+По умолчанию, во вкладке **ВСЕ** выбранные ассеты будут добавляться в пару с Waves.
 
-By default, all selected tokens in the ALL section will be adding to the pair with Waves.
+Если вы хотите создать ордер в паре с **Ассет/BTC** или **Ассет/ETH**, выберете соответствующую криптовалюту и в поисковой строке введите название ассета или его идентификатор (asset id).
 
-If you want to open an order with other pair, such as "Asset"/BTC please click on the BTC | ETH and type a name or asset ID in the search box.
+![](/ru/_assets/dex_05.png)
 
-![](/en/_assets/dex_05.png)
+Если вас интересует создание ордера в паре с другими криптовалютами, то нажмите на кнопку в виде стрелки, которая находится после **ETH** или введите название (или asset id) искомой торговой пары в поисковой строке.
 
-If you need more options, just click on the ETH and select the base currency from the drop-down menu.
+![](/ru/_assets/dex_05_1.png)
 
-![](/en/_assets/dex_05_1.png)
+## **Как купить токены.**
 
-## **How to buy crypto currency**
+Выберите нужную торговую пару и в правом нижнем углу заполните поля формы создания ордера:
 
-Choose a pair you want to work with and look at the right bottom corner.
+- в поле Количество укажите количество токенов, которое вы хотите купить;
+- в поле Цена укажите желаемую цену покупки;
+- в поле Сумма проверьте стоимость вашего ордера.
 
-Fill the fields in the order form:
+После заполнения всех полей нажмите на кнопку **Купить ---- **.
 
-- In the Amount box enter the amount of currency you want to buy;
-- In the Limit price box enter the price of the currency;
-- In the Total box check the total amount of the order.
+**Важно**: по умолчанию, в поле Цена указанна цена ближайшего ордера на продажу.
+**Важно**: по умолчанию, срок размещения ордера составляет 30 дней. По истечению этого срока ваш ордер будет отменен автоматически. Вы можете самостоятельно уменьшить это число.
 
-**Note**: By default, the **Limit price** sets with the nearest market orders.
+![](/ru/_assets/dex_06.png)
 
-After filling, click on the **Buy** **----**, where **----** currency of the selected pair.
+Созданный ордер появится во вкладке **Мои открытые ордера** и в **Биржевом стакане** (правый верхний угол).
+Все исполненные ордеры доступны для просмотра во вкладке **Моя история сделок**.
 
-![](/en/_assets/dex_06.png)
+![](/ru/_assets/dex_06_1.png)
 
-**Note**: Please take into account the maximum order time is 30 days. You can change the order time in the **Expiration** field.
+**Важно**: вы можете отменить открытый ордер, нажав на кнопку "X" в строке ордера во вкладке **Мои открытые ордера**.
+**Внимание**: комиссия за создание ордера на покупку или продажу составляет 0,003 Waves.
+Эта сумма будет заморожена до исполнения ордера или его отмены.
 
-After the expiration of the selected period, the order will be forcibly canceled.
+## **Как продать токены.**
 
-The placed order will appears in the **My Open Orders** box and in the **Order Book** (upper right corner). All executed orders are available in the My Trade History section.
+Выберите нужную торговую пару и в правом нижнем углу заполните поля формы создания ордера:
 
-![](/en/_assets/dex_06_1.png)
+- в поле Количество укажите количество токенов, которое вы хотите купить;
+- в поле Цена укажите желаемую цену покупки;
+- в поле Сумма проверьте стоимость вашего ордера.
 
-**Note**: You can cancel opened order by clicking on the **X Cancel** in the **My Open Orders box**.
+После заполнения всех полей нажмите на кнопку **Продать ---- **.
 
-**Attention** The commission for creating **one buy or sell order** on the **DEX platform** is **0.003 Waves**. This amount will be frozen for the order fee. If the order is not executed and then canceled, the amount will be unfrozen.
+**Важно**: по умолчанию, в поле Цена указанна цена ближайшего ордера на продажу.
+**Важно**: по умолчанию, срок размещения ордера составляет 30 дней. По истечению этого срока ваш ордер будет отменен автоматически. Вы можете самостоятельно уменьшить это число.
 
-## **How to sell crypto currency**
+![](/ru/_assets/dex_09.png)
 
-Choose a pair you want to work with and look at the right bottom corner.
+Созданный ордер появится во вкладке **Мои открытые ордера** и в **Биржевом стакане** (правый верхний угол).
+Все исполненные ордеры доступны для просмотра во вкладке **Моя история сделок**.
 
-Fill the fields in the order form:
+![](/ru/_assets/dex_09_1.png)
 
-- In the Amount box enter the amount of currency you want to buy;
-- In the Limit price box enter the price of the currency;
-- In the Total box check the total amount of the order.
-
-**Note**: By default, the **Limit price** sets with the nearest market orders.
-
-After filling, click on the **Sell** **----**, where **----** currency of the selected pair.
-
-![](/en/_assets/dex_09.png)
-
-**Note**: Please take into account the maximum order time is 30 days. You can change the order time in the **Expiration** field.
-
-After the expiration of the selected period, the order will be forcibly canceled.
-
-The placed order will appears in the **My Open Orders** box and in the **Order Book** (upper right corner). All executed orders are available in the My Trade History section.
-
-![](/en/_assets/dex_10.png)
-
-**Note**: You can cancel opened order by clicking on the **X Cancel** in the **My Open Orders box**.
-
-**Attention** The commission for creating **one buy or sell order** on the **DEX platform** is **0.003 Waves**. This amount will be frozen for the order fee. If the order is not executed and then canceled, the amount will be unfrozen.
+**Важно**: вы можете отменить открытый ордер, нажав на кнопку "X" в строке ордера во вкладке **Мои открытые ордера**.
+**Внимание**: комиссия за создание ордера на покупку или продажу составляет 0,003 Waves.
+Эта сумма будет заморожена до исполнения ордера или его отмены.
