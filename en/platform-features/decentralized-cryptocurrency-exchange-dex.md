@@ -74,7 +74,7 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
   [www.wavesplatform.com](http://www.wavesplatform.com/)
   , or use the webwallet, available at
   [beta.wavesplatform.com](https://beta.wavesplatform.com/)
-* [Deposit your bitcoins](/en/waves-client/transfers-and-gateways/bitcoin-transfers.md) or any [supported coins and tokens](/en/waves-client/wallet-management.md) into the wallet and [start trading using the Waves DEX](/en/waves-client/waves-dex.md).
+* [Deposit your bitcoins](/waves-client/transfers-and-gateways/bitcoin-transfers.md) or any [supported coins and tokens](/en/waves-client/wallet-management.md) into the wallet and [start trading using the Waves DEX](/waves-client/waves-dex.md).
 
 # 5. Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
 
@@ -82,4 +82,4 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
 * The Matcher earns fees from the services it provides, so you can substantially increase your mining revenues.
 * When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order.
 
-**Note.** Find more technical details about the Matcher [**here.**](/en/development-and-api/dex-api/matcher.md)
+**Note.** Find more technical details about the Matcher [**here.**](/development-and-api/dex-api/matcher.md)
