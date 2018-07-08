@@ -1,18 +1,16 @@
-# How to receive Waves using credit or debit card.
+# **Как купить Waves, используя банковскую карту**.
 
-Open up your wallet.
-In the Waves section click on the **Receive** button.
+Waves кошелёк поддерживает небольшие покупки Waves за Доллары и Евро (минимальная сумма пополнения - 30 USD/EUR, максимальная сумма пополнения - 200 USD/EUR) с помощью Банковской карты.
 
-![](/_assets/buying_waves_using_card_01.png)
+Откройте свой Waves кошелёк и в секции Waves нажмите на **Получить**.
 
-The following pop-up will appear.
+![](/ru/_assets/buying_waves_using_card_01.png)
 
-Define the amount in **EUR** or **USD** you want to spend by selecting it in the dropdown menu and the client automatically returns you the amount of Waves you are going to receive after payment.
-See **Approximately** field.
+В появившемся окне выберите раздел **Карта** и валюту (**USD** или **EUR**) и сумму покупки.
+После этого в поле **Примерно вы получите** отобразиться примерное количество Waves, которое вы получите после совершения сделки.
 
-![](/_assets/buying_waves_using_card_02.png)
+![](/ru/_assets/buying_waves_using_card_02.png)
 
-After you have filled the form, click on the **Continue** button and you will be forwarded to our gateway partner [Indacoin.com](https://indacoin.com/)
-Go through the verification and payment process and you'll receive your Waves within a few minutes.
+После заполнения всех полей формы нажмите на кнопку Продолжить и вы будете перенаправлены на сайт нашего партнера [Indacoin.com](https://indacoin.com/): пройдите процесс верификации и оплаты - и получите Waves в течении нескольких минут.
 
-![](/_assets/buying_waves_using_card_03.png)
+![](/ru/_assets/buying_waves_using_card_03.png)
