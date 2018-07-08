@@ -1,43 +1,36 @@
-# How to send and receive Waves
+# **Как отправить и получить Waves**.
 
-## **How to send Waves**
+## **Как отправить Waves**.
 
-Open up your Waves wallet.  
-At the top left corner click on the **Send** button.
+Откройте Waves кошелек.
+Затем нажмите **Отправить** на главной странице приложения (раздет Waves).
 
-![](/_assets/waves_transfers_01.png)
+![](/ru/_assets/waves_transfers_01.png)
 
-The following pop-up will appear.
+В появившемся окне заполните форму вывода Ассета:
 
-Fill In the sending form.
+- в поле Получатель введите Waves адрес получателя;
+- в поле Количество введите сумму вывода;
+- в поле Описание введите любую информацию (по необходимости).
 
-* **Recipient**: Enter the recipient Waves address.
-* **Amount**: Define a number of Waves you want to send.
-* **Description**: Optional. You can write a message for the recipient in the Description field.
-* **Note**: Some exchanges require users to include description when depositing assets. Otherwise, they cannot credit your account.
+После ввода всей необходимой информации нажмите **Продолжить**.
 
-After you have entered all necessary information, click on the **Continue** button.
+![](/ru/_assets/waves_transfers_02.png)
 
-![](/_assets/waves_transfers_02.png)
+Проверьте правильность введенной информации в появившемся окне.
+После проверки нажмите **Подтвердить** (или **Назад** если есть ошибка).
 
-The following pop-up will appear.
+![](/ru/_assets/waves_transfers_03.png)
 
-Re-check entered data and click on the **Confirm** button.
+## **Как получить Waves**.
 
-![](/_assets/waves_transfers_03.png)
+Ввести Waves в Waves кошелёк очень просто.
+Для этого, вам потребуется только ваш Waves адрес. Используйте его в качестве Получателя для отправки средств из другого Waves аккаунта или из биржи.
 
-## **How to receive Waves**
+Откройте ваше Waves приложение. В верхнем левом углу нажмите на аватар вашей учетной записи.
 
-Receiving Waves is very straightforward. Just copy your Waves address and hand it to the person who wants to send you Waves.
+![](/ru/_assets/waves_transfers_04.png)
 
-Open your Waves wallet. At the top left corner click on the avatar of your account.
+После этого появится окно с вашим Waves адресом. Используйте его для отправки средств в ваш Waves аккаунт.
 
-![](/_assets/waves_transfers_04.png)
-
-The following pop-up will appear.
-
-There you will find the Waves address of your account.
-
-![](/_assets/waves_transfers_05.png)
-
-Copy the shown Waves address and use it as recipient address.
+![](/ru/_assets/waves_transfers_05.png)
