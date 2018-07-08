@@ -1,49 +1,40 @@
-# How to send and receive Asset
+# **Как отправить и получить Ассет**.
 
-## **How to send Asset**
+## **Как отправить Ассет**.
 
-Open up your Waves wallet.  
-At the top left corner click on the **Send** button.
+Откройте Waves кошелек.
 
-![](/_assets/asset_transfers_01.png)
+Затем нажмите Отправить (левый верхний угол).
 
-The following pop-up will appear.
+![](/ru/_assets/asset_transfers_01.png)
 
-In the **Currency** field, select Asset that you want to send. Then click on it.
+В появившемся окне заполните форму вывода Ассета:
 
-![](/_assets/asset_transfers_02.png)
+- в поле **Валюта** выберите Ассет, который хотите вывести;
+- в поле **Получатель** введите Waves адрес получателя;
+- в поле **Количество** введите сумму вывода;
+- в поле **Описание** введите любую информацию (по необходимости).
 
-Fill in the sending form
+После ввода всей необходимой информации нажмите **Продолжить**.
 
-* **Recipient**: Enter the recipient Waves address.
-* **Amount**: Define a number of selected Asset you want to send.
-* **Description**: Optional. You can write a message for the recipient in the Description field.
-* **Note**: Some exchanges require users to include description when depositing assets. Otherwise, they cannot credit your account.
+![](/ru/_assets/asset_transfers_02.png)
 
-After you have entered all necessary information, click on the **Continue** button.
+Проверьте правильность введенной информации в появившемся окне.
 
-![](/_assets/asset_transfers_03.png)
+После проверки нажмите **Подтвердить** (или **Назад** если есть ошибка).
 
-The following pop-up will appear.
+![](/ru/_assets/asset_transfers_03.png)
 
-Re-check entered data and click on the **Confirm** button.
+## **Как получить Ассет**.
 
-![](/_assets/asset_transfers_04.png)
+В свой Waves аккаунт вы можете ввести не только токены Waves, но и другие токены, которые созданы на Waves платформе.
 
-## **How to receive Asset**
+Для этого, вам потребуется только ваш Waves адрес. Используйте его в качестве Получателя для отправки средств из другого Waves аккаунта или из биржи.
 
-Think of the Waves account as a multi-wallet. It, obviously, supports Waves and also any other token existing on the Waves blockchain.
+Откройте ваше Waves приложение. В верхнем левом углу нажмите на аватар вашей учетной записи.
 
-Whenever you want to receive Waves based asset, just hand your personal Waves address to the sender and he is able to execute the transaction.
+![](/ru/_assets/asset_transfers_05.png)
 
-Open your Waves wallet. At the top left corner click on the avatar of your account.
+После этого появится окно с вашим Waves адресом. Используйте его для отправки средств в ваш Waves аккаунт.
 
-![](/_assets/asset_transfers_05.png)
-
-The following pop-up will appear.
-
-There you will find the Waves address of your account.
-
-![](/_assets/asset_transfers_06.png)
-
-Copy the shown Waves address and use it as recipient address.
+![](/ru/_assets/asset_transfers_06.png)
