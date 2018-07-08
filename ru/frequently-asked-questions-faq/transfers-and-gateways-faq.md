@@ -1,6 +1,6 @@
-# FAQ: Transfers and gateways
+# **FAQ: Переводы и шлюзы**.
 
-This section contains frequently asked questions related to the transfers and payment gateways.
+В этом разделе содержатся часто задаваемые вопросы, связанные с переводами и платежными шлюзами.
 
-* [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
-* [Ethereum transfers with smart-contracts](/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
+* [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+* [Обработка Ethereum платежей и смарт-контракты](/ru/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)

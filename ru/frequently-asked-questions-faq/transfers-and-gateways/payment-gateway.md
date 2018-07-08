@@ -1,19 +1,19 @@
-# What is a payment gateway and how does it work?
+# **Что такое платежный шлюз и как он работает**
 
-## What is a payment gateway?
+## **Что такое платежный шлюз?**
 
-Waves allows you to hold and transfer external currencies on its blockchain. This works through an established centralised Coinomat gateway: Bitcoins or any supported external coins are sent to a user's personal Waves address via standard transfer and after the deposit user receives BTC/ETH tokens \(wBTC/wETH\) on the Waves blockchain. Every single wBCT/wETH tokens is backed 1:1 with a real BTC/ETH.
+Waves платформа позволяет хранить и передавать внешние валюты с использованием своей сети. Данная возможность реализована на основе централизованного шлюза Coinomat: Биткоины или любые поддерживаемые внешние монеты передаются на личный адрес пользователя по средствам стандартной транзакции. После обработки пользователь получает BTC/ETH* ассеты (wBTC /wETH*) . Каждый wBCT /wETH* ассет обеспечен 1:1 ценностью относительно реальной монеты.
 
-## How does it work?
+## **Как это работает?**
 
-After creating withdrawal request, Bitcoins or any other supported external coins are transferred to the gateway side as wBTC \(Waves BTC\) tokens, then gateway processing them and finally sending as external BTC transaction, i.e. wBTC &gt; Bitcoin gateway &gt; BTC. For deposits, the process is repeating but in the opposite direction BTC &gt; Bitcoin gateway &gt; wBTC asset.
+После создания заявки на вывод средств, Bitcoin передаются в Waves шлюз в виде wBTC (Waves BTC) ассета, затем шлюз обрабатывает их и отправляет монеты на внешний Bitcoin адрес, то есть wBTC > Waves шлюз > BTC. При вводе средств, процесс обработки повторяется, но в обратном направлении BTC > Waves шлюз > wBTC ассет.
 
-You will receive coins to specified address, deposits and withdrawals may takes up to 120 minutes.
+Вы получите монеты на указанный Bitcoin адрес. Процесс ввода и вывода средств может занимать до 120 минут.
 
-**Warning**: The gateway transactions are always processing only with the payment address: **3PAs2qSeUAfgqSKS8LpZPKGYEjJKcud9Djr**
+**Важно**: Внешние транзакции всегда обрабатываются только через один адрес шлюза - **3PAs2qSeUAfgqSKS8LpZPKGYEjJKcud9Djr**
 
-\*At the moment, there are gateways for BTC/ETH/LTC/ZCash/BCH/Dash/Monero. We are planning to integrate more payment gateways in the future.
+На данный момент уже доступны шлюзы для BTC, ETH, LTC, BCH, ZEC DASH и XMR. В будущем мы планируем интегрировать больше платежных шлюзов.
 
-Also, please check wallet notification
+Также, пожалуйста обратите внимание на уведомление
 
-![](/_assets/payment_gateway_01.png)
+![](/ru/_assets/payment_gateway_01.png)

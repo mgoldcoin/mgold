@@ -1,13 +1,13 @@
-# I have placed an order. When it will be filled?
+# **Я разместил ордер, когда он будет заполнен?**
 
-The order time depends only on the selected price. The higher your price from the current market price, the longer your order will not be filled.
+Время зависит только от выбранного цена. Чем выше выбранная цена от текущей рыночной позиции, чем дольше ваш ордер не будет исполнен.
 
-If you put sell or buy order by market price, transaction will be processed within few seconds.
+Если вы разместили ордер на продажу или покупку по рыночной цене, транзакции будет обработана в течение нескольких секунд.
 
-So, you need to wait until your order will be filled or you can cancel and create a new one.
+Таким образом вам необходимо дождаться до тех пор пока ваш ордер будет исполнен или вы можете отменить его и создать новый.
 
-Just click on the **X** button ![](/_assets/order_time_01.png) to close opened order if you don't want to wait.
+Просто нажмите на кнопку **X** в разделе **Мои открытые ордера**, чтобы закрыть открытый ордер, если вы не хотите ждать.
 
 ![](/_assets/order_time_02.png)
 
-**Note**: All placed orders older than 30 days will be forcibly canceled.
+**Важно**: по умолчанию, срок размещения ордера составляет 30 дней. По истечению этого срока ваш ордер будет отменен автоматически. Вы можете самостоятельно уменьшить это число.

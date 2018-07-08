@@ -1,9 +1,9 @@
-# Processing Ethereum payments and smart-contracts
+# **Обработка Ethereum платежей и смарт-контракты**.
 
-Since recently there have been more Ethereum deposits to Waves made from third-party exchanges and other services using smart contracts resulting from "internal transactions" payments that our gateway can't yet process and deposit to Waves accounts.
+В последнее время участились случаи ввода Ethereum в Waves аккаунты со сторонних бирж, обменников и других сервисов через выполнение смарт-контракта, результатом чего становится поступление платежа в виде внутренней транзакции, которую мы не можем обработать и зачислить в пользовательский Waves аккаунт.
 
-Wavesplatform does not support deposits/withdrawals of Ethereum from/to smart contracts addresses, and we warn our users that they can lose their money if they do so. However, neither Waves nor our users can control third-party services that sometimes use smart contracts to perform the Ethereum withdraw operations.
+Мы однозначно не обрабатываем ввод/вывод Ethereum в/на принимающие адреса со смарт-контрактом, и предупреждаем пользователей о том, что они могут потерять свои деньги, если будут отправлять Ethereum из Waves аккаунта на смарт-контракты или наоборот. Однако, ни мы ни пользователи не можем контролировать сторонние сервисы, использующие смарт-контракты для выполнения операции вывода Ethereum.
 
-**NOTE**: Before using the Ethereum gateway, please pay attention to the yellow box with warning and check the sender or recipient address.
+Мы приносим извинения за невозможность обрабатывать такие платежи, но в тоже время заверяем наших пользователей в полной сохранности токенов. Средства останутся на принимаемом адресе и не будут переведены куда-либо на случай если в будущем мы найдем сбалансированное решение для обработки смарт-контракт платежей.
 
-![](/_assets/ethereum_smartcontract_payments_01.png)
+![](/ru/_assets/ethereum_smartcontract_payments_01.png)

@@ -6,8 +6,8 @@ If you put sell or buy order by market price, transaction will be processed with
 
 So, you need to wait until your order will be filled or you can cancel and create a new one.
 
-Just click on the **X** button ![](/_assets/order_time_01.png) to close opened order if you don't want to wait.
+In order to cancel opened order just click on the **X Cancel** in the **My Open Orders** box.
 
 ![](/_assets/order_time_02.png)
 
-**Note**: All placed orders older than 30 days will be forcibly canceled.
+**Note**: Please take into account the maximum order time is 30 days. You can change the order time in the **Expiration** field.
