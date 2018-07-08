@@ -1,20 +1,18 @@
-# Asset Management
+# Управление ассетами
 
-Assets Management Chapter includes all details about Issue and Reissue Assets which allows you to create your own asset or reissue more of the same token in the future to increase the total supply of tokens or decrease it by using the burn feature. Also in this section you will find desription of the Mass Transfer feuture.
+В главе "Управление ассетами" содержится информация, которая поможет вам выпустить свой актив, а также увеличить или уменьшить количество токенов вашего актива в случае необходимости. Также эта глава описывает применение такой возможности как «Массовая отправка» токенов.
 
-1. [Token creation](/waves-client/assets-management/issue-an-asset.md)
-2. [Token reissuing](/waves-client/assets-management/reissue-an-asset.md)
-3. ​[Token burning](/waves-client/assets-management/burn-an-asset.md)
-4. [Token distribution](/waves-client/assets-management/mass-transfer.md)
+1. [Создание токена](/ru/waves-client/assets-management/issue-an-asset.md)
+2. [Перевыпуск токена](/ru/waves-client/assets-management/reissue-an-asset.md)
+3. [Сжигание токена](/ru/waves-client/assets-management/burn-an-asset.md)
+4. [Распределение токена](/ru/waves-client/assets-management/mass-transfer.md)
 
-**Note. **It costs just 1 WAVES to do so and then your token can be traded on the Waves DEX.
+Плюсы создания токенов на платформе Waves:
 
-# Features of Generating your tokens on Waves Platform
-
-* No smart contracts required.
-* No programming experience needed.
-* No code audit required, minimising overheads.
-* No maintenance or monitoring needed.
-* Tokens can be launched in a few seconds.
-* It costs just 1 WAVES to launch a new token.
-* Tokens can be traded immediately on Waves exchange.
+* не требуются навыки написания смарт-контрактов;
+* не требуется использование программного кода;
+* отсутствует необходимость аудита программоного кода, что сводит к минимуму накладные расходы;
+* отсутствует необходимость в обслуживании и мониторинге кода;
+* создание токена занимает всего пару минут;
+* сразу же после создания токены могут быть обменены на внутренней бирже Waves DEX;
+* стоимость создания токена всего 1 WAVES.
