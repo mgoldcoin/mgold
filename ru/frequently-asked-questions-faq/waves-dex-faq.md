@@ -1,6 +1,6 @@
-# FAQ: Waves DEX
+# **FAQ: Waves DEX**.
 
-This section contains frequently asked questions related to the Waves Decentralised Exchange.
+Этот раздел содержит часто задаваемые вопросы, связанные с децентрализованной биржей Waves DEX.
 
-* [Order execution time](/frequently-asked-questions-faq/waves-dex/order-time.md)
-* [Asset ID on the Waves DEX](/frequently-asked-questions-faq/waves-dex/asset-id.md)
+* [Время исполнения ордера](/ru/frequently-asked-questions-faq/waves-dex/order-time.md)
+* [Поиск токена на бирже DEX используя Asset ID](/ru/frequently-asked-questions-faq/waves-dex/asset-id.md)

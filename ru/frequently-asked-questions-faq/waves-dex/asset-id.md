@@ -1,17 +1,17 @@
-# How can I find asset on the DEX using Asset ID
+# **Поиск токена на бирже DEX используя Asset ID**.
 
-Important to know here is that names are not unique to prevent name squatting but the identifier, also called asset ID, is unique. Whenever you are looking for a token, search and confirm it is the right one by checking the asset ID.
+Названия ассетов не уникальны, но уникальными являются идентификаторы ассетов, так называемые Asset Id.
 
-Search by ticker symbol is available only for assets from this list - [The list of all assets having ticker symbol](https://support.wavesplatform.com/en/knowledge-bases/2/articles/8141-the-list-of-all-assets-having-ticker-symbol)
+Поэтому удобнее всего искать нужный вам ассет по его идентификатору (Asset Id).
 
-To start trading with any assets, please use asset name or ID of the required Asset.
+Поиск по короткому имени, тикеру доступен только для ассетов из этого списка - [The list of all assets having ticker symbol](https://support.wavesplatform.com/en/knowledge-bases/2/articles/8141-the-list-of-all-assets-having-ticker-symbol)
 
-See details on how to use Asset ID:
+Более подробнее о том как использовать Asset ID:
 
-![](/_assets/asset_id_01.png)
+![](/ru/_assets/asset_id_01.png)
 
-![](/_assets/asset_id_02.png)
+![](/ru/_assets/asset_id_02.png)
 
-Use the code to find for the selected Asset.
+Используйте полученный код для поиска соответствующего ассета.
 
-![](/_assets/asset_id_03.png)
+![](/ru/_assets/asset_id_03.png)
