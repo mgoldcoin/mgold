@@ -1,33 +1,29 @@
-# How to reissue created Token
+# **Как перевыпустить Токен**.
 
-Open up your Waves wallet.
+Откройте свой Waves кошелек и зайдите во вкладку Портфель.
 
-Go to the Portfolio.
+![](/ru/_assets/token_reissue_01.png)
 
-![](/_assets/token_reissue_01.png)
+Найдите ваш выпущенный Токен и нажмите на кнопку ![](/ru/_assets/token_reissue_02.png).
 
-Find issued token and click on the ![](/_assets/token_reissue_02.png) button.
+В появившемся окне нажмите на кнопку **Перевыпуск токена**.
 
-Click on the **Token Reissue** button.
+![](/ru/_assets/token_reissue_03.png)
 
-![](/_assets/token_reissue_03.png)
+Появится следующее окно:
 
-The following window will appear.
+![](/ru/_assets/token_reissue_04.png)
 
-![](/_assets/token_reissue_04.png)
+В появившемся окне введите количество токенов, которое вы хотите дополнительно выпустить и нажмите на кнопку **Продолжить**.
 
-Choose the required number of additional tokens and click on the **Continue** button.
+**Внимание**: во время довыпуска токенов вы можете изменить статус вашего токена с **Перевыпускаемый** на **Не перевыпускаемый**. Однако после этого вы уже никогда не сможете довыпустить токены.
 
-**Note**: You can disable the possibility of issuing additional tokens by selecting the **Non reissuable**.
-But keep in mind after that, you will not be able to reissue additional tokens.
+![](/ru/_assets/token_reissue_05.png)
 
-![](/_assets/token_reissue_05.png)
+В появившемся окне проверьте введенную информацию и нажмите на кнопку **Подтвердить**.
 
-The following window will appear.
-Check the entered data and if everything is ok, click on the **Confirm** button.
+![](/ru/_assets/token_reissue_06.png)
 
-![](/_assets/token_reissue_06.png)
+После этого вы увидите транзакцию Перевыпуска ассета во вкладке **Транзакции**.
 
-After all you will be able to find the reissue transaction in your **Transactions**.
-
-![](/_assets/token_reissue_07.png)
+![](/ru/_assets/token_reissue_07.png)
