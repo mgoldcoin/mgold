@@ -93,6 +93,6 @@ To do so please make a SEND transaction to the Waves address **3P7qtv5Z7AMhwyvf5
 
 ![](/en/_assets/fiat_transfers_01.png)
 
-Fees are 1% from the amount transferred. The minimum amount is 50 USD/Euro. More detailed conditions are available on the official gateaway website [Coinomat](https://coinomat.com/).
+Fees are 1% from the amount transferred. The minimum amount is 50 USD/Euro. More detailed conditions are available on the official [Coinomat gateaway website](https://coinomat.com/).
 
 If you have any questions, please send an email to: **support@coinomat.com**
