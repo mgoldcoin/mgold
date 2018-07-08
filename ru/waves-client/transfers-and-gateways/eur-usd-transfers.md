@@ -1,34 +1,37 @@
-# How to send and receive fiat money (EUR, USD)
+# **Как ввести или вывести EUR/USD**.
 
-## How to register in the Euro/USD gateways
+Waves Lite client позволяет хранить и переводить евро и доллары с помощью Waves блокчейна. Данный сервис предоставляется через централизованный Waves сервис.
+Euro/USD переводятся через банковский перевод (SEPA/Wire transfer), затем пользователь получает токен wEURO/wUSD по средствам Waves блокчейна. Токен wEURO/wUSD эквивалентен реальному Euro/USD.
 
-The verification process is handled by [IDnow](https://www.idnow.eu/) service.
+## **Как зарегистрироваться в EURO или USD шлюзе**.
 
-First of all, you should check that your country is eligible for verification and which document is needed. You will find all these information [here](https://wavesplatform.userecho.com/topics/1304-list-of-accepted-countries-and-documents-for-verification/).
+Процесс верификации выполняется на стороне [IDnow](https://www.idnow.eu/) верификатора.
 
-Open your wallet, on the main page click on the **Deposit** button in the EURO / USD sections, then click on your personal link Get verified button.
+Прежде чем начать процесс верификации, пожалуйста проверьте [список](https://wavesplatform.userecho.com/topics/1304-list-of-accepted-countries-and-documents-for-verification/) поддерживаемых стран и принимаемые виды документов.
 
-![](/_assets/fiat_transfers_01.png)
+Откройте ваше Waves приложение, на главной странице нажмите на кнопку **Получить**. Затем выбирите раздел **Банк** и нажмите на свою персональную ссылку, кнопка **Пройти идентификацию**.
 
-![](/_assets/fiat_transfers_02.png)
+![](/ru/_assets/fiat_transfers_01.png)
 
-A Website will open in your browser. Asking you to enter personal information.
+![](/ru/_assets/fiat_transfers_02.png)
 
-![](/_assets/fiat_transfers_03.png)
+В вашем браузере откроется веб-сайт на котором необходимо ввести личную информацию.
 
-Enter the form with your ID information and submit it. After that, this page will open. you will have to choose between webcam or mobile app to make a face-to-face interview.
+![](/ru/_assets/fiat_transfers_03.png)
 
-![](/_assets/fiat_transfers_04.png)
+Заполните форму с вашим ID/паспортом и отправьте ее. После этого откроется следующая страница. Выберите верификацию Computer & webcam.
 
-Once you have chosen and logged in you will have to wait that an Indow's collaborator takes you for a face-to-face. He will ask you some information about you and verify the authenticity of your ID documents.
+**Важно**: Для прохождения верификации требуются исправная вэбкамера и микрофон.
 
-**You will need to have your ID with you during the interview**.
+![](/ru/_assets/fiat_transfers_04.png)
 
-Once it's done you will have to enter a personal code send to you. And confirm the end of the interview.
-And it's done, you will have to wait 2 or 3 days for the confirmation process to be completed.
-You will be notified by e-mail when you will be eligible for Euro/USD gateway. It will be sent from support@coinomat.com and looked like that:
+После того, как вы произвели выбор и осуществили вход, вам необходимо подождать пока сотрудник Idnow не пригласит вас на личное собеседование. Он попросит вас предоставить некоторую дополнительную информацию о вас и проверит подлинность предъявляемых идентификационных документов.
 
-**E-mail confirmation**
+После этого вам необходимо ввести персональный код, который был выслан вам ранее, и подтвердить окончание интервью, вам придется подождать 2 или 3 дня, для завершения процесса подтверждения.
+
+**Важно**: Письма с подтверждением прохождения верификации и данными для ввода будут отправлены с support@coinomat.com.
+
+**E-mail подтверждение:**
 
 ```
 Object:
@@ -79,18 +82,24 @@ Best regards,
 Coinomat Support
 ```
 
-Verify that your e-mail comes from the right source - **support@coinomat.com** and the object is **IDnow <your Waves adress>**.
+Убедитесь, вы получили электронное письмо от support@coinomat.com а тема - IDnow <ваш Waves адрес>.
+Если все хорошо, вы можете внести депозит, следуя шагам, описанным в полученном электронном письме.
 
-If all is good, you can make a deposit following the step described in the email you just receive and above.
+**Примечание**: Вам необходимо совершить хотя бы один ввод средств чтобы получить возможность вывода.
 
-## How to withdraw Euro/USD
+**Важно!**
 
-If you've been verified and deposited with Euro or USD, you can withdraw Euro or USD back to your bank account.
+Вы должны заполнить поле сведений о платеже: **CNM-<Ваш Waves адрес>**. Если вы этого не сделаете, мы не сможем пополнить ваш аккаунт. **ПРИМЕР**: CNM-3P8QhagLR9iPzJW42U8v163JACyKVdFH5hm
+Вы можете использовать только **тот же Waves адрес, который вы использовали для KYC & ALM запросов**. Если вы допустили ошибку или указали другой Waves адрес, мы не сможем пополнить ваш аккаунт. Если все в порядке средства будут доступны в течении 2-5 рабочих дней. Наш KYC & AML отдел может временно заблокировать подозрительные транзакции на более длительный период, а также запрашивать дополнительные документы, подтверждающие происхождение средств.
 
-**Notice**: First you need to make at least one deposit to get access for withdrawals.
+## **Как вывести Euro/USD**.
 
-To do so please make a SEND transaction to the Waves address **3P7qtv5Z7AMhwyvf5sM6nLuWWypyjVKb7Us**
+Чтобы начать процесс вывода средств нажмите на кнопку **Отправить** в EURO или US DOLLAR секциях, в зависимости от того что вы хотите вывести и отправьте необходимую сумму на Waves адрес шлюза - **3P7qtv5Z7AMhwyvf5sM6nLuWWypyjVKb7Us**.
 
-Fees are 1% from the amount transferred. The minimum amount is 50 USD/Euro.
+![](/ru/_assets/fiat_transfers_01.png)
 
-If you have any questions, please send an email to: **support@coinomat.com**
+Минимальная сумма вывода равна 100 EURO/USD с комиссией 1% от суммы снятия. Банковский перевод может занимать до 3-х рабочих дней, но в некоторых случаях до 5-ти рабочих дней. Более подробные условия доступны на сайте процессингового шлюза [Coinomat](https://coinomat.com/).
+
+**Важно**: Для вывода EUR/USD ваш аккаунт также должен быть верифицирован. Средства будут отправлены строго на банковские реквизиты с которых был сделан ввод средств.
+
+При возникновении проблем с верификацией или обработкой платежей, пожалуйста отправьте ваш запрос на официальный адрес поддержки Coinomat - support@coinomat.com

@@ -6,19 +6,19 @@ The verification process is handled by [IDnow](https://www.idnow.eu/) service.
 
 First of all, you should check that your country is eligible for verification and which document is needed. You will find all these information [here](https://wavesplatform.userecho.com/topics/1304-list-of-accepted-countries-and-documents-for-verification/).
 
-Open your wallet, on the main page click on the **Deposit** button in the EURO / USD sections, then click on your personal link Get verified button.
+Open your wallet. On the main page click on the **Receive** button in the EURO / USD sections, choose **Bank** and click on your personal link **Get verified button**.
 
-![](/_assets/fiat_transfers_01.png)
+![](/en/_assets/fiat_transfers_01.png)
 
-![](/_assets/fiat_transfers_02.png)
+![](/en/_assets/fiat_transfers_02.png)
 
 A Website will open in your browser. Asking you to enter personal information.
 
-![](/_assets/fiat_transfers_03.png)
+![](/en/_assets/fiat_transfers_03.png)
 
 Enter the form with your ID information and submit it. After that, this page will open. you will have to choose between webcam or mobile app to make a face-to-face interview.
 
-![](/_assets/fiat_transfers_04.png)
+![](/en/_assets/fiat_transfers_04.png)
 
 Once you have chosen and logged in you will have to wait that an Indow's collaborator takes you for a face-to-face. He will ask you some information about you and verify the authenticity of your ID documents.
 
@@ -91,6 +91,8 @@ If you've been verified and deposited with Euro or USD, you can withdraw Euro or
 
 To do so please make a SEND transaction to the Waves address **3P7qtv5Z7AMhwyvf5sM6nLuWWypyjVKb7Us**
 
-Fees are 1% from the amount transferred. The minimum amount is 50 USD/Euro.
+![](/en/_assets/fiat_transfers_01.png)
+
+Fees are 1% from the amount transferred. The minimum amount is 50 USD/Euro. More detailed conditions are available on the official gateaway website [Coinomat](https://coinomat.com/).
 
 If you have any questions, please send an email to: **support@coinomat.com**
