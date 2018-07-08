@@ -1,59 +1,69 @@
-# How to receive and send Ethereum
+# **Как отправить и получить Ethereum**.
 
-Waves allow you to hold and transfer Ethereum on its blockchain. This works through a so-called Multigateway approach: Ethereum sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Ethereum token \(wETH\) on the Waves blockchain. Every single Ethereum token is backed 1:1 with a real Ethereum.
+Waves client позволяет хранить и переводить Ethereum внутри сети Waves. Это возможно благодаря шлюзу: Ethereum поступают на Ethereum адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Ethereum в сети Waves (wETH). При выводе wETH из сети Waves пользователь получает Ethereum из расчета 1:1.
 
-Read more about [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Bitcoin шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
-## How to deposit Ethereum
+## **Как получить Ethereum**.
 
-Open your Waves wallet  
-In the Ethereum section, click on the **Receive** button.
+Откройте свой Waves кошелек и в секции Ethereum нажмите **Получить**.
 
-![](/_assets/ethereum_transfers_01.png)
+![](/ru/_assets/ethereum_transfers_01.png)
 
-The following pop-up will appear.  
-Copy the shown Ethereum address or Scan QR Code and send a payment.  
-Read the conditions carefully in yellow boxes before proceeding.
+В появившемся окне вы увидите Ethereum адрес.
+Используйте его в качестве адреса получателя, чтобы ввести Ethereum в свой Waves аккаунт.
+А также вы можете просканировать QR-код, в котором зашифрован этот Ethereum адрес.
+Перед этим внимательно прочитайте условия ввода Ethereum, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/ethereum_transfers_02.png)
+![](/ru/_assets/ethereum_transfers_02.png)
 
-**Note**: Processing can take up to 120 minutes.
+**Внимание**: процесс ввода ETH в ваш Waves аккаунт может занять до 120 минут.
 
-# **How to send Ethereum**
+## **Как отправить Ethereum**.
 
-Open your Waves wallet,  
-In the Ethereum section, click on the **Send** button.
+Откройте ваш Waves кошелек и в Ethereum секции нажмите **Отправить**.
 
-![](/_assets/ethereum_transfers_01.png)
+![](/ru/_assets/ethereum_transfers_01.png)
 
-The following pop-up will appear.  
-Paste the Ethereum address you want to send to as well as the amount of Ethereum.  
-Please note that the gateway charges 0.001 ETH for the gateway fee as well as 0.001 Waves for the network fee.
+В появившемся окне введите:
 
-After you have filled the form, click on the **Continue** button.
+- в строку Получатель Ethereum адрес получателя;
+- в строку Количество сумму Ethereum, которую вы хотите отправить на Ethereum адрес Получателя.
 
-![](/_assets/ethereum_transfers_04.png)
+**Будьте внимательны**: комиссия Ethereum шлюза за обработку транзакции составляет 0,001 ETH, а комиссия сети Waves за проведение транзакции составляет 0,001 Waves.
+Внимательно прочитайте условия вывода Ethereum, которые выделены жёлтой пунктирной линией.
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+После заполнения всех строк и прочтения условия нажмите **Продолжить**.
 
-![](/_assets/ethereum_transfers_05.png)
+![](/ru/_assets/ethereum_transfers_04.png)
 
-**Note**: Processing can take up to 120 minutes, the minimum amount is 0.005 ETH.
+Ещё раз проверьте данные транзакции в появившемся окне.
 
-## How to create internal transaction through Waves network
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-You can send Ethereum directly to another Waves account, just use the recipient Waves address, click on Send and fill-in the sending form.
+![](/ru/_assets/ethereum_transfers_05.png)
 
-**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
+**Внимание**: процесс вывода Ethereum из Waves аккаунта может занять до 120 минут.
 
-![](/_assets/ethereum_transfers_01.png)
+## **Как перевести Bitcoin в другой Waves аккаунт**.
 
-After you have completed the form, click on the **Continue** button.
+Откройте ваш Waves кошелек и в Ethereum секции нажмите **Отправить**.
 
-![](/_assets/ethereum_transfers_07.png)
+![](/ru/_assets/ethereum_transfers_01.png)
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+В появившемся окне введите:
 
-![](/_assets/ethereum_transfers_08.png)
+- в строку Получатель Waves адрес получателя;
+- в строку Количество сумму Ethereum, которую вы хотите отправить на Waves адрес Получателя.
+
+Будьте внимательны: комиссия сети Waves за проведение транзакции составит 0,001 Waves.
+
+После заполнения всех строк нажмите **Продолжить**.
+
+![](/ru/_assets/ethereum_transfers_07.png)
+
+Ещё раз проверьте данные транзакции в появившемся окне.
+
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
+
+![](/ru/_assets/ethereum_transfers_08.png)
