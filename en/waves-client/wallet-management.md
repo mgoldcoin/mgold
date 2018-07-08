@@ -1,8 +1,7 @@
 # Transfers and gateways
 
-Transfers and gateways chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. All operations with external coins are processing with the [payment gateways](/en/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
+Transfers and gateways chapter includes all details about send and deposit operations for each cryptocurrency which is supporting within the Waves Platform. All transactions with external coins are processing with the [payment gateways](/en/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
-<<<<<<< HEAD:en/waves-client/wallet-management.md
 1. [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
 2. [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
 3. [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
@@ -11,19 +10,8 @@ Transfers and gateways chapter includes all details about send and deposit opera
 6. [Zcash transfers](/waves-client/transfers-and-gateways/zcash-transfers.md)
 7. [Bitcoin Cash transfers](/waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
 8. [Dash transfers](/waves-client/transfers-and-gateways/dash-transfers.md)
-9. [EURO and USD transfers](/waves-client/transfers-and-gateways/eur-usd-transfers.md)
-=======
-01. [Waves transfers](/waves-client/transfers-and-gateways/waves-transfers.md)
-02. [Asset transfers](/waves-client/transfers-and-gateways/asset-transfers.md)
-03. [Bitcoin transfers](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
-04. [Ethereum transfers](/waves-client/transfers-and-gateways/ethereum-transfers.md)
-05. [Litecoin transfers](/waves-client/transfers-and-gateways/litecoin-transfers.md)
-06. [Zcash transfers](/waves-client/transfers-and-gateways/zcash-transfers.md)
-07. [Bitcoin Cash transfers](/waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
-08. [Dash transfers](/waves-client/transfers-and-gateways/dash-transfers.md)
-09. [Monero transfers](/waves-client/transfers-and-gateways/monero-transfers.md)
+9. [Monero transfers](/waves-client/transfers-and-gateways/monero-transfers.md)
 10. [EURO and USD transfers](/waves-client/transfers-and-gateways/eur-usd-transfers.md)
->>>>>>> origin/master:waves-client/wallet-management.md
 
 The Waves wallet also supports small purchases of Waves in Euro and US Dollar (minimum 30 EUR/USD, maximum 200 EUR/USD) using plastic card.
 
