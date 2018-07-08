@@ -1,52 +1,44 @@
-# How to distribute a Token using Mass Transfer
+# Как распределить токены с помощью Массовой рассылки.
 
-You can make mass transfers right from your Waves wallet.
-With this feature, you can distribute your Token, Waves or any other Waves based tokens on your balance directly to multiple (up-to 100) Waves addresses with several most natural actions.
+Вы можете совершить Массовую отправку токенов из своего Waves аккаунта. С помощью этой функции вы можете отправить Waves или любой другой Ассет из своего аккаунта на несколько (до 100) Waves адресов.
 
-Let's make distribution for Waves tokens, although this method also works for any other tokens of your balance. Before you start, please make sure that you have enough Waves for the transaction fee.
+Для этого откройте свой Waves кошелёк и во вкладке Портфель нажмите на кнопку Отправить в конце строки Ассета.
 
-Open up your wallet.
+![](/ru/_assets/mass_transfer_01.png)
 
-Go to Portfolio, click on the **Send** button (top left corner).
+В появившемся окне выбираете раздел **Массовая отправка** и заполните поля формы.
 
-![](/_assets/mass_transfer_01.png)
+![](/ru/_assets/mass_transfer_02.png)
 
-The following pop-up will appear.
-Select **Mass Payment** and choose a token for distribution.
-Then fill in the sending form.
+**Адрес, Сумма**: введите построчно Waves адреса получателей и через запятую сумму отправки;
+**Внимание**: вы можете отправить средства только на 100 адресов за один раз.
+Пожалуйста, соблюдайте следующий синтаксис ввода данных:  3P9KR33QyXwfTXv8kKtNGZYtgKk3RXSUk36,0.12345;
+**Описание**: добавьте краткое описание если необходимо;
+**Общая сумма**: в этом поле отобразится общая сумма вашей транзакции;
+**Комиссия**: в этом поле отобразиться комиссия за Массовую отправку токенов из расчета: 0,001 Waves + 0,0005 Waves x количество адресов.
 
-![](/_assets/mass_transfer_02.png)
+После заполнения полей формы нажмите на кнопку **Продолжить**.
 
-* **Recipients, Amounts**: Enter the recipient Waves addresses and number of tokens you want to distribute for each address.
-* **Note**:You can use up-to 100 addresses per one request.
-* Please use the following syntax: **Address,Amount** For example: **3P9KR33QyXwfTXv8kKtNGZYtgKk3RXSUk36**,**0.12345**
-* **Description**: Optional. You can write a message for the recipient in the Attachment field.
-* **Total Amount**: This field calculates the total number of sending tokens.
-* **Fee**: The transaction fee depended on the number of recipients and calculated using the following formula: **0.001 + 0.0005 * Number of recipients**.
+Для завершения процедуры Массовой отправки токенов ещё раз проверьте введённую информацию и нажмите на кнопку **Подтвердить**, если информация верна или на кнопку **Назад**, если информацию нужно исправить.
 
-After you have filled the form, click on the **Continue** button.
-The following pop-up will appear.
+![](/ru/_assets/mass_transfer_03.png)
 
-To complete the operation, double-check the entered data and if everything is good click on the **Confirm** or click on the **Go Back** to repeat the process.
+После этого транзакция будет проведена и информация о ней появится во вкладке **Транзакции**.
 
-![](/_assets/mass_transfer_03.png)
+![](/ru/_assets/mass_transfer_04.png)
 
-After all you will be able to find the mass payment transaction in your **Transactions**.
+Также вы можете импортировать файл с Waves адресами получателей и суммами.
 
-![](/_assets/mass_transfer_04.png)
+Для этого создайте текстовый файл со списком адресов получателей и суммами к получению в формате: Адрес,Сумма (например, **3P9KR33QyXwfTXv8kKtNGZYtgKk3RXSUk36,0.12345**).
 
-Also you can create payment file for the distribution.
-Just create a text file with the list of the recipient Waves addresses and number of tokens you want to distribute.
-Please use the following syntax: **Address,Amount** For example: **3P9KR33QyXwfTXv8kKtNGZYtgKk3RXSUk36,0.12345**
+Порядок действий по созданию такого файла рассмотрен на примере ниже:
 
-See example below.
+![](/ru/_assets/mass_transfer_05.png)
 
-![](/_assets/mass_transfer_05.png)
+![](/ru/_assets/mass_transfer_06.png)
 
-![](/_assets/mass_transfer_06.png)
+Затем сохраните файл в формате CSV и нажмите на **Импорт из CSV файла**.
 
-Save a file as CSV document and then open it by clicking on the **Import a CSV File**.
+![](/ru/_assets/mass_transfer_07.png)
 
-![](/_assets/mass_transfer_07.png)
-
-Follow the mass payment procedure described above.
+Для осуществления Массовой отправки следуйте процедуре описанной ранее.
