@@ -1,30 +1,27 @@
-# ​How to burn issued Token
+# **Как сжечь выпущенный Токен**.
 
-Open up your Waves wallet.
+Откройте свой Waves кошелёк и войдите во вкладку Портфель.
 
-Go to the Portfolio.
+![](/ru/_assets/token_burn_01.png)
 
-![](/_assets/token_burn_01.png)
+Найдите свой выпущеный Токен и нажмите на кнопку ![](/ru/_assets/token_burn_02.png).
 
-Find issued token and click on the ![](/_assets/token_burn_02.png) button.
+Затем нажмите на кнопку **Сжечь токен**.
 
-Click on the **Token Burn** button.
+![](/ru/_assets/token_burn_03.png)
 
-![](/_assets/token_burn_03.png)
+После этого появится следующее окно:
 
-The following window will appear.
+![](/ru/_assets/token_burn_04.jpeg)
 
-![](/_assets/token_burn_04.png)
+Введите количество сжигаемых токенов и нажмите на кнопку **Продолжить**.
 
-Choose the required number of burning tokens and click on the **Continue** button.
+![](/ru/_assets/token_burn_05.jpeg)
 
-![](/_assets/token_burn_05.png)
+В появившемся окне проверьте введённую информацию и нажмите на кнопку **Подтвердить**.
 
-The following window will appear.
-Check the entered data and if everything is ok, click on the **Confirm** button.
+![](/ru/_assets/token_burn_06.jpeg)
 
-![](/_assets/token_burn_06.png)
+После этого Транзакция сжигания токенов отобразится во вкладке **Транзакции**.
 
-After all you will be able to find the reissue transaction in your **Transactions**.
-
-![](/_assets/token_burn_07.png)
+![](/ru/_assets/token_burn_07.png)
