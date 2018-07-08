@@ -1,6 +1,6 @@
 # Переводы и шлюзы
 
-Transfers and gateways chapter includes all details about send and deposit operations to each cryptocurrency which is supported within the Waves Platform. All operations with external coins are processing with the [payment gateways](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
+В главе "Переводы и шлюзы содержатся все необходимые сведения о транзакциях ввода и вывода криптовалют, которые поддерживает платформа Waves. Все транзакции с внешними криптовалютами обрабатываются [платежными шлюзами](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
 1. [Переводы Waves](/ru/waves-client/transfers-and-gateways/waves-transfers.md)
 2. [Переводы Токенов](/ru/waves-client/transfers-and-gateways/asset-transfers.md)
@@ -17,8 +17,10 @@ The Waves wallet also supports small purchases of Waves in Euro and US Dollar (m
 
 1. [Покупка Waves с банковской карты](/ru/waves-client/transfers-and-gateways/buying-waves-using-card.md)
 
-As first, it is needed to feed your wallet with some crypto. If you don’t have Bitcoin \(Ether, LiteCoin or Z-Cash\), purchase them via your trusted exchange and send them to the wallet.
+Кошелек Waves также поддерживает покупку Waves за Евро и Доллары США (минимум 30 EUR / USD, максимум 200 EUR / USD) с использованием пластиковой банковской карты.
 
-In order to feed your wallet, Waves-platform proposes a third-party exchange able to process your banl account, however that procedure could result much more time consuming respect your trusted supplier \(The verification process is handled by [IDnow](#) service\).
+Во-первых, необходимо ввести в свой Waves кошелек криптовалюту. Если у вас нет BTC, ETH, LTC, ZEC, XMR, DASH, то купите их на своей доверенной биржи и отправьте их в Waves кошелек.
 
-To apply for a wire transfer using your bank account you must be an identified user under the KYC/AML procedures. If you would like to apply for that, be prepared to submit your scanned ID/Passport and get prepared for a very brief webcam session. Once the procedure will be completed you will be authorized to wire bank funds _in and out _the platform.
+Чтобы вы могли ввести Евро и Доллары в свой Waves аккаунт или вывести их, платформа Waves пользуется услугами третьей стороны (IDnow), задачей которой является верификация вашего Waves аккаунта.
+
+Чтобы подать заявку на осуществление банковского перевода со своего банковского счета в ваш Waves аккаунт, вы должны быть идентифицированным пользователем в рамках процедур KYC / AML. Если вы хотите подать заявку на это, будьте готовы представить свой отсканированный ID / паспорт и подготовиться к очень короткой сессии с представителем IDnow с использованием веб-камеры. Если процедура верификации будет пройдена вами успешно, то вы сможете вводить Евро и Доллары в свой Waves аккаунт и выводить их.

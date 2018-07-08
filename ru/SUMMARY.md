@@ -1,6 +1,6 @@
 # Summary
 
-  ## Overview
+## Overview
 
   * [How To Use This Guide](overview/how-to-use-this-guide.md)
   * [Platform Components](overview/platform-components.md)
@@ -9,7 +9,7 @@
   * [Waves Releases](overview/waves-releases.md)
   * [Waves Tokens](overview/waves-tokens.md)
 
-  ## Platform Features
+## Platform Features
 
   * [Activation Protocol](platform-features/activation-protocol.md)
   * [Assets Custom Tokens](platform-features/assets-custom-tokens.md)
@@ -18,7 +18,7 @@
   * [Leased Proof Of Stake Lpos](platform-features/leased-proof-of-stake-lpos.md)
   * [Smart Contracts](platform-features/smart-contracts.md)
 
-  ## Waves Client
+## Waves Client
 
   * [Установка Waves приложения](/ru/waves-client/install-waves-client.md)
   * [Управление аккаунтом](/ru/waves-client/account-management.md)
@@ -47,3 +47,13 @@
     * [Перевыпуск токена](/ru/waves-client/assets-management/reissue-an-asset.md)
     * [Сжигание токена](/ru/waves-client/assets-management/burn-an-asset.md)
     * [Распределение токена](/ru/waves-client/assets-management/mass-transfer.md)
+
+## Часто задаваемые вопросы
+
+  * [Управление аккаунтом](/ru/frequently-asked-questions-faq/account-management-faq.md)
+  * [Переводы и шлюзы](/ru/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+    * [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+    * [Обработка Ethereum платежей и смарт-контракты](/ru/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
+  * [Waves DEX](/ru/frequently-asked-questions-faq/waves-dex-faq.md)
+    * [Время исполнения ордера](/ru/frequently-asked-questions-faq/waves-dex/order-time.md)
+    * [Поиск токена на бирже DEX используя Asset ID](/ru/frequently-asked-questions-faq/waves-dex/asset-id.md)
