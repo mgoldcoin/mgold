@@ -1,59 +1,70 @@
-# How to receive and send Bitcoin
+# **Как отправить и получить Bitcoin**.
 
-Waves allow you to hold and transfer Bitcoin on its blockchain. This works through a so-called Multigateway approach: Bitcoins are sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Bitcoin token \(wBTC\) on the Waves blockchain. Every single Bitcoin token is backed 1:1 with a real Bitcoin.
+Waves client позволяет хранить и переводить Bitcoin внутри сети Waves. Это возможно благодаря шлюзу: Bitcoin поступают на Bitcoin адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Bitcoin в сети Waves (wBTC). При выводе wBTC из сети Waves пользователь получает Bitcoin из расчета 1:1.
 
-Read more about [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Bitcoin шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
-## **How to Deposit Bitcoin**
+## **Как получить Bitcoin**.
 
-Open your Waves wallet,  
-In the Bitcoin section, click on the **Receive** button.
+Откройте свой Waves кошелек и в секции Bitcoin нажмите **Получить**.
 
-![](/_assets/bitcoin_transfers_01.png)
+![](/ru/_assets/bitcoin_transfers_01.png)
 
-The following pop-up will appear.  
-Copy the shown Bitcoin address or Scan QR Code and send a payment.  
-Read the conditions carefully in yellow boxes before proceeding.
+В появившемся окне вы увидите Bitcoin адрес.
+Используйте его в качестве адреса получателя, чтобы ввести Bitcoin в свой Waves аккаунт
+А также вы можете просканировать QR-код, в котором зашифрован этот Bitcoin адрес.
+Перед этим внимательно прочитайте условия ввода Bitcoin, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/bitcoin_transfers_02.png)
+![](/ru/_assets/bitcoin_transfers_02.png)
 
 **Note**: Processing can take up to 120 minutes.
 
-## **How to send Bitcoin**
+**Внимание**: процесс ввода BTC в ваш Waves аккаунт может занять до 120 минут.
 
-Open your Waves wallet,  
-In the Bitcoin section, click on the **Send** button.
+## **Как отправить Bitcoin**.
 
-![](/_assets/bitcoin_transfers_01.png)
+Откройте ваш Waves кошелек и в Bitcoin секции нажмите **Отправить**.
 
-The following pop-up will appear.  
-Paste the Bitcoin address you want to send to as well as the amount of Bitcoin.  
-Please note that the gateway charges 0.001 BTC for the gateway fee as well as 0.001 Waves for the network fee. Read the conditions carefully in yellow boxes before proceeding.
+![](/ru/_assets/bitcoin_transfers_01.png)
 
-After you have filled the form, click on the **Continue** buttonn.
+В появившемся окне введите:
 
-![](/_assets/bitcoin_transfers_04.png)
+- в строку Получатель Bitcoin адрес получателя;
+- в строку Количество сумму Bitcoin, которую вы хотите отправить на Bitcoin адрес Получателя.
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+**Будьте внимательны**: комиссия Bitcoin шлюза за обработку транзакции составляет 0,001 BTC, а комиссия сети Waves за проведение транзакции составляет 0,001 Waves.
+Внимательно прочитайте условия вывода Bitcoin, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/bitcoin_transfers_05.png)
+После заполнения всех строк и прочтения условия нажмите **Продолжить**.
 
-**Note**: Processing can take up to 120 minutes, the minimum amount is 0.002 BTC.
+![](/ru/_assets/bitcoin_transfers_04.png)
 
-## **How to create internal transaction through Waves network**
+Ещё раз проверьте данные транзакции в появившемся окне.
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-You can send Bitcoins directly to another Waves account, just use the recipient Waves address, click on Send and fill-in the sending form.
+![](/ru/_assets/bitcoin_transfers_05.png)
 
-**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
+**Внимание**: процесс вывода Bitcoin из Waves аккаунта может занять до 120 минут.
 
-![](/_assets/bitcoin_transfers_01.png)
+## **Как перевести Bitcoin в другой Waves аккаунт**.
 
-After you have completed the form, click on the **Continue** button.
+Откройте ваш Waves кошелек и в Bitcoin секции нажмите Отправить.
 
-![](/_assets/bitcoin_transfers_07.png)
+![](/ru/_assets/bitcoin_transfers_01.png)
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+В появившемся окне введите:
 
-![](/_assets/bitcoin_transfers_08.png)
+- в строку Получатель Waves адрес получателя;
+- в строку Количество сумму Bitcoin, которую вы хотите отправить на Waves адрес Получателя.
+
+Будьте внимательны: комиссия сети Waves за проведение транзакции составит 0,001 Waves.
+
+После заполнения всех строк нажмите **Продолжить**.
+
+![](/ru/_assets/bitcoin_transfers_07.png)
+
+Ещё раз проверьте данные транзакции в появившемся окне.
+
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
+
+![](/ru/_assets/bitcoin_transfers_08.png)
