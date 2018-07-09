@@ -1,59 +1,70 @@
-# How to receive and send Bitcoin Cash
+# **Как отправить и получить Bitcoin Cash**.
 
-Waves allow you to hold and transfer Bitcoin Cash on its blockchain. This works through a so-called Multigateway approach: Bitcoins Cash are sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Bitcoin Cash token \(wBCH\) on the Waves blockchain. Every single Bitcoin Cash token is backed 1:1 with a real Bitcoin Cash.
+Waves client позволяет хранить и переводить Bitcoin Cash внутри сети Waves. Это возможно благодаря шлюзу: Bitcoin Cash поступают на Bitcoin Cash адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Bitcoin Cash в сети Waves (wBCH). При выводе wBCH из сети Waves пользователь получает Bitcoin Cash из расчета 1:1.
 
-Read more about [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Bitcoin Cash шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
-## **How to receive Bitcoin Cash**
+## **Как получить Bitcoin Cash**.
 
-Open your Waves wallet  
-In the Bitcoin Cash section, click on the **Receive** button.
+Откройте свой Waves кошелек и в секции Bitcoin Cash нажмите **Получить**.
 
-![](/_assets/bch_transfers_01.png)
+![](/ru/_assets/bch_transfers_01.png)
 
-The following pop-up will appear.  
-Copy the shown Bitcoin Cash address or Scan QR Code and send a payment.  
-Read the conditions carefully in yellow boxes before proceeding.
+В появившемся окне вы увидите Bitcoin Cash адрес.
+Используйте его в качестве адреса получателя, чтобы ввести Bitcoin Cash в свой Waves аккаунт
+А также вы можете просканировать QR-код, в котором зашифрован этот Bitcoin Cash адрес.
+Перед этим внимательно прочитайте условия ввода Bitcoin Cash, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/bch_transfers_02.png)
+![](/ru/_assets/bch_transfers_02.png)
 
-**Note**: Processing can take up to 120 minutes.
+**Внимание**: процесс ввода Bitcoin Cash в ваш Waves аккаунт может занять до 120 минут.
 
-## **How to send Bitcoin Cash**
+## **Как отправить Bitcoin Cash**.
 
-Open your Waves wallet  
-In the Bitcoin Cash section, click on the **Send** button.
+Откройте ваш Waves кошелек и в Bitcoin Cash секции нажмите **Отправить**.
 
-![](/_assets/bch_transfers_01.png)
+![](/ru/_assets/bch_transfers_01.png)
 
-The following pop-up will appear.  
-Paste the Bitcoin Cash address you want to send to as well as the amount of Bitcoin Cash.  
-Please note that the gateway charges 0.01 BCH for the gateway fee as well as 0.001 Waves for the network fee. Read the conditions carefully in yellow boxes before proceeding.
+В появившемся окне введите:
 
-After you have filled the form, click on the **Continue** button.
+- в строку **Получатель** Bitcoin Cash адрес получателя;
+- в строку **Количество** сумму Bitcoin Cash, которую вы хотите отправить на Bitcoin Cash адрес Получателя.
 
-![](/_assets/bch_transfers_04.png)
+**Будьте внимательны**: комиссия Bitcoin Cash шлюза за обработку транзакции составит 0,01 BCH, а комиссия сети Waves за проведение транзакции составлит 0,001 Waves.
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+Внимательно прочитайте условия вывода Bitcoin Cash, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/bch_transfers_05.png)
+После заполнения всех строк и прочтения условий нажмите **Продолжить**.
 
-**Note**: Processing can take up to 120 minutes, the minimum amount is 0.001 BCH.
+![](/ru/_assets/bch_transfers_04.png)
 
-## **How to create internal transaction through Waves network**
+Ещё раз проверьте данные транзакции в появившемся окне.
 
-You can send Bitcoin Cash directly to another Waves account, just use the recipient Waves address, click on Send and fill-in the sending form.
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
+![](/ru/_assets/bch_transfers_05.png)
 
-![](/_assets/bch_transfers_01.png)
+**Внимание**: процесс ввода Bitcoin Cash в ваш Waves аккаунт может занять до 120 минут.
 
-After you have completed the form, click on the **Continue** button.
+## **Как перевести Bitcoin Cash в другой Waves аккаунт**.
 
-![](/_assets/bch_transfers_07.png)
+Откройте ваш Waves кошелек и в Bitcoin Cash секции нажмите **Отправить**.
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+![](/ru/_assets/bch_transfers_01.png)
 
-![](/_assets/bch_transfers_08.png)
+В появившемся окне введите:
+
+- в строку **Получатель** Waves адрес получателя;
+- в строку **Количество** сумму Bitcoin Cash, которую вы хотите отправить на Waves адрес Получателя.
+
+**Будьте внимательны**: комиссия сети Waves за проведение транзакции составит 0,001 Waves.
+
+После заполнения всех строк нажмите **Продолжить**.
+
+![](/ru/_assets/bch_transfers_07.png)
+
+Ещё раз проверьте данные транзакции в появившемся окне.
+
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
+
+![](/ru/_assets/bch_transfers_08.png)
