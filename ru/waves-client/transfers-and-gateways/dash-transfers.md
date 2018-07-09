@@ -1,60 +1,70 @@
-# How to receive and send Dash
+# **Как отправить и получить Dash**.
 
-Waves allow you to hold and transfer Dash on its blockchain. This works through a so-called Multigateway approach: Dash sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Dash token \(wDASH\) on the Waves blockchain. Every single Dash token is backed 1:1 with a real Dash.
+Waves client позволяет хранить и переводить Dash внутри сети Waves. Это возможно благодаря шлюзу: Dash поступают на Dash адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Dash в сети Waves (wDASH). При выводе wDASH из сети Waves пользователь получает Dash из расчета 1:1.
 
-Read more about [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Dash шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
-## **How to receive Dash**
+## **Как получить Dash**.
 
-Open your Waves wallet
-In the Dash section, click on the **Receive**.
+Откройте свой Waves кошелек и в секции Dash нажмите **Получить**.
 
-![](/_assets/dash_transfers_01.png)
+![](/ru/_assets/dash_transfers_01.png)
 
-The following pop-up will appear.
-Copy the shown Dash address or Scan QR Code and send a payment.
-Read the conditions carefully in yellow boxes before proceeding.
+В появившемся окне вы увидите Dash адрес.
+Используйте его в качестве адреса получателя, чтобы ввести Dash в свой Waves аккаунт
+А также вы можете просканировать QR-код, в котором зашифрован этот Dash адрес.
+Перед этим внимательно прочитайте условия ввода Dash, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/dash_transfers_02.png)
+![](/ru/_assets/dash_transfers_02.png)
 
-**Note**: Processing can take up to 120 minutes.
+**Внимание**: процесс ввода Dash в ваш Waves аккаунт может занять до 120 минут.
 
-## **How to send Dash**
+## **Как отправить Dash**.
 
-Open your Waves wallet  
-In the Dash section, click on the **Send** button.
+Откройте ваш Waves кошелек и в Dash секции нажмите **Отправить**.
 
-![](/_assets/dash_transfers_03.png)
+![](/ru/_assets/dash_transfers_03.png)
 
-The following pop-up will appear.
+В появившемся окне введите:
 
-Paste the Dash address you want to send to as well as the amount of Dash.
+- в строку **Получатель** Dash адрес получателя;
+- в строку **Количество** сумму Dash, которую вы хотите отправить на Dash адрес Получателя.
 
-Please note that the gateway charges 0.001 Dash for the gateway fee as well as 0.001 Waves for the network fee. Read the conditions carefully in yellow boxes before proceeding.
-After you have filled the form, click on the **Continue** button.
+**Будьте внимательны**: комиссия Dash шлюза за обработку транзакции составит 0,001 DASH, а комиссия сети Waves за проведение транзакции составлит 0,001 Waves.
 
-![](/_assets/dash_transfers_04.png)
+Внимательно прочитайте условия вывода Dash, которые выделены жёлтой пунктирной линией.
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+После заполнения всех строк и прочтения условий нажмите **Продолжить**.
 
-![](/_assets/dash_transfers_05.png)
+![](/ru/_assets/dash_transfers_04.png)
 
-**Note**: Processing can take up to 120 minutes.
+Ещё раз проверьте данные транзакции в появившемся окне.
 
-## **How to create internal transaction through Waves network**
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-You can send Dash directly to another Waves account, just use the recipient Waves address, click on Send and fill-in the sending form.
+![](/ru/_assets/dash_transfers_05.png)
 
-**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
+**Внимание**: процесс ввода Dash в ваш Waves аккаунт может занять до 120 минут.
 
-![](/_assets/dash_transfers_06.png)
+## **Как перевести Dash в другой Waves аккаунт**.
 
-After you have completed the form, click on the **Continue** button.
+Откройте ваш Waves кошелек и в Dash секции нажмите **Отправить**.
 
-![](/_assets/dash_transfers_07.png)
+![](/ru/_assets/dash_transfers_06.png)
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+В появившемся окне введите:
 
-![](/_assets/dash_transfers_08.png)
+- в строку **Получатель** Waves адрес получателя;
+- в строку **Количество** сумму Dash, которую вы хотите отправить на Waves адрес Получателя.
+
+**Будьте внимательны**: комиссия сети Waves за проведение транзакции составит 0,001 Waves.
+
+После заполнения всех строк нажмите **Продолжить**.
+
+![](/ru/_assets/dash_transfers_07.png)
+
+Ещё раз проверьте данные транзакции в появившемся окне.
+
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
+
+![](/ru/_assets/dash_transfers_08.png)
