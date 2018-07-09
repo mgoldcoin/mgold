@@ -1,59 +1,70 @@
-# How to receive and send Litecoin
+# **Как отправить и получить Litecoin**.
 
-Waves allow you to hold and transfer Litecoin on its blockchain. This works through a so-called Multigateway approach: Litecoin sent to a user's deposit address available in the Waves wallet and after the deposit the user receives a Litecoin token \(wLTC\) on the Waves blockchain. Every single Litecoin token is backed 1:1 with a real Litecoin.
+Waves client позволяет хранить и переводить Litecoin внутри сети Waves. Это возможно благодаря шлюзу: Litecoin поступают на Litecoin адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Litecoin в сети Waves (wLTC). При выводе wLTC из сети Waves пользователь получает Litecoin из расчета 1:1.
 
-Read more about [What is a payment gateway?](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Litecoin шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
-## How to receive Litecoin
+## **Как получить Litecoin**.
 
-Open your Waves wallet  
-In the Litecoin section, click on the **Receive** button.
+Откройте свой Waves кошелек и в секции Litecoin нажмите **Получить**.
 
-![](/_assets/litecoin_transfers_01.png)
+![](/ru/_assets/litecoin_transfers_01.png)
 
-The following pop-up will appear.  
-Copy the shown Litecoin address or Scan QR Code and send a payment.  
-Read the conditions carefully in yellow boxes before proceeding.
+В появившемся окне вы увидите Litecoin адрес.
+Используйте его в качестве адреса получателя, чтобы ввести Litecoin в свой Waves аккаунт
+А также вы можете просканировать QR-код, в котором зашифрован этот Litecoin адрес.
+Перед этим внимательно прочитайте условия ввода Litecoin, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/litecoin_transfers_02.png)
+![](/ru/_assets/litecoin_transfers_02.png)
 
-**Note**: Processing can take up to 120 minutes.
+**Внимание**: процесс ввода Litecoin в ваш Waves аккаунт может занять до 120 минут.
 
-## How to send Litecoin
+## **Как отправить Litecoin**.
 
-Open your Waves wallet  
-In the Litecoin section, click on the **Send** button.
+Откройте ваш Waves кошелек и в Litecoin секции нажмите **Отправить**.
 
-![](/_assets/litecoin_transfers_01.png)
+![](/ru/_assets/litecoin_transfers_01.png)
 
-The following pop-up will appear.  
-Paste the Litecoin address you want to send to as well as the amount of Litecoin.  
-Please note that the gateway charges 0.01 LTC for the gateway fee as well as 0.001 Waves for the network fee.
+В появившемся окне введите:
 
-After you have filled the form, click on the **Continue** button.
+- в строку **Получатель** Litecoin адрес получателя;
+- в строку **Количество** сумму Litecoin, которую вы хотите отправить на Litecoin адрес Получателя.
 
-![](/_assets/litecoin_transfers_04.png)
+**Будьте внимательны**: комиссия Litecoin шлюза за обработку транзакции составит 0,01 LTC, а комиссия сети Waves за проведение транзакции составлит 0,001 Waves.
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+Внимательно прочитайте условия вывода Litecoin, которые выделены жёлтой пунктирной линией.
 
-![](/_assets/litecoin_transfers_05.png)
+После заполнения всех строк и прочтения условий нажмите **Продолжить**.
 
-**Note**: Processing can take up to 120 minutes, the minimum amount is 0.1 LTC.
+![](/ru/_assets/litecoin_transfers_04.png)
 
-## How to create internal transaction through Waves network
+Ещё раз проверьте данные транзакции в появившемся окне.
 
-You can send Litecoin directly to another Waves account, just use the recipient Waves address, click on Send and fill-in the sending form.
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-**Note.** The network fee is only 0.001 Waves \(no gateway fee\)
+![](/ru/_assets/litecoin_transfers_05.png)
 
-![](/_assets/litecoin_transfers_01.png)
+**Внимание**: процесс ввода Litecoin в ваш Waves аккаунт может занять до 120 минут.
 
-After you have completed the form, click on the **Continue** button.
+## **Как перевести Litecoin в другой Waves аккаунт**.
 
-![](/_assets/litecoin_transfers_07.png)
+Откройте ваш Waves кошелек и в Litecoin секции нажмите **Отправить**.
 
-The following pop-up will appear.  
-To complete the operation, click on the **Confirm** or **Back** to repeat the process.
+![](/ru/_assets/litecoin_transfers_01.png)
 
-![](/_assets/litecoin_transfers_08.png)
+В появившемся окне введите:
+
+- в строку **Получатель** Waves адрес получателя;
+- в строку **Количество** сумму Litecoin, которую вы хотите отправить на Waves адрес Получателя.
+
+**Будьте внимательны**: комиссия сети Waves за проведение транзакции составит 0,001 Waves.
+
+После заполнения всех строк нажмите **Продолжить**.
+
+![](/ru/_assets/litecoin_transfers_07.png)
+
+Ещё раз проверьте данные транзакции в появившемся окне.
+
+Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
+
+![](/ru/_assets/litecoin_transfers_08.png)
