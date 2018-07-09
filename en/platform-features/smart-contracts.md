@@ -44,7 +44,7 @@ If we plan to apply constraints on all operations for a specific asset, we canno
 * Reissue Transaction
 * Burn Transaction
 
-# **Note.** you can find more technical details about our smart contracts implementation [**here**](/en/technical-details/waves-contracts-language-description.md).
+**Note.** you can find more technical details about our smart contracts implementation [**here**](/en/technical-details/waves-contracts-language-description.md).
 
 ## Scripts' Cost
 
