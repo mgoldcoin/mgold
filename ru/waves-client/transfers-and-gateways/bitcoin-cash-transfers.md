@@ -23,7 +23,7 @@ Waves client позволяет хранить и переводить Bitcoin C
 
 Откройте ваш Waves кошелек и в Bitcoin Cash секции нажмите **Отправить**.
 
-![](/ru/_assets/bch_transfers_01.png)
+![](/ru/_assets/bch_transfers_03.png)
 
 В появившемся окне введите:
 
@@ -50,7 +50,7 @@ Waves client позволяет хранить и переводить Bitcoin C
 
 Откройте ваш Waves кошелек и в Bitcoin Cash секции нажмите **Отправить**.
 
-![](/ru/_assets/bch_transfers_01.png)
+![](/ru/_assets/bch_transfers_06.png)
 
 В появившемся окне введите:
 
