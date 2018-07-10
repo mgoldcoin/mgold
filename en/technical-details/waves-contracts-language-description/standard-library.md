@@ -1,4 +1,3 @@
-# Types
 ## General fields
 This fields are usual for all transaction types (except GenesisTransaction, it has no `.proven` field):
 
@@ -53,7 +52,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * `.transferCount` - return a total count of transfers in mass transfer as a Long number 
 * `.attachment` - return an arbitrary attachment of transfer as ByteVector
 
-## [Leasing](https://docs.wavesplatform.com/waves-client/account-management/waves-leasing.html)
+## Leasing
 * LeaseTransaction
    - `.amount` - return an amount of asset which are leased as a Long number
    - `.recepient` -	return a recepient address as addressOrAliasType  
