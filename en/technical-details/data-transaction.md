@@ -47,25 +47,19 @@ the account state will be `{"smart": true, "IQ": 130}`, this is, the latter tran
 
 ### Smart Contract Interaction
 
-The smart contract language has functions `getLong()`, `getBoolean()`, `getByteArray()`, and `getString()`. All these accept two parameters: address and key. They return `Some(value)` if successful, `None` if no value exists for the given key, and make contract fail if the value stored under the key has different type.
+The smart contract language has functions `getInteger()`, `getBoolean()`, `getBinary()`, and `getString()`. All these accept two parameters: address and key. They return `Some(value)` if successful, `None` if no value exists for the given key, and make contract fail if the value stored under the key has different type.
 
-Internally, data entries are stored as instances of `DataEntry` class:
+Internally, data entries are stored as `DataEntry` class:
 ```
-class DataEntry[T](val key: String, val value: T)
-case class LongDataEntry(override val key: String, override val value: Long) extends DataEntry[Long](key, value)
-case class BooleanDataEntry(override val key: String, override val value: Boolean) extends DataEntry[Boolean](key, value)
-case class BinaryDataEntry(override val key: String, override val value: Array[Byte]) extends DataEntry[Array[Byte]](key, value)
-case class StringDataEntry(override val key: String, override val value: String) extends DataEntry[String](key, value)
+sealed abstract case class DataType(innerType: REAL)
+object DataType {
+  object Boolean   extends DataType(BOOLEAN)
+  object Long      extends DataType(LONG)
+  object ByteArray extends DataType(BYTEVECTOR)
+  object String    extends DataType(STRING)
+}
 ```
-The complete set of data defined for an account is expressed as an instance of `AccountDataInfo` class:
-```
-case class AccountDataInfo(data: Map[String, DataEntry[_]])
-```
-Two new methods need to be introduced to `SnapshotStateReader`:
-```
-def accountData(acc: Address): AccountDataInfo
-def accountData(acc: Address, key: String): Option[DataEntry[_]]
-```
+
 
 ### Fees
 
