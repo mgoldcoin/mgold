@@ -102,7 +102,7 @@
   * [Language Description](technical-details/waves-contracts-language-description/language-description.md)
   * [Language Structures](technical-details/waves-contracts-language-description/examples/language-structures.md)
   * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
-  * [Standard library](technical-details/waves-contracts-language-description/standart-library.md)
+  * [Standard library](technical-details/waves-contracts-language-description/standard-library.md)
   * [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
   * [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
   * [Functions](technical-details/waves-contracts-language-description/functions.md)
