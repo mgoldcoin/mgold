@@ -35,15 +35,6 @@ Before the transaction is submitted for inclusion in the next block, the account
 
 Smart accounts cannot send transactions themselves or transfer funds according to given conditions, but can read data from the blockchain \(for example, the height of a block or signatures from the transaction\) and return the result of a predicate obtained on the basis of this data.
 
-## Smart Assets
-
-If we plan to apply constraints on all operations for a specific asset, we cannot use a smart account. In our paradigm, we have smart assets for this purpose: the script will be attached to the asset and will work in a similar way. Transactions for such assets are valid only if the script returns True. For example, a script can verify proofs from a transaction, check if a notary/escrow approves the transaction and the fact that operations with the asset aren’t locked for a specified time. The script for the token is invoked upon the following operations with an asset:
-
-* Transfer Transaction
-* Mass Transfer Transaction
-* Reissue Transaction
-* Burn Transaction
-
 **Note.** you can find more technical details about our smart contracts implementation [**here**](/en/technical-details/waves-contracts-language-description.md).
 
 ## Scripts' Cost
