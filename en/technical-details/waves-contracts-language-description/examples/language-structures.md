@@ -79,11 +79,8 @@ As described in [Available data types](/technical-details/waves-contracts-langua
 language has the following types: `Bottom Type, Primitive Types, Complex Types`. Users shouldn't specify type,  
 the language will do it automatically, but remember basic rules:
 
-* don't mix up different types `100500 + true` or `Some(tx.timestamp) - "hash"` 
-* a full type checking is the second stage of a language engine, the parser builds untyped AST\(abstract syntax tree\) on 
-  the first stage
-* language engine will always try to find common type for expression, so \`\`\` let isTxDefined = 
-  if\(isDefined\(massTransferTx\)\) then Some\(extract\(massTransferTx\).timestamp\) else None`will be defined as`Option\[T\]\`\`\`
+* don't mix up different types `100500 + true` or `tx.timestamp - "hash"` 
+* a full type checking(ensuring type-safety in all branches of execution) is done in compilation phase 
 
 ## Collections
 
@@ -123,28 +120,6 @@ You can use getter structures for field access of transactions or something with
 (...) tx.transfers[1].amount (...)
 ```
 
-### Recursion
-
-RIDE doesn't support recursion in scripts, because each contract's run is stateless. But you can read stored data from  
-blockchain, and validate it as you need. For example you can read some  attached data by address or from a previous  
-transactions.
-
-Here is example of ID extraction of a previous transaction:
-
-```
-let massTx = getTransactionById(tx.proofs[1])
-
-let txToGovComplete = if(isDefined(massTx)) then (((tx.timestamp > (extract(massTx).timestamp) + 30000)) && 
-
-sigVerify(extract(massTx).bodyBytes,extract(massTx).proofs[0],accountPK)) else false (...)
-```
-
-or extraction from data filed name:
-
-```
-let notary1 = addressFromPublicKey(extract(getByteArray(king,"notary1PK"))) (...)
-```
-
 ### IF-THEN-ELSE
 
 IF-THEN-ELSE works in the same way as defined in many program languages. Structure of if-then-else is `"if(BLOCK) then BLOCK else BLOCK`
@@ -152,7 +127,7 @@ IF-THEN-ELSE works in the same way as defined in many program languages. Structu
 ```
 let isRecipientAgreed = if(isDefined(recipientAgreement)) then extract(recipientAgreement) else false (...)
 
-let numberOfRecipients = if(isDefined(Oracle)) then 5 else 1 (...)
+let minSignaturesRequired = if( height < 1000) 2 else 1
 ```
 
 ### Pattern matching
@@ -172,20 +147,29 @@ match tx {
 
 ## Union Types
 
-It's very important to check transaction type before accessing field:
+Union Types is a powerful concept in many programming languages, expressiong a capability of a varaible to be one of allowed types.
+Union types intersect, e.g.
+given
 
-```js
-match tx {
-	case t:TransferTransaction => t.recepient
-}
 ```
-With this change, each transaction type has its own fields, and you have to match transaction type first:
+PointA(x: Long, y: Long)
+PointB(x: Long, y: String, z: Boolean)
+```
 
-```js
-match tx {
- case t: TransferTransaction => t.recipient = ...          # works
- case d: DataTransaction =>     d.recipient = ...          # won't compile!
- case _ => false
+and variable `p` being of type `PointA | PointB` (Union type)
+
+```
+let a = p.x # a is of type Long
+let b = p.y # b is of type  Long | String
+let c = p.z # won't compile!
+```
+
+If one wants to distinguish `PointA` from `PointB`, he needs to pattern-match the variable:
+
+```
+let v = match (p) {
+ case pb: PointB => p.z # compilation works, because pb is of type PointB in this context
+ case pa: _ => throw    # compilation works, because throw is on type `Nothing`
 }
 ```
 
