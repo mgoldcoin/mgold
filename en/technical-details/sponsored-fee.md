@@ -4,7 +4,9 @@
 
 Users can set a transaction fee nominated in an asset. However, node owners need to explicitly allow transaction fees in the asset by manually editing node configuration file. Otherwise, node won't be able to mine a block with these transactions.
 
-To avoid an extra configuration step, sponsorship could be set for an asset. In this case miner will receive fee in Waves for processing of transactions if their fee is nominated in sponsored asset.
+The sponsorship could be set for an asset. In this case miner will receive fee in Waves for processing of transactions, the fee of which is nominated in sponsored asset.
+
+After this transaction is confirmed, it becomes possible to use this asset as a fee (automatically for all miners). When transaction with fee in sponsored fee asset appears any miner just puts it to forged block. Instead of just transferring fee asset to miner's balance blockchain does a bit different thing: It automatically moves fee asset to sponsor's (issuer's) account and transfers standard transaction cost in waves from sponsor's to miner's accounts. In fact two miners will receive these waves because of NG 40/60 fee distributions.
 
 Only the issuer of an asset can set up sponsorship. The sponsorship is set by giving the rate at which fee in an asset is converted to Waves.
 
