@@ -4,7 +4,9 @@
 
 Users can set a transaction fee nominated in an asset. However, node owners need to explicitly allow transaction fees in the asset by manually editing node configuration file. Otherwise, node won't be able to mine a block with these transactions.
 
-To avoid an extra configuration step, sponsorship could be set for an asset. In this case miner will receive fee in Waves for processing of transactions if their fee is nominated in sponsored asset.
+The sponsorship could be set for an asset. In this case miner will receive fee in Waves for processing of transactions, the fee of which is nominated in sponsored asset.
+
+After this transaction is confirmed, it becomes possible to use this asset as a fee (automatically for all miners). When transaction with fee in sponsored fee asset appears any miner just puts it to forged block. Instead of just transferring fee asset to miner's balance blockchain does a bit different thing: It automatically moves fee asset to sponsor's (issuer's) account and transfers standard transaction cost in waves from sponsor's to miner's accounts. In fact two miners will receive these waves because of NG 40/60 fee distributions.
 
 Only the issuer of an asset can set up sponsorship. The sponsorship is set by giving the rate at which fee in an asset is converted to Waves.
 
@@ -32,6 +34,7 @@ Binary format of a SponsorFee transaction is as follows:
 | 8 | Proofs\*\* | Bytes | 90 | 64 | 
 
 \* Zero value assume canceling sponsorship.
+
 \*\* Currently only signature is supported, signature have Length = 64
 
 JSON representation example:
@@ -42,7 +45,7 @@ JSON representation example:
   "id" : "CwHecsEjYemKR7wqRkgkZxGrb5UEfD8yvZpFF5wXm2Su",
   "sender" : "3FjTpAg1VbmxSH39YWnfFukAUhxMqmKqTEZ",
   "senderPublicKey" : "5AzfA9UfpWVYiwFwvdr77k6LWupSTGLb14b24oVdEpMM",
-  "minSponsoredAssetFee": 100000, // null assume canceling sponsorship, number - minimum amount assets require to fee.
+  "minSponsoredAssetFee": 100000, // minimum amount of assets require for fee, set equal to null to cancel sponsorship
   "fee" : 100000000,
   "timestamp" : 1520945679531,
   "proofs" : [ "4huvVwtbALH9W2RQSF5h1XG6PFYLA6nvcAEgv79nVLW7myCysWST6t4wsCqhLCSGoc5zeLxG6MEHpcnB6DPy3XWr" ],
@@ -92,11 +95,7 @@ where:
 }
 ```
 
-<<<<<<< HEAD:en/technical-details/sponsored-fee.md
 Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetid).
-=======
-Sponsorship information for the asset present in [asset description](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsdetailsassetid) and [asset balance](/development-and-api/waves-node-rest-api/asset-transactions/public-functions.md#get-assetsbalanceaddress).
->>>>>>> origin/master:technical-details/sponsored-fee.md
 
 ### Constraints
 
@@ -105,10 +104,3 @@ Only issuer may sponsor asset.
 ### Related Changes
 
 Minimal fee was moved to consensus.
-
-<<<<<<< HEAD:en/technical-details/sponsored-fee.md
-### Open Questions
-
-* Should we allow sponsorship by non issuer?
-=======
->>>>>>> origin/master:technical-details/sponsored-fee.md
