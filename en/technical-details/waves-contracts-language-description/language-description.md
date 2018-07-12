@@ -12,7 +12,7 @@ Operations and constructs available are:
 * Binary operations:`>=`, `>`, `<`, `<=`, `+`, `-`, `&&`, `||`, `*`, `%`, `/`, `==`, `!=`
 * Unary operations `-`, `!`
 * Constants declaration via `let`
-* `IF-THEN-ELSE` clause
+* `if-then-else` clause
 * Accessing fields of any of instances of predifined sctructures via `.`
 * Accessing list element by index `[]`
 * Calls to predefined functions via `()`
@@ -23,37 +23,25 @@ Operations and constructs available are:
 * `String`
 * `Boolean`
 * `ByteVector`
-* `Unit` - is analogous to method which is declared in some languages as `void`.
-* `Option[T]`- implements as Option `T | Unit`
 * `List[T]`
-* Predefined non-recursive data structure like `Transaction`, `Block`etc
-* `Nothing`- "bottom type", no instance of this type can exist
+* Predefined non-recursive data structure like `Transaction`, `Block`, etc
+* `Unit` - a type which has ony one instance, `unit`.
+* `Nothing`- "bottom type", no instance of this type can exist, but it conforms to any other type.
+* Union types, like `Int | String | Transaction`, `ByteVector | Unit`
 
 ### Structures
 
-* `Address(ByteVector)`
-* `Alias(String)`
-* `DataType.Long`
-* `DataType.Boolean`
-* `DataType.ByteArray`
-* `DataType.String`
+* `Point(x: Int, y: Int)`
+* `Alias(name: String)`
 
-Structure types can be instantiated by calling their constructor, which has the same name as the type itself, and passing the necessary parameters:
+Defining user structures is restricted in RIDE.
+One can create instance of any pre-defined structure by calling constructor.
+
 ```
 let addr = Address(base58'3My3KZgFQ3CrVHgz6vGRt8687sH4oAA1qp8')
 let alias = Alias("alicia")
+let name  = alias.name
 ```
-
-### Option\[T\]
-
-`Option[T]` can be represented as
-
-* `Some(t)` for any `t` of type `T`
-* `None`
-* `extract`:`Option[T] => T`,`isDefined`:`Option[T] => Boolean`defined over`Option[_]`
-
-It is higher-kind data type indicating a possibility of absence of value of inner type. This rather popular construct from functional programming languages\(Haskell, Scala, Clojure\) nowdays gets included in majority of standard libraries for many popular languages like Java, C\#, etc.
-
 
 ### List\[T\]
 
