@@ -14,30 +14,6 @@ sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 
 Some actions are denied for ScriptedAccounts:
  - Mining, since supporting multisignature blocks looks like  unnecessary complication
- - Trading on DEX, since that would require multisignature orders i.e. a lot of work and, most importantly, unclear usability scenario
-
-## Asset Script
-
-One can issue a new token and restrict its transfer. The script is invoked upon the following operations with an asset:
-
- - `TransferTransaction`
- - `MassTransferTransaction`
- - `ReissueTransaction`
- - `BurnTransaction`
-
-For example, In a scenario when both sender account and token are scripted, a `TransferTransaction` is processed upon the following conditions: 
-
- - tx is allowed by current `AccountScript`
- - tx is allowed by current `AssetScript`
- - Waves consensus rules are not broken(for example: No one can own negative amount of assets)
-
-The same set of rules applies to `BurnTransaction` and `ReissueTransaction`. Keep in mind that for `ReissueTransaction` there's an additional invariant: asset can be reissued only if `reissuable` flag is set to `true`.
-
-The following actions are denied with ScriptedAssets:
-
- - Trading on DEX
- - Using as fees
-
-The goal of these restrictions is to keep the system simple yet preserve the new invariant that no one must have a way transfer a token unless it's allowed by the script. 
+ - Trading on DEX, since that would require multisignature orders i.e. a lot of work and, most importantly, unclear usability scenario. This restriction can be considered as temporary one.
 
 For language description, capabilities and available in-script API, please refer to [Smart Contracts Language Description page](language-description.md).
