@@ -77,6 +77,18 @@ Standart string type
 * `takeRight`: `String`, `Long` => `String`
 * `dropRight`: `String`, `Long` => `String`
 
+	
+## Pattern Matching
+
+There is a mechanism for checking a value against a pattern and you can handle the different expected types in a match expression. A match expression has a value, the match keyword, and at least one case clause:
+```
+match tx {
+	case t:Transfer => t.recepient
+	case t:MassTransfer => t.transfers
+}
+```
+
+
 # Examples
 
 Here's a complete multisig 2 of 3 example. Keep in mind all`let`s could actually be inlined, they exist only for the sake of readability.
