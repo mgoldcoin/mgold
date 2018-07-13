@@ -16,7 +16,8 @@ The syntax doesn't require line breaks \(`\n`\) or `;`. The full description goe
 number = [+-]?['0'-'9']+
 string = """, [1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-]*, """
 byteVector = "base58'", [123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]* , "'"
-binaryOp = expr , ("||" | "&&" | "==" | ">=" | ">" | "+") , expr 
+binaryOp = expr , ("||" | "&&" | "==" | "!=" | ">=" | ">" | "<" | "<=" | "+" | "-" | "*" | "%" | "/") , expr 
+unaryOp =  ("-" | "!") , expr 
 expression = binaryOp | atom
 varName = {latin-numeric string strating with char, excluding keywords}
 let = "let " , varName , "=" , block
