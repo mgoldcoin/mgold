@@ -16,7 +16,7 @@ It is only possible to create deb and fat jar packages.
 
 For Ubuntu/Debian:
 
-```js
+```bash
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 2EE0EA64E40A89B84B2DF73499E82A75642AC823
 sudo apt-get update
@@ -29,13 +29,13 @@ You can install sbt on Mac OS X using Homebrew.
 
 Clone this repo and execute
 
-```js
+```bash
 sbt packageAll
 ```
 
 .deb and .jar (the correct JAR-file has name `waves-all-*.jar`) packages will be in /package folder. To build testnet packages use
 
-```js
+```bash
 sbt -Dnetwork=testnet packageAll
 ```
 
@@ -47,13 +47,13 @@ sbt -Dnetwork=testnet packageAll
 
 If you prefer to work with\_SBT\_in the interactive mode, open it with settings:
 
-```js
+```bash
 SBT_OPTS="${SBT_OPTS} -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled" sbt
 ```
 
 For Java9 it should be:
 
-```js
+```bash
 SBT_OPTS="${SBT_OPTS} -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled --add-modules=java.xml.bind --add-exports java.base/jdk.internal.ref=ALL-UNNAMED" sbt
 ```
 
@@ -85,7 +85,7 @@ By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resourc
 
 Integration tests run in a forked JVM. To debug test suite code launched by SBT, you will need to add remote debug options to`javaOptions`in`IntegrationTest`configuration:
 
-```js
+```sbtshell
 javaOptions in IntegrationTest += "-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5005"
 ```
 
@@ -95,7 +95,7 @@ Debugging a node inside a container is a little more complicated: you will need 
 
 You can run integration test suites from your preferred IDE. The only requirement is to have Docker image pre-built and have`docker.imageId`system property defined for the run configuration. The easiest way to build an image is to issue`sbt docker`command. You'll find the image ID in the SBT output:
 
-```js
+```
 ...
 [info] Step 5/5 : ENTRYPOINT /opt/waves/start-waves.sh
 [info]  ---> Using cache
@@ -107,26 +107,78 @@ You can run integration test suites from your preferred IDE. The only requiremen
 
 In this example,`e243fa08d496`is the image ID you need. Make sure to re-build the image whenever the node code \(not the tests\) is changed. If you run the tests from SBT, there's no need to manually rebuild the image, SBT will handle this automatically.
 
-# Collecting performance metrics
+# Sending metrics
 
-**Note**: all required tools will be installed though [Docker](https://docs.docker.com/) for simplicity.
+We have two types of metrics:
+1. Precise - used, for example, to analyze a block propagation
+2. Aggregated - used for performance analyzing.
 
-* Install [Graphite](https://graphite.readthedocs.io/en/latest/install.html#docker), a service for collecting metrics.
+By default all metrics are disabled.
 
-* Install [Grafana](https://grafana.com/grafana/download?platform=docker) for beautiful graphs.
+To enable metrics, update a configuration:
+* For precise metrics - `metrics` section;
+* For aggregated - `kamon`.
 
-By default all metrics are disabled. So specify\_Kamon\_settings through\_Java Properties\_and run the node with a desired config. For example, we ran\_Graphite\_locally and it accepts\_StatsD\_information on the`9999`port:
+Some of aggregated metrics (RAM, CPU, all metrics for DEX) require an instrumentation with [AspectJ Weaver](https://www.eclipse.org/aspectj/).
 
-```js
-SBT_OPTS="${SBT_OPTS} -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled \
--Dkamon.modules.kamon-statsd.auto-start=yes \
--Dkamon.modules.kamon-system-metrics.auto-start=yes \
--Dkamon.statsd.hostname=localhost \
--Dkamon.statsd.port=9999" sbt waves-testnet.conf
+[Download](https://mvnrepository.com/artifact/org.aspectj/aspectjweaver) the latest version and run Java with this agent, 
+if you want to collect these metrics.  For example:
+```bash
+java -javaagent:/usr/share/aspectj/aspectjweaver-1.9.1.jar waves-all.jar custom-net.conf
 ```
 
-Here:
+Example of a custom configuration with both metrics enabled:
+```hocon
+kamon {
+  enable = yes
+  environment.host = "my-host"
 
-* `-Dkamon.modules.kamon-statsd.auto-start=yes` enables custom metrics;
-* `-Dkamon.modules.kamon-system-metrics.autostart=yes` enables metrics of CPU, Memory and others;
-* See [application.conf](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/application.conf) for more options.
+  # Analzing DEX
+  util.filters {
+    "akka.tracked-actor" {
+      includes = [
+        "wavesplatform/user/matcher",
+        "wavesplatform/user/matcher/*",
+        "wavesplatform/user/matcher/balance-watcher-router/*",
+        "wavesplatform/user/OrderHistory",
+        "wavesplatform/user/MatcherTransactionWriter"
+      ]
+    }
+
+    "akka.tracked-dispatcher" {
+      includes = [
+        "wavesplatform/**"
+      ]
+    }
+
+    "akka.tracked-router" {
+      includes = [
+        "wavesplatform/user/matcher/balance-watcher-router",
+      ]
+    }
+  }
+
+  influxdb {
+    hostname = "influx.example.com"
+    port = 8086
+    database = "custom-net"
+
+    authentication {
+      user = "login"
+      password = "secure_password"
+    }
+  }
+}
+
+metrics {
+  enable = yes
+  
+  # Reusing entered data from the kamon section
+  node-id = ${kamon.environment.host}
+
+  influx-db {
+    username = ${kamon.influxdb.authentication.user}
+    password = ${kamon.influxdb.authentication.password}
+  }
+}
+```
