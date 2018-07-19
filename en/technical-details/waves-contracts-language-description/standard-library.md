@@ -21,7 +21,6 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 | description |	+ |		| |
 | reissuable |	+ |	+	| |
 | decimals |	+		| | |
-| script	| + |		|||
 | assetId	|	 | + | + |
 
 * `.quantity` - return a quantity of asset which are involved in transaction as a Long number
@@ -29,7 +28,6 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * `.description` - return a descriptions of asset as ByteVector
 * `.reissuable` - return "true" is the asset are reissuable and "false" otherwise (Boolean)
 * `.decimals` - return a number of simbols after comma as a Long
-* `.script` - return a script if it is a smart asset and None otherwise (Option[ByteVector])
 * `.assetId` - return id of an existed asset as ByteVector
 
 ## Transferring
