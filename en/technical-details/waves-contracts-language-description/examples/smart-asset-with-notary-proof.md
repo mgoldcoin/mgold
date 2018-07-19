@@ -1,4 +1,5 @@
 # Smart Asset With Notary Proof Example
+![master](https://img.shields.io/badge/node-1.1-4bc51d.svg)
 
 Suppose that we want to transfer some assets only when we receive proof of possession from the notary, who we can trust.
 
