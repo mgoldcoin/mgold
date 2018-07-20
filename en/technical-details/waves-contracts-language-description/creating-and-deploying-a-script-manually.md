@@ -1,4 +1,4 @@
-## Creating and deploying a script manually
+# 1. Creating and deploying a script manually
 
 The idea of a **Smart Account** is the following:
 
@@ -6,17 +6,19 @@ Before the transaction is submitted for inclusion in the next block, the account
 
 In this example, we're going to create and deploy a simple 2 of 2 MultiSig example without using neither `Waves Client libraries` nor `API libraries`.
 
-**Example Assumptions:**  
-1. We assume that we have our own Waves node \(if you do not have Waves node, you can implement the example using one of [Waves Libraries](/development-and-api/client-libraries.md) as shown in this [video tutorial](https://youtu.be/oRmnERIBKzY) using Waves Java Library\).  
-2. We want to set up a script for a [generated](/development-and-api/waves-node-rest-api/address.md#post-addresses) account in order to implement the **smart account **idea.
+**Example Assumptions:**
 
+1. We assume that we have our own Waves node \(if you do not have Waves node, you can implement the example using one of [Waves Libraries](/development-and-api/client-libraries.md) as shown in this [video tutorial](https://youtu.be/oRmnERIBKzY) using Waves Java Library\).
+2. We want to set up a script for a [generated](/development-and-api/waves-node-rest-api/address.md#post-addresses) account in order to implement the **smart account **idea.
 3. we assume that we have three generated addresses:
 
-* `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE` - Alice's account;
-* `3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf` - Bob's account;
-* `3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X` - Shared account.
+`3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE` - Alice's account.
 
-### How to Create a script
+`3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf` - Bob's account.
+
+`3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X` - Shared account.
+
+# 1.1 How to Create a script
 
 The idea here is to create a script and attach it to the account so this account can :
 
@@ -27,7 +29,7 @@ The idea here is to create a script and attach it to the account so this account
 **Now let's Start our 2 of 2 MultiSig Example:**
 
 1. Use our [IDE](https://ide.wavesplatform.com) to write your script \(you can find some script examples there\)
-2. For this example we will use the following script: In the first two lines, we defined 2 public keys encoded in base58 for both alice and bob. After that, users gather 2 public keys  in proofs\[0\] and proofs\[1\]. The account is funded by the team members and after that, when 2 of 3 team members decide to spend money, they provide their signatures in a single transaction. The Smart account script, using sigVerify function, validates these signatures with proofs and if 2 of 2 are valid then the transaction is valid too, else the transaction does not pass to the blockchain.
+2. For this example we will use the following script: In the first two lines, we defined 2 public keys encoded in base58 for both alice and bob. After that, users gather 2 public keys  in proofs\[0\] and proofs\[1\]. The account is funded by the team members and after that, when 2 of 3 team members decide to spend money, they provide their signatures in a single transaction. The Smart account script, using sigVerify function, validates these signatures with proofs and if 2 of 2 are valid then the transaction is valid too, else the transaction does not pass to the blockchain.
 
 ```
 let alicePubKey  = base58'Ey6Z9XkWsvG8JZwyxhkTjydRcGp1wg6rbC3AYcxq7Efr'
@@ -36,12 +38,11 @@ let bobPubKey    = base58'5PvhyouzHn2Pcev56oBvwpnsGK5fEu1dA8fM2nJQM4HR'
 let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proofs[0], alicePubKey)) then 1 else 0
 let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proofs[1], bobPubKey  )) then 1 else 0
 aliceSigned + bobSigned == 2
-
 ```
 
-3. Switch to the `BINARY` tab.
+1. Switch to the `BINARY` tab.
 
-4. Click on `COPY TO CLIPBOARD` button. A compiled Base58-encoded script should be copied into your clipboard as shown below \(this step will be required later\).
+2. Click on `COPY TO CLIPBOARD` button. A compiled Base58-encoded script should be copied into your clipboard as shown below \(this step will be required later\).
 
 ```
 5Xt9H8mHtikSytHF72xAU3NJwDydxXYMMhmWiNVLbYdBRQ3FHXksc8kW8tKFm3fGto1EwTt4YSybEUrpT2yB71hCvUS3WxWfsC4PxU7
@@ -53,7 +54,7 @@ WBMHK214mYRoxdAH3zvKyWQcqndnWETd59mCEGkRjB9UUL6vmCF1ZQCSytdJKgyRhRQ7pzxxa5iL92hG
 SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
 ```
 
-### Attaching a script to account
+# 1.2 Attaching a script to account
 
 1. Now let's prepare a JSON request to sign a SetScriptTransaction for shared account with the given script:
 
@@ -125,7 +126,7 @@ SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
 
 Fine! Now we able to make transfers from this account.
 
-### Trying to transfer waves with bad request
+## 2. Example of transferring Waves with a bad request
 
 **From shared account to another account: **`3MqCPnaoTvE81Es4FSR1m7S6yMUnnJPu9bj`
 
@@ -164,7 +165,7 @@ And we got:
 
 > State check failed. Reason: TransactionNotAllowedByScript
 
-### Scenario with a successful transfer
+## 2.1 Example of transferring Waves with a successful request
 
 Now, let's try to make a valid transactions with all required proofs. For example, we want to sign this transfer request:
 
