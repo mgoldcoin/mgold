@@ -1,41 +1,47 @@
 ## Creating and deploying a script manually
 
-Without `Waves Client` or any API libraries. We will try to make manually a simple multisig 2 of 2 here.
+The idea of a **Smart Account** is the following:
 
-Assumptions:  
-1. We have own node. For example, it has the `example.org` domain  
-2. We set up a script for a [generated](/development-and-api/waves-node-rest-api/address.md#post-addresses) account
+Before the transaction is submitted for inclusion in the next block, the account checks if the transaction meets certain requirements, defined in a **script**. The **script** is attached to the account so the account can validate every transaction before confirming it.
 
-For example, we generated these addresses:
+In this example, we're going to create and deploy a simple 2 of 2 MultiSig example without using neither `Waves Client libraries` nor `API libraries`.
+
+**Example Assumptions:**  
+1. We assume that we have our own Waves node \(if you do not have Waves node, you can implement the example using one of [Waves Libraries](/development-and-api/client-libraries.md) as shown in this [video tutorial](https://youtu.be/oRmnERIBKzY) using Waves Java Library\).  
+2. We want to set up a script for a [generated](/development-and-api/waves-node-rest-api/address.md#post-addresses) account in order to implement the **smart account **idea.
+
+3. we assume that we have three generated addresses:
 
 * `3MxjWXEUcVCeiaEUqNcorB5HxSpLsgJCGxE` - Alice's account;
 * `3MqGVvfgqdqqU6P9mTAsLSxyRoRjrHF18Mf` - Bob's account;
-* `3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X` - Shared account with waves we want to spend.
+* `3N7H4jTBMKtZfNCY86K2ND1rWcvFsGjDT3X` - Shared account.
 
-If Alice and Bob are the one person, it may be treated as 2FA \(some kind\).
+### How to Create a script
 
-### Creating a script
+The idea here is to create a script and attach it to the account so this account can :
 
-You can create a script at our [IDE site](http://ide.wavesplatform.com/).
+1. check if the transaction meets certain requirements which is defined in the script.
+2. Validate the transaction.
+3. Confirm the transaction and broadcast it to the blockchain network.
 
-1. Start with examples: try to click on menu and choose `Multisig (2 of 3)`
-2. Edit a way you want. For this example we will use the following script:
+**Now let's Start our 2 of 2 MultiSig Example:**
 
-   ```
-   let alicePubKey  = base58'Ey6Z9XkWsvG8JZwyxhkTjydRcGp1wg6rbC3AYcxq7Efr'
-   let bobPubKey    = base58'5PvhyouzHn2Pcev56oBvwpnsGK5fEu1dA8fM2nJQM4HR'
+1. Use our [IDE](https://ide.wavesplatform.com) to write your script \(you can find some script examples there\)
+2. For this example we will use the following script: In the first two lines, we defined 2 public keys encoded in base58 for both alice and bob. After that, users gather 2 public keys  in proofs\[0\] and proofs\[1\]. The account is funded by the team members and after that, when 2 of 3 team members decide to spend money, they provide their signatures in a single transaction. The Smart account script, using sigVerify function, validates these signatures with proofs and if 2 of 2 are valid then the transaction is valid too, else the transaction does not pass to the blockchain.
 
-   let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proofs[0], alicePubKey)) then 1 else 0
-   let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proofs[1], bobPubKey  )) then 1 else 0
+```
+let alicePubKey  = base58'Ey6Z9XkWsvG8JZwyxhkTjydRcGp1wg6rbC3AYcxq7Efr'
+let bobPubKey    = base58'5PvhyouzHn2Pcev56oBvwpnsGK5fEu1dA8fM2nJQM4HR'
 
-   aliceSigned + bobSigned >= 2
-   ```
+let aliceSigned  = if(sigVerify(tx.bodyBytes, tx.proofs[0], alicePubKey)) then 1 else 0
+let bobSigned    = if(sigVerify(tx.bodyBytes, tx.proofs[1], bobPubKey  )) then 1 else 0
+aliceSigned + bobSigned == 2
 
-3. Switch to the `BINARY` tab
+```
 
-4. Click on `COPY TO CLIPBOARD` button. A compiled and Base58-encoded script should be copied into your clipboard. It will be required later.
+3. Switch to the `BINARY` tab.
 
-For example, compiled and Base58-encoded script is \(separated by lines\):
+4. Click on `COPY TO CLIPBOARD` button. A compiled Base58-encoded script should be copied into your clipboard as shown below \(this step will be required later\).
 
 ```
 5Xt9H8mHtikSytHF72xAU3NJwDydxXYMMhmWiNVLbYdBRQ3FHXksc8kW8tKFm3fGto1EwTt4YSybEUrpT2yB71hCvUS3WxWfsC4PxU7
@@ -47,11 +53,9 @@ WBMHK214mYRoxdAH3zvKyWQcqndnWETd59mCEGkRjB9UUL6vmCF1ZQCSytdJKgyRhRQ7pzxxa5iL92hG
 SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
 ```
 
-In futher instruction we define this script with `<script>` to make examples as short as possible.
-
 ### Attaching a script to account
 
-1. Now we prepare a JSON request to sign a SetScriptTransaction for shared account with the given script:
+1. Now let's prepare a JSON request to sign a SetScriptTransaction for shared account with the given script:
 
    ```json
    {
@@ -63,9 +67,9 @@ In futher instruction we define this script with `<script>` to make examples as 
    }
    ```
 
-   Note, `fee` is `100000` - a minimal required fee to deploy your script
+   Note, `fee` is `100000` - a minimal required fee to deploy your script.
 
-2. And send it to [/transactions/sign](/development-and-api/waves-node-rest-api/transactions.md#post-transactionssign):
+2. Send it to [/transactions/sign](/development-and-api/waves-node-rest-api/transactions.md#post-transactionssign):
 
    ```bash
    $ curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' \
@@ -116,7 +120,8 @@ In futher instruction we define this script with `<script>` to make examples as 
     "extraFee" : 400000
    }
    ```
-   where `<scriptText>` is a String representation of compiled `<script>` (expression tree)
+
+   where `<scriptText>` is a String representation of compiled `<script>` \(expression tree\)
 
 Fine! Now we able to make transfers from this account.
 
@@ -306,4 +311,6 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
       "attachment": ""
     }
    ```
+
+
 
