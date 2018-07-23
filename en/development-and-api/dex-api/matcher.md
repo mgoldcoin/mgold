@@ -18,7 +18,7 @@ A user initiates his willingness to buy or sell assets by creating, signing and 
 | matcher | PublicKeyAccount | Public key of matcher to whom user authorize to match his order |
 | spendAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to spend after exchange. Empty spendAssetId means **WAVES** |
 | receiveAssetId | Option\[Array\[Byte\]\] | Asset Id that creator wants to receive after exchange. Empty receiveAssetId means **WAVES** |
-| price | Long | Price for `Asset2` in `Asset1` \* 10^8 |
+| price | Long | 10^\(8+marketDecimals-assetDecimals\) |
 | amount | Long | Amount in `Asset1` |
 | expiration | Long | Max time of open order to live before execution. Currently, max is 1 month |
 | matcherFee | Long | Fee which goes to Matcher for order matching \(execution\) |
