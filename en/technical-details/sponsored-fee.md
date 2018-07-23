@@ -60,7 +60,7 @@ JSON representation example:
 A fee for a sponsor is payable in WAVES only. The fee for this transaction is fixed and equal to 1.0 WAVES.
 
 #### Fee for miner in WAVES
-The total miner's fee in WAVES for transactions with a fee in sponsored (after sponsorship activation) can be compute by this formula:
+The total **miner's fee in WAVES for transactions** with a fee in sponsored (after sponsorship activation) can be compute by this formula:
 ```
     feeInWaves = assetFee * feeUnit / sponsorship
 ```
@@ -68,6 +68,8 @@ where:
 * `assetFee` - a fee in asset from transaction
 * `feeUnit` - for sponsorship is equal to 100000
 * `sponsorship` - the `minSponsoredAssetFee` value from Sponsored Fee Transaction for this asset 
+
+But the total **block fee** for the block with sponsored transactions can be computed as the sum of transactions **only with the fee in WAVES**. For example, if we have the block with only sponsored transactions, a fee for this block will be equal to 0.
 
 ### API
 
