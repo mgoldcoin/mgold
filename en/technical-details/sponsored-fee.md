@@ -69,7 +69,7 @@ where:
 * `feeUnit` - for sponsorship is equal to 100000
 * `sponsorship` - the `minSponsoredAssetFee` value from Sponsored Fee Transaction for this asset 
 
-But the total **block fee** for the block with sponsored transactions can be computed as the sum of transactions **only with the fee in WAVES**. For example, if we have the block with only sponsored transactions, a fee for this block will be equal to 0.
+But the total **block fee** for the block with sponsored transactions can be computed as the sum of transactions which have **only the fee in WAVES**. For example, if we have the block with only sponsored transactions, a fee for this block will be equal to 0.
 
 ### API
 
