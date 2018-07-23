@@ -32,3 +32,4 @@ Listed below are examples of real transactions of each type found in testnet and
 | 9 | Lease Cancel | [69tnFn6zueF1aYV1igp7jppeHR5gzCeixitwRmbujqzR](https://nodes.wavesnodes.com/transactions/info/69tnFn6zueF1aYV1igp7jppeHR5gzCeixitwRmbujqzR) | [1037877](https://nodes.wavesnodes.com/blocks/at/1037877) |
 | 10 | Alias | [4hfjTUkBeB6tNN8GgXY5C2s5bARCsYQ8AFdZyXnMwZyQ](https://nodes.wavesnodes.com/transactions/info/4hfjTUkBeB6tNN8GgXY5C2s5bARCsYQ8AFdZyXnMwZyQ) | [1038799](https://nodes.wavesnodes.com/blocks/at/1038799) |
 | 11 | Mass Transfer | [3LRfudet7avpQcW1AdauiBGb8SSRAaoCugDzngDPLVcv](https://nodes.wavesnodes.com/transactions/info/3LRfudet7avpQcW1AdauiBGb8SSRAaoCugDzngDPLVcv) | [1041197](https://nodes.wavesnodes.com/blocks/at/1041197) |
+| 12 | Data | [EByjQAWDRGrmc8uy7xRGy2zsQXZQq59bav7h8oTTJyHC](https://nodes.wavesnodes.com/transactions/info/EByjQAWDRGrmc8uy7xRGy2zsQXZQq59bav7h8oTTJyHC) | [1091300](https://nodes.wavesnodes.com/blocks/at/1091300) |
