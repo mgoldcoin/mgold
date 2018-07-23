@@ -1,25 +1,27 @@
 # Waves Auth API
 
-If you want to authorize a user in your service by means of his Waves account, here's the solution. In general, you should redirect the user to the official Waves Client (https://beta.wavesplatform.com/ — to be changed later) with certain query parameters including some arbitrary data for him to sign.
+If you want to authorize a user in your service by means of his Waves account, here's the solution. In general, you should redirect the user to the official Waves Client \([https://beta.wavesplatform.com/](https://beta.wavesplatform.com/) — to be changed later\) with certain query parameters including some arbitrary data for him to sign.
 
 That might be needed in cases when you need to work with user personal data and to be sure that a given blockchain account belongs to that user.
 
 ## Process
 
-0.  You add the Waves Auth widget to your site.
-1.  A user stumbles upon your site, and wants to log in using his Waves account.
-2.  He clicks the widget button and gets redirected to the official Waves Client, along with some random data from the widget.
-3.  There, the user chooses whether to log in or to cancel that chain of actions.
-4.  If he proceeds, the data will be signed with the user's private key.
-5.  The user then gets redirected back to your site, along with the signature and user's public key.
-6.  You check the validity of the signature against the data provided for that user.
-7.  If all is correct, the user is now authenticated in your service.
+1. You add the Waves Auth widget to your site.
+2. A user stumbles upon your site, and wants to log in using his Waves account.
+3. He clicks the widget button and gets redirected to the official Waves Client, along with some random data from the widget.
+4. There, the user chooses whether to log in or to cancel that chain of actions.
+5. If he proceeds, the data will be signed with the user's private key.
+6. The user then gets redirected back to your site, along with the signature and user's public key.
+7. You check the validity of the signature against the data provided for that user.
+8. If all is correct, the user is now authenticated in your service.
 
 If the user interrupts the process, he stays on the Waves Client page.
 
 ## Details
 
 Due to the length limitations of the query string all parameters are expressed with one character.
+
+[**Here**](https://demo.wavesplatform.com) you can find the demo project which shows how to use Web auth API.
 
 ### Request
 
@@ -37,19 +39,19 @@ Basic path is `https://beta.wavesplatform.com#gateway/auth`. Then the query para
 
 #### Data
 
-`?d=randomChars` — the data which is signed by the user's private key (Required).
+`?d=randomChars` — the data which is signed by the user's private key \(Required\).
 
 #### Icon path
 
-`?i=/path/to/the/icon.png` — a path relative to the Referrer parameter. It hosts the logo of your app. (Optional).
+`?i=/path/to/the/icon.png` — a path relative to the Referrer parameter. It hosts the logo of your app. \(Optional\).
 
 #### Success path
 
-`?s=/path/to/an/API/method` — a path to the method which redirect the user while the signing is successful. By default the user is redirected to the referrer root (Optional).
+`?s=/path/to/an/API/method` — a path to the method which redirect the user while the signing is successful. By default the user is redirected to the referrer root \(Optional\).
 
 #### Debug mode
 
-`?debug=true` — a flag to display error messages (Optional).
+`?debug=true` — a flag to display error messages \(Optional\).
 
 ### Response
 
@@ -76,3 +78,4 @@ Example: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6
 You can use the `Waves.crypto.isValidTransactionSignature()` method from [@waves/waves-api](https://www.npmjs.com/package/@waves/waves-api) npm package.
 
 Signature is taken from the data in the following order: a `WavesWalletAuthentication` string, then a string with your host parameter value, then a string with your data parameter value.
+

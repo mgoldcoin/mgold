@@ -4,16 +4,18 @@ If you want to make someone pay with WAVES or any other Waves tokens, you can us
 
 ## Process
 
-0. You need to set up a button on your site which triggers a creation of an URL and a redirect to it.
-1. A user decides to buy something and the user presses that button.
-2. After that, The user is redirected to the Waves Client with a payment parameters window.
-3. The user modifies those parameters if possible and submits the form.
-4. If everything's okay, The user is redirected back to referer.
-5. Referer is provided with transaction ID which can be checked if it's in the blockchain.
+1. You need to set up a button on your site which triggers a creation of an URL and a redirect to it.
+2. A user decides to buy something and the user presses that button.
+3. After that, The user is redirected to the Waves Client with a payment parameters window.
+4. The user modifies those parameters if possible and submits the form.
+5. If everything's okay, The user is redirected back to referer.
+6. Referer is provided with transaction ID which can be checked if it's in the blockchain.
 
 If the user interrupts the process, he stays on the Waves Client page.
 
 ## Details
+
+[**Here**](https://demo.wavesplatform.com/payment-api) you can find the demo project which shows how to use Payment API for donations.The Payment API allows creating a special link for avoiding users' seed input on 3-party sites.
 
 ### Request
 
@@ -27,7 +29,7 @@ Basic path is `https://beta.wavesplatform.com/#send/{assetId}`. Then there are t
 
 #### Recipient
 
-`?recipient=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj` — the address (or an alias) to send tokens to. Required.
+`?recipient=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj` — the address \(or an alias\) to send tokens to. Required.
 
 #### Amount
 
@@ -50,3 +52,4 @@ The ID of user's payment transaction will be in the query.
 #### Transaction ID
 
 `?txId=D1USZfZPzVd2XNH9xj52Z81XhxChpwUKDJpQHz2haXRT` — the ID of user's successful transaction.
+
