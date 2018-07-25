@@ -2,13 +2,13 @@
 
 Waves client позволяет хранить и переводить Monero внутри сети Waves. Это возможно благодаря шлюзу: Monero поступают на Monero адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Monero в сети Waves (wMonero). При выводе wMonero из сети Waves пользователь получает Monero из расчета 1:1.
 
-Всю исчерпывающую информацию о работе Monero шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Monero шлюза вы найдёте в этой статье [Что такое платежный шлюз](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **Как получить Monero**.
 
 Откройте свой Waves кошелек и в секции Monero нажмите **Получить**.
 
-![](/ru/_assets/monero_transfers_01.png)
+![](/_assets/monero_transfers_01.png)
 
 В появившемся окне вы увидите Monero адрес.
 Используйте его в качестве адреса получателя, чтобы ввести Monero в свой Waves аккаунт
@@ -18,7 +18,7 @@ Waves client позволяет хранить и переводить Monero в
 **Внимание**: Monero Payment ID уже включен в адрес получателя Monero.
 Но если стороне отправителя требуется Payment ID (идентификатор платежа), обратитесь в службу поддержки Coinomat - **support@coinomat.com**
 
-![](/ru/_assets/monero_transfers_02.png)
+![](/_assets/monero_transfers_02.png)
 
 **Внимание**: процесс ввода Monero в ваш Waves аккаунт может занять до 120 минут.
 
@@ -26,7 +26,7 @@ Waves client позволяет хранить и переводить Monero в
 
 Откройте ваш Waves кошелек и в Monero секции нажмите **Отправить**.
 
-![](/ru/_assets/monero_transfers_01.png)
+![](/_assets/monero_transfers_01.png)
 
 В появившемся окне введите:
 
@@ -39,13 +39,13 @@ Waves client позволяет хранить и переводить Monero в
 
 После заполнения всех строк и прочтения условий нажмите **Продолжить**.
 
-![](/ru/_assets/monero_transfers_04.png)
+![](/_assets/monero_transfers_04.png)
 
 Ещё раз проверьте данные транзакции в появившемся окне.
 
 Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-![](/ru/_assets/monero_transfers_05.png)
+![](/_assets/monero_transfers_05.png)
 
 **Внимание**: процесс ввода Monero в ваш Waves аккаунт может занять до 120 минут.
 
@@ -53,7 +53,7 @@ Waves client позволяет хранить и переводить Monero в
 
 Откройте ваш Waves кошелек и в Monero секции нажмите **Отправить**.
 
-![](/ru/_assets/monero_transfers_01.png)
+![](/_assets/monero_transfers_01.png)
 
 В появившемся окне введите:
 
@@ -64,10 +64,10 @@ Waves client позволяет хранить и переводить Monero в
 
 После заполнения всех строк нажмите **Продолжить**.
 
-![](/ru/_assets/monero_transfers_07.png)
+![](/_assets/monero_transfers_07.png)
 
 Ещё раз проверьте данные транзакции в появившемся окне.
 
 Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-![](/ru/_assets/monero_transfers_08.png)
+![](/_assets/monero_transfers_08.png)
