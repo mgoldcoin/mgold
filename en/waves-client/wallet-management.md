@@ -2,20 +2,20 @@
 
 Transfers and gateways chapter includes all details about send and deposit operations for each cryptocurrency which is supporting within the Waves Platform. All transactions with external coins are processing with the [payment gateways](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
-* [Waves transfers](waves-client/transfers-and-gateways/waves-transfers.md)
-* [Asset transfers](waves-client/transfers-and-gateways/asset-transfers.md)
-* [Bitcoin transfers](waves-client/transfers-and-gateways/bitcoin-transfers.md)
-* [Ethereum transfers](waves-client/transfers-and-gateways/ethereum-transfers.md)
-* [Litecoin transfers](waves-client/transfers-and-gateways/litecoin-transfers.md)
-* [Zcash transfers](waves-client/transfers-and-gateways/zcash-transfers.md)
-* [Bitcoin Cash transfers](waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
-* [Dash transfers](waves-client/transfers-and-gateways/dash-transfers.md)
-* [Monero transfers](waves-client/transfers-and-gateways/monero-transfers.md)
-* [EURO and USD transfers](waves-client/transfers-and-gateways/eur-usd-transfers.md)
+* [Waves transfers](transfers-and-gateways/waves-transfers.md)
+* [Asset transfers](transfers-and-gateways/asset-transfers.md)
+* [Bitcoin transfers](transfers-and-gateways/bitcoin-transfers.md)
+* [Ethereum transfers](transfers-and-gateways/ethereum-transfers.md)
+* [Litecoin transfers](transfers-and-gateways/litecoin-transfers.md)
+* [Zcash transfers](transfers-and-gateways/zcash-transfers.md)
+* [Bitcoin Cash transfers](transfers-and-gateways/bitcoin-cash-transfers.md)
+* [Dash transfers](transfers-and-gateways/dash-transfers.md)
+* [Monero transfers](transfers-and-gateways/monero-transfers.md)
+* [EURO and USD transfers](transfers-and-gateways/eur-usd-transfers.md)
 
 The Waves wallet also supports small purchases of Waves in Euro and US Dollar (minimum 30 EUR/USD, maximum 200 EUR/USD) using plastic card.
 
-1. [Buying Waves using credit or debit card](waves-client/transfers-and-gateways/buying-waves-using-card.md)
+1. [Buying Waves using credit or debit card](transfers-and-gateways/buying-waves-using-card.md)
 
 As first, it is needed to feed your wallet with some crypto. If you don’t have Bitcoin \(Ether, LiteCoin or Z-Cash\), purchase them via your trusted exchange and send them to the wallet.
 
