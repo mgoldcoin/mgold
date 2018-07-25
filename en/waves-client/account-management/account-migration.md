@@ -24,7 +24,7 @@ And that's it! You will forwarding to the Login page, where you can select the n
 
 ![](/_assets/account_migration_03.png)
 
-# **How to migrate accounts using Safari browser**
+**How to migrate accounts using Safari browser**
 
 The migration process for Safari browser is slightly different, but it's straightforward.
 

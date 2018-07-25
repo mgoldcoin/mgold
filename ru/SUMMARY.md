@@ -24,6 +24,7 @@
   * [Управление аккаунтом](waves-client/account-management.md)
     * [Создание аккаунта](waves-client/account-management/creating-an-account.md)
     * [Восстановление аккаунта](waves-client/account-management/restore-an-account.md)
+    * [Перенос аккаунта](waves-client/account-management/account-migration.md)
     * [Вход в аккаунт](waves-client/account-management/signing-in-to-your-account.md)
     * [Ваш Waves адрес](waves-client/account-management/waves-address.md)
     * [Создание персонального алиаса](waves-client/account-management/creating-an-alias.md)
@@ -51,6 +52,7 @@
 ## Часто задаваемые вопросы
 
   * [Управление аккаунтом](frequently-asked-questions-faq/account-management-faq.md)
+    * [Ночной режим](frequently-asked-questions-faq/account-management/dark-mode.md)
   * [Переводы и шлюзы](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
     * [Что такое платежный шлюз](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
     * [Обработка Ethereum платежей и смарт-контракты](frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
