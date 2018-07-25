@@ -8,10 +8,10 @@
 
 Более подробнее о том как использовать Asset ID:
 
-![](/ru/_assets/asset_id_01.png)
+![](/_assets/asset_id_01.png)
 
-![](/ru/_assets/asset_id_02.png)
+![](/_assets/asset_id_02.png)
 
 Используйте полученный код для поиска соответствующего ассета.
 
-![](/ru/_assets/asset_id_03.png)
+![](/_assets/asset_id_03.png)
