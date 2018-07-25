@@ -8,7 +8,7 @@ For owners of desktop applications, there is no need to perform any actions with
 
 At the same time, you can always restore your account using a backup copy of the phrase. More detailed instruction available here - [How to restore access to my account](waves-client/account-management/restore-an-account.md)
 
-# **So, let's just start the migration process (Google Chrome/Firefox and other)**
+**So, let's just start the migration process (Google Chrome/Firefox and other)**
 
 Open the link https://client.wavesplatform.com/restore and you will be forwarded to the restoring page.
 
