@@ -8,18 +8,18 @@ The creation of an Alias is very straightforward;
 
 **Шаг 1**: Войдите в свой Кошелек.
 
-![](/ru/_assets/creating_an_alias_01.png)
+![](/_assets/creating_an_alias_01.png)
 
-**Шаг 2**: нажмите на иконку пользователя ![](/ru/_assets/creating_an_alias_02.png) в левом верхнем углу.  
+**Шаг 2**: нажмите на иконку пользователя ![](/_assets/creating_an_alias_02.png) в левом верхнем углу.  
 В появившемся окне нажмите на **Создать новый**.
 
-![](/ru/_assets/creating_an_alias_03.png)
+![](/_assets/creating_an_alias_03.png)
 
 **Шаг 3**: выберите и введите Alias.
 
 Принимаются только строчные латинские буквы, цифры и символы **(@, -, _,)** от 4 до 30 знаков длиной.
 После этого нажмите на **Создать новый** для завершения процедуры.
 
-![](/ru/_assets/creating_an_alias_04.png)
+![](/_assets/creating_an_alias_04.png)
 
 Вы сможете использовать Alias по назначению спустя 1 блок (1 минута).

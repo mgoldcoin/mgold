@@ -2,26 +2,26 @@
 
 Откройте свой Waves кошелёк и войдите во вкладку Портфель.
 
-![](/ru/_assets/token_burn_01.png)
+![](/_assets/token_burn_01.png)
 
-Найдите свой выпущеный Токен и нажмите на кнопку ![](/ru/_assets/token_burn_02.png).
+Найдите свой выпущеный Токен и нажмите на кнопку ![](/_assets/token_burn_02.png).
 
 Затем нажмите на кнопку **Сжечь токен**.
 
-![](/ru/_assets/token_burn_03.png)
+![](/_assets/token_burn_03.png)
 
 После этого появится следующее окно:
 
-![](/ru/_assets/token_burn_04.jpeg)
+![](/_assets/token_burn_04.jpeg)
 
 Введите количество сжигаемых токенов и нажмите на кнопку **Продолжить**.
 
-![](/ru/_assets/token_burn_05.jpeg)
+![](/_assets/token_burn_05.jpeg)
 
 В появившемся окне проверьте введённую информацию и нажмите на кнопку **Подтвердить**.
 
-![](/ru/_assets/token_burn_06.jpeg)
+![](/_assets/token_burn_06.jpeg)
 
 После этого Транзакция сжигания токенов отобразится во вкладке **Транзакции**.
 
-![](/ru/_assets/token_burn_07.png)
+![](/_assets/token_burn_07.png)

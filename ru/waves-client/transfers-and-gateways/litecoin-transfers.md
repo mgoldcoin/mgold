@@ -2,20 +2,20 @@
 
 Waves client позволяет хранить и переводить Litecoin внутри сети Waves. Это возможно благодаря шлюзу: Litecoin поступают на Litecoin адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Litecoin в сети Waves (wLTC). При выводе wLTC из сети Waves пользователь получает Litecoin из расчета 1:1.
 
-Всю исчерпывающую информацию о работе Litecoin шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Litecoin шлюза вы найдёте в этой статье [Что такое платежный шлюз](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **Как получить Litecoin**.
 
 Откройте свой Waves кошелек и в секции Litecoin нажмите **Получить**.
 
-![](/ru/_assets/litecoin_transfers_01.png)
+![](/_assets/litecoin_transfers_01.png)
 
 В появившемся окне вы увидите Litecoin адрес.
 Используйте его в качестве адреса получателя, чтобы ввести Litecoin в свой Waves аккаунт
 А также вы можете просканировать QR-код, в котором зашифрован этот Litecoin адрес.
 Перед этим внимательно прочитайте условия ввода Litecoin, которые выделены жёлтой пунктирной линией.
 
-![](/ru/_assets/litecoin_transfers_02.png)
+![](/_assets/litecoin_transfers_02.png)
 
 **Внимание**: процесс ввода Litecoin в ваш Waves аккаунт может занять до 120 минут.
 
@@ -23,7 +23,7 @@ Waves client позволяет хранить и переводить Litecoin 
 
 Откройте ваш Waves кошелек и в Litecoin секции нажмите **Отправить**.
 
-![](/ru/_assets/litecoin_transfers_01.png)
+![](/_assets/litecoin_transfers_01.png)
 
 В появившемся окне введите:
 
@@ -36,13 +36,13 @@ Waves client позволяет хранить и переводить Litecoin 
 
 После заполнения всех строк и прочтения условий нажмите **Продолжить**.
 
-![](/ru/_assets/litecoin_transfers_04.png)
+![](/_assets/litecoin_transfers_04.png)
 
 Ещё раз проверьте данные транзакции в появившемся окне.
 
 Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-![](/ru/_assets/litecoin_transfers_05.png)
+![](/_assets/litecoin_transfers_05.png)
 
 **Внимание**: процесс ввода Litecoin в ваш Waves аккаунт может занять до 120 минут.
 
@@ -50,7 +50,7 @@ Waves client позволяет хранить и переводить Litecoin 
 
 Откройте ваш Waves кошелек и в Litecoin секции нажмите **Отправить**.
 
-![](/ru/_assets/litecoin_transfers_01.png)
+![](/_assets/litecoin_transfers_01.png)
 
 В появившемся окне введите:
 
@@ -61,10 +61,10 @@ Waves client позволяет хранить и переводить Litecoin 
 
 После заполнения всех строк нажмите **Продолжить**.
 
-![](/ru/_assets/litecoin_transfers_07.png)
+![](/_assets/litecoin_transfers_07.png)
 
 Ещё раз проверьте данные транзакции в появившемся окне.
 
 Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-![](/ru/_assets/litecoin_transfers_08.png)
+![](/_assets/litecoin_transfers_08.png)

@@ -2,20 +2,20 @@
 
 Waves client позволяет хранить и переводить Ethereum внутри сети Waves. Это возможно благодаря шлюзу: Ethereum поступают на Ethereum адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Ethereum в сети Waves (wETH). При выводе wETH из сети Waves пользователь получает Ethereum из расчета 1:1.
 
-Всю исчерпывающую информацию о работе Ethereum шлюза вы найдёте в этой статье [Что такое платежный шлюз](/ru/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Ethereum шлюза вы найдёте в этой статье [Что такое платежный шлюз](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **Как получить Ethereum**.
 
 Откройте свой Waves кошелек и в секции Ethereum нажмите **Получить**.
 
-![](/ru/_assets/ethereum_transfers_01.png)
+![](/_assets/ethereum_transfers_01.png)
 
 В появившемся окне вы увидите Ethereum адрес.
 Используйте его в качестве адреса получателя, чтобы ввести Ethereum в свой Waves аккаунт.
 А также вы можете просканировать QR-код, в котором зашифрован этот Ethereum адрес.
 Перед этим внимательно прочитайте условия ввода Ethereum, которые выделены жёлтой пунктирной линией.
 
-![](/ru/_assets/ethereum_transfers_02.png)
+![](/_assets/ethereum_transfers_02.png)
 
 **Внимание**: процесс ввода ETH в ваш Waves аккаунт может занять до 120 минут.
 
@@ -23,7 +23,7 @@ Waves client позволяет хранить и переводить Ethereum 
 
 Откройте ваш Waves кошелек и в Ethereum секции нажмите **Отправить**.
 
-![](/ru/_assets/ethereum_transfers_01.png)
+![](/_assets/ethereum_transfers_01.png)
 
 В появившемся окне введите:
 
@@ -35,13 +35,13 @@ Waves client позволяет хранить и переводить Ethereum 
 
 После заполнения всех строк и прочтения условия нажмите **Продолжить**.
 
-![](/ru/_assets/ethereum_transfers_04.png)
+![](/_assets/ethereum_transfers_04.png)
 
 Ещё раз проверьте данные транзакции в появившемся окне.
 
 Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-![](/ru/_assets/ethereum_transfers_05.png)
+![](/_assets/ethereum_transfers_05.png)
 
 **Внимание**: процесс вывода Ethereum из Waves аккаунта может занять до 120 минут.
 
@@ -49,7 +49,7 @@ Waves client позволяет хранить и переводить Ethereum 
 
 Откройте ваш Waves кошелек и в Ethereum секции нажмите **Отправить**.
 
-![](/ru/_assets/ethereum_transfers_01.png)
+![](/_assets/ethereum_transfers_01.png)
 
 В появившемся окне введите:
 
@@ -60,10 +60,10 @@ Waves client позволяет хранить и переводить Ethereum 
 
 После заполнения всех строк нажмите **Продолжить**.
 
-![](/ru/_assets/ethereum_transfers_07.png)
+![](/_assets/ethereum_transfers_07.png)
 
 Ещё раз проверьте данные транзакции в появившемся окне.
 
 Если все данные верны нажмите **Подтвердить**. Для корректировки данных нажмите **Назад**.
 
-![](/ru/_assets/ethereum_transfers_08.png)
+![](/_assets/ethereum_transfers_08.png)
