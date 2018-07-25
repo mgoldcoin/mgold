@@ -24,9 +24,9 @@
 
 * [Install Waves Client](waves-client/install-waves-client.md)
 * [Account Management](waves-client/account-management.md)
-  * [Creating an Account](waves-client/account-management/creating-an-account.md)
-  * [Restore an Account](waves-client/account-management/account-migration.md)
-  * [Account migration](waves-client/account-management/restore-an-account.md)
+  * [Account creation](waves-client/account-management/creating-an-account.md)
+  * [Account recovery](waves-client/account-management/restore-an-account.md)
+  * [Account migration](waves-client/account-management/account-migration.md)
   * [Signing in to Your Account](waves-client/account-management/signing-in-to-your-account.md)
   * [Use Your Waves address](waves-client/account-management/waves-address.md)
   * [Create a personal Alias](waves-client/account-management/creating-an-alias.md)
