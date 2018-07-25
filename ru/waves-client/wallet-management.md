@@ -2,20 +2,20 @@
 
 В главе "Переводы и шлюзы содержатся все необходимые сведения о транзакциях ввода и вывода криптовалют, которые поддерживает платформа Waves. Все транзакции с внешними криптовалютами обрабатываются [платежными шлюзами](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
-1. [Переводы Waves](transfers-and-gateways/waves-transfers.md)
-2. [Переводы Токенов](transfers-and-gateways/asset-transfers.md)
-3. [Переводы Bitcoin](transfers-and-gateways/bitcoin-transfers.md)
-4. [Переводы Ethereum](transfers-and-gateways/ethereum-transfers.md)
-5. [Переводы Litecoin](transfers-and-gateways/litecoin-transfers.md)
-6. [Переводы Zcash](transfers-and-gateways/zcash-transfers.md)
-7. [Переводы Bitcoin Cash](transfers-and-gateways/bitcoin-cash-transfers.md)
-8. [Переводы Dash](transfers-and-gateways/dash-transfers.md)
-9. [Переводы Monero](transfers-and-gateways/monero-transfers.md)
-10. [Перевод EUR и USD](transfers-and-gateways/eur-usd-transfers.md)
+* [Переводы Waves](transfers-and-gateways/waves-transfers.md)
+* [Переводы Токенов](transfers-and-gateways/asset-transfers.md)
+* [Переводы Bitcoin](transfers-and-gateways/bitcoin-transfers.md)
+* [Переводы Ethereum](transfers-and-gateways/ethereum-transfers.md)
+* [Переводы Litecoin](transfers-and-gateways/litecoin-transfers.md)
+* [Переводы Zcash](transfers-and-gateways/zcash-transfers.md)
+* [Переводы Bitcoin Cash](transfers-and-gateways/bitcoin-cash-transfers.md)
+* [Переводы Dash](transfers-and-gateways/dash-transfers.md)
+* [Переводы Monero](transfers-and-gateways/monero-transfers.md)
+* [Перевод EUR и USD](transfers-and-gateways/eur-usd-transfers.md)
 
 The Waves wallet also supports small purchases of Waves in Euro and US Dollar (minimum 30 EUR/USD, maximum 200 EUR/USD) using plastic card.
 
-1. [Покупка Waves с банковской карты](transfers-and-gateways/buying-waves-using-card.md)
+* [Покупка Waves с банковской карты](transfers-and-gateways/buying-waves-using-card.md)
 
 Кошелек Waves также поддерживает покупку Waves за Евро и Доллары США (минимум 30 EUR / USD, максимум 200 EUR / USD) с использованием пластиковой банковской карты.
 

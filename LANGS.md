@@ -1,5 +1,5 @@
 # Languages
 * [English](en/)
-* [Russian (in the pipeline)](ru/)
+* [Русский](ru/)
 * [中文](zh/)
 * [Português](pt-br/)
