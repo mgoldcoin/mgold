@@ -2,10 +2,10 @@
 
 В главе "Управление ассетами" содержится информация, которая поможет вам выпустить свой актив, а также увеличить или уменьшить количество токенов вашего актива в случае необходимости. Также эта глава описывает применение такой возможности как «Массовая отправка» токенов.
 
-1. [Создание токена](waves-client/assets-management/issue-an-asset.md)
-2. [Перевыпуск токена](waves-client/assets-management/reissue-an-asset.md)
-3. [Сжигание токена](waves-client/assets-management/burn-an-asset.md)
-4. [Распределение токена](waves-client/assets-management/mass-transfer.md)
+1. [Создание токена](assets-management/issue-an-asset.md)
+2. [Перевыпуск токена](assets-management/reissue-an-asset.md)
+3. [Сжигание токена](assets-management/burn-an-asset.md)
+4. [Распределение токена](assets-management/mass-transfer.md)
 
 Плюсы создания токенов на платформе Waves:
 
