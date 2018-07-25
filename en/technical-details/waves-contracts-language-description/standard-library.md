@@ -36,7 +36,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 | ------------- | ------------- | ------------- | ------------- |
 | feeAssetId	| +	| +	| |
 | amount	| +	|	 | + | 
-| transferAssetId	| +	| + |  | 
+| assetId	| +	| + |  | 
 | recepient |	+	|	| + |
 | attachment	| +	| +	| | 
 | totalAmount	| |	+	| |
