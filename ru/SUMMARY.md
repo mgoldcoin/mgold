@@ -52,6 +52,7 @@
 ## Часто задаваемые вопросы
 
   * [Управление аккаунтом](frequently-asked-questions-faq/account-management-faq.md)
+    * [Один Seed - Один Waves адрес](frequently-asked-questions-faq/account-management/one-seed.md)
     * [Ночной режим](frequently-asked-questions-faq/account-management/dark-mode.md)
   * [Переводы и шлюзы](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
     * [Что такое платежный шлюз](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
