@@ -93,6 +93,77 @@ Return a list of unconfirmed transactions in the node pool.
 ]
 ```
 
+### POST /transactions/calculateFee
+![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
+
+Calculates a fee for an arbitrary transaction and returns it. The transaction type to be specified in the request body. The types are as follows:
+
+| Type Code | Transaction Type |
+| :--- | :--- |
+| 3 | Issue |
+| 4 | Transfer |
+| 5 | Reissue |
+| 6 | Burn |
+| 8 | Lease |
+| 9 | Lease Cancel |
+| 10 | Alias |
+| 11 | Mass Transfer |
+| 12 | Data |
+| 13 | Set Script |
+| 14 | Sponsorship |
+
+**Request params**
+
+```
+"type" - Transaction type
+"senderPublicKey" - Public key of sender
+"sender" is ignored
+"fee" is ignored
+and all the other parameters appropriate for a transaction of the given type.
+```
+
+**Request JSON example**
+
+```js
+{
+ "type": 10,
+ "timestamp": 1516171819000,
+ "sender": "3MtrNP7AkTRuBhX4CBti6iT21pQpEnmHtyw",
+ "alias": "ALIAS",
+}
+```
+
+or
+
+```js
+{
+  "type": 4,
+  "sender": "3MtrNP7AkTRuBhX4CBti6iT21pQpEnmHtyw",
+  "recipient": "3P8JYPHrnXSfsWP1LVXySdzU1P83FE1ssDa",
+  "amount": 1317209272,
+  "feeAssetId": "8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS",
+  "attachment": "string"
+}
+```
+
+**Response JSON example**
+
+```
+{
+  "feeAssetId": null,
+  "feeAmount": 10000
+}
+```
+
+or
+
+```js
+{
+  "feeAssetId": "8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS",
+  "feeAmount": 10000
+}
+```
+
 ### POST /transactions/sign
 ![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
