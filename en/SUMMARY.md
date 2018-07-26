@@ -143,6 +143,7 @@
 ## FAQ
 
 * [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
+  * [One Seed - One Waves address](frequently-asked-questions-faq/account-management/one-seed.md)
   * [How to Enable Dark Mode](frequently-asked-questions-faq/account-management/dark-mode.md)
 * [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
   * [What is a payment gateway](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
