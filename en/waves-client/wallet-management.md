@@ -1,6 +1,6 @@
 # Transfers and gateways
 
-Transfers and gateways chapter includes all details about send and deposit operations for each cryptocurrency which is supporting within the Waves Platform. All transactions with external coins are processing with the [payment gateways](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
+Transfers and gateways chapter includes all details about send and deposit operations for each cryptocurrency which is supporting within the Waves Platform. All transactions with external coins are processing with the [payment gateways](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
 
 * [Waves transfers](transfers-and-gateways/waves-transfers.md)
 * [Asset transfers](transfers-and-gateways/asset-transfers.md)
