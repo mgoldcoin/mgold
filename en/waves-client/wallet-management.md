@@ -15,7 +15,7 @@ Transfers and gateways chapter includes all details about send and deposit opera
 
 The Waves wallet also supports small purchases of Waves in Euro and US Dollar (minimum 30 EUR/USD, maximum 200 EUR/USD) using plastic card.
 
-1. [Buying Waves using credit or debit card](transfers-and-gateways/buying-waves-using-card.md)
+* [Buying Waves using credit or debit card](transfers-and-gateways/buying-waves-using-card.md)
 
 As first, it is needed to feed your wallet with some crypto. If you don’t have Bitcoin \(Ether, LiteCoin or Z-Cash\), purchase them via your trusted exchange and send them to the wallet.
 
