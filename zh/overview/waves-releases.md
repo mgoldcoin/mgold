@@ -1,6 +1,6 @@
-# 最新的Waves 客户端版本
+# 最新的Waves客户端版本
 
-在[**这里**](https://github.com/wavesplatform/WavesGUI/releases)您可以下载最新的Waves客户端
+在[**这里**](https://github.com/wavesplatform/WavesGUI/releases) 您可以下载最新的Waves客户端
 
 # 最新的完整节点版本
 
