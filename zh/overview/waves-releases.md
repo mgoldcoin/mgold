@@ -1,15 +1,16 @@
-# Latest Waves Client Version
+# 最新的Waves 客户端版本
 
-[**Here**](https://github.com/wavesplatform/WavesGUI/releases) you find the latest Waves Client
+在[**这里**](https://github.com/wavesplatform/WavesGUI/releases)您可以下载最新的Waves客户端
 
-# Latest Full Node Version
+# 最新的完整节点版本
 
-[**Here**](https://github.com/wavesplatform/Waves/releases) you can find the latest Full Node
+在[**这里**](https://github.com/wavesplatform/Waves/releases) 您可以找到最新的完整节点
 
-# Android Mobile Application
+# 安卓移动应用程序
 
-[**Here**](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) you can find Waves Android App
+在[**这里**](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) 您可以下载Waves安卓移动应用程序
 
-# IOS Mobile Application
+# IOS 移动应用程序
 
-[**Here**](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8) you can find Waves IOS App
+在[**这里**](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8) 您可以下载Waves IOS 移动应用程序
+

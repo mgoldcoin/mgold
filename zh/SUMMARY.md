@@ -6,7 +6,7 @@
   * [平台组件介绍](overview/platform-components.md)
   * [安全说明](overview/security-notes.md)
   * [Waves官网资源](overview/waves-official-resources.md)
-  * [Waves Releases](overview/waves-releases.md)
+  * [Waves 发布](overview/waves-releases.md)
   * [Waves 代币](overview/waves-tokens.md)
 * [平台功能](platform-features.md)
   * [激活协议](platform-features/activation-protocol.md)
