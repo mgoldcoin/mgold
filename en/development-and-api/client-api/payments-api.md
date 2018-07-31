@@ -19,9 +19,9 @@ If the user interrupts the process, he stays on the Waves Client page.
 
 ### Request
 
-Example: `https://beta.wavesplatform.com/#send/WAVES?recipient=your-alias&amount=1&referrer=https://example.com&strict`.
+Example: `https://client.wavesplatform.com/#send/WAVES?recipient=your-alias&amount=1&referrer=https://example.com&strict`.
 
-Basic path is `https://beta.wavesplatform.com/#send/{assetId}`. Then there are the parameters.
+Basic path is `https://client.wavesplatform.com/#send/{assetId}`. Then there are the parameters.
 
 #### Asset ID
 

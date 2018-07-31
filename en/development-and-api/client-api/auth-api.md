@@ -1,6 +1,6 @@
 # Waves Auth API
 
-If you want to authorize a user in your service by means of his Waves account, here's the solution. In general, you should redirect the user to the official Waves Client \([https://beta.wavesplatform.com/](https://beta.wavesplatform.com/) — to be changed later\) with certain query parameters including some arbitrary data for him to sign.
+If you want to authorize a user in your service by means of his Waves account, here's the solution. In general, you should redirect the user to the official Waves Client \([https://client.wavesplatform.com/](https://beta.wavesplatform.com/) — to be changed later\) with certain query parameters including some arbitrary data for him to sign.
 
 That might be needed in cases when you need to work with user personal data and to be sure that a given blockchain account belongs to that user.
 
@@ -25,9 +25,9 @@ Due to the length limitations of the query string all parameters are expressed w
 
 ### Request
 
-Example: `https://beta.wavesplatform.com#gateway/auth?r=https://example.com&n=Example&d=0123456789&i=/img/logo.png&success=/wavesAuth`.
+Example: `https://client.wavesplatform.com#gateway/auth?r=https://example.com&n=Example&d=0123456789&i=/img/logo.png&success=/wavesAuth`.
 
-Basic path is `https://beta.wavesplatform.com#gateway/auth`. Then the query parameters go.
+Basic path is `https://client.wavesplatform.com#gateway/auth`. Then the query parameters go.
 
 #### Referrer
 

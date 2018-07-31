@@ -2,7 +2,7 @@
 
 # 1. Waves Client
 
-[The Waves Lite Client](https://beta.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
+[The Waves Lite Client](https://client.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
 # 2. Waves Wallet
 
