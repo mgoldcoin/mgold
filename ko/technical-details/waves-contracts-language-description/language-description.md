@@ -56,7 +56,7 @@ This is also true for `DataType.ByteArray`:
 * `size `: `DataType.ByteArray => Long`
 
 ### ByteVector
-Standart ByteVector type 
+Standard ByteVector type 
 
 * `size `: `ByteVector => Long`
 * `take`: `ByteVector`, `Long` => `ByteVector`
@@ -69,7 +69,7 @@ Standart ByteVector type
 * `fraction(value: LONG, numerator: LONG, denominator: LONG) => LONG`
 
 ### String
-Standart string type
+Standard string type
 
 * `size `: `String => Long`
 * `take`: `String`, `Long` => `String`
