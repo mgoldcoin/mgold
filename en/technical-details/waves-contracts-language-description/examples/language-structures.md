@@ -142,8 +142,10 @@ RIDE also inherits such functionality but in a more simple mode, a basic stateme
 match tx {
     case a: TypeA => 0
     case b: TypeB => 1
+    case other => throw
  }
 ```
+`throw` signals the occurrence of an exception during a script execution. In case of `throw` the transaction does not pass into the blockchain.
 
 ## Union Types
 
