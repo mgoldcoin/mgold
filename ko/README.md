@@ -12,4 +12,4 @@
 * Waves 실물화폐 게이트웨이를 통해 fiat-crypto 문제를 해결하였습니다.
 * Scorex 프레임워크 기반으로 개발되었습니다.
 
-**참고** [**여기를**](/overview/how-to-use-this-guide.md) 클릭하여 가이드 사용 방법을 확인하세요.
+**참고.** [**여기를**](/overview/how-to-use-this-guide.md) 클릭하여 가이드 사용 방법을 확인하세요.

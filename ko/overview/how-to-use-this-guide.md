@@ -55,7 +55,7 @@
 
 1. [기술적 세부 사항](/technical-details/technical-details.md)
 2. [Waves 스마트컨트랙](/technical-details/waves-contracts-language-description.md)
-3. [클라이언트 라이브러리 ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md), [WavesCS](/development-and-api/client-libraries/wavescs.md) and [WavesC](/development-and-api/client-libraries/waves-c.md)\)
+3. [클라이언트 라이브러리 ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md), [WavesCS](/development-and-api/client-libraries/wavescs.md), [WavesC](/development-and-api/client-libraries/waves-c.md)\)
 4. [탈중앙화 거래소 API](/development-and-api/dex-api.md) \([Matcher](/development-and-api/dex-api/matcher.md)\)
 5. [노드 API 개요](https://legacy.gitbook.com/book/waves-platform/wavesdocs/edit#)
 6. [Waves 노드 Rest API](/development-and-api/waves-node-rest-api.md)

@@ -12,7 +12,7 @@
 * [**지원 서비스**](https://support.wavesplatform.com/)
 * [**Waves desk**](https://wavesdesk.com)
 * [**WavesGo**](http://wavesgo.com)
-* [**공식 페이스북 그룹**](https://www.facebook.com/wavesplatform)
+* [**페이스북 그룹**](https://www.facebook.com/wavesplatform)
 * [**트위터**](https://twitter.com/wavesplatform?lang=en)
 * [**블로그**](https://blog.wavesplatform.com)
 * [**커뮤니티 페이지**](https://wavescommunity.com)
