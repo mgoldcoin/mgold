@@ -1,6 +1,6 @@
 # Effective RIDE Examples
 
-RIDE's [Introduction](/technical-details/waves-contracts-language-description/language-description.md#introduction)
+RIDE's [Introduction](/en/technical-details/waves-contracts-language-description/language-description.md#introduction)
 
 ## Formatting
 
