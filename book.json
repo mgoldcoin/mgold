@@ -1,37 +1,10 @@
 {
   "plugins": [
-    "sharing",
-    "custom-favicon",
-    "gtm",
     "custom-js-css",
-    "custom-favicon",
-    "anchors"
+    "tree-shaper@git+https://github.com/KardanovIR/gitbook-plugin-tree-shaper.git",
+    "custom-favicon"
   ],
   "pluginsConfig": {
-    "theme-bandwidth": {
-      "languages": [
-        {
-          "lang": "js",
-          "name": "Js",
-          "default": true
-        },
-        {
-          "lang": "csharp",
-          "name": "C#"
-        },
-        {
-          "lang": "ruby",
-          "name": "ruby"
-        },
-        {
-          "lang": "bash",
-          "name": "cURL"
-        }
-      ]
-    },
-    "layout": {
-      "headerPath": "layouts/header.html"
-    },
     "gtm": {
       "token": "GTM-P2JT7Z",
       "virtualPageViews": true
