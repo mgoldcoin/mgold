@@ -23,7 +23,7 @@ For More technical details, find the articles below:
 
 1. [Approach and Capabilities](./waves-contracts-language-description/approach-and-capabilities.md)
 2. [Language Description](waves-contracts-language-description/language-description.md)
-3. [Standard Library Documentation](waves-contracts-language-description/standart-library.md)
+3. [Standard Library Documentation](waves-contracts-language-description/standard-library.md)
 4. [Syntax Processor and Executor Implementation Details](waves-contracts-language-description/implementation-details.md)
 5. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
 6. [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
