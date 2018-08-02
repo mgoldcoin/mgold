@@ -32,7 +32,7 @@ You should use the deb with Upstart if you have an operating system Ubuntu &lt; 
 
 Just [download latest waves deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i waves*.deb`.
 
-Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please read [this](https://github.com/wavesplatform/Waves/wiki/Waves-Node-configuration-file) and edit waves config with caution.
+Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please read [this](/waves-full-node/how-to-configure-a-node.md) and [edit waves config](/waves-full-node/how-to-configure-a-node.md) with caution.
 
 Upstart users can start the node with `sudo service waves start` \(`waves-testnet` for testnet\) and enable autoload on start with `sudo service waves enable`.
 
