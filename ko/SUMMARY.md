@@ -1,4 +1,4 @@
-# Summary
+﻿# Summary
 
 ## 개요
 
@@ -100,12 +100,12 @@
 * [Waves 스마트 컨트랙](technical-details/waves-contracts-language-description.md)
   * [처리 방법과 수용력](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
   * [언어 설명](technical-details/waves-contracts-language-description/language-description.md)
-  * [언어 구조](technical-details/waves-contracts-language-description/examples/language-structures.md)
   * [구현 세부 사항](technical-details/waves-contracts-language-description/implementation-details.md)
   * [표준 라이브러리](technical-details/waves-contracts-language-description/standard-library.md)
   * [수동으로 스크립트 생성 및 배치](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
   * [스크립트 성능 테스트](/technical-details/waves-contracts-language-description/script-performance-tests.md)
   * [예시](technical-details/waves-contracts-language-description/examples.md)
+    * [언어 구조](/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
     * [다중 서명 \(Multi-Signiture\) 계정](technical-details/waves-contracts-language-description/examples/multi-signature-account.md)
     * [스마트 자산과 Notary Proof](technical-details/waves-contracts-language-description/examples/smart-asset-with-notary-proof.md)
 * [클라이언트 라이브러리](development-and-api/client-libraries.md)

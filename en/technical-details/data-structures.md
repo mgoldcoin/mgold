@@ -526,7 +526,9 @@ Sets the script which veries all outgoing transactions. The set script can be ch
 | 9 | Timestamp | Long | 46 + N | 8 |
 
 [**Here**](/technical-details/waves-contracts-language-description.md) you can find more details about Waves smart-contracts.
-[**Here**](/technical-details/waves-contracts-language-description/standart-library.md) you can find more details about smart-contracts standart library.
+
+[**Here**](/technical-details/waves-contracts-language-description/standard-library.md) you can find more details about smart-contracts standard library.
+
 [**Here**](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md) you can find detailed instruction how to create and deploy a script manually. 
 
 ## Network messages

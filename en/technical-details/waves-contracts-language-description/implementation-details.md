@@ -1,6 +1,6 @@
 # Implementation Details
 
-While the user writes WavesContracts code in high-level language, Waves Contracts execution engine is a straightforward evaluator of low-level expression tree within context. In order to achieve that, there're several stages which make text script produce an an execution result. These are:
+While the user writes WavesContracts code in the high-level language, Waves Contracts execution engine is a straightforward evaluator of low-level expression tree within context. In order to achieve that, there're several stages which make text script produce an execution result. These are:
 
 1. Parsing.
 2. Typechecking & Compiling.
@@ -56,19 +56,20 @@ Parser generated AST is based on the following constructs:
 
 ## 2. Type Checking and Compiling Stage
 
-Untyped AST is enriched with types, types are checked, according to function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates **BLOCK**, which consists of **EXPRs**. Each **EXPR** has a type and is one of:
+Untyped AST is enriched with types, types are checked, according to function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates the base type **EXPR**, and its sub-type of **BLOCK**. Each **EXPR** has a type and is one of:
 
 | Types | Description |
 | :--- | :--- |
 | LET\(name, block\) | Used to define a variable |
-| GETTER\(expr, fieldName, resultTtype\) | Used to access field of structure |
-| FUNCTION\_CALL\(name, argBlocks, resultType\) | Used to invoke a predefined function within context |
-| IF\(clause, ifTrueBlock, ifFalseBlock, resultType\) | Used for Lazy branching |
-| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\), CONST\_STRING\(string\), REF\(name, resultType\) | Used as Leafs |
+| GETTER\(expr, fieldName\) | Used to access field of structure |
+| FUNCTION\_CALL\(name, argBlocks\) | Used to invoke a predefined function within context |
+| IF\(clause, ifTrueBlock, ifFalseBlock\) | Used for Lazy branching |
+| CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\), CONST\_STRING\(string\), REF\(name\) | Used as Leafs |
 
-These are very similar to those in previous step, but they are typed\(for example, Untyped `REF` is enriched with type, derived from right-side expression\). This set doesn't include `BINARY_OP` as well, it gets translated to `FUNCTION_CALL`. This set doesn’t include constructs that are used exclusively for ease of parsing.
+This set doesn't include BINARY_OP as well, it gets translated to FUNCTION_CALL. This set doesn’t include constructs that are used exclusively for ease of parsing. The pattern matching mechanism is replaced by `IF` + `.isInstanceOf` call.
 
-This step is important to validate user input so that less mistakes are made: for instance, `3 + false` is valid syntaxically, but typechecker won't compile it, because `+`  function requires two arguments of type `Long`.  
+This step is important to validate user input so that fewer mistakes are made: for instance, `3 + false` is valid syntactically, but typechecker won't compile it, because `+`  function requires two arguments of type `Long`.  The result types of each **EXPR** aren't shown to the outside and don't go to the next stage. 
+
 **Note.** The output of this stage is exactly what is sent to the blockchain.
 
 This set doesn’t include constructs that are used exclusively for ease of parsing. This step is important to validate user input.
@@ -85,5 +86,5 @@ Evaluator operates a typed expression tree within a context. It traverses the lo
 
 Lazy values are calculated maximum once.
 
-If evaluator results in exception\(for instance, Long Overflow\), result of script evaluation is `false`.
+If evaluator results in exception\(for instance, Long Overflow\), the result of script evaluation is `false`.
 
