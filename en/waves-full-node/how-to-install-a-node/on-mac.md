@@ -14,11 +14,11 @@ then all is ok, and you can move on to the next step!
 
 If you get an error check your installation and try to find a solution or a better tutorial online.
 
-**Note.** It's necessary to install **Oracle JRE 8 **with **64-bit version**.
+**Note.** It's necessary to install **Oracle JRE 8 **with **64-bit version, **you also can check Waves Releases [Here](https://github.com/wavesplatform/Waves/releases).
 
 # Download Waves package and configure the application
 
-Download the latest version of waves.jar and the required .conf configuration file \(for mainnet or testnet\) to any folder, for example `~/waves`.
+[Download the latest version](https://github.com/wavesplatform/Waves/releases) of waves.jar and the required .conf configuration file \(for mainnet or testnet\) to any folder, for example `~/waves`.
 
 Carefully edit the configuration waves.conf file, **it is very important! The safety of your wallet and money depends on this!**
 

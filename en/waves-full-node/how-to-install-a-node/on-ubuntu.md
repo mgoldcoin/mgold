@@ -20,7 +20,7 @@ then it good, you can move to the next step!
 
 But if you get an error, then check your installation and try to find some better tutorials in google.
 
-**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version.**
+**Note.** It's necessary to install **Oracle JRE 8** with **64-bit version, **you also can check Waves Releases [Here](https://github.com/wavesplatform/Waves/releases).
 
 # Installation from deb package
 
@@ -30,7 +30,7 @@ There are two types of deb packages of waves nodes: with upstart loader and syst
 
 You should use the deb with Upstart if you have an operating system Ubuntu &lt; 15.04.
 
-Just download latest waves deb and install it with `sudo dpkg -i waves*.deb`.
+Just [download latest waves deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i waves*.deb`.
 
 Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please read [this](https://github.com/wavesplatform/Waves/wiki/Waves-Node-configuration-file) and edit waves config with caution.
 

@@ -73,7 +73,7 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
 * Download the Waves client from our official website,
   [www.wavesplatform.com](http://www.wavesplatform.com/)
   , or use the webwallet, available at
-  [beta.wavesplatform.com](https://beta.wavesplatform.com/)
+  [client.wavesplatform.com](https://client.wavesplatform.com/)
 * [Deposit your bitcoins](/waves-client/transfers-and-gateways/bitcoin-transfers.md) or any [supported coins and tokens](/en/waves-client/wallet-management.md) into the wallet and [start trading using the Waves DEX](/waves-client/waves-dex.md).
 
 # 5. Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}

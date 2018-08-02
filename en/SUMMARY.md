@@ -85,6 +85,7 @@
 * [Reducing Disk Space Usage](waves-full-node/reducing-disk-space-usage.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
 * [Configuration](waves-full-node/configuration.md)
+* [Logging](waves-full-node/logging.md)
 * [Setting Up a Full Node on Digital Ocean](waves-full-node/setting-up-a-waves-platform-full-node-on-digital-ocean.md)
 
 ## Development and API

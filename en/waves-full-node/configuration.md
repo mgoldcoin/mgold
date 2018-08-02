@@ -14,7 +14,7 @@ It is only possible to create deb and fat jar packages.
 
 ### Install SBT \(Scala Build Tool\)
 
-For Ubuntu/Debian:
+**For Ubuntu/Debian**
 
 ```bash
 echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
@@ -23,7 +23,37 @@ sudo apt-get update
 sudo apt-get install sbt
 ```
 
-You can install sbt on Mac OS X using Homebrew.
+**For macOS**
+You can install sbt on macOS using Homebrew.
+
+**For Windows**
+1. Install [Git for Windows](http://gitforwindows.org/)
+2. Run `SBT` from it's shell
+
+Without this, you will see:
+> Cannot run program "git"
+
+### Additional SBT issues
+
+If you see
+> java.lang.OutOfMemoryError: GC overhead limit exceeded
+
+You have to provide SBT more memory through `Xmx` switch or turn off `UseGCOverheadLimit`
+
+If you see
+> java.lang.OutOfMemoryError: Metaspace
+
+So, it's recommended to run SBT with flags:
+```bash
+SBT_OPTS="${SBT_OPTS} -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:-UseGCOverheadLimit" sbt
+```
+
+For Java9 it should be:
+```bash
+SBT_OPTS="${SBT_OPTS} -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:-UseGCOverheadLimit --add-modules=java.xml.bind --add-exports java.base/jdk.internal.ref=ALL-UNNAMED" sbt
+```
+
+These flags are useful for interactive mode especially.
 
 ### Create Package
 
@@ -43,22 +73,6 @@ sbt -Dnetwork=testnet packageAll
 
 `sbt test`
 
-**Note**
-
-If you prefer to work with\_SBT\_in the interactive mode, open it with settings:
-
-```bash
-SBT_OPTS="${SBT_OPTS} -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled" sbt
-```
-
-For Java9 it should be:
-
-```bash
-SBT_OPTS="${SBT_OPTS} -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled --add-modules=java.xml.bind --add-exports java.base/jdk.internal.ref=ALL-UNNAMED" sbt
-```
-
-to solve the`Metaspace error`problem.
-
 # Running Integration Tests
 
 ## TL;DR
@@ -72,14 +86,6 @@ By default,`it/test` will do the following:
 
 * Build a container image with the fat jar and a [template.conf](https://github.com/wavesplatform/Waves/blob/master/src/it/resources/template.conf). The newly-built image will be registered with the local Docker daemon. This image is built with [sbt-docker](https://github.com/marcuslonnberg/sbt-docker) plugin.
 * Run the test suites from `src/it/scala`, passing docker image ID via `docker.imageId` system property.
-
-### Logging
-
-By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) all logs are written to the STDOUT. If you want to write logs, for example, to JSON files, you should define your own logging configuration and specify a path to it in`conf/application.ini`:
-
-```
--Dlogback.configurationFile=/path/to/your/logback.xml
-```
 
 ### Debugging
 

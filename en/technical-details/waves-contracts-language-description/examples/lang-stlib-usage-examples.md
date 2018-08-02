@@ -183,17 +183,16 @@ Sometimes users need operate confidential information, for such needs RIDE has c
 "keccak256"`. In very popular use case as AtomicSwap, you can find an example of such usage:
 
 ```
-let Bob = extract(addressFromString("3N5GRqzDBhjVXnCn44baHcz2GoZy5qLxtTh")).bytes
-let Alice = extract(addressFromString("3MrEzc1mfWdk9SUkeremcsPLRWhViT9R9XF")).bytes
-let AlicesPK = base58'FM5ojNqW7e9cZ9zhPYGkpSP1Pcd8Z3e3MNKYVS5pGJ8Z'
+let Bob = Address(base58'$BobBC1')
+let Alice = Address(base58'$AliceBC1')
 
-let txRecipient = addressFromRecipient(tx.recipient).bytes
-let txSender = addressFromPublicKey(tx.senderPk).bytes
-
-let txToBob = (txRecipient == Bob) && (sha256(tx.proofs[0]) == base58'$shaSecret') && ((20 + $beforeHeight) >= height)
-let backToAliceAfterHeight = ((height >= (21 + $beforeHeight)) && (txRecipient == Alice))
-
-txToBob || backToAliceAfterHeight
+match tx {
+  case ttx: TransferTransaction =>
+     let txToBob = (ttx.recipient == Bob) && (sha256(ttx.proofs[0]) == base58'$shaSecret') && ((20 + $beforeHeight) >= height)
+     let backToAliceAfterHeight = ((height >= (21 + $beforeHeight)) && (ttx.recipient == Alice))
+     txToBob || backToAliceAfterHeight
+  case other => false
+}
 ```
 
 where `$shaSecret` is `sha256"BN6RTYGWcwektQfSFzH8raYo9awaLgQ7pLyWLQY4S4F5"` of `"some secret message from Alice"`,  

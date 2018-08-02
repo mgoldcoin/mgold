@@ -5,7 +5,7 @@ The reason behind decentralized exchange \(DEX, aka Matcher\) is to perform secu
 ## Limit Order
 
 ```cpp
-POST /matcher/orders/place
+POST /matcher/orders
 ```
 
 A user initiates his willingness to buy or sell assets by creating, signing and sending a Limit Order request to the Matcher node. The order should contain the following fields:
