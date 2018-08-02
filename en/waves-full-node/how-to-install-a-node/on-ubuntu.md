@@ -44,9 +44,9 @@ You can find waves app logs in `/var/log/upstart/` folder like that `tail -f /va
 
 You should use the deb with Systemd if you have an operating system Ubuntu &gt;= 15.04 or latest Debian releases.
 
-Just download latest waves deb and install it with `sudo dpkg -i waves*.deb`.
+Just [download latest waves deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i waves*.deb`.
 
-Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please read [this](https://github.com/wavesplatform/Waves/wiki/Waves-Node-configuration-file) and edit waves config with caution.
+Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please read [**this**](/waves-full-node/how-to-configure-a-node.md)** **and [**edit waves config**](/waves-full-node/how-to-configure-a-node.md)** **with caution.
 
 Systemd users can start the node with `sudo systemctl start waves.service` \(`waves-testnet` for testnet\) and enable autoload on start with `sudo systemctl enable waves.service`.
 
@@ -56,7 +56,7 @@ Systemd users can find waves app logs in journald storage like that `journalctl 
 
 # Installation for advanced users
 
-Download latest version of waves.jar and required configuration file \(for mainnet or testnet\) to any folder, for example `/opt/waves`.
+[Download latest version](https://github.com/wavesplatform/Waves/releases) of waves.jar and required configuration file \(for mainnet or testnet\) to any folder, for example `/opt/waves`.
 
 Check out the configuration file, **it is very important**! On this depends **the safety of your wallet and money**.
 
