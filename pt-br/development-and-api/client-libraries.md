@@ -2,11 +2,11 @@
 
 Waves Full Node fornece acesso ao [REST API](/pt-br/development-and-api/node-api-overview.md) Também existem bibliotecas de código aberto orientadas pela comunidade para diferentes linguagens de programação:
 
-* [PyWaves for Python](/development-and-api/client-libraries/pywaves.md)
-* [WavesJ for Java](/development-and-api/client-libraries/wavesj.md)
-* [WavesCS for C\#](/development-and-api/client-libraries/wavescs.md)
-* [Waves-API for TypeScript/JavaScript](https://github.com/wavesplatform/waves-api)
-* [WavesC](/development-and-api/client-libraries/waves-c.md)
+* [Python - PyWaves](/development-and-api/client-libraries/pywaves.md)
+* [Java - WavesJ](/development-and-api/client-libraries/wavesj.md)
+* [C\# - WavesCS](/development-and-api/client-libraries/wavescs.md)
+* [TypeScript/JavaScript - Waves-API](https://github.com/wavesplatform/waves-api)
+* [C - WavesC](/development-and-api/client-libraries/waves-c.md)
 
 Todas as bibliotecas estão abertas para contribuição e teste.
 
