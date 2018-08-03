@@ -23,5 +23,9 @@ In general, tokens are a reproduction of a particular asset or utility, which us
 
 * **Tokens** aren’t actually held in users’ Ethereum addresses. Rather, they’re registered to a smart contract and every time you move them, you’re really just updating the information that smart contract records. **Waves tokens**, however, are like WAVES itself  — meaning they are treated exactly the same and are held in your address, while the platform still supports token creation in the core and from the standard Waves wallet.
 
+# How to Get Waves Tokens on testnet
+
+In order to get free Waves Tokens on testnet, please put your Waves address [here](https://testnet.wavesexplorer.com/faucet)
+
 
 
