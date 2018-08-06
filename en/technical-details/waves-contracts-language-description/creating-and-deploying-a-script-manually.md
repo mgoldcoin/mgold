@@ -8,7 +8,7 @@ In this example, we're going to create and deploy a simple 2 of 2 MultiSig examp
 
 **Example Assumptions:**
 
-1. We assume that we have our own Waves node \(if you do not have Waves node, you can implement the example using one of [Waves Libraries](/development-and-api/client-libraries.md) as shown in this [video tutorial](https://youtu.be/oRmnERIBKzY) using Waves Java Library\).
+1. We assume that we have our own Waves node \(if you do not have Waves node, you can implement the example using one of [Waves Libraries](/development-and-api/client-libraries.md) as shown in this [video tutorial](https://www.youtube.com/watch?v=o2msjSo0y0o&t=21s) using Waves Java Library\).
 2. We want to set up a script for a [generated](/development-and-api/waves-node-rest-api/address.md#post-addresses) account in order to implement the **smart account **idea.
 3. we assume that we have three generated addresses:
 

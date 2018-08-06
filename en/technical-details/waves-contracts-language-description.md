@@ -13,13 +13,12 @@ We see the syntax of our language as functional, similar to F\#: strong and stat
 
 # Tutorials
 
-1. [Waves Console Example](https://www.youtube.com/watch?v=QWaZjpiQtHA&feature=youtu.be)
-2. [Multi Signature Example](https://www.youtube.com/watch?v=oRmnERIBKzY&feature=youtu.be)
-3. [Escrow Example](https://youtu.be/0Ic--oQIQhU)
+1. [Waves Console Example](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=571s)
 
+1. [Multi Signature Example](https://www.youtube.com/watch?v=o2msjSo0y0o&t=18s)
+2. [Escrow Example](https://www.youtube.com/watch?v=31dwYcgb65M&t=7s)
 
-
-For More technical details, find the articles below:
+For More **technical details**, find the articles below:
 
 1. [Approach and Capabilities](./waves-contracts-language-description/approach-and-capabilities.md)
 2. [Language Description](waves-contracts-language-description/language-description.md)
