@@ -7,6 +7,7 @@ Waves Full Node provides access to the [REST API](/en/development-and-api/node-a
 * [WavesCS for C\#](/development-and-api/client-libraries/wavescs.md)
 * [Waves-API for TypeScript/JavaScript](https://github.com/wavesplatform/waves-api)
 * [WavesC](/development-and-api/client-libraries/waves-c.md)
+* [Community Libraries](/development-and-api/client-libraries/unofficial-libraries.md)
 
 All libraries are open for contribution and testing.
 
@@ -14,3 +15,4 @@ All libraries are open for contribution and testing.
 
 **Note**: To use all features of REST API you have to set up a Full Node. If you want to use basic features you can use public nodes, for example, [https://nodes.wavesnodes.com/](https://nodes.wavesnodes.com/).  
 The full list of public nodes is available [here](http://dev.pywaves.org/generators/).
+
