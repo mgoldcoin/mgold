@@ -115,6 +115,7 @@
   * [WavesJ](development-and-api/client-libraries/wavesj.md)
   * [WavesCS](development-and-api/client-libraries/wavescs.md)
   * [WavesC](development-and-api/client-libraries/waves-c.md)
+  * [Unofficial libraries](development-and-api/client-libraries/unofficial-libraries.md)
 * [DEX API](development-and-api/dex-api.md)
   * [Matcher](development-and-api/dex-api/matcher.md)
 * [Waves Node Rest API](development-and-api/waves-node-rest-api.md)
@@ -152,3 +153,4 @@
 * [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
   * [Order execution time](frequently-asked-questions-faq/waves-dex/order-time.md)
   * [Asset ID on the Waves DEX](frequently-asked-questions-faq/waves-dex/asset-id.md)
+
