@@ -228,7 +228,7 @@ POST /matcher/orders/cancel
 
 ## Tradable balance
 
-How much you can spend in orders on the given pair.
+[How much](../../platform-features/decentralized-cryptocurrency-exchange-dex.md#4-tradable-balance) you can spend in orders on the given pair.
 
 ```
 GET /matcher/orderbook/{{amountAsset}}/{{priceAsset}}/tradableBalance/{{address}}

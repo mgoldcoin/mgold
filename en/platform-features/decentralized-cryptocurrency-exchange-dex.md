@@ -57,12 +57,25 @@ Thus, the fee that the matcher gets from users for these transactions is**0.0021
 
 ![](/_assets/matcher.png)Figure 2: example of matcher's fee work, TX1 - Transaction1, TX2 - Transaction2, Ord1 - Order1, Ord2 - Order2, Ord3 - Order3
 
+###  {#Decentralizedcryptocurrencyexchange(DEX)-Summary:}
+
+### Summary: {#Decentralizedcryptocurrencyexchange(DEX)-Summary:}
+
+| period | matcher's fee | miner's fee | left for the matcher |
+| :--- | :--- | :--- | :--- |
+| last month | 681.42336675 waves | 569.721 waves | 16.39% |
+| all time | 3476.01418346 waves | 2824.771 waves | 18.74% |
+
+To sum up, for all time the matcher keeps only 18.74% of fees and everything else it pays to miners for placing transactions in blocks \(data for 8.02.2018\).
+
 # 4. Tradable balance
 
 Tradable balance shows, how much you can spend in orders. It calculates by the formula:
 
 ```
-tradable_balance(asset) = balance_of_asset - spendings_of_asset_in_transactions_in_utx_pool - reserved_balance_for_asset
+tradable_balance(asset) = balance_of_asset - 
+  spendings_of_asset_in_transactions_in_utx_pool - 
+  reserved_balance_for_asset
 ```
 
 ## balance_of_asset
@@ -70,7 +83,7 @@ tradable_balance(asset) = balance_of_asset - spendings_of_asset_in_transactions_
 The current balance in `asset`:
 
 * [WAVES](../development-and-api/waves-node-rest-api/address.md#get-addressesbalanceaddress);
-* [assets](../development-and-api/waves-node-rest-api/address.md#get-assetsbalanceaddress)).
+* [assets](../development-and-api/waves-node-rest-api/address.md#get-assetsbalanceaddress).
 
 ## spendings_of_asset_in_transactions_in_utx_pool
 
@@ -94,18 +107,7 @@ As you know, all orders in `DEX` requires `WAVES` as the fee. Because of this, t
 If you buy `WAVES` by other asset, reserved balance in waves in this order will be: `max(fee - amount_of_received_waves_in_this_order, 0)`.
 So, you can buy `WAVES` for `BTC` even if you have no `WAVES`.
 
-###  {#Decentralizedcryptocurrencyexchange(DEX)-Summary:}
-
-### Summary: {#Decentralizedcryptocurrencyexchange(DEX)-Summary:}
-
-| period | matcher's fee | miner's fee | left for the matcher |
-| :--- | :--- | :--- | :--- |
-| last month | 681.42336675 waves | 569.721 waves | 16.39% |
-| all time | 3476.01418346 waves | 2824.771 waves | 18.74% |
-
-To sum up, for all time the matcher keeps only 18.74% of fees and everything else it pays to miners for placing transactions in blocks \(data for 8.02.2018\).
-
-# 4. Installing DEX {#Decentralizedcryptocurrencyexchange(DEX)-InstallingDEX}
+# 5. Installing DEX {#Decentralizedcryptocurrencyexchange(DEX)-InstallingDEX}
 
 * Download the Waves client from our official website,
   [www.wavesplatform.com](http://www.wavesplatform.com/)
@@ -113,7 +115,7 @@ To sum up, for all time the matcher keeps only 18.74% of fees and everything els
   [client.wavesplatform.com](https://client.wavesplatform.com/)
 * [Deposit your bitcoins](/waves-client/transfers-and-gateways/bitcoin-transfers.md) or any [supported coins and tokens](/en/waves-client/wallet-management.md) into the wallet and [start trading using the Waves DEX](/waves-client/waves-dex.md).
 
-# 5. Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
+# 6. Installing your Own Matcher {#Decentralizedcryptocurrencyexchange(DEX)-InstallingyourOwnMatcher}
 
 * Users can install their own matcher by installing the Waves software and enabling the matching functionality.
 * The Matcher earns fees from the services it provides, so you can substantially increase your mining revenues.
