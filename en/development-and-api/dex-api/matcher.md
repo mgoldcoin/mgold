@@ -226,5 +226,21 @@ POST /matcher/orders/cancel
 | timestamp | Long | UNIX timestamp in millisec |
 | signature | Array\[Byte\] | Signature of all transaction data |
 
+## Tradable balance
 
+How much you can spend in orders on the given pair.
 
+```
+GET /matcher/orderbook/{{amountAsset}}/{{priceAsset}}/tradableBalance/{{address}}
+```
+
+**Response JSON example:**
+
+```json
+{
+  "zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy": 11,
+  "WAVES": 1024460284
+}
+```
+
+So, in pair `zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy/WAVES` you can spend `1024460284 WAVES` and `11 Bitcoin Cash`.
