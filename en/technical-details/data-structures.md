@@ -119,6 +119,27 @@ The signature is calculated from the following bytes:
 
 ### Transactions
 
+Transaction types:
+
+| № | Transaction type | 
+| --- | --- |
+| 1 | GenesisTransaction |
+| 2 | PaymentTransaction\* |
+| 3 | IssueTransaction |
+| 4 | TransferTransaction |
+| 5 | ReissueTransaction |
+| 6 | BurnTransaction |
+| 7 | ExchangeTransaction |
+| 8 | LeaseTransaction |
+| 9 | LeaseCancelTransaction |
+| 10 | CreateAliasTransaction |
+| 11 | MassTransferTransaction |
+| 12 | DataTransaction |
+| 13 | SetScriptTransaction |
+| 14 | SponsorFeeTransaction |
+
+\* - Deprecated
+
 #### Genesis transaction
 
 | \# | Field name | Type | Position | Length |
