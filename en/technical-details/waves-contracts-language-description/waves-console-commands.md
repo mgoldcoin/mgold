@@ -6,7 +6,7 @@
 
 * issue\(name, description, decimals, quantity, reissuable, fee, timestamp, version, seed\).
 
-```cpp
+```js
  /**
  * Creates signed issue transaction.
  * @param {string} name - Name of asset, max 16 symbols.
@@ -37,7 +37,7 @@ declare function issue(
 
 reissue\(assetId, quantity, reissuable, fee, timestamp, version, seed\)
 
-```cpp
+```js
  /**
  * Creates signed reissue transaction.
  * @param {string} assetId - Id of earlier issued asset.
@@ -64,7 +64,7 @@ declare function reissue(
 
 burn\(assetId, quantity, fee, timestamp, version,seed\)
 
-```cpp
+```js
  /**
  * Creates signed burn transaction.
  * @param {string} assetId - Id of earlier issued asset.
@@ -89,7 +89,7 @@ declare function burn(
 
 transfer\(amount, recipient, assetId, attachment, feeAssetId, fee, timestamp, version, seed\)
 
-```cpp
+```js
  /**
  * Creates signed transfer transaction.
  * @param {number} amount - Amount to transfer.
@@ -120,7 +120,7 @@ declare function transfer(
 
 lease\(amount: number, recipient, fee, timestamp, version, seed\)
 
-```cpp
+```js
  /**
  * Creates signed lease transaction.
  * @param {number} amount - Amount to lease.
@@ -145,7 +145,7 @@ declare function lease(
 
 cancelLease\(txId, fee, timestamp, version, chainId, seed\)
 
-```cpp
+```js
  /**
  * Creates signed lease transaction.
  * @param {number} txId - Id of previous lease transaction.
@@ -169,7 +169,7 @@ declare function cancelLease(
 
 createAlias\(alias: string, fee, timestamp, version, seed\)
 
-```cpp
+```js
  /**
  * Creates signed lease transaction.
  * @param {string} alias - Alias for a sender's address.
@@ -192,7 +192,7 @@ declare function createAlias(
 
 massTransfer\(transfers\[amount, recipient\], fee, timestamp, version, seed\)
 
-```cpp
+```js
 /**
  * Creates signed massTransfer transaction.
  * @param {(string | number)[]} transfers - Array of recepients and amounts, 
@@ -217,7 +217,7 @@ declare function massTransfer(
 
 compile\(contract\)
 
-```cpp
+```js
 declare function compile(code:string):string
 ```
 
@@ -225,7 +225,7 @@ declare function compile(code:string):string
 
 script\(script, fee, timestamp, version, seed\)
 
-```cpp
+```js
  declare function script(
   script: string,
   fee: number = 1000000,
@@ -239,7 +239,7 @@ script\(script, fee, timestamp, version, seed\)
 
 broadcast\(tx\)
 
-```cpp
+```js
  /**
  * Sends transaction to the Waves network using env.API_BASE endpoint.
  * @param {any} tx - Transaction to send to the network.
@@ -252,7 +252,7 @@ declare function broadcast(tx: any)
 
 keyPair\(env.SEED\)
 
-```cpp
+```js
  /**
  * Generates keyPair from seed.
  * @param {string} seed - Seed used to generate keyPair, default: env.SEED.
@@ -265,7 +265,7 @@ declare function keyPair(seed: string = env.SEED): KeyPair
 
 publicKey\(env.SEED\)
 
-```cpp
+```js
  /**
  * Generates publicKey from seed.
  * @param {string} seed - Seed used to generate publicKey, default: env.SEED.
@@ -278,7 +278,7 @@ declare function publicKey(seed: string = env.SEED): string
 
 privateKey\(env.SEED\)
 
-```cpp
+```js
  /**
  * Generates privateKey from seed.
  * @param {string} seed - Seed used to generate privateKey, default: env.SEED.
@@ -291,7 +291,7 @@ declare function privateKey(seed: string = env.SEED): string
 
 address\(keyPair \| env.SEED\)
 
-```cpp
+```js
 /**
  * Generates address from KeyPair or Seed.
  * @param {string} keyPairOrSeed - KeyPair or Seed used to generate address, default: env.SEED.
