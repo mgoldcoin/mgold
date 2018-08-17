@@ -57,6 +57,43 @@ Thus, the fee that the matcher gets from users for these transactions is**0.0021
 
 ![](/_assets/matcher.png)Figure 2: example of matcher's fee work, TX1 - Transaction1, TX2 - Transaction2, Ord1 - Order1, Ord2 - Order2, Ord3 - Order3
 
+# 4. Tradable balance
+
+Tradable balance shows, how much you can spend in orders. It calculates by the formula:
+
+```
+tradable_balance(asset) = balance_of_asset - spendings_of_asset_in_transactions_in_utx_pool - reserved_balance_for_asset
+```
+
+## balance_of_asset
+
+The current balance in `asset`:
+
+* [WAVES](../development-and-api/waves-node-rest-api/address.md#get-addressesbalanceaddress);
+* [assets](../development-and-api/waves-node-rest-api/address.md#get-assetsbalanceaddress)).
+
+## spendings_of_asset_in_transactions_in_utx_pool
+
+The sum of all spending by the asset of unconfirmed transactions.
+
+For example, if you are transferring `WAVES` and sending a [data transaction](../technical-details/data-transaction.md)
+and these transactions haven't yet forged, `spendings_of_WAVES_in_transactions_in_utx_pool` will be `amount_of_transferred_waves + transfer_fee + data_transaction_fee`.
+
+Note: UTX pool of one node could not be the same as on other node.
+
+## reserved_balance_for_asset
+
+Also known as `open volume`. The sum of all spending by the asset of all orders in pairs with this asset.
+
+For example, you buy `BTC` by `Bitcoin Cash` (1) and sell `Bitcoin Cash` for `WCT` (2), and these orders are still active and haven't filled yet. 
+Then `spendings_of_Bitcoin_Cash_in_active_orders` will be `amount_of_spending_Bitcoin_Cash in (1) + amount_of_selling_Bitcoin_Cash in (2)`.
+
+Note, for `WAVES` order's fees are included in reserved balance.
+
+As you know, all orders in `DEX` requires `WAVES` as the fee. Because of this, there is an exception for the rule we spoke above.
+If you buy `WAVES` by other asset, reserved balance in waves in this order will be: `max(fee - amount_of_received_waves_in_this_order, 0)`.
+So, you can buy `WAVES` for `BTC` even if you have no `WAVES`.
+
 ###  {#Decentralizedcryptocurrencyexchange(DEX)-Summary:}
 
 ### Summary: {#Decentralizedcryptocurrencyexchange(DEX)-Summary:}
