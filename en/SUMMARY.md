@@ -106,6 +106,7 @@
   * [Standard library](technical-details/waves-contracts-language-description/standard-library.md)
   * [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
   * [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
+  * [Waves Console Commands](technical-details/waves-contracts-language-description/waves-console-commands.md)
   * [Examples](technical-details/waves-contracts-language-description/examples.md)
     * [Language + Standard Library Usage](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
     * [Multi-Signature Account](technical-details/waves-contracts-language-description/examples/multi-signature-account.md)
