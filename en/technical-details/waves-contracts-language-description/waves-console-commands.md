@@ -1,5 +1,7 @@
 # Waves Console Commands
 
+[Waves IDE](https://ide.wavesplatform.com) has a Waves console feature which supports different commands:
+
 ## Creates signed issue transaction
 
 * issue\(name, description, decimals, quantity, reissuable, fee, timestamp, version, seed\).
@@ -17,7 +19,7 @@
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function issue(
   name: string,
   description: string,
@@ -29,11 +31,7 @@ declare function issue(
   version: number = 1,
   seed: string = env.SEED
 )
-
-
 ```
-
-
 
 ## Creates signed reissue transaction
 
@@ -50,7 +48,7 @@ reissue\(assetId, quantity, reissuable, fee, timestamp, version, seed\)
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function reissue(
   assetId: string,
   quantity: number,
@@ -60,11 +58,7 @@ declare function reissue(
   version: number = 1,
   seed: string = env.SEED
 )
-
-
 ```
-
-
 
 ## Creates signed burn transaction
 
@@ -80,7 +74,7 @@ burn\(assetId, quantity, fee, timestamp, version,seed\)
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function burn(
   assetId: string,
   quantity: number,
@@ -108,7 +102,7 @@ transfer\(amount, recipient, assetId, attachment, feeAssetId, fee, timestamp, ve
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function transfer(
   amount: number,
   recipient: string,
@@ -136,7 +130,7 @@ lease\(amount: number, recipient, fee, timestamp, version, seed\)
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function lease(
   amount: number,
   recipient: string,
@@ -145,8 +139,6 @@ declare function lease(
   version: number = 1,
   seed: string = env.SEED
 )
-
-
 ```
 
 ## Creates signed cancel lease transaction
@@ -162,7 +154,7 @@ cancelLease\(txId, fee, timestamp, version, chainId, seed\)
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function cancelLease(
   txId: string,
   fee: number = 100000,
@@ -186,7 +178,7 @@ createAlias\(alias: string, fee, timestamp, version, seed\)
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function createAlias(
   alias: string,
   fee: number = 100000,
@@ -196,13 +188,9 @@ declare function createAlias(
 )
 ```
 
-
-
 ## Creates signed massTransfer transaction
 
 massTransfer\(transfers\[amount, recipient\], fee, timestamp, version, seed\)
-
-
 
 ```cpp
 /**
@@ -215,7 +203,7 @@ massTransfer\(transfers\[amount, recipient\], fee, timestamp, version, seed\)
  * @param {number} version - Transaction version, default: 1.
  * @param {string} seed - Seed to sign transaction, default: env.SEED.
  */
- 
+
 declare function massTransfer(
   transfers: (string | number)[],
   assetId: string = '',
@@ -223,11 +211,7 @@ declare function massTransfer(
   timestamp: number = Date.now(),
   version: number = 1,
   seed: string = env.SEED)
-
-
 ```
-
-
 
 ## Compile smart contract
 
@@ -237,7 +221,7 @@ compile\(contract\)
 declare function compile(code:string):string
 ```
 
-# signed script transaction 
+# signed script transaction
 
 script\(script, fee, timestamp, version, seed\)
 
@@ -249,8 +233,6 @@ script\(script, fee, timestamp, version, seed\)
   version: number = 1,
   seed: string = env.SEED
 )
-
-
 ```
 
 ## Sends transaction to the Waves network using env.API\_BASE endpoint
@@ -262,10 +244,8 @@ broadcast\(tx\)
  * Sends transaction to the Waves network using env.API_BASE endpoint.
  * @param {any} tx - Transaction to send to the network.
  */
- 
+
 declare function broadcast(tx: any)
-
-
 ```
 
 # Generates keyPair from seed
@@ -277,10 +257,8 @@ keyPair\(env.SEED\)
  * Generates keyPair from seed.
  * @param {string} seed - Seed used to generate keyPair, default: env.SEED.
  */
- 
+
 declare function keyPair(seed: string = env.SEED): KeyPair
-
-
 ```
 
 ## Generates publicKey from seed
@@ -292,10 +270,8 @@ publicKey\(env.SEED\)
  * Generates publicKey from seed.
  * @param {string} seed - Seed used to generate publicKey, default: env.SEED.
  */
- 
+
 declare function publicKey(seed: string = env.SEED): string
-
-
 ```
 
 ## Generates privateKey from seed
@@ -307,13 +283,9 @@ privateKey\(env.SEED\)
  * Generates privateKey from seed.
  * @param {string} seed - Seed used to generate privateKey, default: env.SEED.
  */
- 
+
 declare function privateKey(seed: string = env.SEED): string
-
-
 ```
-
-
 
 ## Generates address from KeyPair or Seed
 
@@ -324,10 +296,8 @@ address\(keyPair \| env.SEED\)
  * Generates address from KeyPair or Seed.
  * @param {string} keyPairOrSeed - KeyPair or Seed used to generate address, default: env.SEED.
  */
- 
+
 declare function address(keyPairOrSeed: KeyPair | string = env.SEED)
-
-
 ```
 
 
