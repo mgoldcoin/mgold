@@ -1,28 +1,29 @@
 # Standard Library
-## General fields
-This fields are usual for all transaction types (except GenesisTransaction, it has no `.proven` field):
 
-* `.header` - the general information about transaction
-  - `.id` - return a transaction's id ByteVector
-  - `.fee` - return a transaction's fee as a Long number
-  - `.timestamp` - return a transaction's unix timestamp * 1000 as Long number of ms
-  - `.version` - return a transaction's version as a Long number
+## Common fields
+These fields are common for all transaction types:
 
-* `.proven` -  the general information about proven of transaction
-   - `.senderPk` - return the sender public key as ByteVector
-   - `.bodyBytes` - return a transaction's body as ByteVector
-   - `.proofs` - return the list of proofs for transaction as List[ByteVector]
+- `.id` - transaction id as ByteVector
+- `.fee` - transaction fee as Long
+- `.timestamp` - transaction unix timestamp in milliseconds as Long
+- `.version` - transaction version as Long
+
+These fields are common for all transaction types except Genesis:
+- `.sender` - sender address
+- `.senderPublicKey` - sender public key as ByteVector
+- `.bodyBytes` - transaction body as ByteVector
+- `.proofs` - list of transaction proofs as List[ByteVector]
    
-## Issuing
+## Issuing Assets
 
 | field	| [IssueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html) |	[ReissueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html)	| [BurnTransaction](https://docs.wavesplatform.com/waves-client/assets-management/burn-an-asset.html) |
 | ------------- | ------------- | ------------- | ------------- |
-| quantity	| + |	+	| + |
-| name	| +	| | | 
-| description |	+ |		| |
-| reissuable |	+ |	+	| |
-| decimals |	+		| | |
-| assetId	|	 | + | + |
+| quantity	  | + | + | + |
+| name	      | + |   |   | 
+| description |	+ |   |   |
+| reissuable  |	+ |	+ |   |
+| decimals    |	+ |   |   |
+| assetId	  |   | + | + |
 
 * `.quantity` - return a quantity of asset which are involved in transaction as a Long number
 * `.name` - return a name of asset as ByteVector
@@ -31,20 +32,22 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 * `.decimals` - return a number of simbols after comma as a Long
 * `.assetId` - return id of an existed asset as ByteVector
 
-## Transferring
+## Transfers
 
 | field | TransferTransaction	| [MassTransferTransaction](https://docs.wavesplatform.com/technical-details/mass-transfer-transaction.html)	| PaymentTransaction* |
 | ------------- | ------------- | ------------- | ------------- |
-| feeAssetId	| +	| +	| |
-| amount	| +	|	 | + | 
-| assetId	| +	| + |  | 
-| recepient |	+	|	| + |
-| attachment	| +	| +	| | 
-| totalAmount	| |	+	| |
-| transfers	|		| + | |
-|transferCount|	|	+ |	| 
+| feeAssetId	| +	| +	|   |
+| amount	    | +	|	| + | 
+| assetId       | +	| + |   | 
+| recipient     | + |	| + |
+| attachment	| +	| +	|   | 
+| totalAmount	|   | + |   |
+| transfers	    |   | + |   |
+| transferCount |   | + |   | 
 
-* PaymentTransaction - the old version of TransferTransaction
+* PaymentTransaction is an obsolete version of TransferTransaction
+* `.recipient` - return transfer recipient as address or alias
+* `.assetId` - return id of the asset being transferred as Option[ByteVector]
 * `.feeAssetId` - return an id of fee's asset as Option[ByteVector]
 * `.totalAmount` - return a total amount of transferred asset as a Long number 
 * `.transfers` - return all transfer's transactions of mass transfer as List[Transfer]
@@ -86,7 +89,7 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
    - `.recipient` - return an address for initial assets placing as Address
 * DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
    - `.data` - List[DataEntriesType]
-* SetScriptTransaction - sets the script which veri es all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
+* SetScriptTransaction - sets the script which verifies all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
    - `.script` - Option[ByteVector]
 * SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details aboutfee sponsorship.
    - `.assetId` - return an asset id as ByteVector
@@ -96,25 +99,41 @@ This fields are usual for all transaction types (except GenesisTransaction, it h
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
+* Operators:
+   - Integer arithmetic: `+`, `-`, `*`, `/`, `%`
+   - `+` is also used for string and byte vector concatenation
+   - Comparison: `==`, `!=`, `>=`, `<=`, `>`, `<`
+   - Unary operators: integer `-`, boolean `!`
 
-* Native Waves context functions:
-   - `addressFromRecipient` : `Option(ByteVector) => addressType`
-   - `transactionById` : `ByteVector => Option[Transaction]` - provides tx in blockchain by id
-   - `assetBalance`: `addressOrAliasType => Long` - provide balance info for any account
-   - `transactionHeightById`: `ByteVector => UNION(LONG, UNIT)` - provides height of tx in blockchain by id
-   
-* User's Waves context functions
+* Pure functions:
+   - `getElement(list, index)`: accesses element by index
+   - `size`: for lists, strings and byte vectors
+   - `take`, `drop`, `takeRight`, `dropRight` for strings and byte vectors
+   - `toBytes` for booleans, numbers and strings
+   - `toString` for booleans and numbers
+   - `isDefined` tells whether an `Option` is something or nothing
+   - `extract` extracts value from an `Option`
+   - `throw(message)` terminates execution. The message is optional but can help figuring out why a script fails
+
+* Waves context functions:
    - `addressFromPublicKey` : `ByteVector => addressType`
-   - `addressFromString` : `String => UNION(addressType.typeRef, UNIT)`
+   - `addressFromRecipient` : `Option[ByteVector] => addressType`
+   - `addressFromString` : `String => Option[Address]`
+   - `assetBalance`: `addressOrAliasType => Long` - provide balance info for any account
+   - `transactionById` : `ByteVector => Option[Transaction]` - provides tx in blockchain by id
+   - `transactionHeightById`: `ByteVector => Option[Long]` - provides height of tx in blockchain by id
    - `wavesBalance`: `addressOrAliasType => Long` - provide balance info for any account
  
-* `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from         WavesContracts via:
-    
+* `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from WavesContracts via:
    - `getInteger`:`(accountAddress: ByteVector, key: String) => Option[Long]`
    - `getBoolean`:`(accountAddress: ByteVector, key: String) => Option[Boolean]`
    - `getBinary`:`(accountAddress: ByteVector, key: String) => Option[ByteVector]`
    - `getString`:`(accountAddress: ByteVector, key: String) => Option[String]`
-  
+
+* The four functions above have overloads that access data stored in a Data transaction, using either key or array index, e.g.
+   - `getInteger`:`(data: List[DataEntry], key: String) => Option[Long]`
+   - `getString`:`(data: List[DataEntry], index: Long) => String`
+
 * Crypto functions:
 	- `sigVerify`:`(body: ByteVector, signature: ByteVector, pubKey: ByteVector) => Boolean`
 	- `keccak256`,`blake2b256`, `sha256` : `ByteVector => ByteVector`
