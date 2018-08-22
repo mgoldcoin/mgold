@@ -1,10 +1,10 @@
 # Waves Node in Docker
 
-The easiest way to run a Waves Node is by using the new **Waves Docker container**. It requires just **one command** to enable everything or change the settings of the node.
+The easiest way to **run a Waves Node** is by using the new **Waves Docker container**. It requires just **one command** to enable everything or change the settings of the node.
 
 ## About the image
 
-* This Docker image contains scripts and configs to run Waves Node from version 0.13.0 for TESTNET, MAINNET or CUSTOM networks.
+* This Docker image contains scripts and configs to run Waves Node from **Version 0.13.0 **for TESTNET, MAINNET or CUSTOM networks.
 * The image is focused on fast and convenient deployment of Waves Node.
 * Container downloads `.jar` file and configuration files from the [releases section](https://github.com/wavesplatform/Waves/releases) and runs it.
 
