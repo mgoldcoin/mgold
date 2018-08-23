@@ -8,7 +8,7 @@
 
 **Smart contracts** will bring new benefits to the Waves ecosystem:
 
-1. Smart accounts will allow for **multisignature** wallets, which cannot be controlled by one user only. This will be particularly useful for token sales, since funds can be held safely during deployment.
+1. Smart accounts will allow for **multisignature** wallets, which cannot be controlled by one user only. This will be useful for token sales, since funds can be held safely during deployment.
 2. Waves smart contracts **do not use gas** for non-Turing complete smart contracts which means that fixed costs are always known upfront.
 3. Decentralized applications \(**DApps**\) which are based on Turing-complete smart contracts will be able to complete complicated processes on the Waves blockchain, meeting a wide range of different criteria.
 
@@ -48,4 +48,3 @@ The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coin
 For example, if you use a scripted asset \(smart asset\) then you pay 400000 wavelets, if you also have a scripted transaction then you have to pay **2 \* 400000 **wavelets.
 
 **Note.** you can find more technical details about our smart contracts implementation [**here**](/technical-details/waves-contracts-language-description.md).
-
