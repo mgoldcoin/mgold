@@ -18,9 +18,12 @@ If you use DEB-packages to install a node, they also contain configuration files
 
 ### Overriding parameters when running JAR-file
 
-It is possible to overwrite any parameters by providing an additional configuration file. To do this pass a path to it as the first command line parameter then starting Waves Node application.
+If you run JAR file it's recommended to override default parameters by passing a path to config file as the command line parameter then starting Waves Node application.
 
 ```java -jar waves-all-0.13.3.jar waves.conf```
+
+Typically this file should contain you node's unique characteristics (ip, name, keys, etc...) and network-specific parameters similar to waves-mainnet or waves-testnet configs from previous sections (files shipped with DEB packages).
+
 
 ## Configuration Secitions
 
