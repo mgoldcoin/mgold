@@ -6,7 +6,7 @@ The configuration system of Waves Node uses HOCON format. HOCON stands for Human
 
 ## Default Configs and Overrides
 
-### Default Configuration Shipped with JAR
+### Default Configuration Embedded into JAR
 
 Complete default Waves Node configuration file which is embedded into jar-file can be found here: https://github.com/wavesplatform/Waves/blob/master/src/main/resources/application.conf
 
