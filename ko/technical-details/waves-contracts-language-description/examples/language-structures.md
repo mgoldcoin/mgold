@@ -169,7 +169,7 @@ If one wants to distinguish `PointA` from `PointB`, he needs to pattern-match th
 ```
 let v = match (p) {
  case pb: PointB => p.z # compilation works, because pb is of type PointB in this context
- case pa: _ => throw    # compilation works, because throw is on type `Nothing`
+ case pa: _ => throw()  # compilation works, because throw() returns `Nothing`
 }
 ```
 

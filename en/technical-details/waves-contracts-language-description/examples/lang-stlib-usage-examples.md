@@ -142,10 +142,10 @@ RIDE also inherits such functionality but in a more simple mode, a basic stateme
 match tx {
     case a: TypeA => 0
     case b: TypeB => 1
-    case other => throw
+    case other => throw()
  }
 ```
-`throw` signals the occurrence of an exception during a script execution. In case of `throw` the transaction does not pass into the blockchain.
+`throw()` signals the occurrence of an exception during a script execution. In case of `throw` the transaction does not pass into the blockchain.
 
 ## Union Types
 
@@ -171,7 +171,7 @@ If one wants to distinguish `PointA` from `PointB`, he needs to pattern-match th
 ```
 let v = match (p) {
  case pb: PointB => p.z # compilation works, because pb is of type PointB in this context
- case pa: _ => throw    # compilation works, because throw is on type `Nothing`
+ case pa: _ => throw()  # compilation works, because throw() returns `Nothing`
 }
 ```
 
