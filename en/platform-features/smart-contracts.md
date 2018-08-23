@@ -8,13 +8,13 @@
 
 **Smart contracts** will bring new benefits to the Waves ecosystem:
 
-1. Smart accounts will allow for **multisignature** wallets, which cannot be controlled by simply one person alone. This will be particularly useful for token sales, since funds can be held safely during deployment.
-2. Waves smart contracts **do not use gas** for non-Turing complete smart contracts — which means that fixed costs are always known upfront.
+1. Smart accounts will allow for **multisignature** wallets, which cannot be controlled by one user only. This will be particularly useful for token sales, since funds can be held safely during deployment.
+2. Waves smart contracts **do not use gas** for non-Turing complete smart contracts which means that fixed costs are always known upfront.
 3. Decentralized applications \(**DApps**\) which are based on Turing-complete smart contracts will be able to complete complicated processes on the Waves blockchain, meeting a wide range of different criteria.
 
 ## Stages of Waves Smart Contracts Implementation
 
-There are two Stages, Figure 2:
+There are two Stages:
 
 1. **Non-Turing Complete Smart Contracts** which cover a large proportion of use cases, including smart accounts.
 
