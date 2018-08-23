@@ -6,7 +6,7 @@
 
 ## Benefits of Smart Contracts on Waves Platform
 
-**Smart contracts** will bring new additions and added benefits to the Waves ecosystem:
+**Smart contracts** will bring new benefits to the Waves ecosystem:
 
 1. Smart accounts will allow for **multisignature** wallets, which cannot be controlled by simply one person alone. This will be particularly useful for token sales, since funds can be held safely during deployment.
 2. Waves smart contracts **do not use gas** for non-Turing complete smart contracts — which means that fixed costs are always known upfront.
@@ -16,7 +16,7 @@
 
 There are two Stages, Figure 2:
 
-1. **Non-Turing Complete Smart Contracts** which cover a large proportion of use cases, including smart accounts. 
+1. **Non-Turing Complete Smart Contracts** which cover a large proportion of use cases, including smart accounts.
 
 2. **Turing Complete Smart Contracts** which will allow the creation of decentralised applications on the blockchain.
 
@@ -41,7 +41,6 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 
 **In every test**, we conducted 10 tests and calculated the average cost. The full results of performance tests that we conducted are presented [here](/technical-details/waves-contracts-language-description/script-performance-tests.md).
 
-  
 **As a result, we define the following constraint for a script cost:**
 
 a script must have a size no more 8 kB and must be faster than 20 executions of `sigVerify`, that is most expensive operation.  
