@@ -1,3 +1,5 @@
+# Waves Node Configuration
+
 ## HOCON format for configuration files {#user-content-hocon-format-for-configuration-files}
 
 The configuration system of Waves Node uses HOCON format. HOCON stands for Human-Optimized Config Object Notation. The complete description of HOCON could be found in the [Official HOCON documentation](https://github.com/typesafehub/config/blob/master/HOCON.md). The advantages of HOCON are simple syntax and ability to use comments.
