@@ -1,8 +1,8 @@
 # Waves Official Resources
 
 * [**Official website**](https://wavesplatform.com)
-* [**New online client \(beta\)**](https://client.wavesplatform.com)
-* [**Desktop Client \(beta\)**](https://wavesplatform.com/product)
+* [**New online client**](https://client.wavesplatform.com)
+* [**Desktop Client**](https://wavesplatform.com/product)
 * [**Online Wallet**](https://client.wavesplatform.com/wallet)
 * [**Mobile application for iOS**](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8)
 * [**Mobile app for Android**](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet)
