@@ -1,8 +1,8 @@
 # Waves官网资源
 
 * [**官方网站**](https://wavesplatform.com)
-* [**新的在线客户端 \(测试版\)**](https://beta.wavesplatform.com)
-* [**远程桌面客户端 \(测试版\)**](https://wavesplatform.com/product)
+* [**新的在线客户端**](https://beta.wavesplatform.com)
+* [**远程桌面客户端**](https://wavesplatform.com/product)
 * [**在线钱包**](https://beta.wavesplatform.com/wallet)
 * [**iOS移动应用程序**](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8)
 * [**安卓移动应用程序**](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet)
