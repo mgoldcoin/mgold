@@ -2,6 +2,12 @@
 
 The easiest way to **run a Waves Node** is by using the new **Waves Docker container**. It requires just **one command** to enable everything or change the settings of the node.
 
+## Prerequisites 
+
+You need the latest version of Docker installed.
+
+Please, follow installation istructions at [Docker Site](https://docs.docker.com/engine/installation/).
+
 ## About the image
 
 * This Docker image contains scripts and configs to run Waves Node from **Version 0.13.0 **for TESTNET, MAINNET or CUSTOM networks.
@@ -58,4 +64,3 @@ The simple rule of how to set a value in the configuration file:
 4. Capitalize the final string.
 
 For instance, if you want to set the value of `waves.rest-api.enable` , pass an environment variable`WAVES__REST_API__ENABLE=no`;
-
