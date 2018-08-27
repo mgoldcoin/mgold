@@ -1,31 +1,36 @@
 # Description
+This section describes all the details of cryptographic algorithms which are used to:
+1. Create private and public keys from seed.
+2. Create addresses from public key.
+3. Create blocks and transactions signing.
 
-This document describes how the algorithms used in the project to create private and public keys from seed, addresses from public key, blocks and transactions signing. There are all the details of the use of cryptographic algorithms in the project area.
-
-Briefly: in the project to create a cryptographic hashes used`Blake2b256`and`Keccak256`algorithms \(in the form of hash chain and separately\).`Curve25519`\(ED25519 with X25519 keys\) scheme applied to create and verify signatures.`Base58`is used to create the string form of bytes. If you want to create an application, you should find the implementation of these algorithms on your programming language.
+We use:
+1.  `Blake2b256` and `Keccak256` algorithms \(in the form of hash chain\) to create a cryptographic hashes used .
+2. `Curve25519` \(ED25519 with X25519 keys\) in order to create and verify signatures.
+3. `Base58` is used to create the string form of bytes.
 
 **Note**: We use KECCAK which differs slightly than that assigned as the SHA-3 (FIPS-202).
 
 
 # Bytes encoding Base58
 
-In order to ease human readable, all arrays of bytes in the project are encoded by Base58 algorithm with Bitcoin alphabet.
+All arrays of bytes in the project are encoded by Base58 algorithm with Bitcoin alphabet to make it ease human readable (text readability).
 
 ## Example
 
-The string`teststring`are coded into the bytes`[5, 83, 9, -20, 82, -65, 120, -11]`. The bytes`[1, 2, 3, 4, 5]`are coded into the string`7bWpTW`.
+The string `teststring` is coded into the bytes `[5, 83, 9, -20, 82, -65, 120, -11]`. The bytes `[1, 2, 3, 4, 5]` are coded into the string `7bWpTW`.
 
 # Creating a private key from a seed
 
-A seed string is a representation of entropy, from which you can re-create deterministically all the private keys for one wallet. It should be long enough so that the probability of selection was a unrealistic negligible.
+A seed string is a representation of entropy, from which you can re-create deterministically all the private keys for one wallet. It should be long enough so that the probability of selection is an unrealistic negligible.
 
-In fact, seed should be a array of bytes, but for ease of memorization lite wallet uses[Brainwallet](https://en.bitcoin.it/wiki/Brainwallet), to ensure that the seed is made up of words, that is easy to write down or remember. The app takes the UTF-8 bytes of the string and uses them to create keys and addresses.
+In fact, seed should be an array of bytes but for ease of memorization lite wallet uses [Brainwallet](https://en.bitcoin.it/wiki/Brainwallet), to ensure that the seed is made up of words and easy to write down or remember. The application takes the UTF-8 bytes of the string and uses them to create keys and addresses.
 
-For example, seed string`manage manual recall harvest series desert melt police rose hollow moral pledge kitten position add`after reading as UTF-8 bytes and encoding them to Base58 string are coded as`xrv7ffrv2A9g5pKSxt7gHGrPYJgRnsEMDyc4G7srbia6PhXYLDKVsDxnqsEqhAVbbko7N1tDyaSrWCZBoMyvdwaFNjWNPjKdcoZTKbKr2Vw9vu53Uf4dYpyWCyvfPbRskHfgt9q`.
+For example, seed string `manage manual recall harvest series desert melt police rose hollow moral pledge kitten position add` after reading this string as UTF-8 bytes and encoding them to Base58, the string will be coded as `xrv7ffrv2A9g5pKSxt7gHGrPYJgRnsEMDyc4G7srbia6PhXYLDKVsDxnqsEqhAVbbko7N1tDyaSrWCZBoMyvdwaFNjWNPjKdcoZTKbKr2Vw9vu53Uf4dYpyWCyvfPbRskHfgt9q`.
 
-A seed string is involved with the creation of private keys. To create private key using the official web wallet or the node, to 4 bytes of int 'nonce' field \(big-endian representation\), which initially has a value of 0 and increases every time you create the new address, should be prepended to seed bytes. Then we use this array of bytes for calculate hash`keccak256(blake2b256(bytes))`. This resulting array of bytes we call`account seed`, from it you can definitely generate one private and public key pair. Then this bytes hash passed in the method of creating a pair of public and private key of`Curve25519`algorithm.
+A seed string is involved with the creation of private keys. To create private key using the official web wallet or the node, to 4 bytes of int 'nonce' field \(big-endian representation\), which initially has a value of 0 and increases every time you create the new address, should be prepended to seed bytes. Then we use this array of bytes for calculate hash `keccak256(blake2b256(bytes))`. This resulting array of bytes we call `account seed`, from it you can definitely generate one private and public key pair. Then this bytes hash passed in the method of creating a pair of public and private key of `Curve25519` algorithm.
 
-Waves uses`Curve25519`-`ED25519`signature with X25519 keys \(Montgomery form\), but most of embedded cryptography devices and libraries don't support X25519 keys. But[there're the libraries with conversion functions from ED25519 keys to X25519 \(Curve25519\) crypto\_sign\_ed25519\_pk\_to\_curve25519\(curve25519\_pk, ed25519\_pk\) for public key and crypto\_sign\_ed25519\_sk\_to\_curve25519\(curve25519\_sk, ed25519\_skpk\) for private key](https://download.libsodium.org/doc/advanced/ed25519-curve25519.html). For example, I use the ED25519 keys and the signature inside the Ledger application, then it need to convert the keys from the device to X25519 format using that function on the client side**and create the waves address from X25519 public key**.[There're an example of convertion libsodium ED25519 keys and signature to Curve25519](https://gist.github.com/Tolsi/d64fcb09db4ead75e5eeeab445284c93).
+Waves uses `Curve25519`-`ED25519` signature with X25519 keys \(Montgomery form\), but most of embedded cryptography devices and libraries don't support X25519 keys. But [there're the libraries with conversion functions from ED25519 keys to X25519 \(Curve25519\) crypto\_sign\_ed25519\_pk\_to\_curve25519\(curve25519\_pk, ed25519\_pk\) for public key and crypto\_sign\_ed25519\_sk\_to\_curve25519\(curve25519\_sk, ed25519\_skpk\) for private key](https://download.libsodium.org/doc/advanced/ed25519-curve25519.html). For example, I use the ED25519 keys and the signature inside the Ledger application, then it need to convert the keys from the device to X25519 format using that function on the client side**and create the waves address from X25519 public key**. [There're an example of convertion libsodium ED25519 keys and signature to Curve25519](https://gist.github.com/Tolsi/d64fcb09db4ead75e5eeeab445284c93).
 
 **NOTE: Not all random 32 bytes can be used as private keys \(but any bytes of any size can be a seed\). The signature scheme for the ED25519 introduces restrictions on the keys, so create the keys only through the methods of the Curve25519 libraries and be sure to make a test of the ability to sign data with a private key and then check it with a public key, however obvious this test might seem.**
 
@@ -36,7 +41,7 @@ There are valid Curve25519 realizations for different languages:
 * [Python](https://github.com/tgalal/python-axolotl-curve25519)
 * [JS](https://github.com/wavesplatform/curve25519-js)
 
-Also some`Curve25519`libraries \(as the one used in our project\) have the`Sha256`hashing integrated, some not \(such as most of c/c++/python libraries\), so you may need to apply it manually. Note that private key is clamped, so not any random 32 bytes can be a valid private key.
+Also some `Curve25519` libraries \(as the one used in our project\) have the `Sha256` hashing integrated, some not \(such as most of c/c++/python libraries\), so you may need to apply it manually. Note that private key is clamped, so not any random 32 bytes can be a valid private key.
 
 ## Example
 
@@ -70,7 +75,7 @@ Account seed \( keccak256\(blake2b256\(account seed bytes\)\) \)
 H4do9ZcPUASvtFJHvESapnxfmQ8tjBXMU7NtUARk9Jrf
 ```
 
-Account seed after`Sha256`hashing \(optional, if your library does not do it yourself\)
+Account seed after `Sha256` hashing \(optional, if your library does not do it yourself\)
 
 ```
 49mgaSSVQw6tDoZrHSr9rFySgHHXwgQbCRwFssboVLWX
@@ -108,7 +113,7 @@ in mainnet network \(chainId 'W'\) will be created this address
 
 # Signing
 
-`Curve25519`is used for all the signatures in the project.
+`Curve25519` is used for all the signatures in the project.
 
 The process is as follows: create the special bytes for signing \(for transaction or block, you can find it [here](/technical-details/data-structures.md)\), then create a signature using these bytes and the private key bytes.
 
