@@ -17,7 +17,13 @@ More specific steps depend on your operating system:
 
 Here you can find a tutorial about [Installing Waves Node Tutorial](https://www.youtube.com/watch?v=CDmMeZlzKbk&feature=youtu.be)
 
+# System Requirements
+**The Minimal requirements are:**
+* 1 vCPU
+* 1Gb RAM
+* 30Gb SSD
 
-
-
-
+**Recommended configuration are:**
+* 2+ vCPU
+* 4Gb RAM
+* +30Gb SSD
