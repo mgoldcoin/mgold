@@ -101,8 +101,9 @@ WavesContracts standard library not only contains predefined data types and inst
 
 * Operators:
    - Integer arithmetic: `+`, `-`, `*`, `/`, `%`
-   - `+` is also used for string and byte vector concatenation
-   - Comparison: `==`, `!=`, `>=`, `<=`, `>`, `<`
+   - `+` is also used for string and byte vector concatenation. Size of output string is limited by 32767 characters, size of byyte vector is limited by 65536 bytes.
+   - Comparison integer-integer or strings-string: `>=`, `<=`, `>`, `<`
+   - Comparison any object of same type: `==`, `!=`
    - Unary operators: integer `-`, boolean `!`
 
 * Pure functions:
