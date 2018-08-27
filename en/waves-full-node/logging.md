@@ -2,7 +2,7 @@
 
 ## About the used framework
 
-For log writing, we use one of the logging frameworks [logback](https://logback.qos.ch/documentation.html). For its correct work, there needs the right configuration, [here](https://logback.qos.ch/manual/configuration.html) you can see how to configure the [logback.xml](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) file.
+For log writing, we use one of the logging frameworks [logback](https://logback.qos.ch/documentation.html). For the logback correct work, it needs the right configuration, [here](https://logback.qos.ch/manual/configuration.html) you can see how to configure the [logback.xml](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) file.
 
 By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logs are written to STDOUT and to `waves.log` file in a human-readable format.
 
