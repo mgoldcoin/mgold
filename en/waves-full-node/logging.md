@@ -1,15 +1,10 @@
 # Logging
 
-By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logs are written to STDOUT and files in a human readable format.
+## About the used framework
 
-You can change this behaviour:
-* In `{waves.directory}/conf/application.ini` if you set up node from the package. `{waves.directory}` is set up in [configuration](./how-to-configure-a-node.md);
-* Using Java's options, if you run the node from the jar. For example, `java -Dsomeoption=somevalue -jar /path/to/waves-all.jar /path/to/config`
+For log writing, we use one of the logging frameworks [logback](https://logback.qos.ch/documentation.html). For its correct work, there needs the right configuration, [here](https://logback.qos.ch/manual/configuration.html) you can see how to configure the [logback.xml](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) file.
 
-If you want to write logs, for example, to `JSON` files, you should define your own logging configuration and specify a path to it with option:
-```
--Dlogback.configurationFile=/path/to/your/logback.xml
-```
+By [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logs are written to STDOUT and to `waves.log` file in a human-readable format.
 
 ## STDOUT
 
@@ -21,6 +16,16 @@ If you want to write logs, for example, to `JSON` files, you should define your 
 * `-Dlogback.file.directory=/path/to/directory/for/logs`. The default directory is `{waves.directory}/log`.
   Changes the directory for logs. Note, the node must have rights to write files to this directory.
 
+If you want to write logs, for example, to `JSON` files, you should define your own logging configuration and specify a path to it with option:
+```
+-Dlogback.configurationFile=/path/to/your/logback.xml
+```
+
+You can change the place where the log will be written:
+* If you set up node from the package: in `{waves.directory}/conf/application.ini` . `{waves.directory}` is set up in [configuration](./how-to-configure-a-node.md);
+* If you run the node from the jar: using Java's options, for example, `java -Dsomeoption=somevalue -jar /path/to/waves-all.jar /path/to/config`
+
+
 According to a [default](https://github.com/wavesplatform/Waves/blob/master/src/main/resources/logback.xml) logging configuration, we have such limits for file logs:
 1. Logs older than 30 days are deleted;
 2. If total size of logs are larger than 1Gb, oldest logs are deleted to fit this limit.
@@ -31,6 +36,7 @@ If you want to change this limits, create own `logback.xml`, edit lines:
 <totalSizeCap>1GB</totalSizeCap>
 ```
 And specify your logback's config (see above).
+
 
 ## Levels of logging
 
