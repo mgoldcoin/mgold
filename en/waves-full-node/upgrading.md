@@ -1,7 +1,7 @@
 # Upgrading
 First of all, you need to check the[ latest Waves Release.](https://github.com/wavesplatform/Waves/releases)
 
-## Upgrading node
+## Upgrading the node
 Basically, the node should be upgraded as follows:
 1. Stop the node
 2. Export all existing blocks in the blockchain to a binary file. Please read [the documentation about export and import of the blockchain.](/waves-full-node/export-and-import-from-the-blockchain.md) or download the binary file.
@@ -17,8 +17,8 @@ sudo -u waves java -cp '/usr/share/waves/lib/*' -Dwaves.directory=/var/lib/waves
 ```
 3. Import the binary file
 4. Remove data folder:
-```bash sudo
-rm -rdf /var/lib/waves/data
+```bash
+sudo rm -rdf /var/lib/waves/data
 ```
 5. Install the new version of the node:
 ```bash
