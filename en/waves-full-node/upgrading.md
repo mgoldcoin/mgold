@@ -1,45 +1,52 @@
-# Upgrading Node
-
+# Upgrading
 First of all, you need to check the[ latest Waves Release.](https://github.com/wavesplatform/Waves/releases)
 
-## Update notes
+## Upgrading node
+Basically, the node should be upgraded as follows:
+1. Stop the node
+2. Export all existing blocks in the blockchain to a binary file. Please read [the documentation about export and import of the blockchain.](/waves-full-node/export-and-import-from-the-blockchain.md) or download the binary file.
+3. Update node's executables
+4. Import binary file
+5. Start the node
 
-If you are updating from version 0.9.x just update the binaries and put voting for feature [\#3](https://github.com/wavesplatform/Waves/pull/3) in the configuration file.  
-In case of updating from earlier versions, please, follow these steps.
-
-## How to update
-
-### Prepare binary blockchain file
-
-Stop the node.
-
-To update your node faster you can download binary [blockchain file \(870k\)](http://blockchain.wavesnodes.com/mainnet-870000). Or export all existing blocks to a binary file. Please, read [documentation about export and import of the blockchain.](/waves-full-node/export-and-import-from-the-blockchain.md)
-
+##Upgrading the node to Latest Version(0.13.4)
+1. Stop the Node
+2. After stopping the node execute following command to export existing blocks to a binary file:
 ```bash
-sudo -u waves java -cp '/usr/share/waves/lib/*' -Dwaves.directory=/var/lib/waves com.wavesplatform.Exporter /etc/waves/waves.conf mainnet
+sudo -u waves java -cp '/usr/share/waves/lib/*' -Dwaves.directory=/var/lib/waves com.wavesplatform.Exporter /etc/waves/waves.conf /usr/share/waves/mainnet
+```
+3. Import the binary file
+4. Remove data folder:
+```bash sudo
+rm -rdf /var/lib/waves/data
+```
+5. Install the new version of the node:
+```bash
+sudo dpkg -i waves_0.13.4_all.deb
+```
+6. Import blocks from the binary file:
+```bash
+sudo -u waves importer /etc/waves/waves.conf /usr/share/waves/mainnet-[some height]
+```
+7. After import do not forget to remove the file:
+```bash
+sudo rm /usr/share/waves/mainnet-[some height]
 ```
 
-### Drop the data
+## Update notes
+With the latest release(Version 0.13.4), the user can activate the following features:
+* Data Transaction, feature number 5
+* Burn Any Tokens, number 6
+* Fee Sponsorship, number 7
+* Fair PoS, feature number 8
+To vote for any set of available features, please add them to node's configuration file as follows:
 
-You have to drop existing `data` folder because now there will be LevelDB folder.
+```bash
+features {
+    supported = [5, 7] # This is an example, make your own decision what vote for
+}
+```
 
-### Update the configuration
+## Update the configuration
 
 Please, read the updated [documentation of Waves node configuration file](/waves-full-node/how-to-configure-a-node.md)
-
-* Move `peers.dat` out of the `data` directory. Change the value of the parameter `waves.network.file` to `${waves.directory}"/peers.dat"` or remove it from your configuration file to use the default value which is the same.
-
-* Remove obsolete parameters `waves.blockchain.blockchain-file`, `waves.blockchain.state-file`, `waves.blockchain.checkpoint-file` and `waves.blockchain.store-transactions-in-state`.
-
-With LevelDB the recommended minimum value of `Xmx` parameter  
-is 2GB, so you can update your memory settings in `application.ini` file accordingly.
-
-### Import the binary file to LevelDB
-
-Install new version and start the import of blocks from the binary file using the following command.
-
-```bash
-sudo -u waves java -cp '/usr/share/waves/lib/*' -Dwaves.directory=/var/lib/waves com.wavesplatform.Importer /etc/waves/waves.conf mainnet-870000
-```
-
-Depending on the machine this process could take a few hours to complete.
