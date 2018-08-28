@@ -1,5 +1,15 @@
 # Upgrading
-First of all, you need to check the[ latest Waves Release.](https://github.com/wavesplatform/Waves/releases)
+1. First of all, you need to check the[ latest Waves Release.](https://github.com/wavesplatform/Waves/releases) and choose the latest mainet release.
+2. Download the DEB or Jar file depending on your operating system.
+3. Upgrade DEB by running the following command:
+```bash
+sudo importer or sudo exporter
+```
+4. Upgrade JAR by running the following command:
+```bash
+sudo -u waves java -cp waves-all-X.Y.Z.jar com.wavesplatform.Importer... / ... Exporter ...
+```
+5. Check the release notes. If there are new features to vote and activate, you will need to include that in the config.
 
 ## Upgrading the node
 Basically, the node should be upgraded as follows:
@@ -9,7 +19,7 @@ Basically, the node should be upgraded as follows:
 4. Import binary file
 5. Start the node
 
-##Upgrading the node to Latest Version(0.13.4)
+##Upgrading the node to the Latest Version
 1. Stop the Node
 2. After stopping the node execute following command to export existing blocks to a binary file:
 ```bash
@@ -22,7 +32,7 @@ sudo rm -rdf /var/lib/waves/data
 ```
 5. Install the new version of the node:
 ```bash
-sudo dpkg -i waves_0.13.4_all.deb
+sudo dpkg -i theNewVersionName.deb
 ```
 6. Import blocks from the binary file:
 ```bash
@@ -31,20 +41,6 @@ sudo -u waves importer /etc/waves/waves.conf /usr/share/waves/mainnet-[some heig
 7. After import do not forget to remove the file:
 ```bash
 sudo rm /usr/share/waves/mainnet-[some height]
-```
-
-## Update notes
-With the latest release(Version 0.13.4), the user can activate the following features:
-* Data Transaction, feature number 5
-* Burn Any Tokens, number 6
-* Fee Sponsorship, number 7
-* Fair PoS, feature number 8
-To vote for any set of available features, please add them to node's configuration file as follows:
-
-```bash
-features {
-    supported = [5, 7] # This is an example, make your own decision what vote for
-}
 ```
 
 ## Update the configuration
