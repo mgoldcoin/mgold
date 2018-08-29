@@ -141,7 +141,13 @@ Get Order Book for a given Asset Pair.
 | :--- | :--- | :--- |
 | asset1 | Array\[Byte\] Base58-encoded | One of the asset in Asset Pair, or empty if it is WAVES |
 | asset2 | Array\[Byte\] Base58-encoded \(_optional_\) | Another asset in Asset Pair, or empty if it is WAVES |
-| depth | Int \(_optional_\) | Limit the number of bid/ask levels returned. MaxDepth = 50 |
+| depth | Int \(_optional_\) | Limit the number of bid/ask levels returned |
+
+Notes about _depth_:
+* The default and maximum _depth_ is **100**;
+* Now you can specify either **10** or **100**. If you choose another value, the near biggest will be chosen.
+  For example, if you choose **3**, you will get **10** records in _bids_ and _asks_;
+* These numbers can be changed in future.
 
 **Response JSON example:**
 
