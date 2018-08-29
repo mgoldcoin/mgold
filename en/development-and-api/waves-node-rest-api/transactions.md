@@ -94,7 +94,7 @@ Return a list of unconfirmed transactions in the node pool.
 ```
 
 ### POST /transactions/calculateFee
-![master](https://img.shields.io/badge/node-&gt;%3D0.14.2-4bc51d.svg)
+![master](https://img.shields.io/badge/node-&gt;%3D0.14.3-4bc51d.svg)
 
 Calculates a fee for an arbitrary transaction and returns it. The transaction type to be specified in the request body. The types are as follows:
 
