@@ -39,4 +39,4 @@ The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coin
 1. [Waves Console Example](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=571s)
 2. [Multi Signature Example](https://www.youtube.com/watch?v=o2msjSo0y0o&t=18s)
 3. [Escrow Example](https://www.youtube.com/watch?v=31dwYcgb65M&t=7s)
-4. [Waves Console Commands](https://www.youtube.com/watch?v=tcBGaS-N_1g&t=4s) \(You can check the commands details [here](/technical-details/waves-contracts-language-description/waves-console-commands.md)\)
+4. [Waves Console Commands](https://www.youtube.com/watch?v=tcBGaS-N_1g&t=4s)
