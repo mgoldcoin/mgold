@@ -43,8 +43,13 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 
 **As a result, we define the following constraint for a script cost:**
 
-a script must have a size no more 8 kB and must be faster than 20 executions of `sigVerify`, that is most expensive operation.  
+a script must have a size no more 8 kB.  
 The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coins, 100000000 wavelets = 1 Wave\).  
-For example, if you use a scripted asset \(smart asset\) then you pay 400000 wavelets, if you also have a scripted transaction then you have to pay **2 \* 400000 **wavelets.
 
 **Note.** you can find more technical details about our smart contracts implementation [**here**](/technical-details/waves-contracts-language-description.md).
+
+## Tutorials
+1. [Waves Console Example](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=571s)
+2. [Multi Signature Example](https://www.youtube.com/watch?v=o2msjSo0y0o&t=18s)
+3. [Escrow Example](https://www.youtube.com/watch?v=31dwYcgb65M&t=7s)
+4. [Waves Console Commands](https://www.youtube.com/watch?v=tcBGaS-N_1g&t=4s)
