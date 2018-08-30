@@ -6,6 +6,15 @@
 
 * issue\(name, description, decimals, quantity, reissuable, fee, timestamp, version, seed\).
 
+**Example:**
+
+```js
+const coin = issue("eos tokens", "ico" , 8 , 1000000 , true)
+await broadcast(coin)
+```
+
+**Function Details:**
+
 ```js
  /**
  * Creates signed issue transaction.
@@ -62,7 +71,16 @@ declare function reissue(
 
 ## Creates signed burn transaction
 
-burn\(assetId, quantity, fee, timestamp, version,seed\)
+* burn\(assetId, quantity, fee, timestamp, version,seed\)
+
+**Example:**
+
+```js
+const coinburn = burn("93PekjkDrKtN8jUKZYRdaZhPr2Sa5dmvXkteR4wcuVtV", 1000)
+await broadcast(coin burn)
+```
+
+**Function Details:**
 
 ```js
  /**
@@ -87,7 +105,16 @@ declare function burn(
 
 ## Creates signed transfer transaction
 
-transfer\(amount, recipient, assetId, attachment, feeAssetId, fee, timestamp, version, seed\)
+* transfer\(amount, recipient, assetId, attachment, feeAssetId, fee, timestamp, version, seed\)
+
+**Example:**
+
+```js
+const tx1 = transfer(10, "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8")
+await broadcast(tx1)
+```
+
+**Function Details:**
 
 ```js
  /**
@@ -118,7 +145,16 @@ declare function transfer(
 
 ## Creates signed lease transaction
 
-lease\(amount: number, recipient, fee, timestamp, version, seed\)
+* lease\(amount: number, recipient, fee, timestamp, version, seed\)
+
+**Example:**
+
+```js
+const lease1 = lease(10, "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8")
+await broadcast(lease1)
+```
+
+**Function Details:**
 
 ```js
  /**
@@ -143,7 +179,16 @@ declare function lease(
 
 ## Creates signed cancel lease transaction
 
-cancelLease\(txId, fee, timestamp, version, chainId, seed\)
+* cancelLease\(txId, fee, timestamp, version, chainId, seed\)
+
+**Example:**
+
+```js
+const cancellease1 = cancelLease("8ReLBodZVj8Fick5ojRTqnGiB3rfFDLuhMdiZCBXcFxH")
+await broadcast(cancellease1)
+```
+
+**Function Details:**
 
 ```js
  /**
@@ -167,7 +212,15 @@ declare function cancelLease(
 
 ## Creates Alice
 
-createAlias\(alias: string, fee, timestamp, version, seed\)
+* createAlias\(alias: string, fee, timestamp, version, seed\)
+
+Example:
+
+```js
+createAlias("AliasTestnow")
+```
+
+Function Details:
 
 ```js
  /**
@@ -190,7 +243,15 @@ declare function createAlias(
 
 ## Creates signed massTransfer transaction
 
-massTransfer\(transfers\[amount, recipient\], fee, timestamp, version, seed\)
+* massTransfer\(transfers\[amount, recipient\], fee, timestamp, version, seed\)
+
+**Example:**
+
+```js
+massTransfer[100, '3N84Z1vMsHTpFEi6pBh8EdefQCmWLgC5hnH', 200, '3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8', 100]
+```
+
+**Function Details:**
 
 ```js
 /**
@@ -215,7 +276,7 @@ declare function massTransfer(
 
 ## Compile smart contract
 
-compile\(contract\)
+* compile\(contract\)
 
 ```js
 declare function compile(code:string):string
@@ -223,7 +284,7 @@ declare function compile(code:string):string
 
 # signed script transaction
 
-script\(script, fee, timestamp, version, seed\)
+* script\(script, fee, timestamp, version, seed\)
 
 ```js
  declare function script(
@@ -237,7 +298,7 @@ script\(script, fee, timestamp, version, seed\)
 
 ## Sends transaction to the Waves network using env.API\_BASE endpoint
 
-broadcast\(tx\)
+* broadcast\(tx\)
 
 ```js
  /**
@@ -250,7 +311,15 @@ declare function broadcast(tx: any)
 
 # Generates keyPair from seed
 
-keyPair\(env.SEED\)
+* keyPair\(env.SEED\)
+
+**Example:**
+
+```js
+const keys = KeyPair()
+```
+
+Function Details
 
 ```js
  /**
@@ -265,6 +334,16 @@ declare function keyPair(seed: string = env.SEED): KeyPair
 
 publicKey\(env.SEED\)
 
+
+
+**Example:**
+
+```js
+const pk = publicKey()
+```
+
+**Function Details:**
+
 ```js
  /**
  * Generates publicKey from seed.
@@ -276,7 +355,15 @@ declare function publicKey(seed: string = env.SEED): string
 
 ## Generates privateKey from seed
 
-privateKey\(env.SEED\)
+* privateKey\(env.SEED\)
+
+**Example:**
+
+```js
+const pk = privateKey()
+```
+
+**Function Details:**
 
 ```js
  /**
@@ -289,7 +376,15 @@ declare function privateKey(seed: string = env.SEED): string
 
 ## Generates address from KeyPair or Seed
 
-address\(keyPair \| env.SEED\)
+* address\(keyPair \| env.SEED\)
+
+**Example:**
+
+```js
+const addr = address()
+```
+
+**Function Details:**
 
 ```js
 /**
