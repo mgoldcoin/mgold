@@ -39,14 +39,14 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 * `fromBase58String` / `toBase58String`
 * `sigVerify`
 
-**In every test**, we conducted 10 tests and calculated the average cost. The full results of performance tests that we conducted are presented [**here**](https://docs.wavesplatform.com/en/technical-details/waves-contracts-language-description/script-performance-tests.html).
+**In every test**, we conducted 10 tests and calculated the average cost. The full results of performance tests that we conducted are presented [**here**](/docs.wavesplatform.com/en/technical-details/waves-contracts-language-description/script-performance-tests.html).
 
 **As a result, we define the following constraint for a script cost:**
 
 a script must have a size no more 8 kB.  
 The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coins, 100000000 wavelets = 1 Wave\).
 
-**Note.** you can find more technical details about our smart contracts implementation [**here**](https://docs.wavesplatform.com/en/technical-details/waves-contracts-language-description.html).
+**Note.** you can find more technical details about our smart contracts implementation [**here**](/docs.wavesplatform.com/en/technical-details/waves-contracts-language-description.html).
 
 ## Tutorials
 
