@@ -84,7 +84,6 @@
 * [Exportar e Importar do Blockchain](waves-full-node/export-and-import-from-the-blockchain.md)
 * [Reduzindo o uso de espaço em disco](waves-full-node/reducing-disk-space-usage.md)
 * [Juntando-se a Testnet](waves-full-node/joining-testnet.md)
-* [Configuração](waves-full-node/configuration.md)
 * [Logs](waves-full-node/logging.md)
 * [Configurando um Full Node na Digital Ocean](waves-full-node/setting-up-a-waves-platform-full-node-on-digital-ocean.md)
 

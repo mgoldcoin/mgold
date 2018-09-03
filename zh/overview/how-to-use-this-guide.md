@@ -49,7 +49,6 @@
 5. [导入导出区块链](/waves-full-node/export-and-import-from-the-blockchain.md)
 6. [降低磁盘空间使用率](/waves-full-node/reducing-disk-space-usage.md)
 7. [加入测试网](/waves-full-node/joining-testnet.md)
-8. [配置](/waves-full-node/configuration.md)
 
 # 6. 开发及 API
 

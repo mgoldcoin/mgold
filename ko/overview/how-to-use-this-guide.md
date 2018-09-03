@@ -49,7 +49,6 @@
 5. [블록체인에서 내보내기 및 가져오기](/waves-full-node/export-and-import-from-the-blockchain.md)
 6. [디스크 사용 공간 절약 방법](/waves-full-node/reducing-disk-space-usage.md)
 7. [테스트넷 참여 방법](/waves-full-node/joining-testnet.md)
-8. [Configuration 구성](/waves-full-node/configuration.md)
 
 # 6. 개발과 API
 

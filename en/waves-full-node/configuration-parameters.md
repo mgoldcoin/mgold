@@ -1,4 +1,4 @@
-# Waves Node Configuration
+# Waves Node Configuration Parameters
 
 ## Configuration Format
 

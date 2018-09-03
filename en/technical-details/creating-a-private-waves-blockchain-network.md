@@ -138,4 +138,4 @@ You can add more nodes to your network using`waves.network.known-peers`parameter
 
 `waves.blockchain.custom.functionality`section contains parameters that allow you to enable and disable some features in your blockchain system. Note that the developers can add new parameters in`waves.blockchain.custom.functionality`section, which are not present in this example; for an example of a working configuration, you can look at the[`waves-devnet.conf`file in root folder of repository](https://github.com/wavesplatform/Waves/blob/master/waves-devnet.conf).
 
-Check our [configuration file documentation](/en/waves-full-node/how-to-configure-a-node.md) for more information.
+Check our [configuration file documentation](/en/waves-full-node/configuration-parameters.md) for more information.

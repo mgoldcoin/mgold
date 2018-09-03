@@ -50,7 +50,6 @@
 5. [Экспорт и импорт из блокчейна](/waves-full-node/export-and-import-from-the-blockchain.md)
 6. [Уменьшение используемого места на диске](/waves-full-node/reducing-disk-space-usage.md)
 7. [Присоединение к Testnet](/waves-full-node/joining-testnet.md)
-8. [Настройка](/waves-full-node/configuration.md)
 
 # 6. Разработка и API
 
