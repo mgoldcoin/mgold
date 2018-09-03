@@ -22,7 +22,7 @@ If you want to write logs, for example, to `JSON` files, you should define your 
 ```
 
 You can change the place where the log will be written:
-* If you set up node from the package: in `{waves.directory}/conf/application.ini` . `{waves.directory}` is set up in [configuration](./how-to-configure-a-node.md);
+* If you set up node from the package: in `{waves.directory}/conf/application.ini` . `{waves.directory}` is set up in [configuration](./configuration-parameters.md);
 * If you run the node from the jar: using Java's options, for example, `java -Dsomeoption=somevalue -jar /path/to/waves-all.jar /path/to/config`
 
 

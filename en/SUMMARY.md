@@ -79,12 +79,11 @@
   * [On Mac](waves-full-node/how-to-install-a-node/on-mac.md)
   * [On Windows](waves-full-node/how-to-install-a-node/on-windows.md)
   * [On Ubuntu](waves-full-node/how-to-install-a-node/on-ubuntu.md)
-* [Node Configuration](waves-full-node/how-to-configure-a-node.md)
+* [Node Configuration](waves-full-node/configuration-parameters.md)
 * [Waves Node in Docker](waves-full-node/waves-node-in-docker.md)
 * [Upgrading](waves-full-node/upgrading.md)
 * [Export and Import From The Blockchain](waves-full-node/export-and-import-from-the-blockchain.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
-* [Configuration](waves-full-node/configuration.md)
 * [Logging](waves-full-node/logging.md)
 
 ## Development and API

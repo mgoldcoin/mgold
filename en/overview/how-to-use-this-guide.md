@@ -49,7 +49,6 @@ This section contains all information about Installing, configuring and upgradin
 5. [Export and Import From The Blockchain](/waves-full-node/export-and-import-from-the-blockchain.md)
 6. [Reducing Disk Space Usage](/waves-full-node/reducing-disk-space-usage.md)
 7. [Joining Testnet](/waves-full-node/joining-testnet.md)
-8. [Configuration](/waves-full-node/configuration.md)
 
 # 6. Development and API
 
