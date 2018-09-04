@@ -203,34 +203,6 @@ waves {
     public-key = "4PvoqxpWi7kCA9N3UXcEB9CZx4iPPeHX9jSYdAioPhnr"
   }
 
-  # Transaction fees for different types of transactions
-  fees {
-    issue {
-      WAVES = 100000000
-    }
-    transfer {
-      WAVES = 100000
-    }
-    reissue {
-      WAVES = 100000
-    }
-    burn {
-      WAVES = 100000
-    }
-    exchange {
-      WAVES = 300000
-    }
-    lease {
-      WAVES = 100000
-    }
-    lease-cancel {
-      WAVES = 100000
-    }
-    create-alias {
-      WAVES = 100000
-    }
-  }
-
   # Matcher settings
   matcher {
     # Enable/disable matcher
@@ -555,24 +527,6 @@ In `transactions` parameter you should provide the list of first transactions. E
 ### Checkpoints settings {#user-content-checkpoints-settings}
 
 In this section, you can configure the public key for checkpoints verification sent over the P2P network. Provide the BASE58 representation of public key using `public-key` parameter. It’s useful to change this parameter only in CUSTOM blockchains.
-
-### Fees settings {#user-content-fees-settings}
-
-In `fees` section you can configure the forging \(mining\) fees for your node. Every incoming unverified transaction is checked against the fees settings. And if the fee in the transaction is less than the fee in settings this transaction won’t be processed by the node. So, using this setting you can reject unwanted transactions or try to maximize your forging income.
-
-It’s possible to pay a fee for transactions processing not only in WAVES but also in different assets. But if you want to pay a fee in an asset you have to convince node owners to receive the fee in this asset. In turn, the node owner can configure the node to accept a fee in the asset.
-
-Fees configuration is the list of transaction types. Inside every transaction type section, it is possible to give the list of pairs setting the relation between asset ID and minimum required fee to process this transaction in case of fee in given asset.
-
-For example, it is possible to add new fee setting in your additional configuration file:
-
-```
-waves.fees.transfer {
-  "6MPKrD5B7GrfbciHECg1MwdvRUhRETApgNZspreBJ8JL" = 100
-}
-```
-
-Fee should be given in minimum asset units. For the setting fee in WAVES, you have to use reserved word WAVES.
 
 ### Matcher settings {#user-content-matcher-settings}
 
