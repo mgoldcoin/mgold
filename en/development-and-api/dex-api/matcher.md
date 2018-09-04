@@ -130,7 +130,7 @@ New transaction type for blockchain is created for assets exchange. It contains 
 ## Order Book
 
 ```cpp
-GET /matcher/orderBook/{{asset1}}/{{asset2}}
+GET /matcher/orderbook/{{asset1}}/{{asset2}}
 ```
 
 Get Order Book for a given Asset Pair.
