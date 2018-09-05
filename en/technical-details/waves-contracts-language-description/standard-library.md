@@ -13,13 +13,13 @@ These fields are common for all transaction types except Genesis:
 - `.senderPublicKey` - sender public key as ByteVector
 - `.bodyBytes` - transaction body as ByteVector
 - `.proofs` - list of transaction proofs as List[ByteVector]
-   
+
 ## Issuing Assets
 
 | field	| [IssueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html) |	[ReissueTransaction](https://docs.wavesplatform.com/waves-client/assets-management/issue-an-asset.html)	| [BurnTransaction](https://docs.wavesplatform.com/waves-client/assets-management/burn-an-asset.html) |
 | ------------- | ------------- | ------------- | ------------- |
 | quantity	  | + | + | + |
-| name	      | + |   |   | 
+| name	      | + |   |   |
 | description |	+ |   |   |
 | reissuable  |	+ |	+ |   |
 | decimals    |	+ |   |   |
@@ -37,31 +37,31 @@ These fields are common for all transaction types except Genesis:
 | field | TransferTransaction	| [MassTransferTransaction](https://docs.wavesplatform.com/technical-details/mass-transfer-transaction.html)	| PaymentTransaction* |
 | ------------- | ------------- | ------------- | ------------- |
 | feeAssetId	| +	| +	|   |
-| amount	    | +	|	| + | 
-| assetId       | +	| + |   | 
+| amount	    | +	|	| + |
+| assetId       | +	| + |   |
 | recipient     | + |	| + |
-| attachment	| +	| +	|   | 
+| attachment	| +	| +	|   |
 | totalAmount	|   | + |   |
 | transfers	    |   | + |   |
-| transferCount |   | + |   | 
+| transferCount |   | + |   |
 
 * PaymentTransaction is an obsolete version of TransferTransaction
 * `.recipient` - return transfer recipient as address or alias
 * `.assetId` - return id of the asset being transferred as Option[ByteVector]
 * `.feeAssetId` - return an id of fee's asset as Option[ByteVector]
-* `.totalAmount` - return a total amount of transferred asset as a Long number 
+* `.totalAmount` - return a total amount of transferred asset as a Long number
 * `.transfers` - return all transfer's transactions of mass transfer as List[Transfer]
-* `.transferCount` - return a total count of transfers in mass transfer as a Long number 
+* `.transferCount` - return a total count of transfers in mass transfer as a Long number
 * `.attachment` - return an arbitrary attachment of transfer as ByteVector
 
 ## Leasing
 * LeaseTransaction
    - `.amount` - return an amount of asset which are leased as a Long number
    - `.recepient` -	return a recepient address as addressOrAliasType  
-* LeaseCancelTransaction - 
+* LeaseCancelTransaction -
    - `.leaseId` - return an id of cancelled leasing
 
-## Exchange Transaction and Order 
+## Exchange Transaction and Order
 * `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
   - `.buyOrder` - return an order that is bought as orderType.typeRef,
   - `.sellOrder` -  return an order that is sold as orderType.typeRef,
@@ -73,18 +73,18 @@ These fields are common for all transaction types except Genesis:
   - `senderPublicKey` - return ByteVector, sender's public key
   - `.matcherPublicKey` - return ByteVector, matcher public key
   - `.assetPair` - return assetPairType.typeRef
-  - `.orderType` - return the order type: buyType or sellType 
+  - `.orderType` - return the order type: buyType or sellType
   - `.price` - return the order price as Long number
   - `.amount` - return the number of assets assigned by this order as Long number
   - `.timestamp` - return the order's placement unix timestamp * 1000 as Long number of ms
   - `.expiration` - return the order's expiration timestamp as Long number
   - `.matcherFee` - return the matcher fee for this order as Long number
   - `.signature` - return the signature of order's sender as ByteVector
-    
+
 ## Other
 * `CreateAliasTransaction` - create a personal [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
    - `.alias` - return an alias name as String
-* GenesisTransaction - 
+* GenesisTransaction -
    - `.amount` - return an initial amount of assets as a Long number
    - `.recipient` - return an address for initial assets placing as Address
 * DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
@@ -94,14 +94,14 @@ These fields are common for all transaction types except Genesis:
 * SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details aboutfee sponsorship.
    - `.assetId` - return an asset id as ByteVector
    - `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Option[Long]
- 
+
 ## Predefined functions
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
 * Operators:
    - Integer arithmetic: `+`, `-`, `*`, `/`, `%`
-   - `+` is also used for string and byte vector concatenation. Size of output string is limited by 32767 characters, size of byyte vector is limited by 65536 bytes.
+   - `+` is also used for string and byte vector concatenation. Size of output string is limited by 32767 characters, size of byte vector is limited by 65536 bytes.
    - Comparison integer-integer or strings-string: `>=`, `<=`, `>`, `<`
    - Comparison any object of same type: `==`, `!=`
    - Unary operators: integer `-`, boolean `!`
@@ -124,7 +124,7 @@ WavesContracts standard library not only contains predefined data types and inst
    - `transactionById` : `ByteVector => Option[Transaction]` - provides tx in blockchain by id
    - `transactionHeightById`: `ByteVector => Option[Long]` - provides height of tx in blockchain by id
    - `wavesBalance`: `addressOrAliasType => Long` - provide balance info for any account
- 
+
 * `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from WavesContracts via:
    - `getInteger`:`(accountAddress: ByteVector, key: String) => Option[Long]`
    - `getBoolean`:`(accountAddress: ByteVector, key: String) => Option[Boolean]`
