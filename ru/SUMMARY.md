@@ -24,6 +24,7 @@
   * [Управление аккаунтом](waves-client/account-management.md)
     * [Создание аккаунта](waves-client/account-management/creating-an-account.md)
     * [Восстановление аккаунта](waves-client/account-management/restore-an-account.md)
+    * [Ledger Nano S и Waves приложение](waves-client/account-management/ledger-nano.md)
     * [Перенос аккаунта](waves-client/account-management/account-migration.md)
     * [Вход в аккаунт](waves-client/account-management/signing-in-to-your-account.md)
     * [Ваш Waves адрес](waves-client/account-management/waves-address.md)
