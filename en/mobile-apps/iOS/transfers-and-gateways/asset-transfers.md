@@ -47,3 +47,4 @@ Or you can find your Waves address in the **More** tab and receive any waves bas
 
 ![](/_assets/asset_transfers_ios_07.png)
 
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

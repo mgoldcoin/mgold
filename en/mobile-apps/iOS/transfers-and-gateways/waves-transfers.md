@@ -44,3 +44,4 @@ Also you can put some amount in the **Amount** box and generate QR code with thi
 
 ![](/_assets/waves_transfers_ios_06.jpg)
 
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

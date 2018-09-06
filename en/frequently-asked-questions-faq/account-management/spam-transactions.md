@@ -13,3 +13,5 @@ Spam section can be found in a special section or disabled in the application se
 ![](/_assets/spam_tx_02.png)
 
 **Please be careful with any assets. Before trading with any asset, please make a preliminary market investigation.**
+
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

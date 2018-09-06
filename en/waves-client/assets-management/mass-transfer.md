@@ -50,3 +50,5 @@ Save a file as CSV document and then open it by clicking on the **Import a CSV F
 ![](/_assets/mass_transfer_07.png)
 
 Follow the mass payment procedure described above.
+
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

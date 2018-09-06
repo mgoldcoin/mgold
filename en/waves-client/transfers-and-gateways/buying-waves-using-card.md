@@ -16,3 +16,5 @@ After you have filled the form, click on the **Continue** button and you will be
 Go through the verification and payment process and you'll receive your Waves within a few minutes.
 
 ![](/_assets/buying_waves_using_card_03.png)
+
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

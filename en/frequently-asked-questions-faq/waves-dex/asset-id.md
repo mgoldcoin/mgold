@@ -15,3 +15,5 @@ See details on how to use Asset ID:
 Use the code to find for the selected Asset.
 
 ![](/_assets/asset_id_03.png)
+
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

@@ -28,3 +28,5 @@ Check the entered data and if everything is ok, click on the **Confirm** button.
 After all you will be able to find the reissue transaction in your **Transactions**.
 
 ![](/_assets/token_burn_07.png)
+
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

@@ -3,3 +3,5 @@
 If you have already created a Waves account, you can sing in directly by choosing your address from the drop down list and put your own password, then click **Log in** button.
 
 ![](/_assets/login_page.png)
+
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

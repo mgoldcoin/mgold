@@ -81,3 +81,5 @@ The placed order will appears in the **My Open Orders** box and in the **Order B
 **Note**: You can cancel opened order by clicking on the **X Cancel** in the **My Open Orders box**.
 
 **Attention** The commission for creating **one buy or sell order** on the **DEX platform** is **0.003 Waves**. This amount will be frozen for the order fee. If the order is not executed and then canceled, the amount will be unfrozen.
+
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
