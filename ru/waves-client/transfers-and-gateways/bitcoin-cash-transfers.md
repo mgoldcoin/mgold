@@ -69,4 +69,4 @@ Waves client позволяет хранить и переводить Bitcoin C
 
 ![](/_assets/bch_transfers_08.png)
 
-Если у вас возникнут сложности с использованием Ledger Nano S, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).
+Если у вас возникнут трудности с использованием нашей платформы, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).
