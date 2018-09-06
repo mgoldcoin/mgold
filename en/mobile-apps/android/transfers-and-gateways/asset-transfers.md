@@ -48,3 +48,4 @@ Also you can put some amount in the **Amount** box and generate QR code with sel
 
 ![](/_assets/asset_transfers_android_08.png)
 
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

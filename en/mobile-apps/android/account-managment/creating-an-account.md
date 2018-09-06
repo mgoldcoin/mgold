@@ -64,3 +64,4 @@ If you have made a mistake click on the **BACKUP AGAIN** button.
 
 To start using the application, click on the **Back** button ![](/_assets/account_creation_android_11.png)
 
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

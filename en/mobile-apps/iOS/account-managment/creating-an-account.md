@@ -47,10 +47,9 @@ Click on it and you will forwarded to additional wallet section:
 
 ![](/_assets/account_creation_ios_07.png)
 
-1. "**My Address"** - Waves address of current account.
-2. **"Backup Wallet"** - Additional section for creating a backup copy of the seed phrase. **Warning**. Don't forget to create a backup copy of the seed phrase.
-3. **"Receive Money"** - Use this section to copy or to get QR Code with recipient account address.
-4. **"Log Out" **- Exit the current account.
+1. **My Address** - Waves address of current account.
+2. **Backup Wallet** - Additional section for creating a backup copy of the seed phrase. **Warning**. Don't forget to create a backup copy of the seed phrase.
+3. **Receive Money** - Use this section to copy or to get QR Code with recipient account address.
+4. **Log Out**- Exit the current account.
 
-
-
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
