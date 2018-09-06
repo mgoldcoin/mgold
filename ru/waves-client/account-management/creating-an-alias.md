@@ -23,3 +23,5 @@ The creation of an Alias is very straightforward;
 ![](/_assets/creating_an_alias_04.png)
 
 Вы сможете использовать Alias по назначению спустя 1 блок (1 минута).
+
+Если у вас возникнут сложности с использованием Ledger Nano S, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).
