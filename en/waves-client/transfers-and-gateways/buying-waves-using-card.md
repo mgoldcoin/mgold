@@ -8,7 +8,7 @@ In the Waves section click on the **Receive** button.
 The following pop-up will appear.
 
 Define the amount in **EUR** or **USD** you want to spend by selecting it in the dropdown menu and the client automatically returns you the amount of Waves you are going to receive after payment.
-See **Approximately** field.
+To get more information about the receiving amount, please see **Approximately** field.
 
 ![](/_assets/buying_waves_using_card_02.png)
 
