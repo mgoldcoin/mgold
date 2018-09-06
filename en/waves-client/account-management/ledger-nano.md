@@ -33,9 +33,9 @@ Waves wallet can be managed on the Waves [web and desktop](https://wavesplatform
 
 **Access your accounts using your web browser or desktop client**
 
-1. Visit [https://client.wavesplatform.com](https://client.wavesplatform.com) (Google Chrome or Firefox browser) or open desktop app.
-2. Make sure your Ledger Nano S is connected and unlocked, and that you’ve opened the Waves app.
-3. Click on **Restore account** > **Import accounts**.
+1. Make sure your Ledger Nano S is connected and unlocked and that other cryptocurrency apps are not running and not intercepting the connection between Ledger Nano and Waves app.   
+2. Visit [https://client.wavesplatform.com](https://client.wavesplatform.com) (Google Chrome or Firefox browser) or open desktop app.  
+3. Click on **Import accounts** if you are using the Waves app for the first time or click on **Create a new account** > **Import accounts**.
 4. Choose **Import accounts from your Ledger Nano S**. An address selection page will appear.
 
 ![](/_assets/ledger_nano_03.png)
