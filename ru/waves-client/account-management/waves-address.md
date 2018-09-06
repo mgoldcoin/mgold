@@ -9,3 +9,5 @@
 ![](/_assets/waves_address_02.png)
 
 Также в этом разделе вы можете создать персональный Alias. Для получения дополнительной информации, пожалуйста следуйте инструкции [Создание персонального алиаса](/waves-client/account-management/creating-an-alias.md)
+
+Если у вас возникнут сложности с использованием Ledger Nano S, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).
