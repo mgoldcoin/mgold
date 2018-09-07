@@ -29,7 +29,7 @@ These fields are common for all transaction types except Genesis:
 * `.name` - return a name of asset as ByteVector
 * `.description` - return a descriptions of asset as ByteVector
 * `.reissuable` - return "true" is the asset are reissuable and "false" otherwise (Boolean)
-* `.decimals` - return a number of simbols after comma as a Long
+* `.decimals` - return a number of symbols after comma as a Long
 * `.assetId` - return id of an existed asset as ByteVector
 
 ## Transfers
@@ -57,7 +57,7 @@ These fields are common for all transaction types except Genesis:
 ## Leasing
 * LeaseTransaction
    - `.amount` - return an amount of asset which are leased as a Long number
-   - `.recepient` -	return a recepient address as addressOrAliasType  
+   - `.recipient` -	return a recipient address as addressOrAliasType  
 * LeaseCancelTransaction -
    - `.leaseId` - return an id of cancelled leasing
 
@@ -91,7 +91,7 @@ These fields are common for all transaction types except Genesis:
    - `.data` - List[DataEntriesType]
 * SetScriptTransaction - sets the script which verifies all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
    - `.script` - Option[ByteVector]
-* SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details aboutfee sponsorship.
+* SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details about fee sponsorship.
    - `.assetId` - return an asset id as ByteVector
    - `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Option[Long]
 
