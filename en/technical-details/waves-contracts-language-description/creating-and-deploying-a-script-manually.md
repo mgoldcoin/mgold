@@ -2,7 +2,7 @@
 
 The idea of a **Smart Account** is the following:
 
-Before the transaction is submitted for inclusion in the next block, the account checks if the transaction meets certain requirements, defined in a **script**. The **script** is attached to the account so the account can validate every transaction before confirming it.
+Before the transaction is submitted to be included in the next block, the account checks if the transaction meets certain requirements, defined in a **script**. The **script** is attached to the account so the account can validate every transaction before confirming it.
 
 In this example, we're going to create and deploy a simple 2 of 2 MultiSig example without using neither `Waves Client libraries` nor `API libraries`.
 
@@ -22,7 +22,7 @@ In this example, we're going to create and deploy a simple 2 of 2 MultiSig examp
 
 The idea here is to create a script and attach it to the account so this account can :
 
-1. check if the transaction meets certain requirements which is defined in the script.
+1. Check if the transaction meets certain requirements which is defined in the script.
 2. Validate the transaction.
 3. Confirm the transaction and broadcast it to the blockchain network.
 
@@ -42,7 +42,7 @@ aliceSigned + bobSigned == 2
 
 1. Switch to the `BINARY` tab.
 
-2. Click on `COPY TO CLIPBOARD` button. A compiled Base58-encoded script should be copied into your clipboard as shown below \(this step will be required later\).
+2. Click on `COPY TO CLIPBOARD` button. A compiled Base64-encoded script should be copied into your clipboard as shown below \(this step will be required later\).
 
 ```
 5Xt9H8mHtikSytHF72xAU3NJwDydxXYMMhmWiNVLbYdBRQ3FHXksc8kW8tKFm3fGto1EwTt4YSybEUrpT2yB71hCvUS3WxWfsC4PxU7
@@ -56,7 +56,7 @@ SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
 
 # 1.2 Attaching a script to account
 
-1. Now let's prepare a JSON request to sign a SetScriptTransaction for shared account with the given script:
+1. Now let's prepare a JSON request to sign a SetScriptTransaction for the shared account with a given script:
 
    ```json
    {
@@ -122,7 +122,7 @@ SAtDTKwqmdqJpWtBWYLEy6cfaTTKCQFNH2Lnj2DYgaFRWETGQVQpMMVYFKkk
    }
    ```
 
-   where `<scriptText>` is a String representation of compiled `<script>` \(expression tree\)
+where `<scriptText>` is a String representation of compiled `<script>` \(expression tree\)
 
 Fine! Now we able to make transfers from this account.
 
@@ -312,6 +312,3 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
       "attachment": ""
     }
    ```
-
-
-

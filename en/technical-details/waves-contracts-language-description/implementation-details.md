@@ -16,8 +16,8 @@ The syntax doesn't require line breaks \(`\n`\) or `;`. The full description goe
 number = [+-]?['0'-'9']+
 string = """, [1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-]*, """
 byteVector = "base58'", [123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]* , "'"
-binaryOp = expr , ("||" | "&&" | "==" | "!=" | ">=" | ">" | "<" | "<=" | "+" | "-" | "*" | "%" | "/") , expr 
-unaryOp =  ("-" | "!") , expr 
+binaryOp = expr , ("||" | "&&" | "==" | "!=" | ">=" | ">" | "<" | "<=" | "+" | "-" | "*" | "%" | "/") , expr
+unaryOp =  ("-" | "!") , expr
 expression = binaryOp | atom
 varName = {latin-numeric string strating with char, excluding keywords}
 let = "let " , varName , "=" , block
@@ -42,7 +42,7 @@ All types available are:
 
 **Note. **User can't create new types, only predefined ones are available.
 
-Parser generated AST is based on the following constructs:
+Parser generated AST based on the following constructs:
 
 | Constract | Description |
 | :--- | :--- |
@@ -56,7 +56,7 @@ Parser generated AST is based on the following constructs:
 
 ## 2. Type Checking and Compiling Stage
 
-Untyped AST is enriched with types, types are checked, according to function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates the base type **EXPR**, and its sub-type of **BLOCK**. Each **EXPR** has a type and is one of:
+Untyped AST is enriched with types and then they're checked according to the function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates the base type **EXPR**, and its sub-type of **BLOCK**. Each **EXPR** has a type and is one of:
 
 | Types | Description |
 | :--- | :--- |
@@ -68,11 +68,9 @@ Untyped AST is enriched with types, types are checked, according to function sig
 
 This set doesn't include BINARY_OP as well, it gets translated to FUNCTION_CALL. This set doesn’t include constructs that are used exclusively for ease of parsing. The pattern matching mechanism is replaced by `IF` + `.isInstanceOf` call.
 
-This step is important to validate user input so that fewer mistakes are made: for instance, `3 + false` is valid syntactically, but typechecker won't compile it, because `+`  function requires two arguments of type `Long`.  The result types of each **EXPR** aren't shown to the outside and don't go to the next stage. 
+This step is important to validate user input so that less mistakes are made: for instance, `3 + false` is valid syntactically, but typechecker won't compile it, because `+`  function requires two arguments of type `Long`.  The result types of each **EXPR** aren't shown to the outside and don't go to the next stage.
 
 **Note.** The output of this stage is exactly what is sent to the blockchain.
-
-This set doesn’t include constructs that are used exclusively for ease of parsing. This step is important to validate user input.
 
 ## 3. Evaluator Stage
 
@@ -82,9 +80,6 @@ Evaluator operates a typed expression tree within a context. It traverses the lo
 
 * A map of predefined functions with implementation.
 * Predefined types, e.g. structures.
-* Lazy values that can be calculated upon calls within given tree path. They cannot be re-defined.
+* Lazy values, that can be calculated upon calls within given tree path, cannot be re-defined and they are calculated maximum once.
 
-Lazy values are calculated maximum once.
-
-If evaluator results in exception\(for instance, Long Overflow\), the result of script evaluation is `false`.
-
+If the evaluator has exception results\(for instance, Long Overflow\), the script evaluation will be `false`.

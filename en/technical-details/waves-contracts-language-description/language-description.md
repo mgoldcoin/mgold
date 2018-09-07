@@ -1,21 +1,21 @@
 # Language description
 
-Waves Contracts language is:
+Waves smart contracts language is:
 
 * Lazy
 * Strong typed
 * Statically typed
 * Expression-based.
 
-Operations and constructs available are:
+## Operations and constructs
 
 * Binary operations:`>=`, `>`, `<`, `<=`, `+`, `-`, `&&`, `||`, `*`, `%`, `/`, `==`, `!=`
 * Unary operations `-`, `!`
 * Constants declaration via `let`
 * `if-then-else` clause
-* Accessing fields of any of instances of predefined structures via `.`
+* Accessing fields of any instances within predefined structures by `.`
 * Accessing list element by index `[]`
-* Calls to predefined functions via `()`
+* Calls of predefined functions by `()`
 
 ## Available data types
 
@@ -24,18 +24,18 @@ Operations and constructs available are:
 * `Boolean`
 * `ByteVector`
 * `List[T]`
-* Predefined non-recursive data structure like `Transaction`, `Block`, etc
-* `Unit` - a type which has ony one instance, `unit`.
-* `Nothing`- "bottom type", no instance of this type can exist, but it conforms to any other type.
-* Union types, like `Int | String | Transaction`, `ByteVector | Unit`
+* Predefined non-recursive data structure like `Transaction` and `Block`.
+* `Unit` - a type which has only one instance, `unit`.
+* `Nothing`- "bottom type", no instance of this type can exist, but it can be applied on any other type.
+* Union types, like `Int | String | Transaction` and `ByteVector | Unit`
 
 ### Structures
 
 * `Point(x: Int, y: Int)`
 * `Alias(name: String)`
 
-Defining user structures is restricted in RIDE.
-One can create instance of any pre-defined structure by calling constructor.
+Defining user structures are restricted in RIDE.
+You can create instance of any pre-defined structure by calling the constructor.
 
 ```
 let addr = Address(base58'3My3KZgFQ3CrVHgz6vGRt8687sH4oAA1qp8')
@@ -45,18 +45,17 @@ let name  = alias.name
 
 ### List\[T\]
 
-User can't create `List[T]` instances but input data can contains some `List[T]` fields.
-Now all of transactions contain field `proofs: List[ByteVector]` and MassTransfer transactions contain field `transfers: List[Transfer]`.
+The user can't create `List[T]` instances but he can input data which contains some `List[T]` fields. All transactions contain field `proofs: List[ByteVector]` but MassTransfer transactions contain field `transfers: List[Transfer]`.
 
 To access lists element you can use syntax `list[index]` with the first element at index 0.
 
-To determinate count of lists elements you can use function `size`:
+To determinate count of list elements, you can use function `size`:
 * `size `: `List[T] => Long`
-This is also true for `DataType.ByteArray`:
+This is also true as well for `DataType.ByteArray`:
 * `size `: `DataType.ByteArray => Long`
 
 ### ByteVector
-Standard ByteVector type 
+Standard ByteVector type
 
 * `size `: `ByteVector => Long`
 * `take`: `ByteVector`, `Long` => `ByteVector`
@@ -77,10 +76,14 @@ Standard string type
 * `takeRight`: `String`, `Long` => `String`
 * `dropRight`: `String`, `Long` => `String`
 
-	
+
 ## Pattern Matching
 
-There is a mechanism for checking a value against a pattern and you can handle the different expected types in a match expression. A match expression has a value, the match keyword, and at least one case clause:
+There is a mechanism for checking a value against a pattern. The user can handle different expected types in a match expression.
+A match expression has:
+* A value
+* The match keyword.
+* At least one case clause:
 ```
 match tx {
 	case t:Transfer => t.recepient
@@ -88,10 +91,9 @@ match tx {
 }
 ```
 
-
 # Examples
 
-Here's a complete multisig 2 of 3 example. Keep in mind all`let`'s could actually be inlined, they exist only for the sake of readability.
+Here's a complete example for 2 of 3 multi-sig :
 
 ```
 let alicePubKey  = base58'B1Yz7fH1bJ2gVDjyJnuyKNTdMFARkKEpV'
@@ -105,3 +107,4 @@ let cooperSigned = if(sigVerify(tx.bodyBytes, tx.proofs[2], cooperPubKey )) then
 aliceSigned + bobSigned + cooperSigned >= 2
 ```
 
+**Note** Keep in mind that all `let`'s could actually be inlined, they exist only for the sake of readability.
