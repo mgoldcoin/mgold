@@ -107,14 +107,13 @@ WavesContracts standard library not only contains predefined data types and inst
    - Unary operators: integer `-`, boolean `!`
 
 * Pure functions:
-   - `getElement(list, index)`: accesses element by index
    - `size`: for lists, strings and byte vectors
    - `take`, `drop`, `takeRight`, `dropRight` for strings and byte vectors
    - `toBytes` for booleans, numbers and strings
    - `toString` for booleans and numbers
    - `isDefined` tells whether an `Option` is something or nothing
    - `extract` extracts value from an `Option`
-   - `throw(message)` terminates execution. The message is optional but can help figuring out why a script fails
+   - `throw(message)`, `throwNoMessage()` terminates execution. The message is optional but can help figuring out why a script fails.
 
 * Waves context functions:
    - `addressFromPublicKey` : `ByteVector => addressType`
