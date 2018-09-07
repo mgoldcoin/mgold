@@ -1,6 +1,7 @@
 # Script Performance Tests
-We conducted performance tests for all aspects of our scripts. For this purpose, we developed an benchmark subproject with [JMH](http://openjdk.java.net/projects/code-tools/jmh/), that computes a complexity of scripts after compilation phase by AST (Abstract Syntax Tree) traversal in special _complexity units_. _Complexity units_ is a measure of the script's relative cost: we found out the most expensive operation in terms of computational complexity and defined it equal to 100 complexity units. In every test, we conducted 10 tests and calculated the average cost. The performance tests' results are the following:
-## Environment Functions Benchmark 
+We conducted performance tests for all aspects of our scripts.
+For this purpose, we developed an benchmark subproject with [JMH](http://openjdk.java.net/projects/code-tools/jmh/), that computes the complexity of scripts after compilation phase by AST (Abstract Syntax Tree) traversal in special _complexity units_. _Complexity units_ is a measure of the script's relative cost: we found out the most expensive operation in terms of computational complexity and defined it equal to 100 complexity units. In every test, we conducted 10 tests and calculated the average cost. The performance tests' results are the following:
+## Environment Functions Benchmark
 Functions used in the script that do not refer to the state:
 
 | Benchmark | Score | Error |
@@ -24,6 +25,7 @@ Where:
  - `base58_26_encode` - the test for 26 bytes.
  - `base58_decode_full`,` base58_encode` - tests for 64 bytes.
  - `curve25519_sign_full`, `curve25519_full` - tests for 512 bytes.
+
 ## Waves Environment Benchmark
 Functions used in the script that refer to the state:
 
@@ -60,7 +62,7 @@ The execution time of the script described in the previous section:
 
 
 ## State Synthetic Benchmark
-Comparison the applying of a block with 5\,000 tx for a scripted account and for regular one:
+Let's Compare the applying process for a block with 5\,000 tx for a scripted account and for regular one:
 
 | Benchmark|Score                        |Error                      |
 |----------------|-------------------------------|-----------------------------|
@@ -72,6 +74,5 @@ We found the most expensive functions:
  - base58
  - sigVerify
 
-As a result, we define the following constraint for a script cost: a script must have a size no more 8 kB and must be faster than 20 executions of `sigVerify`, that is most expensive operation.
-The fixed fee for each scripted unit is equal to 400\,000 _wavelets_ (Waves coins, 100\,000\,000 wavelets = 1 Wave), i.e. if you use a scripted asset (smart asset) then you pay 400\,000 wavelets, if you also have a scripted transaction then you have to pay 2 * 400\,000 wavelets. 
-
+As a result, we define the following constraint for a script cost: a script must have a size of no more then 8 kB and it must be faster than 20 executions of `sigVerify`, that is the most expensive operation.
+The fixed fee for each scripted unit is equal to 400\,000 _wavelets_ (Waves coins, 100\,000\,000 wavelets = 1 Wave), i.e. if you use a scripted asset (smart asset) then you pay 400\,000 wavelets, if you also have a scripted transaction then you have to pay 2 * 400\,000 wavelets.
