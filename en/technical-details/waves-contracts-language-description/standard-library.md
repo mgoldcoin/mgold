@@ -63,8 +63,9 @@
 
 ## Exchange Transaction and Order
 
-* `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html) 
-* | Field | Description | Type |
+* `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
+
+  | Field | Description | Type |
   | :--- | :--- | :--- |
   | buyOrder | return an order that is bought | orderType.typeRef |
   | sellOrder | return an order that is sold | orderType.typeRef |
@@ -90,23 +91,32 @@
 ## Other
 
 * `CreateAliasTransaction` - create a personal [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
+
   | Field | Description | Type |
   | :--- | :--- | :--- |
   | alias | Return an alias name | String |
+
 * GenesisTransaction -
+
   | Field | Description | Type |
   | :--- | :--- | :--- |
   | amount | Return an initial amount of assets | Long number |
   | recipient | return an address for initial assets placing as address | String |
+
 * DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
+
   | Field | Description | Type |
   | :--- | :--- | :--- |
   | data | Returns the data | List\[DataEntriesType\] |
+
 * SetScriptTransaction - sets the script which verifies all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
+
   | Field | Description | Type |
   | :--- | :--- | :--- |
   | script | Returns a script | Option\[ByteVector\] |
-* SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details about fee sponsorship.
+
+* SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html) you can find more details about fee sponsorship.
+
   | Field | Description | Type |
   | :--- | :--- | :--- |
   | assetId | Return an asset id | ByteVector |
@@ -173,6 +183,3 @@ WavesContracts standard library not only contains predefined data types and inst
   | keccak256,blake2b256, sha256 | Computes the bit hash | ByteVector =&gt; ByteVector |
   | fromBase58String, fromBase64String | Get string from base58 and base64 | String =&gt; ByteVector |
   | toBase58String, toBase64String | Convert to base58 and base 64 string | ByteVector =&gt; String |
-
-
-
