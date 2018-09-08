@@ -67,8 +67,8 @@
 
   | Field | Description | Type |
   | :--- | :--- | :--- |
-  | buyOrder | return an order that is bought | orderType.typeRef |
-  | sellOrder | return an order that is sold | orderType.typeRef |
+  | buyOrder | return an order that is bought | orderType(typeRef) |
+  | sellOrder | return an order that is sold | orderType(typeRef) |
   | price | return a deal's price | Long number |
   | amount | return a deal's amount | Long number |
   | buyMatcherFee | return a Matcher's fee from the buy order | Long number |
