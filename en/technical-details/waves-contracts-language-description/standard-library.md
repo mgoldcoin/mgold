@@ -63,39 +63,54 @@
 
 ## Exchange Transaction and Order
 
-* `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
-  * `.buyOrder` - return an order that is bought as orderType.typeRef,
-  * `.sellOrder` -  return an order that is sold as orderType.typeRef,
-  * `.price` - return a deal's price as a Long number
-  * `.amount` - return a deal's amount as a Long number
-  * `.buyMatcherFee` - return a Matcher's fee from the buy order as a Long number
-  * `.sellMatcherFee` - return a Matcher's fee from the sell order as a Long number
+* `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html) 
+* | Field | Description | Type |
+  | :--- | :--- | :--- |
+  | buyOrder | return an order that is bought | orderType.typeRef |
+  | sellOrder | return an order that is sold | orderType.typeRef |
+  | price | return a deal's price | Long number |
+  | amount | return a deal's amount | Long number |
+  | buyMatcherFee | return a Matcher's fee from the buy order | Long number |
+  | sellMatcherFee | return a Matcher's fee from the sell order | Long number |
 * `Order` - an order for Matcher's order book   
-  * `senderPublicKey` - return ByteVector, sender's public key
-  * `.matcherPublicKey` - return ByteVector, matcher public key
-  * `.assetPair` - return assetPairType.typeRef
-  * `.orderType` - return the order type: buyType or sellType
-  * `.price` - return the order price as Long number
-  * `.amount` - return the number of assets assigned by this order as Long number
-  * `.timestamp` - return the order's placement unix timestamp \* 1000 as Long number of ms
-  * `.expiration` - return the order's expiration timestamp as Long number
-  * `.matcherFee` - return the matcher fee for this order as Long number
-  * `.signature` - return the signature of order's sender as ByteVector
+
+  | Field | Description | Type |
+  | :--- | :--- | :--- |
+  | senderPublicKey | Sender's public key | ByteVector |
+  | matcherPublicKey | Matcher public key | ByteVector |
+  | assetPair | Return asset pair type | assetPairType.typeRef |
+  | orderType | Return the order type: buyType or sellType | - |
+  | price | Return the order price | Long number |
+  | amount | Return the number of assets assigned by this order | Long number |
+  | timestamp | Return the order's placement unix timestamp \* 1000  | Long number of ms |
+  | expiration | Return the order's expiration timestamp | Long number |
+  | matcherFee | Return the matcher fee for this order | Long number |
+  | signature | Return the signature of order's sender | ByteVector |
 
 ## Other
 
 * `CreateAliasTransaction` - create a personal [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
-  * `.alias` - return an alias name as String
+  | Field | Description | Type |
+  | :--- | :--- | :--- |
+  | alias | Return an alias name | String |
 * GenesisTransaction -
-  * `.amount` - return an initial amount of assets as a Long number
-  * `.recipient` - return an address for initial assets placing as Address
+  | Field | Description | Type |
+  | :--- | :--- | :--- |
+  | amount | Return an initial amount of assets | Long number |
+  | recipient | return an address for initial assets placing as address | String |
 * DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
-  * `.data` - List\[DataEntriesType\]
+  | Field | Description | Type |
+  | :--- | :--- | :--- |
+  | data | Returns the data | List\[DataEntriesType\] |
 * SetScriptTransaction - sets the script which verifies all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
-  * `.script` - Option\[ByteVector\]
+  | Field | Description | Type |
+  | :--- | :--- | :--- |
+  | script | Returns a script | Option\[ByteVector\] |
 * SponsorFeeTransaction - [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html)  you can find more details about fee sponsorship.
-  * `.assetId` - return an asset id as ByteVector
-  * `.minSponsoredAssetFee` - return a minimal sponsored asset fee as Option\[Long\]
+  | Field | Description | Type |
+  | :--- | :--- | :--- |
+  | assetId | Return an asset id | ByteVector |
+  | minSponsoredAssetFee | Return a minimal sponsored asset fee | Option\[Long\] |
 
 ## Predefined functions
 
@@ -129,7 +144,7 @@ WavesContracts standard library not only contains predefined data types and inst
   | addressFromPublicKey | Get address from public key | ByteVector =&gt; addressType |
   | addressFromRecipient | Get address from recipient | Option\[ByteVector\] =&gt; addressType |
   | addressFromString | Get address from string \(seed\) | String =&gt; Option\[Address\] |
-  | assetBalance |  Provides balance info for any account | addressOrAliasType =&gt; Long |
+  | assetBalance | Provides balance info for any account | addressOrAliasType =&gt; Long |
   | transactionById | Provides tx in blockchain by id | ByteVector =&gt; Option\[Transaction\] |
   | transactionHeightById | Provides height of tx in blockchain by id | ByteVector =&gt; Option\[Long\] |
   | wavesBalance | Provides balance info for any account | addressOrAliasType =&gt; Long |
@@ -156,10 +171,8 @@ WavesContracts standard library not only contains predefined data types and inst
   | :--- | :--- | :--- |
   | sigVerify | Validate signature for bytes and public key | \(body: ByteVector, signature: ByteVector, pubKey: ByteVector\) =&gt; Boolean |
   | keccak256,blake2b256, sha256 | Computes the bit hash | ByteVector =&gt; ByteVector |
-  | fromBase58String, fromBase64String | Get string from base58 and base64  | String =&gt; ByteVector |
+  | fromBase58String, fromBase64String | Get string from base58 and base64 | String =&gt; ByteVector |
   | toBase58String, toBase64String | Convert to base58 and base 64 string | ByteVector =&gt; String |
-
-     
 
 
 
