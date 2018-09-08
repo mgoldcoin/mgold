@@ -48,14 +48,14 @@
 
 ## Leasing
 
-* LeaseTransaction
+LeaseTransaction
 
 | Field | Description |
 | :--- | :--- |
 | amount | Return an amount of asset which are leased |
 | recipient | Return a recipient address as addressOrAliasType |
 
-* LeaseCancelTransaction
+LeaseCancelTransaction
 
 | Field | Description |
 | :--- | :--- |
@@ -63,124 +63,127 @@
 
 ## Exchange Transaction and Order
 
-* `ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
+`ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
 
-  | Field | Description | Type |
-  | :--- | :--- | :--- |
-  | buyOrder | return an order that is bought | orderType(typeRef) |
-  | sellOrder | return an order that is sold | orderType(typeRef) |
-  | price | return a deal's price | Long number |
-  | amount | return a deal's amount | Long number |
-  | buyMatcherFee | return a Matcher's fee from the buy order | Long number |
-  | sellMatcherFee | return a Matcher's fee from the sell order | Long number |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| buyOrder | return an order that is bought | orderType\(typeRef\) |
+| sellOrder | return an order that is sold | orderType\(typeRef\) |
+| price | return a deal's price | Long number |
+| amount | return a deal's amount | Long number |
+| buyMatcherFee | return a Matcher's fee from the buy order | Long number |
+| sellMatcherFee | return a Matcher's fee from the sell order | Long number |
 
-* `Order` - an order for Matcher's order book.  
+`Order` - an order for Matcher's order book.
 
-  | Field | Description | Type |
-  | :--- | :--- | :--- |
-  | senderPublicKey | Sender's public key | ByteVector |
-  | matcherPublicKey | Matcher public key | ByteVector |
-  | assetPair | Return asset pair type | assetPairType.typeRef |
-  | orderType | Return the order type: buyType or sellType | - |
-  | price | Return the order price | Long number |
-  | amount | Return the number of assets assigned by this order | Long number |
-  | timestamp | Return the order's placement unix timestamp \* 1000  | Long number of ms |
-  | expiration | Return the order's expiration timestamp | Long number |
-  | matcherFee | Return the matcher fee for this order | Long number |
-  | signature | Return the signature of order's sender | ByteVector |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| senderPublicKey | Sender's public key | ByteVector |
+| matcherPublicKey | Matcher public key | ByteVector |
+| assetPair | Return asset pair type | assetPairType.typeRef |
+| orderType | Return the order type: buyType or sellType | - |
+| price | Return the order price | Long number |
+| amount | Return the number of assets assigned by this order | Long number |
+| timestamp | Return the order's placement unix timestamp \* 1000 | Long number of ms |
+| expiration | Return the order's expiration timestamp | Long number |
+| matcherFee | Return the matcher fee for this order | Long number |
+| signature | Return the signature of order's sender | ByteVector |
 
 ## Other
 
-* `CreateAliasTransaction` - create a personal. [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
+`CreateAliasTransaction` - create a personal. [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
 
-  | Field | Description | Type |
-  | :--- | :--- | :--- |
-  | alias | Return an alias name | String |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| alias | Return an alias name | String |
 
-* GenesisTransaction
+GenesisTransaction
 
-  | Field | Description | Type |
-  | :--- | :--- | :--- |
-  | amount | Return an initial amount of assets | Long number |
-  | recipient | return an address for initial assets placing as address | String |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| amount | Return an initial amount of assets | Long number |
+| recipient | return an address for initial assets placing as address | String |
 
-* DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
+DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
 
-  | Field | Description | Type |
-  | :--- | :--- | :--- |
-  | data | Returns the data | List\[DataEntriesType\] |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| data | Returns the data | List\[DataEntriesType\] |
 
-* SetScriptTransaction sets the script which verifies all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
+SetScriptTransaction sets the script which verifies all outgoing transactions. The set script can be changed by another SetScriptTransaction call unless it's prohibited by a previously set script.
 
-  | Field | Description | Type |
-  | :--- | :--- | :--- |
-  | script | Returns a script | Option\[ByteVector\] |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| script | Returns a script | Option\[ByteVector\] |
 
-* SponsorFeeTransaction [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html) you can find more details about fee sponsorship.
+SponsorFeeTransaction [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html) you can find more details about fee sponsorship.
 
-  | Field | Description | Type |
-  | :--- | :--- | :--- |
-  | assetId | Return an asset id | ByteVector |
-  | minSponsoredAssetFee | Return a minimal sponsored asset fee | Option\[Long\] |
+| Field | Description | Type |
+| :--- | :--- | :--- |
+| assetId | Return an asset id | ByteVector |
+| minSponsoredAssetFee | Return a minimal sponsored asset fee | Option\[Long\] |
 
 ## Predefined functions
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
-* Operators
+## Operators
 
-  | Operator | Description |
-  | :--- | :--- |
-  | **+, -, \*, /, %** | Integer arithmetic, Size of output string is limited by 32767 characters, size of byte vector is limited by 65536 bytes. **+** is also used for string and byte vector concatenation. |
-  | **&gt;=, &lt;=, &gt;, &lt;** | Comparison integer-integer or strings-string |
-  | **==, !=** | Comparison any object of same type |
-  | Integer** -, **boolean** !** | Unary operators |
+| Operator | Description |
+| :--- | :--- |
+| **+, -, \*, /, %** | Integer arithmetic, Size of output string is limited by 32767 characters, size of byte vector is limited by 65536 bytes. **+** is also used for string and byte vector concatenation. |
+| **&gt;=, &lt;=, &gt;, &lt;** | Comparison integer-integer or strings-string |
+| **==, !=** | Comparison any object of same type |
+| Integer** -, **boolean** !** | Unary operators |
 
-* Pure functions
+## Pure functions
 
-  | Function Name | Description |
-  | :--- | :--- |
-  | size | For lists, strings and byte vectors |
-  | take, drop, takeRight, dropRight | For strings and byte vectors |
-  | toBytes | For booleans, numbers and strings |
-  | toString | For booleans and numbers |
-  | isDefined | Tells whether an **Option** is something or nothing |
-  | extract | Extracts value from an **Option** |
-  | throw\(message\), throw\(\) | Terminates execution. The message is optional but can help figuring out why a script fails. |
+| Function Name | Description |
+| :--- | :--- |
+| size | For lists, strings and byte vectors |
+| take, drop, takeRight, dropRight | For strings and byte vectors |
+| toBytes | For booleans, numbers and strings |
+| toString | For booleans and numbers |
+| isDefined | Tells whether an **Option** is something or nothing |
+| extract | Extracts value from an **Option** |
+| throw\(message\), throw\(\) | Terminates execution. The message is optional but can help figuring out why a script fails. |
 
- * Waves context functions:
+## Waves context functions
 
-  | Function Name | Description | Type |
-  | :--- | :--- | :--- |
-  | addressFromPublicKey | Get address from public key | ByteVector =&gt; addressType |
-  | addressFromRecipient | Get address from recipient | Option\[ByteVector\] =&gt; addressType |
-  | addressFromString | Get address from string \(seed\) | String =&gt; Option\[Address\] |
-  | assetBalance | Provides balance info for any account | addressOrAliasType =&gt; Long |
-  | transactionById | Provides tx in blockchain by id | ByteVector =&gt; Option\[Transaction\] |
-  | transactionHeightById | Provides height of tx in blockchain by id | ByteVector =&gt; Option\[Long\] |
-  | wavesBalance | Provides balance info for any account | addressOrAliasType =&gt; Long |
+| Function Name | Description | Type |
+| :--- | :--- | :--- |
+| addressFromPublicKey | Get address from public key | ByteVector =&gt; addressType |
+| addressFromRecipient | Get address from recipient | Option\[ByteVector\] =&gt; addressType |
+| addressFromString | Get address from string \(seed\) | String =&gt; Option\[Address\] |
+| assetBalance | Provides balance info for any account | addressOrAliasType =&gt; Long |
+| transactionById | Provides tx in blockchain by id | ByteVector =&gt; Option\[Transaction\] |
+| transactionHeightById | Provides height of tx in blockchain by id | ByteVector =&gt; Option\[Long\] |
+| wavesBalance | Provides balance info for any account | addressOrAliasType =&gt; Long |
 
-* `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from WavesContracts via:
+`DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from WavesContracts via:
 
-  | Function Name | Type |
-  | :--- | :--- |
-  | getInteger | \(accountAddress: ByteVector, key: String\) =&gt; Option\[Long\] |
-  | getBoolean | \(accountAddress: ByteVector, key: String\) =&gt; Option\[Boolean\] |
-  | getBinary | \(accountAddress: ByteVector, key: String\) =&gt; Option\[ByteVector\] |
-  | getString | \(accountAddress: ByteVector, key: String\) =&gt; Option\[String\] |
+| Function Name | Type |
+| :--- | :--- |
+| getInteger | \(accountAddress: ByteVector, key: String\) =&gt; Option\[Long\] |
+| getBoolean | \(accountAddress: ByteVector, key: String\) =&gt; Option\[Boolean\] |
+| getBinary | \(accountAddress: ByteVector, key: String\) =&gt; Option\[ByteVector\] |
+| getString | \(accountAddress: ByteVector, key: String\) =&gt; Option\[String\] |
 
-* The four functions above have overloads that access data stored in a Data transaction, using either key or array index, e.g.
+The four functions above have overloads that access data stored in a Data transaction, using either key or array index, e.g.
 
-  | Function Name | Type |
-  | :--- | :--- |
-  | getInteger | \(data: List\[DataEntry\], key: String\) =&gt; Option\[Long\] |
-  | getString | \(data: List\[DataEntry\], index: Long\) =&gt; String |
+| Function Name | Type |
+| :--- | :--- |
+| getInteger | \(data: List\[DataEntry\], key: String\) =&gt; Option\[Long\] |
+| getString | \(data: List\[DataEntry\], index: Long\) =&gt; String |
 
-* Crypto functions:
+## Crypto functions
 
-  | Function Name | Description | Type |
-  | :--- | :--- | :--- |
-  | sigVerify | Validate signature for bytes and public key | \(body: ByteVector, signature: ByteVector, pubKey: ByteVector\) =&gt; Boolean |
-  | keccak256,blake2b256, sha256 | Computes the bit hash | ByteVector =&gt; ByteVector |
-  | fromBase58String, fromBase64String | Get string from base58 and base64 | String =&gt; ByteVector |
-  | toBase58String, toBase64String | Convert to base58 and base 64 string | ByteVector =&gt; String |
+| Function Name | Description | Type |
+| :--- | :--- | :--- |
+| sigVerify | Validate signature for bytes and public key | \(body: ByteVector, signature: ByteVector, pubKey: ByteVector\) =&gt; Boolean |
+| keccak256,blake2b256, sha256 | Computes the bit hash | ByteVector =&gt; ByteVector |
+| fromBase58String, fromBase64String | Get string from base58 and base64 | String =&gt; ByteVector |
+| toBase58String, toBase64String | Convert to base58 and base 64 string | ByteVector =&gt; String |
+
+
+
