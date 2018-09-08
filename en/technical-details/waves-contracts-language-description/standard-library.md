@@ -4,14 +4,12 @@
 
 * These fields are common for all transaction types:
 
-| Field | Description  | Type |
+| Field | Description | Type |
 | :--- | :--- | :--- |
 | id | Transaction ID | Byte Vector |
 | fee | Transaction fee | Long |
 | timestamp | Transaction unix timestamp in milliseconds | Long |
 | version | Transaction version | Long |
-
-
 
 * These fields are common for all transaction types **except Genesis**:
 
@@ -39,7 +37,7 @@
 
 | Field | Description | TransferTransaction | [MassTransferTransaction](https://docs.wavesplatform.com/technical-details/mass-transfer-transaction.html) | PaymentTransaction\* |
 | :--- | :--- | :--- | :--- | :--- |
-| feeAssetId | Return an id of fee's asset  | + | + |  |
+| feeAssetId | Return an id of fee's asset | + | + |  |
 | amount | Return the amount of transferred asset | + |  | + |
 | assetId | Return id of the asset being transferred | + | + |  |
 | recipient | Return transfer recipient as address or alias | + |  | + |
@@ -103,52 +101,65 @@
 
 WavesContracts standard library not only contains predefined data types and instances, but also predefined functions that can be called. Some of them are pure, others can access blockchain state.
 
-* Operators:
+* Operators
 
-  * Integer arithmetic: `+`, `-`, `*`, `/`, `%`
-  * `+` is also used for string and byte vector concatenation. Size of output string is limited by 32767 characters, size of byte vector is limited by 65536 bytes.
-  * Comparison integer-integer or strings-string: `>=`, `<=`, `>`, `<`
-  * Comparison any object of same type: `==`, `!=`
-  * Unary operators: integer `-`, boolean `!`
+  | Operator | Description |
+  | :--- | :--- |
+  | **+, -, \*, /, %** | Integer arithmetic, Size of output string is limited by 32767 characters, size of byte vector is limited by 65536 bytes. **+** is also used for string and byte vector concatenation. |
+  | **&gt;=, &lt;=, &gt;, &lt;** | Comparison integer-integer or strings-string |
+  | **==, !=** | Comparison any object of same type |
+  | Integer** -, **boolean** !** | Unary operators |
 
-* Pure functions:
+* Pure functions
 
-  * `size`: for lists, strings and byte vectors
-  * `take`, `drop`, `takeRight`, `dropRight` for strings and byte vectors
-  * `toBytes` for booleans, numbers and strings
-  * `toString` for booleans and numbers
-  * `isDefined` tells whether an `Option` is something or nothing
-  * `extract` extracts value from an `Option`
-  * `throw(message)`, `throwNoMessage()` terminates execution. The message is optional but can help figuring out why a script fails.
+  | Function Name | Description |
+  | :--- | :--- |
+  | size | For lists, strings and byte vectors |
+  | take, drop, takeRight, dropRight | For strings and byte vectors |
+  | toBytes | For booleans, numbers and strings |
+  | toString | For booleans and numbers |
+  | isDefined | Tells whether an **Option** is something or nothing |
+  | extract | Extracts value from an **Option** |
+  | throw\(message\), throw\(\) | Terminates execution. The message is optional but can help figuring out why a script fails. |
 
 * Waves context functions:
 
-  * `addressFromPublicKey` : `ByteVector => addressType`
-  * `addressFromRecipient` : `Option[ByteVector] => addressType`
-  * `addressFromString` : `String => Option[Address]`
-  * `assetBalance`: `addressOrAliasType => Long` - provide balance info for any account
-  * `transactionById` : `ByteVector => Option[Transaction]` - provides tx in blockchain by id
-  * `transactionHeightById`: `ByteVector => Option[Long]` - provides height of tx in blockchain by id
-  * `wavesBalance`: `addressOrAliasType => Long` - provide balance info for any account
+  | Function Name | Description | Type |
+  | :--- | :--- | :--- |
+  | addressFromPublicKey | Get address from public key | ByteVector =&gt; addressType |
+  | addressFromRecipient | Get address from recipient | Option\[ByteVector\] =&gt; addressType |
+  | addressFromString | Get address from string \(seed\) | String =&gt; Option\[Address\] |
+  | assetBalance |  Provides balance info for any account | addressOrAliasType =&gt; Long |
+  | transactionById | Provides tx in blockchain by id | ByteVector =&gt; Option\[Transaction\] |
+  | transactionHeightById | Provides height of tx in blockchain by id | ByteVector =&gt; Option\[Long\] |
+  | wavesBalance | Provides balance info for any account | addressOrAliasType =&gt; Long |
 
 * `DataTransaction`can set/overwrite a typed primitive value for a key on account of sender. These fields can be accessed from WavesContracts via:
 
-  * `getInteger`:`(accountAddress: ByteVector, key: String) => Option[Long]`
-  * `getBoolean`:`(accountAddress: ByteVector, key: String) => Option[Boolean]`
-  * `getBinary`:`(accountAddress: ByteVector, key: String) => Option[ByteVector]`
-  * `getString`:`(accountAddress: ByteVector, key: String) => Option[String]`
+  | Function Name | Type |
+  | :--- | :--- |
+  | getInteger | \(accountAddress: ByteVector, key: String\) =&gt; Option\[Long\] |
+  | getBoolean | \(accountAddress: ByteVector, key: String\) =&gt; Option\[Boolean\] |
+  | getBinary | \(accountAddress: ByteVector, key: String\) =&gt; Option\[ByteVector\] |
+  | getString | \(accountAddress: ByteVector, key: String\) =&gt; Option\[String\] |
 
 * The four functions above have overloads that access data stored in a Data transaction, using either key or array index, e.g.
 
-  * `getInteger`:`(data: List[DataEntry], key: String) => Option[Long]`
-  * `getString`:`(data: List[DataEntry], index: Long) => String`
+  | Function Name | Type |
+  | :--- | :--- |
+  | getInteger | \(data: List\[DataEntry\], key: String\) =&gt; Option\[Long\] |
+  | getString | \(data: List\[DataEntry\], index: Long\) =&gt; String |
 
 * Crypto functions:
 
-  * `sigVerify`:`(body: ByteVector, signature: ByteVector, pubKey: ByteVector) => Boolean`
-  * `keccak256`,`blake2b256`, `sha256` : `ByteVector => ByteVector`
-  * `fromBase58String'`, `fromBase64String'`: `String => ByteVector`         
-  * `toBase58String'`, `toBase64String'`: `ByteVector => String`     
+  | Function Name | Description | Type |
+  | :--- | :--- | :--- |
+  | sigVerify | Validate signature for bytes and public key | \(body: ByteVector, signature: ByteVector, pubKey: ByteVector\) =&gt; Boolean |
+  | keccak256,blake2b256, sha256 | Computes the bit hash | ByteVector =&gt; ByteVector |
+  | fromBase58String, fromBase64String | Get string from base58 and base64  | String =&gt; ByteVector |
+  | toBase58String, toBase64String | Convert to base58 and base 64 string | ByteVector =&gt; String |
+
+     
 
 
 
