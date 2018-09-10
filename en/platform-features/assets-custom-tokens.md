@@ -51,16 +51,15 @@ Any address holding a given asset can choose to destroy some or all of the asset
 
 # 3. Examples of Current Verified Assets {#Assets(customtokens)-HowtoIssueCustomizedTokenontheWavesPlatform}
 
-* [Waves Community Token \(WCT\)](http://www.waveswiki.org/index.php?title=Waves_Community_Token_%28WCT%29)
-* [Miner Reward Token \(MRT\)](http://www.waveswiki.org/index.php?title=Miner_Reward_Token_%28MRT%29)
-* [Incent](http://www.waveswiki.org/index.php?title=Incent)
-* [EncryptoTel \(ETT\)](http://www.waveswiki.org/index.php?title=EncryptoTel)
-* [MobileGo Token \(Mgo\)](http://www.waveswiki.org/index.php?title=MobileGo_Token)
-* [Wavesgo Token \(WGO\)](http://www.waveswiki.org/index.php?title=Wavesgo_Token)
-* [Starrie \($STAR\)](http://www.waveswiki.org/index.php?title=Starrie)
-* [Mercury \(MER\)](http://www.waveswiki.org/index.php?title=Mercury)
-* [Riptobux \(RBX\)](http://www.waveswiki.org/index.php?title=Riptobux)
-* [Wavesnode.NET \(WNET\)](http://www.waveswiki.org/index.php?title=Wavesnode.NET)
+* [Waves Community Token \(WCT\)](https://blog.wavesplatform.com/waves-community-tokens-e9e8b5db0b49)
+* [Miner Reward Token \(MRT\)](https://blog.wavesplatform.com/incentivizing-pos-mining-b26f8702032c)
+* [Incent](https://www.incentloyalty.com)
+* [EncryptoTel \(ETT\)](https://encryptotel.com)
+* [MobileGo Token \(Mgo\)](https://gamecredits.com/mobilego/)
+* [Wavesgo Token \(WGO\)](http://wavesgo.com)
+* [Starrie \($STAR\)](http://starrie.org)
+* [Mercury \(MER\)](https://www.darcr.us)
+* [Wavesnode.NET \(WNET\)](https://wavesnode.net)
 
 [Here](http://support.wavesplatform.com/forums/2-knowledge-base/topics/8141-list-of-verified-assets/) you can find a more complete, but still non-exhaustivelist of verified asset \(the list is constantly updated\).
 
