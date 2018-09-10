@@ -1,15 +1,11 @@
-# Waves Client
+# Установка Waves приложения
 
-The Waves Client is the official wallet software and is designed with mass adoption in mind.
-The application is very light-weight \(~5MB\) and therefore downloaded within seconds. The user interface is designed to resemble traditional online banking interfaces which essentially means being intuitive to use. Its biggest advantage is by far the fact that it doesn't require a blockchain download. the Client connects directly to a random node in the Waves network. All of this combined leads to a straightforward and fast set up process.
+Waves Client является официальным программным обеспечением и разработан для массового использования. Приложение очень легкое \(~5 МБ\) и поэтому загружается в течение нескольких секунд. Пользовательский интерфейс разработан так, чтобы напоминать традиционные интерактивные банковские интерфейсы,  понятные на интуитивном уровне. Самым большим преимуществом Waves client является то, что он не требует загрузки блокчейна: он подключается напрямую к случайновыбранному узлу сети Waves. Это приводит к упрощению и ускорению его работы.
 
-The Waves client could also be called a multi-currency wallet. It does not only allow users to hold WAVES but also any custom token issued on the Waves blockchain.
+Waves client является также мультивалютным кошельком. Это позволяет пользователям хранить в нем не только WAVES, но также и любой ассет, выпущенный в сети Waves.
 
-**The Waves client is available as:**
+Waves client доступен в виде [настольного](https://wavesplatform.com/product) приложения и [онлайн](https://client.wavesplatform.com/) приложения.
 
-* [**Desktop Client**](https://wavesplatform.com/product)
-* [**Online Client**](https://beta.wavesplatform.com/)
-
-You can download the Desktop client from the [official site of Waves Platform](https://wavesplatform.com/), it's available for Linux, Mac OS and Windows Then you need to follow the step by step guide for creating your account.
+Вы можете загрузить настольное приложение Waves client с [официального сайта](https://wavesplatform.com/) Waves Platform (доступен для Linux, Mac OS и Windows). Затем вам необходимо следовать пошаговому руководству для [создания аккаунта](account-management/creating-an-account.md).
 
 ![](/_assets/install-waves-client-screenshot.png)
