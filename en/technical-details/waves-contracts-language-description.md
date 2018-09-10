@@ -9,7 +9,7 @@ Our realisation of smart contracts will contain two parts:
 
 We see the syntax of our language as functional, similar to F\#: strong and statically typed.
 
-**Note.** [**Here**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf) you can find our **White Paper** which describes Waves Smart Contract.
+**Note.** [**Here**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) you can find our **White Paper** which describes Waves Smart Contract.
 
 # Tutorials
 
@@ -26,6 +26,3 @@ For More **technical details**, find the articles below:
 4. [Syntax Processor and Executor Implementation Details](waves-contracts-language-description/implementation-details.md)
 5. [Creating and Deploying a Script Manually](waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
 6. [Script Performance Tests](waves-contracts-language-description/script-performance-tests.md)
-
-
-

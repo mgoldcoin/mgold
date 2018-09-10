@@ -2,9 +2,11 @@
 
 While the user writes WavesContracts code in the high-level language, Waves Contracts execution engine is a straightforward evaluator of low-level expression tree within context. In order to achieve that, there're several stages which make text script produce an execution result. These are:
 
-1. Parsing.
-2. Typechecking & Compiling.
-3. Evaluating.
+1. Parsing
+2. Compilation (typechecking & compiling).
+3. Deserialization
+4. Cost computation
+5. Evaluation
 
 ## 1. Parsing Stage
 
@@ -54,7 +56,7 @@ Parser generated AST based on the following constructs:
 | CONST\_LONG\(long\), CONST\_BYTEVECTOR\(byteVector\),      CONST\_STRING\(string\) | Used as Leafs |
 | BINARY\_OP\(EXPR, OP\_KIND, EXPR\) | Used exclusively for ease of parsing |
 
-## 2. Type Checking and Compiling Stage
+## 2. Compilation Stage
 
 Untyped AST is enriched with types and then they're checked according to the function signatures. It operates within a context of type definitions, types of defined values and predefined function signatures. An expression operates the base type **EXPR**, and its sub-type of **BLOCK**. Each **EXPR** has a type and is one of:
 
@@ -72,7 +74,18 @@ This step is important to validate user input so that less mistakes are made: fo
 
 **Note.** The output of this stage is exactly what is sent to the blockchain.
 
-## 3. Evaluator Stage
+## 3. Deserialization Stage
+In  this  stage  RIDE  only  checks  syntax rules, like correct variable names, function invocation with () and so on.
+
+## 4. Cost Computation Stage
+It operates within a context of type definitions, types of defined values and predefined function signatures.  An expression operates the base typeEXPR, and its sub-typeBLOCK. Each EXPR has a type and is one of:
+* LET(name, block) to define a variable.
+* GETTER(expr, fieldName) to access field of structure.
+* FUNCTION_CALL(name, argBlocks) to invoke a predefined function within context
+* IF(clause, ifTrueBlock, ifFalseBlock) for lazy branching.
+* leafs:CONST_LONG(long), CONST_BYTEVECTOR(byteVector), CONST_STRING(string),REF(name),TRUE,FALSE
+
+## 5. Evaluator Stage
 
 Evaluator operates a typed expression tree within a context. It traverses the low-level typed AST, produced at the previous step, returning either the execution result or an execution error.
 
