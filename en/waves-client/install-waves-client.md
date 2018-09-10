@@ -10,6 +10,6 @@ The Waves client could also be called a multi-currency wallet. It does not only 
 * [**Desktop Client**](https://wavesplatform.com/product)
 * [**Online Client**](https://client.wavesplatform.com/)
 
-You can download the Desktop client from the [official site of Waves Platform](https://wavesplatform.com/), it's available for Linux, Mac OS and Windows Then you need to follow the step by step guide for creating your account.
+You can download the Desktop client from the [official site of Waves Platform](https://wavesplatform.com/), it's available for Linux, Mac OS and Windows Then you need to follow the step by step guide for [creating your account](account-management/creating-an-account.md).
 
 ![](/_assets/install-waves-client-screenshot.png)
