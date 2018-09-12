@@ -2,7 +2,7 @@
 
 ## Common fields
 
-* These fields are common for all transaction types:
+These fields are common for all transaction types:
 
 | Field | Description | Type |
 | :--- | :--- | :--- |
@@ -10,15 +10,12 @@
 | fee | Transaction fee | Long |
 | timestamp | Transaction unix timestamp in milliseconds | Long |
 | version | Transaction version | Long |
-
-* These fields are common for all transaction types **except Genesis**:
-
-| Field | Description | Type |
-| :--- | :--- | :--- |
 | sender | Sender address | String |
 | senderPublicKey | Sender public key | ByteVector |
 | bodyBytes | Transaction body | ByteVector |
 | proofs | List of transaction proofs | List\[ByteVector\] |
+
+But **Genesis transaction** doesn't have fields: **sender**, **senderPublicKey**, **bodyBytes** and **proofs** 
 
 ## Issuing Assets
 
@@ -63,7 +60,7 @@ LeaseCancelTransaction
 
 ## Exchange Transaction and Order
 
-`ExchangeTransaction` - the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
+ExchangeTransaction is the transaction from DEX [Matcher](https://docs.wavesplatform.com/platform-features/decentralized-cryptocurrency-exchange-dex.html)
 
 | Field | Description | Type |
 | :--- | :--- | :--- |
@@ -74,7 +71,7 @@ LeaseCancelTransaction
 | buyMatcherFee | return a Matcher's fee from the buy order | Long number |
 | sellMatcherFee | return a Matcher's fee from the sell order | Long number |
 
-`Order` - an order for Matcher's order book.
+Order for Matcher's order book
 
 | Field | Description | Type |
 | :--- | :--- | :--- |
@@ -91,7 +88,7 @@ LeaseCancelTransaction
 
 ## Other
 
-`CreateAliasTransaction` - create a personal. [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
+CreateAliasTransaction can create a personal [Alias](https://docs.wavesplatform.com/waves-client/account-management/creating-an-alias.html)
 
 | Field | Description | Type |
 | :--- | :--- | :--- |
@@ -104,7 +101,7 @@ GenesisTransaction
 | amount | Return an initial amount of assets | Long number |
 | recipient | return an address for initial assets placing as address | String |
 
-DataTransaction -[Here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
+DataTransaction, [here](https://docs.wavesplatform.com/technical-details/data-transaction.html) you can find more details about Data Transaction.
 
 | Field | Description | Type |
 | :--- | :--- | :--- |
@@ -116,7 +113,7 @@ SetScriptTransaction sets the script which verifies all outgoing transactions. T
 | :--- | :--- | :--- |
 | script | Returns a script | Option\[ByteVector\] |
 
-SponsorFeeTransaction [Here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html) you can find more details about fee sponsorship.
+SponsorFeeTransaction, [here](https://docs.wavesplatform.com/technical-details/sponsored-fee.html) you can find more details about fee sponsorship.
 
 | Field | Description | Type |
 | :--- | :--- | :--- |
