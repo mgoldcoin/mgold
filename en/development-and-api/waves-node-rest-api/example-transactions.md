@@ -8,7 +8,7 @@ Listed below are examples of real transactions of each type found in testnet and
 | ---: | --- | --- | --- |
 | 3 | Issue | [FFssrfAWLK89p14h8dL83JcNAzLLSXousMqpFRVCVF2A](https://testnode1.wavesnodes.com/transactions/info/FFssrfAWLK89p14h8dL83JcNAzLLSXousMqpFRVCVF2A) | [361111](https://testnode1.wavesnodes.com/blocks/at/361111) |
 | 4 | Transfer | [7ZstEXduvWXm7DaPWCKQ7pLfKXKS5p4KTzocLGkg9Zd2](https://testnode1.wavesnodes.com/transactions/info/7ZstEXduvWXm7DaPWCKQ7pLfKXKS5p4KTzocLGkg9Zd2) | [361076](https://testnode1.wavesnodes.com/blocks/at/361076) |
-| 5 | Reissue | [5nVb3MXBrQPF1BWt4xiqfUz1pUeounNbNogrcgnpyWVM](https://testnodes.wavesnodes.com/transactions/info/5nVb3MXBrQPF1BWt4xiqfUz1pUeounNbNogrcgnpyWVM) | [369679](https://testnodes.wavesnodes.com/blocks/at/369679) |
+| 5 | Reissue | [9oxBcGzPAdupqWb4ei5mBDF3WRxjTWP2MGswyaWtka53](https://testnodes.wavesnodes.com/transactions/info/9oxBcGzPAdupqWb4ei5mBDF3WRxjTWP2MGswyaWtka53) | [353821](https://testnode1.wavesnodes.com/blocks/at/353821) |
 | 6 | Burn | [3mQQRa4jvfqKM4gskWALhzrcGwVgjEkEE3d9ZJHnvpMo](https://testnode1.wavesnodes.com/transactions/info/3mQQRa4jvfqKM4gskWALhzrcGwVgjEkEE3d9ZJHnvpMo) | [361147](https://testnode1.wavesnodes.com/blocks/at/361147) |
 | 7 | Exchange | [6xkkhF6dPqcMVr4vGRtdtcbcR5oZacwXXKsSFgNShk5p](https://testnode1.wavesnodes.com/transactions/info/6xkkhF6dPqcMVr4vGRtdtcbcR5oZacwXXKsSFgNShk5p) | [352158](https://testnode1.wavesnodes.com/blocks/at/352158) |
 | 8 | Lease | [6u4sTiSnYheSPJUcB5eR2TdWX7NfKGGHruibjWU41KzV](https://testnode1.wavesnodes.com/transactions/info/6u4sTiSnYheSPJUcB5eR2TdWX7NfKGGHruibjWU41KzV) | [352159](https://testnode1.wavesnodes.com/blocks/at/352159) |
