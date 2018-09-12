@@ -7,7 +7,7 @@ Listed below are examples of real transactions of each type found in testnet and
 | Type ID | Transaction Type | Example Transaction | Height |
 | ---: | --- | --- | --- |
 | 3 | Issue | [62E1ps3HNuFAjrdNn8AMNzMxsMLi2ayShgRYQzmND64u](https://testnodes.wavesnodes.com/transactions/info/62E1ps3HNuFAjrdNn8AMNzMxsMLi2ayShgRYQzmND64u) | [370057](https://testnodes.wavesnodes.com/blocks/at/370057) |
-| 4 | Transfer | [2WaKRJwD7pzuT2oFHFQYPMpQHancA9Dybn6zUsyjnDDc](https://testnodes.wavesnodes.com/transactions/info/2WaKRJwD7pzuT2oFHFQYPMpQHancA9Dybn6zUsyjnDDc) | [370068](https://testnodes.wavesnodes.com/blocks/at/370068) |
+| 4 | Transfer | [7ZstEXduvWXm7DaPWCKQ7pLfKXKS5p4KTzocLGkg9Zd2](https://testnode1.wavesnodes.com/transactions/info/7ZstEXduvWXm7DaPWCKQ7pLfKXKS5p4KTzocLGkg9Zd2) | [361076](https://testnode1.wavesnodes.com/blocks/at/361076) |
 | 5 | Reissue | [5nVb3MXBrQPF1BWt4xiqfUz1pUeounNbNogrcgnpyWVM](https://testnodes.wavesnodes.com/transactions/info/5nVb3MXBrQPF1BWt4xiqfUz1pUeounNbNogrcgnpyWVM) | [369679](https://testnodes.wavesnodes.com/blocks/at/369679) |
 | 6 | Burn | [EjiDk7vm1BpkARmA1RUpe7q2skTFVbeBTGnG4MMpdtRz](https://testnodes.wavesnodes.com/transactions/info/EjiDk7vm1BpkARmA1RUpe7q2skTFVbeBTGnG4MMpdtRz) | [366048](https://testnodes.wavesnodes.com/blocks/at/366048) |
 | 7 | Exchange | [96SSxdCT3hmV6uT5ojqFZVXXqPuQ17jQiFA4ZZTvfCaW](https://testnodes.wavesnodes.com/transactions/info/96SSxdCT3hmV6uT5ojqFZVXXqPuQ17jQiFA4ZZTvfCaW) | [360556](https://testnodes.wavesnodes.com/blocks/at/360556) |
