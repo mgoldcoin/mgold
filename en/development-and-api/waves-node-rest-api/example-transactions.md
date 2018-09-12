@@ -15,7 +15,7 @@ Listed below are examples of real transactions of each type found in testnet and
 | 9 | Lease Cancel | [DGt7GkNYo7ufBt9C6Tt5BHouzTdUKUMB2rnVv79vV11o](https://testnodes.wavesnodes.com/transactions/info/DGt7GkNYo7ufBt9C6Tt5BHouzTdUKUMB2rnVv79vV11o) | [369223](https://testnodes.wavesnodes.com/blocks/at/369223) |
 | 10 | Alias | [2zUidnn57JPPG1DPQXkymPfxP1fW3iwULsjBH5MScBFm](https://testnodes.wavesnodes.com/transactions/info/2zUidnn57JPPG1DPQXkymPfxP1fW3iwULsjBH5MScBFm) | [366011](https://testnodes.wavesnodes.com/blocks/at/366011) |
 | 11 | Mass Transfer | [9nB7msRRRTsTNt5fyu9aScKtJ6pdrs5LRgdx6Rw5wBa4](https://testnodes.wavesnodes.com/transactions/info/9nB7msRRRTsTNt5fyu9aScKtJ6pdrs5LRgdx6Rw5wBa4) | [360596](https://testnodes.wavesnodes.com/blocks/at/360596) |
-| 12 | Data | [F6QEChEyR5dnjdtVhnyDojfUhDtM3UpXPTNvgCHhiueo](https://testnodes.wavesnodes.com/transactions/info/F6QEChEyR5dnjdtVhnyDojfUhDtM3UpXPTNvgCHhiueo) | [369657](https://testnodes.wavesnodes.com/blocks/at/369657) |
+| 12 | Data | [JC6LcW78zPV7DsgaKV4CTpsE91crm5kSZGwmJX2qY1hA](https://testnode1.wavesnodes.com/transactions/info/JC6LcW78zPV7DsgaKV4CTpsE91crm5kSZGwmJX2qY1hA) | [358109](https://testnode1.wavesnodes.com/blocks/at/358109) |
 | 13 | Set Script | [4ZbPJV8QXSYJBqpDkuxoPADYgaUkPh1eEsD5kLGygwd7](https://testnode1.wavesnodes.com/transactions/info/4ZbPJV8QXSYJBqpDkuxoPADYgaUkPh1eEsD5kLGygwd7) | [358209](https://testnode1.wavesnodes.com/blocks/at/358209) |
 | 14 | Set Sponsorship | [3E4MdU4ougL61uMNHhbcMsZ2UwpeoybxWgY9dVJ1psoq](https://testnode1.wavesnodes.com/transactions/info/3E4MdU4ougL61uMNHhbcMsZ2UwpeoybxWgY9dVJ1psoq) | [361076](https://testnode1.wavesnodes.com/blocks/at/361076) |
 
