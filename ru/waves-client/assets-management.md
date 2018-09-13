@@ -6,6 +6,8 @@
 * [Перевыпуск токена](assets-management/reissue-an-asset.md)
 * [Сжигание токена](assets-management/burn-an-asset.md)
 * [Распределение токена](assets-management/mass-transfer.md)
+* [Спонсорские транзакции](assets-management/sponsored-transaction.md)
+* [Спосорская комиссия](assets-management/sponsored-fee.md)
 
 Плюсы создания токенов на платформе Waves:
 
