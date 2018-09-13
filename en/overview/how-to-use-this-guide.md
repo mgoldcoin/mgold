@@ -32,13 +32,11 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 3. [Transfers and gateways](/waves-client/wallet-management.md)
 4. [Waves DEX](/waves-client/waves-dex.md) \(Trading Using DEX\)
 5. [Assets Management \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
+6. [Waves Wallet for iOS Devices](waves-client/mobile-apps/iOS.md)
+7. [Waves Wallet for Android Devices](waves-client/mobile-apps/android.md)
+8. [Frequently Asked Questions](waves-client/faq.md)
 
-# 4. Mobile Applications
-
-1. [Waves Wallet for IOS Devices](/mobile-apps/iOS.md)
-2. [Waves Wallet for Android Devices](/mobile-apps/android.md)
-
-# 5. Waves Full Node
+# 4. Waves Full Node
 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
@@ -50,7 +48,7 @@ This section contains all information about Installing, configuring and upgradin
 6. [Reducing Disk Space Usage](/waves-full-node/reducing-disk-space-usage.md)
 7. [Joining Testnet](/waves-full-node/joining-testnet.md)
 
-# 6. Development and API
+# 5. Development and API
 
 1. [Technical Details](/technical-details/technical-details.md)
 2. [Waves Smart Contracts](/technical-details/waves-contracts-language-description.md)
@@ -59,9 +57,3 @@ This section contains all information about Installing, configuring and upgradin
 5. [Node API Overview](https://legacy.gitbook.com/book/waves-platform/wavesdocs/edit#)
 6. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
 7. [Examples](/development-and-api/examples.md)
-
-# 7. Frequently Asked Questions \(FAQ\)
-
-1. [Account Management FAQ](/frequently-asked-questions-faq/account-management-faq.md)
-2. [Transfers and Gateways FAQ](/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
-3. [Waves DEX FAQ](/frequently-asked-questions-faq/waves-dex-faq.md)
