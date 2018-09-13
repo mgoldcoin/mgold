@@ -6,6 +6,8 @@ Assets Management Chapter includes all details about Issue and Reissue Assets wh
 * [Token reissuing](assets-management/reissue-an-asset.md)
 * [Token burning](assets-management/burn-an-asset.md)
 * [Token distribution](assets-management/mass-transfer.md)
+* [Sponsored transaction](assets-management/sponsored-transaction.md)
+* [Sponsored fee](assets-management/sponsored-fee.md)
 
 **Note**. It costs just 1 WAVES to do so and then your token can be traded on the Waves DEX.
 
