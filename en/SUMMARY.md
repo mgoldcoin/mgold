@@ -49,8 +49,10 @@
 * [Assets Management](waves-client/assets-management.md)
   * [Token creation](waves-client/assets-management/issue-an-asset.md)
   * [Token reissuing](waves-client/assets-management/reissue-an-asset.md)
-  * [​Token burning](waves-client/assets-management/burn-an-asset.md)
+  * [Token burning](waves-client/assets-management/burn-an-asset.md)
   * [Token distribution](waves-client/assets-management/mass-transfer.md)
+  * [Sponsored transaction](waves-client/assets-management/sponsored-transaction.md)
+  * [Sponsored fee](waves-client/assets-management/sponsored-fee.md)
 
 ## Mobile applications
 
