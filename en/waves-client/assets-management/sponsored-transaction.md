@@ -23,7 +23,7 @@ The following window will appear. Read the conditions carefully in the **yellow 
 ![](/_assets/sponsored_transaction_04.png)
 
 Choose the required amount of sponsored token to be charged to users.
-**Note**: After activation you'll be able to change the specified amount without deactivation. To do so, find your token, click on the (![](/_assets/sponsored_transaction_02.png) button and choose **Change Sponsorship**. 
+**Note**: After activation you'll be able to change the specified amount without deactivation. To do so, find your token, click on the (![](/_assets/sponsored_transaction_02.png)) button and choose **Change Sponsorship**. 
 
 Click on the **Continue button**.
 
@@ -37,7 +37,7 @@ After all, you'll be able to see activation status. There will be a special % sy
 
 **How to deactivate sponsored transactions**.
 
-The deactivation process is extremely simple. Find your token, click on the () button and choose **Disable Sponsorship**.
+The deactivation process is extremely simple. Find your token, click on the (![](/_assets/sponsored_transaction_02.png)) button and choose **Disable Sponsorship**.
 
 ![](/_assets/sponsored_transaction_07.png)
 
