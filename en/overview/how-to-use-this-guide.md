@@ -32,9 +32,9 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 3. [Transfers and gateways](/waves-client/wallet-management.md)
 4. [Waves DEX](/waves-client/waves-dex.md) \(Trading Using DEX\)
 5. [Assets Management \(Issue and Reissue an Asset\)](/waves-client/assets-management.md)
-6. [Waves Wallet for iOS Devices](waves-client/mobile-apps/iOS.md)
-7. [Waves Wallet for Android Devices](waves-client/mobile-apps/android.md)
-8. [Frequently Asked Questions](waves-client/faq.md)
+6. [Waves Wallet for iOS Devices](/waves-client/mobile-apps/iOS.md)
+7. [Waves Wallet for Android Devices](/waves-client/mobile-apps/android.md)
+8. [Frequently Asked Questions](/waves-client/faq.md)
 
 # 4. Waves Full Node
 
