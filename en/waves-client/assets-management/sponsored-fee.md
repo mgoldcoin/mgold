@@ -9,7 +9,7 @@ Click on the **Send** button on the **Assets** page.
  
 **Note**: To use sponsored fees, you must have sponsored token. The token issuer activated sponsored transactions. If these conditions are not met, you will be able to pay the transaction fee in Waves only.
 
-Pic
+![](/_assets/sponsored_fee_01.png)
 
 The following window will appear.
 
@@ -21,14 +21,14 @@ Fill In the sending form.
 **Description**: Optional. You can write a message for the recipient in the Description field. 
 **Transaction Fee**: Select the necessary fees token from the dropdown menu. By default **WAVES**.
 
-Pic
+![](/_assets/sponsored_fee_02.png)
 
 After you have entered all necessary information, click on the **Continue**.
 
 The following pop-up will appear.
 Re-check entered data and click on the **Confirm**.
 
-Pic
+![](/_assets/sponsored_fee_03.png)
 
 The created transaction will be processed with the next block.
 
