@@ -23,11 +23,11 @@ The following window will appear. Read the conditions carefully in the **yellow 
 ![](/_assets/sponsored_transaction_04.png)
 
 Choose the required amount of sponsored token to be charged to users.
-**Note**: After activation you'll be able to change the specified amount without deactivation. To do so, find your token, click on the (![](/_assets/sponsored_transaction_02.png)) button and choose **Change Sponsorship**. 
+**Note**: After activation you'll be able to change the specified amount without deactivation. To do so, find your token, click on the (![](/_assets/sponsored_transaction_02.png)) button and choose **Change Sponsorship**.
 
 Click on the **Continue button**.
 
-Recheck entered data and click on the **Confirm button**. Activation will be processed with the next block. 
+Recheck entered data and click on the **Confirm button**. Activation will be processed with the next block.
 
 ![](/_assets/sponsored_transaction_05.png)
 
@@ -35,15 +35,20 @@ After all, you'll be able to see activation status. There will be a special % sy
 
 ![](/_assets/sponsored_transaction_06.png)
 
+**Note**: For each user transaction in the sponsored mode, you will be charged a commission of 0.001 Waves.
+**Note**: If the balance of your account will not have enough Waves to pay for user transactions. In this case, your sponsored transactions will be canceled.
+
+**For example**: You activated the sponsored transaction. You have free - 3 Waves, in orders - 5 Waves and in leasing - 10 Waves. As soon as 3 Waves run out, the active sponsored mode will use Waves from active (unfilled) orders. In this case, orders at the time of the matching will be canceled, since you will not have enough Waves to pay the order fee or to ensure an active order. As soon as all free Waves are used, the sponsored mode will be forcibly disabled.​
+
 **How to deactivate sponsored transactions**.
 
 The deactivation process is extremely simple. Find your token, click on the (![](/_assets/sponsored_transaction_02.png)) button and choose **Disable Sponsorship**.
 
 ![](/_assets/sponsored_transaction_07.png)
 
-The following window will appear. 
+The following window will appear.
 Be sure that you want to deactivate it and click on the Confirm button.
-Deactivation will be processed with the next block. 
+Deactivation will be processed with the next block.
 
 ![](/_assets/sponsored_transaction_08.png)
 
