@@ -53,17 +53,6 @@
   * [Token distribution](waves-client/assets-management/mass-transfer.md)
   * [Sponsored transaction](waves-client/assets-management/sponsored-transaction.md)
   * [Sponsored fee](waves-client/assets-management/sponsored-fee.md)
-* [FAQ](waves-client/faq.md)
-  * [Account Management FAQ](waves-client/frequently-asked-questions-faq/account-management-faq.md)
-    * [One Seed - One Waves address](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
-    * [Spam transactions](waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
-    * [How to Enable Dark Mode](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)
-  * [Transfers and Gateways FAQ](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
-    * [What is a payment gateway](waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
-    * [Ethereum transfers with smart-contracts](waves-client/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
-  * [Waves DEX FAQ](waves-client/frequently-asked-questions-faq/waves-dex-faq.md)
-    * [Order execution time](waves-client/frequently-asked-questions-faq/waves-dex/order-time.md)
-    * [Asset ID on the Waves DEX](waves-client/frequently-asked-questions-faq/waves-dex/asset-id.md)
 
 * [Mobile applications](waves-client/mobile-apps.md)
   * [Waves Wallet for iOS Devices](waves-client/mobile-apps/iOS.md)
@@ -84,6 +73,18 @@
       * [Asset transfers](waves-client/mobile-apps/android/transfers-and-gateways/asset-transfers.md)
     * [Android: Waves DEX](waves-client/mobile-apps/android/waves-dex.md)
       * [Start trading using the Waves DEX](waves-client/mobile-apps/android/waves-dex/start-trading-using-the-waves-dex.md)
+
+* [FAQ](waves-client/faq.md)
+  * [Account Management FAQ](waves-client/frequently-asked-questions-faq/account-management-faq.md)
+    * [One Seed - One Waves address](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
+    * [Spam transactions](waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
+    * [How to Enable Dark Mode](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)
+  * [Transfers and Gateways FAQ](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+    * [What is a payment gateway](waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+    * [Ethereum transfers with smart-contracts](waves-client/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
+  * [Waves DEX FAQ](waves-client/frequently-asked-questions-faq/waves-dex-faq.md)
+    * [Order execution time](waves-client/frequently-asked-questions-faq/waves-dex/order-time.md)
+    * [Asset ID on the Waves DEX](waves-client/frequently-asked-questions-faq/waves-dex/asset-id.md)
 
 ## Waves Full Node
 

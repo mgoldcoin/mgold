@@ -1,6 +1,7 @@
 # Mobile applications
 
-This section contains all  questions related to the mobile version of the Waves applications. In this section, you will find detailed manuals for the most popular platforms (iOS and Android).
+This chapter includes all details about mobile applications. The mobile applications have basic functionality, such as: sending and receiving Waves tokens and Waves based assets, trading on the DEX platform.
+Some functions are not yet available, but they will be implemented in the future.
 
-* [Waves Wallet for iOS Devices](waves-client/mobile-apps/iOS.md)
-* [Waves Wallet for Android Devices](waves-client/mobile-apps/android.md)
+* [Waves Wallet for iOS Devices](mobile-apps/iOS.md)
+* [Waves Wallet for Android Devices](mobile-apps/android.md)
