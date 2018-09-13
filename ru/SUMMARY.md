@@ -49,6 +49,8 @@
     * [Перевыпуск токена](waves-client/assets-management/reissue-an-asset.md)
     * [Сжигание токена](waves-client/assets-management/burn-an-asset.md)
     * [Распределение токена](waves-client/assets-management/mass-transfer.md)
+    * [Спонсорские транзакции](waves-client/assets-management/sponsored-transaction.md)
+    * [Спосорская комиссия](waves-client/assets-management/sponsored-fee.md)
 
 ## Часто задаваемые вопросы
 
