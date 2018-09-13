@@ -12,15 +12,15 @@ Open up your Waves wallet.
 
 Go to the **Portfolio** and find your token.
 
-![](/_assets/sponsored_transaction_01.png
+![](/_assets/sponsored_transaction_01.png)
 
 As soon as you find your token, click on the (![](/_assets/sponsored_transaction_02.png)) button and choose Enable Sponsorship.
 
-![](/_assets/sponsored_transaction_03.png
+![](/_assets/sponsored_transaction_03.png)
 
 The following window will appear. Read the conditions carefully in the **yellow box** before proceeding.
 
-![](/_assets/sponsored_transaction_04.png
+![](/_assets/sponsored_transaction_04.png)
 
 Choose the required amount of sponsored token to be charged to users.
 **Note**: After activation you'll be able to change the specified amount without deactivation. To do so, find your token, click on the (![](/_assets/sponsored_transaction_02.png) button and choose **Change Sponsorship**. 
@@ -29,26 +29,26 @@ Click on the **Continue button**.
 
 Recheck entered data and click on the **Confirm button**. Activation will be processed with the next block. 
 
-![](/_assets/sponsored_transaction_05.png
+![](/_assets/sponsored_transaction_05.png)
 
 After all, you'll be able to see activation status. There will be a special % symbol near token logo.
 
-![](/_assets/sponsored_transaction_06.png
+![](/_assets/sponsored_transaction_06.png)
 
 **How to deactivate sponsored transactions**.
 
 The deactivation process is extremely simple. Find your token, click on the () button and choose **Disable Sponsorship**.
 
-![](/_assets/sponsored_transaction_07.png
+![](/_assets/sponsored_transaction_07.png)
 
 The following window will appear. 
 Be sure that you want to deactivate it and click on the Confirm button.
 Deactivation will be processed with the next block. 
 
-![](/_assets/sponsored_transaction_08.png
+![](/_assets/sponsored_transaction_08.png)
 
 After all, you'll be able to see deactivation status. A special symbol will be removed from the token logo.
 
-![](/_assets/sponsored_transaction_09.png
+![](/_assets/sponsored_transaction_09.png)
 
 If  you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
