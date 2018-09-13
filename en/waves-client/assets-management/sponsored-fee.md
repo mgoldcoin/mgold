@@ -34,10 +34,10 @@ The created transaction will be processed with the next block.
 
 Related articles:
 
- * [Token creation](waves-client/assets-management/issue-an-asset.md)
- * [Token reissuing](waves-client/assets-management/reissue-an-asset.md)
- * [Token burning](waves-client/assets-management/burn-an-asset.md)
- * [Token distribution](waves-client/assets-management/mass-transfer.md)
- * [Sponsored fee](waves-client/assets-management/sponsored-fee.md)
+ * [Token creation](https://docs.wavesplatform.com/en/waves-client/assets-management/issue-an-asset.html)
+ * [Token reissuing](https://docs.wavesplatform.com/en/waves-client/assets-management/reissue-an-asset.html)
+ * [Token burning](https://docs.wavesplatform.com/en/waves-client/assets-management/burn-an-asset.html)
+ * [Token distribution](https://docs.wavesplatform.com/en/waves-client/assets-management/mass-transfer.html)
+ * [Sponsored transaction](https://docs.wavesplatform.com/en/waves-client/assets-management/sponsored-transaction.html)
 
 If  you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
