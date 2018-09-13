@@ -12,6 +12,7 @@ Spam section can be found in a special section or disabled in the application se
 
 ![](/_assets/spam_tx_02.png)
 
-**Please be careful with any assets. Before trading with any asset, please make a preliminary market investigation.**
+**Before sending and receiving crypto assets, educate yourself to make informed decisions. Crypto assets are volatile and the prices can go up and down. Carefully evaluate your trading goals and the financial risk you are willing to take.
+Please beware that Wavesplatform does not provide financial, tax, or legal advice. You should take such decisions on your own or consult with reliable experts.**
 
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

@@ -53,6 +53,17 @@
   * [Token distribution](waves-client/assets-management/mass-transfer.md)
   * [Sponsored transaction](waves-client/assets-management/sponsored-transaction.md)
   * [Sponsored fee](waves-client/assets-management/sponsored-fee.md)
+* [FAQ](waves-client/faq.md)
+  * [Account Management FAQ](waves-client/frequently-asked-questions-faq/account-management-faq.md)
+    * [One Seed - One Waves address](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)
+    * [Spam transactions](waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
+    * [How to Enable Dark Mode](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)
+  * [Transfers and Gateways FAQ](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
+    * [What is a payment gateway](waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+    * [Ethereum transfers with smart-contracts](waves-client/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
+  * [Waves DEX FAQ](waves-client/frequently-asked-questions-faq/waves-dex-faq.md)
+    * [Order execution time](waves-client/frequently-asked-questions-faq/waves-dex/order-time.md)
+    * [Asset ID on the Waves DEX](waves-client/frequently-asked-questions-faq/waves-dex/asset-id.md)
 
 ## Mobile applications
 
@@ -143,16 +154,3 @@
 * [Sponsored transactions](proposals/sponsored-transactions.md)
 * [Versioned transactions](proposals/versioned-transactions.md)
 * [Trezor hardware wallet integration specification](proposals/trezor-hardware-wallet-integration-specification.md)
-
-## FAQ
-
-* [Account Management FAQ](frequently-asked-questions-faq/account-management-faq.md)
-  * [One Seed - One Waves address](frequently-asked-questions-faq/account-management/one-seed.md)
-  * [Spam transactions](frequently-asked-questions-faq/account-management/spam-transactions.md)
-  * [How to Enable Dark Mode](frequently-asked-questions-faq/account-management/dark-mode.md)
-* [Transfers and Gateways FAQ](frequently-asked-questions-faq/transfers-and-gateways-faq.md)
-  * [What is a payment gateway](frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
-  * [Ethereum transfers with smart-contracts](frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
-* [Waves DEX FAQ](frequently-asked-questions-faq/waves-dex-faq.md)
-  * [Order execution time](frequently-asked-questions-faq/waves-dex/order-time.md)
-  * [Asset ID on the Waves DEX](frequently-asked-questions-faq/waves-dex/asset-id.md)
