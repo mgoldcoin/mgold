@@ -6,7 +6,7 @@ So, now Waves users can use custom fees. It allows using fee in token if the cre
 Open up your Waves wallet.
 
 Click on the **Send** button on the **Assets** page.
- 
+
 **Note**: To use sponsored fees, you must have sponsored token. The token issuer activated sponsored transactions. If these conditions are not met, you will be able to pay the transaction fee in Waves only.
 
 ![](/_assets/sponsored_fee_01.png)
@@ -15,11 +15,11 @@ The following window will appear.
 
 Fill In the sending form.
 
-**Asset**: Choose the necessary token from the dropdown menu.
-**Recipient**: Put the recipient Waves address.
-**Amount**: Define a number of tokens you want to send.
-**Description**: Optional. You can write a message for the recipient in the Description field. 
-**Transaction Fee**: Select the necessary fees token from the dropdown menu. By default **WAVES**.
+* **Asset**: Choose the necessary token from the dropdown menu.
+* **Recipient**: Put the recipient Waves address.
+* **Amount**: Define a number of tokens you want to send.
+* **Description**: Optional. You can write a message for the recipient in the Description field.
+* **Transaction Fee**: Select the necessary fees token from the dropdown menu. By default **WAVES**.
 
 ![](/_assets/sponsored_fee_02.png)
 
