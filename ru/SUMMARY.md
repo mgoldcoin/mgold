@@ -1,15 +1,15 @@
-# Summary
+# Краткое изложение
 
-## Overview
+## Обзор
 
-  * [How To Use This Guide](overview/how-to-use-this-guide.md)
-  * [Platform Components](overview/platform-components.md)
-  * [Security Notes](overview/security-notes.md)
-  * [Waves Official Resources](overview/waves-official-resources.md)
-  * [Waves Releases](overview/waves-releases.md)
-  * [Waves Tokens](overview/waves-tokens.md)
+  * [Как использовать это руководство](overview/how-to-use-this-guide.md)
+  * [Компоненты платформы](overview/platform-components.md)
+  * [Заметки о безопасности](overview/security-notes.md)
+  * [Официальные ресурсы ](overview/waves-official-resources.md)
+  * [Waves релизы](overview/waves-releases.md)
+  * [Waves токены](overview/waves-tokens.md)
 
-## Platform Features
+## Возможности платформы
 
   * [Activation Protocol](platform-features/activation-protocol.md)
   * [Assets Custom Tokens](platform-features/assets-custom-tokens.md)

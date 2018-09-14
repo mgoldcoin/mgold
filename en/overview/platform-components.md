@@ -2,7 +2,7 @@
 
 # 1. Waves Client
 
-[The Waves Lite Client](https://client.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
+[The Waves Client](https://client.wavesplatform.com) can be [easily installed](/waves-client/install-waves-client.md) and used to perform most actions in the Waves Platform where users can issue, transfer and trade assets.
 
 # 2. Waves Wallet
 
@@ -22,7 +22,7 @@
 
 * Waves Wallet is a mobile client to WavesPlatform available on [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) and [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
 * The wallet is connected to public Waves nodes in order to retrieve your transactions and send payments.
-* Get started with Waves wallet for [IOS](/mobile-apps/iOS.md) or [Android](//mobile-apps/android.md)
+* Get started with Waves wallet for [iOS](en/waves-client/mobile-apps/iOS.md) and [Android](en/waves-client/mobile-apps/android.md)
 
 # 5. Waves Gateways
 
@@ -42,15 +42,15 @@ All currencies listed below are integrated in Waves through gateways. You can se
 
 Current List of crypto gateways:
 
-1. Bitcoin
-2. Ethereum
-3. Litecoin
-4. ZCash
-5. Bitcoin cash
-6. Dash
-7. Monero
+* [Bitcoin](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
+* [Ethereum](/waves-client/transfers-and-gateways/ethereum-transfers.md)
+* [Litecoin](/waves-client/transfers-and-gateways/litecoin-transfers.md)
+* [Zcash](/waves-client/transfers-and-gateways/zcash-transfers.md)
+* [Bitcoin Cash](/waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
+* [Dash](/waves-client/transfers-and-gateways/dash-transfers.md)
+* [Monero](/waves-client/transfers-and-gateways/monero-transfers.md)
 
-Cryptocurrency gateways can be used to move external currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server.
+Cryptocurrency gateways can be used to move external currencies into and out of the Waves blockchain. Once the currencies have been confirmed as received by the gateway, the user’s wallet is credited with a Waves token that is 1:1 backed by the cryptocurrency held within the server. See more [What is a payment gateway](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 Fees are minimal and the only delays are those required by blockchain confirmation times. We are planning to integrate more payment gateways in the future.
 

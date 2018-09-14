@@ -6,12 +6,11 @@
 
 Эта секция содержит общую информацию о Waves Platform и её основных компонентах.
 
-1. [Что такое Waves Platform]()
-2. [Компоненты Waves Platform](/overview/platform-components.md)
-3. [Официальные ресурсы Waves](/overview/waves-official-resources.md)
-4. [Важные замечания по безопасности для пользователей кошелька](/ru/overview/security-notes.md)
-5. [Информация о релизах](/overview/waves-releases.md)
-6. [Информация о токенах](/overview/waves-tokens.md)
+1. [Компоненты Waves Platform](/overview/platform-components.md)
+2. [Официальные ресурсы Waves](/overview/waves-official-resources.md)
+3. [Важные замечания по безопасности для пользователей кошелька](/ru/overview/security-notes.md)
+4. [Информация о релизах](/overview/waves-releases.md)
+5. [Информация о токенах](/overview/waves-tokens.md)
 
 # 2. Особенности платформы
 
@@ -66,5 +65,3 @@
 1. [Управление аккаунтом FAQ](/frequently-asked-questions-faq/account-management-faq.md)
 2. [Переводы и вывод стредств FAQ](/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
 3. [Waves DEX FAQ](/frequently-asked-questions-faq/waves-dex-faq.md)
-
-

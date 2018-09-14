@@ -1,8 +1,8 @@
-# Компоненты Waves Platform 
+# Компоненты Waves Platform
 
 # 1. Waves Client
 
-[Waves Lite Client](https://beta.wavesplatform.com) можно [установить](/waves-client/install-waves-client.md) и пользоваться большей частью функций,
+Waves Client можно [установить](/waves-client/install-waves-client.md) и пользоваться большей частью функций,
 предоставляемых платформой Waves: выпускать, передавать или торговать ассетами.
 
 # 2. Waves Wallet
@@ -21,13 +21,13 @@
 
 # 4. Мобильные приложения
 
-* Waves Wallet, мобильный клиент, для Waves доступен для платформ [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) и [IOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8).
-* Кошелек  подключен к общедоступным нодам Waves, что обеспечивает возможность получения транзакции и отправки платежей.
-* Руководство по началу работы с Waves Wallet для [IOS](/en/mobile-apps/iOS.md) и [Android](/mobile-apps/android.md)
+* Мобильные версии Waves приложений могут быть установлены на [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) и [iOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8) устройства.
+* Кошелек подключен к общедоступным нодам Waves, что обеспечивает возможность получения транзакции и отправки платежей.
+* Руководство по началу работы с Waves Wallet для [iOS](en/waves-client/mobile-apps/iOS.md) и [Android](en/waves-client/mobile-apps/android.md)
 
 # 5. Шлюзы Waves
 
-Фиатные шлюзы, такие как USD/EUR, позволяют обменять любой токен, выпущенный на платформе Waves \(или другой криптовалюты, такой как BTC/ETH/LTC/ZCash/BCH/Dash\) на «реальные» деньги, которые могут быть помещены в банк. Все транзакции криптовалюта -> фиат и фиат -> криптовалюта будут записаны в блокчейн Waves. 
+Фиатные шлюзы, такие как USD/EUR, позволяют обменять любой токен, выпущенный на платформе Waves \(или другой криптовалюты, такой как BTC/ETH/LTC/ZCash/BCH/Dash\) на «реальные» деньги, которые могут быть помещены в банк. Все транзакции криптовалюта -> фиат и фиат -> криптовалюта будут записаны в блокчейн Waves.
 
 ## 6.1 Фиатные шлюзы
 
@@ -43,14 +43,15 @@
 
 Текущий список шлюзов:
 
-1. Bitcoin
-2. Ethereum
-3. Litecoin
-4. ZCash
-5. Bitcoin cash
-6. Dash
+ * [Bitcoin](/waves-client/transfers-and-gateways/bitcoin-transfers.md)
+ * [Ethereum](/waves-client/transfers-and-gateways/ethereum-transfers.md)
+ * [Litecoin](/waves-client/transfers-and-gateways/litecoin-transfers.md)
+ * [Zcash](/waves-client/transfers-and-gateways/zcash-transfers.md)
+ * [Bitcoin Cash](/waves-client/transfers-and-gateways/bitcoin-cash-transfers.md)
+ * [Dash](/waves-client/transfers-and-gateways/dash-transfers.md)
+ * [Monero](/waves-client/transfers-and-gateways/monero-transfers.md)
 
-BTC/ETH/LTC/ZCash/BCH/Dash шлюзы могут использоваться для перевода данных валют в блокчейн Waves вывода из него. Как только получение валюты шлюзом было подтверждено, на кошелек пользователя зачисляется токен Waves, который обеспечивается криптовалютой, хранящейся на сервере, в соотношении один к одному.
+Криптовалютные шлюзы могут использоваться для перевода внешних криптовалют в блокчейн Waves и вывода из него. Как только получение шлюзом будет подтверждено, на кошелек пользователя зачислятся токен Waves, который обеспечивается криптовалютой, хранящейся на сервере, в соотношении один к одному.Более подробнее [Что такое платежный шлюз](ru/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 Комиссия является минимальной, и единственная задержка связана с временем, требуемым на проверку и подтверждение в блокчейне. В будущем мы планируем интегрировать больше платежных шлюзов.
 
@@ -58,7 +59,7 @@ BTC/ETH/LTC/ZCash/BCH/Dash шлюзы могут использоваться д
 
 # 7. Ноды
 
-Ноды являются основой экосистемы Waves. [Запустите Waves ноду](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), помогите в обработке транзакций, попросите у комьюнити [сдать вам в лизинг WAVES](/waves-client/account-management/waves-leasing.md) и получите оплату за обеспечение безопасности сети.
+Ноды являются основой экосистемы Waves. [Запустите Waves ноду](en/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), помогите в обработке транзакций, попросите у комьюнити [сдать вам в лизинг WAVES](/waves-client/account-management/waves-leasing.md) и получите оплату за обеспечение безопасности сети.
 
 **Особенности:**
 
@@ -92,7 +93,7 @@ BTC/ETH/LTC/ZCash/BCH/Dash шлюзы могут использоваться д
 
 **Примечание.** Полный список нод можно найти здесь [dev.pywaves.org](http://dev.pywaves.org/generators/), а [здесь](https://wavesplatform.com/leasing#nodes) можно найти список нод с наибольшим балансом WAVES.
 
-# 7.3 Матчер 
+# 7.3 Матчер
 
 Ноды Матчера отвечают за сведение заявок и за оперативное выполнение сделок до их попадания в блокчейн. Вы отправляете свои заявки на Матчер. Заявки попадают в Матчер по зашифрованному каналу и не будут видны другим пользователям до тех пор, пока они не будут выполнены, что минимизирует возможность манипулирования рынком. Таким образом заявки продавца и покупателя связываются для исполнения заявки, и затем транзакция фиксируется в блокчейне Waves.
 
@@ -100,7 +101,7 @@ BTC/ETH/LTC/ZCash/BCH/Dash шлюзы могут использоваться д
 
 Матчер получает плату за предоставляемую им услугу, что является дополнительным источником дохода для всех нод Waves.
 
-**Примечание.** Waves нода содержит DEX Матчер который может быть включен в настройках [файла конфигурации Waves ноды](/waves-full-node/how-to-configure-a-node.md) в разделе Matcher Settings.
+**Примечание.** Waves нода содержит DEX Матчер который может быть включен в настройках [файла конфигурации Waves ноды](en/waves-full-node/configuration-parameters.md) в разделе Matcher Settings.
 
 # 8. MainNet / TestNet
 
