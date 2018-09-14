@@ -23,7 +23,7 @@ Waves Client можно [установить](/waves-client/install-waves-clien
 
 * Мобильные версии Waves приложений могут быть установлены на [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) и [iOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8) устройства.
 * Кошелек подключен к общедоступным нодам Waves, что обеспечивает возможность получения транзакции и отправки платежей.
-* Руководство по началу работы с Waves Wallet для [iOS](en/waves-client/mobile-apps/iOS.md) и [Android](en/waves-client/mobile-apps/android.md)
+* Руководство по началу работы с Waves Wallet для [iOS](https://docs.wavesplatform.com/en/waves-client/mobile-apps/iOS.html) и [Android](https://docs.wavesplatform.com/en/waves-client/mobile-apps/android.html)
 
 # 5. Шлюзы Waves
 
@@ -51,15 +51,15 @@ Waves Client можно [установить](/waves-client/install-waves-clien
  * [Dash](/waves-client/transfers-and-gateways/dash-transfers.md)
  * [Monero](/waves-client/transfers-and-gateways/monero-transfers.md)
 
-Криптовалютные шлюзы могут использоваться для перевода внешних криптовалют в блокчейн Waves и вывода из него. Как только получение шлюзом будет подтверждено, на кошелек пользователя зачислятся токен Waves, который обеспечивается криптовалютой, хранящейся на сервере, в соотношении один к одному.Более подробнее [Что такое платежный шлюз](ru/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Криптовалютные шлюзы могут использоваться для перевода внешних криптовалют в блокчейн Waves и вывода из него. Как только получение шлюзом будет подтверждено, на кошелек пользователя зачислятся токен Waves, который обеспечивается криптовалютой, хранящейся на сервере, в соотношении один к одному. Более подробнее о том [что такое платежный шлюз](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 Комиссия является минимальной, и единственная задержка связана с временем, требуемым на проверку и подтверждение в блокчейне. В будущем мы планируем интегрировать больше платежных шлюзов.
 
-![](/_assets/Waves Gateways.png)Рисунок 1, Криптовалютные шлюзы Waves \(существующие и планируемые\).
+![](/_assets/Waves Gateways.png) Рисунок 1, Криптовалютные шлюзы Waves \(существующие и планируемые\).
 
 # 7. Ноды
 
-Ноды являются основой экосистемы Waves. [Запустите Waves ноду](en/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), помогите в обработке транзакций, попросите у комьюнити [сдать вам в лизинг WAVES](/waves-client/account-management/waves-leasing.md) и получите оплату за обеспечение безопасности сети.
+Ноды являются основой экосистемы Waves. [Запустите Waves ноду](https://docs.wavesplatform.com/en/waves-full-node/how-to-install-a-node/how-to-install-a-node.html), помогите в обработке транзакций, попросите у комьюнити [сдать вам в лизинг WAVES](/waves-client/account-management/waves-leasing.md) и получите оплату за обеспечение безопасности сети.
 
 **Особенности:**
 
@@ -101,7 +101,7 @@ Waves Client можно [установить](/waves-client/install-waves-clien
 
 Матчер получает плату за предоставляемую им услугу, что является дополнительным источником дохода для всех нод Waves.
 
-**Примечание.** Waves нода содержит DEX Матчер который может быть включен в настройках [файла конфигурации Waves ноды](en/waves-full-node/configuration-parameters.md) в разделе Matcher Settings.
+**Примечание.** Waves нода содержит DEX Матчер который может быть включен в настройках [файла конфигурации Waves ноды](https://docs.wavesplatform.com/en/waves-full-node/configuration-parameters.html) в разделе Matcher Settings.
 
 # 8. MainNet / TestNet
 
