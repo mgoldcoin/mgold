@@ -21,13 +21,13 @@ Waves Client можно [установить](/waves-client/install-waves-clien
 
 # 4. Мобильные приложения
 
-* Мобильные версии Waves приложений могут быть установлены на [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) и [iOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8) устройства.
-* Кошелек подключен к общедоступным нодам Waves, что обеспечивает возможность получения транзакции и отправки платежей.
+* Мобильные версии Waves приложений могут быть установлены на [iOS](https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8) и [Android](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) устройствах.
+* Waves приложение использует подключение к общедоступным нодам сети Waves, что обеспечивает возможность получения транзакции и отправки платежей.
 * Руководство по началу работы с Waves Wallet для [iOS](https://docs.wavesplatform.com/en/waves-client/mobile-apps/iOS.html) и [Android](https://docs.wavesplatform.com/en/waves-client/mobile-apps/android.html)
 
 # 5. Шлюзы Waves
 
-Фиатные шлюзы, такие как USD/EUR, позволяют обменять любой токен, выпущенный на платформе Waves \(или другой криптовалюты, такой как BTC/ETH/LTC/ZCash/BCH/Dash\) на «реальные» деньги, которые могут быть помещены в банк. Все транзакции криптовалюта -> фиат и фиат -> криптовалюта будут записаны в блокчейн Waves.
+Фиатные шлюзы, такие как USD/EUR, позволяют обменять любой токен, выпущенный на платформе Waves \(или другой криптовалют, таких как BTC/ETH/LTC/ZCash/BCH/Dash\) на «реальные» деньги, которые могут быть помещены в банк. Все транзакции криптовалюта -> фиат и фиат -> криптовалюта будут записаны в блокчейн Waves.
 
 ## 6.1 Фиатные шлюзы
 
