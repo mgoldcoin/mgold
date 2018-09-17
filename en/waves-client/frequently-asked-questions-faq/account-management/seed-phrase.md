@@ -20,6 +20,6 @@ If you are importing the SEED passphrase and you are getting a completely differ
 
 See more:
 
-[Account recovery](waves-client/account-management/restore-an-account.md)
-[Account recovery (iOS)](waves-client/mobile-apps/iOS/account-managment/restore-an-account.md)
-[Account recovery (Android)](waves-client/mobile-apps/android/account-managment/restore-an-account.md)
+ * [Account recovery](/waves-client/account-management/restore-an-account.md)
+ * [Account recovery (iOS)](/waves-client/mobile-apps/iOS/account-managment/restore-an-account.md)
+ * [Account recovery (Android)](/waves-client/mobile-apps/android/account-managment/restore-an-account.md)
