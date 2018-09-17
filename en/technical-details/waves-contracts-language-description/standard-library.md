@@ -8,7 +8,7 @@ These fields are common for all transaction types:
 | :--- | :--- | :--- |
 | id | Transaction ID | Byte Vector |
 | fee | Transaction fee | Long |
-| ~~timestamp~~ | Transaction unix timestamp in milliseconds <br/> **Transaction timesamp can be +-2 hours from bock time. If needed to rely on realworld time, use** `block.timestamp` **instead** | Long |
+| ~~timestamp~~ | Transaction unix timestamp in milliseconds <br/> <sub>Can be +-2 hours from block time. If needed to rely on realworld time, use `block.timestamp` instead</sub> | Long |
 | version | Transaction version | Long |
 | sender | Sender address | String |
 | senderPublicKey | Sender public key | ByteVector |
