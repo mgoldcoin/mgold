@@ -8,7 +8,7 @@ These fields are common for all transaction types:
 | :--- | :--- | :--- |
 | id | Transaction ID | Byte Vector |
 | fee | Transaction fee | Long |
-| ~~timestamp~~ | Transaction unix timestamp in milliseconds <br/> <sub>Can be +-2 hours from block time. Currently the safest way for time checks is blockchain `height`. Later we'll introduce `lastBlock` structure with reliable `timestamp` field.</sub> | Long |
+| ~~timestamp~~ | Transaction unix timestamp in milliseconds <br/> *Can be +-2 hours from block time. Currently the safest way for time locks/timeout checks is blockchain `height`. Later we'll introduce `lastBlock` structure with a reliable `timestamp` field.* | Long |
 | version | Transaction version | Long |
 | sender | Sender address | String |
 | senderPublicKey | Sender public key | ByteVector |
