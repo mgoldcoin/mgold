@@ -2,7 +2,7 @@
 
 Waves client позволяет хранить и переводить Zcash внутри сети Waves. Это возможно благодаря шлюзу: Zcash поступают на Zcash адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Zcash в сети Waves (wZEC). При выводе wZEC из сети Waves пользователь получает Zcash из расчета 1:1.
 
-Всю исчерпывающую информацию о работе Zcash шлюза вы найдёте в этой статье [Что такое платежный шлюз](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Zcash шлюза вы найдёте в этой статье [Что такое платежный шлюз](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **Как получить Zcash**.
 

@@ -76,6 +76,7 @@
 
 * [FAQ](waves-client/faq.md)
   * [Account Management FAQ](waves-client/frequently-asked-questions-faq/account-management-faq.md)
+    * [What is a SEED phrase?](waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
     * [One Seed - One Waves address](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
     * [Spam transactions](waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
     * [How to Enable Dark Mode](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)

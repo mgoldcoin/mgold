@@ -2,7 +2,7 @@
 
 Waves client позволяет хранить и переводить Dash внутри сети Waves. Это возможно благодаря шлюзу: Dash поступают на Dash адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Dash в сети Waves (wDASH). При выводе wDASH из сети Waves пользователь получает Dash из расчета 1:1.
 
-Всю исчерпывающую информацию о работе Dash шлюза вы найдёте в этой статье [Что такое платежный шлюз](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Dash шлюза вы найдёте в этой статье [Что такое платежный шлюз](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **Как получить Dash**.
 

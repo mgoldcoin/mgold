@@ -2,7 +2,7 @@
 
 Waves client позволяет хранить и переводить Bitcoin внутри сети Waves. Это возможно благодаря шлюзу: Bitcoin поступают на Bitcoin адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Bitcoin в сети Waves (wBTC). При выводе wBTC из сети Waves пользователь получает Bitcoin из расчета 1:1.
 
-Всю исчерпывающую информацию о работе Bitcoin шлюза вы найдёте в этой статье [Что такое платежный шлюз](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Bitcoin шлюза вы найдёте в этой статье [Что такое платежный шлюз](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **Как получить Bitcoin**.
 
