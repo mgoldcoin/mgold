@@ -20,4 +20,4 @@
 
 Больше информации:
 
-[Восстановление аккаунта](waves-client/account-management/restore-an-account.md)
+[Восстановление аккаунта](/waves-client/account-management/restore-an-account.md)
