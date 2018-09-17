@@ -2,7 +2,7 @@
 
 Waves client позволяет хранить и переводить Ethereum внутри сети Waves. Это возможно благодаря шлюзу: Ethereum поступают на Ethereum адрес выданный пользователю в Waves client, а взамен пользователь получает ассет Ethereum в сети Waves (wETH). При выводе wETH из сети Waves пользователь получает Ethereum из расчета 1:1.
 
-Всю исчерпывающую информацию о работе Ethereum шлюза вы найдёте в этой статье [Что такое платежный шлюз](/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
+Всю исчерпывающую информацию о работе Ethereum шлюза вы найдёте в этой статье [Что такое платежный шлюз](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
 
 ## **Как получить Ethereum**.
 

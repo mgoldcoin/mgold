@@ -55,6 +55,7 @@
   * [Часто задаваемые вопросы](waves-client/faq.md)
     * [Управление аккаунтом](waves-client/frequently-asked-questions-faq/account-management-faq.md)
       * [Один Seed - Один Waves адрес](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
+      * [Что такое SEED фраза?](waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
       * [Спам-транзакции](waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
       * [Ночной режим](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)
     * [Переводы и шлюзы](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
