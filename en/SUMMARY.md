@@ -22,7 +22,12 @@
 
 ## Waves Client
 
-* [Install Waves Client](waves-client/install-waves-client.md)
+* [**Install Waves Client**](waves-client/install-waves-client.md)
+
+* [**Security**](waves-client/security.md)
+  * [Treat your backup phrase (aka SEED phrase) with care!](waves-client/security/safe-place.md)
+  * [Spam transactions](waves-client/security/spam-transactions.md)
+
 * [Account Management](waves-client/account-management.md)
   * [Account creation](waves-client/account-management/creating-an-account.md)
   * [Account recovery](waves-client/account-management/restore-an-account.md)
@@ -78,7 +83,6 @@
   * [Account Management FAQ](waves-client/frequently-asked-questions-faq/account-management-faq.md)
     * [What is a SEED phrase?](waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
     * [One Seed - One Waves address](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
-    * [Spam transactions](waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
     * [How to Enable Dark Mode](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)
   * [Transfers and Gateways FAQ](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
     * [What is a payment gateway](waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
