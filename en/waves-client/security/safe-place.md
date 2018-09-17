@@ -55,4 +55,4 @@ Read more:
  * [Account creation](/waves-client/account-management/creating-an-account.md)
  * [Account recovery](/waves-client/account-management/restore-an-account.md)
  * [What is a SEED phrase?](/waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
- * [Spam transactions](/waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
+ * [Spam transactions](/waves-client/security/spam-transactions.md)

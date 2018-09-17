@@ -22,9 +22,9 @@
 
 ## Waves Client
 
-* [**Install Waves Client**](waves-client/install-waves-client.md)
+* [Install Waves Client](waves-client/install-waves-client.md)
 
-* [**Security**](waves-client/security.md)
+* [Security](waves-client/security.md)
   * [Treat your backup phrase (aka SEED phrase) with care!](waves-client/security/safe-place.md)
   * [Spam transactions](waves-client/security/spam-transactions.md)
 

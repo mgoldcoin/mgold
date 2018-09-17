@@ -21,10 +21,15 @@
 ## Waves Client
 
   * [Установка Waves приложения](waves-client/install-waves-client.md)
+
+  * [Безопасность](waves-client/security.md)
+    * [Будьте осторожны при использовании парольной фразы (SEED-фразы)!](waves-client/security/safe-place.md)
+    * [Спам-транзакции](waves-client/security/spam-transactions.md)
+
   * [Управление аккаунтом](waves-client/account-management.md)
     * [Создание аккаунта](waves-client/account-management/creating-an-account.md)
     * [Восстановление аккаунта](waves-client/account-management/restore-an-account.md)
-    * [Ledger Nano S и Waves приложение](waves-client/account-management/ledger-nano.md)
+    * [Ledger Nano S в Waves приложении](waves-client/account-management/ledger-nano.md)
     * [Перенос аккаунта](waves-client/account-management/account-migration.md)
     * [Вход в аккаунт](waves-client/account-management/signing-in-to-your-account.md)
     * [Ваш Waves адрес](waves-client/account-management/waves-address.md)
@@ -56,7 +61,6 @@
     * [Управление аккаунтом](waves-client/frequently-asked-questions-faq/account-management-faq.md)
       * [Один Seed - Один Waves адрес](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
       * [Что такое SEED фраза?](waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
-      * [Спам-транзакции](waves-client/frequently-asked-questions-faq/account-management/spam-transactions.md)
       * [Ночной режим](waves-client/frequently-asked-questions-faq/account-management/dark-mode.md)
     * [Переводы и шлюзы](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
       * [Что такое платежный шлюз](waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
