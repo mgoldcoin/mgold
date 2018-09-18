@@ -71,6 +71,4 @@
 
 ![](/_assets/ledger_nano_07.png)
 
-If you have problems with our platform, please create a [support]ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
-
 Если у вас возникнут трудности с использованием нашей платформы, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).
