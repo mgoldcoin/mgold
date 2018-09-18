@@ -12,6 +12,8 @@
 
 Полученный Waves адрес: **3P9KR33QyXwfTXv8kKtNGZYtgKk3RXSUk36**
 
+Seed фраза вашего аккаунта находится в разделе **Настройки** ![](/_assets/seed_phrase_02.png) > **Безопасность** ![](/_assets/seed_phrase_03.png) > **Секретная фраза**.
+
 Пример импорта фразы в Waves приложении:
 
 ![](/_assets/seed_phrase_01.png)
