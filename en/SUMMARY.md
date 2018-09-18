@@ -87,6 +87,7 @@
   * [Transfers and Gateways FAQ](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
     * [What is a payment gateway](waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
     * [Ethereum transfers with smart-contracts](waves-client/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
+    * [What is an airdrop?](waves-client/frequently-asked-questions-faq/transfers-and-gateways/airdrop.md)
   * [Waves DEX FAQ](waves-client/frequently-asked-questions-faq/waves-dex-faq.md)
     * [Order execution time](waves-client/frequently-asked-questions-faq/waves-dex/order-time.md)
     * [Asset ID on the Waves DEX](waves-client/frequently-asked-questions-faq/waves-dex/asset-id.md)

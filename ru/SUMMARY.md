@@ -65,6 +65,7 @@
     * [Переводы и шлюзы](waves-client/frequently-asked-questions-faq/transfers-and-gateways-faq.md)
       * [Что такое платежный шлюз](waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
       * [Обработка Ethereum платежей и смарт-контракты](waves-client/frequently-asked-questions-faq/transfers-and-gateways/ethereum-smartcontract-transfers.md)
+      * [Что такое эйрдроп (Airdrop)?](waves-client/frequently-asked-questions-faq/transfers-and-gateways/airdrop.md)
     * [Waves DEX](waves-client/frequently-asked-questions-faq/waves-dex-faq.md)
       * [Время исполнения ордера](waves-client/frequently-asked-questions-faq/waves-dex/order-time.md)
       * [Поиск токена на бирже DEX используя Asset ID](waves-client/frequently-asked-questions-faq/waves-dex/asset-id.md)
