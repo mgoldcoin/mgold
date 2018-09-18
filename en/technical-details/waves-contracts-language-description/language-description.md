@@ -85,10 +85,11 @@ A match expression has:
 * The match keyword.
 * At least one case clause:
 ```
-match tx {
-	case t:TransferTransaction => t.recepient
-	case t:MassTransferTransaction => t.transfers
-}
+match (tx) {
+    case a:TransferTransaction => a.recipient
+    case b:MassTransferTransaction => b.transfers
+    case _ => false
+  }
 ```
 
 # Examples
