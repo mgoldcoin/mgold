@@ -48,4 +48,6 @@ There you will find the Waves address of your account.
 
 Copy the shown Waves address and use it as recipient address.
 
+More articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
+
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
