@@ -17,4 +17,6 @@ Go through the verification and payment process and you'll receive your Waves wi
 
 ![](/_assets/buying_waves_using_card_03.png)
 
+More articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
+
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
