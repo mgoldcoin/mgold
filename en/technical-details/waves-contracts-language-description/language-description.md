@@ -86,8 +86,8 @@ A match expression has:
 * At least one case clause:
 ```
 match tx {
-	case t:Transfer => t.recepient
-	case t:MassTransfer => t.transfers
+	case t:TransferTransaction => t.recepient
+	case t:MassTransferTransaction => t.transfers
 }
 ```
 
