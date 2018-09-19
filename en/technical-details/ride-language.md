@@ -1,11 +1,11 @@
 # RIDE Language for Waves Smart contracts
 
 Turing-completeness of a blockchain system can be achieved through unwinding the recursive calls between multiple transactions and blocks instead of using a single one, and it is not necessary to have loops and recursion in the language itself.  
-For now, RIDE language has these main characteristics:
+For now,** RIDE language **has these main characteristics:
 
-* RIDE has no cycle and recursion possibility, unlike Solidity. RIDE as a language is not Turing-complete due to the lack of the possibility of creating loops or any other jump-like constructions.
-* It can be Turing-complete when it's used in conjunction with a blockchain, since theoretically the blockchain has an infinite length.
-* DataTransaction, This kind of transaction provides data for smart contracts to work with. For example, if an oracle publishes some data once in a while using a publicly known account, smart contracts can use that data in their logic.
+* RIDE has **no cycle** and recursion possibility, unlike Solidity. RIDE as a language is not Turing-complete due to the lack of the possibility of creating loops or any other jump-like constructions.
+* RIDE can be Turing-complete when it's used in conjunction with a blockchain, since theoretically the blockchain has an infinite length.
+* **DataTransaction**, This kind of transaction provides data for smart contracts to work with. For example, if an oracle publishes some data once in a while using a publicly known account, smart contracts can use that data in their logic.
 
 # Declare Constants
 
