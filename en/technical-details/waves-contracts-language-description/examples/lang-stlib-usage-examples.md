@@ -1,6 +1,6 @@
 # Effective RIDE Examples
 
-RIDE's [Introduction](/en/technical-details/waves-contracts-language-description/language-description.md#introduction)
+RIDE's [Introduction](/technical-details/ride-language.md)
 
 ## Formatting
 
@@ -68,6 +68,7 @@ let massTransferAttrs = ((match tx {
 ### Comments
 
 Start with a `#`
+
 ```
 # add up some numbers
 let total = 3 + 5 + 8 + 11  # Fibonacci
@@ -80,7 +81,7 @@ language has the following types: `Bottom Type, Primitive Types, Complex Types`.
 the language will do it automatically, but remember basic rules:
 
 * don't mix up different types `100500 + true` or `tx.timestamp - "hash"` 
-* a full type checking(ensuring type-safety in all branches of execution) is done in compilation phase 
+* a full type checking\(ensuring type-safety in all branches of execution\) is done in compilation phase 
 
 ## Collections
 
@@ -145,12 +146,13 @@ match tx {
     case other => throw()
  }
 ```
+
 `throw()` signals the occurrence of an exception during a script execution. In case of `throw` the transaction does not pass into the blockchain.
 
 ## Union Types
 
-Union Types is a powerful concept in many programming languages, expressiong a capability of a varaible to be one of allowed types.
-Union types intersect, e.g.
+Union Types is a powerful concept in many programming languages, expressiong a capability of a varaible to be one of allowed types.  
+Union types intersect, e.g.  
 given
 
 ```
@@ -158,7 +160,7 @@ PointA(x: Long, y: Long)
 PointB(x: Long, y: String, z: Boolean)
 ```
 
-and variable `p` being of type `PointA | PointB` (Union type)
+and variable `p` being of type `PointA | PointB` \(Union type\)
 
 ```
 let a = p.x # a is of type Long
@@ -168,18 +170,16 @@ let c = p.z # won't compile!
 
 If one wants to distinguish `PointA` from `PointB`, he needs to pattern-match the variable:
 
-```
-let v = match (p) {
- case pb: PointB => p.z # compilation works, because pb is of type PointB in this context
- case pa: _ => throw()  # compilation works, because throw() returns `Nothing`
-}
-```
+    let v = match (p) {
+     case pb: PointB => p.z # compilation works, because pb is of type PointB in this context
+     case pa: _ => throw()  # compilation works, because throw() returns `Nothing`
+    }
 
 In this example,`tx`, `d` don't have `recipient` field, but `t` has. All calls to transaction fields are now exception-free.
 
 ### Crypto functions
 
-Sometimes users need operate confidential information, for such needs RIDE has crypto functions `"sha256", "blake2b256",       
+Sometimes users need operate confidential information, for such needs RIDE has crypto functions `"sha256", "blake2b256",         
 "keccak256"`. In very popular use case as AtomicSwap, you can find an example of such usage:
 
 ```
@@ -198,7 +198,7 @@ match tx {
 where `$shaSecret` is `sha256"BN6RTYGWcwektQfSFzH8raYo9awaLgQ7pLyWLQY4S4F5"` of `"some secret message from Alice"`,  
 `$beforeHeight` is some predefined height.
 
-For example transaction's list will be:  
+For example transactions list will be:  
 1\) TransferTransactionV2 from AliceBC1 to swapBC1  
 2\) TransferTransactionV2 from swapBC1 to BobBC1 OR after some height from swapBC1 to AliceBC1
 
