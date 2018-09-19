@@ -41,7 +41,7 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
 1. [What is Waves Full Node](/waves-full-node/what-is-a-full-node.md)
-2. [How To Install a node](/waves-full-node/installation.md)
+2. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
 3. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
 4. [Upgrading](/waves-full-node/upgrading.md)
 5. [Export and Import From The Blockchain](/waves-full-node/export-and-import-from-the-blockchain.md)
