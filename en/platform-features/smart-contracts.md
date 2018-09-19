@@ -1,7 +1,25 @@
 # Waves Smart Contracts
 
-![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node->%3D0.12.0-4bc51d.svg)  
-**Smart contracts** are an important mechanism for any blockchain platform and their realisation should be convenient and understandable for people.
+![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node->%3D0.12.0-4bc51d.svg)
+
+## Getting Started
+
+You can start writing your Waves Smart Contract by watching the following video Tutorial and by reading our guide.
+
+## Video Tutorials
+
+1. [Using Smart Contracts with Waves Console](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=557s)
+
+2. [Multi Signature Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=o2msjSo0y0o&t=32s)
+
+3. [Escrow Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=31dwYcgb65M&t=381s)
+
+4. [Waves Console Commands Example](https://youtu.be/WzhTk_rpngI)
+
+## Hitchhiker’s Guide to Waves Smart Contracts {#hitchhikers-guide-to-waves-smart-contracts-part1}
+
+1. [The First Part](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a)
+2. [The second Part](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007)
 
 ## Benefits of Smart Contracts on Waves Platform
 
@@ -40,13 +58,6 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 **As a result, we define the following constraint for a script cost:**  
 a script must have a size no more 8 kB.  
 The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coins, 100000000 wavelets = 1 Wave\).
-
-## Video Tutorials
-
-1. [Waves Console Example](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=571s)
-2. [Multi Signature Example](https://www.youtube.com/watch?v=o2msjSo0y0o&t=18s)
-3. [Escrow Example](https://www.youtube.com/watch?v=31dwYcgb65M&t=7s)
-4. [Waves Console Commands](https://www.youtube.com/watch?v=tcBGaS-N_1g&t=4s)
 
 
 

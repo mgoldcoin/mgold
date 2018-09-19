@@ -31,5 +31,7 @@ For More **Technical Details**, find the articles below:
 
 3. [Escrow Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=31dwYcgb65M&t=381s)
 
+4. [Waves Console Commands Example](https://youtu.be/WzhTk_rpngI)
+
 
 
