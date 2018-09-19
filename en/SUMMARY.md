@@ -105,15 +105,14 @@
 
 * [Waves Smart Contracts](technical-details/waves-contracts-language-description.md)
 * [Approach and Capabilities](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
-* RIDE Language
-* [Language Description](technical-details/waves-contracts-language-description/language-description.md)
+* [RIDE Language](technical-details/ride-language.md)
+  * [Language Description](technical-details/ride-language/language-description.md)
+  * [Effective RIDE Examples](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
 * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
 * [Standard library](technical-details/waves-contracts-language-description/standard-library.md)
 * [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
 * [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
 * [Waves Console Commands](technical-details/waves-contracts-language-description/waves-console-commands.md)
-* [Effective RIDE Examples](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
-* RIDE Language
 
 ## Development and API
 
