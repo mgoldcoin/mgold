@@ -13,19 +13,17 @@ All constants are declared in lazy `let` constructions, which delays the evaluat
 
 `let hash = blake2b256(preImage)`
 
-The hash is not a variable: once created its values never change, and all structures are immutable.  
+The hash is not a variable: once created its values never change, and all structures are immutable.
 
-
-#  What is Set Script Transaction
+# What is Set Script Transaction
 
 `SetScriptTransaction` sets the script which verifies all outgoing transactions. The set script can be changed by another `SetScriptTransaction` call unless it’s prohibited by a previous set script.
 
-#  Matching Expression
+# Matching Expression
 
-  
 There is a mechanism for checking a value against a pattern and you can handle the different expected types in a match expression. A match expression has a value, the match keyword, and at least one case clause:
 
-```
+```js
 match tx {
 case t:Transfer =
 >
@@ -39,5 +37,5 @@ case _ =
 }
 ```
 
-throw\(\) signals the occurrence of an exception during a script execution. In case of throw the transaction does not pass into the blockchain.
+Here the method **throw\(\)** signals the occurrence of an exception during a script execution. In case of throw the transaction does not pass into the blockchain.
 
