@@ -7,10 +7,10 @@
 
 ## Getting Started
 
-You can start writing your Waves Smart Contract by:
+You can start writing your _**Waves Smart Contract**_ by:
 
-1. Watching the following video Tutorials.
-2. Reading our guide and smart contracts documentation.
+1. Watching the following **video Tutorials**.
+2. Reading our _**guide**_ and smart contracts _**documentation**_.
 
 ## Video Tutorials
 
@@ -25,7 +25,7 @@ You can start writing your Waves Smart Contract by:
 ## Hitchhiker’s Guide to Waves Smart Contracts {#hitchhikers-guide-to-waves-smart-contracts-part1}
 
 1. [_**The First Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a)
-2. [_**The second Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007)
+2. [_**The Second Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007)
 
 # Smart Contracts Documentation
 
