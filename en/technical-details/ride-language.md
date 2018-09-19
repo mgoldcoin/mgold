@@ -2,7 +2,7 @@
 
 Turing-completeness of a blockchain system can be achieved through unwinding the recursive calls between multiple transactions and blocks instead of using a single one, and it is not necessary to have loops and recursion in the language itself.  
 A script \(contract\) should be written using our RIDE language. Scala \(Waves node is written in it\) along with F\# influenced RIDE.  
-For now,** RIDE language **has these main characteristics which makes it simple, expressive and bug-free:
+For now,** **[**RIDE language**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b)** **has these main characteristics which makes it simple, expressive and bug-free:
 
 * Non-Turing Complete lazy
 
@@ -13,6 +13,7 @@ For now,** RIDE language **has these main characteristics which makes it simple,
 * RIDE has **no cycle** and recursion possibility, unlike Solidity. RIDE as a language is not Turing-complete due to the lack of the possibility of creating loops or any other jump-like constructions.
 
 * RIDE can be Turing-complete when it's used in conjunction with a blockchain, since theoretically the blockchain has an infinite length.
+
 * **DataTransaction**, This kind of transaction provides data for smart contracts to work with. For example, if an oracle publishes some data once in a while using a publicly known account, smart contracts can use that data in their logic.
 
 # Declare Constants
