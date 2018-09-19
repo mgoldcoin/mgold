@@ -37,7 +37,7 @@ Waves smart contracts language is:
 Defining user structures are restricted in RIDE.  
 You can create instance of any pre-defined structure by calling the constructor.
 
-```
+```js
 let addr = Address(base58'3My3KZgFQ3CrVHgz6vGRt8687sH4oAA1qp8')
 let alias = Alias("alicia")
 let name  = alias.name
@@ -87,7 +87,7 @@ A match expression has:
 * A value
 * The match keyword.
 * At least one case clause:
-  ```
+  ```js
   match (tx) {
     case a:TransferTransaction => a.recipient
     case b:MassTransferTransaction => b.transfers
@@ -99,7 +99,7 @@ A match expression has:
 
 Here's a complete example for 2 of 3 multi-sig :
 
-```
+```js
 let alicePubKey  = base58'B1Yz7fH1bJ2gVDjyJnuyKNTdMFARkKEpV'
 let bobPubKey    = base58'7hghYeWtiekfebgAcuCg9ai2NXbRreNzc'
 let cooperPubKey = base58'BVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'
