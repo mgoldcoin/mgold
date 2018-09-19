@@ -19,6 +19,8 @@ For More **technical details**, find the articles below:
 4. [Syntax Processor and Executor Implementation Details](/technical-details/waves-contracts-language-description/implementation-details.md)
 5. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
 6. [Script Performance Tests](//technical-details/waves-contracts-language-description/script-performance-tests.md)
+7. [Waves Console Commands](/technical-details/waves-contracts-language-description/waves-console-commands.md)
+8. [Video Tutorials and Articles](/technical-details/video-tutorials-and-articles.md)
 
 ## Video Tutorials
 
