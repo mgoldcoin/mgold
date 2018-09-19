@@ -34,15 +34,9 @@ There is a mechanism for checking a value against a pattern and you can handle t
 
 ```js
 match tx {
-case t:TransferTransaction =
->
- t.recepient
-case t:MassTransferTransaction =
->
- t.transfers
-case _ =
->
- throw()
+case t:TransferTransaction => t.recepient
+case t:MassTransferTransaction => t.transfers
+case _ => throw()
 }
 ```
 
