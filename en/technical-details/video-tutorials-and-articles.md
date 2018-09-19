@@ -7,9 +7,9 @@ Here you can find some video tutorial about our smart contracts use-cases which 
 
 ## 1.1 Using Smart Contracts with Waves Console
 
-[In this tutorial](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=619s), we explain how to create, compile, deploy, and use Smart Contracts with Waves Console. The main use case here is 2-of-3 MultiSig account. This tutorial includes two parts: 
+[In this tutorial](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=619s), we explain how to create, compile, deploy, and use Smart Contracts with Waves Console. The main use case here is 2-of-3 MultiSig account. This tutorial includes two parts:
 
-**First Part:** this part includes console overview and how to write, compile and deploy the smart contract. 
+**First Part:** this part includes console overview and how to write, compile and deploy the smart contract.
 
 **Second Part:** this part includes steps to create, sign and send the transfer transaction to the network
 
@@ -47,13 +47,10 @@ Here you can find our Hitchhiker’s Guide to Waves Smart Contracts which we div
 
 ## Hitchhiker’s Guide to Waves Smart Contracts. Part1
 
-[In this article](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a), we focused on the idea of Waves Smart Accounts and what makes it different than other existing solutions.  
-We began with a brief introduction about some definitions of smart contracts then we explained about the difference between Bitcoin script, Ethereum Smart Contract and Waves Smart Accounts.  
-
+[_**In this article**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a), we focused on the idea of Waves Smart Accounts and what makes it different than other existing solutions.  
+We began with a brief introduction about some definitions of smart contracts then we explained about the difference between Bitcoin script, Ethereum Smart Contract and Waves Smart Accounts.
 
 ## The Hitchhiker’s Guide to Waves Smart Contracts. Part 2
 
-[In this part](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007), we focused more on the smart contracts language and tools for developers_._
-
-
+[_**In this part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007), we focused more on the smart contracts language and tools for developers_._
 
