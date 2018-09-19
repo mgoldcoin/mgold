@@ -14,13 +14,14 @@ We see the syntax of our language as functional, similar to F\#: strong and stat
 For More **Technical Details**, find the articles below:
 
 1. [Approach and Capabilities](/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
-2. [Language Description](/technical-details/ride-language/language-description.md)
-3. [Standard Library Documentation](/technical-details/waves-contracts-language-description/standard-library.md)
-4. [Syntax Processor and Executor Implementation Details](/technical-details/waves-contracts-language-description/implementation-details.md)
-5. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
-6. [Script Performance Tests](//technical-details/waves-contracts-language-description/script-performance-tests.md)
-7. [Waves Console Commands](/technical-details/waves-contracts-language-description/waves-console-commands.md)
-8. [Video Tutorials and Articles](/technical-details/video-tutorials-and-articles.md)
+2. [Ride Language](/technical-details/ride-language.md)
+3. [Language Description](/technical-details/ride-language/language-description.md)
+4. [Standard Library Documentation](/technical-details/waves-contracts-language-description/standard-library.md)
+5. [Syntax Processor and Executor Implementation Details](/technical-details/waves-contracts-language-description/implementation-details.md)
+6. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
+7. [Script Performance Tests](//technical-details/waves-contracts-language-description/script-performance-tests.md)
+8. [Waves Console Commands](/technical-details/waves-contracts-language-description/waves-console-commands.md)
+9. [Video Tutorials and Articles](/technical-details/video-tutorials-and-articles.md)
 
 ## Video Tutorials
 
