@@ -11,7 +11,7 @@ We see the syntax of our language as functional, similar to F\#: strong and stat
 
 **Note.** [**Here**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) you can find our [**White Paper**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) which describes Waves Smart Contract.
 
-For More **technical details**, find the articles below:
+For More **Technical Details**, find the articles below:
 
 1. [Approach and Capabilities](/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
 2. [Language Description](/technical-details/ride-language/language-description.md)
