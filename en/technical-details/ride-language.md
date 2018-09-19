@@ -11,6 +11,7 @@ For now,** RIDE language **has these main characteristics which makes it simple,
 * Statically typed expression-based language
 
 * RIDE has **no cycle** and recursion possibility, unlike Solidity. RIDE as a language is not Turing-complete due to the lack of the possibility of creating loops or any other jump-like constructions.
+
 * RIDE can be Turing-complete when it's used in conjunction with a blockchain, since theoretically the blockchain has an infinite length.
 * **DataTransaction**, This kind of transaction provides data for smart contracts to work with. For example, if an oracle publishes some data once in a while using a publicly known account, smart contracts can use that data in their logic.
 
@@ -32,10 +33,10 @@ There is a mechanism for checking a value against a pattern and you can handle t
 
 ```js
 match tx {
-case t:Transfer =
+case t:TransferTransaction =
 >
  t.recepient
-case t:MassTransfer =
+case t:MassTransferTransaction =
 >
  t.transfers
 case _ =
