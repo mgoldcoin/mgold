@@ -5,7 +5,7 @@ This section contains frequently asked questions related to the Waves applicatio
 * [What is a SEED phrase?](/waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
 * [One Seed - One Waves address.](/waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
 * [I have enough Waves but I can't create an order.](/waves-client/frequently-asked-questions-faq/account-management/waves-fee.md)
-* [How to get enough Waves for the fees?](waves-client/frequently-asked-questions-faq/waves-dex/enough-waves.md)
+* [How to get enough Waves for the fees?](/waves-client/frequently-asked-questions-faq/waves-dex/enough-waves.md)
 * [Order execution time.](/waves-client/frequently-asked-questions-faq/waves-dex/order-time.md)
 * [Asset ID on the Waves DEX.](/waves-client/frequently-asked-questions-faq/waves-dex/asset-id.md)
 * [What is a payment gateway.](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md)
