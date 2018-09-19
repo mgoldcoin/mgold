@@ -11,14 +11,6 @@ We see the syntax of our language as functional, similar to F\#: strong and stat
 
 **Note.** [**Here**](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) you can find our **White Paper** which describes Waves Smart Contract.
 
-# Video Tutorials
-
-1. [Using Smart Contracts with Waves Console](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=557s)
-
-2. [Multi Signature Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=o2msjSo0y0o&t=32s)
-
-3. [Escrow Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=31dwYcgb65M&t=381s)
-
 For More **technical details**, find the articles below:
 
 1. [Approach and Capabilities](/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
@@ -27,6 +19,14 @@ For More **technical details**, find the articles below:
 4. [Syntax Processor and Executor Implementation Details](/technical-details/waves-contracts-language-description/implementation-details.md)
 5. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
 6. [Script Performance Tests](//technical-details/waves-contracts-language-description/script-performance-tests.md)
+
+## Video Tutorials
+
+1. [Using Smart Contracts with Waves Console](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=557s)
+
+2. [Multi Signature Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=o2msjSo0y0o&t=32s)
+
+3. [Escrow Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=31dwYcgb65M&t=381s)
 
 
 
