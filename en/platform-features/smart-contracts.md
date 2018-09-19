@@ -1,3 +1,6 @@
+
+---
+
 # Waves Smart Contracts
 
 ![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node->%3D0.12.0-4bc51d.svg)
@@ -58,6 +61,4 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 **As a result, we define the following constraint for a script cost:**  
 a script must have a size no more 8 kB.  
 The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coins, 100000000 wavelets = 1 Wave\).
-
-
 
