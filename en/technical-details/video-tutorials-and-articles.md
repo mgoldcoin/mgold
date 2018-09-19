@@ -43,7 +43,7 @@ Waves IDE has a **Waves console** feature which supports [different commands](/t
 
 # Smart Contract Articles
 
-Here you can find our Hitchhiker’s Guide to Waves Smart Contracts which we divided into two parts
+Please, read our Hitchhiker’s Guide to Waves Smart Contracts which we divided into the following:
 
 ## Hitchhiker’s Guide to Waves Smart Contracts. Part1
 
@@ -52,6 +52,5 @@ We began with a brief introduction about some definitions of smart contracts the
 
 ## The Hitchhiker’s Guide to Waves Smart Contracts. Part 2
 
-[_**In this part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007), we focused more on the smart contracts language and tools for developers_.  
-_we provided some use-cases implementation using our solution and explain more about our RIDE language.
+[_**In this part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007), we focused more on the smart contracts language and tools for developers. We provided some use-cases implementation using our solution and explain more about our RIDE language.
 
