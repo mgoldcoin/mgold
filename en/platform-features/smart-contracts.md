@@ -11,18 +11,18 @@ You can start writing your Waves Smart Contract by watching the following video 
 
 ## Video Tutorials
 
-1. [Using Smart Contracts with Waves Console](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=557s)
+1. [_**Using Smart Contracts with Waves Console**_](https://www.youtube.com/watch?v=sOZuE9Ebfko&t=557s)
 
-2. [Multi Signature Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=o2msjSo0y0o&t=32s)
+2. [_**Multi Signature Using Waves IDE & WavesJ**_](https://www.youtube.com/watch?v=o2msjSo0y0o&t=32s)
 
-3. [Escrow Using Waves IDE & WavesJ](https://www.youtube.com/watch?v=31dwYcgb65M&t=381s)
+3. [_**Escrow Using Waves IDE & WavesJ**_](https://www.youtube.com/watch?v=31dwYcgb65M&t=381s)
 
-4. [Waves Console Commands Example](https://youtu.be/WzhTk_rpngI)
+4. [_**Waves Console Commands Example**_](https://youtu.be/WzhTk_rpngI)
 
 ## Hitchhiker’s Guide to Waves Smart Contracts {#hitchhikers-guide-to-waves-smart-contracts-part1}
 
-1. [The First Part](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a)
-2. [The second Part](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007)
+1. [_**The First Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a)
+2. [_**The second Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007)
 
 ## Benefits of Smart Contracts on Waves Platform
 
