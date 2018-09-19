@@ -13,5 +13,3 @@ For more information, please check the following articles:
 * [How to Lease your Waves.]((/waves-client/account-management/waves-leasing.md)
 
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
-
-#Also, if you do not have Waves and you have opened order to purchase initial Waves until the order is not executed you will not be able to open a new order.
