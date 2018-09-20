@@ -1,6 +1,3 @@
-
----
-
 # Waves Smart Contracts
 
 ![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node->%3D0.12.0-4bc51d.svg)
