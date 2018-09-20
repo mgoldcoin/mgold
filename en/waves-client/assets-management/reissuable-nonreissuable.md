@@ -29,4 +29,8 @@ Check the entered data and if everything is ok, click on the **Confirm** button.
 
 So, after confirmation you will not be able to reissue additional tokens.
 
+___
+
+See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
+
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

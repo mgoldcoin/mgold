@@ -56,12 +56,8 @@ After all, you'll be able to see deactivation status. A special symbol will be r
 
 ![](/_assets/sponsored_transaction_09.png)
 
-Related articles:
+___
 
- * [Token creation](https://docs.wavesplatform.com/en/waves-client/assets-management/issue-an-asset.html)
- * [Token reissuing](https://docs.wavesplatform.com/en/waves-client/assets-management/reissue-an-asset.html)
- * [Token burning](https://docs.wavesplatform.com/en/waves-client/assets-management/burn-an-asset.html)
- * [Token distribution](https://docs.wavesplatform.com/en/waves-client/assets-management/mass-transfer.html)
- * [Sponsored fee](https://docs.wavesplatform.com/en/waves-client/assets-management/sponsored-fee.html)
+See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
 
 If  you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
