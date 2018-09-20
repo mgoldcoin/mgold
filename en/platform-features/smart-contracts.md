@@ -22,7 +22,7 @@ You can start writing your _**Waves Smart Contract**_ by:
 
 4. [_**Waves Console Commands Example**_](https://youtu.be/WzhTk_rpngI)
 
-## Hitchhiker’s Guide to Waves Smart Contracts {#hitchhikers-guide-to-waves-smart-contracts-part1}
+##  Hitchhiker’s Guide to Waves Smart Contracts
 
 1. [_**The First Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a)
 2. [_**The Second Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007)
