@@ -40,4 +40,8 @@ You'll be able to see your newly created token in the Portfolio.
 
 ![](/_assets/token_creation_05.png)
 
+___
+
+See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
+
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

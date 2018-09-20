@@ -95,6 +95,8 @@ To do so please make a SEND transaction to the Waves address **3P7qtv5Z7AMhwyvf5
 
 Fees are 1% from the amount transferred. The minimum amount is 50 USD/Euro. More detailed conditions are available on the official [Coinomat gateaway website](https://coinomat.com/).
 
-More articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
+___
+
+See more articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
 
 If you have any questions, please send an email to: **support@coinomat.com**

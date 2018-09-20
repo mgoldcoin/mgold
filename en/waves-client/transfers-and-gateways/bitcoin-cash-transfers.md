@@ -58,6 +58,8 @@ To complete the operation, click on the **Confirm** or **Back** to repeat the pr
 
 ![](/_assets/bch_transfers_08.png)
 
-More articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
+___
+
+See more articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
 
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.

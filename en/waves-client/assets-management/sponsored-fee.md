@@ -32,12 +32,8 @@ Re-check entered data and click on the **Confirm**.
 
 The created transaction will be processed with the next block.
 
-Related articles:
+___
 
- * [Token creation](https://docs.wavesplatform.com/en/waves-client/assets-management/issue-an-asset.html)
- * [Token reissuing](https://docs.wavesplatform.com/en/waves-client/assets-management/reissue-an-asset.html)
- * [Token burning](https://docs.wavesplatform.com/en/waves-client/assets-management/burn-an-asset.html)
- * [Token distribution](https://docs.wavesplatform.com/en/waves-client/assets-management/mass-transfer.html)
- * [Sponsored transaction](https://docs.wavesplatform.com/en/waves-client/assets-management/sponsored-transaction.html)
+See more articles in the [Assets Management](/waves-client/assets-management.md) chapter.
 
 If  you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
