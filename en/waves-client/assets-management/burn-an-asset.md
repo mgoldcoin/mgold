@@ -1,8 +1,8 @@
-# ​How to burn issued Token
+# ​How to burn issued Token.
 
 Open up your Waves wallet.
 
-Go to the Portfolio.
+Go to the **Portfolio**.
 
 ![](/_assets/token_burn_01.png)
 

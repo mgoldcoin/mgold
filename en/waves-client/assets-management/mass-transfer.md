@@ -7,7 +7,7 @@ Let's make distribution for Waves tokens, although this method also works for an
 
 Open up your wallet.
 
-Go to Portfolio, click on the **Send** button (top left corner).
+Go to **Portfolio**, click on the **Send** button (top left corner).
 
 ![](/_assets/mass_transfer_01.png)
 
