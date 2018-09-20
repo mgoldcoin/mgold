@@ -5,12 +5,9 @@
 
 ![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node->%3D0.12.0-4bc51d.svg)
 
-## Getting Started
+## Smart Contracts Documentation
 
-You can start writing your _**Waves Smart Contract**_ by:
-
-1. Watching the following **video Tutorials**.
-2. Reading our _**guide**_ and smart contracts _**documentation**_.
+For more theoretical and technical details please go to [_**Smart Contract Section**_](https://docs.wavesplatform.com/en/technical-details/waves-contracts-language-description.html) in our documentation.
 
 ## Video Tutorials
 
@@ -27,7 +24,9 @@ You can start writing your _**Waves Smart Contract**_ by:
 1. [_**The First Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a)
 2. [_**The Second Part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007)
 
-# Smart Contracts Documentation
+## Forum
 
-For more theoretical and technical details please go to [_**Smart Contract Section**_](https://docs.wavesplatform.com/en/technical-details/waves-contracts-language-description.html) in our documentation.
+1. [_**DevTools: IDE + REPL**_](https://forum.wavesplatform.com/t/devtools-ide-repl/1992) \(This topic is for discussing your issues, requests, feedback and for announcements related to **Waves Ride IDE** and **REPL**\).
+
+
 
