@@ -69,6 +69,8 @@ Waves client позволяет хранить и переводить Dash вн
 
 ![](/_assets/dash_transfers_08.png)
 
+___
+
 Больше статей в разделе [Переводы и шлюзы](/waves-client/wallet-management.md)
 
 Если у вас возникнут трудности с использованием нашей платформы, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).

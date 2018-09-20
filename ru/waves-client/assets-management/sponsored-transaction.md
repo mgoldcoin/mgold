@@ -48,12 +48,8 @@
 
 ![](/_assets/sponsored_transaction_09.png)
 
-Дополнительные статьи:
+___
 
- * [Создание токена](https://docs.wavesplatform.com/ru/waves-client/assets-management/issue-an-asset.html)
- * [Перевыпуск токена](https://docs.wavesplatform.com/ru/waves-client/assets-management/reissue-an-asset.html)
- * [Сжигание токена](https://docs.wavesplatform.com/ru/waves-client/assets-management/burn-an-asset.html)
- * [Распределение токена](https://docs.wavesplatform.com/ru/waves-client/assets-management/mass-transfer.html)
- * [Спосорская комиссия](https://docs.wavesplatform.com/ru/waves-client/assets-management/sponsored-fee.html)
+Больше статей в разделе [Управление ассетами](/waves-client/assets-management.md)
 
 Если у вас возникнут трудности с использованием нашей платформы, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).

@@ -10,8 +10,6 @@ Assets Management chapter includes all details about Issue and Reissue Assets wh
 * [Sponsored transaction](assets-management/sponsored-transaction.md)
 * [Sponsored fee](assets-management/sponsored-fee.md)
 
-**Note**. It costs just 1 WAVES to do so and then your token can be traded on the Waves DEX.
-
 # Features of Generating your tokens on Waves Platform
 
 * No smart contracts required.
