@@ -1,33 +1,30 @@
-# How to change a reissuable token to non-reissuable.
+# Как закрыть довыпуск созданного токена.
 
-Open up your Waves wallet.
-
-Go to the **Portfolio**.
+Откройте свой Waves кошелек и зайдите во вкладку **Портфель**.
 
 ![](/_assets/token_reissue_01.png)
 
-Find issued token and click on the ![](/_assets/token_reissue_02.png) button.
+Найдите ваш выпущенный Токен и нажмите на кнопку ![](/_assets/token_reissue_02.png).
 
-Click on the **Token Reissue** button.
+В появившемся окне нажмите на кнопку **Перевыпуск токена**.
 
 ![](/_assets/token_reissue_03.png)
 
-The following window will appear.
+Появится следующее окно:
 
-![](/_assets/token_reissue_04.png)
+![](/_assets/token_nonreissue_04.png)
 
-In the **Quantity of tokens to be reissued** type **1**. Then change the status of asset by selecting the **Non-reissuable** to disable the possibility of issuing additional tokens.
+В поле **Количество токенов для выпуска** введите **1**. Затем измените статус токена, выбрав **Не перевыпускаемый**, чтобы отключить возможность выдачи дополнительных токенов.
 
-After that click on the **Continue** button.
+Нажмите на кнопку **Продолжить**.
 
 ![](/_assets/token_nonreissue_05.png)
 
-The following window will appear.
-Check the entered data and if everything is ok, click on the **Confirm** button.
+В появившемся окне проверьте введенную информацию и нажмите на кнопку **Подтвердить**.
 
 ![](/_assets/token_nonreissue_06.png)
 
-So, after confirmation you will not be able to reissue additional tokens.
+После подтверждения вы не сможете довыпустить дополнительные токены.
 
 ___
 
