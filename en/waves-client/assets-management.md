@@ -4,6 +4,7 @@ Assets Management Chapter includes all details about Issue and Reissue Assets wh
 
 * [Token creation](assets-management/issue-an-asset.md)
 * [Token reissuing](assets-management/reissue-an-asset.md)
+* [Reissuable to non-reissuable](assets-management/reissuable-nonreissuable.md)
 * [Token burning](assets-management/burn-an-asset.md)
 * [Token distribution](assets-management/mass-transfer.md)
 * [Sponsored transaction](assets-management/sponsored-transaction.md)

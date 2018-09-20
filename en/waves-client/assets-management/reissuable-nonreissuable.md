@@ -1,4 +1,4 @@
-# How to reissue created Token.
+# How to change a reissuable token to non-reissuable.
 
 Open up your Waves wallet.
 
@@ -16,16 +16,17 @@ The following window will appear.
 
 ![](/_assets/token_reissue_04.png)
 
-Choose the required number of additional tokens and click on the **Continue** button.
+In the **Quantity of tokens to be reissued** type **1**. Then change the status of asset by selecting the **Non-reissuable** to disable the possibility of issuing additional tokens.
 
-**Note**: You can disable the possibility of issuing additional tokens by selecting the **Non reissuable**.
-But keep in mind after that, you will not be able to reissue additional tokens.
+After that click on the **Continue** button.
 
-![](/_assets/token_reissue_05.png)
+![](/_assets/token_nonreissue_05.png)
 
 The following window will appear.
 Check the entered data and if everything is ok, click on the **Confirm** button.
 
-![](/_assets/token_reissue_06.png)
+![](/_assets/token_nonreissue_06.png)
+
+So, after confirmation you will not be able to reissue additional tokens.
 
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
