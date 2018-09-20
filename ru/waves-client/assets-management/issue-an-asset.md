@@ -31,4 +31,8 @@
 
 ![](/_assets/token_creation_05.png)
 
+___
+
+Больше статей в разделе [Управление ассетами](/waves-client/assets-management.md)
+
 Если у вас возникнут трудности с использованием нашей платформы, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).

@@ -52,6 +52,7 @@
   * [Управление ассетами](waves-client/assets-management.md)
     * [Создание токена](waves-client/assets-management/issue-an-asset.md)
     * [Перевыпуск токена](waves-client/assets-management/reissue-an-asset.md)
+    * [Закрыте перевыпуска](waves-client/assets-management/reissuable-nonreissuable.md)
     * [Сжигание токена](waves-client/assets-management/burn-an-asset.md)
     * [Распределение токена](waves-client/assets-management/mass-transfer.md)
     * [Спонсорские транзакции](waves-client/assets-management/sponsored-transaction.md)
