@@ -45,7 +45,7 @@ Waves IDE has a **Waves console** feature which supports [different commands](/t
 
 Please, read our Hitchhiker’s Guide to Waves Smart Contracts which we divided into the following:
 
-## 2.1 Hitchhiker’s Guide to Waves Smart Contracts. Part1
+## 2.1 The Hitchhiker’s Guide to Waves Smart Contracts. Part1
 
 [_**In this article**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a), we focused on the idea of Waves Smart Accounts and what makes it different than other existing solutions.  
 We began with a brief introduction about some definitions of smart contracts then we explained about the difference between Bitcoin script, Ethereum Smart Contract and Waves Smart Accounts.
