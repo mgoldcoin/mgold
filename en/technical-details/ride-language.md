@@ -1,3 +1,8 @@
+# Contents
+
+1. [RIDE Language Description ](/technical-details/ride-language/language-description.md)
+2. [Effective RIDE Examples](/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
+
 # RIDE Language for Waves Smart contracts
 
 Turing-completeness of a blockchain system can be achieved through unwinding the recursive calls between multiple transactions and blocks instead of using a single one, and it is not necessary to have loops and recursion in the language itself.  
