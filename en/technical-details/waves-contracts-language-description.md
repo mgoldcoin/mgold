@@ -5,7 +5,7 @@
 3. [Language Description](/technical-details/ride-language/language-description.md)
 4. [Effective RIDE Examples](/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
 5. [Syntax Processor and Executor Implementation Details](#)
-6. FunctionsStandard Library and 
+6. [Functions and Standard Library](/technical-details/waves-contracts-language-description/standard-library.md) 
 7. [Creating and Deploying a Script Manually](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
 8. [Script Performance Tests](//technical-details/waves-contracts-language-description/script-performance-tests.md)
 9. [Waves Console Commands](/technical-details/waves-contracts-language-description/waves-console-commands.md)
