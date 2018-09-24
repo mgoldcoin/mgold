@@ -41,16 +41,16 @@ Waves IDE has a **Waves console** feature which supports [different commands](/t
 * [_**Video**_](https://www.youtube.com/watch?v=WzhTk_rpngI&feature=youtu.be)
 * [_**Waves Console Commands Examples**_](/technical-details/waves-contracts-language-description/waves-console-commands.md)
 
-# Smart Contract Articles
+# 2. Smart Contract Articles
 
 Please, read our Hitchhiker’s Guide to Waves Smart Contracts which we divided into the following:
 
-## Hitchhiker’s Guide to Waves Smart Contracts. Part1
+## 2.1 Hitchhiker’s Guide to Waves Smart Contracts. Part1
 
 [_**In this article**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-1-b80aa47a745a), we focused on the idea of Waves Smart Accounts and what makes it different than other existing solutions.  
 We began with a brief introduction about some definitions of smart contracts then we explained about the difference between Bitcoin script, Ethereum Smart Contract and Waves Smart Accounts.
 
-## The Hitchhiker’s Guide to Waves Smart Contracts. Part 2
+## 2.2 The Hitchhiker’s Guide to Waves Smart Contracts. Part 2
 
 [_**In this part**_](https://blog.wavesplatform.com/the-hitchhikers-guide-to-waves-smart-contracts-part-2-44621fd5a007), we focused more on the smart contracts language and tools for developers. We provided some use-cases implementation using our solution and explain more about our RIDE language.
 
