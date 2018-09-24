@@ -29,5 +29,5 @@ sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 * Trading on DEX, since that will require multi-signature orders.
   These restriction can be considered as temporary one.
 
-To understand our language better, you can check our [Smart Contracts Language Description page](/technical-details/ride-language/language-description.md).
+To understand our language better, you can check our [RIDE Language Section](/technical-details/ride-language.md).
 
