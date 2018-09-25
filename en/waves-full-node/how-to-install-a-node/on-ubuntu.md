@@ -46,7 +46,7 @@ You should use the deb with Systemd if you have an operating system Ubuntu &gt;=
 
 Just [download latest waves deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i waves*.deb`.
 
-Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please [read this and edit waves config](/waves-full-node/how-to-configure-a-node.md)** **and ** **with caution.
+Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please [read this and edit waves config](/waves-full-node/configuration-parameters.md)** **and ** **with caution.
 
 Systemd users can start the node with `sudo systemctl start waves.service` \(`waves-testnet` for testnet\) and enable autoload on start with `sudo systemctl enable waves.service`.
 
@@ -119,4 +119,3 @@ Also, you may want to limit the use of these folders only specified users. You c
 If you decide to use RPC, you should protect it with embedded in ubuntu `ufw` or any other firewall. You can read about it [here](https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server). If your server is public and available to the Internet and you decide to enable and use RPC, then allow only certain methods using [Nginx's proxy\_pass module](http://nginx.org/ru/docs/http/ngx_http_proxy_module.html) and do not forget to set the `apiKeyHash` in waves.conf.
 
 Also, do not forget to install the OS and other software security updates.
-
