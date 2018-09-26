@@ -4,7 +4,7 @@
 2. [RIDE Language](../technical-details/ride-language.md)
 3. [RIDE Language Description](../technical-details/ride-language/language-description.md)
 4. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
-5. [RIDE Maven Compiler Package](../technical-details/ride-language/maven-compiler-package.md)
+5. [RIDE Maven Compiler Package](../technical-details/ride-language/maven-compiler.md)
 6. [Syntax Processor and Executor Implementation Details](../technical-details/waves-contracts-language-description/implementation-details.md)
 7. [Functions and Standard Library](../technical-details/waves-contracts-language-description/standard-library.md)
 8. [Creating and Deploying a Script Manually](../technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
