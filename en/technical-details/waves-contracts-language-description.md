@@ -1,6 +1,6 @@
 # The Guide Structure
 
-1. [Approach and Capabilities](../waves-contracts-language-description/approach-and-capabilities.md)
+1. [Approach and Capabilities](../technical-details/waves-contracts-language-description/approach-and-capabilities.md)
 2. [RIDE Language](../technical-details/ride-language.md)
 3. [RIDE Language Description](../technical-details/ride-language/language-description.md)
 4. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
