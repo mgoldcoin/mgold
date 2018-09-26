@@ -2,7 +2,7 @@
 
 The RIDE compiler is [published as a Maven artefact](https://mvnrepository.com/artifact/com.wavesplatform/lang) so that it can be used from any JVM-based project.
 
-To add the package as a project dependency, use:
+In order to add the package as a project dependency, use:
 
 ##### For Maven
 ```xml
