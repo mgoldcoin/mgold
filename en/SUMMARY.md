@@ -109,6 +109,7 @@
 * [RIDE Language](technical-details/ride-language.md)
   * [Language Description](technical-details/ride-language/language-description.md)
   * [Effective RIDE Examples](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
+  * [Maven Compiler](en/technical-details/waves-contracts-language-description/maven-compiler-package.md)
 * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
 * [Functions and Standard Library](technical-details/waves-contracts-language-description/standard-library.md)
 * [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
