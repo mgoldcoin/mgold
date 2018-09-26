@@ -9,7 +9,7 @@
 7. [Creating and Deploying a Script Manually](/en/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
 8. [Script Performance Tests](/en/technical-details/waves-contracts-language-description/script-performance-tests.md)
 9. [Waves Console Commands](/en/technical-details/waves-contracts-language-description/waves-console-commands.md)
-10. [Video Tutorials and Articles](/technical-details/video-tutorials-and-articles.md)
+10. [Video Tutorials and Articles](/en/technical-details/video-tutorials-and-articles.md)
 
 # 1. Benefits of Smart Contracts on Waves Platform
 

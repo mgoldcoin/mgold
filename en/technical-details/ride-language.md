@@ -1,7 +1,7 @@
 # Contents
 
-1. [RIDE Language Description ](/technical-details/ride-language/language-description.md)
-2. [Effective RIDE Examples](/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
+1. [RIDE Language Description ](/en/technical-details/ride-language/language-description.md)
+2. [Effective RIDE Examples](/en/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
 
 # RIDE Language for Waves Smart contracts
 
@@ -46,4 +46,3 @@ case _ => throw()
 ```
 
 Here the method **throw\(\)** signals the occurrence of an exception during a script execution. In case of throw the transaction does not pass into the blockchain.
-
