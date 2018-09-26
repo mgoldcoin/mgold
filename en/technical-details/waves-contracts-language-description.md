@@ -1,10 +1,10 @@
 # The Guide Structure
 
 1. [Approach and Capabilities](/en/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
-2. [Ride Language](/en/technical-details/ride-language.md)
+2. [RIDE Language](/en/technical-details/ride-language.md)
 3. [RIDE Language Description](/en/technical-details/ride-language/language-description.md)
 4. [Effective RIDE Examples](/en/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
-5. [RIDE Maven Compiler Package](/en/technical-details/maven-compiler-package.md)
+5. [RIDE Maven Compiler Package](/en/technical-details/ride-language/maven-compiler-package.md)
 5. [Syntax Processor and Executor Implementation Details](/en/technical-details/waves-contracts-language-description/implementation-details.md)
 6. [Functions and Standard Library](/en/technical-details/waves-contracts-language-description/standard-library.md)
 7. [Creating and Deploying a Script Manually](/en/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
