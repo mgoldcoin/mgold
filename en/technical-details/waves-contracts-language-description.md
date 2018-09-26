@@ -1,6 +1,6 @@
 # The Guide Structure
 
-1. [Approach and Capabilities](../technical-details/waves-contracts-language-description/approach-and-capabilities.md)
+1. [Approach and Capabilities](/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
 2. [RIDE Language](../technical-details/ride-language.md)
 3. [RIDE Language Description](/en/technical-details/ride-language/language-description.md)
 4. [Effective RIDE Examples](/en/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
@@ -59,3 +59,6 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 
 * A script must have a size no more 8 kB.
 * The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coins, 100000000 wavelets = 1 Wave\).
+
+
+
