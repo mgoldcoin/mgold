@@ -3,14 +3,14 @@
 1. [Approach and Capabilities](/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
 2. [RIDE Language](../technical-details/ride-language.md)
 3. [RIDE Language Description](/en/technical-details/ride-language/language-description.md)
-4. [Effective RIDE Examples](/en/technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
-5. [RIDE Maven Compiler Package](/en/technical-details/waves-contracts-language-description/maven-compiler-package.md)
-6. [Syntax Processor and Executor Implementation Details](/en/technical-details/waves-contracts-language-description/implementation-details.md)
-7. [Functions and Standard Library](/en/technical-details/waves-contracts-language-description/standard-library.md)
-8. [Creating and Deploying a Script Manually](/en/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
-9. [Script Performance Tests](/en/technical-details/waves-contracts-language-description/script-performance-tests.md)
-10. [Waves Console Commands](/en/technical-details/waves-contracts-language-description/waves-console-commands.md)
-11. [Video Tutorials and Articles](/en/technical-details/video-tutorials-and-articles.md)
+4. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
+5. [RIDE Maven Compiler Package](../technical-details/waves-contracts-language-description/maven-compiler-package.md)
+6. [Syntax Processor and Executor Implementation Details](../technical-details/waves-contracts-language-description/implementation-details.md)
+7. [Functions and Standard Library](../technical-details/waves-contracts-language-description/standard-library.md)
+8. [Creating and Deploying a Script Manually](../technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
+9. [Script Performance Tests](../technical-details/waves-contracts-language-description/script-performance-tests.md)
+10. [Waves Console Commands](../technical-details/waves-contracts-language-description/waves-console-commands.md)
+11. [Video Tutorials and Articles](../technical-details/video-tutorials-and-articles.md)
 
 # 1. Benefits of Smart Contracts on Waves Platform
 
@@ -59,6 +59,3 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 
 * A script must have a size no more 8 kB.
 * The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coins, 100000000 wavelets = 1 Wave\).
-
-
-
