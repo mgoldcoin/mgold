@@ -33,6 +33,7 @@ Listed below are examples of real transactions of each type found in testnet and
 | 10 | Alias | [4hfjTUkBeB6tNN8GgXY5C2s5bARCsYQ8AFdZyXnMwZyQ](https://nodes.wavesnodes.com/transactions/info/4hfjTUkBeB6tNN8GgXY5C2s5bARCsYQ8AFdZyXnMwZyQ) | [1038799](https://nodes.wavesnodes.com/blocks/at/1038799) |
 | 11 | Mass Transfer | [3LRfudet7avpQcW1AdauiBGb8SSRAaoCugDzngDPLVcv](https://nodes.wavesnodes.com/transactions/info/3LRfudet7avpQcW1AdauiBGb8SSRAaoCugDzngDPLVcv) | [1041197](https://nodes.wavesnodes.com/blocks/at/1041197) |
 | 12 | Data | [EByjQAWDRGrmc8uy7xRGy2zsQXZQq59bav7h8oTTJyHC](https://nodes.wavesnodes.com/transactions/info/EByjQAWDRGrmc8uy7xRGy2zsQXZQq59bav7h8oTTJyHC) | [1091300](https://nodes.wavesnodes.com/blocks/at/1091300) |
+| 13 | Set Script | [8Nwjd2tcQWff3S9WAhBa7vLRNpNnigWqrTbahvyfMVrU](https://nodes.wavesnodes.com/transactions/info/8Nwjd2tcQWff3S9WAhBa7vLRNpNnigWqrTbahvyfMVrU) | [1190001](https://nodes.wavesnodes.com/blocks/at/1190001) |
 | 14 | Set Sponsorship | [7EL2XEGP1By427BeLcHPYeVnBzGsXen4egMAwQpWGBVR](http://nodes.wavesnodes.com/transactions/info/7EL2XEGP1By427BeLcHPYeVnBzGsXen4egMAwQpWGBVR) | [1130205](https://nodes.wavesnodes.com/blocks/at/1130205) |
 
 
