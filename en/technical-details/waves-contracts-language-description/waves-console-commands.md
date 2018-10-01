@@ -210,7 +210,7 @@ declare function cancelLease(
 )
 ```
 
-## Creates Alice
+## Creates Alias
 
 * createAlias\(alias: string, fee, timestamp, version, seed\)
 
