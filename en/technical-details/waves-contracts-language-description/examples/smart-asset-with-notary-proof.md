@@ -14,11 +14,11 @@ let notary1Agreement = getBoolean(notary1,txIdBase58String)
 let isNotary1Agreed = if(isDefined(notary1Agreement)) then extract(notary1Agreement) else false
 
 match tx { 
-  case tx:TransferTransaction =>
-let recipientAddress = addressFromRecipient(tx.recipient)
+  case t:TransferTransaction =>
+let recipientAddress = addressFromRecipient(t.recipient)
 let recipientAgreement = getBoolean(recipientAddress,txIdBase58String)
 let isRecipientAgreed = if(isDefined(recipientAgreement)) then extract(recipientAgreement) else false
-let senderAddress = addressFromPublicKey(tx.senderPk)
+let senderAddress = addressFromPublicKey(t.senderPk)
 senderAddress.bytes == company.bytes || (isNotary1Agreed && isRecipientAgreed)
 
 case _ => false
