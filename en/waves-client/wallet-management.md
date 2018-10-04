@@ -13,7 +13,7 @@ Transfers and gateways chapter includes all details about send and deposit opera
 * [Monero transfers](transfers-and-gateways/monero-transfers.md)
 * [EURO and USD transfers](transfers-and-gateways/eur-usd-transfers.md)
 
-The Waves wallet also supports small purchases of Waves in Euro and US Dollar (minimum 30 EUR/USD, maximum 200 EUR/USD) using plastic card.
+The Waves wallet also supports small purchases of Waves in Euro and US Dollar (minimum 30 EUR/USD, maximum 3000 EUR/USD) using plastic card.
 
 * [Buying Waves using credit or debit card](transfers-and-gateways/buying-waves-using-card.md)
 
