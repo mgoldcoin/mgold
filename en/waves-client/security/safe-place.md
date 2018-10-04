@@ -18,28 +18,28 @@ One of the most common forms of scamming is phishing, which is when scammers cre
 
 **Official Waves resources**
 
-Cloned company web pages are the main ways of distributing phishing links. Subscribe to our official communities on social networks, follow our posts, and do not fall victim to scammers:
-
 * Official site - https://wavesplatform.com
-* Online client - https://client.wavesplatform.com/
+* Online client - https://client.wavesplatform.com
 * Client on GitHub - https://github.com/wavesplatform/WavesGUI
-* Mobile app on iTunes - https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8
+* Mobile app on App Store - https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8
 * Mobile app on Google Play - https://play.google.com/store/apps/details?id=com.wavesplatform.wallet
+
+Cloned company web pages are the main ways of distributing phishing links. Subscribe to our official communities on social networks, follow our posts, and do not fall victim to scammers:
 
 * Sasha's Twitter - https://twitter.com/sasha35625
 * Sasha's Telegram - https://t.me/absolutelysasha
-* Waves Community - http://wavescommunity.com/
 * Waves blog - https://blog.wavesplatform.com/latest
 * Twitter - https://twitter.com/wavesplatform
-* Facebook - https://www.facebook.com/wavesplatform/
-* Reddit - https://www.reddit.com/r/Wavesplatform/
-* Youtube - https://www.youtube.com/channel/UCYDQN4Fo4rGnOZ22L5plNIw
+* Facebook - https://www.facebook.com/wavesplatform
+* Reddit - https://www.reddit.com/r/Wavesplatform
+* Youtube - https://www.youtube.com/wavesplatform
 * Vkontakte - https://vk.com/wavesplatform
 * Discord - https://discord.gg/cnFmDyA
 * Telegram (News US) - https://t.me/wavesnews
 * Telegram (News RU) - https://t.me/WavesNewsRU
 * Telegram (Global) - https://t.me/Wavescommunity
 * Telegram (Russia) - https://t.me/WavesCommunityRU
+* Telegram (Chine) - https://t.me/WavesChina
 
 Use the following guidelines to secure your funds:
 
