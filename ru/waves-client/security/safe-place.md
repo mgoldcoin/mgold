@@ -16,13 +16,13 @@ Waves — безопасная платформа. Открытость кода
 
 **Официальные ресурсы Waves**
 
+Каналами распространения фишинговых ссылок являются клоны страниц компании в социальных сетях. Подпишитесь на наши официальные группы в социальных сетях, следите за новостями и не попадайтесь на уловки мошенников:
+
 * Официальныей сайт - https://wavesplatform.com
 * Онлайн приложение - https://client.wavesplatform.com/
 * Клиент на GitHub - https://github.com/wavesplatform/WavesGUI
 * Мобильное приложение в AppStore - https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8
 * Мобильное приложение в Google Play - https://play.google.com/store/apps/details?id=com.wavesplatform.wallet
-
-Каналами распространения фишинговых ссылок являются клоны страниц компании в социальных сетях. Подпишитесь на наши официальные группы в социальных сетях, следите за новостями и не попадайтесь на уловки мошенников:
 
 * Sasha's Twitter - https://twitter.com/sasha35625
 * Sasha's Telegram - https://t.me/absolutelysasha

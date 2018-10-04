@@ -34,10 +34,10 @@ Waves smart contracts language is:
 * `Point(x: Int, y: Int)`
 * `Alias(name: String)`
 
-Defining user structures are restricted in RIDE.
+Defining user structures are restricted in RIDE.  
 You can create instance of any pre-defined structure by calling the constructor.
 
-```
+```js
 let addr = Address(base58'3My3KZgFQ3CrVHgz6vGRt8687sH4oAA1qp8')
 let alias = Alias("alicia")
 let name  = alias.name
@@ -50,53 +50,56 @@ The user can't create `List[T]` instances but he can input data which contains s
 To access lists element you can use syntax `list[index]` with the first element at index 0.
 
 To determinate count of list elements, you can use function `size`:
-* `size `: `List[T] => Long`
-This is also true as well for `DataType.ByteArray`:
-* `size `: `DataType.ByteArray => Long`
+
+* `size`: `List[T] => Long`
+  This is also true as well for `DataType.ByteArray`:
+* `size`: `DataType.ByteArray => Long`
 
 ### ByteVector
+
 Standard ByteVector type
 
-* `size `: `ByteVector => Long`
-* `take`: `ByteVector`, `Long` => `ByteVector`
-* `drop`: `ByteVector`, `Long` => `ByteVector`
-* `dropRight`: `ByteVector`, `Long` => `ByteVector`
-* `takeRight`: `ByteVector`, `Long` => `ByteVector`
+* `size`: `ByteVector => Long`
+* `take`: `ByteVector`, `Long` =&gt; `ByteVector`
+* `drop`: `ByteVector`, `Long` =&gt; `ByteVector`
+* `dropRight`: `ByteVector`, `Long` =&gt; `ByteVector`
+* `takeRight`: `ByteVector`, `Long` =&gt; `ByteVector`
 
 ### Long
 
 * `fraction(value: LONG, numerator: LONG, denominator: LONG) => LONG`
 
 ### String
+
 Standard string type
 
-* `size `: `String => Long`
-* `take`: `String`, `Long` => `String`
-* `drop`: `String`, `Long` => `String`
-* `takeRight`: `String`, `Long` => `String`
-* `dropRight`: `String`, `Long` => `String`
-
+* `size`: `String => Long`
+* `take`: `String`, `Long` =&gt; `String`
+* `drop`: `String`, `Long` =&gt; `String`
+* `takeRight`: `String`, `Long` =&gt; `String`
+* `dropRight`: `String`, `Long` =&gt; `String`
 
 ## Pattern Matching
 
-There is a mechanism for checking a value against a pattern. The user can handle different expected types in a match expression.
+There is a mechanism for checking a value against a pattern. The user can handle different expected types in a match expression.  
 A match expression has:
+
 * A value
 * The match keyword.
 * At least one case clause:
-```
-match (tx) {
+  ```js
+  match (tx) {
     case a:TransferTransaction => a.recipient
     case b:MassTransferTransaction => b.transfers
     case _ => false
   }
-```
+  ```
 
 # Examples
 
 Here's a complete example for 2 of 3 multi-sig :
 
-```
+```js
 let alicePubKey  = base58'B1Yz7fH1bJ2gVDjyJnuyKNTdMFARkKEpV'
 let bobPubKey    = base58'7hghYeWtiekfebgAcuCg9ai2NXbRreNzc'
 let cooperPubKey = base58'BVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'
@@ -109,3 +112,4 @@ aliceSigned + bobSigned + cooperSigned >= 2
 ```
 
 **Note** Keep in mind that all `let`'s could actually be inlined, they exist only for the sake of readability.
+

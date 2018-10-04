@@ -7,7 +7,7 @@ To run the Waves node have to go through 2 steps:
 
 **P.S.** you can check Waves Releases [Here](https://github.com/wavesplatform/Waves/releases).
 
-**Prior to the launch of your nodes, make sure you read the **[**configuration specification**](/waves-full-node/how-to-configure-a-node.md)**! The default configuration does not contain the safest solution!**
+**Prior to the launch of your nodes, make sure you read the **[**configuration specification**](/waves-full-node/configuration-parameters.md)**! The default configuration does not contain the safest solution!**
 
 More specific steps depend on your operating system:
 
@@ -18,12 +18,18 @@ More specific steps depend on your operating system:
 Here you can find a tutorial about [Installing Waves Node Tutorial](https://www.youtube.com/watch?v=CDmMeZlzKbk&feature=youtu.be)
 
 # System Requirements
+
 **The Minimal requirements are:**
+
 * 1 vCPU
 * 1Gb RAM
 * 30Gb SSD
 
 **Recommended configuration are:**
+
 * 2+ vCPU
 * 4Gb RAM
 * +30Gb SSD
+
+
+

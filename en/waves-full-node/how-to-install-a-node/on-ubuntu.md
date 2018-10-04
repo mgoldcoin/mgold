@@ -32,7 +32,7 @@ You should use the deb with Upstart if you have an operating system Ubuntu &lt; 
 
 Just [download latest waves deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i waves*.deb`.
 
-Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please [read this and edit waves config](/waves-full-node/how-to-configure-a-node.md) with caution.
+Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please [read this and edit waves config](/waves-full-node/configuration-parameters.md) with caution.
 
 Upstart users can start the node with `sudo service waves start` \(`waves-testnet` for testnet\) and enable autoload on start with `sudo service waves enable`.
 
@@ -46,7 +46,7 @@ You should use the deb with Systemd if you have an operating system Ubuntu &gt;=
 
 Just [download latest waves deb](https://github.com/wavesplatform/Waves/releases) and install it with `sudo dpkg -i waves*.deb`.
 
-Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please [read this and edit waves config](/waves-full-node/how-to-configure-a-node.md)** **and ** **with caution.
+Now it's time to check your waves config! It's embedded into the deb package and unpacked to `/usr/share/waves/conf/waves.conf` \(or `waves-testnet` folder for testnet\) and symlinked to `/etc/waves/waves.conf`. Please [read this and edit waves config](/waves-full-node/configuration-parameters.md)** **and ** **with caution.
 
 Systemd users can start the node with `sudo systemctl start waves.service` \(`waves-testnet` for testnet\) and enable autoload on start with `sudo systemctl enable waves.service`.
 
@@ -60,11 +60,55 @@ Systemd users can find waves app logs in journald storage like that `journalctl 
 
 Check out the configuration file, **it is very important**! On this depends **the safety of your wallet and money**.
 
-Just open it via your favorite text editor, pour a cup of tea and read [the documentation of the configuration file.](/waves-full-node/how-to-configure-a-node.md)
+Just open it via your favorite text editor, pour a cup of tea and read [the documentation of the configuration file.](/waves-full-node/configuration-parameters.md)
 
 Then start console, navigate to the folder with the jar file with the command `cd /opt/waves` and start waves node with command `java -jar waves.jar waves-config.conf`.
 
 Now you can write a script to run every node, which you like and use it! I hope it's worth it! :\)
+
+# Installation from source
+
+* add to your ~/.bashrc for increase memory for jvm:
+  ```
+  SBT_OPTS="-XX:MaxJavaStackTraceDepth=5000 -Xmx2536M -XX:+CMSClassUnloadingEnabled -Xss2M"
+  ```
+* Run at console:
+
+  ```
+  sudo apt install sbt
+  ```
+
+* Clone the repository:
+
+  ```
+  git clone git@github.com:wavesplatform/Waves.git
+  ```
+
+* Run SBT at project folder:
+
+  ```
+  cd waves_project
+  sbt
+  packageAll
+  ```
+
+* Import project to Intellij Idea
+
+* Download featured plugins for Intellij:
+
+  * Scala
+
+* On import project check this point
+
+  ```
+  [x] Use sbt shell for build and import
+  ```
+
+* Increase heap size to 2048 MB,
+
+* Setup plugin "Scala Fmt"
+
+* Enjoy
 
 # Additional security
 
@@ -75,4 +119,3 @@ Also, you may want to limit the use of these folders only specified users. You c
 If you decide to use RPC, you should protect it with embedded in ubuntu `ufw` or any other firewall. You can read about it [here](https://www.digitalocean.com/community/tutorials/how-to-setup-a-firewall-with-ufw-on-an-ubuntu-and-debian-cloud-server). If your server is public and available to the Internet and you decide to enable and use RPC, then allow only certain methods using [Nginx's proxy\_pass module](http://nginx.org/ru/docs/http/ngx_http_proxy_module.html) and do not forget to set the `apiKeyHash` in waves.conf.
 
 Also, do not forget to install the OS and other software security updates.
-

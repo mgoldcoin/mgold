@@ -312,3 +312,6 @@ Now, let's try to make a valid transactions with all required proofs. For exampl
       "attachment": ""
     }
    ```
+
+
+
