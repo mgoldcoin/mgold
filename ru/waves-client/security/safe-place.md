@@ -21,23 +21,23 @@ Waves — безопасная платформа. Открытость кода
 * Официальныей сайт - https://wavesplatform.com
 * Онлайн приложение - https://client.wavesplatform.com/
 * Клиент на GitHub - https://github.com/wavesplatform/WavesGUI
-* Мобильное приложение в iTunes - https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8
+* Мобильное приложение в AppStore - https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8
 * Мобильное приложение в Google Play - https://play.google.com/store/apps/details?id=com.wavesplatform.wallet
 
 * Sasha's Twitter - https://twitter.com/sasha35625
 * Sasha's Telegram - https://t.me/absolutelysasha
-* Waves Community - http://wavescommunity.com/
 * Waves blog - https://blog.wavesplatform.com/latest
 * Twitter - https://twitter.com/wavesplatform
-* Facebook - https://www.facebook.com/wavesplatform/
-* Reddit - https://www.reddit.com/r/Wavesplatform/
-* Youtube - https://www.youtube.com/channel/UCYDQN4Fo4rGnOZ22L5plNIw
+* Facebook - https://www.facebook.com/wavesplatform
+* Reddit - https://www.reddit.com/r/Wavesplatform
+* Youtube - https://www.youtube.com/wavesplatform
 * Vkontakte - https://vk.com/wavesplatform
 * Discord - https://discord.gg/cnFmDyA
 * Telegram (News US) - https://t.me/wavesnews
 * Telegram (News RU) - https://t.me/WavesNewsRU
 * Telegram (Global) - https://t.me/Wavescommunity
 * Telegram (Russia) - https://t.me/WavesCommunityRU
+* Telegram (China) - https://t.me/WavesChina
 
 Проверяйте, действительно ли соединение происходит в защищенном режиме SSL — в адресной строке вашего веб-браузера должен быть изображён значок закрытого замка (справа или слева, в зависимости от браузера).
 
