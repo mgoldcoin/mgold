@@ -1,6 +1,6 @@
 # How To Create a Private Waves Blockchain Network
 
-## First Step 
+## First Step
 
 * Install git, [Java 8](https://java.com/en/download/) and [sbt](http://www.scala-sbt.org/).
 
@@ -22,7 +22,8 @@ genesis-generator
   timestamp: 1500635421931 #comment this to use the current time
 
   # seed text -> share
-  # the sum of shares should be <= initial-balance distributions
+  # the sum of shares should be <= initial-balance
+  distributions
   {
     "foo0": 10000000000000
   }
@@ -31,7 +32,7 @@ genesis-generator
 
 ## Fourth Step
 
-* Run the genesis block generator using `sbt "test:runMain tools.GenesisBlockGenerator src/test/resources/genesis.example.conf"` Result will be like this:
+* Run the genesis block generator using `sbt "test:runMain tools.GenesisBlockGenerator src/test/resources/genesis.example.conf"` , Results will be like this:
 
 ```
 Addresses:
@@ -59,11 +60,12 @@ genesis {
 * Open your favorite text editor and create waves-custom-network.conf \(or any other name\) file like this:
 
 ```
-# Waves node settins
+# Waves node settings
 waves
 {
   # data storage folder
   directory=/tmp/custom
+  
   logging-level = DEBUG
 
   blockchain
