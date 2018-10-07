@@ -144,13 +144,15 @@ Pay attention to the parameters `waves.blockchain.custom.address-scheme-characte
 
 ## Sixth Step
 
-* Start your custom network node with `sbt "run waves-custom-network.conf"` Also you can run already builded release package \(deb or jar\) with this configuration file manually. Done! You create your private Waves network consisting of one node!
+* Start your custom network node with `sbt "run waves-custom-network.conf"` Also you can run already builded release package \(deb or jar\) with this configuration file manually.
+
+Done! You create your private Waves network consisting of one node!
 
 ## Adding Nodes to Your Network
 
 You can add more nodes to your network using `waves.network.known-peers` parameter, specify the address and port of the existing node with the same network parameters like "127.0.0.1:6860". If you are making several nodes locally, then do not forget to change for the new nodes the network port `waves.network.port`, the API port `waves.rest-api.port`, folder for the data `waves.directory` and wallet seed `waves.wallet.seed`.
 
-`waves.blockchain.custom.functionality` section contains parameters that allow you to enable and disable some features in your blockchain system. 
+`waves.blockchain.custom.functionality` section contains parameters that allow you to enable and disable some features in your blockchain system.
 
 **Note.** the developers can add new parameters in `waves.blockchain.custom.functionality` section, which are not present in this example; for an example of a working configuration, you can look at the[ `waves-devnet.conf` file in root folder of repository](https://github.com/wavesplatform/Waves/blob/master/waves-devnet.conf).
 
