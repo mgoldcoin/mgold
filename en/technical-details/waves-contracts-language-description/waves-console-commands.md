@@ -219,12 +219,13 @@ declare function cancelLease(
 
 ## Creates Alias
 
-* createAlias\(alias: string, fee, timestamp, version, seed\)
+* alias\({ alias: string; senderPublicKey?: string; fee?: number; chainId?: string; }, seed?: string\)
 
 Example:
 
 ```js
-createAlias("AliasTestnow")
+const aliasTx = alias({alias: 'wavesplatform'})
+broadcast(aliasTx)
 ```
 
 Function Details:
