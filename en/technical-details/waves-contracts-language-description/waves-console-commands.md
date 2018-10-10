@@ -49,7 +49,8 @@ declare function issue(
 Example:
 
 ```js
-reissueTx= reissue({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000, reissuable: true})
+const reissueTx= reissue({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000, reissuable: true})
+broadcast(reissueTx)
 ```
 
 ```js
@@ -77,13 +78,13 @@ declare function reissue(
 
 ## Creates signed burn transaction
 
-* burn\(assetId, quantity, fee, timestamp, version,seed\)
+* burn\({ assetId: string; quantity: number; senderPublicKey?: string; fee?: number; version?: number; }, seed?: string\)
 
 **Example:**
 
 ```js
-const coinburn = burn("93PekjkDrKtN8jUKZYRdaZhPr2Sa5dmvXkteR4wcuVtV", 1000)
-await broadcast(coin burn)
+const coinburn= burn({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000, senderPublicKey: publicKey()})
+await broadcast(coinburn)
 ```
 
 **Function Details:**
