@@ -285,7 +285,7 @@ declare function massTransfer(
 
 ## Compile smart contract
 
-* compile\(contract\)
+* compile\(contract\(\)\)
 
 ```js
 declare function compile(code:string):string
@@ -293,7 +293,16 @@ declare function compile(code:string):string
 
 # signed script transaction
 
-* script\(script, fee, timestamp, version, seed\)
+* setScript\({ script: string; senderPublicKey?: string; fee?: number; version?: number; chainId?: string; }, seed?: string\)
+
+**Example:**
+
+```js
+const scriptTx = setScript({script: compile(contract()), senderPublicKey: publicKey()})
+broadcast(scriptTx)
+```
+
+**Function Details:**
 
 ```js
  declare function script(
