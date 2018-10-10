@@ -2,6 +2,9 @@
 
 [Waves IDE](https://ide.wavesplatform.com) has a Waves console feature which supports different commands:
 
+  
+**Note. **Using [Waves Transactions library ](/development-and-api/client-libraries/waves-transactions.md)you can easily create and sign transactions for Waves blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
+
 ## Creates signed Issue Transaction
 
 * issue\({name: string; description: string; decimals: number; quantity: number; reissuable: boolean; senderPublicKey?: string; fee?: number; version?: number; chainId?: string;}, seed?: string\)
