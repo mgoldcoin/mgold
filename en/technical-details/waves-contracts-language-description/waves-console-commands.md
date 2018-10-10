@@ -150,7 +150,7 @@ declare function transfer(
 )
 ```
 
-## Creates signed lease transaction
+## Creates signed Lease Transaction
 
 * lease\({ amount: number; recipient: string; senderPublicKey?: string; fee?: number; version?: number; },seed?: string\)
 
@@ -184,15 +184,15 @@ declare function lease(
 )
 ```
 
-## Creates signed cancel lease transaction
+## Creates signed Cancel Lease transaction
 
-* cancelLease\(txId, fee, timestamp, version, chainId, seed\)
+* cancelLease\({ leaseId: string; senderPublicKey?: string; fee?: number; chainId?: string; }, seed?: string\)
 
 **Example:**
 
 ```js
-const cancellease1 = cancelLease("8ReLBodZVj8Fick5ojRTqnGiB3rfFDLuhMdiZCBXcFxH")
-await broadcast(cancellease1)
+const cancelLeaseTx= cancelLease({leaseId: 'BRR8Yiwbu7jsareYr3BFk55kZ6R6Eaes5gPFWVcJTiXP'})
+broadcast(cancelLeaseTx)
 ```
 
 **Function Details:**
