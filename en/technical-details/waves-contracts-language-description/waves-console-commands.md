@@ -76,7 +76,7 @@ declare function reissue(
 )
 ```
 
-## Creates signed burn transaction
+## Creates signed Burn Transaction
 
 * burn\({ assetId: string; quantity: number; senderPublicKey?: string; fee?: number; version?: number; }, seed?: string\)
 
