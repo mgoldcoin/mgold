@@ -110,14 +110,14 @@ declare function burn(
 )
 ```
 
-## Creates signed transfer transaction
+## Creates signed Transfer Transaction
 
-* transfer\(amount, recipient, assetId, attachment, feeAssetId, fee, timestamp, version, seed\)
+* transfer\({amount: number; recipient: string; assetId?: string; attachment?: string; feeAssetId?: string; senderPublicKey?: string; fee?: number; version?: number; }, seed?: string\)
 
 **Example:**
 
 ```js
-const tx1 = transfer(10, "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8")
+const tx1 = transfer({amount: 10, recipient: "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8"})
 await broadcast(tx1)
 ```
 
