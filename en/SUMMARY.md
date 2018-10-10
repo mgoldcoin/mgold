@@ -134,6 +134,7 @@
   * [WavesCS](development-and-api/client-libraries/wavescs.md)
   * [WavesC](development-and-api/client-libraries/waves-c.md)
   * [WavesRS](development-and-api/client-libraries/wavesrs.md)
+  * [Waves Transactions](development-and-api/client-libraries/waves-transactions.md)
   * [Community Libraries](development-and-api/client-libraries/unofficial-libraries.md)
 * [DEX API](development-and-api/dex-api.md)
   * [Matcher](development-and-api/dex-api/matcher.md)
