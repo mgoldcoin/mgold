@@ -10,7 +10,7 @@
 
 ```js
 const coin = issue({name: 'test', description: 'ico', decimals: 8, quantity:1000000, reissuable: true})
-await broadcast(coin)
+broadcast(coin)
 ```
 
 **Function Details:**
@@ -83,8 +83,8 @@ declare function reissue(
 **Example:**
 
 ```js
-const coinburn= burn({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000, senderPublicKey: publicKey()})
-await broadcast(coinburn)
+const coinburn= burn({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000})
+broadcast(coinburn)
 ```
 
 **Function Details:**
@@ -118,7 +118,7 @@ declare function burn(
 
 ```js
 const tx1 = transfer({amount: 10, recipient: "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8"})
-await broadcast(tx1)
+broadcast(tx1)
 ```
 
 **Function Details:**
@@ -152,13 +152,13 @@ declare function transfer(
 
 ## Creates signed lease transaction
 
-* lease\(amount: number, recipient, fee, timestamp, version, seed\)
+* lease\({ amount: number; recipient: string; senderPublicKey?: string; fee?: number; version?: number; },seed?: string\)
 
 **Example:**
 
 ```js
-const lease1 = lease(10, "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8")
-await broadcast(lease1)
+const leaseTx = lease({amount: 100, recipient: '3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'})
+broadcast(leaseTx)
 ```
 
 **Function Details:**
