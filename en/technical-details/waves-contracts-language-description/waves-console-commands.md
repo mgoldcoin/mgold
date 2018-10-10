@@ -329,12 +329,12 @@ declare function broadcast(tx: any)
 
 # Generates keyPair from seed
 
-* keyPair\(env.SEED\)
+* keyPair\(seed?: string\)
 
 **Example:**
 
 ```js
-const keys = KeyPair()
+const keys = KeyPair('alice') or const keys = KeyPair()
 ```
 
 Function Details
@@ -350,12 +350,12 @@ declare function keyPair(seed: string = env.SEED): KeyPair
 
 ## Generates publicKey from seed
 
-publicKey\(env.SEED\)
+publicKey\(seed?: string\)
 
 **Example:**
 
 ```js
-const pk = publicKey()
+const pk = publicKey('alice') or const pk = publicKey()
 ```
 
 **Function Details:**
@@ -371,7 +371,7 @@ declare function publicKey(seed: string = env.SEED): string
 
 ## Generates privateKey from seed
 
-* privateKey\(env.SEED\)
+* privateKey\(seed?: string\)
 
 **Example:**
 
@@ -392,12 +392,12 @@ declare function privateKey(seed: string = env.SEED): string
 
 ## Generates address from KeyPair or Seed
 
-* address\(keyPair \| env.SEED\)
+* address\(keyPairOrSeed?: any\)
 
 **Example:**
 
 ```js
-const addr = address()
+const addr = address('alice') or const addr = address()
 ```
 
 **Function Details:**
