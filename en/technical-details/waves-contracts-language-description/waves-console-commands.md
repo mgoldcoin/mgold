@@ -251,12 +251,13 @@ declare function createAlias(
 
 ## Creates signed massTransfer transaction
 
-* massTransfer\(transfers\[amount, recipient\], fee, timestamp, version, seed\)
+* massTransfer\({ transfers: {}; assetId: string; senderPublicKey?: string; fee?: number; version?: number; }, seed?: string\)\)
 
 **Example:**
 
 ```js
-massTransfer[100, '3N84Z1vMsHTpFEi6pBh8EdefQCmWLgC5hnH', 200, '3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8', 100]
+const massTransferTx = massTransfer({transfers: [{amount: 100, recipient: '3N84Z1vMsHTpFEi6pBh8EdefQCmWLgC5hnH'}, {amount: 200, recipient: '3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'}], assetId: '5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV'})
+broadcast(massTransferTx)
 ```
 
 **Function Details:**
