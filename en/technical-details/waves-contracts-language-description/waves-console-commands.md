@@ -2,14 +2,14 @@
 
 [Waves IDE](https://ide.wavesplatform.com) has a Waves console feature which supports different commands:
 
-## Creates signed issue transaction
+## Creates signed Issue Transaction
 
-* issue\(name, description, decimals, quantity, reissuable, fee, timestamp, version, seed\).
+* issue\({name: string; description: string; decimals: number; quantity: number; reissuable: boolean; senderPublicKey?: string; fee?: number; version?: number; chainId?: string;}, seed?: string\)
 
 **Example:**
 
 ```js
-const coin = issue("eos tokens", "ico" , 8 , 1000000 , true)
+const coin = issue({name: 'test', description: 'ico', decimals: 8, quantity:1000000, reissuable: true})
 await broadcast(coin)
 ```
 
@@ -42,9 +42,15 @@ declare function issue(
 )
 ```
 
-## Creates signed reissue transaction
+## Creates signed Reissue Transaction
 
-reissue\(assetId, quantity, reissuable, fee, timestamp, version, seed\)
+* reissue\({ assetId: string; quantity: number; reissuable: boolean; senderPublicKey?: string; fee?: number; version?: number; chainId?: string; }, seed?: string\)
+
+Example:
+
+```js
+reissueTx= reissue({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000, reissuable: true})
+```
 
 ```js
  /**
@@ -333,8 +339,6 @@ declare function keyPair(seed: string = env.SEED): KeyPair
 ## Generates publicKey from seed
 
 publicKey\(env.SEED\)
-
-
 
 **Example:**
 
