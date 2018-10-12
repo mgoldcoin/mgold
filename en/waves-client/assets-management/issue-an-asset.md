@@ -14,9 +14,9 @@ You'll see the following window:
 
 Let's describe each boxes:
 
-**Name of your asset**: First of all, give your token a name. Important to know here is that names are not unique to prevent name squatting but the identifier, also called asset ID, is unique. Whenever you are looking for a token, search and confirm it is the right one by checking the asset ID;
+**Name of your asset**: First of all, give your token a name. Important to know here is that names are not unique to prevent name squatting but the identifier, also called asset ID, is unique. Whenever you are looking for a token, search and confirm it is the right one by checking the asset ID. However, if our anti-spam system detects duplicate names, it will automatically mark as spam tokens. So, before you start, please read carefully condition for creating new tokens;
 
-**Description**: Write a description for your token. You are also able to include website links which is particularly useful considering the asset description as of now is unchangeable;
+**Description**: Write a description for your token. You are also able to include website links which are particularly useful considering the asset description as of now is unchangeable;
 
 **Total tokens**: Define the total supply of your token. The total supply can either be fixed at issuance or increased later by making the asset re-issuable;
 
