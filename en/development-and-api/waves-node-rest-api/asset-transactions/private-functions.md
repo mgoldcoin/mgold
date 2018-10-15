@@ -44,7 +44,7 @@ The same as in [Broadcast Issue Assets]
 The same as in [Broadcast Issue Assets]
 ```
 
-### POST /assets/reissue
+### POST /assets/reissue {#post-assets-reissue}
 ![master](https://img.shields.io/badge/MAINNET-available-4bc51d.svg)
 
 
