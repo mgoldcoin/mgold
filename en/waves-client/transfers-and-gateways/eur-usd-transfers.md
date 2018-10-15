@@ -4,11 +4,21 @@
 
 The verification process is handled by [IDnow](https://www.idnow.eu/) service.
 
-First of all, you should check that your country is eligible for verification and which document is needed. You will find all these information [here](https://wavesplatform.userecho.com/topics/1304-list-of-accepted-countries-and-documents-for-verification/).
+First of all, you should check that your country is eligible for verification and which documents are required. You will find all these information [here](https://wavesplatform.userecho.com/topics/1304-list-of-accepted-countries-and-documents-for-verification/).
+**Note**: We don't accept international wire transfers from US Citizens or from USA Banks.
 
-Open your wallet. On the main page click on the **Receive** button in the EURO / USD sections, choose **Bank** and click on your personal link **Get verified button**.
+Open your wallet. On the main page click on the **Receive** button in the US Dollar or Euro sections.
 
 ![](/_assets/fiat_transfers_01.png)
+
+Choose **Bank** and carefully read the terms of service provided by Coinomat gateway:
+
+> This service is provided by Coinomat Company (Сoinomat). Waves Platform AG does not undertake any responsibility for the activities carried out by Coinomat and does not take any part in the relationship that may arise between Coinomat and users of the Waves Platform.
+By using Coinomat services, you agree to be bound by [Coinomat Terms of Service and Conduction of Transactions](https://coinomat.com/terms.php). If you do not agree to these terms, then do not use Coinomat services.
+
+> I agree with the [Terms of Service and Conduction of Transactions](https://coinomat.com/terms.php), [Price List](https://coinomat.com/limits.php) and [Privacy Policy](https://coinomat.com/privacy.php) of Coinomat Company.
+
+If you agree, put a checkmark and click on your personal link **Get verified** button.
 
 ![](/_assets/fiat_transfers_02.png)
 
