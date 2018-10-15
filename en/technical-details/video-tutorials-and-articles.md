@@ -35,10 +35,10 @@ Here you can find some video tutorial about our smart contracts use-cases which 
 
 ## 1.4 Waves Console Commands
 
-Waves IDE has a **Waves console** feature which supports [different commands](/technical-details/waves-contracts-language-description/waves-console-commands.md).  
-[In this video](https://www.youtube.com/watch?v=WzhTk_rpngI&feature=youtu.be) we went through most of these commands with simple examples.
+Waves IDE has a **Waves console** feature which supports different commands.  
+[In this video](https://www.youtube.com/watch?v=gBgLjg6nrvA&amp=&feature=youtu.be) we went through most of these commands with simple examples.
 
-* [_**Video**_](https://www.youtube.com/watch?v=WzhTk_rpngI&feature=youtu.be)
+* [_**Video**_](https://www.youtube.com/watch?v=gBgLjg6nrvA&amp=&feature=youtu.be)
 * [_**Waves Console Commands Examples**_](/technical-details/waves-contracts-language-description/waves-console-commands.md)
 
 # 2. Smart Contract Articles
