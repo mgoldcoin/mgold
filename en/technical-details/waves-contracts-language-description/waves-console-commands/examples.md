@@ -57,8 +57,8 @@ broadcast(Tx)
   Here, We must obviously specify an increased fee \(find the formula for the calculation\) and we can explicitly specify senderPublicKey and in the second parameter we need to specify valid SEEDs \(2 of 3\):
 
 ```js
-const setScriptTx = setScript({script:compile (contract()),senderPublicKey:publicKey(),fee:1400000},[null, 'bob', 'cooper'])
-broadcast(setScriptTx)
+const DataTx = data({data: [{key: "abcd", value: 42}], senderPublicKey: publicKey(), fee: 500000}, ["alice", null, "carol"])
+broadcast(DataTx)
 ```
 
 * We can also remove the script of our account by assigning a null value to the script parameter:
