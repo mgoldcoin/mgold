@@ -57,6 +57,8 @@
     * [Распределение токена](waves-client/assets-management/mass-transfer.md)
     * [Спонсорские транзакции](waves-client/assets-management/sponsored-transaction.md)
     * [Спосорская комиссия](waves-client/assets-management/sponsored-fee.md)
+  * [Расширенные возможности](waves-client/advanced_features.md)
+    * [Script транзакция](waves-client/advanced_features/script_transaction.md)
 
   * [Часто задаваемые вопросы](waves-client/faq.md)
     * [Один Seed - Один Waves адрес.](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
