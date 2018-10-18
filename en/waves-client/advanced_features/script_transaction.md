@@ -32,6 +32,4 @@ After a few seconds, created transaction will be confirmed, and generated script
 
 ___
 
-See more articles in the [Transfers and Gateways](/waves-client/wallet-management.md) chapter.
-
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
