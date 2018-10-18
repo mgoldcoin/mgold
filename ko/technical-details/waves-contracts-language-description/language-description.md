@@ -83,8 +83,8 @@ Standard string type
 There is a mechanism for checking a value against a pattern and you can handle the different expected types in a match expression. A match expression has a value, the match keyword, and at least one case clause:
 ```
 match tx {
-	case t:Transfer => t.recepient
-	case t:MassTransfer => t.transfers
+	case a:Transfer => t.recepient
+	case b:MassTransfer => t.transfers
 }
 ```
 

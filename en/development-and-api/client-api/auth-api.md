@@ -75,7 +75,7 @@ Example: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6
 
 ### How to check signature validity
 
-You can use the `Waves.crypto.isValidTransactionSignature()` method from [@waves/waves-api](https://www.npmjs.com/package/@waves/waves-api) npm package.
+You can use the `Waves.crypto.isValidSignature()` method from [@waves/waves-api](https://www.npmjs.com/package/@waves/waves-api) npm package.
 
 Signature is taken from the data in the following order: a `WavesWalletAuthentication` string, then a string with your host parameter value, then a string with your data parameter value.
 

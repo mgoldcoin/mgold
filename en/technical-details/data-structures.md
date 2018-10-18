@@ -402,9 +402,10 @@ The transaction's signature is calculated from the following bytes:
 | N+2 | Attachment length | 2 |
 | N+3 | Attachment bytes | variable |
 | N+4 | Proofs version \(0x01\) | 1 |
-| N+5 | Proof count \(1\) | 1 |
-| N+6 | Signature length \(64\) | 2 |
-| N+7 | Signature | 64 |
+| N+5 | Proof count | 2 |
+| N+6 | Proof1 length \(64\) | 2 |
+| N+7 | Proof1 | 64 |
+| ... | ... | ... |
 
 The transaction signature is calculated from the fields 1 to N+3, i.e. proofs and signatures are not included.
 

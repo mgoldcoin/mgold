@@ -2,15 +2,23 @@
 
 [Waves IDE](https://ide.wavesplatform.com) has a Waves console feature which supports different commands:
 
-## Creates signed issue transaction
+**Note. **Using [Waves Transactions library ](/development-and-api/client-libraries/waves-transactions.md)you can easily create and sign transactions for Waves blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
 
-* issue\(name, description, decimals, quantity, reissuable, fee, timestamp, version, seed\).
+
+
+# MultiSig Example
+
+[_**Here**_](/technical-details/waves-contracts-language-description/waves-console-commands/examples.md) you can check the MultiSig smart contract example using Waves Console
+
+## Creates signed Issue Transaction
+
+* issue\({name: string; description: string; decimals: number; quantity: number; reissuable: boolean; senderPublicKey?: string; fee?: number; version?: number; chainId?: string;}, seed?: string\)
 
 **Example:**
 
 ```js
-const coin = issue("eos tokens", "ico" , 8 , 1000000 , true)
-await broadcast(coin)
+const coin = issue({name: 'test', description: 'ico', decimals: 8, quantity:1000000, reissuable: true})
+broadcast(coin)
 ```
 
 **Function Details:**
@@ -42,9 +50,16 @@ declare function issue(
 )
 ```
 
-## Creates signed reissue transaction
+## Creates signed Reissue Transaction
 
-reissue\(assetId, quantity, reissuable, fee, timestamp, version, seed\)
+* reissue\({ assetId: string; quantity: number; reissuable: boolean; senderPublicKey?: string; fee?: number; version?: number; chainId?: string; }, seed?: string\)
+
+Example:
+
+```js
+const reissueTx= reissue({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000, reissuable: true})
+broadcast(reissueTx)
+```
 
 ```js
  /**
@@ -69,15 +84,15 @@ declare function reissue(
 )
 ```
 
-## Creates signed burn transaction
+## Creates signed Burn Transaction
 
-* burn\(assetId, quantity, fee, timestamp, version,seed\)
+* burn\({ assetId: string; quantity: number; senderPublicKey?: string; fee?: number; version?: number; }, seed?: string\)
 
 **Example:**
 
 ```js
-const coinburn = burn("93PekjkDrKtN8jUKZYRdaZhPr2Sa5dmvXkteR4wcuVtV", 1000)
-await broadcast(coin burn)
+const coinburn= burn({assetId:'5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV', quantity: 1000})
+broadcast(coinburn)
 ```
 
 **Function Details:**
@@ -103,15 +118,15 @@ declare function burn(
 )
 ```
 
-## Creates signed transfer transaction
+## Creates signed Transfer Transaction
 
-* transfer\(amount, recipient, assetId, attachment, feeAssetId, fee, timestamp, version, seed\)
+* transfer\({amount: number; recipient: string; assetId?: string; attachment?: string; feeAssetId?: string; senderPublicKey?: string; fee?: number; version?: number; }, seed?: string\)
 
 **Example:**
 
 ```js
-const tx1 = transfer(10, "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8")
-await broadcast(tx1)
+const tx1 = transfer({amount: 10, recipient: "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8"})
+broadcast(tx1)
 ```
 
 **Function Details:**
@@ -143,15 +158,15 @@ declare function transfer(
 )
 ```
 
-## Creates signed lease transaction
+## Creates signed Lease Transaction
 
-* lease\(amount: number, recipient, fee, timestamp, version, seed\)
+* lease\({ amount: number; recipient: string; senderPublicKey?: string; fee?: number; version?: number; },seed?: string\)
 
 **Example:**
 
 ```js
-const lease1 = lease(10, "3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8")
-await broadcast(lease1)
+const leaseTx = lease({amount: 100, recipient: '3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'})
+broadcast(leaseTx)
 ```
 
 **Function Details:**
@@ -177,15 +192,15 @@ declare function lease(
 )
 ```
 
-## Creates signed cancel lease transaction
+## Creates signed Cancel Lease transaction
 
-* cancelLease\(txId, fee, timestamp, version, chainId, seed\)
+* cancelLease\({ leaseId: string; senderPublicKey?: string; fee?: number; chainId?: string; }, seed?: string\)
 
 **Example:**
 
 ```js
-const cancellease1 = cancelLease("8ReLBodZVj8Fick5ojRTqnGiB3rfFDLuhMdiZCBXcFxH")
-await broadcast(cancellease1)
+const cancelLeaseTx= cancelLease({leaseId: 'BRR8Yiwbu7jsareYr3BFk55kZ6R6Eaes5gPFWVcJTiXP'})
+broadcast(cancelLeaseTx)
 ```
 
 **Function Details:**
@@ -210,14 +225,15 @@ declare function cancelLease(
 )
 ```
 
-## Creates Alice
+## Creates Alias
 
-* createAlias\(alias: string, fee, timestamp, version, seed\)
+* alias\({ alias: string; senderPublicKey?: string; fee?: number; chainId?: string; }, seed?: string\)
 
 Example:
 
 ```js
-createAlias("AliasTestnow")
+const aliasTx = alias({alias: 'wavesplatform'})
+broadcast(aliasTx)
 ```
 
 Function Details:
@@ -243,12 +259,13 @@ declare function createAlias(
 
 ## Creates signed massTransfer transaction
 
-* massTransfer\(transfers\[amount, recipient\], fee, timestamp, version, seed\)
+* massTransfer\({ transfers: {}; assetId: string; senderPublicKey?: string; fee?: number; version?: number; }, seed?: string\)\)
 
 **Example:**
 
 ```js
-massTransfer[100, '3N84Z1vMsHTpFEi6pBh8EdefQCmWLgC5hnH', 200, '3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8', 100]
+const massTransferTx = massTransfer({transfers: [{amount: 100, recipient: '3N84Z1vMsHTpFEi6pBh8EdefQCmWLgC5hnH'}, {amount: 200, recipient: '3NBVqYXrapgJP9atQccdBPAgJPwHDKkh6A8'}], assetId: '5bZthE81r32StbxvT33a7S7nSZdcKqGHFRaVprizimuV'})
+broadcast(massTransferTx)
 ```
 
 **Function Details:**
@@ -276,7 +293,7 @@ declare function massTransfer(
 
 ## Compile smart contract
 
-* compile\(contract\)
+* compile\(contract\(\)\)
 
 ```js
 declare function compile(code:string):string
@@ -284,7 +301,16 @@ declare function compile(code:string):string
 
 # signed script transaction
 
-* script\(script, fee, timestamp, version, seed\)
+* setScript\({ script: string; senderPublicKey?: string; fee?: number; version?: number; chainId?: string; }, seed?: string\)
+
+**Example:**
+
+```js
+const scriptTx = setScript({script: compile(contract()), senderPublicKey: publicKey()})
+broadcast(scriptTx)
+```
+
+**Function Details:**
 
 ```js
  declare function script(
@@ -311,12 +337,12 @@ declare function broadcast(tx: any)
 
 # Generates keyPair from seed
 
-* keyPair\(env.SEED\)
+* keyPair\(seed?: string\)
 
 **Example:**
 
 ```js
-const keys = KeyPair()
+const keys = KeyPair('alice') or const keys = KeyPair()
 ```
 
 Function Details
@@ -332,14 +358,12 @@ declare function keyPair(seed: string = env.SEED): KeyPair
 
 ## Generates publicKey from seed
 
-publicKey\(env.SEED\)
-
-
+publicKey\(seed?: string\)
 
 **Example:**
 
 ```js
-const pk = publicKey()
+const pk = publicKey('alice') or const pk = publicKey()
 ```
 
 **Function Details:**
@@ -355,7 +379,7 @@ declare function publicKey(seed: string = env.SEED): string
 
 ## Generates privateKey from seed
 
-* privateKey\(env.SEED\)
+* privateKey\(seed?: string\)
 
 **Example:**
 
@@ -376,12 +400,12 @@ declare function privateKey(seed: string = env.SEED): string
 
 ## Generates address from KeyPair or Seed
 
-* address\(keyPair \| env.SEED\)
+* address\(keyPairOrSeed?: any\)
 
 **Example:**
 
 ```js
-const addr = address()
+const addr = address('alice') or const addr = address()
 ```
 
 **Function Details:**

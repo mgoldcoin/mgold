@@ -22,5 +22,5 @@ Seed фраза вашего аккаунта находится в раздел
 
 Больше информации:
 
-[Будьте осторожны при использовании парольной фразы (SEED-фразы)!](/waves-client/security/safe-place.md)
-[Восстановление аккаунта](/waves-client/account-management/restore-an-account.md)
+ * [Будьте осторожны при использовании парольной фразы (SEED-фразы)!](/waves-client/security/safe-place.md)
+ * [Восстановление аккаунта](/waves-client/account-management/restore-an-account.md)

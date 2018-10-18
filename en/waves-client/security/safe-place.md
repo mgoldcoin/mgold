@@ -39,7 +39,7 @@ Cloned company web pages are the main ways of distributing phishing links. Subsc
 * Telegram (News RU) - https://t.me/WavesNewsRU
 * Telegram (Global) - https://t.me/Wavescommunity
 * Telegram (Russia) - https://t.me/WavesCommunityRU
-* Telegram (Chine) - https://t.me/WavesChina
+* Telegram (China) - https://t.me/WavesChina
 
 Use the following guidelines to secure your funds:
 

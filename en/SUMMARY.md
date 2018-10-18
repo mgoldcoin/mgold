@@ -23,11 +23,9 @@
 ## Waves Client
 
 * [Install Waves Client](waves-client/install-waves-client.md)
-
 * [Security](waves-client/security.md)
-  * [Treat your backup phrase (aka SEED phrase) with care!](waves-client/security/safe-place.md)
+  * [Treat your backup phrase \(aka SEED phrase\) with care!](waves-client/security/safe-place.md)
   * [Spam transactions](waves-client/security/spam-transactions.md)
-
 * [Account Management](waves-client/account-management.md)
   * [Account creation](waves-client/account-management/creating-an-account.md)
   * [Account recovery](waves-client/account-management/restore-an-account.md)
@@ -81,7 +79,7 @@
       * [Asset transfers](waves-client/mobile-apps/android/transfers-and-gateways/asset-transfers.md)
     * [Android: Waves DEX](waves-client/mobile-apps/android/waves-dex.md)
       * [Start trading using the Waves DEX](waves-client/mobile-apps/android/waves-dex/start-trading-using-the-waves-dex.md)
-
+      
 * [FAQ](waves-client/faq.md)
   * [What is a SEED phrase?](waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
   * [One Seed - One Waves address.](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
@@ -108,6 +106,22 @@
 * [Joining Testnet](waves-full-node/joining-testnet.md)
 * [Logging](waves-full-node/logging.md)
 
+## Smart Contracts
+
+* [Waves Smart Contracts](technical-details/waves-contracts-language-description.md)
+* [Approach and Capabilities](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
+* [RIDE Language](technical-details/ride-language.md)
+  * [Language Description](technical-details/ride-language/language-description.md)
+  * [Effective RIDE Examples](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
+  * [Maven Compiler](technical-details/ride-language/maven-compiler.md)
+* [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
+* [Functions and Standard Library](technical-details/waves-contracts-language-description/standard-library.md)
+* [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
+* [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
+* [Waves Console Commands](technical-details/waves-contracts-language-description/waves-console-commands.md)
+  * [Console Examples](technical-details/waves-contracts-language-description/waves-console-commands/examples.md)
+* [Video Tutorials and Articles](technical-details/video-tutorials-and-articles.md)
+
 ## Development and API
 
 * [Technical details](technical-details/technical-details.md)
@@ -119,23 +133,13 @@
   * [Data Transaction](technical-details/data-transaction.md)
   * [Waves-NG Solution](technical-details/waves-ng-solution.md)
   * [Sponsored Fee](technical-details/sponsored-fee.md)
-* [Waves Smart Contracts](technical-details/waves-contracts-language-description.md)
-  * [Approach and Capabilities](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
-  * [Language Description](technical-details/waves-contracts-language-description/language-description.md)
-  * [Implementation Details](technical-details/waves-contracts-language-description/implementation-details.md)
-  * [Standard library](technical-details/waves-contracts-language-description/standard-library.md)
-  * [Creating and Deploying a Script Manually](technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
-  * [Script Performance Tests](/technical-details/waves-contracts-language-description/script-performance-tests.md)
-  * [Waves Console Commands](technical-details/waves-contracts-language-description/waves-console-commands.md)
-  * [Examples](technical-details/waves-contracts-language-description/examples.md)
-    * [Language + Standard Library Usage](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
-    * [Multi-Signature Account](technical-details/waves-contracts-language-description/examples/multi-signature-account.md)
-    * [Smart Asset With Notary Proof](technical-details/waves-contracts-language-description/examples/smart-asset-with-notary-proof.md)
 * [Client Libraries](development-and-api/client-libraries.md)
   * [PyWaves](development-and-api/client-libraries/pywaves.md)
   * [WavesJ](development-and-api/client-libraries/wavesj.md)
   * [WavesCS](development-and-api/client-libraries/wavescs.md)
   * [WavesC](development-and-api/client-libraries/waves-c.md)
+  * [WavesRS](development-and-api/client-libraries/wavesrs.md)
+  * [Waves Transactions](development-and-api/client-libraries/waves-transactions.md)
   * [Community Libraries](development-and-api/client-libraries/unofficial-libraries.md)
 * [DEX API](development-and-api/dex-api.md)
   * [Matcher](development-and-api/dex-api/matcher.md)
@@ -162,3 +166,4 @@
 * [Sponsored transactions](proposals/sponsored-transactions.md)
 * [Versioned transactions](proposals/versioned-transactions.md)
 * [Trezor hardware wallet integration specification](proposals/trezor-hardware-wallet-integration-specification.md)
+

@@ -25,7 +25,7 @@ If you run JAR file it's recommended to override default parameters by passing a
 Typically this file should contain you node's unique characteristics (ip, name, keys, etc...) and network-specific parameters similar to waves-mainnet or waves-testnet configs from previous sections (files shipped with DEB packages).
 
 
-## Configuration Secitions
+## Configuration Sections
 
 ### Waves configuration section
 
@@ -33,19 +33,19 @@ Root configuration section `waves` holds essential application parameters and ot
 
 Using parameter `directory` it is possible to set a path to the base application directory. Starting from version 0.6.0 it is possible to use environment variables to set configuration parameters. For example, by default, the base directory constructed relative to the user’s `HOME` environment variable. Please, do not enclose environment variables references in quotes, in this case, they will be handled as strings and won’t be resolved.
 
-| Note | If you want to change waves directory in Ubuntu packages you should change it using `-J-Dwaves.directory=path` in `/etc/waves/application.ini` and `/lib/systemd/system/waves.service`. You can override any JVM start parameter in `waves.service`, it has priority. |
-| :--- | :--- |
+**Note:** If you want to change waves directory in Ubuntu packages you should change it using `-J-Dwaves.directory=path` in `/etc/waves/application.ini` and `/lib/systemd/system/waves.service`. You can override any JVM start parameter in `waves.service`, it has priority.
 
 
-| Note | For Windows users. Often on Windows, the HOME environment variable is not set. Please, replace `${HOME}` with `${HOMEPATH}` or `${APPDATA}` in your additional configuration file. Also, you should remember that Windows' environment variables names are case sensitive. |
-| :--- | :--- |
+
+**Note:** For Windows users. Often on Windows, the HOME environment variable is not set. Please, replace `${HOME}` with `${HOMEPATH}` or `${APPDATA}` in your additional configuration file. Also, you should remember that Windows' environment variables names are case sensitive.
+
 
 Parameter `data-directory` sets the location of LevelDB database folder. In this database stored blockchain data and state.
 
 Using parameter `leveldb-cache-size` you can set the size of theinternal cache of LevelDB database.
 
-| Note | The number of bytes should be given to set the cache size parameter. But you can use size units: <ul><li>K - for kilobyte</li><li>M - for megabytes</li><li>G - for gigabytes</li></ul> |
-| :--- | :--- |
+**Note:** The number of bytes should be given to set the cache size parameter. But you can use size units: <ul><li>K - for kilobyte</li><li>M - for megabytes</li><li>G - for gigabytes</li></ul>
+
 
 
 ### Network settings {#user-content-network-settings}
@@ -68,8 +68,7 @@ The `known-peers` parameter stores the list of bootstrap nodes to which your nod
 
 The `peers-data-residence-time` parameter could be used to set the period of time during which the node stores information about external peer since last communication session with it.
 
-| Note | All time span parameters are set in milliseconds. But duration units can be used to shorten the value. Supported units are: <ul><li>s - second, seconds</li><li>m - muinute, minutes</li><li>h - hour, hours</li><li>d - day, days</li></ul> For usage examples see the default configuration file above. |
-| :--- | :--- |
+**Note:** All time span parameters are set in milliseconds. But duration units can be used to shorten the value. Supported units are: <ul><li>s - second, seconds</li><li>m - muinute, minutes</li><li>h - hour, hours</li><li>d - day, days</li></ul> For usage examples see the default configuration file above.
 
 
 Parameter `black-list-residence-time` could be used to set the period of time for which information about external peer stays in the blacklist.
@@ -108,8 +107,14 @@ Parameter `password` could be used to set the password string to protect the wal
 
 Using `seed` parameter you could recreate an existing walled on a new node. Provide the BASE58 string of your seed here. If you don’t have any existing wallet comment out this parameter and start the node. During the first run, the application will create a new wallet with a random seed for you. In this case, the seed will be displayed in the application log. If you miss it or if you don’t want to check the log files, it will also be available in REST API using the wallet/seed method.
 
-| Warning | Attention! The wallet is a critical part of your node. Better to create its file in a safe and protected location. Don’t forget to backup your wallet’s file. It’s recommended to remove the seed from the configuration file immediately after the start of the node. If an attacker gains access to this seed string, he has access to all your funds on all your addresses! |
-| :--- | :--- |
+**Warning:** The wallet is a critical part of your node. Better to create its file in a safe and protected location. Don’t forget to backup your wallet’s file. It’s recommended to remove the seed from the configuration file immediately after the start of the node. If an attacker gains access to this seed string, he has access to all your funds on all your addresses!
+
+#### Update wallet's settings
+If you want to run the node with another wallet, you have to: 
+* delete/cope to another location your wallet.dat file for making directory /wallet empty
+* update seed at config file 
+
+After that node will use another wallet settings.
 
 
 ### Blockchain settings {#user-content-blockchain-settings}
@@ -230,14 +235,12 @@ Parameter `bind-address` could be used to select network interface on which REST
 
 Parameter `port` could be used to change the port number on which REST API will await connections.
 
-| Warning | Attention! For better security, do not change `bind-address` from `127.0.0.1` if you do not know what you’re doing! For external access, you should use instead [Nginx’s proxy\_pass module](http://nginx.org/ru/docs/http/ngx_http_proxy_module.html) or [SSH port-forwarding](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html). |
-| :--- | :--- |
+**Warning:** Attention! For better security, do not change `bind-address` from `127.0.0.1` if you do not know what you’re doing! For external access, you should use instead [Nginx’s proxy\_pass module](http://nginx.org/ru/docs/http/ngx_http_proxy_module.html) or [SSH port-forwarding](http://blog.trackets.com/2014/05/17/ssh-tunnel-local-and-remote-port-forwarding-explained-with-examples.html).
 
 
 Use `api-key-hash` parameter to set the hash of your API key. The API key is used to protect calls of critical API methods. Remember, that in this parameter you should provide the hash of API key, but during REST calls you should provide API key itself. You can use API method `/utils/hash/secure` to produce the hash of your API key.
 
-| Warning | Attention! API key is transmitted in the HTTP header as unprotected plain text! An attacker could intercept it in network transit and use it to transfer your money to any address! So you have to protect the transmission using HTTPS or use SSH port forwarding. |
-| :--- | :--- |
+**Warning:** API key is transmitted in the HTTP header as unprotected plain text! An attacker could intercept it in network transit and use it to transfer your money to any address! So you have to protect the transmission using HTTPS or use SSH port forwarding.
 
 
 Parameter `cors` could be used to enable or disable CORS support in REST API. CORS allows to safely resolve queries to other domains outside the one running the node. It’s necessary for Swagger and Lite client. You can read about it [here](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing).
