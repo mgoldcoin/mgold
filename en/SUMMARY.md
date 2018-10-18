@@ -59,6 +59,8 @@
   * [Token distribution](waves-client/assets-management/mass-transfer.md)
   * [Sponsored transaction](waves-client/assets-management/sponsored-transaction.md)
   * [Sponsored fee](waves-client/assets-management/sponsored-fee.md)
+* [Advanced features](waves-client/advanced_features.md)
+  * [Script transaction](waves-client/advanced_features/script_transaction.md)
 
 * [Mobile applications](waves-client/mobile-apps.md)
   * [Waves Wallet for iOS Devices](waves-client/mobile-apps/iOS.md)
