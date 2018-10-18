@@ -3,7 +3,7 @@
 Script transactions allow you to extend the available functionality of the standard Waves application. One of the uses of script transaction is creating a multi-signature wallet. For more information, please visit the following [article](technical-details/waves-contracts-language-description/examples/multi-signature-account.md).
 Also, script can be developed with [Waves Ride IDE](https://ide.wavesplatform.com/)
 
-Before you start, please keep in mind. We do not recommend you submit script transactions unless you are an experienced user. Errors can lead to permanent loss of access to your account.
+**Before you start, please keep in mind. We do not recommend you submit script transactions unless you are an experienced user. Errors can lead to permanent loss of access to your account**.
 
 So, to start using all available features of the application, first you need to activate the advanced features.
 
@@ -16,7 +16,7 @@ You will be forwarded to the following settings page. Find and put a checkmark n
 
 ![](/_assets/advanced_features_01.png)
 
-After that, close the settings, and in the upper right corner, you will see the **<> Script** button ![](/_assets/advanced_features_02.png).
+After that, close the settings, and in the upper right corner, you will see the **<> Script** button ![](/_assets/advanced_features_02.png)
 
 The following pop-up will appear.
 
