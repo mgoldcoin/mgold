@@ -3,8 +3,11 @@
 [Download](https://drive.google.com/drive/folders/1m4dD4C8pEJ4y6-hpauF9TGSIsevY-3me?usp=sharing)
 
 [Demo page](https://chrome-ext.wvservices.com/)
+
+Note that the Waves Keeper also can support [Waves Client API](https://docs.wavesplatform.com/en/development-and-api/client-api/overview.html): [Web Auth API](https://docs.wavesplatform.com/en/development-and-api/client-api/auth-api.html), [Payment API](https://docs.wavesplatform.com/en/development-and-api/client-api/payments-api.html). If a user has both of Waves Client and Waves Keeper, the Keeper would have higher priority.
  
-Firstly, for working with API, you need to add a public object Waves on your site. In this object the following functions are available. 
+Firstly, for working with API, you need to add a public object Waves on your site. In this object the following functions are available.
+
 
 
 ## Authentication
