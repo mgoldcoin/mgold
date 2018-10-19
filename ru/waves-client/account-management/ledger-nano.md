@@ -1,4 +1,4 @@
-# **Как использовать Ledger Nano S в Waves приложении**
+# Как использовать Ledger Nano S в Waves приложении
 
 Вы можете управлять своим Waves аккаунтом через Waves [приложение](https://wavesplatform.com/product) или, используя Waves приложение на своем Ledger Nano S устройстве.
 
