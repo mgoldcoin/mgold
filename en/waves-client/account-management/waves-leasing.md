@@ -1,4 +1,4 @@
-# **How to Lease your Waves**
+# How to Lease your Waves
 
 # **Leasing or LPoS**
 

@@ -1,4 +1,4 @@
-# How to reissue created Token.
+# How to reissue created Token
 
 Open up your Waves wallet.
 

@@ -1,4 +1,4 @@
-# ​How to create Script transaction.
+# ​How to create Script transaction
 
 Script transactions allow you to extend the available functionality of the standard Waves application. One of the uses of script transaction is creating a multi-signature wallet. For more information, please check the following [article](/technical-details/video-tutorials-and-articles.md).
 Also, script can be developed with [Waves Ride IDE](https://ide.wavesplatform.com/)

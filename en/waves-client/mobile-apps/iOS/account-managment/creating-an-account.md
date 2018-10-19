@@ -1,4 +1,4 @@
-# **How to Create an Account**
+# How to Create an Account
 
 **Step 1.** Download and install the latest version from App Store.  
 Please use only the [official resource.](https://itunes.apple.com/us/app/waves-wallet/id1233158971)

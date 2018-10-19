@@ -1,4 +1,4 @@
-# **Where Can I Find My Waves Address**
+# Where Can I Find My Waves Address
 
 Open your Waves wallet. At the top left corner click on the avatar of your account.
 

@@ -1,4 +1,4 @@
-# **How to use Ledger Nano S on the Waves app**
+# How to use Ledger Nano S on the Waves app
 
 Waves wallet can be managed on the Waves [web and desktop](https://wavesplatform.com/product) clients or by using the Waves app on your Ledger Nano S.
 

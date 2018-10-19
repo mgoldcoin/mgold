@@ -1,4 +1,4 @@
-# Security.
+# Security
 
 This section contains all the most important things regarding the safety of your funds.
 

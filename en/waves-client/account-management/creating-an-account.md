@@ -1,4 +1,4 @@
-# **How to Create an Account**
+# How to Create an Account
 
 You can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
 Also downloads are available from the official site - https://wavesplatform.com/product

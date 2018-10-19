@@ -1,4 +1,4 @@
-# How to use sponsored transactions.
+# How to use sponsored transactions
 
 Some projects want their users to be able to operate with their tokens without using Waves token at all. Often it makes much sense since these assets have value. Currently, it's impossible to ensure all the miners accept particular asset as a fee.
 

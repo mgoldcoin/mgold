@@ -1,4 +1,4 @@
-# How to create a Token.
+# How to create a Token
 
 Issuing your own token on Waves couldn’t be simpler, in the Waves client there is a tab for “Token Creation” where you can give your token a name and description, choose the total token and decimals and then create it.
 

@@ -1,4 +1,4 @@
-# ​How to burn issued Token.
+# ​How to burn issued Token
 
 Open up your Waves wallet.
 
