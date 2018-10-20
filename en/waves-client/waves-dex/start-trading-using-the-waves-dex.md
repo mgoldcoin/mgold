@@ -85,4 +85,4 @@ The placed order will appears in the **My Open Orders** box and in the **Order B
 > *Before sending, receiving and trading crypto assets, educate yourself to make informed decisions. Crypto assets are volatile and the prices can go up and down. Carefully evaluate your trading goals and the financial risk you are willing to take.
 Please beware that Wavesplatform does not provide financial, tax, or legal advice. You should take such decisions on your own or consult with reliable experts*.
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+If you have troubles with our platform, please create a [support](https://support.wavesplatform.com) ticket or write a [question](https://forum.wavesplatform.com) on our forum.
