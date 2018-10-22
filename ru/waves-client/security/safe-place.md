@@ -16,7 +16,7 @@ Waves — безопасная платформа. Открытость кода
 
 **Официальные ресурсы Waves**
 
-* Официальныей сайт - https://wavesplatform.com
+* Официальный сайт - https://wavesplatform.com
 * Онлайн приложение - https://client.wavesplatform.com/
 * Клиент на GitHub - https://github.com/wavesplatform/WavesGUI
 * Мобильное приложение в AppStore - https://itunes.apple.com/us/app/waves-wallet/id1233158971?mt=8
@@ -24,20 +24,21 @@ Waves — безопасная платформа. Открытость кода
 
 Каналами распространения фишинговых ссылок являются клоны страниц компании в социальных сетях. Подпишитесь на наши официальные группы в социальных сетях, следите за новостями и не попадайтесь на уловки мошенников:
 
-* Sasha's Twitter - https://twitter.com/sasha35625
-* Sasha's Telegram - https://t.me/absolutelysasha
-* Waves blog - https://blog.wavesplatform.com/latest
+* Саша в Twitter - https://twitter.com/sasha35625
+* Саша в Telegram - https://t.me/absolutelysasha
+* Waves блог - https://blog.wavesplatform.com/latest
+* Waves форум - https://forum.wavesplatform.com
 * Twitter - https://twitter.com/wavesplatform
 * Facebook - https://www.facebook.com/wavesplatform
 * Reddit - https://www.reddit.com/r/Wavesplatform
 * Youtube - https://www.youtube.com/wavesplatform
 * Vkontakte - https://vk.com/wavesplatform
 * Discord - https://discord.gg/cnFmDyA
-* Telegram (News US) - https://t.me/wavesnews
-* Telegram (News RU) - https://t.me/WavesNewsRU
-* Telegram (Global) - https://t.me/Wavescommunity
-* Telegram (Russia) - https://t.me/WavesCommunityRU
-* Telegram (China) - https://t.me/WavesChina
+* Telegram (Новости US) - https://t.me/wavesnews
+* Telegram (Новости RU) - https://t.me/WavesNewsRU
+* Telegram (Общий) - https://t.me/Wavescommunity
+* Telegram (Россия) - https://t.me/WavesCommunityRU
+* Telegram (Китай) - https://t.me/WavesChina
 
 Проверяйте, действительно ли соединение происходит в защищенном режиме SSL — в адресной строке вашего веб-браузера должен быть изображён значок закрытого замка (справа или слева, в зависимости от браузера).
 

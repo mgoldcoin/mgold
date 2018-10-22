@@ -29,6 +29,7 @@ Cloned company web pages are the main ways of distributing phishing links. Subsc
 * Sasha's Twitter - https://twitter.com/sasha35625
 * Sasha's Telegram - https://t.me/absolutelysasha
 * Waves blog - https://blog.wavesplatform.com/latest
+* Waves forum - https://forum.wavesplatform.com
 * Twitter - https://twitter.com/wavesplatform
 * Facebook - https://www.facebook.com/wavesplatform
 * Reddit - https://www.reddit.com/r/Wavesplatform
