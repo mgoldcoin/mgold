@@ -1,6 +1,6 @@
 In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\) so you can compare it with the older version 1.
 
-# 1. Issue Transaction
+# 3. Issue Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19,7 +19,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-# 2. Transfer Transaction
+# 4. Transfer Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -37,7 +37,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-# 3. Reissue Transaction
+# 5. Reissue Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -53,7 +53,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-# 4. Burn Transaction
+# 6. Burn Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -68,7 +68,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-# 5. Exchange Transaction
+# 7. Exchange Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -86,7 +86,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-# 6. Lease Transaction
+# 8. Lease Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -103,7 +103,7 @@ In this section, you can find all transactions body bytes details and the new fi
 
 
 
-# 7. Lease Cancel Transaction
+# 9. Lease Cancel Transaction
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
 | Transaction Type | Byte | 1 | + | + |
@@ -115,6 +115,21 @@ In this section, you can find all transactions body bytes details and the new fi
 | Timestamp | Long | 8 | + | + |
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
+
+# 10. Create Alias Transaction
+| Field | Type | Length | Transaction Version1 | Transaction version2 |
+| :--- | :--- | :--- | :--- | :--- |
+| Transaction Type | Byte | 1 | + | + |
+| Version | Byte | 1 | - | + |
+| ChainId | Byte | 1 | - | + |
+| Sender's Public Key | PublicKeyAccount | 32 | + | + |
+| Alias | Bytes | n | + | + |
+| Fee | Long | 8 | + | + |
+| Timestamp | Long | 8 | + | + |
+| Proofs |  |  | - | + |
+| Signature | Bytes | 64 | + | - |
+
+
 
 
 
