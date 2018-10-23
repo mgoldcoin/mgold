@@ -87,6 +87,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Signature | Bytes | 64 | + | - |
 
 # 6. Lease Transaction
+
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
 | Transaction Type | Byte | 1 | + | + |
@@ -99,5 +100,23 @@ In this section, you can find all transactions body bytes details and the new fi
 | Timestamp | Long | 8 | + | + |
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
+
+
+
+# 7. Lease Cancel Transaction
+| Field | Type | Length | Transaction Version1 | Transaction version2 |
+| :--- | :--- | :--- | :--- | :--- |
+| Transaction Type | Byte | 1 | + | + |
+| Version | Byte | 1 | - | + |
+| ChainId | Byte | 1 | - | + |
+| Sender's Public Key | PublicKeyAccount | 32 | + | + |
+| LeaseId | ByteStr | 1 | + | + |
+| Fee | Long | 8 | + | + |
+| Timestamp | Long | 8 | + | + |
+| Proofs |  |  | - | + |
+| Signature | Bytes | 64 | + | - |
+
+
+
 
 
