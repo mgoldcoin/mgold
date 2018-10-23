@@ -1,6 +1,6 @@
 In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\) so you can compare it with the older version 1.
 
-# Issue Transaction
+# 1. Issue Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -19,23 +19,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-# Reissue Transaction
-
-| Field | Type | Length | Transaction Version1 | Transaction version2 |
-| :--- | :--- | :--- | :--- | :--- |
-| transactionType | Byte | 1 | + | + |
-| version | Byte | 1 | - | + |
-| chainId | Byte | 1 | - | + |
-| Sender's Public Key | PublicKeyAccount | 32 | + | + |
-| Asset ID | Bytes | 32 | + | + |
-| Quantity | Long | 8 | + | + |
-| Reissuable | Boolean | 1 | + | + |
-| Fee | Long | 8 | + | + |
-| Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | + |
-| Signature | Bytes | 64 | + | - |
-
-# Transfer Transaction
+# 2. Transfer Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -53,7 +37,23 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-# Burn Transaction
+# 3. Reissue Transaction
+
+| Field | Type | Length | Transaction Version1 | Transaction version2 |
+| :--- | :--- | :--- | :--- | :--- |
+| transactionType | Byte | 1 | + | + |
+| version | Byte | 1 | - | + |
+| chainId | Byte | 1 | - | + |
+| Sender's Public Key | PublicKeyAccount | 32 | + | + |
+| Asset ID | Bytes | 32 | + | + |
+| Quantity | Long | 8 | + | + |
+| Reissuable | Boolean | 1 | + | + |
+| Fee | Long | 8 | + | + |
+| Timestamp | Long | 8 | + | + |
+| Proofs |  |  | - | + |
+| Signature | Bytes | 64 | + | - |
+
+# 4. Burn Transaction
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
@@ -63,6 +63,24 @@ In this section, you can find all transactions body bytes details and the new fi
 | Sender's Public Key | PublicKeyAccount | 32 | + | + |
 | AssetId | Bytes | 32 | + | + |
 | Quantity | Long | 8 | + | + |
+| Fee | Long | 8 | + | + |
+| Timestamp | Long | 8 | + | + |
+| Proofs |  |  | - | + |
+| Signature | Bytes | 64 | + | - |
+
+# 5. Exchange Transaction
+
+| Field | Type | Length | Transaction Version1 | Transaction version2 |
+| :--- | :--- | :--- | :--- | :--- |
+| Transaction Type | Byte | 1 | + | + |
+| Version | Byte | 1 | - | + |
+| ChainId | Byte | 1 | - | + |
+| Buy order | Bytes | 4 | + | + |
+| Sell Order | Bytes | 4 | + | + |
+| Price | Long | 8 | + | + |
+| Amount | Long  | 8 | + | + |
+| Buy matcher fee | Long | 8 | + | + |
+| Sell matcher fee | Long | 8 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
 | Proofs |  |  | - | + |
