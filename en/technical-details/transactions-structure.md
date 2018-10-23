@@ -28,11 +28,29 @@ In this section, you can find all transactions body bytes details and the new fi
 | chainId | Byte | 1 | - | + |
 | Sender's Public Key | PublicKeyAccount | 32 | + | + |
 | Asset ID | Bytes | 32 | + | + |
-| Quantity  | Long | 8 | + | + |
+| Quantity | Long | 8 | + | + |
 | Reissuable | Boolean | 1 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | - |
+| Proofs |  |  | - | + |
+| Signature | Bytes | 64 | + | - |
+
+# Transfer Transaction
+
+| Field | Type | Length | Transaction Version1 | Transaction version2 |
+| :--- | :--- | :--- | :--- | :--- |
+| transactionType | Byte | 1 | + | + |
+| version | Byte | 1 | - | + |
+| chainId | Byte | 1 | - | + |
+| Sender's Public Key | PublicKeyAccount | 32 | + | + |
+| Recipient's Address Or Alias object bytes | Byte | M | + | + |
+| assetId | Bytes | 32 | + | + |
+| Fee assetId | Bytes | 32 | + | + |
+| Amount | Long | 8 | + | + |
+| Fee | Long | 8 | + | + |
+| Timestamp | Long | 8 | + | + |
+| Attachment | Bytes | N | + | + |
+| Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
 
