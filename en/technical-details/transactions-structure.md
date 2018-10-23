@@ -78,7 +78,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Buy order | Bytes | 4 | + | + |
 | Sell Order | Bytes | 4 | + | + |
 | Price | Long | 8 | + | + |
-| Amount | Long  | 8 | + | + |
+| Amount | Long | 8 | + | + |
 | Buy matcher fee | Long | 8 | + | + |
 | Sell matcher fee | Long | 8 | + | + |
 | Fee | Long | 8 | + | + |
@@ -86,5 +86,18 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
+# 6. Lease Transaction
+| Field | Type | Length | Transaction Version1 | Transaction version2 |
+| :--- | :--- | :--- | :--- | :--- |
+| Transaction Type | Byte | 1 | + | + |
+| Version | Byte | 1 | - | + |
+| ChainId | Byte | 1 | - | + |
+| Sender's Public Key | PublicKeyAccount | 32 | + | + |
+| Recipient's Address Or Alias object bytes | Byte | M | + | + |
+| Amount | Long | 8 | + | + |
+| Fee | Long | 8 | + | + |
+| Timestamp | Long | 8 | + | + |
+| Proofs |  |  | - | + |
+| Signature | Bytes | 64 | + | - |
 
 
