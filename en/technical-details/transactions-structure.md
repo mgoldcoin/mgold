@@ -1,4 +1,7 @@
-In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\) so you can compare it with the older version 1.
+# Transactions Structure
+
+  
+In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\). In the new version, the transactions are signed by [_**proofs**_](https://github.com/wavesplatform/Waves/blob/master/src/main/scala/com/wavesplatform/transaction/Proofs.scala) instead of using a signature.
 
 # 3. Issue Transaction
 
@@ -15,8 +18,8 @@ In this section, you can find all transactions body bytes details and the new fi
 | Reissuable | Byte | 1 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Script |  |  | - | + |
-| Proofs |  |  | - | + |
+| Script | option\[script\] | N | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 # 4. Transfer Transaction
@@ -101,9 +104,8 @@ In this section, you can find all transactions body bytes details and the new fi
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
-
-
 # 9. Lease Cancel Transaction
+
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
 | Transaction Type | Byte | 1 | + | + |
@@ -117,6 +119,7 @@ In this section, you can find all transactions body bytes details and the new fi
 | Signature | Bytes | 64 | + | - |
 
 # 10. Create Alias Transaction
+
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
 | Transaction Type | Byte | 1 | + | + |
@@ -128,11 +131,6 @@ In this section, you can find all transactions body bytes details and the new fi
 | Timestamp | Long | 8 | + | + |
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
-
-
-
-
-
 
 
 
