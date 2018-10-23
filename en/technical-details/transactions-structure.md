@@ -39,7 +39,7 @@ In this section, you can find all transactions body bytes details and the new fi
 
 | Field | Type | Length | Transaction Version1 | Transaction version2 |
 | :--- | :--- | :--- | :--- | :--- |
-| transactionType | Byte | 1 | + | + |
+| Transaction Type | Byte | 1 | + | + |
 | version | Byte | 1 | - | + |
 | chainId | Byte | 1 | - | + |
 | Sender's Public Key | PublicKeyAccount | 32 | + | + |
@@ -50,6 +50,21 @@ In this section, you can find all transactions body bytes details and the new fi
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
 | Attachment | Bytes | N | + | + |
+| Proofs |  |  | - | + |
+| Signature | Bytes | 64 | + | - |
+
+# Burn Transaction
+
+| Field | Type | Length | Transaction Version1 | Transaction version2 |
+| :--- | :--- | :--- | :--- | :--- |
+| Transaction Type | Byte | 1 | + | + |
+| Version | Byte | 1 | - | + |
+| ChainId | Byte | 1 | - | + |
+| Sender's Public Key | PublicKeyAccount | 32 | + | + |
+| AssetId | Bytes | 32 | + | + |
+| Quantity | Long | 8 | + | + |
+| Fee | Long | 8 | + | + |
+| Timestamp | Long | 8 | + | + |
 | Proofs |  |  | - | + |
 | Signature | Bytes | 64 | + | - |
 
