@@ -86,7 +86,6 @@
 | toBase64String|Base64 encode|  bytes [ByteVector](#ByteVector) value  | [String](#String)
 | fromBase64String|Base64 decode|  str [String](#String) base64 encoded string  | [ByteVector](#ByteVector)
 | transactionById|Lookup transaction|  id [ByteVector](#ByteVector) transaction Id  | [Unit](#Unit) [GenesisTransaction](#GenesisTransaction) [PaymentTransaction](#PaymentTransaction) [TransferTransaction](#TransferTransaction) [IssueTransaction](#IssueTransaction) [ReissueTransaction](#ReissueTransaction) [BurnTransaction](#BurnTransaction) [LeaseTransaction](#LeaseTransaction) [LeaseCancelTransaction](#LeaseCancelTransaction) [MassTransferTransaction](#MassTransferTransaction) [CreateAliasTransaction](#CreateAliasTransaction) [SetScriptTransaction](#SetScriptTransaction) [SponsorFeeTransaction](#SponsorFeeTransaction) [ExchangeTransaction](#ExchangeTransaction) [DataTransaction](#DataTransaction)
-| transactionHeightById|get height when transaction was stored to blockchain|  id [ByteVector](#ByteVector) transaction Id  | OPTION[ [Int](#Int)]
 | getInteger|get data from the account state|  addressOrAlias [Address](#Address) [Alias](#Alias) account    key [String](#String) key  | OPTION[ [Int](#Int)]
 | getBoolean|get data from the account state|  addressOrAlias [Address](#Address) [Alias](#Alias) account    key [String](#String) key  | OPTION[ [Boolean](#Boolean)]
 | getBinary|get data from the account state|  addressOrAlias [Address](#Address) [Alias](#Alias) account    key [String](#String) key  | OPTION[ [ByteVector](#ByteVector)]
