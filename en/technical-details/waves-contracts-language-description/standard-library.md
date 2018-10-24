@@ -3,9 +3,9 @@
 # Types
 |type|adds|
 |-------|---|
-| [Unit](#Unit) | Native |   
-| [Int](#Int) | Native |   
-| [Boolean](#Boolean) | Native |   
+| [Unit](#Unit) | Native  |   
+| [Int](#Int) | Native  |   
+| [Boolean](#Boolean) | Native  |   
 | [ByteVector](#ByteVector) | Native |   
 | [String](#String) | Native |   
 | [Address](#Address) | **bytes**  [ByteVector](#ByteVector)   |
