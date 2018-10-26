@@ -104,7 +104,6 @@
 * [Waves Node in Docker](waves-full-node/waves-node-in-docker.md)
 * [Node Configuration](waves-full-node/configuration-parameters.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
-* Options of Running Waves Full Node
 
 ## Smart Contracts
 

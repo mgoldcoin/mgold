@@ -1,3 +1,20 @@
+# Waves Full Node
+
+This section contains all information about Installing, configuring and upgrading a Waves Full Node.
+
+1. [What is Waves Full Node](/waves-full-node/what-is-a-full-node.md)
+2. [Options of Running Waves Full Node](/waves-full-node/options-of-running-waves-full-node.md)
+3. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
+4. [Upgrading](/waves-full-node/upgrading.md)
+5. [State Downloading and Applying](/waves-full-node/state-downloading-and-applying.md)
+6. [Export and Import From The Blockchain](#)
+
+7. [Waves Node in Docker](/waves-full-node/waves-node-in-docker.md)
+
+8. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
+
+9. [Joining Testnet](/waves-full-node/joining-testnet.md)
+
 # Waves Network Structure
 
 The structure of the peer-to-peer network impacts the security and performance of cryptocurrencies. A geographically clustered network can quickly propagate a new block to many other nodes. This makes it more difficult for a malicious miner to propagate conflicting blocks/transactions quicker than honest nodes.
