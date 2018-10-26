@@ -1,7 +1,8 @@
 # Transactions Structure
 
-  
-In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\). In the new version, the transactions are signed by [_**proofs**_](https://github.com/wavesplatform/Waves/blob/master/src/main/scala/com/wavesplatform/transaction/Proofs.scala) instead of using a signature.
+In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\). In the new version, the transactions are signed by [_**proofs**_](https://github.com/wavesplatform/Waves/blob/master/src/main/scala/com/wavesplatform/transaction/Proofs.scala) instead of using a signature. So basically _**signature **_was replaced with _**proofs.**_
+
+.
 
 # 3. Issue Transaction
 
