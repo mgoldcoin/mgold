@@ -12,5 +12,10 @@ The user needs to follow these steps for State downloading and applying:
 4. Unpack the State to the correct direction `/var/lib/waves/data`  \(note, previously the user needed to clear this folder but not anymore\).
 5. Finally, the user starts the node by running `sudo systemctl start waves`
 
+You can download recently exported blockchains using following links:
+
+* TestNet: [http://blockchain.testnet.wavesnodes.com/](http://blockchain.testnet.wavesnodes.com/)
+* MainNet: [http://blockchain.wavesnodes.com/](http://blockchain.wavesnodes.com/)
+
 
 

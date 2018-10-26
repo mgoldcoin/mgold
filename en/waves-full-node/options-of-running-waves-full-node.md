@@ -1,14 +1,10 @@
 # Options of Running Waves Full Node
 
-When the user needs to run a waves full node, the user will have these options to choose between them:
+After a user install a node, the user will have different ways to get the blockchain as the following:
 
-[_**1. Installing a node from scratch**_](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md) or you can also use [_**Waves node in docker**_](/waves-full-node/waves-node-in-docker.md)
-
-[_**2. Upgrading the node to a new version**_](/waves-full-node/upgrading.md)
-
-[_**3. State downloading and applying**_](/waves-full-node/state-downloading-and-applying.md)
+1. Build the blockchain from scratch, here you will need to [run the node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md), then it will receive all the needed information from the other nodes.
+2. [Import blockchain from binary file](/waves-full-node/export-and-import-from-the-blockchain.md), here the user needs to stop the node before starting the process of exporting the blocks.
+3. [Downloading exported blockchain](/waves-full-node/state-downloading-and-applying.md).
 
 **Note. **you can go through the links above for more details about each step.
-
-
 

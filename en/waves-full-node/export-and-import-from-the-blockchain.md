@@ -2,7 +2,6 @@
 
 **Note:** This functionality available since version 0.8.
 
-
 ## Export existing blocks to a binary file {#user-content-export-existing-blocks-to-a-binary-file}
 
 **Note:** You have to stop the node before starting export of blocks.
@@ -28,7 +27,7 @@ The output file name parameter is optional, name 'blockchain' is used by default
 
 ## Remove the existing node's data
 
-In order to fully rebuild the node's state, you have to remove the existing node's `data` folder. 
+In order to fully rebuild the node's state, you have to remove the existing node's `data` folder.  
 On Windows, `data` folder usually located in `%HOMEPATH%\waves\data`.
 
 On Linux it's in the `/var/lib/waves[-testnet]/` folder:
@@ -41,7 +40,7 @@ sudo rm -rdf /var/lib/waves[-testnet]/data
 
 **Note:** The node must be stopped before importing the blockchain.
 
-**Note:** If you already have some data in the node's `data` folder, the import will continue to append new data from the blockchain's binary file. So, you might be willing to remove the existing data. Please be careful while appending data, mixing data from different versions can lead to an erroneous state. 
+**Note:** If you already have some data in the node's `data` folder, the import will continue to append new data from the blockchain's binary file. So, you might be willing to remove the existing data. Please be careful while appending data, mixing data from different versions can lead to an erroneous state.
 
 To import the blockchain and rebuild the state run the following command.
 
@@ -62,8 +61,10 @@ Import is a heavy operation and could take a few hours to complete.
 
 ## Downloading exported blockchain
 
-You can download recently exported blockchains using following links: 
-* TestNet: http://blockchain.testnet.wavesnodes.com/
-* MainNet: http://blockchain.wavesnodes.com/
+You can download recently exported blockchains using following links:
+
+* TestNet: [http://blockchain.testnet.wavesnodes.com/](http://blockchain.testnet.wavesnodes.com/)
+* MainNet: [http://blockchain.wavesnodes.com/](http://blockchain.wavesnodes.com/)
+
 
 
