@@ -16,7 +16,7 @@ It's a Javascript console for waves blockchain. It's built on top of [jsconsole]
 
 #### JS lib
 
-Console uses [waves-transactions](/development-and-api/client-libraries/waves-transactions.md) library. Top level library functions are bound to console global scope. The difference is that in console, seed argument comes second and is optional. E.x.:
+Console uses [waves-transactions](/development-and-api/client-libraries/waves-transactions.md) library. Top level library functions are bound to console global scope. The difference is that in console, seed argument comes second and it's optional. E.x.:
 
 ##### Console
 
