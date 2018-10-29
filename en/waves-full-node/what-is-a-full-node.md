@@ -8,9 +8,10 @@ This section contains all information about Installing, configuring and upgradin
 4. [State Downloading and Applying](/waves-full-node/options-of-running-waves-full-node/state-downloading-and-applying.md)
 5. [Export and Import From The Blockchain](/waves-full-node/options-of-running-waves-full-node/export-and-import-from-the-blockchain.md)
 6. [Upgrading](/waves-full-node/upgrading.md)
-7. [Waves Node in Docker](/waves-full-node/waves-node-in-docker.md)
-8. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
-9. [Joining Testnet](/waves-full-node/joining-testnet.md)
+7. [How to Rollback a Node](/waves-full-node/how-to-rollback-a-node.md)
+8. [Waves Node in Docker](/waves-full-node/waves-node-in-docker.md)
+9. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
+10. [Joining Testnet](/waves-full-node/joining-testnet.md)
 
 # Waves Network Structure
 
