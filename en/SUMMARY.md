@@ -101,6 +101,7 @@
   * [State Downloading and Applying](waves-full-node/options-of-running-waves-full-node/state-downloading-and-applying.md)
   * [Export and Import From The Blockchain](waves-full-node/options-of-running-waves-full-node/export-and-import-from-the-blockchain.md)
 * [Upgrading](waves-full-node/upgrading.md)
+* [How to Rollback a Node](waves-full-node/how-to-rollback-a-node.md)
 * [Waves Node in Docker](waves-full-node/waves-node-in-docker.md)
 * [Node Configuration](waves-full-node/configuration-parameters.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
