@@ -93,14 +93,14 @@
 ## Waves Full Node
 
 * [What is Waves Full Node ](waves-full-node/what-is-a-full-node.md)
-* [Options of Running Waves Full Node](waves-full-node/options-of-running-waves-full-node.md)
-* [How To Install a node](waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
+* [How To Install a Node](waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
   * [On Mac](waves-full-node/how-to-install-a-node/on-mac.md)
   * [On Windows](waves-full-node/how-to-install-a-node/on-windows.md)
   * [On Ubuntu](waves-full-node/how-to-install-a-node/on-ubuntu.md)
+* [Options of Getting Actual Blockchain State](waves-full-node/options-of-running-waves-full-node.md)
+  * [State Downloading and Applying](waves-full-node/options-of-running-waves-full-node/state-downloading-and-applying.md)
+  * [Export and Import From The Blockchain](waves-full-node/options-of-running-waves-full-node/export-and-import-from-the-blockchain.md)
 * [Upgrading](waves-full-node/upgrading.md)
-* [State Downloading and Applying](waves-full-node/state-downloading-and-applying.md)
-* [Export and Import From The Blockchain](waves-full-node/export-and-import-from-the-blockchain.md)
 * [Waves Node in Docker](waves-full-node/waves-node-in-docker.md)
 * [Node Configuration](waves-full-node/configuration-parameters.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
