@@ -4,7 +4,7 @@ This section contains all information about Installing, configuring and upgradin
 
 1. [What is Waves Full Node](/waves-full-node/what-is-a-full-node.md)
 2. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
-3. [Options of Running Waves Full Node](/waves-full-node/options-of-running-waves-full-node.md)
+3. [Options of Getting Actual Blockchain State](/waves-full-node/options-of-running-waves-full-node.md)
 4. [State Downloading and Applying](/waves-full-node/options-of-running-waves-full-node/state-downloading-and-applying.md)
 5. [Export and Import From The Blockchain](/waves-full-node/options-of-running-waves-full-node/export-and-import-from-the-blockchain.md)
 6. [Upgrading](/waves-full-node/upgrading.md)
