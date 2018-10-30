@@ -9,10 +9,6 @@ The user has two options:
 
 ## Common issues while implementing rollback
 
-  
-If the user requests a **rollback** via **curl/swagger** and gets **error 503,** it doesn't mean its not processing the user request \(  
-It is just its timeout'ed\). To check if nodes actually processing, make sure to check that user's node state doesn't change \(with status check if block height is not rising\) after the user starts reroll. It will take some time to process to start _synchronization_ again from a desired location.  
+If the user requests a **rollback** via **curl/swagger** and gets **error 503,** it doesn't mean its not processing the user request \(It is just its timeout'ed\). To check if nodes actually processing, make sure to check that user's node state doesn't change \(with status check if block height is not rising\) after the user starts reroll. It will take some time to process to start _synchronization_ again from a desired location.  
 The node can process a **rollback** to up to **2000 blocks** without restating, so if the user is on fork for some reason then be sure to rollback as soon as possible or you will have to restate probably for longer period of time than it is intended.
-
-
 
