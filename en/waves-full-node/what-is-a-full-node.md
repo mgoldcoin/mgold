@@ -3,7 +3,7 @@
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
 1. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
-2. [Options for Getting Actual Blockchain State](/waves-full-node/options-for-getting-actual-blockchain.md)
+2. [Options for Getting Actual Blockchain](/waves-full-node/options-for-getting-actual-blockchain.md)
 3. [State Downloading and Applying](/waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md)
 4. [Export and Import From The Blockchain](/waves-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md)
 5. [Upgrading](/waves-full-node/upgrading.md)
