@@ -6,4 +6,5 @@ After a user installs a node, the user will have different ways to get the block
 2. [_**Import state**_](/waves-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md), here the user needs to stop the node before starting the process of exporting the blocks.
 3. [_**Downloading state**_](/waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md).
 
-**Note. **you can go through the links above for more details about each step..
+**Note. **you can go through the links above for more details about each step.
+
