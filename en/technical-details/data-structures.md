@@ -272,10 +272,10 @@ The transaction's signature is calculated from the following bytes:
 
 | \# | Field name | Type | Length |
 | --- | --- | --- | --- |
-| 1 | Transaction type \(0x06\) | Byte | 1 |
+| 1 | ChainId | Byte | 1 |
 | 2 | Sender's public key | Bytes | 32 |
 | 3 | Asset ID | Bytes | 32 |
-| 4 | Amount | Long | 8 |
+| 4 | Quantity | Long | 8 |
 | 5 | Fee | Long | 8 |
 | 6 | Timestamp | Long | 8 |
 | 7 | Signature | Bytes | 64 |
@@ -284,10 +284,10 @@ The transaction's signature is calculated from the following bytes:
 
 | \# | Field name | Type | Length |
 | --- | --- | --- | --- |
-| 1 | Transaction type \(0x06\) | Byte | 1 |
+| 1 | ChainId | Byte | 1 |
 | 2 | Sender's public key | Bytes | 32 |
 | 3 | Asset ID | Bytes | 32 |
-| 4 | Amount | Long | 8 |
+| 4 | Quantity | Long | 8 |
 | 5 | Fee | Long | 8 |
 | 6 | Timestamp | Long | 8 |
 
