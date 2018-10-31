@@ -11,9 +11,9 @@
 * It provides the services of launching, distributing and trading crypto token \(creation, issuance, transfer, exchange of assets and custom or fiat tokens\).
 
 * Bitcoin, cryptos, fiat currencies, and all types of real-world commodities and assets can be issued, transferred and exchanged in a fully decentralized manner.
+
 * The fiat-crypto problem is solved through Waves fiat gateways.
 * Built on top of the Scorex framework.
 
-The latest release for each network can be found in the [Releases section](https://github.com/wavesplatform/Waves/releases), you can switch to the corresponding tag and build the application.
-
 **Note. **If you're a new user, please check our [_**Guide**_](/overview/how-to-use-this-guide.md).
+
