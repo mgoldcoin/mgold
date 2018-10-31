@@ -16,4 +16,3 @@
 * Built on top of the Scorex framework.
 
 **Note. **If you're a new user, please check our [_**Guide**_](/overview/how-to-use-this-guide.md).
-
