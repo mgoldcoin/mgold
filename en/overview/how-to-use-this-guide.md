@@ -45,22 +45,17 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
 1. [What is Waves Full Node](/waves-full-node/what-is-a-full-node.md)
-2. [Options of Running Waves Full Node](/waves-full-node/options-of-running-waves-full-node.md)
-3. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
+2. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
+3. [Options of Getting Actual Blockchain](#)  \([State Importing](/waves-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md) and [State Downloading](/waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md)\)
 4. [Upgrading](/waves-full-node/upgrading.md)
-5. [State Downloading and Applying](/waves-full-node/state-downloading-and-applying.md)
-6. [Export and Import From The Blockchain](#)
-
-7. [Waves Node in Docker](/waves-full-node/waves-node-in-docker.md)
-
-8. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
-
-9. [Joining Testnet](/waves-full-node/joining-testnet.md)
+5. [How to Rollback a Node](/waves-full-node/how-to-rollback-a-node.md)
+6. [Waves Node in Docker](/waves-full-node/waves-node-in-docker.md)
+7. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
+8. [Joining Testnet](/waves-full-node/joining-testnet.md)
 
 # 5. Smart Contracts
 
 1. [Approach and Capabilities](../technical-details/waves-contracts-language-description/approach-and-capabilities.md)
-
 2. [RIDE Language](../technical-details/ride-language.md)
 3. [RIDE Language Description](../technical-details/ride-language/language-description.md)
 4. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
@@ -78,8 +73,9 @@ This section contains all information about Installing, configuring and upgradin
 2. [Client Libraries ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md), [WavesCS](/development-and-api/client-libraries/wavescs.md), [WavesC](/development-and-api/client-libraries/waves-c.md), [WavesRS](/development-and-api/client-libraries/wavesrs.md), [Waves Transactions](/development-and-api/client-libraries/waves-transactions.md) and [Community Libraries](/development-and-api/client-libraries/unofficial-libraries.md)\)
 3. [DEX API](/development-and-api/dex-api.md) \([Matcher](/development-and-api/dex-api/matcher.md)\)
 4. [Waves Node Rest API](/development-and-api/waves-node-rest-api.md)
-5. [Waves Keeper API](/development-and-api/waves-keeper-api/waves-keeper-api.md)
-6. [Examples](/development-and-api/examples.md)
+5. [Client API](/development-and-api/client-api/overview.md)
+6. [Waves Keeper API](/development-and-api/waves-keeper-api/waves-keeper-api.md)
+7. [Examples](/development-and-api/examples.md)
 
 
 
