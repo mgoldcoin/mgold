@@ -15,21 +15,21 @@ More specific steps depend on your operating system:
 * [On Windows](/waves-full-node/how-to-install-a-node/on-windows.md)
 * [On Ubuntu](/waves-full-node/how-to-install-a-node/on-ubuntu.md)
 
-Here you can find a tutorial about [Installing Waves Node](https://www.youtube.com/watch?v=CDmMeZlzKbk&feature=youtu.be). 
+Here you can find a tutorial about [Installing Waves Node](https://www.youtube.com/watch?v=CDmMeZlzKbk&feature=youtu.be).
 
 # System Requirements
 
 **The Minimal requirements are:**
 
 * 1 vCPU
-* 1Gb RAM
+* 4 Gb RAM
 * 30Gb SSD
 
 **Recommended configuration are:**
 
 * 2+ vCPU
 * 4Gb RAM
-* +30Gb SSD
+* 30Gb+ SSD
 
 # Activation Process of New Features
 
