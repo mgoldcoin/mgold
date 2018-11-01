@@ -23,8 +23,6 @@
 ## Getting Started
 
 * [As a Developer](getting-started/as-a-developer.md)
-* As a Node Owner
-* [As a User](getting-started/as-a-trader.md)
 
 ## Waves Client
 
