@@ -20,6 +20,12 @@
 * [Activation Protocol](platform-features/activation-protocol.md)
 * [Smart Contracts](platform-features/smart-contracts.md)
 
+## Getting Started
+
+* [As a Developer](getting-started/as-a-developer.md)
+* As a Node Owner
+* [As a User](getting-started/as-a-trader.md)
+
 ## Waves Client
 
 * [Install Waves Client](waves-client/install-waves-client.md)
