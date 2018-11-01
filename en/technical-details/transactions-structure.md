@@ -1,6 +1,12 @@
 # Transactions Structure
 
-In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\). In the new version, the transactions are signed by [_**proofs**_](/proposals/versioned-transactions.md) instead of using a signature. So basically _**signature **is replaced with _**proofs.**
+In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\).
+
+In the new version, the transactions are signed by [_**proofs**_](/proposals/versioned-transactions.md) instead of using a signature. 
+
+**S**_**ignature **is replaced with **proofs**_**.**
+
+
 
 # 3. Issue Transaction
 
