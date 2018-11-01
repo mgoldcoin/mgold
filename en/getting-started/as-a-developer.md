@@ -48,6 +48,10 @@ Waves Client is supported by many libraries, please [_**Get to know our client l
 
 ## Node Rest API
 
+The Waves Node API provides RESTful platform for implementing blockchain functionality in trading apps.
+
+[_**Use the API**_](/development-and-api/waves-node-rest-api.md)_** **_to integrate a variety of functionalities including orders, transaction history, and balances.
+
 ## DEX API
 
 ## Keeper API
