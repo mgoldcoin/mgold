@@ -12,11 +12,13 @@ Firstly, for working with API, you need to add a public object Waves on your sit
 
 For working with a concrete account you need to implement authentication via Waves function:
 
-`auth(AUTH_DATA)`
+```java
+auth(AUTH_DATA)
+```
 
 where `AUTH_DATA` is a json the following form:
 
-```
+```css
 AUTH_DATA {
     name: string, //app’s name
     data: string, // data for sign (seed)
@@ -27,7 +29,7 @@ AUTH_DATA {
 
 An example request might look like:
 
-```
+```css
 Waves.auth({
     name: 'My App',
     data: 'test secret string',
@@ -52,18 +54,20 @@ The example of `TRANSACTION` you can find below.
 
 An example of a request to signing a transfer transaction:
 
-```
+```css
 Waves.signAndPublishTransaction({
   type: 4,
-  {
-    amount: {
+  data: {
+    amount:
+   {
       assetId: 'WAVES',
       tokens: '0.123456'
    },
-  fee: {
+  fee:
+  {
     assetId: 'WAVES',
     tokens: '0.01'
-   },
+  },
   recipient: '3N5net4nzSeeqxPfGZrvVvnGavsinipQHbE'
   }
 }).then(
@@ -78,27 +82,30 @@ This function signs transaction, send it to the node and return a Promise object
 
 `Waves.signAndPublishTransaction(TRANSACTION): Promise<tx>;`
 
-The example of `TRANSACTION` you can find below.   
+The example of `TRANSACTION` you can find below.  
 Also there can be optional parameter `successPath` : `Waves.signAndPublishTransaction(TRANSACTION, successPath): Promise<tx>;`,  
 this parameter can redirect user to some URL if the transaction is successfully sent with `?txId={id};`
 
 An example of a request to signing a transfer transaction:
 
-```
+```css
 Waves.signAndPublishTransaction({
   type: 4,
-  {
-    amount: {
+  data:
+  { 
+    amount:
+    {
       assetId: 'WAVES',
       tokens: '0.123456'
     },
-    fee: {
+    fee:
+    {
       assetId: 'WAVES',
       tokens: '0.01'
     },
     recipient: '3N5net4nzSeeqxPfGZrvVvnGavsinipQHbE'
   }
-}).then(
+});
   res,  // res - result of a sending transaction to the server
     err   // err - the error message 
 )
@@ -110,14 +117,14 @@ This function returns signature of data. The full request is:
 
 `Waves.signRequest(SIGN_REQUEST_DATA)`
 
-```
+```css
 SIGN_REQUEST_DATA {
     type: REQUEST_TYPE,
     data {}
 }
 ```
 
-```
+```css
 REQUEST_TYPE {
 MATCHER_ORDERS = 1001,
 }
@@ -127,7 +134,7 @@ MATCHER_ORDERS = 1001,
 
 A `TRANSACTION` in general is a json string in the following form:
 
-```
+```css
 TRANSACTION  {
 type: TRANSACTION_TYPE_NUMBER,
 successPath: string,
@@ -141,7 +148,7 @@ successPath: string,
 
 Waves transaction can be one of 14 types \(1 - is Genesis transaction\):
 
-```
+```css
 TRANSACTION_TYPE_NUMBER {
    SEND_OLD = 2,
    ISSUE = 3,
@@ -165,7 +172,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Transfer:**
 
-```
+```css
 {
   amount: {
     assetId: ASSET_ID,
@@ -181,7 +188,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Issure:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -197,7 +204,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Reissure:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -211,7 +218,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Burn:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -225,7 +232,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Lease:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -238,7 +245,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Cancel Lease:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -250,7 +257,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Mass Transfer:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -273,7 +280,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Data transaction:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -290,7 +297,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Sponsorship:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
@@ -305,7 +312,7 @@ A `TRANSACTION_DATA` contains information about the transaction with json in sta
 
 **Set Script:**
 
-```
+```css
 {
   fee: {
     assetId: ASSET_ID,
