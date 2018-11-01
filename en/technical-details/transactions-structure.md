@@ -2,11 +2,9 @@
 
 In this section, you can find all transactions body bytes details and the new fields which are included in the updated version of our transactions \(Version 2\).
 
-In the new version, the transactions are signed by [_**proofs**_](/proposals/versioned-transactions.md) instead of using a signature. 
+In the new version, the transactions are signed by [_**proofs**_](/proposals/versioned-transactions.md) instead of using a signature.
 
 **S**_**ignature **is replaced with **proofs**_**.**
-
-
 
 # 3. Issue Transaction
 
@@ -42,7 +40,7 @@ In the new version, the transactions are signed by [_**proofs**_](/proposals/ver
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
 | Attachment | Bytes | N | + | + |
-| Proofs |  |  | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 # 5. Reissue Transaction
@@ -58,7 +56,7 @@ In the new version, the transactions are signed by [_**proofs**_](/proposals/ver
 | Reissuable | Boolean | 1 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 # 6. Burn Transaction
@@ -73,7 +71,7 @@ In the new version, the transactions are signed by [_**proofs**_](/proposals/ver
 | Quantity | Long | 8 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 # 7. Exchange Transaction
@@ -91,7 +89,7 @@ In the new version, the transactions are signed by [_**proofs**_](/proposals/ver
 | Sell matcher fee | Long | 8 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 # 8. Lease Transaction
@@ -106,7 +104,7 @@ In the new version, the transactions are signed by [_**proofs**_](/proposals/ver
 | Amount | Long | 8 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 # 9. Lease Cancel Transaction
@@ -120,7 +118,7 @@ In the new version, the transactions are signed by [_**proofs**_](/proposals/ver
 | LeaseId | ByteStr | 1 | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 # 10. Create Alias Transaction
@@ -134,7 +132,7 @@ In the new version, the transactions are signed by [_**proofs**_](/proposals/ver
 | Alias | Bytes | n | + | + |
 | Fee | Long | 8 | + | + |
 | Timestamp | Long | 8 | + | + |
-| Proofs |  |  | - | + |
+| Proofs | proofs | 64 | - | + |
 | Signature | Bytes | 64 | + | - |
 
 
