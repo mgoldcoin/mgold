@@ -1,7 +1,7 @@
 # Getting Started as a Developer
 
-1. Overview
-2. Smart Contracts
+1. [Overview](#overview)
+2. [Smart Contracts](#smart-contracts)
 3. Client Libraries
 4. Node Rest API
 5. DEX API
@@ -33,12 +33,9 @@ In Waves, we always think about the best way to help external developers and bec
 
 * [_**Waves IDE **_](https://ide.wavesplatform.com), Try out the new non-turing complete Waves smart contract language Ride by using our IDE.
 * [_**Waves console and its commands**_](/technical-details/waves-contracts-language-description/waves-console-commands.md), Waves IDE has a Waves console feature which supports different commands.
-
 * [_**Get to our Tutorials**_](/technical-details/video-tutorials-and-articles.md), We believe that the best way to learn is by practical examples.
 
 ## Client Libraries
-
-
 
 ## Node Rest API
 
