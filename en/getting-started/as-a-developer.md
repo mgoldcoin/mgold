@@ -48,19 +48,23 @@ Waves Client is supported by many libraries, please [_**Get to know our client l
 
 ## Node Rest API
 
-The Waves Node API provides RESTful platform for implementing blockchain functionality in trading apps.
+[_**The Waves Node API**_](/development-and-api/waves-node-rest-api.md) provides RESTful platform for implementing blockchain functionality in trading apps.
 
-[_**Use the API**_](/development-and-api/waves-node-rest-api.md)_** **_to integrate a variety of functionalities including orders, transaction history, and balances.
+Use the API to integrate a variety of functionalities including orders, transaction history, and balances.
 
 ## DEX API
 
+The reason behind decentralized exchange is to perform secure exchange of assets issued on Waves platform.
+
+The real-time trading is achieved thanks to the only centralized design element of our DEX - the order book Matcher, which matches incoming orders and execute trades at high speed, typically within milliseconds. There is no need to wait for the next block to know whether a trade has been executed successfully, this provides speed at the level of centralized exchange and the security of the decentralized protocol.
+
+Please take a look to [_**Waves DEX API **_](/development-and-api/dex-api/matcher.md)for more details.
+
 ## Keeper API
 
-The new [_**Waves Keeper**_](/development-and-api/waves-keeper-api/waves-keeper-api.md) browser extension turns your browser into a keychain that enables you to sign transactions securely on third-party web resources without entering your seed or password. So now, if a Waves-integrated website or dApp requires you to sign a transaction, you can do it with just a couple of clicks, right in your browser.
+Check the new [_**Waves Keeper**_](/development-and-api/waves-keeper-api/waves-keeper-api.md) browser extension which turns your browser into a keychain that enables you to sign transactions securely on third-party web resources without entering your seed or password. So now, if a Waves-integrated website or dApp requires you to sign a transaction, you can do it with just a couple of clicks, right in your browser.
 
 The extension will be particularly useful to developers who want to embed Waves functionality in their projects, because it supports the Auth and Payment APIs. For testing purposes you can switch between using it on MainNet and TestNet.
-
-## Waves Algorithms and transactions
 
 
 

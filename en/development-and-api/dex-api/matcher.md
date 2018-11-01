@@ -48,7 +48,7 @@ else if (spendAssetId == Asset1) OrderType.SELL
 
 When a new `Order` is submitted to the Matcher all its fields are validated:
 
-1. `amount` should be &gt; 0 and &lt; MaxAmount
+1. _`amount`_ should be &gt; 0 and &lt; MaxAmount
 2. `price` should be &gt; 0 and &lt;MaxAmount
 3. `matcherFee` be &gt; 0 and &lt; MaxAmount
 4. `maxTimestamp` should be &gt; now and &lt; than 30 days in the future
@@ -144,6 +144,7 @@ Get Order Book for a given Asset Pair.
 | depth | Int \(_optional_\) | Limit the number of bid/ask levels returned |
 
 Notes about _depth_:
+
 * The default and maximum _depth_ is **100**;
 * Now you can specify either **10** or **100**. If you choose another value, the near biggest will be chosen.
   For example, if you choose **3**, you will get **10** records in _bids_ and _asks_;
@@ -250,3 +251,4 @@ GET /matcher/orderbook/{{amountAsset}}/{{priceAsset}}/tradableBalance/{{address}
 ```
 
 So, in pair `zMFqXuoyrn5w17PFurTqxB7GsS71fp9dfk6XFwxbPCy/WAVES` you can spend `1024460284 WAVES` and `11 Bitcoin Cash`.
+
