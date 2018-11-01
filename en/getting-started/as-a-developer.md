@@ -5,7 +5,7 @@
 3. [Client Libraries](#client-libraries)
 4. Node Rest API
 5. DEX API
-6. Keeper API
+6. [Keeper API](#keeper-api)
 
 ## Overview
 
@@ -48,11 +48,13 @@ Waves Client is supported by many libraries, please [_**Get to know our client l
 
 ## Node Rest API
 
-
-
 ## DEX API
 
 ## Keeper API
+
+The new [_**Waves Keeper**_](/development-and-api/waves-keeper-api/waves-keeper-api.md) browser extension turns your browser into a keychain that enables you to sign transactions securely on third-party web resources without entering your seed or password. So now, if a Waves-integrated website or dApp requires you to sign a transaction, you can do it with just a couple of clicks, right in your browser.
+
+The extension will be particularly useful to developers who want to embed Waves functionality in their projects, because it supports the Auth and Payment APIs. For testing purposes you can switch between using it on MainNet and TestNet.
 
 ## Waves Algorithms and transactions
 
