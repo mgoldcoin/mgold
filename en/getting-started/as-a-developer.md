@@ -3,8 +3,8 @@
 1. [Overview](#overview)
 2. [Smart Contracts](#smart-contracts)
 3. [Client Libraries](#client-libraries)
-4. Node Rest API
-5. DEX API
+4. [Node Rest API](#node-rest-api)
+5. [DEX API](#dex-api)
 6. [Keeper API](#keeper-api)
 
 ## Overview
@@ -58,13 +58,11 @@ The reason behind decentralized exchange is to perform secure exchange of assets
 
 The real-time trading is achieved thanks to the only centralized design element of our DEX - the order book Matcher, which matches incoming orders and execute trades at high speed, typically within milliseconds. There is no need to wait for the next block to know whether a trade has been executed successfully, this provides speed at the level of centralized exchange and the security of the decentralized protocol.
 
-Please take a look to [_**Waves DEX API **_](/development-and-api/dex-api/matcher.md)for more details.
+Please take a look to [_**Waves DEX API **_](/development-and-api/dex-api/matcher.md)for more details and get the theoretical details by reading our [_**DEX article**_](/platform-features/decentralized-cryptocurrency-exchange-dex.md)_**.**_
 
 ## Keeper API
 
 Check the new [_**Waves Keeper**_](/development-and-api/waves-keeper-api/waves-keeper-api.md) browser extension which turns your browser into a keychain that enables you to sign transactions securely on third-party web resources without entering your seed or password. So now, if a Waves-integrated website or dApp requires you to sign a transaction, you can do it with just a couple of clicks, right in your browser.
 
 The extension will be particularly useful to developers who want to embed Waves functionality in their projects, because it supports the Auth and Payment APIs. For testing purposes you can switch between using it on MainNet and TestNet.
-
-
 
