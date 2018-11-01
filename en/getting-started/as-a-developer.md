@@ -2,7 +2,7 @@
 
 1. [Overview](#overview)
 2. [Smart Contracts](#smart-contracts)
-3. Client Libraries
+3. [Client Libraries](#client-libraries)
 4. Node Rest API
 5. DEX API
 6. Keeper API
@@ -37,7 +37,18 @@ In Waves, we always think about the best way to help external developers and bec
 
 ## Client Libraries
 
+Waves Client is supported by many libraries, please [_**Get to know our client libraries **_](/development-and-api/client-libraries.md)and use them depending on which language you're familiar with:
+
+* [_**PyWaves for Python**_](/development-and-api/client-libraries/pywaves.md)
+* [_**WavesJ for Java**_](/development-and-api/client-libraries/wavesj.md)
+* [_**WavesCS for C\#**_](/development-and-api/client-libraries/wavescs.md)
+* [_**Waves-API for TypeScript/JavaScript**_](https://github.com/wavesplatform/waves-api)
+* [_**WavesC**_](/development-and-api/client-libraries/waves-c.md)
+* [_**Community Libraries**_](/development-and-api/client-libraries/unofficial-libraries.md)
+
 ## Node Rest API
+
+
 
 ## DEX API
 
