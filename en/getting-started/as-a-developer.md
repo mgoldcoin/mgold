@@ -21,7 +21,7 @@ _**Theoretical Understanding **_
 
 You will need to know:
 
-* how Waves smart contract works \(You can go through our [_**smart contract guide**_](/technical-details/waves-contracts-language-description.md)\_** **\_to get more information about it.\).
+* how Waves smart contract works \(You can go through our [_**smart contract guide**_](/technical-details/waves-contracts-language-description.md) to get more information about it.\).
 
 * Which programming language to use \(we're using our own language which called RIDE, [_**Get to know RIDE**_](/technical-details/ride-language.md)_**\)**_.
 
