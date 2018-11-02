@@ -100,20 +100,20 @@ Get Rewards:
 
 ## 3.2.1 Create Leasing Transaction {#LeasedProofofStake(LPOS)-CreateLeasingTransaction}
 
-```
-"Id": 9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr ,
-"sender" : 3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS ,
-"fee" : 0.001,
-"amount" : 10,
-"recipient address" : 3HQanDJhZSsSLbCjTCsMYpPvuj2ieGwKwQ9"
-"timestamp":46305781705234713
+```css
+id: '9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr' ,
+sender : '3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS' ,
+fee : 0.001,
+amount : 10,
+recipientAddress : '3HQanDJhZSsSLbCjTCsMYpPvuj2ieGwKwQ9'
+timestamp :46305781705234713
 ```
 
 ## 3.2.2 Cancel Leasing Transaction {#LeasedProofofStake(LPOS)-CancelLeasingTransaction}
 
-```
-"sender" : 3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS ,
-"leaseId": 9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr
+```css
+sender : '3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS' ,
+leaseId: '9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr'
 ```
 
 # 3.2.3 Useful links for leasing {#LeasedProofofStake(LPOS)-Usefullinksforleasing}
@@ -123,3 +123,4 @@ For Step-by-Step guide to lease your waves, click [here](/en/waves-client/accoun
 For the List of generators click [here](http://dev.pywaves.org/generators/).
 
 For Waves Nodes click [here](https://wavesplatform.com/leasing#nodes).
+
