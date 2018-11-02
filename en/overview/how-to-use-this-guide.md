@@ -45,7 +45,7 @@ This section contains all information about Installing, configuring and upgradin
 
 1. [What is Waves Full Node](/waves-full-node/what-is-a-full-node.md)
 2. [How To Install a node](/waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
-3. [Options of Getting Actual Blockchain](#)  \([State Importing](/waves-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md) and [State Downloading](/waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md)\)
+3. [Options for Getting Actual Blockchain](/waves-full-node/options-for-getting-actual-blockchain.md)  \([State Importing ](/waves-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md)and [State Downloading](/waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md)\)
 4. [Upgrading](/waves-full-node/upgrading.md)
 5. [How to Rollback a Node](/waves-full-node/how-to-rollback-a-node.md)
 6. [Waves Node in Docker](/waves-full-node/waves-node-in-docker.md)
