@@ -27,20 +27,8 @@ Here you can find a tutorial about [Installing Waves Node](https://www.youtube.c
 
 |  | vCPU | RAM | SSD | Command as Jar |
 | :--- | :--- | :--- | :--- | :--- |
-| Minimal Requirements | 1 | 3 Gb | 30 Gb | Specify the maximum size, in bytes, of the memory allocation pool, Add _**-Xmx**_ option before _**-jar**_ parameter, Choose size depending on your host RAM. If you have more than 4GB use _**-**_Xmx4096M, if you have 4Gb use -Xmx3072M, the command should be as following  _**java -Xmx3072M -jar**_  |
+| Minimal Requirements | 1 | 3Gb | 30Gb | Specify the maximum size, in bytes, of the memory allocation pool, Add _**-Xmx**_ option before _**-jar**_ parameter, Choose size depending on your host RAM. If you have more than 4GB use _**-**\_Xmx4096M, if you have 4Gb use -Xmx3072M, the command should be as following  _**java -Xmx3072M -jar**\_ |
 | Recommended Configuration | 2+ | 4+ Gb | 30+ Gb | _**java -Xmx4096M -jar**_ |
-
-**The Minimal requirements are:**
-
-* 1 vCPU
-* 4 Gb RAM
-* 30Gb SSD
-
-**Recommended configuration are:**
-
-* 2+ vCPU
-* 4Gb RAM
-* 30Gb+ SSD
 
 # Activation Process of New Features
 
