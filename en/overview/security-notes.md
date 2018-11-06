@@ -1,10 +1,14 @@
 # Important Security Notes to Be Considered By End Users {#SecurityNotes-ImportantSecurityNotestoBeConsideredByEndUsers:}
 
-# 1. SEED & Password {#AccountsOperations-SEED&Password}
+1. [SEED and Password](#seed-and-password)
+2. [Personal Account](#personal-account)
+3. [General Notes](#general-notes)
+
+# SEED & Password {#AccountsOperations-SEED&Password}
 
 Before you create an account, you should know some important points about the Waves wallet system. In Waves wallet, there is no .dat file which keeps your private keys but a SEED which grants you access to them. The SEED is by default a string of 15 English words and basically your passphrase to your funds - **if you lose your SEED, you lose access to your account**.
 
-We strongly encourage you to additionally back up the SEED on a piece of paper and store it in a safe place. The provided string of 15 English words is cryptographically extremely secure and with the current technology unbreakable \(the chance someone can break a passphrase given by the client is 1:(2048^15)\). Each and every SEED is only linked to one single Waves account. Every digit, character, symbol and space counts - if there is one space too much, a different account opens up. If there is a wrong symbol, a different account opens up. If there is a spelling mistake, a different account opens up.
+We strongly encourage you to additionally back up the SEED on a piece of paper and store it in a safe place. The provided string of 15 English words is cryptographically extremely secure and with the current technology unbreakable \(the chance someone can break a passphrase given by the client is 1:\(2048^15\)\). Each and every SEED is only linked to one single Waves account. Every digit, character, symbol and space counts - if there is one space too much, a different account opens up. If there is a wrong symbol, a different account opens up. If there is a spelling mistake, a different account opens up.
 
 During the account creation, you will also be asked to generate a password for your address.
 
@@ -18,7 +22,7 @@ The password has two purposes:
 * Forgetting the password, you can easily create a new one by using the form of [account recovery](/waves-client/account-management/restore-an-account.md) through a secret phrase.
 * The secret phrase can not be changed. If you accidentally sent it to someone or suspect that it was taken by fraudsters, immediately create a new Waves wallet and transfer all funds to it, without forgetting to keep a new secret phrase.
 
-## 2. Personal Account {#SecurityNotes-PersonalAccount}
+## Personal Account {#SecurityNotes-PersonalAccount}
 
 * To access your account, do not use browsers that have extensions and plug-ins installed, they can access your secret passphrase.
 * Protect the account with a password.
@@ -26,7 +30,7 @@ The password has two purposes:
 * Password protects your account as part of a specific device or browser.
 * Check whether the connection is in secure SSL mode - in the address bar of your web browser, you should see the closed lock icon \(on the right or on the left, depending on the browser\).
 
-## 3. General Notes {#SecurityNotes-GeneralNotes}
+## General Notes {#SecurityNotes-GeneralNotes}
 
 * Use the [official resources of Waves ](/overview/waves-official-resources.md)\(groups in social networks, sites, applications\).
 * Before you enter a secret phrase from your account or download the application, carefully look at the address bar of the browser and make sure that you are on the official resource of the company:
@@ -34,3 +38,6 @@ The password has two purposes:
 * Do not open letters or links from unknown senders.
 * Regularly check for updates to the operating system and browser.
 * Do not go into the wallet, using public WiFi or from someone else's device.
+
+
+
