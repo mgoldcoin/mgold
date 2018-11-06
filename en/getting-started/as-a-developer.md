@@ -17,17 +17,17 @@ This will give you all the information you need as a developer to get started in
 
 Usually as a developer, you will need two things: **theoretical understanding** and **tools** to make your coding life easier, in our guide we will provide you with both:
 
-_**Theoretical Understanding **_
+### _**Theoretical Understanding **_
 
 You will need to know:
 
-* how Waves smart contract works \(You can go through our [_**smart contract guide**_](/technical-details/waves-contracts-language-description.md) to get more information about it.\).
+* How Waves smart contract works \(You can go through our [_**smart contract guide**_](/technical-details/waves-contracts-language-description.md) to get more information about it.\).
 
 * Which programming language to use \(we're using our own language which called RIDE, [_**Get to know RIDE**_](/technical-details/ride-language.md)_**\)**_.
 
 let's suppose now that you understand the main idea of our smart contracts and you want to go through all functions and to understand how they work, please find here our [_**functions and standard library**_](/technical-details/waves-contracts-language-description/standard-library.md).
 
-_**Tools to help you with RIDE**_
+### _**Tools to help you with RIDE**_
 
 In Waves, we always think about the best way to help external developers and because of that we will provide you with some useful tools:
 
