@@ -1,6 +1,6 @@
 # Latest Waves Client Version
 
-[_**Here**_](https://github.com/wavesplatform/WavesGUI/releases)_ _you find the latest Waves Client
+[_**Here**_](https://github.com/wavesplatform/WavesGUI/releases) you find the latest Waves Client
 
 # Latest Full Node Version
 
@@ -8,7 +8,7 @@
 
 # Android Mobile Application
 
-[_**Here**_](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet)_ _you can find Waves Android App
+[_**Here**_](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet) you can find Waves Android App
 
 # IOS Mobile Application
 
