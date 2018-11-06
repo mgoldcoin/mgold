@@ -1,3 +1,10 @@
+# Leased Proof of Stake\(LPoS\)
+
+1. [Overview](#overview)
+2. [Proof of Work](#proof-of-work)
+3. [Proof of Stake](#proof-of-stake)
+4. [Leased Proof of Stake](#leased-proof-of-stake)
+
 # Overview
 
 Any blockchain requires a mechanism allowing to decide which chain of blocks is valid and to ensure there are no double-spending \(e.g. sending same money to different parties in separate chains\). There are several approaches to achieve this.  
