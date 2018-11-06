@@ -1,3 +1,13 @@
+# Decentralized Exchange \(DEX\) {#Decentralizedcryptocurrencyexchange(DEX)-Motivation}
+
+1. [Motivation](#motivation)
+2. [Decentralized Exchange](#decentralized-exchange)
+3. [Waves DEX](#waves-dex)
+4. [Matcher Fee Calculation](#matcher-fee-calculation)
+5. [Tradable Balance](#tradable-balance)
+6. [Installing DEX](#installing-dex)
+7. [Installing your Own Matcher](#installing-your-own-matcher)
+
 # Motivation {#Decentralizedcryptocurrencyexchange(DEX)-Motivation}
 
 The need to convert and exchange between crypto tokens is increasing with the enlargement of cryptocurrencies number. One of the main features of the blockchain environment is decentralization, but until recently only centralized exchanges existed, even for cryptocurrencies such as Bitcoin or Etherium. Many exchanges support the buy and sale of cryptocurrencies, fiat currencies, and cryptocurrency tokens. Examples of such centralized exchanges are Coinbase, BTC-e, ShapeShift and Mt.Gox.The centralization experience in this sphere is lamentable, the cause of a single point of failure - the exchange. In this case, all users funds should be kept in one place for participation in trade. The user's funds are stored directly in the exchange, and it is responsible not only for matching orders and keep the current order book in the correct state but also for depositors' funds. The Mt.Gox collapse is the brightest example of why it is not reliable, the resulting loss after compromised it was about 650,000 BTC. Someone can hack into exchange system and all users will lose everything, cause their private keys are kept all together, like in one of version BTC-e fund's theft. And these are not the only exchanges that have lost the funds of depositors in this way. The use of a decentralized approach in the entity of an exchange helps to avoid the involvement of many users assets into problems caused by the danger of front running by intruders into the work of exchange.
@@ -36,7 +46,7 @@ The full execution cycle for one order is following:
 
 In every time of order's life, it has a certain state, depending on which stage of its life cycle it is now. When an order is in an order book, but not filled yet - it has "Accepted" state, also it can be "Filled", "Partially Filled" or "Canceled". Orders, which are not fully filled, can be canceled, after that the order will be removed from matcher's order book.
 
-# 3. Matcher fee calculation {#Decentralizedcryptocurrencyexchange(DEX)-Matcherfeecalculation}
+# 3. Matcher Fee Calculation {#Decentralizedcryptocurrencyexchange(DEX)-Matcherfeecalculation}
 
 The fix full transaction fee now is equal to **0.003 waves for one order**, whether buying or selling, regardless of the amount of the future deal. The exchange transaction contains two separate fields for Matcher's fee, which goes from buyer's order and seller's order. An order can be fully executed by some transaction, in this case, all matcher fee from it is included in that transaction.
 
@@ -78,33 +88,33 @@ tradable_balance(asset) = balance_of_asset -
   reserved_balance_for_asset
 ```
 
-## balance_of_asset
+## balance\_of\_asset
 
 The current balance in `asset`:
 
 * [WAVES](../development-and-api/waves-node-rest-api/address.md#get-addressesbalanceaddress);
 * [assets](../development-and-api/waves-node-rest-api/address.md#get-assetsbalanceaddress).
 
-## spendings_of_asset_in_transactions_in_utx_pool
+## spendings\_of\_asset\_in\_transactions\_in\_utx\_pool
 
 The sum of all spending by the asset of unconfirmed transactions.
 
-For example, if you are transferring `WAVES` and sending a [data transaction](../technical-details/data-transaction.md)
+For example, if you are transferring `WAVES` and sending a [data transaction](../technical-details/data-transaction.md)  
 and these transactions haven't yet forged, `spendings_of_WAVES_in_transactions_in_utx_pool` will be `amount_of_transferred_waves + transfer_fee + data_transaction_fee`.
 
 Note: UTX pool of one node could not be the same as on other node.
 
-## reserved_balance_for_asset
+## reserved\_balance\_for\_asset
 
 Also known as `open volume`. The sum of all spending by the asset of all orders in pairs with this asset.
 
-For example, you buy `BTC` by `Bitcoin Cash` (1) and sell `Bitcoin Cash` for `WCT` (2), and these orders are still active and haven't filled yet. 
+For example, you buy `BTC` by `Bitcoin Cash` \(1\) and sell `Bitcoin Cash` for `WCT` \(2\), and these orders are still active and haven't filled yet.   
 Then `spendings_of_Bitcoin_Cash_in_active_orders` will be `amount_of_spending_Bitcoin_Cash in (1) + amount_of_selling_Bitcoin_Cash in (2)`.
 
 Note, for `WAVES` order's fees are included in reserved balance.
 
-As you know, all orders in `DEX` requires `WAVES` as the fee. Because of this, there is an exception for the rule we spoke above.
-If you buy `WAVES` by other asset, reserved balance in waves in this order will be: `max(fee - amount_of_received_waves_in_this_order, 0)`.
+As you know, all orders in `DEX` requires `WAVES` as the fee. Because of this, there is an exception for the rule we spoke above.  
+If you buy `WAVES` by other asset, reserved balance in waves in this order will be: `max(fee - amount_of_received_waves_in_this_order, 0)`.  
 So, you can buy `WAVES` for `BTC` even if you have no `WAVES`.
 
 # 5. Installing DEX {#Decentralizedcryptocurrencyexchange(DEX)-InstallingDEX}
@@ -122,3 +132,4 @@ So, you can buy `WAVES` for `BTC` even if you have no `WAVES`.
 * When a user sends an order to Matcher he doesn't transfer ownership of his money to anyone, his money remains on his account until the order is matched with counter-order.
 
 **Note.** Find more technical details about the Matcher [**here.**](/development-and-api/dex-api/matcher.md)
+
