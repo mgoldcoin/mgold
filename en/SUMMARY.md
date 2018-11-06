@@ -170,7 +170,7 @@
 
 ## Proposals
 
-* [Sponsored transactions](proposals/sponsored-transactions.md)
-* [Versioned transactions](proposals/versioned-transactions.md)
-* [Trezor hardware wallet integration specification](proposals/trezor-hardware-wallet-integration-specification.md)
+* [Sponsored Transactions](proposals/sponsored-transactions.md)
+* [Versioned Transactions](proposals/versioned-transactions.md)
+* [Trezor Hardware Wallet Integration Specification](proposals/trezor-hardware-wallet-integration-specification.md)
 
