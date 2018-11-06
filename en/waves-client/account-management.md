@@ -10,3 +10,6 @@ This section will discuss and show step by step instructions on how to set up a 
 * [Use Your Waves address](account-management/waves-address.md)
 * [Create a personal Alias](account-management/creating-an-alias.md)
 * [Lease Your Waves tokens](account-management/waves-leasing.md)
+
+
+
