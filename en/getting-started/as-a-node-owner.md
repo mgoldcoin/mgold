@@ -2,7 +2,7 @@
 
 1. [Overview](#overview)
 2. [Running a Node](#running-a-node)
-3. [Install a Node](#install-a-node)
+3. [Installing a Node](#installing-a-node)
 4. [Getting Actual Blockchain](#getting-actual-blockchain)
 5. [Already a Node Owner](#already-a-node-owner)
 6. [Upgrade Your Node](#upgrade-your-node)
@@ -45,8 +45,6 @@ Basically, the node should be upgraded by following the [_**upgrading instructio
 ### _**Rollback**_
 
 The rolling back can be implemented no more than 2000 blocks. please go through [_**rollback instructions**_](/waves-full-node/how-to-rollback-a-node.md).
-
-
 
 **Note.** if you're interested in joining the Testnet, you will need to follow the steps for [_**joining Testnet.**_](/waves-full-node/joining-testnet.md)
 
