@@ -1,6 +1,6 @@
 # Versioned Transactions binary representation
 
-In the new version, the transactions are signed by [_**proofs**_](https://github.com/wavesplatform/Waves/blob/master/src/main/scala/com/wavesplatform/transaction/Proofs.scala) instead of using a signature. So basically _**signature **_is_ _replaced with_ _**proofs. **In order to make API more consistent and flexible, all transactions will have **version** field and use **proofs**.
+In the new version, the transactions are signed by [_**proofs**_](https://github.com/wavesplatform/Waves/blob/master/src/main/scala/com/wavesplatform/transaction/Proofs.scala) instead of using a signature. So basically _**signature **is_ _replaced with_ **proofs. **In order to make API more consistent and flexible, all transactions will have **version** field and use **proofs**.
 
 ## Proof
 
