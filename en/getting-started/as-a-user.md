@@ -3,11 +3,11 @@
 1. [Install Waves Client](#install-waves-client)
 2. [Account Management](#account-management)
 3. [Transfers and Gateways](#transfers-and-gateways)
-4. [Asset Management](#asset-management)
+4. [Asset Management](#assets-management)
 5. [Waves DEX](#waves-dex)
 6. [Mobile Applications](#mobile-applications)
-7. [Advanced Features](#advanced-features)
-8. [Security Notes](#security-notes)
+7. [Advanced Features](#script-transaction)
+8. [Security Notes](#security-information)
 
 ## Install Waves Client
 
