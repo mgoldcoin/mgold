@@ -2,7 +2,16 @@
 
 In this guide, you can find all the information about Waves Platform as the structure shown below:
 
-# 1. Overview
+1. [Overview](#overview)
+2. [Platform Features](#platform-features)
+3. [Getting Started](#getting-started)
+4. [Waves Client](#waves-client)
+5. [Waves Full Node](#waves-full-node)
+6. [Smart Contracts](#smart-contracts)
+7. [Development and API](#development-and-api)
+8. [Proposals](#proposals)
+
+# Overview
 
 This section will give you a general information about Waves Platform and its main components.
 
@@ -12,7 +21,7 @@ This section will give you a general information about Waves Platform and its ma
 4. [Waves Releases](/overview/waves-releases.md)
 5. [Waves Tokens](/overview/waves-tokens.md)
 
-# 2. Platform Features
+# Platform Features
 
 This section contains explanations about Waves main Features such as \(Waves-NG Protocol\).
 
@@ -24,7 +33,12 @@ This section contains explanations about Waves main Features such as \(Waves-NG 
 6. [Activation Protocol](/platform-features/activation-protocol.md)
 7. [Smart Contracts.](/platform-features/smart-contracts.md)
 
-# 3. Waves Client
+# Getting Started
+
+1. [As a Developer](/getting-started/as-a-developer.md)
+2. [As a Node Owner](/getting-started/as-a-node-owner.md)
+
+# Waves Client
 
 This section contains step-by-step guides for Installing Waves Client, Creating Account, Leasing Waves and Issue as asset.
 
@@ -39,7 +53,7 @@ This section contains step-by-step guides for Installing Waves Client, Creating 
 9. [Waves Wallet for Android Devices](/waves-client/mobile-apps/android.md)
 10. [Frequently Asked Questions](/waves-client/faq.md)
 
-# 4. Waves Full Node
+# Waves Full Node
 
 This section contains all information about Installing, configuring and upgrading a Waves Full Node.
 
@@ -52,7 +66,7 @@ This section contains all information about Installing, configuring and upgradin
 7. [How to Configure a node](/waves-full-node/how-to-configure-a-node.md)
 8. [Joining Testnet](/waves-full-node/joining-testnet.md)
 
-# 5. Smart Contracts
+# Smart Contracts
 
 1. [Approach and Capabilities](../technical-details/waves-contracts-language-description/approach-and-capabilities.md)
 2. [RIDE Language](../technical-details/ride-language.md)
@@ -66,7 +80,7 @@ This section contains all information about Installing, configuring and upgradin
 10. [Waves Console Commands](../technical-details/waves-contracts-language-description/waves-console-commands.md)
 11. [Video Tutorials and Articles](../technical-details/video-tutorials-and-articles.md)
 
-# 6. Development and API
+# Development and API
 
 1. [Technical Details](/technical-details/technical-details.md)
 2. [Client Libraries ](/development-and-api/client-libraries.md)\([PyWaves](/development-and-api/client-libraries/pywaves.md), [WavesJ](/development-and-api/client-libraries/wavesj.md), [WavesCS](/development-and-api/client-libraries/wavescs.md), [WavesC](/development-and-api/client-libraries/waves-c.md), [WavesRS](/development-and-api/client-libraries/wavesrs.md), [Waves Transactions](/development-and-api/client-libraries/waves-transactions.md) and [Community Libraries](/development-and-api/client-libraries/unofficial-libraries.md)\)
@@ -75,6 +89,14 @@ This section contains all information about Installing, configuring and upgradin
 5. [Client API](/development-and-api/client-api/overview.md)
 6. [Waves Keeper API](/development-and-api/waves-keeper-api/waves-keeper-api.md)
 7. [Examples](/development-and-api/examples.md)
+
+# Proposals
+
+1. [Sponsored Transactions](/proposals/sponsored-transactions.md)
+2. [Versioned Transactions](/proposals/versioned-transactions.md)
+3. [Trezor Hardware Wallet Integration Specification](/proposals/trezor-hardware-wallet-integration-specification.md)
+
+
 
 
 
