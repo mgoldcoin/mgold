@@ -116,6 +116,7 @@
 
 * [Waves Smart Contracts](technical-details/waves-contracts-language-description.md)
 * [Smart Accounts](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
+* [Smart Assets](technical-details/smart-assets.md)
 * [RIDE Language](technical-details/ride-language.md)
   * [Language Description](technical-details/ride-language/language-description.md)
   * [Effective RIDE Examples](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)

@@ -1,16 +1,17 @@
 # The Guide Structure
 
 1. [Smart Accounts](/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
-2. [RIDE Language](../technical-details/ride-language.md)
-3. [RIDE Language Description](../technical-details/ride-language/language-description.md)
-4. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
-5. [RIDE Maven Compiler Package](../technical-details/ride-language/maven-compiler.md)
-6. [Syntax Processor and Executor Implementation Details](../technical-details/waves-contracts-language-description/implementation-details.md)
-7. [Functions and Standard Library](../technical-details/waves-contracts-language-description/standard-library.md)
-8. [Creating and Deploying a Script Manually](../technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
-9. [Script Performance Tests](../technical-details/waves-contracts-language-description/script-performance-tests.md)
-10. [Waves Console Commands](../technical-details/waves-contracts-language-description/waves-console-commands.md)
-11. [Video Tutorials and Articles](../technical-details/video-tutorials-and-articles.md)
+2. [Smart Assets](/technical-details/smart-assets.md)
+3. [RIDE Language](../technical-details/ride-language.md)
+4. [RIDE Language Description](../technical-details/ride-language/language-description.md)
+5. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
+6. [RIDE Maven Compiler Package](../technical-details/ride-language/maven-compiler.md)
+7. [Syntax Processor and Executor Implementation Details](../technical-details/waves-contracts-language-description/implementation-details.md)
+8. [Functions and Standard Library](../technical-details/waves-contracts-language-description/standard-library.md)
+9. [Creating and Deploying a Script Manually](../technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
+10. [Script Performance Tests](../technical-details/waves-contracts-language-description/script-performance-tests.md)
+11. [Waves Console Commands](../technical-details/waves-contracts-language-description/waves-console-commands.md)
+12. [Video Tutorials and Articles](../technical-details/video-tutorials-and-articles.md)
 
 # 1. Benefits of Smart Contracts on Waves Platform
 
@@ -55,6 +56,8 @@ If we plan to apply constraints on all operations for a specific asset, we canno
 * MassTransfer Transaction
 * Reissue Transaction
 * Burn Transaction
+* ExchangeTransaction
+* SetAssetScriptTransaction
 
 ## 5. Script's Cost
 
