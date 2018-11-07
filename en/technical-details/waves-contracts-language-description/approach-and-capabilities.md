@@ -18,7 +18,7 @@ The default account has no script, which is equivalent to this script:
 sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 ```
 
-**Note.** `SetScriptTransaction` sets the script which verifies all outgoing transactions. The set script can be changed by another `SetScriptTransaction` call unless it’s prohibited by a previous set script.
+**Note.** [`SetScriptTransaction`](https://ebceu4.github.io/waves-transactions/interfaces/setscripttransaction.html) sets the script which verifies all outgoing transactions. The set script can be changed by another [`SetScriptTransaction`](https://ebceu4.github.io/waves-transactions/interfaces/setscripttransaction.html) call unless it’s prohibited by a previous set script.
 
 ## Denied Actions for Smart Accounts
 
@@ -27,6 +27,4 @@ sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
   These restriction can be considered as temporary one.
 
 To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
-
-
 
