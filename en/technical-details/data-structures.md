@@ -533,7 +533,7 @@ Below is a sample **Sponsored transaction** encoded as **JSON**:
 
 #### Set Script Transaction
 
-Sets the script which veries all outgoing transactions. The set script can be changed by another.
+Sets the script which verifies all outgoing transactions. The set script can be changed by another.
 
 | \# | Field name | Type  | Length |
 | --- | ---: | --- | --- |
@@ -546,12 +546,45 @@ Sets the script which veries all outgoing transactions. The set script can be ch
 | 7 | Script object bytes | Bytes | N |
 | 8 | Fee | Long | 8 |
 | 9 | Timestamp | Long | 8 |
+|10 |  proofs | Bytes  | 64 |
 
 [**Here**](/technical-details/waves-contracts-language-description.md) you can find more details about Waves smart-contracts.
 
 [**Here**](/technical-details/waves-contracts-language-description/standard-library.md) you can find more details about smart-contracts standard library.
 
 [**Here**](/technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md) you can find detailed instruction how to create and deploy a script manually.
+
+#Set Asset Script Transaction
+
+| Field | Type | Length |
+| :--- | :--- | :--- |
+| Transaction Type | Byte | 1 |
+| Version | Byte | 1 |
+| ChainId | Byte | 1 |
+| Sender's Public Key | PublicKeyAccount | 32 |
+| AssetId | Bytes | 32 |
+| Script object length \(N\) | Short | 2 |
+| Script object bytes | Bytes | N |
+| Fee | Long | 8 |
+| Timestamp | Long | 8 |
+| Proofs | Bytes | 64 |
+
+Below is a sample **Set Asset Script** encoded as **JSON**:
+
+```cpp
+{
+    "type" : 15,
+    "id" : "EXDKRNL5Apiw3K9mvLjPVNTWRhDwEvzeA9GAXSrYfQsh",
+    "assetId" : "L5Apiw3K9mvLjPVNTWRhDwEvzeA9GAEXDKRNXSrYfQsh",
+    "sender" : "3N9dfiTb8Pd6hqhvXaf8GcdTxdwCAeyxsvr",
+    "senderPublicKey" : "6gT9PnyXA2sQ9AyRYn1QqkquWSu44Hr3qzLxszchTD1J",
+    "fee" : 100000000,
+    "timestamp" : 1535102049904,
+    "proofs" : [ "4QwRFUNZUk7KaWGnmnYp6pUqUrLjZk3hFwhQTaJN7SUAYDvmXVkU4DDWadH5pQWkaUYiAdCQFtqSKZyKwyaUdyUN" ],
+    "version" : 1,
+    "script" : "base64:AQQAAAALYWxpY2FANpZ25lZAUAAAAJYm9iU2lnbmVkB5fCpHI"
+}
+```
 
 ## Network messages
 
