@@ -38,7 +38,7 @@ Usually as a developer, you will need two things: **theoretical understanding** 
 
 You will need to know:
 
-* How Waves smart contract works \(You can go through our [_**smart contract guide**_](/technical-details/waves-contracts-language-description.md) to get more information about it.\).
+* How Waves smart contract works \(You can go through our [_**smart contract guide**_](/technical-details/waves-contracts-language-description.md) to get more information about it\) and you can read about our [_**smart accounts**_](/technical-details/waves-contracts-language-description/approach-and-capabilities.md) and [_**smart assets.**_](/technical-details/smart-assets.md)
 
 * Which programming language to use \(we're using our own language which called RIDE, [_**Get to know RIDE**_](/technical-details/ride-language.md)_**\)**_.
 
@@ -51,7 +51,6 @@ In Waves, we always think about the best way to help external developers and bec
 * [_**Waves IDE **_](https://ide.wavesplatform.com), Try out the new non-turing complete Waves smart contract language Ride by using our IDE.
 * [_**Waves console and its commands**_](/technical-details/waves-contracts-language-description/waves-console-commands.md), Waves IDE has a Waves console feature which supports different commands.
 * [_**Get to our Tutorials**_](/technical-details/video-tutorials-and-articles.md), We believe that the best way to learn is by practical examples.
-
 
 ## DEX API
 
