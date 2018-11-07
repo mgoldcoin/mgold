@@ -1,8 +1,3 @@
-# Approach and capabilities
-
-1. Waves smart contracts are simple predicates, which validate whether a given transaction is allowed by script or not.
-2. The Waves smart account can check if the transaction meets certain conditions which are defined in a script before the transaction is submitted to be included in the next generated block.
-
 ## Smart Accounts
 
 Basically, the smart account is an account with attached transactions checking **script**. In other words, a **script** which is attached to an account so the account can validate every transaction before confirming it.  
@@ -15,8 +10,8 @@ An account can be restricted with any outgoing transaction based on:
 
 ## Set Script to an Account
 
-In order to setup an Smart Account, The account needs to issue `SetScriptTransaction` which contains the predicate. Upon success, every outgoing transaction will be validated not by the default mechanism of signature validation, but according to the predicate logic.  
-`AccountScript` can be changed or cleared if the script installed allows the new `SetScriptTransaction` to process.  
+In order to setup an Smart Account, The account needs to issue [_**`SetScriptTransaction`**_](/technical-details/data-structures.md) which contains the predicate. Upon success, every outgoing transaction will be validated not by the default mechanism of signature validation, but according to the predicate logic.  
+`AccountScript` can be changed or cleared if the script installed allows the new [_**`SetScriptTransaction`**_](/technical-details/data-structures.md) to process.  
 The default account has no script, which is equivalent to this script:
 
 ```go
