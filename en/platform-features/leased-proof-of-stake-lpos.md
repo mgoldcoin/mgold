@@ -78,7 +78,7 @@ LPoS is an enhanced version of Proof-of-Stake. In a regular Proof-of-Stake syste
 
 In a Leased Proof-of-Stake environment, users can choose between running a full node or leasing their stake to a full node with receiving rewards. This system allows anyone to participate in the Waves network maintenance.
 
-User can leas his waves through leasing on any computer or mobile device that has an internet browser since Waves provides a lite client solution that does not require "Miners", that are leasing their balance to store the whole Blockchain or to have the wallet running, Figure 2.
+User can lease his WAVES through leasing on any computer or mobile device that has an internet browser since Waves provides a lite client solution that does not require "Miners", that are leasing their balance to store the whole Blockchain or to have the wallet running, Figure 2.
 
 ![](/_assets/Webp.net-resizeimage-2.jpg)  
 Figure 2, LPOS System
