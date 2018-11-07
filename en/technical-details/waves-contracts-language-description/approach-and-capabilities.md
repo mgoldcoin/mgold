@@ -10,8 +10,8 @@ An account can be restricted with any outgoing transaction based on:
 
 ## Set Script to an Account
 
-In order to setup an Smart Account, The account needs to issue [`SetScriptTransaction`](/technical-details/data-structures.md) which contains the predicate. Upon success, every outgoing transaction will be validated not by the default mechanism of signature validation, but according to the predicate logic.  
-`AccountScript` can be changed or cleared if the script installed allows the new [`SetScriptTransaction`](/technical-details/data-structures.md) to process.  
+In order to setup an Smart Account, The account needs to issue [`SetScriptTransaction`](https://ebceu4.github.io/waves-transactions/interfaces/setscripttransaction.html) which contains the predicate. Upon success, every outgoing transaction will be validated not by the default mechanism of signature validation, but according to the predicate logic.  
+`AccountScript` can be changed or cleared if the script installed allows the new [`SetScriptTransaction`](https://ebceu4.github.io/waves-transactions/interfaces/setscripttransaction.html) to process.  
 The default account has no script, which is equivalent to this script:
 
 ```go
