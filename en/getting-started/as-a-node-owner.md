@@ -6,11 +6,11 @@
 4. [Getting Actual Blockchain](#getting-actual-blockchain)
 5. [Already a Node Owner](#already-a-node-owner)
 6. [Upgrade Your Node](#upgrade-your-node)
-7. [Rollback](#rollback)
+7. [Dealing with Forks](#dealing-with-forks)
 
 ## Overview
 
-[_**Get to understand what is a Waves full node**_](/README.md), Nodes are a critical part of Waves ecosystem. By Running a Waves node, you help in processing transactions and you will icrease your profit for securing the network if users start leasing their funds to your node.
+[_**Get to understand what is a Waves full node**_](/README.md), Nodes are a critical part of Waves ecosystem. By Running a Waves node, you help in processing transactions and you will increase your profit for securing the network if users start leasing their funds to your node.
 
 The Waves full node serves **two critical roles**:
 
@@ -36,15 +36,13 @@ After installing a node, you will have different ways to get the blockchain. fol
 
 If you're already a node owner, you will need to check the new updates and then go for one of these two options:
 
-**Note. **Please check the blockchain height or the last 100 signatures of blocks to understand if your node is on fork or not.
-
 ### _**Upgrade your node**_
 
 Basically, the node should be upgraded by following the [_**upgrading instructions**_](/waves-full-node/upgrading.md).
 
-### _**Rollback**_
+### Dealing with Forks
 
 The rolling back can be implemented no more than 2000 blocks. please go through [_**rollback instructions**_](/waves-full-node/how-to-rollback-a-node.md).
 
-**Note.** if you're interested in joining the Testnet, you will need to follow the steps for [_**joining Testnet.**_](/waves-full-node/joining-testnet.md)
+**Note. **Please check the blockchain height or the last 100 signatures of blocks to understand if your node is on fork or not. If you're interested in joining the Testnet, you will need to follow the steps for [_**joining Testnet.**_](/waves-full-node/joining-testnet.md)
 
