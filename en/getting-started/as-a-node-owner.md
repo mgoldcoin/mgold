@@ -42,7 +42,10 @@ Basically, the node should be upgraded by following the [_**upgrading instructio
 
 ### Dealing with Forks
 
-The rolling back can be implemented no more than 2000 blocks. please go through [_**rollback instructions**_](/waves-full-node/how-to-rollback-a-node.md).
+You can check the blockchain height or the last 100 signatures of blocks to understand if your node is on fork or not.
 
-**Note. **Please check the blockchain height or the last 100 signatures of blocks to understand if your node is on fork or not. If you're interested in joining the Testnet, you will need to follow the steps for [_**joining Testnet.**_](/waves-full-node/joining-testnet.md)
+Your node can be in one of two possibilities: your node on fork with height **less** than 2000 blocks or **more** than 2000 blocks**.**  
+In case that your node is on fork with a height less than 2000 blocks, here you can implement **rollback**_** **through _[**rollback instructions**](/waves-full-node/how-to-rollback-a-node.md). Otherwise, you need to choose an [_**option for Getting Actual Blockchain**_](/waves-full-node/options-for-getting-actual-blockchain.md).
+
+**Note.** If you're interested in joining the Testnet, you will need to follow the steps for [_**joining Testnet.**_](/waves-full-node/joining-testnet.md)
 
