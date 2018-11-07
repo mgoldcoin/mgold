@@ -1,9 +1,9 @@
 # Getting Started as a Developer
 
 1. [Overview](#overview)
-2. [Smart Contracts](#smart-contracts)
-3. [Client Libraries](#client-libraries)
-4. [Node Rest API](#node-rest-api)
+2. [Client Libraries](#client-libraries)
+3. [Node REST API](#node-rest-api)
+4. [Smart Contracts](#smart-contracts)
 5. [DEX API](#dex-api)
 6. [Keeper API](#keeper-api)
 
@@ -12,6 +12,23 @@
 This page introduces you to the things you'll need to get started on your journey.
 
 This will give you all the information you need as a developer to get started in an easy to read and concise format.
+
+## Client Libraries
+
+Waves Client is supported by many libraries, please [_**Get to know our client libraries **_](/development-and-api/client-libraries.md)and use them depending on which language you're familiar with:
+
+* [_**PyWaves for Python**_](/development-and-api/client-libraries/pywaves.md)
+* [_**WavesJ for Java**_](/development-and-api/client-libraries/wavesj.md)
+* [_**WavesCS for C\#**_](/development-and-api/client-libraries/wavescs.md)
+* [_**Waves-API for TypeScript/JavaScript**_](https://github.com/wavesplatform/waves-api)
+* [_**WavesC**_](/development-and-api/client-libraries/waves-c.md)
+* [_**Community Libraries**_](/development-and-api/client-libraries/unofficial-libraries.md)
+
+## Node REST API
+
+[_**The Waves Node API**_](/development-and-api/waves-node-rest-api.md) provides RESTful platform for implementing blockchain functionality in apps using Waves blockchain.
+
+Use the API to integrate a variety of functionalities including orders, transaction history, and balances.
 
 ## Smart Contracts
 
@@ -35,22 +52,6 @@ In Waves, we always think about the best way to help external developers and bec
 * [_**Waves console and its commands**_](/technical-details/waves-contracts-language-description/waves-console-commands.md), Waves IDE has a Waves console feature which supports different commands.
 * [_**Get to our Tutorials**_](/technical-details/video-tutorials-and-articles.md), We believe that the best way to learn is by practical examples.
 
-## Client Libraries
-
-Waves Client is supported by many libraries, please [_**Get to know our client libraries **_](/development-and-api/client-libraries.md)and use them depending on which language you're familiar with:
-
-* [_**PyWaves for Python**_](/development-and-api/client-libraries/pywaves.md)
-* [_**WavesJ for Java**_](/development-and-api/client-libraries/wavesj.md)
-* [_**WavesCS for C\#**_](/development-and-api/client-libraries/wavescs.md)
-* [_**Waves-API for TypeScript/JavaScript**_](https://github.com/wavesplatform/waves-api)
-* [_**WavesC**_](/development-and-api/client-libraries/waves-c.md)
-* [_**Community Libraries**_](/development-and-api/client-libraries/unofficial-libraries.md)
-
-## Node Rest API
-
-[_**The Waves Node API**_](/development-and-api/waves-node-rest-api.md) provides RESTful platform for implementing blockchain functionality in trading apps.
-
-Use the API to integrate a variety of functionalities including orders, transaction history, and balances.
 
 ## DEX API
 
