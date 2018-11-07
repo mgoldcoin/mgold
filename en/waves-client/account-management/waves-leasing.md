@@ -2,7 +2,7 @@
 
 # **Leasing or LPoS**
 
-LPoS \(Leased Proof of Stake\) gives you the opportunity to make the network stronger and safer while receiving more Waves and other assets as a reward for doing so. It's the so called "Leasing".
+[_**LPoS \(Leased Proof of Stake\)**_](/platform-features/leased-proof-of-stake-lpos.md) gives you the opportunity to make the network stronger and safer while receiving more Waves and other assets as a reward for doing so. It's the so called "Leasing".
 
 Most people don't have 1000 WAVES to run their own node, so they are still able to help the whole project through leasing their Waves to someone who is able to run a node.
 
@@ -56,3 +56,4 @@ The terms can vary between LPOS pools. Please use list of LPoS pools - https://w
 **Note.** To find the List of generators click [here](http://dev.pywaves.org/generators/) and to find Waves Nodes click [here](https://wavesplatform.com/leasing#nodes).
 
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+

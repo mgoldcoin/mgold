@@ -10,16 +10,18 @@
 
 ## Overview
 
-[_**Get to understand what is a Waves full node**_](/README.md), Nodes are a critical part of Waves ecosystem. By Running a Waves node, you help in processing transactions and you will increase your profit for securing the network if users start leasing their funds to your node.
+[_**Get to understand what is a Waves full node**_](/README.md), Nodes are a critical part of Waves ecosystem. By Running a Waves node, you help in processing transactions and you will increase your profit for securing the network if users [_**start leasing**_](/waves-client/account-management/waves-leasing.md) their funds to your node \(The more WAVES you lease to a node, the more rewards you will receive, you can lease any sum from 0.002 WAVES\).
+
+The WAVES you own \(or that have been leased to you\) reflect your mining power, the more you own, the higher your chances of processing the next block and receiving the transaction fees as a reward. The final amount will also depend on overall network activity and the level of fees generated.
 
 The Waves full node serves **two critical roles**:
 
 1. To relay blocks and transactions to miners
-2. To answer queries for end users about the state of the blockchain.
+2. To answer queries for end users about the state of the blockchain.** **
 
 ## Running a Node
 
-There're different options when you want to deal with Waves full node and you will need to [_**check the node configuration**_](/waves-full-node/configuration-parameters.md) before following any option.
+There're different options when you want to deal with Waves full node and you will need to [_**check the node configuration**_](/waves-full-node/configuration-parameters.md) before following any option. The balance of the node can be empty until there are enough people wishing to lease to it by reaching together the generating balance of **1000 WAVES**\(the minimum balance\)** **and create together a pool.
 
 ### _**Installing a node**_
 
