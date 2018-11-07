@@ -4,7 +4,10 @@ In this section, you can find all transactions body bytes details and the new fi
 
 In the new version, the transactions are signed by [_**proofs**_](/proposals/versioned-transactions.md) instead of using a signature.
 
-**S**_**ignature **is replaced with **proofs**_**.**
+The differences between TransactionV2 and TransactionV1 are:
+
+1. In V2 fields **version ** and **script** were added.
+2. TransactionV2 supports proofs so **signature** was replaced with **proofs**.
 
 # 3. Issue Transaction
 
