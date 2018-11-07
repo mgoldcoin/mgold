@@ -13,13 +13,22 @@
 
 As a user, the first step that you need to do is to install Waves client. To accomplish that, you will need to go through [_**Install Waves Client Guide.**_](/waves-client/install-waves-client.md) The application is very light-weight \(~5MB\) and therefore downloaded within seconds.
 
+**The Waves client is available as:**
+
+* [**Desktop Client**](https://wavesplatform.com/product)
+* [**Online Client**](https://client.wavesplatform.com/)
+
+**Note.** you can use [_**browser version of the Client**_](https://chrome.google.com/webstore/detail/wavesliteapp/kfmcaklajknfekomaflnhkjjkcjabogm?hl=en) as well.
+
 ## Account Management
 
 After installing Waves Client, you will need to create an account. the account can be created through our [_**Account Management Guide**_](/waves-client/account-management.md) which includes all required information about your account.
 
 ## Transfers and Gateways
 
-After creating your account, it's the time to make some transfers and deal with transactions. To be familiar with our transfers and gateways please check [_**Transfers and Gateways Guide**_](/waves-client/wallet-management.md). it includes all details about send and deposit operations for each cryptocurrency which is supporting within Waves Platform. All transactions with external coins are processing with the [payment gateways](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
+After creating your account, it's the time to make some transfers and deal with transactions. To be familiar with our transfers and gateways please check [_**Transfers and Gateways Guide**_](/waves-client/wallet-management.md). it includes all details about send and deposit operations for external cryptocurrencies which are supported within Waves Platform. All transactions with external coins are processing with the [_**payment gateways**_](/waves-client/frequently-asked-questions-faq/transfers-and-gateways/payment-gateway.md).
+
+**Note.** Each asset issued on Waves can be traded right after that and Gateways will be needed for cryptocurrencies which are not included on Waves Platform.
 
 ## Assets Management
 
