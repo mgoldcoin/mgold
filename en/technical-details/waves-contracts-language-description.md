@@ -19,13 +19,13 @@
 
 **Smart contracts** will bring new benefits to the Waves ecosystem:  
 1. [Smart accounts](/technical-details/waves-contracts-language-description/approach-and-capabilities.md) will allow for **multisignature** wallets, which cannot be controlled by one user only. This will be useful for token sales, since funds can be held safely during deployment.  
-2. Smart assets will allow for a script to be attached to the asset. Transactions for such assets are valid only if the script returns True.  
+2. [Smart assets](/technical-details/smart-assets.md) will allow for a script to be attached to the asset. Transactions for such assets are valid only if the script returns True.  
 3. Waves smart contracts **do not use gas** for non-Turing complete smart contracts which means that fixed costs are always known upfront.  
 4. Decentralized applications \(**DApps**\) which are based on Turing-complete smart contracts will be able to complete complicated processes on the Waves blockchain, meeting a wide range of different criteria.
 
 We see [the syntax of our language](/technical-details/ride-language.md) as functional, similar to F\#: strong and statically typed.
 
-**Note.** [_**Here**_](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) you can find our [_**White Paper**_](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) which describes Waves Smart Contract.
+**Note.** [_**Here**_](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) you can find our [_**White Paper**_](https://wavesplatform.com/files/docs/white_paper_waves_smart_contracts.pdf?cache=b) which describes Waves Smart Contracts.
 
 ## 2. Stages of Waves Smart Contracts Implementation
 
