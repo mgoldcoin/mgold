@@ -18,11 +18,15 @@ The default account has no script, which is equivalent to this script:
 sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 ```
 
+**Note.** `SetScriptTransaction` sets the script which verifies all outgoing transactions. The set script can be changed by another `SetScriptTransaction` call unless it’s prohibited by a previous set script.
+
 ## Denied Actions for Smart Accounts
 
 * Since supporting multi-signature, Mining blocks looks like  unnecessary complication.
 * Trading on DEX, since that will require multi-signature orders.
   These restriction can be considered as temporary one.
 
-To understand our language better, you can check our [RIDE Language Section](/technical-details/ride-language.md).
+To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
+
+
 
