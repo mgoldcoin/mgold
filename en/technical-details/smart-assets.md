@@ -1,6 +1,6 @@
 # Smart Assets
 
-![master](https://img.shields.io/badge/TESTNET-available-4bc51d.svg) ![master](https://img.shields.io/badge/node->%3D0.15.1-4bc51d.svg)
+![master](https://img.shields.io/badge/node->%3D0.15.1-4bc51d.svg)
 
 1. [Smart Assets Definition](#smart-assets-definition)
 2. [Smart Assets Features](#smart-assets-features)
