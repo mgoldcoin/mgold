@@ -37,6 +37,7 @@ This section contains explanations about Waves main Features such as \(Waves-NG 
 
 1. [As a Developer](/getting-started/as-a-developer.md)
 2. [As a Node Owner](/getting-started/as-a-node-owner.md)
+3. [As a User](/getting-started/as-a-user.md)
 
 # Waves Client
 
@@ -68,17 +69,19 @@ This section contains all information about Installing, configuring and upgradin
 
 # Smart Contracts
 
-1. [Approach and Capabilities](../technical-details/waves-contracts-language-description/approach-and-capabilities.md)
-2. [RIDE Language](../technical-details/ride-language.md)
-3. [RIDE Language Description](../technical-details/ride-language/language-description.md)
-4. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
-5. [RIDE Maven Compiler Package](../technical-details/ride-language/maven-compiler.md)
-6. [Syntax Processor and Executor Implementation Details](../technical-details/waves-contracts-language-description/implementation-details.md)
-7. [Functions and Standard Library](../technical-details/waves-contracts-language-description/standard-library.md)
-8. [Creating and Deploying a Script Manually](../technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
-9. [Script Performance Tests](../technical-details/waves-contracts-language-description/script-performance-tests.md)
-10. [Waves Console Commands](../technical-details/waves-contracts-language-description/waves-console-commands.md)
-11. [Video Tutorials and Articles](../technical-details/video-tutorials-and-articles.md)
+1. [Waves Smart Contracts](/technical-details/waves-contracts-language-description.md)
+2. [Smart Accounts](/technical-details/waves-contracts-language-description/approach-and-capabilities.md)
+3. [Smart Assets](/technical-details/smart-assets.md)
+4. [RIDE Language](../technical-details/ride-language.md)
+5. [RIDE Language Description](../technical-details/ride-language/language-description.md)
+6. [Effective RIDE Examples](../technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
+7. [RIDE Maven Compiler Package](../technical-details/ride-language/maven-compiler.md)
+8. [Syntax Processor and Executor Implementation Details](../technical-details/waves-contracts-language-description/implementation-details.md)
+9. [Functions and Standard Library](../technical-details/waves-contracts-language-description/standard-library.md)
+10. [Creating and Deploying a Script Manually](../technical-details/waves-contracts-language-description/creating-and-deploying-a-script-manually.md)
+11. [Script Performance Tests](../technical-details/waves-contracts-language-description/script-performance-tests.md)
+12. [Waves Console Commands](../technical-details/waves-contracts-language-description/waves-console-commands.md)
+13. [Video Tutorials and Articles](../technical-details/video-tutorials-and-articles.md)
 
 # Development and API
 
@@ -95,8 +98,6 @@ This section contains all information about Installing, configuring and upgradin
 1. [Sponsored Transactions](/proposals/sponsored-transactions.md)
 2. [Versioned Transactions](/proposals/versioned-transactions.md)
 3. [Trezor Hardware Wallet Integration Specification](/proposals/trezor-hardware-wallet-integration-specification.md)
-
-
 
 
 
