@@ -27,12 +27,12 @@ In simple words, **Smart assets **are assets with an attached script which valid
 
 Smart assets can be used in the following cases:
 
-1. **Freezing assets: **It is similar to keeping the assets untouched for a particular interval of time or for a certain height, This is useful in case of having multiple funding rounds..
-2. **Whitelist/blacklist:** giving the possibility to allow/deny making a transfer for specific addresses.
-3. **Taxation:** the Issuer can get a share after each transaction.
-4. **Multi-signature:** in this use case, The asset’s issuer has to approve \(co-sign\) every transaction.
-5. **Controlling Asset Pairs:** tokens interchangeable with a certain currency only.
-6. **Gaming:** the smart asset can be used to transfer an asset only under certain conditions \(holder has a certain attributes in a certain location\).
+1. **Freezing assets: **It is similar to keeping the assets untouched for a particular interval of time or for a certain height, This is useful in case of having multiple funding rounds.
+2. **Whitelist/blacklist:** Giving the possibility to allow/deny making a transfer for specific addresses.
+3. **Taxation:** The issuer can get a share after each transaction.
+4. **Multi-signature:** It's a digital signature scheme which allows a group of users to sign a transaction, It requires another user or users to sign a transaction before it can be broadcast onto the blockchain.
+5. **Controlling Asset Pairs:** Tokens interchangeable with a certain currency only.
+6. **Gaming:** The smart asset can be used to transfer an asset only under certain conditions \(holder has a certain attributes in a certain location\).
 7. A token that indicates some commitment/debt \(unburnable, may only be transferred back with permission of the issuer\).
 8. Require asset's owners to use a specific matcher.
 
