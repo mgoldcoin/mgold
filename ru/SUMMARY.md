@@ -59,7 +59,7 @@
     * [Спосорская комиссия](waves-client/assets-management/sponsored-fee.md)
   * [Расширенные возможности](waves-client/advanced_features.md)
     * [Script транзакция](waves-client/advanced_features/script_transaction.md)
-    * [JSON подтверждение](waves-clientadvanced_features/json_confirmation.md)
+    * [JSON подтверждение](waves-client/advanced_features/json_confirmation.md)
 
   * [Часто задаваемые вопросы](waves-client/faq.md)
     * [Один Seed - Один Waves адрес.](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
