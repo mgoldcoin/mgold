@@ -35,7 +35,9 @@ Share the data with other members of the multi-sig account.
 
 **Note**: If you specified in the contract that two confirmations are required from the three accounts, then each participant should repeat the actions described below.
 
-So, login to the account which has the right to confirm the multi-sig transaction. At the top left corner click on the **<> JSON** button. ![](/_assets/json_02.png)
+So, login to the account which has the right to confirm the multi-sig transaction.
+
+At the top right corner click on the **<> JSON** button. ![](/_assets/json_02.png)
 
 After that, put recieved JSON code in the **TX JSON** field and click on the **Continue** button.
 
