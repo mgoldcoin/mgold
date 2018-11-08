@@ -1,4 +1,4 @@
-# I have enough Waves but I can't create an order.
+# I have enough Waves but I can't create an order
 
 As you may know, Waves is the primary currency of the whole Wavesplatform. If all of your Waves tokens are placed in orders or leased and you do not have enough Waves for the fees. In this case, you will not be able to create new orders or create new outgoing transfers because your funds are occupied in open orders or leases.
 

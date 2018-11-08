@@ -57,10 +57,6 @@ Basic path is `https://client.wavesplatform.com#gateway/auth`. Then the query pa
 
 Example: `https://example.com/wavesAuth?d=0123456789&s=CvWfUUEkhVtaPzCMm4sB8iEJ6XwuMdcx4bhsCJAq3e8yhP7j64UD3aLyn9fFSK454o427raRmSn6a9FkaJpvXrc&p=2M25DqL2W4rGFLCFadgATboS8EPqyWAN3DjH12AH5Kdr&a=3PCAB4sHXgvtu5NPoen6EXR5yaNbvsEA8Fj`.
 
-#### Data
-
-`?d=randomChars` — the same data which is passed along with the redirected user.
-
 #### Signature
 
 `?s=base58EncodedSignature` — a signature of the data which is signed by the user's private key.

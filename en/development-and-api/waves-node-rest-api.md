@@ -1,3 +1,15 @@
+# Structure
+
+1. [Address](/development-and-api/waves-node-rest-api/address.md)
+2. [Lease Transactions](/development-and-api/waves-node-rest-api/lease-transactions.md)
+3. [Asset Transactions](/development-and-api/waves-node-rest-api/asset-transactions.md)
+4. [Alias Transaction](/development-and-api/waves-node-rest-api/alias-transaction.md)
+5. [Transactions](/development-and-api/waves-node-rest-api/transactions.md)
+6. [Peers](/development-and-api/waves-node-rest-api/peers.md)
+7. [Blocks](/development-and-api/waves-node-rest-api/blocks.md)
+8. [Utils](/development-and-api/waves-node-rest-api/utils.md)
+9. [Examples of Transactions](/development-and-api/waves-node-rest-api/example-transactions.md)
+
 # Waves Node Rest API
 
 * Our open source client application uses the same API.
@@ -8,11 +20,7 @@
 
 For The Web Interface to the Waves Full Node API, Please check [**Swagger**](http://nodes.wavesplatform.com/api-docs/index.html) or [**Postman**](https://documenter.getpostman.com/view/2733299/waves-full-node/RVnWiKZJ).
 
-# Waves Node API
-
-The Waves Node API provides RESTful platform for implementing blockchain functionality in trading apps.
-
-Use the API to integrate a variety of functionalities including orders, transaction history, and balances.
+# 
 
 # 
 

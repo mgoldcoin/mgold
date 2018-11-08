@@ -1,4 +1,4 @@
-# How to receive Waves using credit or debit card.
+# How to receive Waves using credit or debit card
 
 Open up your wallet.
 In the Waves section click on the **Receive** button.

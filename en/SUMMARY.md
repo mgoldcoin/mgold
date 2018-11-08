@@ -20,6 +20,12 @@
 * [Activation Protocol](platform-features/activation-protocol.md)
 * [Smart Contracts](platform-features/smart-contracts.md)
 
+## Getting Started
+
+* [As a Developer](getting-started/as-a-developer.md)
+* [As a Node Owner](getting-started/as-a-node-owner.md)
+* [As a User](getting-started/as-a-user.md)
+
 ## Waves Client
 
 * [Install Waves Client](waves-client/install-waves-client.md)
@@ -61,6 +67,7 @@
   * [Script transaction](waves-client/advanced_features/script_transaction.md)
   * [JSON confirmatuion](waves-client/advanced_features/json_confirmation.md)
 
+
 * [Mobile applications](waves-client/mobile-apps.md)
   * [Waves Wallet for iOS Devices](waves-client/mobile-apps/iOS.md)
     * [iOS: Account Management](waves-client/mobile-apps/iOS/account-management.md)
@@ -96,21 +103,24 @@
 ## Waves Full Node
 
 * [What is Waves Full Node ](waves-full-node/what-is-a-full-node.md)
-* [How To Install a node](waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
+* [How To Install a Node](waves-full-node/how-to-install-a-node/how-to-install-a-node.md)
   * [On Mac](waves-full-node/how-to-install-a-node/on-mac.md)
   * [On Windows](waves-full-node/how-to-install-a-node/on-windows.md)
   * [On Ubuntu](waves-full-node/how-to-install-a-node/on-ubuntu.md)
-* [Node Configuration](waves-full-node/configuration-parameters.md)
-* [Waves Node in Docker](waves-full-node/waves-node-in-docker.md)
+* [Options for Getting Actual Blockchain](waves-full-node/options-for-getting-actual-blockchain.md)
+  * [State Downloading and Applying](waves-full-node/options-for-getting-actual-blockchain/state-downloading-and-applying.md)
+  * [Export and Import From The Blockchain](waves-full-node/options-for-getting-actual-blockchain/export-and-import-from-the-blockchain.md)
 * [Upgrading](waves-full-node/upgrading.md)
-* [Export and Import From The Blockchain](waves-full-node/export-and-import-from-the-blockchain.md)
+* [How to Rollback a Node](waves-full-node/how-to-rollback-a-node.md)
+* [Waves Node in Docker](waves-full-node/waves-node-in-docker.md)
+* [Node Configuration](waves-full-node/configuration-parameters.md)
 * [Joining Testnet](waves-full-node/joining-testnet.md)
-* [Logging](waves-full-node/logging.md)
 
 ## Smart Contracts
 
 * [Waves Smart Contracts](technical-details/waves-contracts-language-description.md)
-* [Approach and Capabilities](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
+* [Smart Accounts](technical-details/waves-contracts-language-description/approach-and-capabilities.md)
+* [Smart Assets](technical-details/smart-assets.md)
 * [RIDE Language](technical-details/ride-language.md)
   * [Language Description](technical-details/ride-language/language-description.md)
   * [Effective RIDE Examples](technical-details/waves-contracts-language-description/examples/lang-stlib-usage-examples.md)
@@ -134,6 +144,7 @@
   * [Data Transaction](technical-details/data-transaction.md)
   * [Waves-NG Solution](technical-details/waves-ng-solution.md)
   * [Sponsored Fee](technical-details/sponsored-fee.md)
+  * [Transactions Structure](technical-details/transactions-structure.md)
 * [Client Libraries](development-and-api/client-libraries.md)
   * [PyWaves](development-and-api/client-libraries/pywaves.md)
   * [WavesJ](development-and-api/client-libraries/wavesj.md)
@@ -159,6 +170,7 @@
 * [Client API](development-and-api/client-api/overview.md)
   * [Web auth API](development-and-api/client-api/auth-api.md)
   * [Payment API](development-and-api/client-api/payments-api.md)
+* [Waves Keeper API](development-and-api/waves-keeper-api/waves-keeper-api.md)
 * [Examples](development-and-api/examples.md)
   * [Create Your First crypto Trading Bot](development-and-api/examples/trading-bot.md)
 
@@ -167,3 +179,7 @@
 * [Sponsored transactions](proposals/sponsored-transactions.md)
 * [Versioned transactions](proposals/versioned-transactions.md)
 * [Trezor hardware wallet integration specification](proposals/trezor-hardware-wallet-integration-specification.md)
+=======
+* [Sponsored Transactions](proposals/sponsored-transactions.md)
+* [Versioned Transactions](proposals/versioned-transactions.md)
+* [Trezor Hardware Wallet Integration Specification](proposals/trezor-hardware-wallet-integration-specification.md)

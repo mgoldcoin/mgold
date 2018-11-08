@@ -4,11 +4,110 @@
 
 **Note. **Using [Waves Transactions library ](/development-and-api/client-libraries/waves-transactions.md)you can easily create and sign transactions for Waves blockchain. It also allows you to multi-sign existing transactions or create them without signature at all.
 
-
-
 # MultiSig Example
 
-[_**Here**_](/technical-details/waves-contracts-language-description/waves-console-commands/examples.md) you can check the MultiSig smart contract example using Waves Console
+[_**Here**_](/technical-details/waves-contracts-language-description/waves-console-commands/examples.md) you can check the MultiSig smart contract example using Waves Console.
+
+# Waves REPL
+
+It's a Javascript console for waves blockchain. It's built on top of [jsconsole](https://github.com/remy/jsconsole) and it has predefined functions to work with Waves.
+
+## Builtin functions
+
+#### JS lib
+
+Console uses [waves-transactions](/development-and-api/client-libraries/waves-transactions.md) library. Top level library functions are bound to console global scope. The difference is that in console, seed argument comes second and it's optional. E.x.:
+
+##### Console
+
+```js
+const signedTx = transfer({amount: 100, recipient: 'some recipient'})
+```
+
+##### Library
+
+```js
+const signedTx = transfer('some seed phraze', {amount: 100, recipient: 'some recipient'})
+```
+
+#### Additional functions
+
+* Broadcast signed tx using node from global variable
+
+```js
+const resp = broadcast(signedTx)
+```
+
+* Compile contract. Returns base64
+
+```js
+const compiled = compile(contractText)
+```
+
+* Get contract text by tab name. Used inside web-ide or vscode plugin
+
+```js
+const contractText = file(tabName)
+```
+
+* Get contract text from currently open tab. Used inside web-ide or vscode plugin
+
+```js
+const contractText = contract()
+```
+
+Keys
+
+```js
+address(seed = env.SEED) // Address from seed. 
+keyPair(seed = env.SEED) // Keypair from seed
+publicKey(seed = env.SEED) // Public key from seed
+privateKey(seed = env.SEED) // Private key from seed
+```
+
+#### Global object env
+
+```js
+env.SEED // Default seed
+env.CHAIN_ID // Default network byte
+env.API_BASE // Node url 
+env.editors // Open editor tabs info
+```
+
+## Usage
+
+### Dev server:
+
+```bash
+npm start
+```
+
+Starts dev server
+
+### React component
+
+```js
+import * as React from 'react';
+import {render} from 'react-dom';
+import {Repl} from 'waves-repl';
+
+const App: React.StatelessComponent = () => (
+    <Repl theme="dark"/>
+);
+
+render(<App />, document.getElementById("root"));
+
+(window as any)['updateEnv'] = Repl.updateEnv
+
+//Set default params
+Repl.updateEnv({
+    SEED: 'SEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEED',
+    CHAIN_ID: 'T',
+    API_BASE: 'https://testnodes.wavesnodes.com/'
+})
+```
+
+# List of Functions with Examples
 
 ## Creates signed Issue Transaction
 

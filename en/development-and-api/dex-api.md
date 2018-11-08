@@ -1,3 +1,7 @@
+# Structure
+
+* [Matcher](/development-and-api/dex-api/matcher.md)
+
 # DEX API
 
 Our nodes contain an order matcher which is used to power our decentralized exchange — enabling token trades that don’t require tokens to be transferred from your blockchain account to a separate exchange.

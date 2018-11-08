@@ -1,9 +1,8 @@
-# Export and import of the blockchain
+# Export and Import From The Blockchain
 
 **Note:** This functionality available since version 0.8.
 
-
-## Export existing blocks to a binary file {#user-content-export-existing-blocks-to-a-binary-file}
+## Export Existing Blocks to a Binary File {#user-content-export-existing-blocks-to-a-binary-file}
 
 **Note:** You have to stop the node before starting export of blocks.
 
@@ -26,9 +25,9 @@ If the parameter `height` was not given all blocks will be exported. Otherwise, 
 
 The output file name parameter is optional, name 'blockchain' is used by default. As a result, a file named '&lt;output-file-name&gt;-&lt;height&gt;' will be created in the current folder.
 
-## Remove the existing node's data
+## Remove the Existing Node's Data
 
-In order to fully rebuild the node's state, you have to remove the existing node's `data` folder. 
+In order to fully rebuild the node's state, you have to remove the existing node's `data` folder.  
 On Windows, `data` folder usually located in `%HOMEPATH%\waves\data`.
 
 On Linux it's in the `/var/lib/waves[-testnet]/` folder:
@@ -37,11 +36,11 @@ On Linux it's in the `/var/lib/waves[-testnet]/` folder:
 sudo rm -rdf /var/lib/waves[-testnet]/data
 ```
 
-## Import blocks from the binary file {#user-content-import-blocks-from-the-binary-file}
+## Import Blocks From The Binary File {#user-content-import-blocks-from-the-binary-file}
 
 **Note:** The node must be stopped before importing the blockchain.
 
-**Note:** If you already have some data in the node's `data` folder, the import will continue to append new data from the blockchain's binary file. So, you might be willing to remove the existing data. Please be careful while appending data, mixing data from different versions can lead to an erroneous state. 
+**Note:** If you already have some data in the node's `data` folder, the import will continue to append new data from the blockchain's binary file. So, you might be willing to remove the existing data. Please be careful while appending data, mixing data from different versions can lead to an erroneous state.
 
 To import the blockchain and rebuild the state run the following command.
 
@@ -60,10 +59,12 @@ Testnet: sudo -u waves-testnet importer-testnet /etc/waves-testnet/waves.conf [b
 
 Import is a heavy operation and could take a few hours to complete.
 
-## Downloading exported blockchain
+## Downloading Exported Blockchain
 
-You can download recently exported blockchains using following links: 
-* TestNet: http://blockchain.testnet.wavesnodes.com/
-* MainNet: http://blockchain.wavesnodes.com/
+You can download recently exported blockchains using following links:
+
+* TestNet: [http://blockchain.testnet.wavesnodes.com/](http://blockchain.testnet.wavesnodes.com/)
+* MainNet: [http://blockchain.wavesnodes.com/](http://blockchain.wavesnodes.com/)
+
 
 

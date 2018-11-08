@@ -1,3 +1,10 @@
+# Leased Proof of Stake\(LPoS\)
+
+1. [Overview](#overview)
+2. [Proof of Work](#proof-of-work)
+3. [Proof of Stake](#proof-of-stake)
+4. [Leased Proof of Stake](#leased-proof-of-stake)
+
 # Overview
 
 Any blockchain requires a mechanism allowing to decide which chain of blocks is valid and to ensure there are no double-spending \(e.g. sending same money to different parties in separate chains\). There are several approaches to achieve this.  
@@ -71,7 +78,7 @@ LPoS is an enhanced version of Proof-of-Stake. In a regular Proof-of-Stake syste
 
 In a Leased Proof-of-Stake environment, users can choose between running a full node or leasing their stake to a full node with receiving rewards. This system allows anyone to participate in the Waves network maintenance.
 
-User can leas his waves through leasing on any computer or mobile device that has an internet browser since Waves provides a lite client solution that does not require "Miners", that are leasing their balance to store the whole Blockchain or to have the wallet running, Figure 2.
+User can lease his WAVES through leasing on any computer or mobile device that has an internet browser since Waves provides a lite client solution that does not require "Miners", that are leasing their balance to store the whole Blockchain or to have the wallet running, Figure 2.
 
 ![](/_assets/Webp.net-resizeimage-2.jpg)  
 Figure 2, LPOS System
@@ -100,20 +107,20 @@ Get Rewards:
 
 ## 3.2.1 Create Leasing Transaction {#LeasedProofofStake(LPOS)-CreateLeasingTransaction}
 
-```
-"Id": 9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr ,
-"sender" : 3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS ,
-"fee" : 0.001,
-"amount" : 10,
-"recipient address" : 3HQanDJhZSsSLbCjTCsMYpPvuj2ieGwKwQ9"
-"timestamp":46305781705234713
+```css
+id: '9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr' ,
+sender : '3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS' ,
+fee : 0.001,
+amount : 10,
+recipientAddress : '3HQanDJhZSsSLbCjTCsMYpPvuj2ieGwKwQ9'
+timestamp :46305781705234713
 ```
 
 ## 3.2.2 Cancel Leasing Transaction {#LeasedProofofStake(LPOS)-CancelLeasingTransaction}
 
-```
-"sender" : 3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS ,
-"leaseId": 9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr
+```css
+sender : '3HgqG68qfeVz5dqbyvqnxQceFaH49xmGvUS' ,
+leaseId: '9q7X84wFuVvKqRdDQeWbtBmpsHt9SXFbvPPtUuKBVxxr'
 ```
 
 # 3.2.3 Useful links for leasing {#LeasedProofofStake(LPOS)-Usefullinksforleasing}
@@ -123,3 +130,4 @@ For Step-by-Step guide to lease your waves, click [here](/en/waves-client/accoun
 For the List of generators click [here](http://dev.pywaves.org/generators/).
 
 For Waves Nodes click [here](https://wavesplatform.com/leasing#nodes).
+

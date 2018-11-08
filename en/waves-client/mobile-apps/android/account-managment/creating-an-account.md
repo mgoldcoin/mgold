@@ -1,4 +1,4 @@
-# **How to Create an Account**
+# How to Create an Account
 
 **Step 1.** Download and install the latest version from Google Play. Please use only the [official resource](https://play.google.com/store/apps/details?id=com.wavesplatform.wallet).
 

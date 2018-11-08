@@ -1,4 +1,4 @@
-# How to change a reissuable token to non-reissuable.
+# How to change a reissuable token to non-reissuable
 
 Open up your Waves wallet.
 
