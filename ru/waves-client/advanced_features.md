@@ -6,3 +6,4 @@
 Не устанавливайте скрипт на аккаунт, если вы неопытный пользователь. Ошибка может привести к потере доступа к вашей учетной записи навсегда.
 
 * [Script транзакция](advanced_features/script_transaction.md)
+* [JSON подтверждение](advanced_features/json_confirmation.md)

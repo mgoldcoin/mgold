@@ -65,6 +65,9 @@
   * [Sponsored fee](waves-client/assets-management/sponsored-fee.md)
 * [Advanced features](waves-client/advanced_features.md)
   * [Script transaction](waves-client/advanced_features/script_transaction.md)
+  * [JSON confirmatuion](waves-client/advanced_features/json_confirmation.md)
+
+
 * [Mobile applications](waves-client/mobile-apps.md)
   * [Waves Wallet for iOS Devices](waves-client/mobile-apps/iOS.md)
     * [iOS: Account Management](waves-client/mobile-apps/iOS/account-management.md)
@@ -84,6 +87,7 @@
       * [Asset transfers](waves-client/mobile-apps/android/transfers-and-gateways/asset-transfers.md)
     * [Android: Waves DEX](waves-client/mobile-apps/android/waves-dex.md)
       * [Start trading using the Waves DEX](waves-client/mobile-apps/android/waves-dex/start-trading-using-the-waves-dex.md)
+
 * [FAQ](waves-client/faq.md)
   * [What is a SEED phrase?](waves-client/frequently-asked-questions-faq/account-management/seed-phrase.md)
   * [One Seed - One Waves address.](waves-client/frequently-asked-questions-faq/account-management/one-seed.md)
@@ -172,7 +176,10 @@
 
 ## Proposals
 
+* [Sponsored transactions](proposals/sponsored-transactions.md)
+* [Versioned transactions](proposals/versioned-transactions.md)
+* [Trezor hardware wallet integration specification](proposals/trezor-hardware-wallet-integration-specification.md)
+=======
 * [Sponsored Transactions](proposals/sponsored-transactions.md)
 * [Versioned Transactions](proposals/versioned-transactions.md)
 * [Trezor Hardware Wallet Integration Specification](proposals/trezor-hardware-wallet-integration-specification.md)
-

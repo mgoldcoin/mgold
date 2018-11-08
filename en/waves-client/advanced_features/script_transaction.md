@@ -12,7 +12,7 @@ Also downloads are available from the official site - https://wavesplatform.com/
 
 Choose and open your Waves wallet. Click on the **Settings** button (see left bottom corner) ![](/_assets/dark_mode_01.png)
 
-You will be forwarded to the following settings page. Find and put a checkmark near **Advanced features**.
+You will be forwarded to the following settings page. Find and put the checkmark near **Advanced features**.
 
 ![](/_assets/advanced_features_01.png)
 
