@@ -2,7 +2,7 @@
 
 As you may know, Waves app contains advanced functionality. One of them is [Script transaction](/waves-client/advanced_features/script_transaction.md). With this feature, you can create a multi-signature wallet. So, several owners of one Waves account can manage the funds stored on the same balance. For easier management of script transactions, we integrated a special section called **JSON**.
 
-**Before you start, please keep in mind. We do not recommend you submit JSON unless you are an experienced user. Errors may lead to loss of funds.**.
+**Before you start, please keep in mind. We do not recommend you submit JSON unless you are an experienced user. Errors may lead to loss of funds**.
 
 So, to start using all available features of the application, first you need to activate the advanced features.
 
