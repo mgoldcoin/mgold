@@ -1,52 +1,43 @@
-# ​How to create JSON confirmation
+# Как создать JSON подтверждение
 
-As you may know, Waves app contains advanced functionality. One of them is [Script transaction](/waves-client/advanced_features/script_transaction.md). With this feature, you can create a multi-signature wallet. So, several owners of one Waves account can manage the funds stored on the same balance. For easier management of script transactions, we integrated a special section called **JSON**.
+Как вы знаете, Waves кошелёк поддерживает расширение возможностей. Так, с помощью Waves кошелька можно отправить [Script транзакцию](/waves-client/advanced_features/script_transaction.md). Эта функция позволяет создать кошелек с возможностью мульти-подписи. Благодаря этому, несколько пользователей могут управлять балансом одного аккаунта. Для упрощения управления подобным аккаунтом мы включили специальный раздел **JSON**.
 
-**Before you start, please keep in mind. We do not recommend you submit JSON unless you are an experienced user. Errors may lead to loss of funds.**.
+**Прежде чем начать, пожалуйста, имейте в виду: мы не рекомендуем вам отправлять JSON, если вы неопытный пользователь. Ошибки могут привести к потере средств**.
 
-So, to start using all available features of the application, first you need to activate the advanced features.
+Итак, чтобы начать использовать все доступные функции приложения, сначала необходимо активировать расширенный функционал.
 
-By the way, you can use either online version of the client, or standalone version for Mac, PC or Linux. All versions support automatic update!
-Also downloads are available from the official site - https://wavesplatform.com/product
+Кстати, вы можете использовать либо онлайн-версию клиента, либо десктопную версию кошелька для Mac, ПК или Linux. Все версии поддерживают автоматическое обновление! Также вы можете загрузить любую версию Waves кошелька с официального сайта - https://wavesplatform.com/product
 
-Choose and open your Waves wallet. Click on the **Settings** button (see left bottom corner) ![](/_assets/dark_mode_01.png)
+Откройте свой Waves кошелек. Затем нажмите кнопку **Настройки** (см. левый нижний угол) ![](/_assets/dark_mode_01.png).
 
-You will be forwarded to the following settings page. Find and put the checkmark near **Advanced features**.
+После этого появится окно настроек. В окне настроек установите галочку рядом с пунктом  **Расширенные возможности**.
 
 ![](/_assets/advanced_features_01.png)
 
-After that, close the settings.
-
-So, let's transfer **1 Waves** or any available assets from the multi-sign account.
-
-**Note**: Please keep in mind, if you specified sequence of accounts as A, B, C. Where **A** is multi-sig account and **B**, **C** participants of the created contract So, to confirm the withdrawal from the multi-sig account, you must follow the sequence of confirmation by other members of the multi-sig account.
-
-Login to the multi-sig account. At the top left corner click on the **Send** button.
+После этого вы можете закрыть меню настроек. Далее в левом верхнем углу нажмите на кнопку **Отправить**.
 
 ![](/_assets/json_01.png)
 
-Choose the neccessary currency and fill in the sending form. After you have entered all necessary information, click on the **Continue** button.
-
-Choose **JSON** section and copy the code, or share the **Link** or just show the QR Code from the **Export** section.
+В появившемся окне выберете необходимую криптовалюту, заполните поля формы и нажмите на кнопку **Продолжить**.
+Далее выберете секцию **JSON** и скопируйте код из окна и передайте его тем пользователям, которые должны подписать транзакцию вывода средств из текущего аккаунта.
+Вы также можете поделиться с ними **Ссылкой** для осуществления подписи транзакции или позволить им просканировать **QR-код** (раздел **Экспорт**).
 
 ![](/_assets/json_03.png)
 
-Share the data with other members of the multi-sig account.
+**Примечание**: Если в Script-транзакции вы указали, что подтвердить вывод средств из аккаунта необходимо трем пользователям, необходимо сообщить полученный код (JSON) всем трём пользователям. При этом они должны подтверждать транзакцию вывода средств в том же порядке, в котором они указаны в Script-транзакции.
 
-**Note**: If you specified in the contract that two confirmations are required from the three accounts, then each participant should repeat the actions described below.
+После того, как вы передали JSON пользователю для подтверждения вывода средств, ему необходимо нажать на кнопку **<> JSON** в своём аккаунте и ввести/скопировать его в поле **TX JSON**.
 
-So, login to the account which has the right to confirm the multi-sig transaction.
-
-At the top right corner click on the **<> JSON** button. ![](/_assets/json_02.png)
-
-After that, put recieved JSON code in the **TX JSON** field and click on the **Continue** button.
+Затем ему нужно нажать на кнопку **Продолжить**.
 
 ![](/_assets/json_04.png)
 
-Re-check entered data and click on the **Confirm** button. If you need to confirm this action using another account, then also use **JSON** or **Export** sections. If additional confirmation is not required, then just click on the **Continue** button again.
+После того как он проверит все данные транзакции, ему останется только дважды нажать кнопку **Подтвердить** для подтверждения транзакции вывода средств из вашего аккаунта с мульти-подписью.
 
-After a few seconds, created transaction will be confirmed. Thus, you have confirmed the withdrawal request from the multi-signature account.
+Те же самые действия должны совершить и другие пользователи указанные в Script-транзакции, если их подтверждение необходимо.  
+
+После того, как все пользователи подпишут вашу транзакцию с мульти-аккаунта будет списана указанная вами сумма. Транзакция появится в сети спустя несколько секунд.
 
 ___
 
-If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
+Если у вас возникнут трудности с использованием нашей платформы, пожалуйста, создайте запрос в [службу поддержки](https://support.wavesplatform.com/) или задайте вопрос на нашем [форуме](https://forum.wavesplatform.com/).
