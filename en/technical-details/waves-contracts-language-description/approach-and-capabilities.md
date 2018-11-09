@@ -39,6 +39,11 @@ As a result, We define the following constraint for a _**script cost**_:
 * A script must have a size _**no more 8 kB**_.
 * The fixed cost for each scripted unit is equal to **400000 **_**wavelets**_ \(Waves coins, 100000000 wavelets = 1 Wave\).
 
+**Examples:**
+
+* If transaction's usual cost is 0.001 WAVES, in case of smart scripting exactly the same transaction will be cost 0.001 + 0.004 WAVES. 
+* Set Alias for an account without a script would cost 0.001 WAVES, whereas for a Smart Account it would be 0.001+0.004=0.005 WAVES.
+
 **Note. **All minimal transactions fees can be found [_**here**_](/technical-details/transactions-fees.md).
 
 ## Trading With Smart Accounts
