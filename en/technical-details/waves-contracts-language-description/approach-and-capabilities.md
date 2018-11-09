@@ -39,6 +39,8 @@ As a result, We define the following constraint for a _**script cost**_:
 * A script must have a size _**no more 8 kB**_.
 * The fixed cost for each scripted unit is equal to **400000 **_**wavelets**_ \(Waves coins, 100000000 wavelets = 1 Wave\).
 
+**Note. **All minimal transactions fees can be found [_**here**_](/technical-details/transactions-fees.md).
+
 ## Trading With Smart Accounts
 
 ![master](https://img.shields.io/badge/node->%3D0.15.0-4bc51d.svg)
@@ -80,9 +82,5 @@ match tx {
 }
 ```
 
-
-
 **Note.** To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
-
-
 
