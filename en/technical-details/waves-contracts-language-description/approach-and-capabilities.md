@@ -22,11 +22,7 @@ sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 
 ## Denied Actions for Smart Accounts
 
-* Since supporting multi-signature, Mining blocks looks like  unnecessary complication.
-* Trading on DEX, since that will require multi-signature orders.
-  These restriction can be considered as temporary one.
-
-To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
+Since supporting multi-signature, Mining blocks looks like unnecessary complication. To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
 
 ## Script's Cost
 
