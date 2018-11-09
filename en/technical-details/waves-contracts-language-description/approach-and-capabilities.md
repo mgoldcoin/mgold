@@ -2,7 +2,6 @@
 2. [Set Script to an Account](#set-script-to-an-account)
 3. [Script Costs](#script-costs)
 4. [Trading With Smart Accounts](#trading-with-smart-accounts)
-5. [Denied Actions for Smart Accounts](#denied-actions-for-smart-accounts)
 
 ## Smart Accounts
 
@@ -67,7 +66,7 @@ match tx {
 }
 ```
 
-2. Buy back custom asset on specified price in WAVES:
+1. Buy back custom asset on specified price in WAVES:
 
 ```js
 let myAssetId = base58'BVqYXrapgJP9atQccdBPAgJPwHDKkh6B9'
@@ -81,7 +80,9 @@ match tx {
 }
 ```
 
-## Denied Actions for Smart Accounts
 
-Since supporting multi-signature, Mining blocks looks like unnecessary complication. To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
+
+**Note.** To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
+
+
 
