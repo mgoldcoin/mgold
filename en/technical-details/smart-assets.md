@@ -57,7 +57,7 @@ A smart asset’s script validates any of the following transaction types with t
 5. ExchangeTransaction
 6. SetAssetScriptTransaction
 
-**Note.** Smart Assets’ scripts **do not validate orders**. Therefore, although RIDE allows to use **`case t : Order => …`** branch, in fact this branch does not validate anything when used in SmartAssets’ scripts and will be ignored. So all the logic regarding orders should be moved to **`case t : ExchangeTransaction => …`** branch.
+**Note.** Smart Assets’ scripts **do not validate orders**. Therefore, although RIDE allows to use `case t : Order => …` branch, in fact this branch does not validate anything when used in SmartAssets’ scripts and will be ignored. So all the logic regarding orders should be moved to `case t : ExchangeTransaction => …` branch.
 
 ## Examples of Scripts for Smart Assets
 
