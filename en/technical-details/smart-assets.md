@@ -40,6 +40,11 @@ Smart assets can be used in the following cases:
 
 The transaction fee is calculated in the same way as for [smart accounts](/technical-details/waves-contracts-language-description/approach-and-capabilities.md): for each time the script is called, [total transaction’s fee](/technical-details/transactions-fees.md) increases by 0.004 WAVES.
 
+**Examples:**
+
+*  If user will transfer smart assets from scripted account the final fee is 0.009.waves
+* The fee for a TransferTransaction of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=0.009 WAVES
+
 **Note. **If a scripted account transfers a smart asset, then the fee is increased twice \(the fee increases _**+0.004**_ every time the transaction is validated by account’s script or asset’s script\).
 
 ## Trading
