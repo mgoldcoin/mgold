@@ -28,11 +28,16 @@ sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 
 To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
 
+## Script's Cost
 
+We conducted performance tests for all aspects of our scripts. For this purpose, we developed an benchmark subproject with [JMH](http://openjdk.java.net/projects/code-tools/jmh/), that **computes a complexity of scripts** after compilation phase by AST \(Abstract Syntax Tree\) traversal in special _complexity units_. _Complexity units_ is a measure of the script's relative cost: we found out the most expensive operation in terms of computational complexity and defined it equal to **100 complexity units**. The most expensive functions:
 
-## Smart Account Costs
+* `fromBase58String` / `toBase58String`
+* `sigVerify`
 
- We define the following constraint for a script cost:
+**In every test**, we conducted 10 tests and calculated the average cost.
+
+As a result, We define the following constraint for a _**script cost**_:
 
 * A script must have a size _**no more 8 kB**_.
 * The fixed cost for each scripted unit is equal to **400000 **_**wavelets**_ \(Waves coins, 100000000 wavelets = 1 Wave\).
