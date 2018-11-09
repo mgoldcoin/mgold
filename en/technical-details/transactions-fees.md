@@ -4,7 +4,7 @@ There are currently 13 different types of transactions in the Waves Blockchain. 
 
 **Note. **If a scripted account transfers a smart asset, then the fee is increased twice \(the fee increases _**+0.004**_ every time the transaction is validated by account’s script or asset’s script\).
 
-| Transaction | Minimal Fees in WAVES |
+| Transaction | Minimal Transaction Fee in WAVES |
 | :--- | :--- |
 | Issue | 1 |
 | Transfer | 0.001 |
