@@ -5,7 +5,7 @@
 1. [Smart Assets Definition](#smart-assets-definition)
 2. [Smart Assets Features](#smart-assets-features)
 3. [Smart Assets Use Cases](#smart-assets-use-cases)
-4. [Transaction Fee](#transaction-fee)
+4. [Smart Asset Fee's](#smart-asset-fee's)
 5. [Trading](#trading)
 6. [Validation](#validation)
 7. [Examples of Scripts for Smart Assets](#examples-of-scripts-for-smart-assets)
@@ -36,9 +36,9 @@ Smart assets can be used in the following cases:
 7. A token that indicates some commitment/debt \(unburnable, may only be transferred back with permission of the issuer\).
 8. Require asset's owners to use a specific matcher.
 
-# Set Asset Script Transaction Fee
+# Smart Asset Fee's
 
-The transaction fee is calculated in the same way as for [smart accounts](/technical-details/waves-contracts-language-description/approach-and-capabilities.md): for each time the script is called, total transaction’s fee increases by 0.004 WAVES.
+The transaction fee is calculated in the same way as for [smart accounts](/technical-details/waves-contracts-language-description/approach-and-capabilities.md): for each time the script is called, [total transaction’s fee](/technical-details/transactions-fees.md) increases by 0.004 WAVES.
 
 **Note. **If a scripted account transfers a smart asset, then the fee is increased twice \(the fee increases _**+0.004**_ every time the transaction is validated by account’s script or asset’s script\).
 
