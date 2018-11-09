@@ -36,9 +36,11 @@ Smart assets can be used in the following cases:
 7. A token that indicates some commitment/debt \(unburnable, may only be transferred back with permission of the issuer\).
 8. Require asset's owners to use a specific matcher.
 
-# Transaction Fee
+# Set Asset Script Transaction Fee
 
 The transaction fee is calculated in the same way as for [smart accounts](/technical-details/waves-contracts-language-description/approach-and-capabilities.md): for each time the script is called, total transaction’s fee increases by 0.004 WAVES.
+
+**Note. **If a scripted account transfers a smart asset, then the fee is increased twice \(the fee increases _**+0.004**_ every time the transaction is validated by account’s script or asset’s script\).
 
 ## Trading
 
