@@ -28,3 +28,14 @@ sigVerify(tx.bodyBytes, tx.proofs[0], tx.senderPk)
 
 To understand our language better, you can check our [_**RIDE Language Section**_](/technical-details/ride-language.md) and go through our [_**Video Tutorials and Articles**_](/technical-details/video-tutorials-and-articles.md).
 
+
+
+## Smart Account Costs
+
+ We define the following constraint for a script cost:
+
+* A script must have a size _**no more 8 kB**_.
+* The fixed cost for each scripted unit is equal to **400000 **_**wavelets**_ \(Waves coins, 100000000 wavelets = 1 Wave\).
+
+
+

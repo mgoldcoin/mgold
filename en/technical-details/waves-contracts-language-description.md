@@ -68,10 +68,5 @@ We conducted performance tests for all aspects of our scripts. For this purpose,
 
 **In every test**, we conducted 10 tests and calculated the average cost.
 
-**As a result, we define the following constraint for a script cost:**
-
-* A script must have a size no more 8 kB.
-* The fixed cost for each scripted unit is equal to 400000 _wavelets_ \(Waves coins, 100000000 wavelets = 1 Wave\).
-
 
 
