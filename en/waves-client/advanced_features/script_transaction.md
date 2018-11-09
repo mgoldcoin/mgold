@@ -30,6 +30,37 @@ Re-check entered data and click on the **Confirm** button.
 
 After a few seconds, created transaction will be confirmed, and generated script will start to work in the Waves network.
 
+# How to cancel Script transaction
+
+You can also cancel the active script transaction. For this just follow the instruction described below.
+
+In the upper right corner, click on the **<> Script** button ![](/_assets/advanced_features_02.png)
+
+Just leave **Script** filed empty and click on the **Sign** button.
+
+The following pop-up will appear.
+
+Choose **JSON** section and copy the code in the **TX JSON** field, or share the **Link** or just show the QR Code from the **Export** section.
+
+![](/_assets/advanced_features_05.png)
+
+Share the data with other members of the multi-sig account.
+
+**Note**: If you specified in the contract that two confirmations are required from the three accounts, then each participant should repeat the actions described below.
+
+So now, contract member should log in to the account which has the right to confirm the multi-sig transaction.
+
+At the top right corner click on the **<> JSON** button. ![](/_assets/json_02.png)
+
+After that, put recieved JSON code in the **TX JSON** field and click on the **Continue** button.
+
+![](/_assets/advanced_features_06.png)
+
+Re-check entered data and click on the **Sign** button.
+
+![](/_assets/advanced_features_07.png)
+
+After a few seconds, created transaction will be confirmed. Thus, members of the multi-signature contract have confirmed the cancellation.
 ___
 
 If you have troubles with our platform, please create a [support](https://support.wavesplatform.com/) ticket or write a [question](https://forum.wavesplatform.com/) on our forum.
