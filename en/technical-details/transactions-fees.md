@@ -20,5 +20,19 @@ There are currently 13 different types of transactions in the Waves Blockchain. 
 | Set Sponsorship | 1 |
 | Set Asset Script | 1 |
 
+## Fee Calculation with Smart Trading Feature
+
+|  | Transaction | Order |
+| :--- | :--- | :--- |
+| plain account | controlled by consensus rules == tx.fee | controlled by trading rules == order.fee |
+| smart account or smart asset | tx.fee + 0.004.waves | order.fee + 0.004.waves |
+| smart account and smart asset | tx.fee + 0.004.waves + 0.004.waves | order.fee + 0.004.waves + 0.004.waves |
+
+**Examples: **
+
+* plain transfer fee is 0.001.waves, if user makes account scripted or smart asset transfer, the fee should be 0.005.waves, but if user will transfer smart assets from scripted account the final fee is 0.009.waves
+* plain exchange transaction fee is 0.003.waves, if one of orders is from smart account fee should be 0.007, if both orders \(BUY/SELL\) from scripted accounts fee for such case is 0.011.waves. But matcher also can be scripted, this makes fee as 0.015.waves 
+* the heaviest case is transaction created by scripted matcher where both orders from scripted accounts and assets pair uses smart assets: 0.003\(extx\) + 0.004\(scriped matcher\) + 2\*\(order.fee + 0.004\(scripted acc\) + 2\*0.004\(smart asset\)\)
+
 
 
