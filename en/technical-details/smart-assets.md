@@ -63,7 +63,7 @@ A smart asset’s script can be changed via [_**SetAssetScriptTransaction**_](/t
 
 ```js
 match tx {
-  case tx : BurnTransaction => false
+  case t : BurnTransaction => false
   case _ => true
 }
 ```
@@ -72,10 +72,10 @@ match tx {
 
 ```js
 match tx {
-  case tx : MassTransferTransaction =>
-    let twoTransfers = size(tx.transfers) == 2
-    let issuerIsRecipient = tx.transfers[0].recipient == addressFromString("3MgkTXzD72BTfYpd9UW42wdqTVg8HqnXEfc")
-    let taxesPaid = tx.transfers[0].amount >= tx.transfers[1].amount / 10
+  case t : MassTransferTransaction =>
+    let twoTransfers = size(t.transfers) == 2
+    let issuerIsRecipient = t.transfers[0].recipient == addressFromString("3MgkTXzD72BTfYpd9UW42wdqTVg8HqnXEfc")
+    let taxesPaid = t.transfers[0].amount >= t.transfers[1].amount / 10
     twoTransfers && issuerIsRecipient && taxesPaid
   case _ => false
 }
@@ -92,11 +92,11 @@ height >= targetHeight
 
 ```js
 match tx {
-  case tx : TransferTransaction =>
+  case t : TransferTransaction =>
     let trustedRecipient1 = addressFromString("3P6ms9EotRX8JwSrebeTXYVnzpsGCrKWLv4")
     let trustedRecipient2 = addressFromString("3PLZcCJyYQnfWfzhKXRA4rteCQC9J1ewf5K")
     let trustedRecipient3 = addressFromString("3PHrS6VNPRtUD8MHkfkmELavL8JnGtSq5sx")
-    tx.recipient == trustedRecipient1 || tx.recipient == trustedRecipient2 || tx.recipient == trustedRecipient3
+    t.recipient == trustedRecipient1 || t.recipient == trustedRecipient2 || t.recipient == trustedRecipient3
   case _ => false
 }
 ```
@@ -105,11 +105,11 @@ match tx {
 
 ```js
 match tx {
-  case tx : TransferTransaction =>
+  case t : TransferTransaction =>
     let bannedRecipient1 = addressFromString("3P6ms9EotRX8JwSrebeTXYVnzpsGCrKWLv4")
     let bannedRecipient2 = addressFromString("3PLZcCJyYQnfWfzhKXRA4rteCQC9J1ewf5K")
     let bannedRecipient3 = addressFromString("3PHrS6VNPRtUD8MHkfkmELavL8JnGtSq5sx")
-    tx.recipient != bannedRecipient1 && tx.recipient != bannedRecipient2 && tx.recipient != bannedRecipient3
+    t.recipient != bannedRecipient1 && t.recipient != bannedRecipient2 && t.recipient != bannedRecipient3
   case _ => false
 }
 ```
@@ -118,8 +118,8 @@ match tx {
 
 ```js
 match tx {
-  case tx : TransferTransaction =>
-    tx.feeAssetId == base58'oWgJN6YGZFtZrV8BWQ1PGktZikgg7jzGmtm16Ktyvjd'
+  case t : TransferTransaction =>
+    t.feeAssetId == base58'oWgJN6YGZFtZrV8BWQ1PGktZikgg7jzGmtm16Ktyvjd'
   case _ => true
 }
 ```
@@ -128,9 +128,9 @@ match tx {
 
 ```js
 match tx {
-  case tx : TransferTransaction =>
+  case t : TransferTransaction =>
     let issuer = addressFromString("3P6ms9EotRX8JwSrebeTXYVnzpsGCrKWLv4")
-    isDefined(getInteger(issuer, toString(tx.id)))
+    isDefined(getInteger(issuer, toString(t.id)))
   case _ => false
 }
 ```
@@ -139,7 +139,7 @@ match tx {
 
 ```js
 match tx {
-  case tx : TransferTransaction | MassTransferTransaction | ExchangeTransaction => false
+  case t : TransferTransaction | MassTransferTransaction | ExchangeTransaction => false
   case _ => true
 }
 ```
@@ -149,8 +149,8 @@ match tx {
 ```js
 let BTCId = base58'8LQW8f7P5d5PZM7GtZEBgaqRPGSzS3DfPuiXrURJ4AJS'
 match tx {
-  case tx : ExchangeTransaction =>
-    tx.sellOrder.assetPair.priceAsset == BTCId || tx.sellOrder.assetPair.amountAsset == BTCId
+  case t : ExchangeTransaction =>
+    t.sellOrder.assetPair.priceAsset == BTCId || t.sellOrder.assetPair.amountAsset == BTCId
   case _ => true
 }
 ```
@@ -159,8 +159,8 @@ match tx {
 
 ```js
 match tx {
-  case tx : ExchangeTransaction =>
-    tx.sender == addressFromString("3PJaDyprvekvPXPuAtxrapacuDJopgJRaU3")
+  case t : ExchangeTransaction =>
+    t.sender == addressFromString("3PJaDyprvekvPXPuAtxrapacuDJopgJRaU3")
   case _ => true
 }
 ```
