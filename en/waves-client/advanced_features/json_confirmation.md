@@ -35,7 +35,7 @@ Share the data with other members of the multi-sig account.
 
 **Note**: If you specified in the contract that two confirmations are required from the three accounts, then each participant should repeat the actions described below.
 
-So, login to the account which has the right to confirm the multi-sig transaction.
+So now, contract member should log in to the account which has the right to confirm the multi-sig transaction.
 
 At the top right corner click on the **<> JSON** button. ![](/_assets/json_02.png)
 
@@ -43,9 +43,11 @@ After that, put recieved JSON code in the **TX JSON** field and click on the **C
 
 ![](/_assets/json_04.png)
 
-Re-check entered data and click on the **Confirm** button. If you need to confirm this action using another account, then also use **JSON** or **Export** sections. If additional confirmation is not required, then just click on the **Continue** button again.
+Re-check entered data and click on the **Sign** button.
 
-After a few seconds, created transaction will be confirmed. Thus, you have confirmed the withdrawal request from the multi-signature account.
+![](/_assets/json_05.png)
+
+After a few seconds, created transaction will be confirmed. Thus, members of the multi-signature contract have confirmed the withdrawal request from the multi-sig account.
 
 ___
 
