@@ -16,7 +16,7 @@ You will be forwarded to the following settings page. Find and put the checkmark
 
 ![](/_assets/advanced_features_01.png)
 
-After that, close the settings, and in the upper right corner, you will see the **<> Script** button ![](/_assets/advanced_features_02.png)
+After that, close the settings, and in the upper right corner, you will see the **<> Script** button.
 
 The following pop-up will appear.
 
@@ -34,7 +34,7 @@ After a few seconds, created transaction will be confirmed, and generated script
 
 You can also cancel the active script transaction. For this just follow the instruction described below.
 
-In the upper right corner, click on the **<> Script** button ![](/_assets/advanced_features_02.png)
+In the upper right corner, click on the **<> Script** button.
 
 Just leave **Script** filed empty and click on the **Sign** button.
 
@@ -50,7 +50,7 @@ Share the data with other members of the multi-sig account.
 
 So now, contract member should log in to the account which has the right to confirm the multi-sig transaction.
 
-At the top right corner click on the **<> JSON** button. ![](/_assets/json_02.png)
+At the top right corner click on the **<> JSON** button.
 
 After that, put recieved JSON code in the **TX JSON** field and click on the **Continue** button.
 

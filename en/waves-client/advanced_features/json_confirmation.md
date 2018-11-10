@@ -37,7 +37,7 @@ Share the data with other members of the multi-sig account.
 
 So now, contract member should log in to the account which has the right to confirm the multi-sig transaction.
 
-At the top right corner click on the **<> JSON** button. ![](/_assets/json_02.png)
+At the top right corner click on the **<> JSON** button.
 
 After that, put recieved JSON code in the **TX JSON** field and click on the **Continue** button.
 
