@@ -3,6 +3,9 @@
 Script transactions allow you to extend the available functionality of the standard Waves application. One of the uses of script transaction is creating a multi-signature wallet. For more information, please check the following [article](/technical-details/video-tutorials-and-articles.md).
 Also, script can be developed with [Waves Ride IDE](https://ide.wavesplatform.com/). To manage multi-signature account among contract participants, please visit the following article [JSON confirmation](/waves-client/advanced_features/json_confirmation.md).
 
+**Note**:The fee for a transfer of a Smart Asset from a Smart Account would be 0.001+0.004+0.004=**0.009 Waves**.
+Set Alias for an account without a script would cost **0.001 WAVES**, whereas for a Smart Account it would be 0.001+0.004=**0.005 WAVES**.
+
 **Before you start, please keep in mind. We do not recommend you submit script transactions unless you are an experienced user. Errors can lead to permanent loss of access to your account**.
 
 So, to start using all available features of the application, first you need to activate the advanced features.
